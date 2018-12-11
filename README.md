@@ -7,11 +7,11 @@ associated with *youth unemployment*. An extensive tool was developed in the for
 where the results and real time predictions of the developed models can be viewed.
 
 
-- We several machine learning techiques:
+- We used several machine learning techiques:
 
-* Principal Componet Analysis (PCA): to find the features which affect youth employment.
-* Decision Tree and Random Forests : to predictions the probability of youth getting employed given the characteristics of their municipalmoney
-* Support Vector Machines (SVM)    : to predict the profile of the municipality  
+* ##Principal Componet Analysis (PCA): to find the features which affect youth employment.
+* ##Decision Tree and Random Forests : to predictions the probability of youth getting employed given the characteristics of their municipality.
+* ##Support Vector Machines (SVM)    : to predict the profile of the municipality.
 
 
 
