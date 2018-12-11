@@ -1,0 +1,25 @@
+<html>
+<head><title>DB Test</title>
+{%load static%}
+</head>
+
+<body>
+<div id="test"> </div>
+
+
+<script>
+var dBdata = {{Data|safe}};
+disp_str = "";
+for(i = 0; i < dBdata.length; i++)
+{
+	var str1 = dBdata[i];
+	console.log(str1);
+	var str2 = dBdata[i][1];
+	var str = str1.concat(str2);
+	var other_str = str.concat("\n");
+	disp_str.concat(other_str);
+}
+document.getElementById("test").innerHTML = disp_str; 
+</script>
+</body>
+</html>

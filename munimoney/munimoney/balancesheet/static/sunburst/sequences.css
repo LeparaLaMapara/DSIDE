@@ -1,0 +1,155 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+} 
+
+#main {
+  float: left;
+  width: 750px;
+}
+
+/*#sidebar {
+  float: right;
+  width: 100px;
+} */
+
+#sequence {
+  width: 800px;
+  height: 80px;
+}
+#sequence1 {
+  width: 800px;
+  height: 80px;
+}
+#sequence3 {
+  width: 800px;
+  height: 80px;
+}
+
+
+
+/*#legend {
+  padding: 10px 0 0 3px;
+} */
+
+#sequence text, #legend text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+
+
+#chart {
+  position: relative;
+}
+
+#chart1 {
+  position: relative;
+}
+
+#chart3 {
+  position: relative;
+}
+
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation {
+  /*position: absolute;*/
+  position: absolute;
+  top: 55px;
+  left: 60px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#explanation1 {
+  /*position: absolute;*/
+  position: absolute;
+  top: 55px;
+  left: 60px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#explanation3 {
+  /*position: absolute;*/
+  position: absolute;
+  top: 55px;
+  left: 60px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#profile1 {
+  position: absolute;
+  top: 100px;
+  left: 55px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+  font-size: 2.0em;
+
+}
+
+#profile2 {
+  position: absolute;
+  top: 100px;
+  left: 55px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+  font-size: 2.0em;
+
+}
+
+#profile3 {
+  position: absolute;
+  top: 100px;
+  left: 55px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+  font-size: 2.0em;
+
+}
+
+#profile4 {
+  position: absolute;
+  top: 170px;
+  left: 55px;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+  font-size: 2.0em;
+
+}
+
+#percentage {
+  font-size: 2.5em;
+}
+
+#percentage1 {
+  font-size: 2.5em;
+}
+
+#percentage3 {
+  font-size: 2.5em;
+}

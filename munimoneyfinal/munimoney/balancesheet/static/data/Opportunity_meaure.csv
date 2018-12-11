@@ -1,0 +1,279 @@
+geo_code,geoid,name,Opportunity_prediction,Province
+WC044,municipality-WC044,George,0.562616542091,Western Cape
+WC047,municipality-WC047,Bitou,0.515563170655,Western Cape
+WC048,municipality-WC048,Knysna,0.537141050842,Western Cape
+WC051,municipality-WC051,Laingsburg,0.744070953069,Western Cape
+WC052,municipality-WC052,Prince Albert,0.590958282794,Western Cape
+WC053,municipality-WC053,Beaufort West,0.515716257898,Western Cape
+MP303,municipality-MP303,Mkhondo,0.437433160206,Mpumalanga
+MP311,municipality-MP311,Victor Khanye,0.540552650835,Mpumalanga
+MP322,municipality-MP322,Mbombela,0.461945553969,North West
+NW373,municipality-NW373,Rustenburg,0.570716680112,North West
+NW384,municipality-NW384,Ditsobotla,0.505313327891,North West
+NW396,municipality-NW396,Lekwa-Teemane,0.504805685781,Northern Cape
+NC062,municipality-NC062,Nama Khoi,0.551473317462,Northern Cape
+NC071,municipality-NC071,Ubuntu,0.56872173434,Northern Cape
+NC077,municipality-NC077,Siyathemba,0.593780113755,Northern Cape
+NC085,municipality-NC085,Tsantsabane,0.570060328846,Northern Cape
+NC094,municipality-NC094,Phokwane,0.440783112944,Western Cape
+WC012,municipality-WC012,Cederberg,0.800758189587,Western Cape
+WC024,municipality-WC024,Stellenbosch,0.522767783931,Western Cape
+WC033,municipality-WC033,Cape Agulhas,0.764061228952,Western Cape
+WC045,municipality-WC045,Oudtshoorn,0.526429987196,Eastern Cape
+EC102,municipality-EC102,Blue Crane Route,0.466810513902,Eastern Cape
+EC103,municipality-EC103,Ikwezi,0.657687038868,Eastern Cape
+EC104,municipality-EC104,Makana,0.451129417341,Eastern Cape
+EC106,municipality-EC106,Sundays River Valley,0.617548107089,Eastern Cape
+EC107,municipality-EC107,Baviaans,0.569564257523,Eastern Cape
+EC108,municipality-EC108,Kouga,0.624795953613,Eastern Cape
+EC109,municipality-EC109,Kou-Kamma,0.800855704753,Eastern Cape
+EC121,municipality-EC121,Mbhashe,0.3850341678,Eastern Cape
+EC123,municipality-EC123,Great Kei,0.480508833283,Eastern Cape
+EC124,municipality-EC124,Amahlathi,0.450047248804,Eastern Cape
+EC126,municipality-EC126,Ngqushwa,0.273847010928,Eastern Cape
+EC127,municipality-EC127,Nkonkobe,0.46892882055,Eastern Cape
+EC131,municipality-EC131,Inxuba Yethemba,0.559407692136,Eastern Cape
+EC132,municipality-EC132,Tsolwana,0.473467568797,Eastern Cape
+EC133,municipality-EC133,Inkwanca,0.454040507368,Eastern Cape
+EC134,municipality-EC134,Lukanji,0.348471698211,Eastern Cape
+EC136,municipality-EC136,Emalahleni,0.36460612659,Eastern Cape
+EC137,municipality-EC137,Engcobo,0.378482024735,Eastern Cape
+EC138,municipality-EC138,Sakhisizwe,0.433074016818,Eastern Cape
+EC141,municipality-EC141,Elundini,0.390405438057,Eastern Cape
+EC142,municipality-EC142,Senqu,0.465738653033,Eastern Cape
+EC143,municipality-EC143,Maletswai,0.479605085627,Eastern Cape
+EC153,municipality-EC153,Ngquza Hill,0.313528757075,Eastern Cape
+EC154,municipality-EC154,Port St Johns,0.304410924684,Eastern Cape
+EC155,municipality-EC155,Nyandeni,0.368859338231,Eastern Cape
+EC156,municipality-EC156,Mhlontlo,0.349346532993,Eastern Cape
+EC441,municipality-EC441,Matatiele,0.426275056563,Eastern Cape
+EC442,municipality-EC442,Umzimvubu,0.374286270107,Eastern Cape
+EC443,municipality-EC443,Mbizana,0.379499699656,Eastern Cape
+EC444,municipality-EC444,Ntabankulu,0.326492817881,Free State
+FS161,municipality-FS161,Letsemeng,0.599200344536,Free State
+FS162,municipality-FS162,Kopanong,0.531088655605,Free State
+FS163,municipality-FS163,Mohokare,0.487977106099,Free State
+FS181,municipality-FS181,Masilonyana,0.397762474553,Free State
+FS182,municipality-FS182,Tokologo,0.537343355367,Free State
+FS183,municipality-FS183,Tswelopele,0.425938475552,Free State
+FS184,municipality-FS184,Matjhabeng,0.386718224978,Free State
+FS185,municipality-FS185,Nala,0.393238601545,Free State
+FS192,municipality-FS192,Dihlabeng,0.485540042553,Free State
+FS193,municipality-FS193,Nketoana,0.469534524778,Free State
+FS194,municipality-FS194,Maluti a Phofung,0.328777899662,Free State
+FS195,municipality-FS195,Phumelela,0.514199744376,Free State
+FS201,municipality-FS201,Moqhaka,0.395266333138,Free State
+FS203,municipality-FS203,Ngwathe,0.421259509382,Free State
+FS204,municipality-FS204,Metsimaholo,0.47510726292,Free State
+FS205,municipality-FS205,Mafube,0.437758866574,Gauteng
+GT421,municipality-GT421,Emfuleni,0.416192427464,Gauteng
+GT423,municipality-GT423,Lesedi,0.541195603851,Gauteng
+GT481,municipality-GT481,Mogale City,0.541637543923,Gauteng
+GT482,municipality-GT482,Randfontein,0.517162493813,Gauteng
+GT483,municipality-GT483,Westonaria,0.61433970039,KwaZulu-Natal
+KZN211,municipality-KZN211,Vulamehlo,0.36046496058,KwaZulu-Natal
+KZN212,municipality-KZN212,Umdoni,0.459721389924,KwaZulu-Natal
+KZN213,municipality-KZN213,Umzumbe,0.300187079808,KwaZulu-Natal
+KZN214,municipality-KZN214,UMuziwabantu,0.451546340601,KwaZulu-Natal
+KZN215,municipality-KZN215,Ezingoleni,0.368951630162,KwaZulu-Natal
+KZN221,municipality-KZN221,uMshwathi,0.555262769647,KwaZulu-Natal
+KZN222,municipality-KZN222,uMngeni,0.547035812008,KwaZulu-Natal
+KZN223,municipality-KZN223,Mpofana,0.554616040065,KwaZulu-Natal
+KZN224,municipality-KZN224,Impendle,0.348454214322,KwaZulu-Natal
+KZN225,municipality-KZN225,The Msunduzi,0.429212295218,KwaZulu-Natal
+KZN226,municipality-KZN226,Mkhambathini,0.521030138554,KwaZulu-Natal
+KZN232,municipality-KZN232,Emnambithi/Ladysmith,0.432986553494,KwaZulu-Natal
+KZN233,municipality-KZN233,Indaka,0.34290637654,KwaZulu-Natal
+KZN234,municipality-KZN234,Umtshezi,0.428421522772,KwaZulu-Natal
+KZN235,municipality-KZN235,Okhahlamba,0.382806425265,KwaZulu-Natal
+KZN236,municipality-KZN236,Imbabazane,0.36831707955,KwaZulu-Natal
+KZN242,municipality-KZN242,Nqutu,0.350493827302,KwaZulu-Natal
+KZN244,municipality-KZN244,Msinga,0.335364238106,KwaZulu-Natal
+KZN245,municipality-KZN245,Umvoti,0.49831842912,KwaZulu-Natal
+KZN252,municipality-KZN252,Newcastle,0.385070676064,KwaZulu-Natal
+KZN254,municipality-KZN254,Dannhauser,0.340787113841,KwaZulu-Natal
+KZN261,municipality-KZN261,eDumbe,0.429317442857,KwaZulu-Natal
+KZN262,municipality-KZN262,UPhongolo,0.468246973427,KwaZulu-Natal
+KZN263,municipality-KZN263,Abaqulusi,0.378424791408,KwaZulu-Natal
+KZN265,municipality-KZN265,Nongoma,0.338535501289,KwaZulu-Natal
+KZN266,municipality-KZN266,Ulundi,0.283940231334,KwaZulu-Natal
+KZN272,municipality-KZN272,Jozini,0.357050673537,KwaZulu-Natal
+KZN273,municipality-KZN273,The Big 5 False Bay,0.397355569448,KwaZulu-Natal
+KZN274,municipality-KZN274,Hlabisa,0.302029021855,KwaZulu-Natal
+KZN275,municipality-KZN275,Mtubatuba,0.390909988391,KwaZulu-Natal
+KZN281,municipality-KZN281,Mfolozi,0.361738621962,KwaZulu-Natal
+KZN283,municipality-KZN283,Ntambanana,0.410096478513,KwaZulu-Natal
+KZN284,municipality-KZN284,uMlalazi,0.412484497915,KwaZulu-Natal
+KZN285,municipality-KZN285,Mthonjaneni,0.505958574979,KwaZulu-Natal
+KZN286,municipality-KZN286,Nkandla,0.350508212398,KwaZulu-Natal
+KZN291,municipality-KZN291,Mandeni,0.492527595997,KwaZulu-Natal
+KZN293,municipality-KZN293,Ndwedwe,0.344703668237,KwaZulu-Natal
+KZN294,municipality-KZN294,Maphumulo,0.35700095484,KwaZulu-Natal
+KZN431,municipality-KZN431,Ingwe,0.379325327696,KwaZulu-Natal
+KZN432,municipality-KZN432,Kwa Sani,0.586739125179,KwaZulu-Natal
+KZN434,municipality-KZN434,Ubuhlebezwe,0.427576040577,KwaZulu-Natal
+KZN435,municipality-KZN435,Umzimkhulu,0.355135429783,Limpopo
+LIM331,municipality-LIM331,Greater Giyani,0.30930009846,Limpopo
+LIM332,municipality-LIM332,Greater Letaba,0.373324452905,Limpopo
+LIM333,municipality-LIM333,Greater Tzaneen,0.324673536237,Limpopo
+LIM335,municipality-LIM335,Maruleng,0.353101896354,Limpopo
+LIM341,municipality-LIM341,Musina,0.636509246543,Limpopo
+LIM342,municipality-LIM342,Mutale,0.278500374006,Limpopo
+LIM343,municipality-LIM343,Thulamela,0.267590975719,Limpopo
+LIM344,municipality-LIM344,Makhado,0.360803148082,Limpopo
+LIM351,municipality-LIM351,Blouberg,0.375352177831,Limpopo
+LIM353,municipality-LIM353,Molemole,0.346696348829,Limpopo
+LIM354,municipality-LIM354,Polokwane,0.387077183375,Limpopo
+LIM355,municipality-LIM355,Lepele-Nkumpi,0.327971240882,Limpopo
+LIM361,municipality-LIM361,Thabazimbi,0.614573542014,Limpopo
+LIM362,municipality-LIM362,Lephalale,0.564733724467,Limpopo
+LIM365,municipality-LIM365,Modimolle,0.580488717351,Limpopo
+LIM366,municipality-LIM366,Bela-Bela,0.577602113622,Eastern Cape
+BUF,municipality-BUF,Buffalo City,0.388596897722,Eastern Cape
+EC101,municipality-EC101,Camdeboo,0.509756767543,Eastern Cape
+EC105,municipality-EC105,Ndlambe,0.49775241395,Eastern Cape
+EC122,municipality-EC122,Mnquma,0.33438183941,Eastern Cape
+EC128,municipality-EC128,Nxuba,0.370624606937,Eastern Cape
+EC135,municipality-EC135,Intsika Yethu,0.367572543,Eastern Cape
+EC144,municipality-EC144,Gariep,0.568540212744,Eastern Cape
+EC157,municipality-EC157,King Sabata Dalindyebo,0.413261700776,Eastern Cape
+NMA,municipality-NMA,Nelson Mandela Bay,0.397382241486,Eastern Cape
+FS164,municipality-FS164,Naledi,0.514452135167,Free State
+FS191,municipality-FS191,Setsoto,0.423506734941,Free State
+FS196,municipality-FS196,Mantsopa,0.486392353524,Free State
+MAN,municipality-MAN,Mangaung,0.44462190055,Free State
+EKU,municipality-EKU,Ekurhuleni,0.52891004089,Gauteng
+GT422,municipality-GT422,Midvaal,0.630430909316,Gauteng
+GT484,municipality-GT484,Merafong City,0.496174342824,Gauteng
+JHB,municipality-JHB,City of Johannesburg,0.538558873934,Gauteng
+TSH,municipality-TSH,City of Tshwane,0.508832964089,Gauteng
+ETH,municipality-ETH,eThekwini,0.49980975454,KwaZulu-Natal
+KZN216,municipality-KZN216,Hibiscus Coast,0.503697340814,KwaZulu-Natal
+KZN227,municipality-KZN227,Richmond,0.534807524538,KwaZulu-Natal
+KZN241,municipality-KZN241,Endumeni,0.500258329264,KwaZulu-Natal
+KZN253,municipality-KZN253,Emadlangeni,0.462323846415,KwaZulu-Natal
+KZN271,municipality-KZN271,Umhlabuyalingana,0.255937616973,KwaZulu-Natal
+KZN282,municipality-KZN282,uMhlathuze,0.448708108342,KwaZulu-Natal
+KZN292,municipality-KZN292,KwaDukuza,0.562931119077,KwaZulu-Natal
+KZN433,municipality-KZN433,Greater Kokstad,0.496660539547,KwaZulu-Natal
+LIM334,municipality-LIM334,Ba-Phalaborwa,0.298780991546,KwaZulu-Natal
+LIM352,municipality-LIM352,Aganang,0.256759942369,Limpopo
+LIM364,municipality-LIM364,Mookgopong,0.611674343674,Limpopo
+LIM367,municipality-LIM367,Mogalakwena,0.347447350965,Limpopo
+LIM471,municipality-LIM471,Ephraim Mogale,0.38538444236,Limpopo
+LIM472,municipality-LIM472,Elias Motsoaledi,0.358893172923,Limpopo
+LIM473,municipality-LIM473,Makhuduthamaga,0.216239378442,Limpopo
+LIM474,municipality-LIM474,Fetakgomo,0.244128323693,Limpopo
+LIM475,municipality-LIM475,Greater Tubatse,0.259990531306,Limpopo
+MP301,municipality-MP301,Albert Luthuli,0.350374838629,Limpopo
+MP302,municipality-MP302,Msukaligwa,0.515267937492,Mpumalanga
+MP304,municipality-MP304,Pixley Ka Seme,0.403637131629,Mpumalanga
+MP305,municipality-MP305,Lekwa,0.500501745707,Mpumalanga
+MP306,municipality-MP306,Dipaleseng,0.478370612025,Mpumalanga
+MP307,municipality-MP307,Govan Mbeki,0.529758031196,Mpumalanga
+MP312,municipality-MP312,Emalahleni,0.527028867092,Mpumalanga
+MP313,municipality-MP313,Steve Tshwete,0.577812083585,Mpumalanga
+MP314,municipality-MP314,Emakhazeni,0.512827576352,Mpumalanga
+MP315,municipality-MP315,Thembisile,0.393582422445,Mpumalanga
+MP316,municipality-MP316,Dr JS Moroka,0.300588427535,Mpumalanga
+MP321,municipality-MP321,Thaba Chweu,0.582619258731,Mpumalanga
+MP323,municipality-MP323,Umjindi,0.49891894919,Mpumalanga
+MP324,municipality-MP324,Nkomazi,0.343784490235,Mpumalanga
+MP325,municipality-MP325,Bushbuckridge,0.351121632564,Mpumalanga
+NW371,municipality-NW371,Moretele,0.346968492766,Mpumalanga
+NW372,municipality-NW372,Madibeng,0.52521634269,North West
+NW374,municipality-NW374,Kgetlengrivier,0.614118881839,North West
+NW375,municipality-NW375,Moses Kotane,0.418135679987,North West
+NW381,municipality-NW381,Ratlou,0.459935499891,North West
+NW382,municipality-NW382,Tswaing,0.49097176418,North West
+NW383,municipality-NW383,Mafikeng,0.362397701562,North West
+NW385,municipality-NW385,Ramotshere Moiloa,0.436044282439,North West
+NW392,municipality-NW392,Naledi,0.539569247105,North West
+NW393,municipality-NW393,Mamusa,0.474082706122,North West
+NW394,municipality-NW394,Greater Taung,0.296230826944,North West
+NW397,municipality-NW397,Kagisano/Molopo,0.514296478846,North West
+NW401,municipality-NW401,Ventersdorp,0.541384155873,North West
+NW402,municipality-NW402,Tlokwe City Council,0.514304414294,North West
+NW403,municipality-NW403,City of Matlosana,0.480803591435,North West
+NW404,municipality-NW404,Maquassi Hills,0.424030922858,North West
+NC061,municipality-NC061,Richtersveld,0.704036124106,North West
+NC064,municipality-NC064,Kamiesberg,0.534965972163,Northern Cape
+NC065,municipality-NC065,Hantam,0.634628915404,Northern Cape
+NC066,municipality-NC066,Karoo Hoogland,0.714362030632,Northern Cape
+NC067,municipality-NC067,Khâi-Ma,0.669955013273,Northern Cape
+NC072,municipality-NC072,Umsobomvu,0.478897034771,Northern Cape
+NC073,municipality-NC073,Emthanjeni,0.494201500403,Northern Cape
+NC074,municipality-NC074,Kareeberg,0.575640081849,Northern Cape
+NC075,municipality-NC075,Renosterberg,0.594298679869,Northern Cape
+NC076,municipality-NC076,Thembelihle,0.57618143455,Northern Cape
+NC078,municipality-NC078,Siyancuma,0.511149943007,Northern Cape
+NC081,municipality-NC081,Mier,0.533441164023,Northern Cape
+NC082,municipality-NC082,Kai !Garib,0.831542360424,Northern Cape
+NC083,municipality-NC083,//Khara Hais,0.558806515822,Northern Cape
+NC084,municipality-NC084,!Kheis,0.566868348564,Northern Cape
+NC086,municipality-NC086,Kgatelopele,0.565983839505,Northern Cape
+NC091,municipality-NC091,Sol Plaatjie,0.428119120936,Northern Cape
+NC092,municipality-NC092,Dikgatlong,0.345227117521,Northern Cape
+NC093,municipality-NC093,Magareng,0.420343527266,Northern Cape
+NC451,municipality-NC451,Joe Morolong,0.447109371954,Northern Cape
+NC452,municipality-NC452,Ga-Segonyana,0.447643045552,Northern Cape
+NC453,municipality-NC453,Gamagara,0.606999831516,Northern Cape
+CPT,municipality-CPT,City of Cape Town,0.535739353105,Northern Cape
+WC011,municipality-WC011,Matzikama,0.734614121104,Western Cape
+WC013,municipality-WC013,Bergrivier,0.837943892004,Western Cape
+WC014,municipality-WC014,Saldanha Bay,0.626479649498,Western Cape
+WC015,municipality-WC015,Swartland,0.735962078672,Western Cape
+WC022,municipality-WC022,Witzenberg,0.845837524981,Western Cape
+WC023,municipality-WC023,Drakenstein,0.674548800206,Western Cape
+WC025,municipality-WC025,Breede Valley,0.723827534039,Western Cape
+WC026,municipality-WC026,Langeberg,0.730426412101,Western Cape
+WC031,municipality-WC031,Theewaterskloof,0.72221661574,Western Cape
+WC032,municipality-WC032,Overstrand,0.565451097549,Western Cape
+WC034,municipality-WC034,Swellendam,0.767125977079,Western Cape
+WC041,municipality-WC041,Kannaland,0.683320615476,Western Cape
+WC042,municipality-WC042,Hessequa,0.72406656981,Western Cape
+WC043,municipality-WC043,Mossel Bay,0.591296668746,Western Cape
+DC1,district-DC1,West Coast,0.734624767165,Western Cape
+DC10,district-DC10,Cacadu,0.583343981019,Western Cape
+DC12,district-DC12,Amathole,0.367897350895,Eastern Cape
+DC13,district-DC13,Chris Hani,0.413399272064,Eastern Cape
+DC14,district-DC14,Joe Gqabi,0.431333892494,Eastern Cape
+DC15,district-DC15,O.R.Tambo,0.364885771657,Eastern Cape
+DC16,district-DC16,Xhariep,0.44627588185,Eastern Cape
+DC18,district-DC18,Lejweleputswa,0.396822784668,Free State
+DC19,district-DC19,Thabo Mofutsanyane,0.441874060909,Free State
+DC2,district-DC2,Cape Winelands,0.630144958618,Free State
+DC20,district-DC20,Fezile Dabi,0.397286551742,Western Cape
+DC21,district-DC21,Ugu,0.404367513153,Free State
+DC22,district-DC22,Umgungundlovu,0.437150000322,KwaZulu-Natal
+DC23,district-DC23,Uthukela,0.371949677976,KwaZulu-Natal
+DC24,district-DC24,Umzinyathi,0.384399981877,KwaZulu-Natal
+DC25,district-DC25,Amajuba,0.379294869727,KwaZulu-Natal
+DC26,district-DC26,Zululand,0.374669915354,KwaZulu-Natal
+DC27,district-DC27,Umkhanyakude,0.338844185131,KwaZulu-Natal
+DC28,district-DC28,Uthungulu,0.391388767822,KwaZulu-Natal
+DC29,district-DC29,iLembe,0.437797342238,KwaZulu-Natal
+DC3,district-DC3,Overberg,0.709241672691,KwaZulu-Natal
+DC30,district-DC30,Gert Sibande,0.435246083448,Western Cape
+DC31,district-DC31,Nkangala,0.418057356761,Mpumalanga
+DC32,district-DC32,Ehlanzeni,0.406077442244,Mpumalanga
+DC33,district-DC33,Mopani,0.353410774185,Mpumalanga
+DC34,district-DC34,Vhembe,0.342917052659,Limpopo
+DC35,district-DC35,Capricorn,0.358484173858,Limpopo
+DC36,district-DC36,Waterberg,0.47129548504,Limpopo
+DC37,district-DC37,Bojanala,0.514573173286,Limpopo
+DC38,district-DC38,Ngaka Modiri Molema,0.435308762239,North West
+DC39,district-DC39,Dr Ruth Segomotsi Mompati,0.429774122812,North West
+DC4,district-DC4,Eden,0.584697034383,North West
+DC40,district-DC40,Dr Kenneth Kaunda,0.471980563216,Western Cape
+DC42,district-DC42,Sedibeng,0.45359557144,North West
+DC43,district-DC43,Sisonke,0.413690529756,Gauteng
+DC44,district-DC44,Alfred Nzo,0.371722977575,KwaZulu-Natal
+DC45,district-DC45,John Taolo Gaetsewe,0.458523040894,Eastern Cape
+DC47,district-DC47,Sekhukhune,0.305011712081,Northern Cape
+DC48,district-DC48,West Rand,0.526001270487,Limpopo
+DC5,district-DC5,Central Karoo,0.577478539156,Gauteng
+DC6,district-DC6,Namakwa,0.628847127972,Western Cape
+DC7,district-DC7,Pixley ka Seme,0.527396996278,Northern Cape
+DC8,district-DC8,Siyanda,0.65573190287,Northern Cape
+DC9,district-DC9,Frances Baard,0.405275560222,Northern Cape

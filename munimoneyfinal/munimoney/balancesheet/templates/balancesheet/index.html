@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Dashboard | Municipal Money</title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+	{% load staticfiles %}
+	
+		<!-- <link rel='stylesheet' href="{% static 'assets/css/bootstrap.css' %}" type='text/css'>  -->
+		<link rel='stylesheet' href="{% static 'assets/css/bootstrap.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/font-awesome/4.5.0/css/font-awesome.min.css' %}" type='text/css'>
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel='stylesheet' href="{% static 'assets/css/fonts.googleapis.com.css' %}" type='text/css'>
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="{% static 'assets/css/ace.min.css' %}" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel='stylesheet' href="{% static 'assets/css/ace-skins.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/css/ace-rtl.min.css' %}" type='text/css'>
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+
+
+		<!-- maps  mpaps mapspskjdjdnjdjdjdjd    -->
+
+
+
+
+
+
+
+		<link href="{% static  'css/leaflet.css' %}" rel="stylesheet" />
+		    <link href="{% static  'css/chloromap.css' %}" rel="stylesheet" />
+		    <link href="{% static  'css/partitionMap.css' %}" rel="stylesheet" />
+		    <link href="{% static  'css/animate.min.css' %}" rel="stylesheet">
+		    <link href="{% static 'css/dc.css' %}" rel="stylesheet" />
+		    <link href="{% static 'css/bootstrap-slider.css' %}" rel=" stylesheet"  />
+
+
+
+  <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+  <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static  'js/bootstrap-slider.js' %}"></script>
+
+
+    <!-- D3.js Javascript -->
+    <script src="{% static 'js/d3.js' %}"></script>
+
+    <!-- Chloromap -->
+    <script src="{% static 'js/leaflet.js' %}"></script>
+    <script src="{% static 'js/topojson.v1.min.js' %}"></script>
+    <script src="{% static 'js/chroma.min.js'  %}"></script>
+  <!-- <script src="{% static  'js/chloromap.js'  %}"></script> -->
+ 
+    <!-- DC.js and crossfilter -->
+    <script src="{% static 'js/crossfilter.v1.min.js' %}"></script>
+    <script src="{% static 'js/dc.js' %}"></script>
+
+
+
+		
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+		
+		
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script type='text/javascript' src='{% static &quot; assets/js/jquery.mobile.custom.min.js &quot;'>"+"<"+"/script>");
+		</script>
+		
+		<!-- <script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script> -->
+		<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.js' %}"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+	
+		<script  type="text/javascript" src="{% static 'assets/js/ace.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery-ui.custom.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.ui.touch-punch.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.easypiechart.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.sparkline.index.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.pie.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.resize.min.js' %}"></script>
+
+		<script type="text/javascript" src="{% static 'assets/js/ace-extra.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'bubblechart/bubble.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/ace.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/ace-elements.min.js' %}"></script>
+
+
+		<style type="text/css">
+		.well{	
+			background-color: #8bc1e0; /* Green */
+		    border: #000000;
+		    color: white;
+		   	padding: 10px 0px 10px 0px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		 	margin-bottom: 20px;
+		    width: 100%;
+		    opacity: 0.9;
+		}
+		.emp{
+			background-color: #8bc1e0; /* Green */
+		    border: #000000;
+		    color: white;
+		   	padding: 10px 0px 10px 0px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		 	margin-bottom: 20px;
+		    width: 100%;
+		    opacity: 0.9;
+		}
+
+		.eff{
+			background-color: #8bc1e0; /* Green */
+		    border: #000000;
+		    color: white;
+		   	padding: 10px 0px 10px 0px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		 	margin-bottom: 20px;
+		    width: 100%;
+		    opacity: 0.9;
+		}
+		.good{
+			background-color: #FEE8C8;
+			}
+		.average{
+			background-color: #FDBB84;
+		}
+		.bad{
+			background-color: #E34833;
+		}
+		.goodText{
+			background-color: #FEE8C8;
+			}
+		.averageText{
+			background-color: #FDBB84;
+		}
+		.badText{
+			background-color: #E34833;
+		}
+		</style>
+	
+
+	</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default          ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-header pull-left">
+					<a href=".." class="navbar-brand">
+						<small>
+							<i class="fa fa-university"></i>
+							Municipal Money
+						</small>
+					</a>
+				</div>
+
+				
+			</div><!-- /.navbar-container -->
+		</div>
+
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-facebook"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-twitter"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-skype"></i>
+						</button>
+
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-whatsapp"></i>
+						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="active">
+						<a href="..">
+							<i class="menu-icon fa fa-spinner"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="avarageProfile">
+							<i class="menu-icon fa fa-university"></i>
+							<span class="menu-text"> Profiles </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="SVMpage">
+							<i class="menu-icon fa fa-line-chart"></i>
+							<span class="menu-text"> Profile Predictions </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+					
+					<li class="">
+						<a href="classify">
+							<i class="menu-icon fa fa-bar-chart"></i>
+							<span class="menu-text"> Employment Predic... </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+
+
+					<li class="">
+						<a href="sunburst">
+							<i class="menu-icon fa fa-money"></i>
+							<span class="menu-text"> Income </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+					<li class="">
+						<a href="ExpenseSunburst">
+							<i class="menu-icon fa fa-cc-mastercard"></i>
+							<span class="menu-text"> Expenditure </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+						<li class="">
+						<a href="tree">
+							<i class="menu-icon fa fa-sitemap"></i>
+							<span class="menu-text"> Decision Tree </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+						<li class="">
+						<a href="document">
+							<i class="menu-icon fa fa-file-pdf-o"></i>
+							<span class="menu-text"> Documentations </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+</ul>
+
+							
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- Page Content -->
+      <div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="..">Home</a>
+							</li>
+							<li class="active">Profiles</li>
+						</ul><!-- /.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+
+
+					<div class="page-header">
+							<h1>
+								Geographic Overview <small>Exploration of Data
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+
+
+
+                <!-- Choroplethmap Visualisation -->
+                <div class="row">
+                <div class="col-lg-12">
+					<div class="col-lg-9">
+                        <div class="panel panel-info" id=liveHeatmapPanel>
+                            
+                            <div class="panel-body">
+                              <div id="map", style="height: 500px">
+                              </div>
+                             <!-- <div style="margin-top: 10px">
+                                  <b>Map Layer Opacity:</b> <input id="choroSlider" type="text" data-slider-min="0" data-slider-max="1" data-slider-step="0.01" data-slider-value="0.4"/&t</input>
+                              </div>
+                              -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+						<div class="widget-box transparent">
+							<div class="widget-header">
+								<h4>Select Measures</h4>
+							</div>
+
+							<div class="widget-body">
+								<div class="widget-main no-padding">
+									<div id="external-events">
+														
+														
+										<div class="">
+											<button type="button" class="eff" id='eff'>Efficiency</button>
+										</div>								
+										<div class="">
+											<button type="button" class="well" id = 'well'>Well-being </button>
+										</div>										
+														
+										<div class="">										
+											<button type="button" class="emp" id='emp'>Employment</button>
+										</div>
+														
+										
+														
+									</div>
+								</div>
+							</div>										
+						</div>
+
+
+						<div class="widget-box transparent">
+							<div class="widget-header">
+								<h4>Colour Bar</h4>
+							</div>
+
+							<div class="widget-body">
+								<div class="widget-main no-padding">
+									<div id="external-events">
+
+										<!-- <div id="legends">
+										</div> -->
+														
+														
+										<div class="" width="100%">
+										<table>
+										<tr><td>
+											<svg width="40" height="40">
+  												<circle cx="20" cy="20" r="20" stroke="white" stroke-width="4" fill="#FEE8C8" />
+											</svg></td><td>
+											<p style="padding: 0px 10px 0px 10px;"> Good </p></td>
+											</tr>
+
+												<tr><td>
+											<svg width="40" height="40">
+  												<circle cx="20" cy="20" r="20" stroke="white" stroke-width="4" fill="#FDBB84" />
+											</svg></td><td>
+											<p style="padding: 0px 10px 0px 10px;"> Average </p></td>
+											</tr>
+
+												<tr><td>
+											<svg width="40" height="40">
+  												<circle cx="20" cy="20" r="20" stroke="white" stroke-width="4" fill="#E34833" />
+											</svg></td><td>
+											<p style="padding: 0px 10px 0px 10px;"> Bad </p></td>
+											</tr>
+											
+											</table>
+											
+										</div>
+										
+																	
+										
+														
+										
+														
+									</div>
+								</div>
+						</div>										
+						</div>
+					</div>
+
+					</div>
+					</div>
+
+					
+
+      <div class="row">
+                <div class="col-lg-12">
+
+                <div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">Municipal Money</span>
+							Application &copy; 2018
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ 
+
+
+    <!-- On-page sidebar toggle script and slider functionality -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#choroSlider").slider();
+    </script>
+
+  <script>
+
+
+
+// --- TopoJSON Extension to Leaflet.js ---
+L.TopoJSON = L.GeoJSON.extend({
+  addData: function(jsonData) {
+    if (jsonData.type === "Topology") {
+      for (key in jsonData.objects) {
+        geojson = topojson.feature(jsonData, jsonData.objects[key]);
+        L.GeoJSON.prototype.addData.call(this, geojson);
+      }
+    }
+    else {
+      L.GeoJSON.prototype.addData.call(this, jsonData);
+    }
+  }
+});
+
+
+
+// Global plotting variables
+var selectionType = "Geographic Exploration";
+
+var provinceColourKey = {{province_ave|safe}};
+
+
+var municipalColourKey = {{municipality_pre|safe}};
+
+
+console.log(provinceColourKey)
+
+
+console.log(municipalColourKey)
+
+// iterate through the list both in the municipal and provincial layer
+function getvalues(dict) {
+  var efficiencydict = {};
+  var wellbeingdict = {};
+  var employmentdict = {};
+
+  for ( const [key, value] of Object.entries(dict)) {
+    for (i=0; i<value.length;i++) {
+
+      if (i==0 ) {efficiencydict[key] = value[0];}
+      
+
+      if (i==1) {wellbeingdict [key] = value[1];}
+      
+      else {employmentdict [key] = value[2]}
+
+    
+     
+  }
+  }
+  return [efficiencydict, wellbeingdict, employmentdict];
+};
+
+
+
+
+
+
+
+efficiencydictProv = getvalues(provinceColourKey)[0]
+wellbeingdictProv  = getvalues(provinceColourKey)[1]
+opportunitydictProv = getvalues(provinceColourKey)[2]
+
+
+
+efficiencydictmun = getvalues(municipalColourKey)[0]
+wellbeingdictmun  = getvalues(municipalColourKey)[1]
+opportunitydictmun = getvalues(municipalColourKey)[2]
+
+
+
+
+var efficiencyprovinceColourKey = efficiencydictProv;
+var efficiencymunicipalColourKey = efficiencydictmun;
+
+
+
+var wellbeingprovinceColourKey = wellbeingdictProv;
+var wellbeingmunicipalColourKey = wellbeingdictmun;
+
+var oppoprovinceColourKey = opportunitydictProv;
+var oppomunicipalColourKey = opportunitydictmun;
+
+// Mapbox background Layer
+var mabboxAccessToken = 'pk.eyJ1IjoiZ2VycmFuZGoiLCJhIjoiY2lqYjc3amw3MDAzYXc5a3FkZzRlamxzciJ9.rc_DQCZVVVKBuhvBl0Hibg';
+
+var map = L.map('map').setView([-29.748627, 25.277189], 5);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mabboxAccessToken, {
+    id: 'mapbox.emerald',
+    attribution:'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery &copy <a href="http://mapbox.com">Mapbox</a>',
+  }).addTo(map);
+
+L.control.scale().addTo(map);
+
+
+
+function Mapsofmaps(provinceColourKey,municipalColourKey,legclear,measure){
+
+  if(legclear == 'other')
+  {
+            Element.prototype.remove = function() {
+            this.parentElement.removeChild(this);
+        }
+        NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+            for(var i = this.length - 1; i >= 0; i--) {
+                if(this[i] && this[i].parentElement) {
+                    this[i].parentElement.removeChild(this[i]);
+                }
+            }
+      }
+      document.getElementsByClassName('leaflet-control-layers leaflet-control').remove();
+      document.getElementsByClassName('info leaflet-control').remove();
+  }
+
+
+
+
+
+
+
+
+
+// Slider layer functionality
+var globalOpacity = 1.0;
+$("#choroSlider").on("slide",function(slideEvent){
+  globalOpacity = slideEvent.value;
+});
+
+
+// Helper functions
+function getMinMax(array) {
+  var min = Infinity, max = -Infinity, item;
+  for (item in array){
+    if (array[item] < min) min = array[item];
+    if (array[item] > max) max = array[item];
+  }
+  return[min,max];
+};
+
+function createColourScale(colourArray){
+  // Chroma.js scale
+  var domain = getMinMax(colourArray);
+  var colorScale = chroma
+  .scale(['#E34833', '#FDBB84', '#FEE8C8'], [0, .7, 1])
+  // .scale(['#ffffff', '#f70a0a'], [0, 1])
+  .domain([domain[0],domain[1]]);
+
+  return colorScale;
+}
+
+
+
+var topoLayer = new L.TopoJSON();
+
+var topoLayer1 = new L.TopoJSON();
+
+function CreateProvinceLayer (){
+  //var topoLayer = new L.TopoJSON();
+  $.getJSON("{% static 'data/provinces.topojson' %}")
+    .done(addTopoData);
+    function addTopoData(topoData){
+      topoLayer.addData(topoData);
+      topoLayer.addTo(map);
+      topoLayer.eachLayer(handleProvinceLayer);
+    }
+}//CreateProvinceLAyer
+
+
+
+
+
+
+function CreateMunicipalLayer (){
+  //var topoLayer = new L.TopoJSON();
+  $.getJSON("{% static 'data/municipalities.topojson' %}").done(addTopoData);
+    function addTopoData(topoData){
+      topoLayer1.addData(topoData);
+      topoLayer1.addTo(map);
+      topoLayer1.eachLayer(handleMunicipalLayer);
+    }
+}//CreateMunicipalLayer
+
+
+
+// efficiencydictProv = getvalues(provinceColourKey)[0]
+// wellbeingdictProv  = getvalues(provinceColourKey)[1]
+// opportunitydictProv = getvalues(provinceColourKey)[2]
+
+
+
+// efficiencydictmun = getvalues(municipalColourKey)[0]
+// wellbeingdictmun  = getvalues(municipalColourKey)[1]
+// opportunitydictmun = getvalues(municipalColourKey)[2]
+
+
+// var efficiencies = L.layerGroup([efficiencydictProv, efficiencydictmun]);
+// var wellbeings = L.layerGroup([wellbeingdictProv, wellbeingdictmun]);
+// var employments = L.layerGroup([opportunitydictProv, opportunitydictmun]);
+
+var overlayMaps = {
+  "Municipality": topoLayer1,
+  "Province": topoLayer
+  };
+ 
+
+var baseMaps = {
+
+    };
+
+
+
+L.control.layers(baseMaps,overlayMaps).addTo(map);
+
+
+
+
+
+
+
+
+            function clearMap (){
+              var topoLayer = new L.TopoJSON();
+              map.eachLayer(function(layer){
+                  map.removeLayer(layer);
+                })
+
+                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mabboxAccessToken, {
+                    id: 'mapbox.emerald',
+                    attribution:'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                      'Imagery � <a href="http://mapbox.com">Mapbox</a>',
+                }).addTo(map);
+                legend.reset();
+              } //Clear Map
+
+            function handleProvinceLayer(layer){
+                var colorScale = createColourScale(provinceColourKey);
+                if (provinceColourKey[layer.feature.properties.PROVINCE] == 0) {
+                  var fillColor = '';
+                }else {
+                  var fillColor = colorScale(provinceColourKey[layer.feature.properties.PROVINCE]).hex();
+                }
+                layer.setStyle({
+                  fillColor: fillColor,
+                  fillOpacity: globalOpacity,
+                  color: 'rgb(50, 49, 50)',
+                  weight:1.5,
+                  dashArray:'0',
+                  opacity: 0.7
+                });
+
+                layer.on({
+                  mouseover: enterLayer,
+                  mouseout: leaveLayer,
+                  click: zoomToFeature
+                });
+
+
+
+            }//handleProvinceLayer
+
+            function handleMunicipalLayer(layer){
+                var colorScale = createColourScale(municipalColourKey);
+                var fillColor = colorScale(municipalColourKey[layer.feature.properties.MUNICNAME]).hex();
+                layer.setStyle({
+                  fillColor: fillColor,
+                  fillOpacity: globalOpacity,
+                  color: 'rgb(50, 49, 50)',
+                  weight:1.5,
+                  dashArray:'0',
+                  opacity: 0.7
+                });
+
+                layer.on({
+                  mouseover: enterLayer,
+                  mouseout: leaveLayer,
+                  click: zoomToFeature
+                });
+            }//handleLayer
+
+
+
+
+
+
+
+
+
+
+            // --- click functionality ---
+            function zoomToFeature(e){
+              map.fitBounds(e.target.getBounds());
+              if (typeof provinceColourKey[e.target.feature.properties.PROVINCE] === 'undefined'){
+               
+              }
+            }
+            // -------
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // ----Interactive tooltip: Leaflet Control-----
+            var info = L.control();
+            info.onAdd = function(map){
+              this._div = L.DomUtil.create('div','info');
+              info.update();
+
+              return this._div;
+
+
+
+            };
+            info.update = function (province,municipality) {
+              var infoString = "";
+              if (typeof provinceColourKey[province]  === "undefined"){
+                if (municipalColourKey[municipality] == undefined) {
+                  infoString = "N/A"
+                }else {
+                  infoString = municipalColourKey[municipality];
+                }
+              } else {
+                infoString = provinceColourKey[province];
+                municipality = "N/A";
+              }
+              this._div.innerHTML = '<h4> ' + selectionType + ' </h4>' + (province ? '<b> Province: </b>' + province + ' </br> </br> <b> Municipality: </b>' + municipality  + '</br> </br> <b>' + measure + ': </b> <h4>' + infoString.toFixed(2) + '%'+'</h4>':'Hover over a Province');
+            };
+            info.addTo(map);
+            // --------------
+
+            // ----Value Legend------
+              var legend = L.control({position: 'bottomright'});
+              legend.onAdd = function (map){
+                this._div = L.DomUtil.create('div', 'info legend');
+                grades = [];
+                for (var i = 0; i < grades.length; i++) {
+                  this._div.innerHTML +=
+                  '<i style="background:' + colorScale(grades[i]).hex() + '"></i> ' + grades[i] + (grades[i + 1]? '&ndash;' + grades[i + 1] + '<br>': '+');
+                }
+                return this._div;
+              };
+              legend.update = function(updateType, colorScale){
+                this._div.innerHTML = "";
+                var grades = [], range = [], numLedgendKeys = 6;
+                if (updateType == 'Provincial'){
+                  range = getMinMax(provinceColourKey);
+                }
+                if (updateType == 'Municipal'){
+                  range = getMinMax(municipalColourKey);
+                }
+                var base = range[0];
+                var increment = (range[1]-range[0])/numLedgendKeys;
+                for (var i = 0; i < numLedgendKeys; i++){
+                  grades.push(base);
+                  base += increment;
+                }
+                if (updateType == 'Provincial') {
+                  for (var i = 0; i < grades.length; i++) {
+                    this._div.innerHTML +=
+                      '<i style="background:' + colorScale(grades[i]).hex() + '"></i> ' + grades[i].formatRands() + (grades[i + 1]? ' &ndash; ' + grades[i + 1].formatRands() + '<br>': '+');
+                  }
+                }//if Provincial
+                if (updateType == 'Municipal') {
+                  for (var i = 0; i < grades.length; i++) {
+                    this._div.innerHTML +=
+                      '<i style="background:' + colorScale(grades[i]).hex() + '"></i> ' + grades[i].percentify() + (grades[i + 1]? ' &ndash; ' + grades[i + 1].percentify() + ' <br>': '');
+                  }
+                }
+
+              };
+              legend.reset = function(){
+                this._div.innerHTML = "";
+              }
+              legend.addTo(map);
+            // ----------------------
+
+
+
+
+
+
+
+
+
+
+            // --- Map hover functionality ---
+            function enterLayer(){
+              var MunicName = this.feature.properties.MUNICNAME;
+              var AreaName = this.feature.properties.PROVINCE;
+              console.log(MunicName)
+              this.bringToFront();
+              this.setStyle({
+                weight:3,
+                opacity:1,
+                dashArray:'0',
+                color: 'rgb(255, 255, 255)',
+                fillOpacity:0.5
+              });
+              info.update(AreaName, MunicName);
+            }
+
+            function leaveLayer(){
+              this.setStyle({
+                fillOpacity: globalOpacity,
+                color: 'rgb(50, 49, 50)',
+                weight:1.5,
+                dashArray:'0',
+                opacity: 0.7
+              });
+              info.update();
+            }
+
+
+CreateMunicipalLayer ();
+CreateProvinceLayer ();
+}
+
+
+
+var efficiencyprovinceColourKey = efficiencydictProv;
+var efficiencymunicipalColourKey = efficiencydictmun;
+
+
+
+var wellbeingprovinceColourKey = wellbeingdictProv;
+var wellbeingmunicipalColourKey = wellbeingdictmun;
+
+var oppoprovinceColourKey = opportunitydictProv;
+var oppomunicipalColourKey = opportunitydictmun;
+
+document.getElementById("eff").addEventListener("click", function() {
+    Mapsofmaps(efficiencyprovinceColourKey,efficiencymunicipalColourKey,"other",'Efficiency');
+}, false);
+
+document.getElementById("emp").addEventListener("click", function() {
+    Mapsofmaps(oppoprovinceColourKey,oppomunicipalColourKey,"other", 'Employment rate');
+}, false);
+document.getElementById("well").addEventListener("click", function() {
+    Mapsofmaps(wellbeingprovinceColourKey,wellbeingmunicipalColourKey,"other", 'Well-being');
+}, false);
+
+Mapsofmaps(efficiencyprovinceColourKey,efficiencymunicipalColourKey,"default",'Efficiency');
+
+// Mapsofmaps(wellbeingprovinceColourKey,wellbeingmunicipalColourKey);
+
+// Mapsofmaps(oppoprovinceColourKey,oppomunicipalColourKey);
+
+// document.getElementById('eff');
+
+
+
+  </script>
+
+
+
+</body>
+</html>

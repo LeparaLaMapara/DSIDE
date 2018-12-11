@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Incomes | Municipal Money</title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		
+		{% load staticfiles %}
+		<link rel='stylesheet' href="{% static 'assets/css/bootstrap.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/font-awesome/4.5.0/css/font-awesome.min.css' %}" type='text/css'>
+
+		
+		<link rel='stylesheet' href="{% static 'assets/css/fonts.googleapis.com.css' %}" type='text/css'>
+
+	
+		<link rel="stylesheet" href="{% static 'assets/css/ace.min.css' %}" class="ace-main-stylesheet" id="main-ace-style" />
+
+		
+		<link rel='stylesheet' href="{% static 'assets/css/ace-skins.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/css/ace-rtl.min.css' %}" type='text/css'>
+
+		
+		<script type="text/javascript" src="{% static 'assets/js/ace-extra.min.js' %}"></script>
+
+		<script src="//d3js.org/d3.v4.min.js"></script>	
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script> 
+		<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script>
+		<script type="text/javascript" src="{% static 'sunburst/sequences.js' %}"></script>
+		<script type="text/javascript" src="{% static 'sunburst/sequences2.js' %}"></script>
+		
+		<link rel='stylesheet' href="{% static 'income/income.css' %}" type='text/css'>
+		<!---<link rel='stylesheet' href="{% static 'sunburst/sequences.css' %}" type='text/css'> -->
+
+<style>
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+</style>
+
+	</head>
+
+
+		<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default          ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-header pull-left">
+					<a href=".." class="navbar-brand">
+						<small>
+							<i class="fa fa-university"></i>
+							Municipal Money
+						</small>
+					</a>
+				</div>
+
+				
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-facebook"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-twitter"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-skype"></i>
+						</button>
+
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-whatsapp"></i>
+						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="active">
+						<a href="..">
+							<i class="menu-icon fa fa-spinner"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="avarageProfile">
+							<i class="menu-icon fa fa-university"></i>
+							<span class="menu-text"> Profiles </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="SVMpage">
+							<i class="menu-icon fa fa-line-chart"></i>
+							<span class="menu-text"> Profile Predictions </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+					
+					<li class="">
+						<a href="classify">
+							<i class="menu-icon fa fa-bar-chart"></i>
+							<span class="menu-text"> Employment Predic... </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+
+
+					<li class="">
+						<a href="sunburst">
+							<i class="menu-icon fa fa-money"></i>
+							<span class="menu-text"> Income </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+					<li class="">
+						<a href="ExpenseSunburst">
+							<i class="menu-icon fa fa-cc-mastercard"></i>
+							<span class="menu-text"> Expenditure </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+						<li class="">
+						<a href="tree">
+							<i class="menu-icon fa fa-sitemap"></i>
+							<span class="menu-text"> Decision Tree </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+						<li class="">
+						<a href="document">
+							<i class="menu-icon fa fa-file-pdf-o"></i>
+							<span class="menu-text"> Documentations </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+</ul>
+
+							
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="..">Home</a>
+							</li>
+							<li class="active">Funding</li>
+						</ul><!-- /.breadcrumb -->
+						
+						
+						<div class="page-header">
+							<h1>
+								Income
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									Sources of Income for Municipalities
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+<div class="alert alert-block alert-success">
+									<button type="button" class="close" data-dismiss="alert">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+
+									<i class="ace-icon fa fa-check green"></i>
+
+									The 
+									<strong class="green">
+										Income proportions
+										<small> by profile </small>
+									</strong> Given municipal profiles,mthe source of municipal funding can be seen below. <a href="profiledoc"> click here </a>
+
+								</div>
+
+								<div class="col-sm-4">
+									<div id="sequence">
+									</div>
+									<div id="chart">
+											<div id ='profile1'>PROFILE 1</div>
+										<div id="explanation" style="visibility: hidden;">
+											<span id="percentage"></span><br/>
+											</br>						
+										</div>		
+									</div>
+									<!-- <div id ='profile3'>PROFILE 3</div> -->
+									
+								</div>
+									
+								
+								<div class="col-sm-1">
+								</div>
+				
+				
+								<div class="col-sm-4">
+									<div id="sequence1">
+									</div>
+									<div id="chart1">
+											<div id ='profile2'>PROFILE 2</div>
+										<div id="explanation1" style="visibility: hidden;">
+											<span id="percentage1"></span><br/>
+											</br>
+										</div>
+									</div>
+									<!-- <div id ='profile4'>PROFILE 4</div> -->
+									
+								</div>
+								
+								<!-- year links & explanations -->
+								<div class="col-sm-3"> 
+				
+									<div class="widget-box transparent">
+										<div class="widget-header">
+											<h4>Filter by Year</h4>
+										</div>
+				
+										<div class="widget-body">
+											<div class="widget-main no-padding">
+												<div id="external-events">
+				
+													<a href="sunburst">
+				
+														<div class="prf">
+															<i class="ace-icon fa fa-pie-chart"></i>
+															Average Profiles
+														</div>
+													</a>
+													
+													<a href="burst2012">
+				
+															<div class="prf">
+																<i class="ace-icon fa fa-pie-chart"></i>
+																Profiles | 2012
+															</div>
+													</a>
+													
+													
+													<a href="burst2013">
+				
+														<div class="prf">
+															<i class="ace-icon fa fa-pie-chart"></i>
+															Profiles | 2013
+														</div>
+													</a>
+				
+													<a href="burst2014">
+				
+														<div class="prf">
+															<i class="ace-icon fa fa-pie-chart"></i>
+															Profiles | 2014
+														</div>
+													</a>
+				
+													<a href="burst2015">
+				
+														<div class="prf">
+															<i class="ace-icon fa fa-pie-chart"></i>
+															Profiles | 2015
+														</div>
+													</a>
+												</div> <!-- external-events -->
+											</div> <!-- widget-main no-padding -->
+										</div> <!-- widget-body -->
+									</div>   <!--widget-box transparent -->
+									
+									
+										<div class="widget-header">
+												<h4>Income Description</h4>
+											</div>
+
+<div class="widget-body">
+												<div class="widget-main no-padding">
+													<div id="external-events">
+														<a href="profiledoc" id="OperatingTransfers">
+														<div class="OperatingTransfers">
+															<i class="ace-icon fa fa-book"></i>
+															Operating Transfers 
+														</div>
+														</a>
+														<a href="profiledoc" id="CapitalTransfers">
+
+														<div class="CapitalTransfers">
+															<i class="ace-icon fa fa-book"></i>
+															Capital Transfers
+														</div>
+														</a>
+														<a href="profiledoc" id="ServiceCharges">
+
+														<div class="ServiceCharges">
+															<i class="ace-icon fa fa-book"></i>
+															Service Charges
+														</div>
+														</a>
+														<a href="profiledoc" id="PropertyRates">
+
+														<div class="PropertyRates">
+															<i class="ace-icon fa fa-book"></i>
+															Property Rates
+														</div>
+														</a>		
+
+														<a href="profiledoc" id="OtherRev">
+
+														<div class="OtherRev">
+															<i class="ace-icon fa fa-book"></i>
+															Other Revenue
+														</div>
+														</a>		
+
+														<a href="profiledoc" id="InterestExternslInvest">
+
+														<div class="InterestExternslInvest">
+															<i class="ace-icon fa fa-book"></i>
+															Interest Earned - External Investments
+														</div>
+														</a>		
+
+														<a href="profiledoc" id="InterestEarnedDebt">
+
+														<div class="InterestEarnedDebt">
+															<i class="ace-icon fa fa-book"></i>
+															Interest Earned - Outstanding Debtors
+														</div>
+														</a>		
+
+														<a href="profiledoc" id="LicencePermits">
+
+														<div class="LicencePermits">
+															<i class="ace-icon fa fa-book"></i>
+															Licence Permits
+														</div>
+														</a>		
+
+														<a href="profiledoc" id="Fines" >
+
+														<div class="Fines">
+															<i class="ace-icon fa fa-book"></i>
+															Fines
+														</div>
+														</a>
+														
+														<a href="profiledoc" id="AgencyServices" >
+
+															<div class="AgencyServices">
+																<i class="ace-icon fa fa-book"></i>
+																Agency Services
+															</div>
+														</a>
+
+
+														<a href="profiledoc" id="PPEDisposalGain" >
+
+															<div class="PPEDisposalGain">
+																<i class="ace-icon fa fa-book"></i>
+																PPE Disposal Gain
+															</div>
+														</a>
+
+														<a href="profiledoc" id="RentFacilitiesEquip" >
+
+															<div class="RentFacilitiesEquip">
+																<i class="ace-icon fa fa-book"></i>
+																Facilities Equipment Rent
+															</div>
+														</a>
+
+														<a href="profiledoc" id="PropertyRatesPENALTY" >
+
+															<div class="PropertyRatesPENALTY">
+																<i class="ace-icon fa fa-book"></i>
+																Property Rates Penalty
+															</div>
+														</a>
+	
+													</div>
+												</div>
+											</div>
+								</div> <!-- col 3 -->	
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+						
+						<div class="row" ></div>
+
+						<div class="row" >
+								<div class="col-xs-12">
+										
+									<div class="col-sm-4">
+												<div id="sequence3">
+												</div>
+												<div id="chart3">
+														<div id ='profile3'>PROFILE 3</div>
+													<div id="explanation3" style="visibility: hidden;">
+														<span id="percentage3"></span><br/>
+														</br>						
+													</div>		
+												</div>	
+									</div>
+									
+									<div class="col-sm-1">
+									</div>
+
+									<div class="col-sm-4">
+											<div id ='profile4'>PROFILE 4</div>
+											
+											
+						 			</div>
+								</div>
+						</div>	
+						
+						<script type = "text/javascript"> text = {{data|safe}}; text1 = text[0]; total1 = text[1];
+						sequences(text1,'#chart', '#sequence', '#explanation', '#percentage', total1, 'container', 'trail', 'endlabel'); text2 = text[2];total2 = text[3]; 
+						sequences2(text2,'#chart1', '#sequence1', '#explanation1 ', '#percentage1', total2, 'container1', 'trail1', 'endlabel1'); text3 = text[4]; total3 = text[5];
+						sequences2(text3,'#chart3', '#sequence3', '#explanation3', '#percentage3', total3, 'container2', 'trail2', 'endlabel2')
+						</script>
+						<script type="text/javascript">
+						// Hack to make this example display correctly in an iframe on bl.ocks.org
+						d3.select(self.frameElement).style("height", "700px");
+						</script> 
+	
+						
+								<!-- PAGE CONTENT ENDS -->
+							
+					
+
+		<script type="text/javascript" src="{% static 'assets/js/bootstrap.min' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery-ui.custom.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.ui.touch-punch.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.easypiechart.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.sparkline.index.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.pie.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.resize.min.js' %}"></script>
+
+
+		<script src="{% static 'assets/js/ace-elements.min.js' %}"></script>
+		<script src="{% static 'assets/js/ace.min.js' %}"></script>
+
+		<!-- inline scripts related to this page -->
+		
+	</body>
+</html>

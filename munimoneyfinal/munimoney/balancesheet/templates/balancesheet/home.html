@@ -1,0 +1,27 @@
+var dsExample8 = new Spry.Data.JSONDataSet("balancesheet/static/json/result.js", { path: "items.item" });
+
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="javascrip.js"></script>
+
+<script>
+var mydata = JSON.parse(data);
+
+var jsonData = JSON.parse(theTextContentOfMyFile); 
+
+
+</script>
+
+<div class="liveSample" spry:region="dsExample8">
+	<table class="dataTable">
+		<tr>
+			<th spry:sort="id">size</th>
+			<th spry:sort="type">type</th>
+			<th spry:sort="name">name</th>
+		</tr>
+		<tr spry:repeat="dsExample8">
+			<td>{size}</td>
+			<td>{type}</td>
+			<td>{name}</td>
+		</tr>
+	</table>
+</div>

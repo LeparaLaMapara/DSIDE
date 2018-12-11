@@ -1,0 +1,36 @@
+{
+	"name":"DPME Data",
+	"children": [
+	{
+		"name":"Expenditure", "children":
+		[
+			{"name": "Department", "children": 
+			[
+				{"name": "Social Affairs", "size": 1}
+			]
+			},
+			{"name": "Municipal", "size": 1}
+		]
+	}, 
+	{
+		"name": "Census", "children":
+		[
+			{
+				"name": "Household", "children": 
+				[
+					{"name": "Income", "size": 1},
+					{"name": "Type of Dwelling", "size": 1},
+					{"name": "Services"}
+				]
+			},
+			{
+				"name": "Individual", "children": 
+				[
+					{"name": "Income", "size": 1},
+					{"name": "Personal Services", "size": 1}
+				]
+			}
+		]
+	}
+	]
+}

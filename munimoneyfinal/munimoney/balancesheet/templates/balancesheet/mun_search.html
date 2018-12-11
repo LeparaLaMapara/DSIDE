@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+           
+  </head>
+
+  <body class="no-skin">
+
+
+		<form id = "user_input" action = "/Searching" method = "post">{% csrf_token %}
+			<input type="text" list="municipalities" name = 'municipality'>
+
+			<datalist id="municipalities">
+				<option value="Buffalo City Metropolitan Municipality">
+				<option value="City of Cape Town Metropolitan Municipality">
+				<option value="City of Johannesburg Metropolitan Municipality">
+				<option value="City of Tshwane Metropolitan Municipality">
+				<option value="Ekurhuleni Metropolitan Municipality">
+				<option value="eThekwini Metropolitan Municipality">
+				<option value="Mangaung Metropolitan Municipality">
+				<option value="Nelson Mandela Bay Metropolitan Municipality">
+				<option value="Alfred Nzo District Municipality">
+				<option value="Amajuba District Municipality">
+				<option value="Amathole District Municipality">
+				<option value="Bojanala District Municipality">
+				<option value="Cape Winelands District Municipality">
+				<option value="Capricorn District Municipality">
+				<option value="Central Karoo District Municipality">
+				<option value="Chris Hani District Municipality">
+				<option value="Dr Kenneth Kaunda District Municipality">
+				<option value="Dr Ruth Segomotsi Mompati District Municipality">
+				<option value="Eden District Municipality">
+				<option value="Ehlanzeni District Municipality">
+				<option value="Fezile Dabi District Municipality">
+				<option value="Frances Baard District Municipality">
+				<option value="Gert Sibande District Municipality">
+				<option value="Harry Gwala District Municipality">
+				<option value="iLembe District Municipality">
+				<option value="Joe Gqabi District Municipality">
+				<option value="John Taolo Gaetsewe District Municipality">
+				<option value="King Cetshwayo District Municipality">
+				<option value="Lejweleputswa District Municipality">
+				<option value="Mopani District Municipality">
+				<option value="Namakwa District Municipality">
+				<option value="Ngaka Modiri Molema District Municipality">
+				<option value="Nkangala District Municipality">
+				<option value="OR Tambo District Municipality">
+				<option value="Overberg District Municipality">
+				<option value="Pixley ka Seme District Municipality">
+				<option value="Sarah Baartman District Municipality">
+				<option value="Sedibeng District Municipality">
+				<option value="Sekhukhune District Municipality">
+				<option value="Thabo Mofutsanyana District Municipality">
+				<option value="Ugu District Municipality">
+				<option value="uMgungundlovu District Municipality">
+				<option value="uMkhanyakude District Municipality">
+				<option value="uMzinyathi District Municipality">
+				<option value="uThukela District Municipality">
+				<option value="Vhembe District Municipality">
+				<option value="Waterberg District Municipality">
+				<option value="West Coast District Municipality">
+				<option value="West Rand District Municipality">
+				<option value="Xhariep District Municipality">
+				<option value="ZF Mgcawu District Municipality">
+				<option value="Zululand District Municipality">
+				<option value="Abaqulusi Local Municipality">
+				<option value="Albert Luthuli Local Municipality">
+				<option value="Alfred Duma Local Municipality">
+				<option value="Amahlathi Local Municipality">
+				<option value="Ba-Phalaborwa Local Municipality">
+				<option value="Beaufort West Local Municipality">
+				<option value="Bela-Bela Local Municipality">
+				<option value="Bergrivier Local Municipality">
+				<option value="Big Five Hlabisa Local Municipality">
+				<option value="Bitou Local Municipality">
+				<option value="Blouberg Local Municipality">
+				<option value="Blue Crane Route Local Municipality">
+				<option value="Breede Valley Local Municipality">
+				<option value="Bushbuckridge Local Municipality">
+				<option value="Cape Agulhas Local Municipality">
+				<option value="Cederberg Local Municipality">
+				<option value="City of Matlosana Local Municipality">
+				<option value="Collins Chabane Local Municipality">
+				<option value="Dannhauser Local Municipality">
+				<option value="Dawid Kruiper Local Municipality">
+				<option value="Dihlabeng Local Municipality">
+				<option value="Dikgatlong Local Municipality">
+				<option value="Dipaleseng Local Municipality">
+				<option value="Ditsobotla Local Municipality">
+				<option value="Dr Beyers Naud_ Local Municipality">
+				<option value="Dr JS Moroka Local Municipality">
+				<option value="Dr Nkosazana Dlamini Zuma Local Municipality">
+				<option value="Drakenstein Local Municipality">
+				<option value="eDumbe Local Municipality">
+				<option value="Elias Motsoaledi Local Municipality">
+				<option value="Elundini Local Municipality">
+				<option value="eMadlangeni Local Municipality">
+				<option value="Emakhazeni Local Municipality">
+				<option value="Emalahleni Local Municipality">
+				<option value="Emalahleni Local Municipality">
+				<option value="Emfuleni Local Municipality">
+				<option value="Emthanjeni Local Municipality">
+				<option value="Endumeni Local Municipality">
+				<option value="Engcobo Local Municipality">
+				<option value="Enoch Mgijima Local Municipality">
+				<option value="Ephraim Mogale Local Municipality">
+				<option value="Fetakgomo/Greater Tubatse Local Municipality">
+				<option value="Ga-Segonyana Local Municipality">
+				<option value="Gamagara Local Municipality">
+				<option value="George Local Municipality">
+				<option value="Govan Mbeki Local Municipality">
+				<option value="Great Kei Local Municipality">
+				<option value="Greater Giyani Local Municipality">
+				<option value="Greater Kokstad Local Municipality">
+				<option value="Greater Letaba Local Municipality">
+				<option value="Greater Taung Local Municipality">
+				<option value="Greater Tzaneen Local Municipality">
+				<option value="Hantam Local Municipality">
+				<option value="Hessequa Local Municipality">
+				<option value="Impendle Local Municipality">
+				<option value="Ingquza Hill Local Municipality">
+				<option value="Inkosi Langalibalele Local Municipality">
+				<option value="Intsika Yethu Local Municipality">
+				<option value="Inxuba Yethemba Local Municipality">
+				<option value="JB Marks Local Municipality">
+				<option value="Joe Morolong Local Municipality">
+				<option value="Jozini Local Municipality">
+				<option value="Kagisano-Molopo Local Municipality">
+				<option value="Kai Garib Local Municipality">
+				<option value="Kamiesberg Local Municipality">
+				<option value="Kannaland Local Municipality">
+				<option value="Kareeberg Local Municipality">
+				<option value="Karoo Hoogland Local Municipality">
+				<option value="Kgatelopele Local Municipality">
+				<option value="Kgetlengrivier Local Municipality">
+				<option value="Kh_i-Ma Local Municipality">
+				<option value="!Kheis Local Municipality">
+				<option value="King Sabata Dalindyebo Local Municipality">
+				<option value="Knysna Local Municipality">
+				<option value="Kopanong Local Municipality">
+				<option value="Kou-Kamma Local Municipality">
+				<option value="Kouga Local Municipality">
+				<option value="KwaDukuza Local Municipality">
+				<option value="vLaingsburg Local Municipality">
+				<option value="Langeberg Local Municipality">
+				<option value="Lekwa Local Municipality">
+				<option value="Lekwa-Teemane Local Municipality">
+				<option value="Lepelle-Nkumpi Local Municipality">
+				<option value="Lephalale Local Municipality">
+				<option value="Lesedi Local Municipality">
+				<option value="Letsemeng Local Municipality">
+				<option value="Madibeng Local Municipality">
+				<option value="Mafube Local Municipality">
+				<option value="Magareng Local Municipality">
+				<option value="Mahikeng Local Municipality">
+				<option value="Makana Local Municipality">
+				<option value="Makhado Local Municipality">
+				<option value="Makhuduthamaga Local Municipality">
+				<option value="Maluti-a-Phofung Local Municipality">
+				<option value="Mamusa Local Municipality">
+				<option value="Mandeni Local Municipality">
+				<option value="Mantsopa Local Municipality">
+				<option value="Maphumulo Local Municipality">
+				<option value="Maquassi Hills Local Municipality">
+				<option value="Maruleng Local Municipality">
+				<option value="Masilonyana Local Municipality">
+				<option value="Matatiele Local Municipality">
+				<option value="Matjhabeng Local Municipality">
+				<option value="Matzikama Local Municipality">
+				<option value="Mbhashe Local Municipality">
+				<option value="Mbizana Local Municipality">
+				<option value="Mbombela Local Municipality">
+				<option value="Merafong City Local Municipality">
+				<option value="Metsimaholo Local Municipality">
+				<option value="Mhlontlo Local Municipality">
+				<option value="Midvaal Local Municipality">
+				<option value="Mkhambathini Local Municipality">
+				<option value="Mkhondo Local Municipality">
+				<option value="Mnquma Local Municipality">
+				<option value="Modimolle/Mookgophong Local Municipality">
+				<option value="Mogalakwena Local Municipality">
+				<option value="Mogale City Local Municipality">
+				<option value="Mohokare Local Municipality">
+				<option value="Molemole Local Municipality">
+				<option value="Moqhaka Local Municipality">
+				<option value="Moretele Local Municipality">
+				<option value="Moses Kotane Local Municipality">
+				<option value="Mossel Bay Local Municipality">
+				<option value="Mpofana Local Municipality">
+				<option value="Msinga Local Municipality">
+				<option value="Msukaligwa Local Municipality">
+				<option value="Msunduzi Local Municipality">
+				<option value="Mthonjaneni Local Municipality">
+				<option value="Mtubatuba Local Municipality">
+				<option value="Musina Local Municipality">
+				<option value="Nala Local Municipality">
+				<option value="Naledi Local Municipality">
+				<option value="Nama Khoi Local Municipality">
+				<option value="Ndlambe Local Municipality">
+				<option value="Ndwedwe Local Municipality">
+				<option value="Newcastle Local Municipality">
+				<option value="Ngqushwa Local Municipality">
+				<option value="Ngwathe Local Municipality">
+				<option value="Nkandla Local Municipality">
+				<option value="Nketoana Local Municipality">
+				<option value="Nkomazi Local Municipality">
+				<option value="Nongoma Local Municipality">
+				<option value="Nqutu Local Municipality">
+				<option value="Ntabankulu Local Municipality">
+				<option value="Nyandeni Local Municipality">
+				<option value="Okhahlamba Local Municipality">
+				<option value="Oudtshoorn Local Municipality">
+				<option value="Overstrand Local Municipality">
+				<option value="Phokwane Local Municipality">
+				<option value="Phumelela Local Municipality">
+				<option value="Pixley ka Seme Local Municipality">
+				<option value="Polokwane Local Municipality">
+				<option value="Port St Johns Local Municipality">
+				<option value="Prince Albert Local Municipality">
+				<option value="Ramotshere Moiloa Local Municipality">
+				<option value="Rand West City Local Municipality">
+				<option value="Ratlou Local Municipality">
+				<option value="Ray Nkonyeni Local Municipality">
+				<option value="Raymond Mhlaba Local Municipality">
+				<option value="Renosterberg Local Municipality">
+				<option value="Richmond Local Municipality">
+				<option value="Richtersveld Local Municipality">
+				<option value="Locaakhisizwe Local Municipality">
+				<option value="Saldanha Bay Local Municipality">
+				<option value="Senqu Local Municipality">
+				<option value="Setsoto Local Municipality">
+				<option value="Local Municipality">
+				<option value="Siyathemba Local Municipality">
+				<option value="Sol Plaatje Local Municipality">
+				<option value="Stellenbosch Local Municipality">
+				<option value="Tshwete Local Municipality">
+				<option value="Sundays River Valley Local Municipality">
+				<option value="Swartland Local Municipality">
+				<option value="Swellendam Local Municipality">
+				<option value="Thaba Chweu Local Municipality">
+				<option value="Thabazimbi Local Municipality">
+				<option value="Theewaterskloof Local Municipality">
+				<option value="Thembelihle Local Municipality">
+				<option value="Thembisile Hani Local Municipality">
+				<option value="Thulamela Local Municipality">
+				<option value="Tokologo Local Municipality">
+				<option value="Tsantsabane Local Municipality">
+				<option value="Tswaing Local Municipality">
+				<option value="Tswelopele Local Municipality">
+				<option value="Ubuhlebezwe Local Municipality">
+				<option value="Ubuntu Local Municipality">
+				<option value="Ulundi Local Municipality">
+				<option value="Umdoni Local Municipality">
+				<option value="uMfolozi Local Municipality">
+				<option value="uMhlabuyalingana Local Municipality">
+				<option value="uMhlathuze Local Municipality">
+				<option value="uMlalazi Local Municipality">
+				<option value="uMngeni Local Municipality">
+				<option value="uMshwathi Local Municipality">
+				<option value="Local Municipality">
+				<option value="uMuziwabantu Local Municipality">
+				<option value="Umvoti Local Municipality">
+				<option value="Umzimkhulu Local Municipality">
+				<option value="Umzimvubu Local Municipality">
+				<option value="Umzumbe Local Municipality">
+				<option value="uPhongolo Local Municipality">
+				<option value="Victor Khanye Local Municipality">
+				<option value="Walter Sisulu Local Municipality">
+				<option value="Witzenberg Local Municipality">
+				<option value="Camdeboo Local Municipality">
+				<option value="Ikwezi Local Municipality">
+				<option value="Baviaans Local Municipality">
+				<option value="Nkonkobe Local Municipality">
+				<option value="Nxuba Local Municipality">
+				<option value="Tsolwana Local Municipality">
+				<option value="Inkwanca Local Municipality">
+				<option value="Lukhanji Local Municipality">
+				<option value="Maletswai Local Municipality">
+				<option value="Gariep Local Municipality">
+				<option value="Motheo District Municipality">
+				<option value="Naledi Local Municipality">
+				<option value="Metsweding District Municipality">
+				<option value="Nokeng tsa Taemane Local Municipality">
+				<option value="Kungwini Local Municipality">
+				<option value="Randfontein Local Municipality">
+				<option value="Westonaria Local Municipality">
+				<option value="Ezinqoleni Local Municipality">
+				<option value="Hibiscus Coast Local Municipality">
+				<option value="Vulamehlo Local Municipality">
+				<option value="Emnambithi/Ladysmith Local Municipality">
+				<option value="Indaka Local Municipality">
+				<option value="Umtshezi Local Municipality">
+				<option value="Imbabazane Local Municipality">
+				<option value="Big 5 False Bay Local Municipality">
+				<option value="Hlabisa Local Municipality">
+				<option value="Ntambanana Local Municipality">
+				<option value="Ingwe Local Municipality">
+				<option value="Kwa Sani Local Municipality">
+				<option value= "Bohlabela District Municipality">
+				<option value="Mutale Local Municipality">
+				<option value="Aganang Local Municipality">
+				<option value="Mookgopong Local Municipality">
+				<option value="Modimolle Local Municipality">
+				<option value="Fetakgomo Local Municipality">
+				<option value="Greater Tubatse Local Municipality">
+				<option value="Umjindi Local Municipality">
+				<option value="Kagisano Local Municipality">
+				<option value="Molopo Local Municipality">
+				<option value="Ventersdorp Local Municipality">
+				<option value="Tlokwe Local Municipality">
+				<option value="Mier Local Municipality">
+				<option value="Khara Hais Local Municipality">
+				<option value="Mbombela Local Municipality">
+		</datalist>
+
+		<input type="submit" name="upvote" value="Submit"/>
+</form>
+
+	<div id="output">
+		Municipality Information
+	</div>
+
+	<script>
+
+
+		$("#user_input").submit( function(e) {
+			e.preventDefault();
+			var data = $(this).serialize();
+			var url = $(this).attr("action");
+			$.post("../Searching", data, function(response) {
+				$("#output").text(response);
+                console.log(response)
+                //console.log(JSON.stringify(response))
+               
+			});
+
+			});
+			</script>
+
+</body>
+
+</html>

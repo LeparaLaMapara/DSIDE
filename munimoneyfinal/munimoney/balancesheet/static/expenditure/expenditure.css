@@ -1,0 +1,83 @@
+
+.WageSalaries {
+	background-color: #F4A460;
+	color: #000000;
+	margin: 0px 0px 05px 0px; 
+	}
+.OtherExp {
+	background-color: #5F9EA0;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.DepreciationImpairment {
+	background-color: #7b615c;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.BulkPurchases {
+	background-color: #9370DB;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.ContractedServices {
+	background-color: #5687d1;
+	color: #000000;
+	margin: 05px 0px 05px 02px; 
+	}
+.GrantsSubsedies {
+	background-color: #7b615c;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.LossDisposablePPE{
+	background-color: #F4A460;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.ProvisionContribution{
+	background-color: #E9967A;
+	color: 000000;
+	margin: 05px 0px 05px 02px; 
+	}
+.InterestExpense {
+	background-color: #de783b;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+    }
+    
+.CouncillorRemuneration {
+     background-color: #F08080;
+     color: #000000;
+     margin: 05px 0px 05px 0px; 
+     }
+    
+.SocialContributions {
+     background-color: #E9967A;
+    color: #000000;
+     margin: 05px 0px 05px 0px; 
+     }
+
+.DebtImpairment {
+    background-color: #bbbbbb;
+    color: #000000;
+     margin: 05px 0px 05px 0px; 
+    }
+ 
+.CollectionCosts {
+	background-color: #5F9EA0;
+	color: #000000;
+	 margin: 05px 0px 05px 0px; 
+	}
+
+.RedemptionPayment {
+	background-color: #B0C4DE;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+	
+	.OtherMaterials {
+	background-color: #E9967A;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+		

@@ -1,0 +1,1487 @@
+,mun_name,mun_code,account_type,label,total_amount,Province,Latitude,Longitude
+2013,Buffalo City,BUF,AUDA,Total By Income Source,1088904619,Eastern Cape,27.6434844,27.6434844
+2013,Buffalo City,BUF,AUDA,Total By Customer Group,1088904618,Eastern Cape,27.6434844,27.6434844
+2013,City of Cape Town,CPT,AUDA,Total By Income Source,6135323585,Western Cape,18.4680927,18.4680927
+2013,City of Cape Town,CPT,AUDA,Total By Customer Group,6135323583,Western Cape,18.4680927,18.4680927
+2013,West Coast,DC1,AUDA,Total By Income Source,7511253,Western Cape,18.6175626,18.6175626
+2013,West Coast,DC1,AUDA,Total By Customer Group,7511253,Western Cape,18.6175626,18.6175626
+2013,Cacadu,DC10,AUDA,Total By Income Source,22305346,Eastern Cape,25.6223644,25.6223644
+2013,Cacadu,DC10,AUDA,Total By Customer Group,22305346,Eastern Cape,25.6223644,25.6223644
+2013,Amathole,DC12,AUDA,Total By Income Source,368143463,Eastern Cape,27.3616476,27.3616476
+2013,Amathole,DC12,AUDA,Total By Customer Group,368143463,Eastern Cape,27.3616476,27.3616476
+2013,Chris Hani,DC13,AUDA,Total By Income Source,192686073,Eastern Cape,26.7967849,26.7967849
+2013,Chris Hani,DC13,AUDA,Total By Customer Group,192686073,Eastern Cape,26.7967849,26.7967849
+2013,Joe Gqabi,DC14,AUDA,Total By Income Source,24733476,Eastern Cape,26.9852422,26.9852422
+2013,Joe Gqabi,DC14,AUDA,Total By Customer Group,24733476,Eastern Cape,26.9852422,26.9852422
+2013,O.R.Tambo,DC15,AUDA,Total By Income Source,44932869,Eastern Cape,29.2320784,29.2320784
+2013,O.R.Tambo,DC15,AUDA,Total By Customer Group,44932869,Eastern Cape,29.2320784,29.2320784
+2013,Xhariep,DC16,AUDA,Total By Income Source,2652823,Free State,25.2837585,25.2837585
+2013,Xhariep,DC16,AUDA,Total By Customer Group,2652823,Free State,25.2837585,25.2837585
+2013,Lejweleputswa,DC18,AUDA,Total By Income Source,1557206,Free State,26.2304616,26.2304616
+2013,Lejweleputswa,DC18,AUDA,Total By Customer Group,1557206,Free State,26.2304616,26.2304616
+2013,Thabo Mofutsanyane,DC19,AUDA,Total By Income Source,3465234,Free State,28.299435,28.299435
+2013,Thabo Mofutsanyane,DC19,AUDA,Total By Customer Group,3465234,Free State,28.299435,28.299435
+2013,Cape Winelands,DC2,AUDA,Total By Income Source,128226,Western Cape,19.7591675,19.7591675
+2013,Cape Winelands,DC2,AUDA,Total By Customer Group,128226,Western Cape,19.7591675,19.7591675
+2013,Fezile Dabi,DC20,AUDA,Total By Income Source,0,Free State,27.7373373,27.7373373
+2013,Fezile Dabi,DC20,AUDA,Total By Customer Group,0,Free State,27.7373373,27.7373373
+2013,Ugu,DC21,AUDA,Total By Income Source,192964409,KwaZulu-Natal,30.2512728,30.2512728
+2013,Ugu,DC21,AUDA,Total By Customer Group,192964409,KwaZulu-Natal,30.2512728,30.2512728
+2013,Umgungundlovu,DC22,AUDA,Total By Income Source,300639467,KwaZulu-Natal,30.3435506,30.3435506
+2013,Umgungundlovu,DC22,AUDA,Total By Customer Group,300639467,KwaZulu-Natal,30.3435506,30.3435506
+2013,Umzinyathi,DC24,AUDA,Total By Income Source,175035387,KwaZulu-Natal,30.6199895,30.6199895
+2013,Umzinyathi,DC24,AUDA,Total By Customer Group,175035387,KwaZulu-Natal,30.6199895,30.6199895
+2013,Amajuba,DC25,AUDA,Total By Income Source,64385,KwaZulu-Natal,30.0665236,30.0665236
+2013,Amajuba,DC25,AUDA,Total By Customer Group,64385,KwaZulu-Natal,30.0665236,30.0665236
+2013,Zululand,DC26,AUDA,Total By Income Source,60597865,KwaZulu-Natal,31.4456179,31.4456179
+2013,Zululand,DC26,AUDA,Total By Customer Group,60597865,KwaZulu-Natal,31.4456179,31.4456179
+2013,Umkhanyakude,DC27,AUDA,Total By Income Source,14037124,KwaZulu-Natal,32.5372741,32.5372741
+2013,Umkhanyakude,DC27,AUDA,Total By Customer Group,14037124,KwaZulu-Natal,32.5372741,32.5372741
+2013,Uthungulu,DC28,AUDA,Total By Income Source,46489460,KwaZulu-Natal,31.5370003,31.5370003
+2013,Uthungulu,DC28,AUDA,Total By Customer Group,46489460,KwaZulu-Natal,31.5370003,31.5370003
+2013,iLembe,DC29,AUDA,Total By Income Source,146717363,KwaZulu-Natal,31.1710389,31.1710389
+2013,iLembe,DC29,AUDA,Total By Customer Group,146717363,KwaZulu-Natal,31.1710389,31.1710389
+2013,Overberg,DC3,AUDA,Total By Income Source,2618892,Western Cape,19.7591675,19.7591675
+2013,Overberg,DC3,AUDA,Total By Customer Group,2618892,Western Cape,19.7591675,19.7591675
+2013,Gert Sibande,DC30,AUDA,Total By Income Source,14000863,Mpumalanga,29.9740534,29.9740534
+2013,Gert Sibande,DC30,AUDA,Total By Customer Group,14000863,Mpumalanga,29.9740534,29.9740534
+2013,Nkangala,DC31,AUDA,Total By Income Source,22385917,Mpumalanga,29.6035495,29.6035495
+2013,Nkangala,DC31,AUDA,Total By Customer Group,22385917,Mpumalanga,29.6035495,29.6035495
+2013,Ehlanzeni,DC32,AUDA,Total By Income Source,4014219,Mpumalanga,31.2626366,31.2626366
+2013,Ehlanzeni,DC32,AUDA,Total By Customer Group,4014219,Mpumalanga,31.2626366,31.2626366
+2013,Mopani,DC33,AUDA,Total By Income Source,569520638,Limpopo,30.7160431,30.7160431
+2013,Mopani,DC33,AUDA,Total By Customer Group,569520638,Limpopo,30.7160431,30.7160431
+2013,Capricorn,DC35,AUDA,Total By Income Source,40250783,Limpopo,29.2320784,29.2320784
+2013,Capricorn,DC35,AUDA,Total By Customer Group,40250783,Limpopo,29.2320784,29.2320784
+2013,Waterberg,DC36,AUDA,Total By Income Source,4733,Limpopo,28.299435,28.299435
+2013,Waterberg,DC36,AUDA,Total By Customer Group,4733,Limpopo,28.299435,28.299435
+2013,Bojanala,DC37,AUDA,Total By Income Source,1239301,North West,27.3616476,27.3616476
+2013,Bojanala,DC37,AUDA,Total By Customer Group,1239301,North West,27.3616476,27.3616476
+2013,Ngaka Modiri Molema,DC38,AUDA,Total By Income Source,70183827,North West,25.8521764,25.8521764
+2013,Ngaka Modiri Molema,DC38,AUDA,Total By Customer Group,70183827,North West,25.8521764,25.8521764
+2013,Eden,DC4,AUDA,Total By Income Source,6282344,Western Cape,22.047637,22.047637
+2013,Eden,DC4,AUDA,Total By Customer Group,6282344,Western Cape,22.047637,22.047637
+2013,Dr Kenneth Kaunda,DC40,AUDA,Total By Income Source,2288053,North West,26.5137964,26.5137964
+2013,Dr Kenneth Kaunda,DC40,AUDA,Total By Customer Group,2288053,North West,26.5137964,26.5137964
+2013,Sedibeng,DC42,AUDA,Total By Income Source,9778790,Gauteng,28.2058768,28.2058768
+2013,Sedibeng,DC42,AUDA,Total By Customer Group,9778790,Gauteng,28.2058768,28.2058768
+2013,Harry Gwala,DC43,AUDA,Total By Income Source,80052307,KwaZulu-Natal,29.6035495,29.6035495
+2013,Harry Gwala,DC43,AUDA,Total By Customer Group,80052311,KwaZulu-Natal,29.6035495,29.6035495
+2013,Alfred Nzo,DC44,AUDA,Total By Income Source,16990585,Eastern Cape,28.8596804,28.8596804
+2013,Alfred Nzo,DC44,AUDA,Total By Customer Group,16990585,Eastern Cape,28.8596804,28.8596804
+2013,John Taolo Gaetsewe,DC45,AUDA,Total By Income Source,7197816,Northern Cape,23.1918021,23.1918021
+2013,John Taolo Gaetsewe,DC45,AUDA,Total By Customer Group,7197816,Northern Cape,23.1918021,23.1918021
+2013,Sekhukhune,DC47,AUDA,Total By Income Source,135695521,Limpopo,29.9740534,29.9740534
+2013,Sekhukhune,DC47,AUDA,Total By Customer Group,135695521,Limpopo,29.9740534,29.9740534
+2013,West Rand,DC48,AUDA,Total By Income Source,6282844,Gauteng,27.4556388,27.4556388
+2013,West Rand,DC48,AUDA,Total By Customer Group,6282844,Gauteng,27.4556388,27.4556388
+2013,Central Karoo,DC5,AUDA,Total By Income Source,368143,Western Cape,22.2384017,22.2384017
+2013,Central Karoo,DC5,AUDA,Total By Customer Group,368143,Western Cape,22.2384017,22.2384017
+2013,Pixley ka Seme,DC7,AUDA,Total By Income Source,260630,Northern Cape,23.3823545,23.3823545
+2013,Pixley ka Seme,DC7,AUDA,Total By Customer Group,260630,Northern Cape,23.3823545,23.3823545
+2013,Frances Baard,DC9,AUDA,Total By Income Source,2657909,Northern Cape,24.3341432,24.3341432
+2013,Frances Baard,DC9,AUDA,Total By Customer Group,2657909,Northern Cape,24.3341432,24.3341432
+2013,Dr Beyers Naude,EC101,AUDA,Total By Income Source,48044376,Eastern Cape,24.371068,24.371068
+2013,Dr Beyers Naude,EC101,AUDA,Total By Customer Group,48044376,Eastern Cape,24.3341432,24.3341432
+2013,Blue Crane Route,EC102,AUDA,Total By Income Source,38031334,Eastern Cape,24.371068,24.371068
+2013,Blue Crane Route,EC102,AUDA,Total By Customer Group,38031334,Eastern Cape,24.3341432,24.3341432
+2013,Ikwezi,EC103,AUDA,Total By Income Source,19826962,Eastern Cape,25.4733554,25.4733554
+2013,Ikwezi,EC103,AUDA,Total By Customer Group,19826962,Eastern Cape,25.4733554,25.4733554
+2013,Makana,EC104,AUDA,Total By Income Source,248612908,Eastern Cape,24.6192899,24.6192899
+2013,Makana,EC104,AUDA,Total By Customer Group,35191441,Eastern Cape,24.6192899,24.6192899
+2013,Sundays River Valley,EC106,AUDA,Total By Income Source,105159791,Eastern Cape,26.3249438,26.3249438
+2013,Sundays River Valley,EC106,AUDA,Total By Customer Group,105159791,Eastern Cape,26.3249438,26.3249438
+2013,Baviaans,EC107,AUDA,Total By Income Source,4690931,Eastern Cape,25.5681084,25.5681084
+2013,Baviaans,EC107,AUDA,Total By Customer Group,4690931,Eastern Cape,25.5681084,25.5681084
+2013,Kouga,EC108,AUDA,Total By Income Source,94581183,Eastern Cape,24.0488007,24.0488007
+2013,Kouga,EC108,AUDA,Total By Customer Group,94581183,Eastern Cape,24.0488007,24.0488007
+2013,Kou-Kamma,EC109,AUDA,Total By Income Source,38715446,Eastern Cape,24.8092691,24.8092691
+2013,Kou-Kamma,EC109,AUDA,Total By Customer Group,38715446,Eastern Cape,24.8092691,24.8092691
+2013,Mbhashe,EC121,AUDA,Total By Income Source,25844849,Eastern Cape,24.0488007,24.0488007
+2013,Mbhashe,EC121,AUDA,Total By Customer Group,25844849,Eastern Cape,24.0488007,24.0488007
+2013,Mnquma,EC122,AUDA,Total By Income Source,93770014,Eastern Cape,28.7664408,28.7664408
+2013,Mnquma,EC122,AUDA,Total By Customer Group,93770014,Eastern Cape,28.7664408,28.7664408
+2013,Amahlathi,EC124,AUDA,Total By Income Source,53578620,Eastern Cape,28.0186087,28.0186087
+2013,Amahlathi,EC124,AUDA,Total By Customer Group,53578620,Eastern Cape,28.0186087,28.0186087
+2013,Ngqushwa,EC126,AUDA,Total By Income Source,33962953,Eastern Cape,27.2676116,27.2676116
+2013,Ngqushwa,EC126,AUDA,Total By Customer Group,33962833,Eastern Cape,27.2676116,27.2676116
+2013,Nxuba,EC128,AUDA,Total By Income Source,17857119,Eastern Cape,27.2676116,27.2676116
+2013,Nxuba,EC128,AUDA,Total By Customer Group,0,Eastern Cape,27.2676116,27.2676116
+2013,Inxuba Yethemba,EC131,AUDA,Total By Income Source,219085107,Eastern Cape,26.3249438,26.3249438
+2013,Inxuba Yethemba,EC131,AUDA,Total By Customer Group,219085107,Eastern Cape,26.3249438,26.3249438
+2013,Tsolwana,EC132,AUDA,Total By Income Source,20589413,Eastern Cape,25.3785719,25.3785719
+2013,Tsolwana,EC132,AUDA,Total By Customer Group,20589413,Eastern Cape,25.3785719,25.3785719
+2013,Inkwanca,EC133,AUDA,Total By Income Source,48469313,Eastern Cape,26.1359431,26.1359431
+2013,Inkwanca,EC133,AUDA,Total By Customer Group,48469313,Eastern Cape,26.1359431,26.1359431
+2013,Lukanji,EC134,AUDA,Total By Income Source,470948343,Eastern Cape,26.5137964,26.5137964
+2013,Lukanji,EC134,AUDA,Total By Customer Group,470948343,Eastern Cape,26.5137964,26.5137964
+2013,Intsika Yethu,EC135,AUDA,Total By Income Source,15866552,Eastern Cape,26.8910342,26.8910342
+2013,Intsika Yethu,EC135,AUDA,Total By Customer Group,15866552,Eastern Cape,26.8910342,26.8910342
+2013,Emalahleni,EC136,AUDA,Total By Income Source,108595635,Eastern Cape,27.6434844,27.6434844
+2013,Emalahleni,EC136,AUDA,Total By Customer Group,108595635,Eastern Cape,27.6434844,27.6434844
+2013,Engcobo,EC137,AUDA,Total By Income Source,5824380,Eastern Cape,29.2553229,29.2553229
+2013,Engcobo,EC137,AUDA,Total By Customer Group,5824380,Eastern Cape,29.2553229,29.2553229
+2013,Elundini,EC141,AUDA,Total By Income Source,46550535,Eastern Cape,27.9834738,27.9834738
+2013,Elundini,EC141,AUDA,Total By Customer Group,46550535,Eastern Cape,27.9834738,27.9834738
+2013,Senqu,EC142,AUDA,Total By Income Source,19197787,Eastern Cape,28.3929417,28.3929417
+2013,Senqu,EC142,AUDA,Total By Customer Group,19197786,Eastern Cape,28.3929417,28.3929417
+2013,Maletswai,EC143,AUDA,Total By Income Source,8606124,Eastern Cape,27.6434844,27.6434844
+2013,Maletswai,EC143,AUDA,Total By Customer Group,8606125,Eastern Cape,27.6434844,27.6434844
+2013,Gariep,EC144,AUDA,Total By Income Source,8405082,Eastern Cape,26.8910342,26.8910342
+2013,Gariep,EC144,AUDA,Total By Customer Group,8405082,Eastern Cape,26.8910342,26.8910342
+2013,Nyandeni,EC155,AUDA,Total By Income Source,9422030,Eastern Cape,25.8521764,25.8521764
+2013,Nyandeni,EC155,AUDA,Total By Customer Group,9422030,Eastern Cape,25.8521764,25.8521764
+2013,Mhlontlo,EC156,AUDA,Total By Income Source,17736659,Eastern Cape,29.1390642,29.1390642
+2013,Mhlontlo,EC156,AUDA,Total By Customer Group,17736662,Eastern Cape,29.1390642,29.1390642
+2013,King Sabata Dalindyebo,EC157,AUDA,Total By Income Source,325379318,Eastern Cape,28.8130675,28.8130675
+2013,King Sabata Dalindyebo,EC157,AUDA,Total By Customer Group,325379318,Eastern Cape,28.8130675,28.8130675
+2013,Matatiele,EC441,AUDA,Total By Income Source,41432848,Eastern Cape,28.5797981,28.5797981
+2013,Matatiele,EC441,AUDA,Total By Customer Group,41432848,Eastern Cape,28.5797981,28.5797981
+2013,Umzimvubu,EC442,AUDA,Total By Income Source,43697803,Eastern Cape,28.7664408,28.7664408
+2013,Umzimvubu,EC442,AUDA,Total By Customer Group,43697803,Eastern Cape,28.7664408,28.7664408
+2013,Mbizana,EC443,AUDA,Total By Income Source,16234501,Eastern Cape,28.9528645,28.9528645
+2013,Mbizana,EC443,AUDA,Total By Customer Group,16234501,Eastern Cape,28.9528645,28.9528645
+2013,Ntabankulu,EC444,AUDA,Total By Income Source,7996761,Eastern Cape,29.8566142,29.8566142
+2013,Ntabankulu,EC444,AUDA,Total By Customer Group,0,Eastern Cape,29.8566142,29.8566142
+2013,Ekurhuleni,EKU,AUDA,Total By Income Source,10607561326,Eastern Cape,29.2785638,29.2785638
+2013,Ekurhuleni,EKU,AUDA,Total By Customer Group,10607561326,Eastern Cape,29.2785638,29.2785638
+2013,eThekwini,ETH,AUDA,Total By Income Source,9222895004,Gauteng,28.3461948,28.3461948
+2013,eThekwini,ETH,AUDA,Total By Customer Group,9222895004,Gauteng,28.3461948,28.3461948
+2013,Kopanong,FS162,AUDA,Total By Income Source,92073814,KwaZulu-Natal,30.8039474,30.8039474
+2013,Kopanong,FS162,AUDA,Total By Customer Group,92073814,KwaZulu-Natal,30.8039474,30.8039474
+2013,Masilonyana,FS181,AUDA,Total By Income Source,251014855,Free State,25.4733554,25.4733554
+2013,Masilonyana,FS181,AUDA,Total By Customer Group,251014855,Free State,25.4733554,25.4733554
+2013,Tokologo,FS182,AUDA,Total By Income Source,3681986,Free State,26.6081653,26.6081653
+2013,Tokologo,FS182,AUDA,Total By Customer Group,3681986,Free State,26.6081653,26.6081653
+2013,Tswelopele,FS183,AUDA,Total By Income Source,32568807,Free State,25.4733554,25.4733554
+2013,Tswelopele,FS183,AUDA,Total By Customer Group,32568807,Free State,25.4733554,25.4733554
+2013,Matjhabeng,FS184,AUDA,Total By Income Source,152118437,Free State,25.9467997,25.9467997
+2013,Matjhabeng,FS184,AUDA,Total By Customer Group,152118437,Free State,25.9467997,25.9467997
+2013,Setsoto,FS191,AUDA,Total By Income Source,211711851,Free State,26.8910342,26.8910342
+2013,Setsoto,FS191,AUDA,Total By Customer Group,211711851,Free State,26.8910342,26.8910342
+2013,Dihlabeng,FS192,AUDA,Total By Income Source,406637108,Free State,27.6434844,27.6434844
+2013,Dihlabeng,FS192,AUDA,Total By Customer Group,406637108,Free State,27.6434844,27.6434844
+2013,Maluti a Phofung,FS194,AUDA,Total By Income Source,130795325,Free State,28.2058768,28.2058768
+2013,Maluti a Phofung,FS194,AUDA,Total By Customer Group,130795325,Free State,28.2058768,28.2058768
+2013,Phumelela,FS195,AUDA,Total By Income Source,1190276,Free State,28.9528645,28.9528645
+2013,Phumelela,FS195,AUDA,Total By Customer Group,1190277,Free State,28.9528645,28.9528645
+2013,Mantsopa,FS196,AUDA,Total By Income Source,215032158,Free State,29.2320784,29.2320784
+2013,Mantsopa,FS196,AUDA,Total By Customer Group,215032158,Free State,29.2320784,29.2320784
+2013,Moqhaka,FS201,AUDA,Total By Income Source,56139304,Free State,27.2676116,27.2676116
+2013,Moqhaka,FS201,AUDA,Total By Customer Group,56139304,Free State,27.2676116,27.2676116
+2013,Ngwathe,FS203,AUDA,Total By Income Source,413801805,Free State,27.2676116,27.2676116
+2013,Ngwathe,FS203,AUDA,Total By Customer Group,413801805,Free State,27.2676116,27.2676116
+2013,Metsimaholo,FS204,AUDA,Total By Income Source,462785396,Free State,27.7373373,27.7373373
+2013,Metsimaholo,FS204,AUDA,Total By Customer Group,462785396,Free State,27.7373373,27.7373373
+2013,Mafube,FS205,AUDA,Total By Income Source,35257255,Free State,27.8277881,27.8277881
+2013,Mafube,FS205,AUDA,Total By Customer Group,35257255,Free State,27.8277881,27.8277881
+2013,Emfuleni,GT421,AUDA,Total By Income Source,2975456885,Free State,28.5797981,28.5797981
+2013,Emfuleni,GT421,AUDA,Total By Customer Group,2975456885,Free State,28.5797981,28.5797981
+2013,Midvaal,GT422,AUDA,Total By Income Source,150529466,Gauteng,27.784246,27.784246
+2013,Midvaal,GT422,AUDA,Total By Customer Group,150529465,Gauteng,27.784246,27.784246
+2013,Lesedi,GT423,AUDA,Total By Income Source,282018811,Gauteng,28.0654445,28.0654445
+2013,Lesedi,GT423,AUDA,Total By Customer Group,282018813,Gauteng,28.0654445,28.0654445
+2013,Mogale City,GT481,AUDA,Total By Income Source,921365974,Gauteng,28.4396756,28.4396756
+2013,Mogale City,GT481,AUDA,Total By Customer Group,921365974,Gauteng,28.4396756,28.4396756
+2013,Westonaria,GT483,AUDA,Total By Income Source,181151991,Gauteng,27.5965403,27.5965403
+2013,Westonaria,GT483,AUDA,Total By Customer Group,181151991,Gauteng,27.5965403,27.5965403
+2013,Merafong City,GT484,AUDA,Total By Income Source,793168534,Gauteng,27.666952,27.666952
+2013,Merafong City,GT484,AUDA,Total By Customer Group,793168533,Gauteng,27.666952,27.666952
+2013,City of Johannesburg,JHB,AUDA,Total By Income Source,18966059000,Gauteng,27.4086488,27.4086488
+2013,City of Johannesburg,JHB,AUDA,Total By Customer Group,18966059000,Gauteng,27.4086488,27.4086488
+2013,Vulamehlo,KZN211,AUDA,Total By Income Source,2034283,Gauteng,27.9717606,27.9717606
+2013,Vulamehlo,KZN211,AUDA,Total By Customer Group,2034283,Gauteng,27.9717606,27.9717606
+2013,Umdoni,KZN212,AUDA,Total By Income Source,46010872,KwaZulu-Natal,30.5739579,30.5739579
+2013,Umdoni,KZN212,AUDA,Total By Customer Group,46010872,KwaZulu-Natal,30.5739579,30.5739579
+2013,Umzumbe,KZN213,AUDA,Total By Income Source,2180192,KwaZulu-Natal,30.6890055,30.6890055
+2013,Umzumbe,KZN213,AUDA,Total By Customer Group,2180192,KwaZulu-Natal,30.6890055,30.6890055
+2013,uMuziwabantu,KZN214,AUDA,Total By Income Source,11910730,KwaZulu-Natal,30.5928401,30.5928401
+2013,uMuziwabantu,KZN214,AUDA,Total By Customer Group,11910730,KwaZulu-Natal,30.5928401,30.5928401
+2013,Ezingoleni,KZN215,AUDA,Total By Income Source,528467,KwaZulu-Natal,29.9277947,29.9277947
+2013,Ezingoleni,KZN215,AUDA,Total By Customer Group,528467,KwaZulu-Natal,29.9277947,29.9277947
+2013,Ray Nkonyeni,KZN216,AUDA,Total By Income Source,113077814,KwaZulu-Natal,30.182022,30.182022
+2013,Ray Nkonyeni,KZN216,AUDA,Total By Customer Group,113077814,KwaZulu-Natal,30.182022,30.182022
+2013,uMshwathi,KZN221,AUDA,Total By Income Source,57200528,KwaZulu-Natal,30.3639319,30.3639319
+2013,uMshwathi,KZN221,AUDA,Total By Customer Group,57200528,KwaZulu-Natal,30.3204873,30.3204873
+2013,uMngeni,KZN222,AUDA,Total By Income Source,65157350,KwaZulu-Natal,30.3639319,30.3639319
+2013,uMngeni,KZN222,AUDA,Total By Customer Group,65157351,KwaZulu-Natal,30.3204873,30.3204873
+2013,Mpofana,KZN223,AUDA,Total By Income Source,54511804,KwaZulu-Natal,30.5743164,30.5743164
+2013,Mpofana,KZN223,AUDA,Total By Customer Group,54511804,KwaZulu-Natal,30.5743164,30.5743164
+2013,Impendle,KZN224,AUDA,Total By Income Source,497294,KwaZulu-Natal,30.112735,30.112735
+2013,Impendle,KZN224,AUDA,Total By Customer Group,497294,KwaZulu-Natal,30.112735,30.112735
+2013,The Msunduzi,KZN225,AUDA,Total By Income Source,1214246938,KwaZulu-Natal,30.112735,30.112735
+2013,The Msunduzi,KZN225,AUDA,Total By Customer Group,1214246938,KwaZulu-Natal,30.112735,30.112735
+2013,Mkhambathini,KZN226,AUDA,Total By Income Source,3762191,KwaZulu-Natal,29.8352303,29.8352303
+2013,Mkhambathini,KZN226,AUDA,Total By Customer Group,3762191,KwaZulu-Natal,29.8352303,29.8352303
+2013,Richmond,KZN227,AUDA,Total By Income Source,6524448,KwaZulu-Natal,30.3824842,30.3824842
+2013,Richmond,KZN227,AUDA,Total By Customer Group,6524448,KwaZulu-Natal,30.3824842,30.3824842
+2013,Emnambithi/Ladysmith,KZN232,AUDA,Total By Income Source,130761144,KwaZulu-Natal,30.5739579,30.5739579
+2013,Emnambithi/Ladysmith,KZN232,AUDA,Total By Customer Group,130761144,KwaZulu-Natal,30.5739579,30.5739579
+2013,Indaka,KZN233,AUDA,Total By Income Source,1779396,KwaZulu-Natal,30.2974199,30.2974199
+2013,Indaka,KZN233,AUDA,Total By Customer Group,1779396,KwaZulu-Natal,30.2974199,30.2974199
+2013,Umtshezi,KZN234,AUDA,Total By Income Source,78024887,KwaZulu-Natal,29.7807856,29.7807856
+2013,Umtshezi,KZN234,AUDA,Total By Customer Group,78024887,KwaZulu-Natal,29.7807856,29.7807856
+2013,Okhahlamba,KZN235,AUDA,Total By Income Source,20063249,KwaZulu-Natal,30.107222,30.107222
+2013,Okhahlamba,KZN235,AUDA,Total By Customer Group,20063249,KwaZulu-Natal,30.107222,30.107222
+2013,Imbabazane,KZN236,AUDA,Total By Income Source,4874075,KwaZulu-Natal,30.0202964,30.0202964
+2013,Imbabazane,KZN236,AUDA,Total By Customer Group,4874075,KwaZulu-Natal,30.0202964,30.0202964
+2013,Endumeni,KZN241,AUDA,Total By Income Source,102137442,KwaZulu-Natal,29.3250347,29.3250347
+2013,Endumeni,KZN241,AUDA,Total By Customer Group,102137442,KwaZulu-Natal,29.3250347,29.3250347
+2013,Nqutu,KZN242,AUDA,Total By Income Source,10148231,KwaZulu-Natal,29.6864574,29.6864574
+2013,Nqutu,KZN242,AUDA,Total By Customer Group,10148231,KwaZulu-Natal,29.6864574,29.6864574
+2013,Umvoti,KZN245,AUDA,Total By Income Source,20733173,KwaZulu-Natal,30.2343393,30.2343393
+2013,Umvoti,KZN245,AUDA,Total By Customer Group,20733173,KwaZulu-Natal,30.2343393,30.2343393
+2013,Newcastle,KZN252,AUDA,Total By Income Source,787140251,KwaZulu-Natal,30.6746303,30.6746303
+2013,Newcastle,KZN252,AUDA,Total By Customer Group,787140251,KwaZulu-Natal,30.6746303,30.6746303
+2013,Emadlangeni,KZN253,AUDA,Total By Income Source,16264082,KwaZulu-Natal,30.6199895,30.6199895
+2013,Emadlangeni,KZN253,AUDA,Total By Customer Group,16264082,KwaZulu-Natal,30.6199895,30.6199895
+2013,Dannhauser,KZN254,AUDA,Total By Income Source,10977439,KwaZulu-Natal,29.9971769,29.9971769
+2013,Dannhauser,KZN254,AUDA,Total By Customer Group,10977439,KwaZulu-Natal,29.9971769,29.9971769
+2013,eDumbe,KZN261,AUDA,Total By Income Source,56653174,KwaZulu-Natal,30.315775,30.315775
+2013,eDumbe,KZN261,AUDA,Total By Customer Group,56653174,KwaZulu-Natal,30.315775,30.315775
+2013,uPhongolo,KZN262,AUDA,Total By Income Source,70045354,KwaZulu-Natal,30.0202964,30.0202964
+2013,uPhongolo,KZN262,AUDA,Total By Customer Group,70045354,KwaZulu-Natal,30.0202964,30.0202964
+2013,Abaqulusi,KZN263,AUDA,Total By Income Source,41822936,KwaZulu-Natal,30.8039474,30.8039474
+2013,Abaqulusi,KZN263,AUDA,Total By Customer Group,41822936,KwaZulu-Natal,30.8039474,30.8039474
+2013,Nongoma,KZN265,AUDA,Total By Income Source,15935913,KwaZulu-Natal,31.5370003,31.5370003
+2013,Nongoma,KZN265,AUDA,Total By Customer Group,15935913,KwaZulu-Natal,31.5370003,31.5370003
+2013,Ulundi,KZN266,AUDA,Total By Income Source,89817665,KwaZulu-Natal,30.9876321,30.9876321
+2013,Ulundi,KZN266,AUDA,Total By Customer Group,89817665,KwaZulu-Natal,30.9876321,30.9876321
+2013,Umhlabuyalingana,KZN271,AUDA,Total By Income Source,7203895,KwaZulu-Natal,31.7195459,31.7195459
+2013,Umhlabuyalingana,KZN271,AUDA,Total By Customer Group,7203895,KwaZulu-Natal,31.7195459,31.7195459
+2013,Jozini,KZN272,AUDA,Total By Income Source,36484033,KwaZulu-Natal,31.442761,31.442761
+2013,Jozini,KZN272,AUDA,Total By Customer Group,36484033,KwaZulu-Natal,31.442761,31.442761
+2013,The Big 5 False Bay,KZN273,AUDA,Total By Income Source,11427967,KwaZulu-Natal,32.4467238,32.4467238
+2013,The Big 5 False Bay,KZN273,AUDA,Total By Customer Group,11427967,KwaZulu-Natal,32.4467238,32.4467238
+2013,Hlabisa,KZN274,AUDA,Total By Income Source,1099638,KwaZulu-Natal,32.0650697,32.0650697
+2013,Hlabisa,KZN274,AUDA,Total By Customer Group,1099638,KwaZulu-Natal,32.0650697,32.0650697
+2013,Mtubatuba,KZN275,AUDA,Total By Income Source,40636062,KwaZulu-Natal,32.3107517,32.3107517
+2013,Mtubatuba,KZN275,AUDA,Total By Customer Group,40636062,KwaZulu-Natal,32.3107517,32.3107517
+2013,Mfolozi,KZN281,AUDA,Total By Income Source,4836455,KwaZulu-Natal,31.8648002,31.8648002
+2013,Mfolozi,KZN281,AUDA,Total By Customer Group,4836455,KwaZulu-Natal,31.8648002,31.8648002
+2013,uMhlathuze,KZN282,AUDA,Total By Income Source,163658328,KwaZulu-Natal,32.2880726,32.2880726
+2013,uMhlathuze,KZN282,AUDA,Total By Customer Group,163658328,KwaZulu-Natal,32.2880726,32.2880726
+2013,Ntambanana,KZN283,AUDA,Total By Income Source,1337259,KwaZulu-Natal,32.259717,32.259717
+2013,Ntambanana,KZN283,AUDA,Total By Customer Group,1337259,KwaZulu-Natal,32.259717,32.259717
+2013,uMlalazi,KZN284,AUDA,Total By Income Source,27523430,KwaZulu-Natal,31.947311,31.947311
+2013,uMlalazi,KZN284,AUDA,Total By Customer Group,27523430,KwaZulu-Natal,31.947311,31.947311
+2013,Mthonjaneni,KZN285,AUDA,Total By Income Source,7838144,KwaZulu-Natal,31.7394939,31.7394939
+2013,Mthonjaneni,KZN285,AUDA,Total By Customer Group,7838144,KwaZulu-Natal,31.7394939,31.7394939
+2013,Nkandla,KZN286,AUDA,Total By Income Source,16641806,KwaZulu-Natal,31.4913182,31.4913182
+2013,Nkandla,KZN286,AUDA,Total By Customer Group,16641806,KwaZulu-Natal,31.4913182,31.4913182
+2013,Mandeni,KZN291,AUDA,Total By Income Source,78177697,KwaZulu-Natal,31.3998995,31.3998995
+2013,Mandeni,KZN291,AUDA,Total By Customer Group,78177697,KwaZulu-Natal,31.3998995,31.3998995
+2013,Ndwedwe,KZN293,AUDA,Total By Income Source,7284759,KwaZulu-Natal,31.0894002,31.0894002
+2013,Ndwedwe,KZN293,AUDA,Total By Customer Group,7284759,KwaZulu-Natal,31.0894002,31.0894002
+2013,Maphumulo,KZN294,AUDA,Total By Income Source,4045047,KwaZulu-Natal,31.4684703,31.4684703
+2013,Maphumulo,KZN294,AUDA,Total By Customer Group,4045047,KwaZulu-Natal,31.4684703,31.4684703
+2013,Ingwe,KZN431,AUDA,Total By Income Source,5926864,KwaZulu-Natal,30.9417368,30.9417368
+2013,Ingwe,KZN431,AUDA,Total By Customer Group,5926864,KwaZulu-Natal,30.9417368,30.9417368
+2013,Kwa Sani,KZN432,AUDA,Total By Income Source,5442919,KwaZulu-Natal,31.03351,31.03351
+2013,Kwa Sani,KZN432,AUDA,Total By Customer Group,5442919,KwaZulu-Natal,31.03351,31.03351
+2013,Greater Kokstad,KZN433,AUDA,Total By Income Source,43501236,KwaZulu-Natal,29.8815203,29.8815203
+2013,Greater Kokstad,KZN433,AUDA,Total By Customer Group,43501236,KwaZulu-Natal,29.8815203,29.8815203
+2013,Ubuhlebezwe,KZN434,AUDA,Total By Income Source,13254458,KwaZulu-Natal,29.5107708,29.5107708
+2013,Ubuhlebezwe,KZN434,AUDA,Total By Customer Group,13254462,KwaZulu-Natal,29.5107708,29.5107708
+2013,Umzimkhulu,KZN435,AUDA,Total By Income Source,10547740,KwaZulu-Natal,29.3714909,29.3714909
+2013,Umzimkhulu,KZN435,AUDA,Total By Customer Group,10547740,KwaZulu-Natal,29.3714909,29.3714909
+2013,Greater Giyani,LIM331,AUDA,Total By Income Source,68282366,KwaZulu-Natal,30.0665236,30.0665236
+2013,Greater Giyani,LIM331,AUDA,Total By Customer Group,68282366,KwaZulu-Natal,30.0665236,30.0665236
+2013,Greater Letaba,LIM332,AUDA,Total By Income Source,60554051,KwaZulu-Natal,29.6962677,29.6962677
+2013,Greater Letaba,LIM332,AUDA,Total By Customer Group,60554051,KwaZulu-Natal,29.6962677,29.6962677
+2013,Greater Tzaneen,LIM333,AUDA,Total By Income Source,189300475,Limpopo,30.8039474,30.8039474
+2013,Greater Tzaneen,LIM333,AUDA,Total By Customer Group,189300475,Limpopo,30.8039474,30.8039474
+2013,Ba-Phalaborwa,LIM334,AUDA,Total By Income Source,306878683,Limpopo,30.2974199,30.2974199
+2013,Ba-Phalaborwa,LIM334,AUDA,Total By Customer Group,306878682,Limpopo,30.2974199,30.2974199
+2013,Maruleng,LIM335,AUDA,Total By Income Source,15310792,Limpopo,30.0665236,30.0665236
+2013,Maruleng,LIM335,AUDA,Total By Customer Group,15310792,Limpopo,30.0665236,30.0665236
+2013,Musina,LIM341,AUDA,Total By Income Source,19807,Limpopo,31.1406753,31.1406753
+2013,Musina,LIM341,AUDA,Total By Customer Group,0,Limpopo,31.1406753,31.1406753
+2013,Thulamela,LIM343,AUDA,Total By Income Source,213429318,Limpopo,30.9576681,30.9576681
+2013,Thulamela,LIM343,AUDA,Total By Customer Group,213429318,Limpopo,30.9576681,30.9576681
+2013,Makhado,LIM344,AUDA,Total By Income Source,226060496,Limpopo,29.6962677,29.6962677
+2013,Makhado,LIM344,AUDA,Total By Customer Group,226060496,Limpopo,29.6962677,29.6962677
+2013,Blouberg,LIM351,AUDA,Total By Income Source,36351007,Limpopo,30.6199895,30.6199895
+2013,Blouberg,LIM351,AUDA,Total By Customer Group,36351007,Limpopo,30.6199895,30.6199895
+2013,Aganang,LIM352,AUDA,Total By Income Source,48219777,Limpopo,29.9070436,29.9070436
+2013,Aganang,LIM352,AUDA,Total By Customer Group,48219777,Limpopo,29.9070436,29.9070436
+2013,Polokwane,LIM354,AUDA,Total By Income Source,576958507,Limpopo,28.9950702,28.9950702
+2013,Polokwane,LIM354,AUDA,Total By Customer Group,576958511,Limpopo,28.9950702,28.9950702
+2013,Mookgopong,LIM364,AUDA,Total By Income Source,30738682,Limpopo,29.0925356,29.0925356
+2013,Mookgopong,LIM364,AUDA,Total By Customer Group,30738682,Limpopo,29.0925356,29.0925356
+2013,Modimolle,LIM365,AUDA,Total By Income Source,92569066,Limpopo,29.4485367,29.4485367
+2013,Modimolle,LIM365,AUDA,Total By Customer Group,92569066,Limpopo,29.4485367,29.4485367
+2013,Bela-Bela,LIM366,AUDA,Total By Income Source,135552842,Limpopo,28.7664408,28.7664408
+2013,Bela-Bela,LIM366,AUDA,Total By Customer Group,135552842,Limpopo,28.7664408,28.7664408
+2013,Mogalakwena,LIM367,AUDA,Total By Income Source,284931662,Limpopo,28.2058768,28.2058768
+2013,Mogalakwena,LIM367,AUDA,Total By Customer Group,284931662,Limpopo,28.2058768,28.2058768
+2013,Elias Motsoaledi,LIM472,AUDA,Total By Income Source,777293638,Limpopo,28.2526623,28.2526623
+2013,Elias Motsoaledi,LIM472,AUDA,Total By Customer Group,777293638,Limpopo,28.2526623,28.2526623
+2013,Makhuduthamaga,LIM473,AUDA,Total By Income Source,113615021,Limpopo,29.0138916,29.0138916
+2013,Makhuduthamaga,LIM473,AUDA,Total By Customer Group,113615021,Limpopo,29.0138916,29.0138916
+2013,Mangaung,MAN,AUDA,Total By Income Source,2329288456,Limpopo,29.3949458,29.3949458
+2013,Mangaung,MAN,AUDA,Total By Customer Group,2329288456,Limpopo,29.3949458,29.3949458
+2013,Chief Albert Luthuli,MP301,AUDA,Total By Income Source,287939225,Limpopo,29.8352303,29.8352303
+2013,Chief Albert Luthuli,MP301,AUDA,Total By Customer Group,287939225,Limpopo,29.8352303,29.8352303
+2013,Msukaligwa,MP302,AUDA,Total By Income Source,283506425,Free State,26.3249438,26.3249438
+2013,Msukaligwa,MP302,AUDA,Total By Customer Group,283506425,Free State,26.3249438,26.3249438
+2013,Mkhondo,MP303,AUDA,Total By Income Source,13738613,Mpumalanga,30.3325113,30.3325113
+2013,Mkhondo,MP303,AUDA,Total By Customer Group,13738613,Mpumalanga,30.3325113,30.3325113
+2013,Dr Pixley Ka Isaka Seme,MP304,AUDA,Total By Income Source,148411343,Mpumalanga,30.0665236,30.0665236
+2013,Dr Pixley Ka Isaka Seme,MP304,AUDA,Total By Customer Group,148411343,Mpumalanga,30.0665236,30.0665236
+2013,Lekwa,MP305,AUDA,Total By Income Source,337361849,Mpumalanga,30.6199895,30.6199895
+2013,Lekwa,MP305,AUDA,Total By Customer Group,337361847,Mpumalanga,30.6199895,30.6199895
+2013,Dipaleseng,MP306,AUDA,Total By Income Source,241186365,Mpumalanga,29.8815203,29.8815203
+2013,Dipaleseng,MP306,AUDA,Total By Customer Group,241186366,Mpumalanga,29.8815203,29.8815203
+2013,Govan Mbeki,MP307,AUDA,Total By Income Source,675648850,Mpumalanga,29.3250347,29.3250347
+2013,Govan Mbeki,MP307,AUDA,Total By Customer Group,675648850,Mpumalanga,29.3250347,29.3250347
+2013,Steve Tshwete,MP313,AUDA,Total By Income Source,72971850,Mpumalanga,28.5797981,28.5797981
+2013,Steve Tshwete,MP313,AUDA,Total By Customer Group,72971850,Mpumalanga,28.5797981,28.5797981
+2013,Emakhazeni,MP314,AUDA,Total By Income Source,100264738,Mpumalanga,29.1390642,29.1390642
+2013,Emakhazeni,MP314,AUDA,Total By Customer Group,100264738,Mpumalanga,29.1390642,29.1390642
+2013,Thembisile,MP315,AUDA,Total By Income Source,223751147,Mpumalanga,29.4681751,29.4681751
+2013,Thembisile,MP315,AUDA,Total By Customer Group,223751147,Mpumalanga,29.4681751,29.4681751
+2013,Dr JS Moroka,MP316,AUDA,Total By Income Source,33683669,Mpumalanga,30.0665236,30.0665236
+2013,Dr JS Moroka,MP316,AUDA,Total By Customer Group,33683669,Mpumalanga,30.0665236,30.0665236
+2013,Thaba Chweu,MP321,AUDA,Total By Income Source,61660689,Mpumalanga,28.9062794,28.9062794
+2013,Thaba Chweu,MP321,AUDA,Total By Customer Group,61660689,Mpumalanga,28.9062794,28.9062794
+2013,Mbombela,MP322,AUDA,Total By Income Source,431807262,Mpumalanga,28.8130675,28.8130675
+2013,Mbombela,MP322,AUDA,Total By Customer Group,431807266,Mpumalanga,28.8130675,28.8130675
+2013,Umjindi,MP323,AUDA,Total By Income Source,75788654,Mpumalanga,30.7791913,30.7791913
+2013,Umjindi,MP323,AUDA,Total By Customer Group,75788654,Mpumalanga,30.7791913,30.7791913
+2013,Nkomazi,MP324,AUDA,Total By Income Source,48328843,Mpumalanga,31.03351,31.03351
+2013,Nkomazi,MP324,AUDA,Total By Customer Group,48328843,Mpumalanga,31.03351,31.03351
+2013,Bushbuckridge,MP325,AUDA,Total By Income Source,1003801845,Mpumalanga,31.7195459,31.7195459
+2013,Bushbuckridge,MP325,AUDA,Total By Customer Group,1003801845,Mpumalanga,31.7195459,31.7195459
+2013,Nama Khoi,NC062,AUDA,Total By Income Source,49370278,Mpumalanga,31.1710389,31.1710389
+2013,Nama Khoi,NC062,AUDA,Total By Customer Group,49370278,Mpumalanga,31.1710389,31.1710389
+2013,Kamiesberg,NC064,AUDA,Total By Income Source,28949436,Northern Cape,17.8583868,17.8583868
+2013,Kamiesberg,NC064,AUDA,Total By Customer Group,28949436,Northern Cape,17.8583868,17.8583868
+2013,Hantam,NC065,AUDA,Total By Income Source,30720621,Northern Cape,17.8583868,17.8583868
+2013,Hantam,NC065,AUDA,Total By Customer Group,30720621,Northern Cape,17.8583868,17.8583868
+2013,Karoo Hoogland,NC066,AUDA,Total By Income Source,17089113,Northern Cape,19.949686,19.949686
+2013,Karoo Hoogland,NC066,AUDA,Total By Customer Group,17089113,Northern Cape,19.949686,19.949686
+2013,Khâi-Ma,NC067,AUDA,Total By Income Source,19147543,Northern Cape,20.902977,20.902977
+2013,Khâi-Ma,NC067,AUDA,Total By Customer Group,19147543,Northern Cape,20.902977,20.902977
+2013,Ubuntu,NC071,AUDA,Total By Income Source,35712077,Northern Cape,19.237649,19.237649
+2013,Ubuntu,NC071,AUDA,Total By Customer Group,35712077,Northern Cape,19.237649,19.237649
+2013,Emthanjeni,NC073,AUDA,Total By Income Source,52320139,Northern Cape,23.1918021,23.1918021
+2013,Emthanjeni,NC073,AUDA,Total By Customer Group,52320139,Northern Cape,23.1918021,23.1918021
+2013,Kareeberg,NC074,AUDA,Total By Income Source,4557768,Northern Cape,24.0087533,24.0087533
+2013,Kareeberg,NC074,AUDA,Total By Customer Group,4557766,Northern Cape,24.0087533,24.0087533
+2013,Thembelihle,NC076,AUDA,Total By Income Source,1192529,Northern Cape,22.047637,22.047637
+2013,Thembelihle,NC076,AUDA,Total By Customer Group,1192529,Northern Cape,22.047637,22.047637
+2013,Siyancuma,NC078,AUDA,Total By Income Source,65711408,Northern Cape,23.8584737,23.8584737
+2013,Siyancuma,NC078,AUDA,Total By Customer Group,65711408,Northern Cape,23.8584737,23.8584737
+2013,Mier,NC081,AUDA,Total By Income Source,22673951,Northern Cape,23.4776098,23.4776098
+2013,Mier,NC081,AUDA,Total By Customer Group,22673951,Northern Cape,23.4776098,23.4776098
+2013,//Khara Hais,NC083,AUDA,Total By Income Source,42622586,Northern Cape,20.2832217,20.2832217
+2013,//Khara Hais,NC083,AUDA,Total By Customer Group,42622586,Northern Cape,20.2832217,20.2832217
+2013,!Kheis,NC084,AUDA,Total By Income Source,32095384,Northern Cape,21.242665,21.242665
+2013,!Kheis,NC084,AUDA,Total By Customer Group,32095384,Northern Cape,21.242665,21.242665
+2013,Tsantsabane,NC085,AUDA,Total By Income Source,93048836,Northern Cape,21.6660725,21.6660725
+2013,Tsantsabane,NC085,AUDA,Total By Customer Group,93048836,Northern Cape,21.6660725,21.6660725
+2013,Kgatelopele,NC086,AUDA,Total By Income Source,29284718,Northern Cape,23.1918021,23.1918021
+2013,Kgatelopele,NC086,AUDA,Total By Customer Group,29284718,Northern Cape,23.1918021,23.1918021
+2013,Sol Plaatjie,NC091,AUDA,Total By Income Source,792236481,Northern Cape,23.6680747,23.6680747
+2013,Sol Plaatjie,NC091,AUDA,Total By Customer Group,792236481,Northern Cape,23.6680747,23.6680747
+2013,Magareng,NC093,AUDA,Total By Income Source,4614552,Northern Cape,24.6667939,24.6667939
+2013,Magareng,NC093,AUDA,Total By Customer Group,4614552,Northern Cape,24.6667939,24.6667939
+2013,Joe Morolong,NC451,AUDA,Total By Income Source,128416433,Northern Cape,24.7617836,24.7617836
+2013,Joe Morolong,NC451,AUDA,Total By Customer Group,128416433,Northern Cape,24.7617836,24.7617836
+2013,Ga-Segonyana,NC452,AUDA,Total By Income Source,15465161,Northern Cape,23.287085,23.287085
+2013,Ga-Segonyana,NC452,AUDA,Total By Customer Group,15465161,Northern Cape,23.287085,23.287085
+2013,Nelson Mandela Bay,NMA,AUDA,Total By Income Source,2197406675,Northern Cape,23.4776098,23.4776098
+2013,Nelson Mandela Bay,NMA,AUDA,Total By Customer Group,2197406675,Northern Cape,23.4776098,23.4776098
+2013,Moretele,NW371,AUDA,Total By Income Source,14781634,Eastern Cape,25.5681084,25.5681084
+2013,Moretele,NW371,AUDA,Total By Customer Group,14781634,Eastern Cape,25.5681084,25.5681084
+2013,Local Municipality of Madibeng,NW372,AUDA,Total By Income Source,41158804,North West,27.9717606,27.9717606
+2013,Local Municipality of Madibeng,NW372,AUDA,Total By Customer Group,41158804,North West,27.9717606,27.9717606
+2013,Rustenburg,NW373,AUDA,Total By Income Source,1810523982,North West,27.8311428,27.8311428
+2013,Rustenburg,NW373,AUDA,Total By Customer Group,1810523983,North West,27.8311428,27.8311428
+2013,Kgetlengrivier,NW374,AUDA,Total By Income Source,81312030,North West,27.2676116,27.2676116
+2013,Kgetlengrivier,NW374,AUDA,Total By Customer Group,81312030,North West,27.2676116,27.2676116
+2013,Tswaing,NW382,AUDA,Total By Income Source,167290587,North West,26.8910342,26.8910342
+2013,Tswaing,NW382,AUDA,Total By Customer Group,167290587,North West,26.8910342,26.8910342
+2013,Mafikeng,NW383,AUDA,Total By Income Source,92576515,North West,25.7575196,25.7575196
+2013,Mafikeng,NW383,AUDA,Total By Customer Group,92576515,North West,25.7575196,25.7575196
+2013,Ditsobotla,NW384,AUDA,Total By Income Source,309537398,North West,25.5681084,25.5681084
+2013,Ditsobotla,NW384,AUDA,Total By Customer Group,309537398,North West,25.5681084,25.5681084
+2013,Ramotshere Moiloa,NW385,AUDA,Total By Income Source,121349895,North West,26.1359431,26.1359431
+2013,Ramotshere Moiloa,NW385,AUDA,Total By Customer Group,121349895,North West,26.1359431,26.1359431
+2013,Naledi,NW392,AUDA,Total By Income Source,200270838,North West,26.10005,26.10005
+2013,Naledi,NW392,AUDA,Total By Customer Group,200270837,North West,26.10005,26.10005
+2013,Greater Taung,NW394,AUDA,Total By Income Source,26550250,North West,24.7142918,24.7142918
+2013,Greater Taung,NW394,AUDA,Total By Customer Group,26550250,North West,24.7142918,24.7142918
+2013,Kagisano/Molopo,NW397,AUDA,Total By Income Source,7629217,North West,24.2390498,24.2390498
+2013,Kagisano/Molopo,NW397,AUDA,Total By Customer Group,7629217,North West,24.2390498,24.2390498
+2013,Ventersdorp,NW401,AUDA,Total By Income Source,45773120,North West,23.9536466,23.9536466
+2013,Ventersdorp,NW401,AUDA,Total By Customer Group,45773120,North West,23.9536466,23.9536466
+2013,City of Matlosana,NW403,AUDA,Total By Income Source,997139838,North West,26.8910342,26.8910342
+2013,City of Matlosana,NW403,AUDA,Total By Customer Group,997139838,North West,26.8910342,26.8910342
+2013,Maquassi Hills,NW404,AUDA,Total By Income Source,360385303,North West,26.5137964,26.5137964
+2013,Maquassi Hills,NW404,AUDA,Total By Customer Group,360385303,North West,26.5137964,26.5137964
+2013,City of Tshwane,TSH,AUDA,Total By Income Source,7111429701,North West,26.1359431,26.1359431
+2013,City of Tshwane,TSH,AUDA,Total By Customer Group,7111429701,North West,26.1359431,26.1359431
+2013,Matzikama,WC011,AUDA,Total By Income Source,39867467,Gauteng,28.3929417,28.3929417
+2013,Matzikama,WC011,AUDA,Total By Customer Group,39867467,Gauteng,28.3929417,28.3929417
+2013,Cederberg,WC012,AUDA,Total By Income Source,34030335,Western Cape,18.5225709,18.5225709
+2013,Cederberg,WC012,AUDA,Total By Customer Group,34030335,Western Cape,18.5225709,18.5225709
+2013,Bergrivier,WC013,AUDA,Total By Income Source,53602033,Western Cape,19.0118251,19.0118251
+2013,Bergrivier,WC013,AUDA,Total By Customer Group,53602033,Western Cape,19.0118251,19.0118251
+2013,Saldanha Bay,WC014,AUDA,Total By Income Source,188453476,Western Cape,18.7125791,18.7125791
+2013,Saldanha Bay,WC014,AUDA,Total By Customer Group,188453476,Western Cape,18.7125791,18.7125791
+2013,Swartland,WC015,AUDA,Total By Income Source,52790257,Western Cape,18.1903059,18.1903059
+2013,Swartland,WC015,AUDA,Total By Customer Group,52790257,Western Cape,18.1903059,18.1903059
+2013,Witzenberg,WC022,AUDA,Total By Income Source,109889091,Western Cape,18.6624903,18.6624903
+2013,Witzenberg,WC022,AUDA,Total By Customer Group,109889089,Western Cape,18.6624903,18.6624903
+2013,Drakenstein,WC023,AUDA,Total By Income Source,218174900,Western Cape,19.2831531,19.2831531
+2013,Drakenstein,WC023,AUDA,Total By Customer Group,0,Western Cape,19.2831531,19.2831531
+2013,Stellenbosch,WC024,AUDA,Total By Income Source,126847674,Western Cape,19.04532,19.04532
+2013,Stellenbosch,WC024,AUDA,Total By Customer Group,126847674,Western Cape,19.04532,19.04532
+2013,Breede Valley,WC025,AUDA,Total By Income Source,73569376,Western Cape,18.9502232,18.9502232
+2013,Breede Valley,WC025,AUDA,Total By Customer Group,73569376,Western Cape,18.9502232,18.9502232
+2013,Langeberg,WC026,AUDA,Total By Income Source,43727598,Western Cape,19.4735066,19.4735066
+2013,Langeberg,WC026,AUDA,Total By Customer Group,43727598,Western Cape,19.4735066,19.4735066
+2013,Theewaterskloof,WC031,AUDA,Total By Income Source,141430037,Western Cape,27.812138,27.812138
+2013,Theewaterskloof,WC031,AUDA,Total By Customer Group,141430037,Western Cape,27.812138,27.812138
+2013,Overstrand,WC032,AUDA,Total By Income Source,65995828,Western Cape,19.4252453,19.4252453
+2013,Overstrand,WC032,AUDA,Total By Customer Group,65995830,Western Cape,19.4252453,19.4252453
+2013,Cape Agulhas,WC033,AUDA,Total By Income Source,22834022,Western Cape,19.4259114,19.4259114
+2013,Cape Agulhas,WC033,AUDA,Total By Customer Group,22834020,Western Cape,19.4259114,19.4259114
+2013,Swellendam,WC034,AUDA,Total By Income Source,38825266,Western Cape,20.0449662,20.0449662
+2013,Swellendam,WC034,AUDA,Total By Customer Group,38825266,Western Cape,20.0449662,20.0449662
+2013,Kannaland,WC041,AUDA,Total By Income Source,46062816,Western Cape,20.7185132,20.7185132
+2013,Kannaland,WC041,AUDA,Total By Customer Group,46062815,Western Cape,20.7185132,20.7185132
+2013,Hessequa,WC042,AUDA,Total By Income Source,40353213,Western Cape,21.3798928,21.3798928
+2013,Hessequa,WC042,AUDA,Total By Customer Group,40353213,Western Cape,21.3798928,21.3798928
+2013,Mossel Bay,WC043,AUDA,Total By Income Source,56691716,Western Cape,21.1891151,21.1891151
+2013,Mossel Bay,WC043,AUDA,Total By Customer Group,56691714,Western Cape,21.1891151,21.1891151
+2013,George,WC044,AUDA,Total By Income Source,73179518,Western Cape,21.9045541,21.9045541
+2013,George,WC044,AUDA,Total By Customer Group,73179517,Western Cape,21.9045541,21.9045541
+2013,Oudtshoorn,WC045,AUDA,Total By Income Source,101968481,Western Cape,22.4768287,22.4768287
+2013,Oudtshoorn,WC045,AUDA,Total By Customer Group,101968481,Western Cape,22.4768287,22.4768287
+2013,Bitou,WC047,AUDA,Total By Income Source,81007914,Western Cape,22.1430215,22.1430215
+2013,Bitou,WC047,AUDA,Total By Customer Group,81007915,Western Cape,22.1430215,22.1430215
+2013,Knysna,WC048,AUDA,Total By Income Source,108248474,Western Cape,23.429984,23.429984
+2013,Knysna,WC048,AUDA,Total By Customer Group,108248474,Western Cape,23.429984,23.429984
+2013,Laingsburg,WC051,AUDA,Total By Income Source,5130608,Western Cape,23.049842,23.049842
+2013,Laingsburg,WC051,AUDA,Total By Customer Group,5130607,Western Cape,23.049842,23.049842
+2013,Prince Albert,WC052,AUDA,Total By Income Source,0,Western Cape,20.902977,20.902977
+2013,Prince Albert,WC052,AUDA,Total By Customer Group,0,Western Cape,20.902977,20.902977
+2013,Beaufort West,WC053,AUDA,Total By Income Source,22974576,Western Cape,22.047637,22.047637
+2013,Beaufort West,WC053,AUDA,Total By Customer Group,22974576,Western Cape,22.047637,22.047637
+2014,Buffalo City,BUF,AUDA,Total By Income Source,1190866769,Western Cape,22.8105512,22.8105512
+2014,Buffalo City,BUF,AUDA,Total By Customer Group,1190866769,Western Cape,22.8105512,22.8105512
+2014,City of Cape Town,CPT,AUDA,Total By Income Source,6135323585,Eastern Cape,27.6434844,27.6434844
+2014,City of Cape Town,CPT,AUDA,Total By Customer Group,6135323583,Eastern Cape,27.6434844,27.6434844
+2014,West Coast,DC1,AUDA,Total By Income Source,7797747,Western Cape,18.4680927,18.4680927
+2014,West Coast,DC1,AUDA,Total By Customer Group,7797747,Western Cape,18.4680927,18.4680927
+2014,Cacadu,DC10,AUDA,Total By Income Source,482897,Western Cape,18.6175626,18.6175626
+2014,Cacadu,DC10,AUDA,Total By Customer Group,482897,Western Cape,18.6175626,18.6175626
+2014,Amathole,DC12,AUDA,Total By Income Source,467244350,Eastern Cape,25.6223644,25.6223644
+2014,Amathole,DC12,AUDA,Total By Customer Group,467244350,Eastern Cape,25.6223644,25.6223644
+2014,Chris Hani,DC13,AUDA,Total By Income Source,50331801,Eastern Cape,27.3616476,27.3616476
+2014,Chris Hani,DC13,AUDA,Total By Customer Group,50331801,Eastern Cape,27.3616476,27.3616476
+2014,Joe Gqabi,DC14,AUDA,Total By Income Source,92426311,Eastern Cape,26.7967849,26.7967849
+2014,Joe Gqabi,DC14,AUDA,Total By Customer Group,92426312,Eastern Cape,26.7967849,26.7967849
+2014,Xhariep,DC16,AUDA,Total By Income Source,1448745,Eastern Cape,26.9852422,26.9852422
+2014,Xhariep,DC16,AUDA,Total By Customer Group,1448745,Eastern Cape,26.9852422,26.9852422
+2014,Lejweleputswa,DC18,AUDA,Total By Income Source,10310090,Free State,25.2837585,25.2837585
+2014,Lejweleputswa,DC18,AUDA,Total By Customer Group,10310090,Free State,25.2837585,25.2837585
+2014,Cape Winelands,DC2,AUDA,Total By Income Source,158321,Free State,26.2304616,26.2304616
+2014,Cape Winelands,DC2,AUDA,Total By Customer Group,158321,Free State,26.2304616,26.2304616
+2014,Fezile Dabi,DC20,AUDA,Total By Income Source,629156,Western Cape,19.7591675,19.7591675
+2014,Fezile Dabi,DC20,AUDA,Total By Customer Group,629156,Western Cape,19.7591675,19.7591675
+2014,Ugu,DC21,AUDA,Total By Income Source,132764963,Free State,27.7373373,27.7373373
+2014,Ugu,DC21,AUDA,Total By Customer Group,132764963,Free State,27.7373373,27.7373373
+2014,Umgungundlovu,DC22,AUDA,Total By Income Source,343762934,KwaZulu-Natal,30.2512728,30.2512728
+2014,Umgungundlovu,DC22,AUDA,Total By Customer Group,343762934,KwaZulu-Natal,30.2512728,30.2512728
+2014,Uthukela,DC23,AUDA,Total By Income Source,567238844,KwaZulu-Natal,30.3435506,30.3435506
+2014,Uthukela,DC23,AUDA,Total By Customer Group,567238844,KwaZulu-Natal,30.3435506,30.3435506
+2014,Umzinyathi,DC24,AUDA,Total By Income Source,201241357,KwaZulu-Natal,29.6035495,29.6035495
+2014,Umzinyathi,DC24,AUDA,Total By Customer Group,201241357,KwaZulu-Natal,29.6035495,29.6035495
+2014,Amajuba,DC25,AUDA,Total By Income Source,6227728,KwaZulu-Natal,30.6199895,30.6199895
+2014,Amajuba,DC25,AUDA,Total By Customer Group,6227728,KwaZulu-Natal,30.6199895,30.6199895
+2014,Zululand,DC26,AUDA,Total By Income Source,67836712,KwaZulu-Natal,30.0665236,30.0665236
+2014,Zululand,DC26,AUDA,Total By Customer Group,67836712,KwaZulu-Natal,30.0665236,30.0665236
+2014,Umkhanyakude,DC27,AUDA,Total By Income Source,7714993,KwaZulu-Natal,31.4456179,31.4456179
+2014,Umkhanyakude,DC27,AUDA,Total By Customer Group,7714993,KwaZulu-Natal,31.4456179,31.4456179
+2014,Uthungulu,DC28,AUDA,Total By Income Source,54694318,KwaZulu-Natal,32.5372741,32.5372741
+2014,Uthungulu,DC28,AUDA,Total By Customer Group,54694318,KwaZulu-Natal,32.5372741,32.5372741
+2014,iLembe,DC29,AUDA,Total By Income Source,166710220,KwaZulu-Natal,31.5370003,31.5370003
+2014,iLembe,DC29,AUDA,Total By Customer Group,166710220,KwaZulu-Natal,31.5370003,31.5370003
+2014,Overberg,DC3,AUDA,Total By Income Source,1842004,KwaZulu-Natal,31.1710389,31.1710389
+2014,Overberg,DC3,AUDA,Total By Customer Group,1842004,KwaZulu-Natal,31.1710389,31.1710389
+2014,Gert Sibande,DC30,AUDA,Total By Income Source,18102286,Western Cape,19.7591675,19.7591675
+2014,Gert Sibande,DC30,AUDA,Total By Customer Group,18102286,Western Cape,19.7591675,19.7591675
+2014,Nkangala,DC31,AUDA,Total By Income Source,23596965,Mpumalanga,29.9740534,29.9740534
+2014,Nkangala,DC31,AUDA,Total By Customer Group,23596965,Mpumalanga,29.9740534,29.9740534
+2014,Ehlanzeni,DC32,AUDA,Total By Income Source,2792000,Mpumalanga,29.6035495,29.6035495
+2014,Ehlanzeni,DC32,AUDA,Total By Customer Group,2792000,Mpumalanga,29.6035495,29.6035495
+2014,Mopani,DC33,AUDA,Total By Income Source,532864554,Mpumalanga,31.2626366,31.2626366
+2014,Mopani,DC33,AUDA,Total By Customer Group,532864554,Mpumalanga,31.2626366,31.2626366
+2014,Vhembe,DC34,AUDA,Total By Income Source,238111461,Limpopo,30.7160431,30.7160431
+2014,Vhembe,DC34,AUDA,Total By Customer Group,238111461,Limpopo,30.7160431,30.7160431
+2014,Capricorn,DC35,AUDA,Total By Income Source,45394678,Limpopo,29.9740534,29.9740534
+2014,Capricorn,DC35,AUDA,Total By Customer Group,45394678,Limpopo,29.9740534,29.9740534
+2014,Waterberg,DC36,AUDA,Total By Income Source,7371,Limpopo,29.2320784,29.2320784
+2014,Waterberg,DC36,AUDA,Total By Customer Group,7371,Limpopo,29.2320784,29.2320784
+2014,Bojanala,DC37,AUDA,Total By Income Source,6887645,Limpopo,28.299435,28.299435
+2014,Bojanala,DC37,AUDA,Total By Customer Group,6887645,Limpopo,28.299435,28.299435
+2014,Ngaka Modiri Molema,DC38,AUDA,Total By Income Source,12333007,North West,27.3616476,27.3616476
+2014,Ngaka Modiri Molema,DC38,AUDA,Total By Customer Group,3639894,North West,27.3616476,27.3616476
+2014,Dr Ruth Segomotsi Mompati,DC39,AUDA,Total By Income Source,6343124,North West,25.8521764,25.8521764
+2014,Dr Ruth Segomotsi Mompati,DC39,AUDA,Total By Customer Group,6343124,North West,25.8521764,25.8521764
+2014,Eden,DC4,AUDA,Total By Income Source,14440465,North West,24.3341432,24.3341432
+2014,Eden,DC4,AUDA,Total By Customer Group,14440465,North West,24.3341432,24.3341432
+2014,Dr Kenneth Kaunda,DC40,AUDA,Total By Income Source,2550868,Western Cape,22.047637,22.047637
+2014,Dr Kenneth Kaunda,DC40,AUDA,Total By Customer Group,2550868,Western Cape,22.047637,22.047637
+2014,Sedibeng,DC42,AUDA,Total By Income Source,8178596,North West,26.5137964,26.5137964
+2014,Sedibeng,DC42,AUDA,Total By Customer Group,8178596,North West,26.5137964,26.5137964
+2014,Harry Gwala,DC43,AUDA,Total By Income Source,102903178,Gauteng,28.2058768,28.2058768
+2014,Harry Gwala,DC43,AUDA,Total By Customer Group,102903178,Gauteng,28.2058768,28.2058768
+2014,Alfred Nzo,DC44,AUDA,Total By Income Source,71259189,KwaZulu-Natal,29.6035495,29.6035495
+2014,Alfred Nzo,DC44,AUDA,Total By Customer Group,71259189,KwaZulu-Natal,29.6035495,29.6035495
+2014,Sekhukhune,DC47,AUDA,Total By Income Source,442088041,Eastern Cape,28.8596804,28.8596804
+2014,Sekhukhune,DC47,AUDA,Total By Customer Group,442088041,Eastern Cape,28.8596804,28.8596804
+2014,West Rand,DC48,AUDA,Total By Income Source,7531,Limpopo,29.9740534,29.9740534
+2014,West Rand,DC48,AUDA,Total By Customer Group,7531,Limpopo,29.9740534,29.9740534
+2014,Central Karoo,DC5,AUDA,Total By Income Source,560552,Gauteng,27.4556388,27.4556388
+2014,Central Karoo,DC5,AUDA,Total By Customer Group,560552,Gauteng,27.4556388,27.4556388
+2014,Namakwa,DC6,AUDA,Total By Income Source,795516,Western Cape,22.2384017,22.2384017
+2014,Namakwa,DC6,AUDA,Total By Customer Group,795516,Western Cape,22.2384017,22.2384017
+2014,Pixley ka Seme,DC7,AUDA,Total By Income Source,1127592,Northern Cape,19.949686,19.949686
+2014,Pixley ka Seme,DC7,AUDA,Total By Customer Group,1127592,Northern Cape,19.949686,19.949686
+2014,Z F Mgcawu,DC8,AUDA,Total By Income Source,158771,Northern Cape,23.3823545,23.3823545
+2014,Z F Mgcawu,DC8,AUDA,Total By Customer Group,158771,Northern Cape,23.3823545,23.3823545
+2014,Frances Baard,DC9,AUDA,Total By Income Source,2667646,Northern Cape,21.246215,21.246215
+2014,Frances Baard,DC9,AUDA,Total By Customer Group,2667646,Northern Cape,21.246215,21.246215
+2014,Dr Beyers Naude,EC101,AUDA,Total By Income Source,62030488,Northern Cape,24.3341432,24.3341432
+2014,Dr Beyers Naude,EC101,AUDA,Total By Customer Group,62030488,Northern Cape,24.3341432,24.3341432
+2014,Blue Crane Route,EC102,AUDA,Total By Income Source,47080234,Eastern Cape,24.371068,24.371068
+2014,Blue Crane Route,EC102,AUDA,Total By Customer Group,47080234,Eastern Cape,24.3341432,24.3341432
+2014,Ikwezi,EC103,AUDA,Total By Income Source,26642325,Eastern Cape,24.371068,24.371068
+2014,Ikwezi,EC103,AUDA,Total By Customer Group,26642325,Eastern Cape,24.3341432,24.3341432
+2014,Makana,EC104,AUDA,Total By Income Source,128393173,Eastern Cape,25.4733554,25.4733554
+2014,Makana,EC104,AUDA,Total By Customer Group,128393173,Eastern Cape,25.4733554,25.4733554
+2014,Ndlambe,EC105,AUDA,Total By Income Source,140523573,Eastern Cape,24.6192899,24.6192899
+2014,Ndlambe,EC105,AUDA,Total By Customer Group,140523573,Eastern Cape,24.6192899,24.6192899
+2014,Sundays River Valley,EC106,AUDA,Total By Income Source,9955781,Eastern Cape,26.3249438,26.3249438
+2014,Sundays River Valley,EC106,AUDA,Total By Customer Group,9955781,Eastern Cape,26.3249438,26.3249438
+2014,Baviaans,EC107,AUDA,Total By Income Source,5427077,Eastern Cape,26.749645,26.749645
+2014,Baviaans,EC107,AUDA,Total By Customer Group,5427077,Eastern Cape,26.749645,26.749645
+2014,Kouga,EC108,AUDA,Total By Income Source,140773273,Eastern Cape,25.5681084,25.5681084
+2014,Kouga,EC108,AUDA,Total By Customer Group,140773273,Eastern Cape,25.5681084,25.5681084
+2014,Kou-Kamma,EC109,AUDA,Total By Income Source,48221901,Eastern Cape,24.0488007,24.0488007
+2014,Kou-Kamma,EC109,AUDA,Total By Customer Group,48221901,Eastern Cape,24.0488007,24.0488007
+2014,Mbhashe,EC121,AUDA,Total By Income Source,21396824,Eastern Cape,24.8092691,24.8092691
+2014,Mbhashe,EC121,AUDA,Total By Customer Group,21396824,Eastern Cape,24.8092691,24.8092691
+2014,Mnquma,EC122,AUDA,Total By Income Source,103120740,Eastern Cape,24.0488007,24.0488007
+2014,Mnquma,EC122,AUDA,Total By Customer Group,103120740,Eastern Cape,24.0488007,24.0488007
+2014,Great Kei,EC123,AUDA,Total By Income Source,54100715,Eastern Cape,28.7664408,28.7664408
+2014,Great Kei,EC123,AUDA,Total By Customer Group,54100714,Eastern Cape,28.7664408,28.7664408
+2014,Amahlathi,EC124,AUDA,Total By Income Source,54498318,Eastern Cape,28.0186087,28.0186087
+2014,Amahlathi,EC124,AUDA,Total By Customer Group,54498318,Eastern Cape,28.0186087,28.0186087
+2014,Ngqushwa,EC126,AUDA,Total By Income Source,2188758,Eastern Cape,27.9717606,27.9717606
+2014,Ngqushwa,EC126,AUDA,Total By Customer Group,1130134,Eastern Cape,27.9717606,27.9717606
+2014,Nkonkobe,EC127,AUDA,Total By Income Source,65174143,Eastern Cape,27.2676116,27.2676116
+2014,Nkonkobe,EC127,AUDA,Total By Customer Group,65174144,Eastern Cape,27.2676116,27.2676116
+2014,Nxuba,EC128,AUDA,Total By Income Source,11976120,Eastern Cape,27.2676116,27.2676116
+2014,Nxuba,EC128,AUDA,Total By Customer Group,8946342,Eastern Cape,27.2676116,27.2676116
+2014,Inxuba Yethemba,EC131,AUDA,Total By Income Source,10480043,Eastern Cape,26.8329144,26.8329144
+2014,Inxuba Yethemba,EC131,AUDA,Total By Customer Group,10480043,Eastern Cape,26.8329144,26.8329144
+2014,Tsolwana,EC132,AUDA,Total By Income Source,33533275,Eastern Cape,26.3249438,26.3249438
+2014,Tsolwana,EC132,AUDA,Total By Customer Group,33533275,Eastern Cape,26.3249438,26.3249438
+2014,Inkwanca,EC133,AUDA,Total By Income Source,56202834,Eastern Cape,25.3785719,25.3785719
+2014,Inkwanca,EC133,AUDA,Total By Customer Group,56202834,Eastern Cape,25.3785719,25.3785719
+2014,Lukanji,EC134,AUDA,Total By Income Source,559859544,Eastern Cape,26.1359431,26.1359431
+2014,Lukanji,EC134,AUDA,Total By Customer Group,559859544,Eastern Cape,26.1359431,26.1359431
+2014,Intsika Yethu,EC135,AUDA,Total By Income Source,12673142,Eastern Cape,26.5137964,26.5137964
+2014,Intsika Yethu,EC135,AUDA,Total By Customer Group,12673142,Eastern Cape,26.5137964,26.5137964
+2014,Emalahleni,EC136,AUDA,Total By Income Source,124652582,Eastern Cape,26.8910342,26.8910342
+2014,Emalahleni,EC136,AUDA,Total By Customer Group,124652582,Eastern Cape,26.8910342,26.8910342
+2014,Engcobo,EC137,AUDA,Total By Income Source,5684212,Eastern Cape,27.6434844,27.6434844
+2014,Engcobo,EC137,AUDA,Total By Customer Group,5684212,Eastern Cape,27.6434844,27.6434844
+2014,Sakhisizwe,EC138,AUDA,Total By Income Source,87671672,Eastern Cape,29.2553229,29.2553229
+2014,Sakhisizwe,EC138,AUDA,Total By Customer Group,87671672,Eastern Cape,29.2553229,29.2553229
+2014,Elundini,EC141,AUDA,Total By Income Source,30560482,Eastern Cape,27.9834738,27.9834738
+2014,Elundini,EC141,AUDA,Total By Customer Group,30560482,Eastern Cape,27.9834738,27.9834738
+2014,Senqu,EC142,AUDA,Total By Income Source,28370389,Eastern Cape,27.8311428,27.8311428
+2014,Senqu,EC142,AUDA,Total By Customer Group,28370390,Eastern Cape,27.8311428,27.8311428
+2014,Maletswai,EC143,AUDA,Total By Income Source,10893099,Eastern Cape,28.3929417,28.3929417
+2014,Maletswai,EC143,AUDA,Total By Customer Group,10893098,Eastern Cape,28.3929417,28.3929417
+2014,Gariep,EC144,AUDA,Total By Income Source,59372210,Eastern Cape,27.6434844,27.6434844
+2014,Gariep,EC144,AUDA,Total By Customer Group,59372210,Eastern Cape,27.6434844,27.6434844
+2014,Ngquza Hill,EC153,AUDA,Total By Income Source,39448737,Eastern Cape,26.8910342,26.8910342
+2014,Ngquza Hill,EC153,AUDA,Total By Customer Group,39448737,Eastern Cape,26.8910342,26.8910342
+2014,Port St Johns,EC154,AUDA,Total By Income Source,19605447,Eastern Cape,25.8521764,25.8521764
+2014,Port St Johns,EC154,AUDA,Total By Customer Group,19605447,Eastern Cape,25.8521764,25.8521764
+2014,Nyandeni,EC155,AUDA,Total By Income Source,13329339,Eastern Cape,29.6962677,29.6962677
+2014,Nyandeni,EC155,AUDA,Total By Customer Group,13329339,Eastern Cape,29.6962677,29.6962677
+2014,Mhlontlo,EC156,AUDA,Total By Income Source,29258178,Eastern Cape,29.5457058,29.5457058
+2014,Mhlontlo,EC156,AUDA,Total By Customer Group,29258178,Eastern Cape,29.5457058,29.5457058
+2014,King Sabata Dalindyebo,EC157,AUDA,Total By Income Source,43511152,Eastern Cape,29.1390642,29.1390642
+2014,King Sabata Dalindyebo,EC157,AUDA,Total By Customer Group,43511152,Eastern Cape,29.1390642,29.1390642
+2014,Matatiele,EC441,AUDA,Total By Income Source,49827737,Eastern Cape,28.8130675,28.8130675
+2014,Matatiele,EC441,AUDA,Total By Customer Group,49827737,Eastern Cape,28.8130675,28.8130675
+2014,Umzimvubu,EC442,AUDA,Total By Income Source,30982538,Eastern Cape,28.5797981,28.5797981
+2014,Umzimvubu,EC442,AUDA,Total By Customer Group,30982538,Eastern Cape,28.5797981,28.5797981
+2014,Mbizana,EC443,AUDA,Total By Income Source,20151028,Eastern Cape,28.7664408,28.7664408
+2014,Mbizana,EC443,AUDA,Total By Customer Group,20151028,Eastern Cape,28.7664408,28.7664408
+2014,Ntabankulu,EC444,AUDA,Total By Income Source,8620940,Eastern Cape,28.9528645,28.9528645
+2014,Ntabankulu,EC444,AUDA,Total By Customer Group,10019893,Eastern Cape,28.9528645,28.9528645
+2014,Ekurhuleni,EKU,AUDA,Total By Income Source,12831563787,Eastern Cape,29.8566142,29.8566142
+2014,Ekurhuleni,EKU,AUDA,Total By Customer Group,12831563789,Eastern Cape,29.8566142,29.8566142
+2014,eThekwini,ETH,AUDA,Total By Income Source,10789655647,Eastern Cape,29.2785638,29.2785638
+2014,eThekwini,ETH,AUDA,Total By Customer Group,10789655647,Eastern Cape,29.2785638,29.2785638
+2014,Letsemeng,FS161,AUDA,Total By Income Source,12568186,Gauteng,28.3461948,28.3461948
+2014,Letsemeng,FS161,AUDA,Total By Customer Group,12568186,Gauteng,28.3461948,28.3461948
+2014,Kopanong,FS162,AUDA,Total By Income Source,16448920,KwaZulu-Natal,30.8039474,30.8039474
+2014,Kopanong,FS162,AUDA,Total By Customer Group,16448920,KwaZulu-Natal,30.8039474,30.8039474
+2014,Mohokare,FS163,AUDA,Total By Income Source,88637520,Free State,25.094045,25.094045
+2014,Mohokare,FS163,AUDA,Total By Customer Group,88637520,Free State,25.094045,25.094045
+2014,Naledi,FS164,AUDA,Total By Income Source,2356746,Free State,25.4733554,25.4733554
+2014,Naledi,FS164,AUDA,Total By Customer Group,2356746,Free State,25.4733554,25.4733554
+2014,Masilonyana,FS181,AUDA,Total By Income Source,325994039,Free State,26.9852422,26.9852422
+2014,Masilonyana,FS181,AUDA,Total By Customer Group,325994039,Free State,26.9852422,26.9852422
+2014,Tokologo,FS182,AUDA,Total By Income Source,63485982,Free State,24.7142918,24.7142918
+2014,Tokologo,FS182,AUDA,Total By Customer Group,63485982,Free State,24.7142918,24.7142918
+2014,Tswelopele,FS183,AUDA,Total By Income Source,43021422,Free State,26.6081653,26.6081653
+2014,Tswelopele,FS183,AUDA,Total By Customer Group,43021422,Free State,26.6081653,26.6081653
+2014,Matjhabeng,FS184,AUDA,Total By Income Source,588676092,Free State,25.4733554,25.4733554
+2014,Matjhabeng,FS184,AUDA,Total By Customer Group,588676092,Free State,25.4733554,25.4733554
+2014,Nala,FS185,AUDA,Total By Income Source,287299561,Free State,25.9467997,25.9467997
+2014,Nala,FS185,AUDA,Total By Customer Group,287299561,Free State,25.9467997,25.9467997
+2014,Dihlabeng,FS192,AUDA,Total By Income Source,65905302,Free State,26.8910342,26.8910342
+2014,Dihlabeng,FS192,AUDA,Total By Customer Group,65905305,Free State,26.8910342,26.8910342
+2014,Nketoana,FS193,AUDA,Total By Income Source,239109887,Free State,26.5137964,26.5137964
+2014,Nketoana,FS193,AUDA,Total By Customer Group,239109887,Free State,26.5137964,26.5137964
+2014,Maluti a Phofung,FS194,AUDA,Total By Income Source,201235900,Free State,28.2058768,28.2058768
+2014,Maluti a Phofung,FS194,AUDA,Total By Customer Group,201235900,Free State,28.2058768,28.2058768
+2014,Phumelela,FS195,AUDA,Total By Income Source,8122138,Free State,28.4318311,28.4318311
+2014,Phumelela,FS195,AUDA,Total By Customer Group,8122137,Free State,28.4318311,28.4318311
+2014,Mantsopa,FS196,AUDA,Total By Income Source,248640751,Free State,28.9528645,28.9528645
+2014,Mantsopa,FS196,AUDA,Total By Customer Group,248640751,Free State,28.9528645,28.9528645
+2014,Ngwathe,FS203,AUDA,Total By Income Source,601975055,Free State,29.2320784,29.2320784
+2014,Ngwathe,FS203,AUDA,Total By Customer Group,601975055,Free State,29.2320784,29.2320784
+2014,Metsimaholo,FS204,AUDA,Total By Income Source,549914249,Free State,27.2676116,27.2676116
+2014,Metsimaholo,FS204,AUDA,Total By Customer Group,549914249,Free State,27.2676116,27.2676116
+2014,Mafube,FS205,AUDA,Total By Income Source,35926954,Free State,27.7373373,27.7373373
+2014,Mafube,FS205,AUDA,Total By Customer Group,35926954,Free State,27.7373373,27.7373373
+2014,Emfuleni,GT421,AUDA,Total By Income Source,3544662178,Free State,27.8277881,27.8277881
+2014,Emfuleni,GT421,AUDA,Total By Customer Group,3544662178,Free State,27.8277881,27.8277881
+2014,Lesedi,GT423,AUDA,Total By Income Source,347635958,Free State,28.5797981,28.5797981
+2014,Lesedi,GT423,AUDA,Total By Customer Group,347635958,Free State,28.5797981,28.5797981
+2014,Mogale City,GT481,AUDA,Total By Income Source,934982415,Gauteng,27.784246,27.784246
+2014,Mogale City,GT481,AUDA,Total By Customer Group,934982415,Gauteng,27.784246,27.784246
+2014,Randfontein,GT482,AUDA,Total By Income Source,40067231,Gauteng,28.4396756,28.4396756
+2014,Randfontein,GT482,AUDA,Total By Customer Group,40067231,Gauteng,28.4396756,28.4396756
+2014,City of Johannesburg,JHB,AUDA,Total By Income Source,20369146000,Gauteng,27.5965403,27.5965403
+2014,City of Johannesburg,JHB,AUDA,Total By Customer Group,20369146000,Gauteng,27.5965403,27.5965403
+2014,Vulamehlo,KZN211,AUDA,Total By Income Source,3423578,Gauteng,27.6786847,27.6786847
+2014,Vulamehlo,KZN211,AUDA,Total By Customer Group,3423578,Gauteng,27.6786847,27.6786847
+2014,Umdoni,KZN212,AUDA,Total By Income Source,45038215,Gauteng,27.9717606,27.9717606
+2014,Umdoni,KZN212,AUDA,Total By Customer Group,45038215,Gauteng,27.9717606,27.9717606
+2014,Umzumbe,KZN213,AUDA,Total By Income Source,4297164,KwaZulu-Natal,30.5739579,30.5739579
+2014,Umzumbe,KZN213,AUDA,Total By Customer Group,4297164,KwaZulu-Natal,30.5739579,30.5739579
+2014,uMuziwabantu,KZN214,AUDA,Total By Income Source,9712625,KwaZulu-Natal,30.6890055,30.6890055
+2014,uMuziwabantu,KZN214,AUDA,Total By Customer Group,9712625,KwaZulu-Natal,30.6890055,30.6890055
+2014,Ezingoleni,KZN215,AUDA,Total By Income Source,2090041,KwaZulu-Natal,30.5928401,30.5928401
+2014,Ezingoleni,KZN215,AUDA,Total By Customer Group,2090041,KwaZulu-Natal,30.5928401,30.5928401
+2014,Ray Nkonyeni,KZN216,AUDA,Total By Income Source,146694496,KwaZulu-Natal,29.9277947,29.9277947
+2014,Ray Nkonyeni,KZN216,AUDA,Total By Customer Group,146694496,KwaZulu-Natal,29.9277947,29.9277947
+2014,uMshwathi,KZN221,AUDA,Total By Income Source,72891950,KwaZulu-Natal,30.182022,30.182022
+2014,uMshwathi,KZN221,AUDA,Total By Customer Group,72891950,KwaZulu-Natal,30.182022,30.182022
+2014,uMngeni,KZN222,AUDA,Total By Income Source,64853622,KwaZulu-Natal,30.3639319,30.3639319
+2014,uMngeni,KZN222,AUDA,Total By Customer Group,64853623,KwaZulu-Natal,30.3204873,30.3204873
+2014,Mpofana,KZN223,AUDA,Total By Income Source,62975566,KwaZulu-Natal,30.3639319,30.3639319
+2014,Mpofana,KZN223,AUDA,Total By Customer Group,62975566,KwaZulu-Natal,30.3204873,30.3204873
+2014,Impendle,KZN224,AUDA,Total By Income Source,1438306,KwaZulu-Natal,30.5743164,30.5743164
+2014,Impendle,KZN224,AUDA,Total By Customer Group,1438306,KwaZulu-Natal,30.5743164,30.5743164
+2014,Mkhambathini,KZN226,AUDA,Total By Income Source,5931645,KwaZulu-Natal,30.112735,30.112735
+2014,Mkhambathini,KZN226,AUDA,Total By Customer Group,5931645,KwaZulu-Natal,30.112735,30.112735
+2014,Richmond,KZN227,AUDA,Total By Income Source,8255086,KwaZulu-Natal,30.112735,30.112735
+2014,Richmond,KZN227,AUDA,Total By Customer Group,8255086,KwaZulu-Natal,30.112735,30.112735
+2014,Emnambithi/Ladysmith,KZN232,AUDA,Total By Income Source,132760899,KwaZulu-Natal,29.8352303,29.8352303
+2014,Emnambithi/Ladysmith,KZN232,AUDA,Total By Customer Group,132760899,KwaZulu-Natal,29.8352303,29.8352303
+2014,Indaka,KZN233,AUDA,Total By Income Source,2637924,KwaZulu-Natal,30.5739579,30.5739579
+2014,Indaka,KZN233,AUDA,Total By Customer Group,2637924,KwaZulu-Natal,30.5739579,30.5739579
+2014,Umtshezi,KZN234,AUDA,Total By Income Source,94235517,KwaZulu-Natal,30.2974199,30.2974199
+2014,Umtshezi,KZN234,AUDA,Total By Customer Group,94235517,KwaZulu-Natal,30.2974199,30.2974199
+2014,Okhahlamba,KZN235,AUDA,Total By Income Source,21234394,KwaZulu-Natal,29.7807856,29.7807856
+2014,Okhahlamba,KZN235,AUDA,Total By Customer Group,21234394,KwaZulu-Natal,29.7807856,29.7807856
+2014,Imbabazane,KZN236,AUDA,Total By Income Source,8968893,KwaZulu-Natal,30.107222,30.107222
+2014,Imbabazane,KZN236,AUDA,Total By Customer Group,8968893,KwaZulu-Natal,30.107222,30.107222
+2014,Endumeni,KZN241,AUDA,Total By Income Source,112080125,KwaZulu-Natal,30.0202964,30.0202964
+2014,Endumeni,KZN241,AUDA,Total By Customer Group,112080125,KwaZulu-Natal,30.0202964,30.0202964
+2014,Nqutu,KZN242,AUDA,Total By Income Source,17523918,KwaZulu-Natal,29.3250347,29.3250347
+2014,Nqutu,KZN242,AUDA,Total By Customer Group,17523918,KwaZulu-Natal,29.3250347,29.3250347
+2014,Msinga,KZN244,AUDA,Total By Income Source,7670644,KwaZulu-Natal,29.6864574,29.6864574
+2014,Msinga,KZN244,AUDA,Total By Customer Group,7670644,KwaZulu-Natal,29.6864574,29.6864574
+2014,Umvoti,KZN245,AUDA,Total By Income Source,33209218,KwaZulu-Natal,30.2343393,30.2343393
+2014,Umvoti,KZN245,AUDA,Total By Customer Group,33209218,KwaZulu-Natal,30.2343393,30.2343393
+2014,Newcastle,KZN252,AUDA,Total By Income Source,522181845,KwaZulu-Natal,30.6746303,30.6746303
+2014,Newcastle,KZN252,AUDA,Total By Customer Group,522181845,KwaZulu-Natal,30.6746303,30.6746303
+2014,Emadlangeni,KZN253,AUDA,Total By Income Source,22610927,KwaZulu-Natal,30.4357631,30.4357631
+2014,Emadlangeni,KZN253,AUDA,Total By Customer Group,22610927,KwaZulu-Natal,30.4357631,30.4357631
+2014,Dannhauser,KZN254,AUDA,Total By Income Source,14488447,KwaZulu-Natal,30.6199895,30.6199895
+2014,Dannhauser,KZN254,AUDA,Total By Customer Group,14488447,KwaZulu-Natal,30.6199895,30.6199895
+2014,eDumbe,KZN261,AUDA,Total By Income Source,70028355,KwaZulu-Natal,29.9971769,29.9971769
+2014,eDumbe,KZN261,AUDA,Total By Customer Group,70028355,KwaZulu-Natal,29.9971769,29.9971769
+2014,uPhongolo,KZN262,AUDA,Total By Income Source,86709397,KwaZulu-Natal,30.315775,30.315775
+2014,uPhongolo,KZN262,AUDA,Total By Customer Group,86709397,KwaZulu-Natal,30.315775,30.315775
+2014,Abaqulusi,KZN263,AUDA,Total By Income Source,67042561,KwaZulu-Natal,30.0202964,30.0202964
+2014,Abaqulusi,KZN263,AUDA,Total By Customer Group,67042561,KwaZulu-Natal,30.0202964,30.0202964
+2014,Nongoma,KZN265,AUDA,Total By Income Source,19818944,KwaZulu-Natal,30.8039474,30.8039474
+2014,Nongoma,KZN265,AUDA,Total By Customer Group,19818944,KwaZulu-Natal,30.8039474,30.8039474
+2014,Umhlabuyalingana,KZN271,AUDA,Total By Income Source,15649848,KwaZulu-Natal,31.5370003,31.5370003
+2014,Umhlabuyalingana,KZN271,AUDA,Total By Customer Group,15649848,KwaZulu-Natal,31.5370003,31.5370003
+2014,Jozini,KZN272,AUDA,Total By Income Source,51126468,KwaZulu-Natal,30.9876321,30.9876321
+2014,Jozini,KZN272,AUDA,Total By Customer Group,51126468,KwaZulu-Natal,30.9876321,30.9876321
+2014,The Big 5 False Bay,KZN273,AUDA,Total By Income Source,15207977,KwaZulu-Natal,31.7195459,31.7195459
+2014,The Big 5 False Bay,KZN273,AUDA,Total By Customer Group,15207977,KwaZulu-Natal,31.7195459,31.7195459
+2014,Hlabisa,KZN274,AUDA,Total By Income Source,1691355,KwaZulu-Natal,32.4467238,32.4467238
+2014,Hlabisa,KZN274,AUDA,Total By Customer Group,1691355,KwaZulu-Natal,32.4467238,32.4467238
+2014,Mtubatuba,KZN275,AUDA,Total By Income Source,50545191,KwaZulu-Natal,32.0650697,32.0650697
+2014,Mtubatuba,KZN275,AUDA,Total By Customer Group,50545191,KwaZulu-Natal,32.0650697,32.0650697
+2014,Mfolozi,KZN281,AUDA,Total By Income Source,6260082,KwaZulu-Natal,32.3107517,32.3107517
+2014,Mfolozi,KZN281,AUDA,Total By Customer Group,6260082,KwaZulu-Natal,32.3107517,32.3107517
+2014,uMhlathuze,KZN282,AUDA,Total By Income Source,182094184,KwaZulu-Natal,31.8648002,31.8648002
+2014,uMhlathuze,KZN282,AUDA,Total By Customer Group,182094184,KwaZulu-Natal,31.8648002,31.8648002
+2014,Ntambanana,KZN283,AUDA,Total By Income Source,1153797,KwaZulu-Natal,32.2880726,32.2880726
+2014,Ntambanana,KZN283,AUDA,Total By Customer Group,1153797,KwaZulu-Natal,32.2880726,32.2880726
+2014,uMlalazi,KZN284,AUDA,Total By Income Source,32765119,KwaZulu-Natal,32.259717,32.259717
+2014,uMlalazi,KZN284,AUDA,Total By Customer Group,32765119,KwaZulu-Natal,32.259717,32.259717
+2014,Mthonjaneni,KZN285,AUDA,Total By Income Source,11875770,KwaZulu-Natal,31.947311,31.947311
+2014,Mthonjaneni,KZN285,AUDA,Total By Customer Group,11875770,KwaZulu-Natal,31.947311,31.947311
+2014,Nkandla,KZN286,AUDA,Total By Income Source,24893584,KwaZulu-Natal,31.7394939,31.7394939
+2014,Nkandla,KZN286,AUDA,Total By Customer Group,24893584,KwaZulu-Natal,31.7394939,31.7394939
+2014,Mandeni,KZN291,AUDA,Total By Income Source,93785347,KwaZulu-Natal,31.4913182,31.4913182
+2014,Mandeni,KZN291,AUDA,Total By Customer Group,93785347,KwaZulu-Natal,31.4913182,31.4913182
+2014,KwaDukuza,KZN292,AUDA,Total By Income Source,180767353,KwaZulu-Natal,31.3998995,31.3998995
+2014,KwaDukuza,KZN292,AUDA,Total By Customer Group,180767353,KwaZulu-Natal,31.3998995,31.3998995
+2014,Ndwedwe,KZN293,AUDA,Total By Income Source,9988236,KwaZulu-Natal,31.0894002,31.0894002
+2014,Ndwedwe,KZN293,AUDA,Total By Customer Group,9988236,KwaZulu-Natal,31.0894002,31.0894002
+2014,Maphumulo,KZN294,AUDA,Total By Income Source,6988971,KwaZulu-Natal,31.4684703,31.4684703
+2014,Maphumulo,KZN294,AUDA,Total By Customer Group,6988971,KwaZulu-Natal,31.4684703,31.4684703
+2014,Ingwe,KZN431,AUDA,Total By Income Source,8818729,KwaZulu-Natal,31.2892229,31.2892229
+2014,Ingwe,KZN431,AUDA,Total By Customer Group,8818729,KwaZulu-Natal,31.2892229,31.2892229
+2014,Kwa Sani,KZN432,AUDA,Total By Income Source,1955144,KwaZulu-Natal,30.9417368,30.9417368
+2014,Kwa Sani,KZN432,AUDA,Total By Customer Group,1955144,KwaZulu-Natal,30.9417368,30.9417368
+2014,Greater Kokstad,KZN433,AUDA,Total By Income Source,33725943,KwaZulu-Natal,31.03351,31.03351
+2014,Greater Kokstad,KZN433,AUDA,Total By Customer Group,33725943,KwaZulu-Natal,31.03351,31.03351
+2014,Ubuhlebezwe,KZN434,AUDA,Total By Income Source,17142945,KwaZulu-Natal,29.8815203,29.8815203
+2014,Ubuhlebezwe,KZN434,AUDA,Total By Customer Group,17142945,KwaZulu-Natal,29.8815203,29.8815203
+2014,Umzimkhulu,KZN435,AUDA,Total By Income Source,6177916,KwaZulu-Natal,29.5107708,29.5107708
+2014,Umzimkhulu,KZN435,AUDA,Total By Customer Group,6177916,KwaZulu-Natal,29.5107708,29.5107708
+2014,Greater Giyani,LIM331,AUDA,Total By Income Source,135195882,KwaZulu-Natal,29.3714909,29.3714909
+2014,Greater Giyani,LIM331,AUDA,Total By Customer Group,135195882,KwaZulu-Natal,29.3714909,29.3714909
+2014,Greater Letaba,LIM332,AUDA,Total By Income Source,78298040,KwaZulu-Natal,30.0665236,30.0665236
+2014,Greater Letaba,LIM332,AUDA,Total By Customer Group,78298040,KwaZulu-Natal,30.0665236,30.0665236
+2014,Greater Tzaneen,LIM333,AUDA,Total By Income Source,98092371,KwaZulu-Natal,29.6962677,29.6962677
+2014,Greater Tzaneen,LIM333,AUDA,Total By Customer Group,98092371,KwaZulu-Natal,29.6962677,29.6962677
+2014,Maruleng,LIM335,AUDA,Total By Income Source,17785182,Limpopo,30.8039474,30.8039474
+2014,Maruleng,LIM335,AUDA,Total By Customer Group,17785184,Limpopo,30.8039474,30.8039474
+2014,Musina,LIM341,AUDA,Total By Income Source,22864215,Limpopo,30.2974199,30.2974199
+2014,Musina,LIM341,AUDA,Total By Customer Group,22864215,Limpopo,30.2974199,30.2974199
+2014,Mutale,LIM342,AUDA,Total By Income Source,5424107,Limpopo,30.0665236,30.0665236
+2014,Mutale,LIM342,AUDA,Total By Customer Group,5424107,Limpopo,30.0665236,30.0665236
+2014,Thulamela,LIM343,AUDA,Total By Income Source,277989470,Limpopo,30.9576681,30.9576681
+2014,Thulamela,LIM343,AUDA,Total By Customer Group,277989470,Limpopo,30.9576681,30.9576681
+2014,Blouberg,LIM351,AUDA,Total By Income Source,36646085,Limpopo,29.6962677,29.6962677
+2014,Blouberg,LIM351,AUDA,Total By Customer Group,36646085,Limpopo,29.6962677,29.6962677
+2014,Aganang,LIM352,AUDA,Total By Income Source,70674588,Limpopo,30.8039474,30.8039474
+2014,Aganang,LIM352,AUDA,Total By Customer Group,70674588,Limpopo,30.8039474,30.8039474
+2014,Molemole,LIM353,AUDA,Total By Income Source,66352068,Limpopo,30.6199895,30.6199895
+2014,Molemole,LIM353,AUDA,Total By Customer Group,66352068,Limpopo,30.6199895,30.6199895
+2014,Polokwane,LIM354,AUDA,Total By Income Source,597875175,Limpopo,28.9950702,28.9950702
+2014,Polokwane,LIM354,AUDA,Total By Customer Group,597875174,Limpopo,28.9950702,28.9950702
+2014,Lepele-Nkumpi,LIM355,AUDA,Total By Income Source,116092071,Limpopo,29.0925356,29.0925356
+2014,Lepele-Nkumpi,LIM355,AUDA,Total By Customer Group,116092072,Limpopo,29.0925356,29.0925356
+2014,Thabazimbi,LIM361,AUDA,Total By Income Source,71780560,Limpopo,29.6962677,29.6962677
+2014,Thabazimbi,LIM361,AUDA,Total By Customer Group,0,Limpopo,29.6962677,29.6962677
+2014,Mookgopong,LIM364,AUDA,Total By Income Source,32619555,Limpopo,29.4485367,29.4485367
+2014,Mookgopong,LIM364,AUDA,Total By Customer Group,32619555,Limpopo,29.4485367,29.4485367
+2014,Modimolle,LIM365,AUDA,Total By Income Source,95876934,Limpopo,29.6499162,29.6499162
+2014,Modimolle,LIM365,AUDA,Total By Customer Group,95876934,Limpopo,29.6499162,29.6499162
+2014,Bela-Bela,LIM366,AUDA,Total By Income Source,132713657,Limpopo,27.3616476,27.3616476
+2014,Bela-Bela,LIM366,AUDA,Total By Customer Group,132713657,Limpopo,27.3616476,27.3616476
+2014,Ephraim Mogale,LIM471,AUDA,Total By Income Source,37516076,Limpopo,28.7664408,28.7664408
+2014,Ephraim Mogale,LIM471,AUDA,Total By Customer Group,37516076,Limpopo,28.7664408,28.7664408
+2014,Elias Motsoaledi,LIM472,AUDA,Total By Income Source,50262661,Limpopo,28.2058768,28.2058768
+2014,Elias Motsoaledi,LIM472,AUDA,Total By Customer Group,50262663,Limpopo,28.2058768,28.2058768
+2014,Greater Tubatse,LIM475,AUDA,Total By Income Source,112017253,Limpopo,28.2526623,28.2526623
+2014,Greater Tubatse,LIM475,AUDA,Total By Customer Group,112017253,Limpopo,28.2526623,28.2526623
+2014,Mangaung,MAN,AUDA,Total By Income Source,2722834951,Limpopo,29.3250347,29.3250347
+2014,Mangaung,MAN,AUDA,Total By Customer Group,2722834951,Limpopo,29.3250347,29.3250347
+2014,Chief Albert Luthuli,MP301,AUDA,Total By Income Source,323791307,Limpopo,29.3949458,29.3949458
+2014,Chief Albert Luthuli,MP301,AUDA,Total By Customer Group,323791307,Limpopo,29.3949458,29.3949458
+2014,Msukaligwa,MP302,AUDA,Total By Income Source,327472677,Limpopo,30.2512728,30.2512728
+2014,Msukaligwa,MP302,AUDA,Total By Customer Group,327472677,Limpopo,30.2512728,30.2512728
+2014,Mkhondo,MP303,AUDA,Total By Income Source,18498601,Free State,26.3249438,26.3249438
+2014,Mkhondo,MP303,AUDA,Total By Customer Group,18498601,Free State,26.3249438,26.3249438
+2014,Dr Pixley Ka Isaka Seme,MP304,AUDA,Total By Income Source,206761794,Mpumalanga,30.3325113,30.3325113
+2014,Dr Pixley Ka Isaka Seme,MP304,AUDA,Total By Customer Group,206761794,Mpumalanga,30.3325113,30.3325113
+2014,Govan Mbeki,MP307,AUDA,Total By Income Source,841976182,Mpumalanga,30.0665236,30.0665236
+2014,Govan Mbeki,MP307,AUDA,Total By Customer Group,841976182,Mpumalanga,30.0665236,30.0665236
+2014,Steve Tshwete,MP313,AUDA,Total By Income Source,72971850,Mpumalanga,30.6199895,30.6199895
+2014,Steve Tshwete,MP313,AUDA,Total By Customer Group,72971850,Mpumalanga,30.6199895,30.6199895
+2014,Emakhazeni,MP314,AUDA,Total By Income Source,139021790,Mpumalanga,29.8815203,29.8815203
+2014,Emakhazeni,MP314,AUDA,Total By Customer Group,139021790,Mpumalanga,29.8815203,29.8815203
+2014,Thembisile,MP315,AUDA,Total By Income Source,4348473,Mpumalanga,29.1390642,29.1390642
+2014,Thembisile,MP315,AUDA,Total By Customer Group,4348473,Mpumalanga,29.1390642,29.1390642
+2014,Dr JS Moroka,MP316,AUDA,Total By Income Source,32010869,Mpumalanga,29.4681751,29.4681751
+2014,Dr JS Moroka,MP316,AUDA,Total By Customer Group,32010869,Mpumalanga,29.4681751,29.4681751
+2014,Thaba Chweu,MP321,AUDA,Total By Income Source,111183751,Mpumalanga,30.0665236,30.0665236
+2014,Thaba Chweu,MP321,AUDA,Total By Customer Group,111183751,Mpumalanga,30.0665236,30.0665236
+2014,Mbombela,MP322,AUDA,Total By Income Source,346662200,Mpumalanga,28.9062794,28.9062794
+2014,Mbombela,MP322,AUDA,Total By Customer Group,346662200,Mpumalanga,28.9062794,28.9062794
+2014,Umjindi,MP323,AUDA,Total By Income Source,84179069,Mpumalanga,28.8130675,28.8130675
+2014,Umjindi,MP323,AUDA,Total By Customer Group,84179070,Mpumalanga,28.8130675,28.8130675
+2014,Bushbuckridge,MP325,AUDA,Total By Income Source,586043068,Mpumalanga,30.7791913,30.7791913
+2014,Bushbuckridge,MP325,AUDA,Total By Customer Group,586043068,Mpumalanga,30.7791913,30.7791913
+2014,Richtersveld,NC061,AUDA,Total By Income Source,46604707,Mpumalanga,31.03351,31.03351
+2014,Richtersveld,NC061,AUDA,Total By Customer Group,46604707,Mpumalanga,31.03351,31.03351
+2014,Nama Khoi,NC062,AUDA,Total By Income Source,69972260,Mpumalanga,31.1710389,31.1710389
+2014,Nama Khoi,NC062,AUDA,Total By Customer Group,69972260,Mpumalanga,31.1710389,31.1710389
+2014,Kamiesberg,NC064,AUDA,Total By Income Source,32375383,Northern Cape,17.1011931,17.1011931
+2014,Kamiesberg,NC064,AUDA,Total By Customer Group,32375383,Northern Cape,17.1011931,17.1011931
+2014,Hantam,NC065,AUDA,Total By Income Source,35360349,Northern Cape,17.8583868,17.8583868
+2014,Hantam,NC065,AUDA,Total By Customer Group,35360349,Northern Cape,17.8583868,17.8583868
+2014,Karoo Hoogland,NC066,AUDA,Total By Income Source,18609620,Northern Cape,17.8583868,17.8583868
+2014,Karoo Hoogland,NC066,AUDA,Total By Customer Group,18609620,Northern Cape,17.8583868,17.8583868
+2014,Khâi-Ma,NC067,AUDA,Total By Income Source,28575330,Northern Cape,19.949686,19.949686
+2014,Khâi-Ma,NC067,AUDA,Total By Customer Group,28575330,Northern Cape,19.949686,19.949686
+2014,Ubuntu,NC071,AUDA,Total By Income Source,34003764,Northern Cape,20.902977,20.902977
+2014,Ubuntu,NC071,AUDA,Total By Customer Group,34003764,Northern Cape,20.902977,20.902977
+2014,Umsobomvu,NC072,AUDA,Total By Income Source,66289547,Northern Cape,19.237649,19.237649
+2014,Umsobomvu,NC072,AUDA,Total By Customer Group,66289547,Northern Cape,19.237649,19.237649
+2014,Emthanjeni,NC073,AUDA,Total By Income Source,45678620,Northern Cape,23.1918021,23.1918021
+2014,Emthanjeni,NC073,AUDA,Total By Customer Group,45678623,Northern Cape,23.1918021,23.1918021
+2014,Kareeberg,NC074,AUDA,Total By Income Source,5171622,Northern Cape,24.9991464,24.9991464
+2014,Kareeberg,NC074,AUDA,Total By Customer Group,5171618,Northern Cape,24.9991464,24.9991464
+2014,Thembelihle,NC076,AUDA,Total By Income Source,45587455,Northern Cape,24.0087533,24.0087533
+2014,Thembelihle,NC076,AUDA,Total By Customer Group,45587455,Northern Cape,24.0087533,24.0087533
+2014,Siyancuma,NC078,AUDA,Total By Income Source,64734010,Northern Cape,22.047637,22.047637
+2014,Siyancuma,NC078,AUDA,Total By Customer Group,64734009,Northern Cape,22.047637,22.047637
+2014,Mier,NC081,AUDA,Total By Income Source,24040295,Northern Cape,23.8584737,23.8584737
+2014,Mier,NC081,AUDA,Total By Customer Group,24040295,Northern Cape,23.8584737,23.8584737
+2014,//Khara Hais,NC083,AUDA,Total By Income Source,42248198,Northern Cape,23.4776098,23.4776098
+2014,//Khara Hais,NC083,AUDA,Total By Customer Group,42248198,Northern Cape,23.4776098,23.4776098
+2014,!Kheis,NC084,AUDA,Total By Income Source,44534661,Northern Cape,20.2832217,20.2832217
+2014,!Kheis,NC084,AUDA,Total By Customer Group,44534661,Northern Cape,20.2832217,20.2832217
+2014,Kgatelopele,NC086,AUDA,Total By Income Source,6689698,Northern Cape,21.242665,21.242665
+2014,Kgatelopele,NC086,AUDA,Total By Customer Group,6689698,Northern Cape,21.242665,21.242665
+2014,Sol Plaatjie,NC091,AUDA,Total By Income Source,1046201295,Northern Cape,21.6660725,21.6660725
+2014,Sol Plaatjie,NC091,AUDA,Total By Customer Group,1046201295,Northern Cape,21.6660725,21.6660725
+2014,Dikgatlong,NC092,AUDA,Total By Income Source,170214985,Northern Cape,23.6680747,23.6680747
+2014,Dikgatlong,NC092,AUDA,Total By Customer Group,170214985,Northern Cape,23.6680747,23.6680747
+2014,Magareng,NC093,AUDA,Total By Income Source,91811012,Northern Cape,24.6667939,24.6667939
+2014,Magareng,NC093,AUDA,Total By Customer Group,91811012,Northern Cape,24.6667939,24.6667939
+2014,Joe Morolong,NC451,AUDA,Total By Income Source,23976432,Northern Cape,24.5197,24.5197
+2014,Joe Morolong,NC451,AUDA,Total By Customer Group,23976432,Northern Cape,24.5197,24.5197
+2014,Ga-Segonyana,NC452,AUDA,Total By Income Source,23519697,Northern Cape,24.7617836,24.7617836
+2014,Ga-Segonyana,NC452,AUDA,Total By Customer Group,23519697,Northern Cape,24.7617836,24.7617836
+2014,Nelson Mandela Bay,NMA,AUDA,Total By Income Source,2647533698,Northern Cape,23.287085,23.287085
+2014,Nelson Mandela Bay,NMA,AUDA,Total By Customer Group,2647533698,Northern Cape,23.287085,23.287085
+2014,Local Municipality of Madibeng,NW372,AUDA,Total By Income Source,948360653,Northern Cape,23.4776098,23.4776098
+2014,Local Municipality of Madibeng,NW372,AUDA,Total By Customer Group,948360653,Northern Cape,23.4776098,23.4776098
+2014,Rustenburg,NW373,AUDA,Total By Income Source,2063972880,Eastern Cape,25.5681084,25.5681084
+2014,Rustenburg,NW373,AUDA,Total By Customer Group,2063972880,Eastern Cape,25.5681084,25.5681084
+2014,Kgetlengrivier,NW374,AUDA,Total By Income Source,94112161,North West,27.8311428,27.8311428
+2014,Kgetlengrivier,NW374,AUDA,Total By Customer Group,94112161,North West,27.8311428,27.8311428
+2014,Moses Kotane,NW375,AUDA,Total By Income Source,227909202,North West,27.2676116,27.2676116
+2014,Moses Kotane,NW375,AUDA,Total By Customer Group,227909202,North West,27.2676116,27.2676116
+2014,Ratlou,NW381,AUDA,Total By Income Source,32113605,North West,26.8910342,26.8910342
+2014,Ratlou,NW381,AUDA,Total By Customer Group,32113605,North West,26.8910342,26.8910342
+2014,Tswaing,NW382,AUDA,Total By Income Source,193522601,North West,26.8910342,26.8910342
+2014,Tswaing,NW382,AUDA,Total By Customer Group,193522601,North West,26.8910342,26.8910342
+2014,Mafikeng,NW383,AUDA,Total By Income Source,653883275,North West,24.9991464,24.9991464
+2014,Mafikeng,NW383,AUDA,Total By Customer Group,653883275,North West,24.9991464,24.9991464
+2014,Ditsobotla,NW384,AUDA,Total By Income Source,226043567,North West,25.7575196,25.7575196
+2014,Ditsobotla,NW384,AUDA,Total By Customer Group,226043567,North West,25.7575196,25.7575196
+2014,Ramotshere Moiloa,NW385,AUDA,Total By Income Source,94554060,North West,25.5681084,25.5681084
+2014,Ramotshere Moiloa,NW385,AUDA,Total By Customer Group,94554060,North West,25.5681084,25.5681084
+2014,Naledi,NW392,AUDA,Total By Income Source,226537357,North West,26.1359431,26.1359431
+2014,Naledi,NW392,AUDA,Total By Customer Group,226537357,North West,26.1359431,26.1359431
+2014,Mamusa,NW393,AUDA,Total By Income Source,135941381,North West,26.10005,26.10005
+2014,Mamusa,NW393,AUDA,Total By Customer Group,135941381,North West,26.10005,26.10005
+2014,Greater Taung,NW394,AUDA,Total By Income Source,11258943,North West,24.7142918,24.7142918
+2014,Greater Taung,NW394,AUDA,Total By Customer Group,11258943,North West,24.7142918,24.7142918
+2014,Lekwa-Teemane,NW396,AUDA,Total By Income Source,308140845,North West,25.3785719,25.3785719
+2014,Lekwa-Teemane,NW396,AUDA,Total By Customer Group,308140845,North West,25.3785719,25.3785719
+2014,Ventersdorp,NW401,AUDA,Total By Income Source,53714387,North West,24.2390498,24.2390498
+2014,Ventersdorp,NW401,AUDA,Total By Customer Group,53714387,North West,24.2390498,24.2390498
+2014,City of Matlosana,NW403,AUDA,Total By Income Source,1101382193,North West,25.3785719,25.3785719
+2014,City of Matlosana,NW403,AUDA,Total By Customer Group,1101382193,North West,25.3785719,25.3785719
+2014,Maquassi Hills,NW404,AUDA,Total By Income Source,497486637,North West,26.8910342,26.8910342
+2014,Maquassi Hills,NW404,AUDA,Total By Customer Group,497486637,North West,26.8910342,26.8910342
+2014,City of Tshwane,TSH,AUDA,Total By Income Source,7859223881,North West,26.5137964,26.5137964
+2014,City of Tshwane,TSH,AUDA,Total By Customer Group,7859223881,North West,26.5137964,26.5137964
+2014,Matzikama,WC011,AUDA,Total By Income Source,44551158,North West,26.1359431,26.1359431
+2014,Matzikama,WC011,AUDA,Total By Customer Group,44551158,North West,26.1359431,26.1359431
+2014,Cederberg,WC012,AUDA,Total By Income Source,26941126,Gauteng,28.3929417,28.3929417
+2014,Cederberg,WC012,AUDA,Total By Customer Group,26941126,Gauteng,28.3929417,28.3929417
+2014,Bergrivier,WC013,AUDA,Total By Income Source,54525263,Western Cape,18.5225709,18.5225709
+2014,Bergrivier,WC013,AUDA,Total By Customer Group,54525263,Western Cape,18.5225709,18.5225709
+2014,Saldanha Bay,WC014,AUDA,Total By Income Source,201613202,Western Cape,19.0118251,19.0118251
+2014,Saldanha Bay,WC014,AUDA,Total By Customer Group,201613202,Western Cape,19.0118251,19.0118251
+2014,Swartland,WC015,AUDA,Total By Income Source,53886857,Western Cape,18.7125791,18.7125791
+2014,Swartland,WC015,AUDA,Total By Customer Group,53886857,Western Cape,18.7125791,18.7125791
+2014,Witzenberg,WC022,AUDA,Total By Income Source,137427678,Western Cape,18.1903059,18.1903059
+2014,Witzenberg,WC022,AUDA,Total By Customer Group,137427677,Western Cape,18.1903059,18.1903059
+2014,Drakenstein,WC023,AUDA,Total By Income Source,336223528,Western Cape,18.6624903,18.6624903
+2014,Drakenstein,WC023,AUDA,Total By Customer Group,336223528,Western Cape,18.6624903,18.6624903
+2014,Stellenbosch,WC024,AUDA,Total By Income Source,158709593,Western Cape,19.2831531,19.2831531
+2014,Stellenbosch,WC024,AUDA,Total By Customer Group,158709593,Western Cape,19.2831531,19.2831531
+2014,Breede Valley,WC025,AUDA,Total By Income Source,62912430,Western Cape,19.04532,19.04532
+2014,Breede Valley,WC025,AUDA,Total By Customer Group,62912430,Western Cape,19.04532,19.04532
+2014,Langeberg,WC026,AUDA,Total By Income Source,44913841,Western Cape,18.9502232,18.9502232
+2014,Langeberg,WC026,AUDA,Total By Customer Group,44913841,Western Cape,18.9502232,18.9502232
+2014,Theewaterskloof,WC031,AUDA,Total By Income Source,110833633,Western Cape,19.4735066,19.4735066
+2014,Theewaterskloof,WC031,AUDA,Total By Customer Group,110833633,Western Cape,19.4735066,19.4735066
+2014,Overstrand,WC032,AUDA,Total By Income Source,64369329,Western Cape,27.812138,27.812138
+2014,Overstrand,WC032,AUDA,Total By Customer Group,64369329,Western Cape,27.812138,27.812138
+2014,Cape Agulhas,WC033,AUDA,Total By Income Source,21905191,Western Cape,19.4252453,19.4252453
+2014,Cape Agulhas,WC033,AUDA,Total By Customer Group,21905191,Western Cape,19.4252453,19.4252453
+2014,Swellendam,WC034,AUDA,Total By Income Source,38001113,Western Cape,19.4259114,19.4259114
+2014,Swellendam,WC034,AUDA,Total By Customer Group,38001116,Western Cape,19.4259114,19.4259114
+2014,Hessequa,WC042,AUDA,Total By Income Source,62501781,Western Cape,20.0449662,20.0449662
+2014,Hessequa,WC042,AUDA,Total By Customer Group,62501781,Western Cape,20.0449662,20.0449662
+2014,Mossel Bay,WC043,AUDA,Total By Income Source,60887837,Western Cape,20.7185132,20.7185132
+2014,Mossel Bay,WC043,AUDA,Total By Customer Group,60887837,Western Cape,20.7185132,20.7185132
+2014,George,WC044,AUDA,Total By Income Source,86279948,Western Cape,21.1891151,21.1891151
+2014,George,WC044,AUDA,Total By Customer Group,86279946,Western Cape,21.1891151,21.1891151
+2014,Oudtshoorn,WC045,AUDA,Total By Income Source,103845415,Western Cape,21.9045541,21.9045541
+2014,Oudtshoorn,WC045,AUDA,Total By Customer Group,103845415,Western Cape,21.9045541,21.9045541
+2014,Knysna,WC048,AUDA,Total By Income Source,160284346,Western Cape,22.4768287,22.4768287
+2014,Knysna,WC048,AUDA,Total By Customer Group,160284345,Western Cape,22.4768287,22.4768287
+2014,Prince Albert,WC052,AUDA,Total By Income Source,20634531,Western Cape,22.1430215,22.1430215
+2014,Prince Albert,WC052,AUDA,Total By Customer Group,20634531,Western Cape,22.1430215,22.1430215
+2014,Beaufort West,WC053,AUDA,Total By Income Source,30088010,Western Cape,23.049842,23.049842
+2014,Beaufort West,WC053,AUDA,Total By Customer Group,30088010,Western Cape,23.049842,23.049842
+2015,Buffalo City,BUF,AUDA,Total By Income Source,1380885868,Western Cape,22.047637,22.047637
+2015,Buffalo City,BUF,AUDA,Total By Customer Group,1380885868,Western Cape,22.047637,22.047637
+2015,City of Cape Town,CPT,AUDA,Total By Income Source,6658014465,Western Cape,22.8105512,22.8105512
+2015,City of Cape Town,CPT,AUDA,Total By Customer Group,6658014465,Western Cape,22.8105512,22.8105512
+2015,West Coast,DC1,AUDA,Total By Income Source,9710012,Eastern Cape,27.6434844,27.6434844
+2015,West Coast,DC1,AUDA,Total By Customer Group,9710012,Eastern Cape,27.6434844,27.6434844
+2015,Cacadu,DC10,AUDA,Total By Income Source,-196028,Western Cape,18.4680927,18.4680927
+2015,Cacadu,DC10,AUDA,Total By Customer Group,-196028,Western Cape,18.4680927,18.4680927
+2015,Amathole,DC12,AUDA,Total By Income Source,598961191,Western Cape,18.6175626,18.6175626
+2015,Amathole,DC12,AUDA,Total By Customer Group,598961191,Western Cape,18.6175626,18.6175626
+2015,Chris Hani,DC13,AUDA,Total By Income Source,677218349,Eastern Cape,25.6223644,25.6223644
+2015,Chris Hani,DC13,AUDA,Total By Customer Group,677218349,Eastern Cape,25.6223644,25.6223644
+2015,Joe Gqabi,DC14,AUDA,Total By Income Source,144230878,Eastern Cape,27.3616476,27.3616476
+2015,Joe Gqabi,DC14,AUDA,Total By Customer Group,144230878,Eastern Cape,27.3616476,27.3616476
+2015,Xhariep,DC16,AUDA,Total By Income Source,990746,Eastern Cape,26.7967849,26.7967849
+2015,Xhariep,DC16,AUDA,Total By Customer Group,990746,Eastern Cape,26.7967849,26.7967849
+2015,Lejweleputswa,DC18,AUDA,Total By Income Source,279204,Eastern Cape,26.9852422,26.9852422
+2015,Lejweleputswa,DC18,AUDA,Total By Customer Group,0,Eastern Cape,26.9852422,26.9852422
+2015,Thabo Mofutsanyane,DC19,AUDA,Total By Income Source,4481286,Free State,25.2837585,25.2837585
+2015,Thabo Mofutsanyane,DC19,AUDA,Total By Customer Group,4481286,Free State,25.2837585,25.2837585
+2015,Cape Winelands,DC2,AUDA,Total By Income Source,0,Free State,26.2304616,26.2304616
+2015,Cape Winelands,DC2,AUDA,Total By Customer Group,0,Free State,26.2304616,26.2304616
+2015,Fezile Dabi,DC20,AUDA,Total By Income Source,0,Free State,28.299435,28.299435
+2015,Fezile Dabi,DC20,AUDA,Total By Customer Group,0,Free State,28.299435,28.299435
+2015,Ugu,DC21,AUDA,Total By Income Source,95058018,Western Cape,19.7591675,19.7591675
+2015,Ugu,DC21,AUDA,Total By Customer Group,95058018,Western Cape,19.7591675,19.7591675
+2015,Umgungundlovu,DC22,AUDA,Total By Income Source,262019184,Free State,27.7373373,27.7373373
+2015,Umgungundlovu,DC22,AUDA,Total By Customer Group,262019184,Free State,27.7373373,27.7373373
+2015,Uthukela,DC23,AUDA,Total By Income Source,124087951,KwaZulu-Natal,30.2512728,30.2512728
+2015,Uthukela,DC23,AUDA,Total By Customer Group,124087951,KwaZulu-Natal,30.2512728,30.2512728
+2015,Umzinyathi,DC24,AUDA,Total By Income Source,249885399,KwaZulu-Natal,30.3435506,30.3435506
+2015,Umzinyathi,DC24,AUDA,Total By Customer Group,249885399,KwaZulu-Natal,30.3435506,30.3435506
+2015,Amajuba,DC25,AUDA,Total By Income Source,20440217,KwaZulu-Natal,29.6035495,29.6035495
+2015,Amajuba,DC25,AUDA,Total By Customer Group,20440217,KwaZulu-Natal,29.6035495,29.6035495
+2015,Zululand,DC26,AUDA,Total By Income Source,64045213,KwaZulu-Natal,30.6199895,30.6199895
+2015,Zululand,DC26,AUDA,Total By Customer Group,64045213,KwaZulu-Natal,30.6199895,30.6199895
+2015,Umkhanyakude,DC27,AUDA,Total By Income Source,187247034,KwaZulu-Natal,30.0665236,30.0665236
+2015,Umkhanyakude,DC27,AUDA,Total By Customer Group,187247034,KwaZulu-Natal,30.0665236,30.0665236
+2015,Uthungulu,DC28,AUDA,Total By Income Source,56487088,KwaZulu-Natal,31.4456179,31.4456179
+2015,Uthungulu,DC28,AUDA,Total By Customer Group,56487088,KwaZulu-Natal,31.4456179,31.4456179
+2015,iLembe,DC29,AUDA,Total By Income Source,233591172,KwaZulu-Natal,32.5372741,32.5372741
+2015,iLembe,DC29,AUDA,Total By Customer Group,233591172,KwaZulu-Natal,32.5372741,32.5372741
+2015,Overberg,DC3,AUDA,Total By Income Source,1711622,KwaZulu-Natal,31.5370003,31.5370003
+2015,Overberg,DC3,AUDA,Total By Customer Group,1711619,KwaZulu-Natal,31.5370003,31.5370003
+2015,Gert Sibande,DC30,AUDA,Total By Income Source,14845794,KwaZulu-Natal,31.1710389,31.1710389
+2015,Gert Sibande,DC30,AUDA,Total By Customer Group,14845794,KwaZulu-Natal,31.1710389,31.1710389
+2015,Nkangala,DC31,AUDA,Total By Income Source,15814938,Western Cape,19.7591675,19.7591675
+2015,Nkangala,DC31,AUDA,Total By Customer Group,15814938,Western Cape,19.7591675,19.7591675
+2015,Ehlanzeni,DC32,AUDA,Total By Income Source,393520,Mpumalanga,29.9740534,29.9740534
+2015,Ehlanzeni,DC32,AUDA,Total By Customer Group,393520,Mpumalanga,29.9740534,29.9740534
+2015,Mopani,DC33,AUDA,Total By Income Source,637331650,Mpumalanga,29.6035495,29.6035495
+2015,Mopani,DC33,AUDA,Total By Customer Group,637331650,Mpumalanga,29.6035495,29.6035495
+2015,Vhembe,DC34,AUDA,Total By Income Source,44491001,Mpumalanga,31.2626366,31.2626366
+2015,Vhembe,DC34,AUDA,Total By Customer Group,44491001,Mpumalanga,31.2626366,31.2626366
+2015,Capricorn,DC35,AUDA,Total By Income Source,90007465,Limpopo,30.7160431,30.7160431
+2015,Capricorn,DC35,AUDA,Total By Customer Group,90007463,Limpopo,30.7160431,30.7160431
+2015,Waterberg,DC36,AUDA,Total By Income Source,14919,Limpopo,29.9740534,29.9740534
+2015,Waterberg,DC36,AUDA,Total By Customer Group,14919,Limpopo,29.9740534,29.9740534
+2015,Bojanala,DC37,AUDA,Total By Income Source,4856560,Limpopo,29.2320784,29.2320784
+2015,Bojanala,DC37,AUDA,Total By Customer Group,4856560,Limpopo,29.2320784,29.2320784
+2015,Ngaka Modiri Molema,DC38,AUDA,Total By Income Source,169567170,Limpopo,28.299435,28.299435
+2015,Ngaka Modiri Molema,DC38,AUDA,Total By Customer Group,169567170,Limpopo,28.299435,28.299435
+2015,Eden,DC4,AUDA,Total By Income Source,17742556,North West,27.3616476,27.3616476
+2015,Eden,DC4,AUDA,Total By Customer Group,17742556,North West,27.3616476,27.3616476
+2015,Dr Kenneth Kaunda,DC40,AUDA,Total By Income Source,0,North West,25.8521764,25.8521764
+2015,Dr Kenneth Kaunda,DC40,AUDA,Total By Customer Group,0,North West,25.8521764,25.8521764
+2015,Sedibeng,DC42,AUDA,Total By Income Source,14371735,Western Cape,22.047637,22.047637
+2015,Sedibeng,DC42,AUDA,Total By Customer Group,14371735,Western Cape,22.047637,22.047637
+2015,Harry Gwala,DC43,AUDA,Total By Income Source,123176172,North West,26.5137964,26.5137964
+2015,Harry Gwala,DC43,AUDA,Total By Customer Group,123176172,North West,26.5137964,26.5137964
+2015,John Taolo Gaetsewe,DC45,AUDA,Total By Income Source,10925890,Gauteng,28.2058768,28.2058768
+2015,John Taolo Gaetsewe,DC45,AUDA,Total By Customer Group,10925890,Gauteng,28.2058768,28.2058768
+2015,Sekhukhune,DC47,AUDA,Total By Income Source,117461499,KwaZulu-Natal,29.6035495,29.6035495
+2015,Sekhukhune,DC47,AUDA,Total By Customer Group,117461499,KwaZulu-Natal,29.6035495,29.6035495
+2015,West Rand,DC48,AUDA,Total By Income Source,6149646,Northern Cape,23.1918021,23.1918021
+2015,West Rand,DC48,AUDA,Total By Customer Group,6149646,Northern Cape,23.1918021,23.1918021
+2015,Central Karoo,DC5,AUDA,Total By Income Source,666189,Limpopo,29.9740534,29.9740534
+2015,Central Karoo,DC5,AUDA,Total By Customer Group,666189,Limpopo,29.9740534,29.9740534
+2015,Namakwa,DC6,AUDA,Total By Income Source,9377831,Gauteng,27.4556388,27.4556388
+2015,Namakwa,DC6,AUDA,Total By Customer Group,9377831,Gauteng,27.4556388,27.4556388
+2015,Pixley ka Seme,DC7,AUDA,Total By Income Source,605088,Western Cape,22.2384017,22.2384017
+2015,Pixley ka Seme,DC7,AUDA,Total By Customer Group,605088,Western Cape,22.2384017,22.2384017
+2015,Z F Mgcawu,DC8,AUDA,Total By Income Source,447221,Northern Cape,19.949686,19.949686
+2015,Z F Mgcawu,DC8,AUDA,Total By Customer Group,447221,Northern Cape,19.949686,19.949686
+2015,Frances Baard,DC9,AUDA,Total By Income Source,8393993,Northern Cape,23.3823545,23.3823545
+2015,Frances Baard,DC9,AUDA,Total By Customer Group,8393993,Northern Cape,23.3823545,23.3823545
+2015,Dr Beyers Naude,EC101,AUDA,Total By Income Source,71406771,Northern Cape,21.246215,21.246215
+2015,Dr Beyers Naude,EC101,AUDA,Total By Customer Group,71406771,Northern Cape,21.246215,21.246215
+2015,Blue Crane Route,EC102,AUDA,Total By Income Source,45699497,Northern Cape,24.3341432,24.3341432
+2015,Blue Crane Route,EC102,AUDA,Total By Customer Group,45699497,Northern Cape,24.3341432,24.3341432
+2015,Ikwezi,EC103,AUDA,Total By Income Source,17754845,Eastern Cape,24.371068,24.371068
+2015,Ikwezi,EC103,AUDA,Total By Customer Group,17754845,Eastern Cape,24.3341432,24.3341432
+2015,Makana,EC104,AUDA,Total By Income Source,174750162,Eastern Cape,24.371068,24.371068
+2015,Makana,EC104,AUDA,Total By Customer Group,174750162,Eastern Cape,24.3341432,24.3341432
+2015,Ndlambe,EC105,AUDA,Total By Income Source,181938981,Eastern Cape,25.4733554,25.4733554
+2015,Ndlambe,EC105,AUDA,Total By Customer Group,181938981,Eastern Cape,25.4733554,25.4733554
+2015,Sundays River Valley,EC106,AUDA,Total By Income Source,174961593,Eastern Cape,24.6192899,24.6192899
+2015,Sundays River Valley,EC106,AUDA,Total By Customer Group,174961593,Eastern Cape,24.6192899,24.6192899
+2015,Baviaans,EC107,AUDA,Total By Income Source,2829719,Eastern Cape,26.3249438,26.3249438
+2015,Baviaans,EC107,AUDA,Total By Customer Group,2829717,Eastern Cape,26.3249438,26.3249438
+2015,Kouga,EC108,AUDA,Total By Income Source,162577367,Eastern Cape,26.749645,26.749645
+2015,Kouga,EC108,AUDA,Total By Customer Group,162577367,Eastern Cape,26.749645,26.749645
+2015,Kou-Kamma,EC109,AUDA,Total By Income Source,63638973,Eastern Cape,25.5681084,25.5681084
+2015,Kou-Kamma,EC109,AUDA,Total By Customer Group,63638973,Eastern Cape,25.5681084,25.5681084
+2015,Mbhashe,EC121,AUDA,Total By Income Source,23341051,Eastern Cape,24.0488007,24.0488007
+2015,Mbhashe,EC121,AUDA,Total By Customer Group,23341051,Eastern Cape,24.0488007,24.0488007
+2015,Mnquma,EC122,AUDA,Total By Income Source,59388117,Eastern Cape,24.8092691,24.8092691
+2015,Mnquma,EC122,AUDA,Total By Customer Group,59388117,Eastern Cape,24.8092691,24.8092691
+2015,Great Kei,EC123,AUDA,Total By Income Source,32197551,Eastern Cape,24.0488007,24.0488007
+2015,Great Kei,EC123,AUDA,Total By Customer Group,32197551,Eastern Cape,24.0488007,24.0488007
+2015,Amahlathi,EC124,AUDA,Total By Income Source,47565878,Eastern Cape,28.7664408,28.7664408
+2015,Amahlathi,EC124,AUDA,Total By Customer Group,47565878,Eastern Cape,28.7664408,28.7664408
+2015,Nxuba,EC128,AUDA,Total By Income Source,16322435,Eastern Cape,28.0186087,28.0186087
+2015,Nxuba,EC128,AUDA,Total By Customer Group,16322435,Eastern Cape,28.0186087,28.0186087
+2015,Inxuba Yethemba,EC131,AUDA,Total By Income Source,46795964,Eastern Cape,27.9717606,27.9717606
+2015,Inxuba Yethemba,EC131,AUDA,Total By Customer Group,46795964,Eastern Cape,27.9717606,27.9717606
+2015,Tsolwana,EC132,AUDA,Total By Income Source,20872951,Eastern Cape,27.2676116,27.2676116
+2015,Tsolwana,EC132,AUDA,Total By Customer Group,20872951,Eastern Cape,27.2676116,27.2676116
+2015,Inkwanca,EC133,AUDA,Total By Income Source,33531429,Eastern Cape,26.3249438,26.3249438
+2015,Inkwanca,EC133,AUDA,Total By Customer Group,0,Eastern Cape,26.3249438,26.3249438
+2015,Lukanji,EC134,AUDA,Total By Income Source,280563405,Eastern Cape,25.3785719,25.3785719
+2015,Lukanji,EC134,AUDA,Total By Customer Group,280563405,Eastern Cape,25.3785719,25.3785719
+2015,Intsika Yethu,EC135,AUDA,Total By Income Source,6471248,Eastern Cape,26.1359431,26.1359431
+2015,Intsika Yethu,EC135,AUDA,Total By Customer Group,6471248,Eastern Cape,26.1359431,26.1359431
+2015,Emalahleni,EC136,AUDA,Total By Income Source,54842062,Eastern Cape,26.5137964,26.5137964
+2015,Emalahleni,EC136,AUDA,Total By Customer Group,54842062,Eastern Cape,26.5137964,26.5137964
+2015,Engcobo,EC137,AUDA,Total By Income Source,6375421,Eastern Cape,26.8910342,26.8910342
+2015,Engcobo,EC137,AUDA,Total By Customer Group,6375421,Eastern Cape,26.8910342,26.8910342
+2015,Sakhisizwe,EC138,AUDA,Total By Income Source,52798825,Eastern Cape,27.6434844,27.6434844
+2015,Sakhisizwe,EC138,AUDA,Total By Customer Group,52798825,Eastern Cape,27.6434844,27.6434844
+2015,Elundini,EC141,AUDA,Total By Income Source,42443467,Eastern Cape,29.2553229,29.2553229
+2015,Elundini,EC141,AUDA,Total By Customer Group,42443467,Eastern Cape,29.2553229,29.2553229
+2015,Senqu,EC142,AUDA,Total By Income Source,27825085,Eastern Cape,27.9834738,27.9834738
+2015,Senqu,EC142,AUDA,Total By Customer Group,27825082,Eastern Cape,27.9834738,27.9834738
+2015,Maletswai,EC143,AUDA,Total By Income Source,10650390,Eastern Cape,27.8311428,27.8311428
+2015,Maletswai,EC143,AUDA,Total By Customer Group,10650390,Eastern Cape,27.8311428,27.8311428
+2015,Gariep,EC144,AUDA,Total By Income Source,73256192,Eastern Cape,28.3929417,28.3929417
+2015,Gariep,EC144,AUDA,Total By Customer Group,73256192,Eastern Cape,28.3929417,28.3929417
+2015,Ngquza Hill,EC153,AUDA,Total By Income Source,43368112,Eastern Cape,27.6434844,27.6434844
+2015,Ngquza Hill,EC153,AUDA,Total By Customer Group,43368112,Eastern Cape,27.6434844,27.6434844
+2015,Port St Johns,EC154,AUDA,Total By Income Source,22864046,Eastern Cape,26.8910342,26.8910342
+2015,Port St Johns,EC154,AUDA,Total By Customer Group,22864046,Eastern Cape,26.8910342,26.8910342
+2015,Nyandeni,EC155,AUDA,Total By Income Source,17744663,Eastern Cape,25.8521764,25.8521764
+2015,Nyandeni,EC155,AUDA,Total By Customer Group,17744663,Eastern Cape,25.8521764,25.8521764
+2015,Mhlontlo,EC156,AUDA,Total By Income Source,24331084,Eastern Cape,29.6962677,29.6962677
+2015,Mhlontlo,EC156,AUDA,Total By Customer Group,24331084,Eastern Cape,29.6962677,29.6962677
+2015,King Sabata Dalindyebo,EC157,AUDA,Total By Income Source,39056203,Eastern Cape,29.5457058,29.5457058
+2015,King Sabata Dalindyebo,EC157,AUDA,Total By Customer Group,39056203,Eastern Cape,29.5457058,29.5457058
+2015,Matatiele,EC441,AUDA,Total By Income Source,60752959,Eastern Cape,29.1390642,29.1390642
+2015,Matatiele,EC441,AUDA,Total By Customer Group,60752959,Eastern Cape,29.1390642,29.1390642
+2015,Umzimvubu,EC442,AUDA,Total By Income Source,18763997,Eastern Cape,28.8130675,28.8130675
+2015,Umzimvubu,EC442,AUDA,Total By Customer Group,18763997,Eastern Cape,28.8130675,28.8130675
+2015,Mbizana,EC443,AUDA,Total By Income Source,27279989,Eastern Cape,28.5797981,28.5797981
+2015,Mbizana,EC443,AUDA,Total By Customer Group,27279989,Eastern Cape,28.5797981,28.5797981
+2015,Ekurhuleni,EKU,AUDA,Total By Income Source,13531146387,Eastern Cape,28.7664408,28.7664408
+2015,Ekurhuleni,EKU,AUDA,Total By Customer Group,13531146388,Eastern Cape,28.7664408,28.7664408
+2015,Letsemeng,FS161,AUDA,Total By Income Source,18382783,Eastern Cape,28.9528645,28.9528645
+2015,Letsemeng,FS161,AUDA,Total By Customer Group,18382783,Eastern Cape,28.9528645,28.9528645
+2015,Kopanong,FS162,AUDA,Total By Income Source,120838506,Eastern Cape,29.8566142,29.8566142
+2015,Kopanong,FS162,AUDA,Total By Customer Group,120838506,Eastern Cape,29.8566142,29.8566142
+2015,Mohokare,FS163,AUDA,Total By Income Source,8979330,Gauteng,28.3461948,28.3461948
+2015,Mohokare,FS163,AUDA,Total By Customer Group,8979330,Gauteng,28.3461948,28.3461948
+2015,Naledi,FS164,AUDA,Total By Income Source,1725183,Free State,25.094045,25.094045
+2015,Naledi,FS164,AUDA,Total By Customer Group,1725183,Free State,25.094045,25.094045
+2015,Masilonyana,FS181,AUDA,Total By Income Source,360953774,Free State,25.4733554,25.4733554
+2015,Masilonyana,FS181,AUDA,Total By Customer Group,360953774,Free State,25.4733554,25.4733554
+2015,Tokologo,FS182,AUDA,Total By Income Source,74964287,Free State,26.9852422,26.9852422
+2015,Tokologo,FS182,AUDA,Total By Customer Group,74964287,Free State,26.9852422,26.9852422
+2015,Tswelopele,FS183,AUDA,Total By Income Source,44816226,Free State,24.7142918,24.7142918
+2015,Tswelopele,FS183,AUDA,Total By Customer Group,44816228,Free State,24.7142918,24.7142918
+2015,Matjhabeng,FS184,AUDA,Total By Income Source,1064883395,Free State,26.6081653,26.6081653
+2015,Matjhabeng,FS184,AUDA,Total By Customer Group,1064883395,Free State,26.6081653,26.6081653
+2015,Nala,FS185,AUDA,Total By Income Source,69645056,Free State,25.4733554,25.4733554
+2015,Nala,FS185,AUDA,Total By Customer Group,69645056,Free State,25.4733554,25.4733554
+2015,Setsoto,FS191,AUDA,Total By Income Source,246820305,Free State,25.9467997,25.9467997
+2015,Setsoto,FS191,AUDA,Total By Customer Group,246820305,Free State,25.9467997,25.9467997
+2015,Dihlabeng,FS192,AUDA,Total By Income Source,61936074,Free State,26.8910342,26.8910342
+2015,Dihlabeng,FS192,AUDA,Total By Customer Group,61936074,Free State,26.8910342,26.8910342
+2015,Nketoana,FS193,AUDA,Total By Income Source,257808213,Free State,26.5137964,26.5137964
+2015,Nketoana,FS193,AUDA,Total By Customer Group,257808213,Free State,26.5137964,26.5137964
+2015,Maluti a Phofung,FS194,AUDA,Total By Income Source,423558291,Free State,27.6434844,27.6434844
+2015,Maluti a Phofung,FS194,AUDA,Total By Customer Group,734492290,Free State,27.6434844,27.6434844
+2015,Phumelela,FS195,AUDA,Total By Income Source,12343954,Free State,28.2058768,28.2058768
+2015,Phumelela,FS195,AUDA,Total By Customer Group,12343956,Free State,28.2058768,28.2058768
+2015,Mantsopa,FS196,AUDA,Total By Income Source,232259691,Free State,28.4318311,28.4318311
+2015,Mantsopa,FS196,AUDA,Total By Customer Group,232259691,Free State,28.4318311,28.4318311
+2015,Moqhaka,FS201,AUDA,Total By Income Source,94408325,Free State,28.9528645,28.9528645
+2015,Moqhaka,FS201,AUDA,Total By Customer Group,94408325,Free State,28.9528645,28.9528645
+2015,Ngwathe,FS203,AUDA,Total By Income Source,616898855,Free State,29.2320784,29.2320784
+2015,Ngwathe,FS203,AUDA,Total By Customer Group,616898858,Free State,29.2320784,29.2320784
+2015,Metsimaholo,FS204,AUDA,Total By Income Source,639041401,Free State,27.2676116,27.2676116
+2015,Metsimaholo,FS204,AUDA,Total By Customer Group,639041401,Free State,27.2676116,27.2676116
+2015,Mafube,FS205,AUDA,Total By Income Source,63954782,Free State,27.2676116,27.2676116
+2015,Mafube,FS205,AUDA,Total By Customer Group,63954782,Free State,27.2676116,27.2676116
+2015,Emfuleni,GT421,AUDA,Total By Income Source,4763304864,Free State,27.7373373,27.7373373
+2015,Emfuleni,GT421,AUDA,Total By Customer Group,4763304864,Free State,27.7373373,27.7373373
+2015,Midvaal,GT422,AUDA,Total By Income Source,195136187,Free State,27.8277881,27.8277881
+2015,Midvaal,GT422,AUDA,Total By Customer Group,195136187,Free State,27.8277881,27.8277881
+2015,Lesedi,GT423,AUDA,Total By Income Source,388953719,Free State,28.5797981,28.5797981
+2015,Lesedi,GT423,AUDA,Total By Customer Group,388953719,Free State,28.5797981,28.5797981
+2015,Mogale City,GT481,AUDA,Total By Income Source,984660017,Gauteng,27.784246,27.784246
+2015,Mogale City,GT481,AUDA,Total By Customer Group,984660017,Gauteng,27.784246,27.784246
+2015,Randfontein,GT482,AUDA,Total By Income Source,42432050,Gauteng,28.0654445,28.0654445
+2015,Randfontein,GT482,AUDA,Total By Customer Group,42432050,Gauteng,28.0654445,28.0654445
+2015,Westonaria,GT483,AUDA,Total By Income Source,384520919,Gauteng,28.4396756,28.4396756
+2015,Westonaria,GT483,AUDA,Total By Customer Group,384520919,Gauteng,28.4396756,28.4396756
+2015,Merafong City,GT484,AUDA,Total By Income Source,784427937,Gauteng,27.5965403,27.5965403
+2015,Merafong City,GT484,AUDA,Total By Customer Group,784337937,Gauteng,27.5965403,27.5965403
+2015,City of Johannesburg,JHB,AUDA,Total By Income Source,15358696001,Gauteng,27.6786847,27.6786847
+2015,City of Johannesburg,JHB,AUDA,Total By Customer Group,15358696001,Gauteng,27.6786847,27.6786847
+2015,Vulamehlo,KZN211,AUDA,Total By Income Source,2735885,Gauteng,27.666952,27.666952
+2015,Vulamehlo,KZN211,AUDA,Total By Customer Group,2735885,Gauteng,27.666952,27.666952
+2015,Umdoni,KZN212,AUDA,Total By Income Source,36539998,Gauteng,27.4086488,27.4086488
+2015,Umdoni,KZN212,AUDA,Total By Customer Group,36539998,Gauteng,27.4086488,27.4086488
+2015,Umzumbe,KZN213,AUDA,Total By Income Source,6196148,Gauteng,27.9717606,27.9717606
+2015,Umzumbe,KZN213,AUDA,Total By Customer Group,6196148,Gauteng,27.9717606,27.9717606
+2015,uMuziwabantu,KZN214,AUDA,Total By Income Source,11768488,KwaZulu-Natal,30.5739579,30.5739579
+2015,uMuziwabantu,KZN214,AUDA,Total By Customer Group,11768488,KwaZulu-Natal,30.5739579,30.5739579
+2015,Ezingoleni,KZN215,AUDA,Total By Income Source,4357496,KwaZulu-Natal,30.6890055,30.6890055
+2015,Ezingoleni,KZN215,AUDA,Total By Customer Group,4357496,KwaZulu-Natal,30.6890055,30.6890055
+2015,Ray Nkonyeni,KZN216,AUDA,Total By Income Source,150045682,KwaZulu-Natal,30.5928401,30.5928401
+2015,Ray Nkonyeni,KZN216,AUDA,Total By Customer Group,150045682,KwaZulu-Natal,30.5928401,30.5928401
+2015,uMshwathi,KZN221,AUDA,Total By Income Source,91466738,KwaZulu-Natal,29.9277947,29.9277947
+2015,uMshwathi,KZN221,AUDA,Total By Customer Group,91466738,KwaZulu-Natal,29.9277947,29.9277947
+2015,uMngeni,KZN222,AUDA,Total By Income Source,58927539,KwaZulu-Natal,30.182022,30.182022
+2015,uMngeni,KZN222,AUDA,Total By Customer Group,58927540,KwaZulu-Natal,30.182022,30.182022
+2015,Mpofana,KZN223,AUDA,Total By Income Source,66398167,KwaZulu-Natal,30.3639319,30.3639319
+2015,Mpofana,KZN223,AUDA,Total By Customer Group,66398167,KwaZulu-Natal,30.3204873,30.3204873
+2015,Impendle,KZN224,AUDA,Total By Income Source,3882688,KwaZulu-Natal,30.3639319,30.3639319
+2015,Impendle,KZN224,AUDA,Total By Customer Group,3882688,KwaZulu-Natal,30.3204873,30.3204873
+2015,The Msunduzi,KZN225,AUDA,Total By Income Source,1862262096,KwaZulu-Natal,30.5743164,30.5743164
+2015,The Msunduzi,KZN225,AUDA,Total By Customer Group,1862262096,KwaZulu-Natal,30.5743164,30.5743164
+2015,Mkhambathini,KZN226,AUDA,Total By Income Source,12202247,KwaZulu-Natal,30.112735,30.112735
+2015,Mkhambathini,KZN226,AUDA,Total By Customer Group,12202247,KwaZulu-Natal,30.112735,30.112735
+2015,Richmond,KZN227,AUDA,Total By Income Source,9385682,KwaZulu-Natal,30.112735,30.112735
+2015,Richmond,KZN227,AUDA,Total By Customer Group,9385682,KwaZulu-Natal,30.112735,30.112735
+2015,Emnambithi/Ladysmith,KZN232,AUDA,Total By Income Source,155408441,KwaZulu-Natal,29.8352303,29.8352303
+2015,Emnambithi/Ladysmith,KZN232,AUDA,Total By Customer Group,155408441,KwaZulu-Natal,29.8352303,29.8352303
+2015,Indaka,KZN233,AUDA,Total By Income Source,3536546,KwaZulu-Natal,30.3824842,30.3824842
+2015,Indaka,KZN233,AUDA,Total By Customer Group,3536546,KwaZulu-Natal,30.3824842,30.3824842
+2015,Umtshezi,KZN234,AUDA,Total By Income Source,100243872,KwaZulu-Natal,30.5739579,30.5739579
+2015,Umtshezi,KZN234,AUDA,Total By Customer Group,100243872,KwaZulu-Natal,30.5739579,30.5739579
+2015,Okhahlamba,KZN235,AUDA,Total By Income Source,27546237,KwaZulu-Natal,30.2974199,30.2974199
+2015,Okhahlamba,KZN235,AUDA,Total By Customer Group,27546237,KwaZulu-Natal,30.2974199,30.2974199
+2015,Imbabazane,KZN236,AUDA,Total By Income Source,14231138,KwaZulu-Natal,29.7807856,29.7807856
+2015,Imbabazane,KZN236,AUDA,Total By Customer Group,14231138,KwaZulu-Natal,29.7807856,29.7807856
+2015,Endumeni,KZN241,AUDA,Total By Income Source,70284347,KwaZulu-Natal,30.107222,30.107222
+2015,Endumeni,KZN241,AUDA,Total By Customer Group,70284347,KwaZulu-Natal,30.107222,30.107222
+2015,Nqutu,KZN242,AUDA,Total By Income Source,20617687,KwaZulu-Natal,30.0202964,30.0202964
+2015,Nqutu,KZN242,AUDA,Total By Customer Group,20617687,KwaZulu-Natal,30.0202964,30.0202964
+2015,Msinga,KZN244,AUDA,Total By Income Source,17361099,KwaZulu-Natal,29.3250347,29.3250347
+2015,Msinga,KZN244,AUDA,Total By Customer Group,17361099,KwaZulu-Natal,29.3250347,29.3250347
+2015,Umvoti,KZN245,AUDA,Total By Income Source,32409319,KwaZulu-Natal,29.6864574,29.6864574
+2015,Umvoti,KZN245,AUDA,Total By Customer Group,32409319,KwaZulu-Natal,29.6864574,29.6864574
+2015,Newcastle,KZN252,AUDA,Total By Income Source,894180225,KwaZulu-Natal,30.2343393,30.2343393
+2015,Newcastle,KZN252,AUDA,Total By Customer Group,894180225,KwaZulu-Natal,30.2343393,30.2343393
+2015,Emadlangeni,KZN253,AUDA,Total By Income Source,27465273,KwaZulu-Natal,30.6746303,30.6746303
+2015,Emadlangeni,KZN253,AUDA,Total By Customer Group,27465273,KwaZulu-Natal,30.6746303,30.6746303
+2015,Dannhauser,KZN254,AUDA,Total By Income Source,6654253,KwaZulu-Natal,30.4357631,30.4357631
+2015,Dannhauser,KZN254,AUDA,Total By Customer Group,6654253,KwaZulu-Natal,30.4357631,30.4357631
+2015,uPhongolo,KZN262,AUDA,Total By Income Source,70045354,KwaZulu-Natal,30.6199895,30.6199895
+2015,uPhongolo,KZN262,AUDA,Total By Customer Group,70045354,KwaZulu-Natal,30.6199895,30.6199895
+2015,Abaqulusi,KZN263,AUDA,Total By Income Source,101857244,KwaZulu-Natal,29.9971769,29.9971769
+2015,Abaqulusi,KZN263,AUDA,Total By Customer Group,101857244,KwaZulu-Natal,29.9971769,29.9971769
+2015,Nongoma,KZN265,AUDA,Total By Income Source,25086984,KwaZulu-Natal,30.315775,30.315775
+2015,Nongoma,KZN265,AUDA,Total By Customer Group,25086983,KwaZulu-Natal,30.315775,30.315775
+2015,Umhlabuyalingana,KZN271,AUDA,Total By Income Source,12408296,KwaZulu-Natal,30.0202964,30.0202964
+2015,Umhlabuyalingana,KZN271,AUDA,Total By Customer Group,12408296,KwaZulu-Natal,30.0202964,30.0202964
+2015,Jozini,KZN272,AUDA,Total By Income Source,76227601,KwaZulu-Natal,31.5370003,31.5370003
+2015,Jozini,KZN272,AUDA,Total By Customer Group,76227601,KwaZulu-Natal,31.5370003,31.5370003
+2015,The Big 5 False Bay,KZN273,AUDA,Total By Income Source,17425222,KwaZulu-Natal,30.9876321,30.9876321
+2015,The Big 5 False Bay,KZN273,AUDA,Total By Customer Group,17425222,KwaZulu-Natal,30.9876321,30.9876321
+2015,Hlabisa,KZN274,AUDA,Total By Income Source,2643457,KwaZulu-Natal,31.7195459,31.7195459
+2015,Hlabisa,KZN274,AUDA,Total By Customer Group,2643457,KwaZulu-Natal,31.7195459,31.7195459
+2015,Mtubatuba,KZN275,AUDA,Total By Income Source,63705972,KwaZulu-Natal,32.4467238,32.4467238
+2015,Mtubatuba,KZN275,AUDA,Total By Customer Group,63705972,KwaZulu-Natal,32.4467238,32.4467238
+2015,Mfolozi,KZN281,AUDA,Total By Income Source,8202673,KwaZulu-Natal,32.0650697,32.0650697
+2015,Mfolozi,KZN281,AUDA,Total By Customer Group,8202673,KwaZulu-Natal,32.0650697,32.0650697
+2015,uMhlathuze,KZN282,AUDA,Total By Income Source,223451813,KwaZulu-Natal,32.3107517,32.3107517
+2015,uMhlathuze,KZN282,AUDA,Total By Customer Group,223451813,KwaZulu-Natal,32.3107517,32.3107517
+2015,Ntambanana,KZN283,AUDA,Total By Income Source,1524980,KwaZulu-Natal,31.8648002,31.8648002
+2015,Ntambanana,KZN283,AUDA,Total By Customer Group,1524980,KwaZulu-Natal,31.8648002,31.8648002
+2015,uMlalazi,KZN284,AUDA,Total By Income Source,12529085,KwaZulu-Natal,32.2880726,32.2880726
+2015,uMlalazi,KZN284,AUDA,Total By Customer Group,12529088,KwaZulu-Natal,32.2880726,32.2880726
+2015,Mthonjaneni,KZN285,AUDA,Total By Income Source,7852311,KwaZulu-Natal,32.259717,32.259717
+2015,Mthonjaneni,KZN285,AUDA,Total By Customer Group,7852311,KwaZulu-Natal,32.259717,32.259717
+2015,Nkandla,KZN286,AUDA,Total By Income Source,10658338,KwaZulu-Natal,31.947311,31.947311
+2015,Nkandla,KZN286,AUDA,Total By Customer Group,10658338,KwaZulu-Natal,31.947311,31.947311
+2015,Mandeni,KZN291,AUDA,Total By Income Source,104526089,KwaZulu-Natal,31.7394939,31.7394939
+2015,Mandeni,KZN291,AUDA,Total By Customer Group,104526089,KwaZulu-Natal,31.7394939,31.7394939
+2015,KwaDukuza,KZN292,AUDA,Total By Income Source,116698967,KwaZulu-Natal,31.4913182,31.4913182
+2015,KwaDukuza,KZN292,AUDA,Total By Customer Group,116698966,KwaZulu-Natal,31.4913182,31.4913182
+2015,Ndwedwe,KZN293,AUDA,Total By Income Source,6930289,KwaZulu-Natal,31.3998995,31.3998995
+2015,Ndwedwe,KZN293,AUDA,Total By Customer Group,6930289,KwaZulu-Natal,31.3998995,31.3998995
+2015,Maphumulo,KZN294,AUDA,Total By Income Source,15727147,KwaZulu-Natal,31.0894002,31.0894002
+2015,Maphumulo,KZN294,AUDA,Total By Customer Group,15727147,KwaZulu-Natal,31.0894002,31.0894002
+2015,Ingwe,KZN431,AUDA,Total By Income Source,9326861,KwaZulu-Natal,31.4684703,31.4684703
+2015,Ingwe,KZN431,AUDA,Total By Customer Group,9326861,KwaZulu-Natal,31.4684703,31.4684703
+2015,Kwa Sani,KZN432,AUDA,Total By Income Source,1633122,KwaZulu-Natal,31.2892229,31.2892229
+2015,Kwa Sani,KZN432,AUDA,Total By Customer Group,1633122,KwaZulu-Natal,31.2892229,31.2892229
+2015,Greater Kokstad,KZN433,AUDA,Total By Income Source,46627095,KwaZulu-Natal,30.9417368,30.9417368
+2015,Greater Kokstad,KZN433,AUDA,Total By Customer Group,46627095,KwaZulu-Natal,30.9417368,30.9417368
+2015,Ubuhlebezwe,KZN434,AUDA,Total By Income Source,17939699,KwaZulu-Natal,31.03351,31.03351
+2015,Ubuhlebezwe,KZN434,AUDA,Total By Customer Group,17939699,KwaZulu-Natal,31.03351,31.03351
+2015,Umzimkhulu,KZN435,AUDA,Total By Income Source,5387728,KwaZulu-Natal,29.8815203,29.8815203
+2015,Umzimkhulu,KZN435,AUDA,Total By Customer Group,5387728,KwaZulu-Natal,29.8815203,29.8815203
+2015,Greater Giyani,LIM331,AUDA,Total By Income Source,69094269,KwaZulu-Natal,29.5107708,29.5107708
+2015,Greater Giyani,LIM331,AUDA,Total By Customer Group,69094269,KwaZulu-Natal,29.5107708,29.5107708
+2015,Greater Letaba,LIM332,AUDA,Total By Income Source,90076566,KwaZulu-Natal,29.3714909,29.3714909
+2015,Greater Letaba,LIM332,AUDA,Total By Customer Group,90076566,KwaZulu-Natal,29.3714909,29.3714909
+2015,Greater Tzaneen,LIM333,AUDA,Total By Income Source,278686574,KwaZulu-Natal,30.0665236,30.0665236
+2015,Greater Tzaneen,LIM333,AUDA,Total By Customer Group,278686573,KwaZulu-Natal,30.0665236,30.0665236
+2015,Ba-Phalaborwa,LIM334,AUDA,Total By Income Source,434611171,KwaZulu-Natal,29.6962677,29.6962677
+2015,Ba-Phalaborwa,LIM334,AUDA,Total By Customer Group,434611171,KwaZulu-Natal,29.6962677,29.6962677
+2015,Maruleng,LIM335,AUDA,Total By Income Source,2883559,Limpopo,30.8039474,30.8039474
+2015,Maruleng,LIM335,AUDA,Total By Customer Group,2883560,Limpopo,30.8039474,30.8039474
+2015,Musina,LIM341,AUDA,Total By Income Source,24931355,Limpopo,30.2974199,30.2974199
+2015,Musina,LIM341,AUDA,Total By Customer Group,24931355,Limpopo,30.2974199,30.2974199
+2015,Mutale,LIM342,AUDA,Total By Income Source,7259964,Limpopo,30.0665236,30.0665236
+2015,Mutale,LIM342,AUDA,Total By Customer Group,7259964,Limpopo,30.0665236,30.0665236
+2015,Thulamela,LIM343,AUDA,Total By Income Source,344927044,Limpopo,31.1406753,31.1406753
+2015,Thulamela,LIM343,AUDA,Total By Customer Group,344927044,Limpopo,31.1406753,31.1406753
+2015,Makhado,LIM344,AUDA,Total By Income Source,114301256,Limpopo,30.9576681,30.9576681
+2015,Makhado,LIM344,AUDA,Total By Customer Group,114301256,Limpopo,30.9576681,30.9576681
+2015,Blouberg,LIM351,AUDA,Total By Income Source,48443222,Limpopo,29.6962677,29.6962677
+2015,Blouberg,LIM351,AUDA,Total By Customer Group,48443222,Limpopo,29.6962677,29.6962677
+2015,Aganang,LIM352,AUDA,Total By Income Source,76708721,Limpopo,30.8039474,30.8039474
+2015,Aganang,LIM352,AUDA,Total By Customer Group,76708721,Limpopo,30.8039474,30.8039474
+2015,Molemole,LIM353,AUDA,Total By Income Source,69600748,Limpopo,30.6199895,30.6199895
+2015,Molemole,LIM353,AUDA,Total By Customer Group,69600748,Limpopo,30.6199895,30.6199895
+2015,Polokwane,LIM354,AUDA,Total By Income Source,709101825,Limpopo,29.9070436,29.9070436
+2015,Polokwane,LIM354,AUDA,Total By Customer Group,709101818,Limpopo,29.9070436,29.9070436
+2015,Lepele-Nkumpi,LIM355,AUDA,Total By Income Source,129372679,Limpopo,28.9950702,28.9950702
+2015,Lepele-Nkumpi,LIM355,AUDA,Total By Customer Group,129372681,Limpopo,28.9950702,28.9950702
+2015,Thabazimbi,LIM361,AUDA,Total By Income Source,79677929,Limpopo,29.0925356,29.0925356
+2015,Thabazimbi,LIM361,AUDA,Total By Customer Group,0,Limpopo,29.0925356,29.0925356
+2015,Lephalale,LIM362,AUDA,Total By Income Source,183845087,Limpopo,29.6962677,29.6962677
+2015,Lephalale,LIM362,AUDA,Total By Customer Group,183845088,Limpopo,29.6962677,29.6962677
+2015,Mookgopong,LIM364,AUDA,Total By Income Source,45674455,Limpopo,29.4485367,29.4485367
+2015,Mookgopong,LIM364,AUDA,Total By Customer Group,45674455,Limpopo,29.4485367,29.4485367
+2015,Modimolle,LIM365,AUDA,Total By Income Source,127763256,Limpopo,29.6499162,29.6499162
+2015,Modimolle,LIM365,AUDA,Total By Customer Group,127763256,Limpopo,29.6499162,29.6499162
+2015,Bela-Bela,LIM366,AUDA,Total By Income Source,102300771,Limpopo,27.3616476,27.3616476
+2015,Bela-Bela,LIM366,AUDA,Total By Customer Group,102300771,Limpopo,27.3616476,27.3616476
+2015,Mogalakwena,LIM367,AUDA,Total By Income Source,429669228,Limpopo,27.7373373,27.7373373
+2015,Mogalakwena,LIM367,AUDA,Total By Customer Group,429669228,Limpopo,27.7373373,27.7373373
+2015,Ephraim Mogale,LIM471,AUDA,Total By Income Source,44263125,Limpopo,28.7664408,28.7664408
+2015,Ephraim Mogale,LIM471,AUDA,Total By Customer Group,44263125,Limpopo,28.7664408,28.7664408
+2015,Elias Motsoaledi,LIM472,AUDA,Total By Income Source,49916803,Limpopo,28.2058768,28.2058768
+2015,Elias Motsoaledi,LIM472,AUDA,Total By Customer Group,49916805,Limpopo,28.2058768,28.2058768
+2015,Makhuduthamaga,LIM473,AUDA,Total By Income Source,13589871,Limpopo,28.2526623,28.2526623
+2015,Makhuduthamaga,LIM473,AUDA,Total By Customer Group,13589871,Limpopo,28.2526623,28.2526623
+2015,Fetakgomo,LIM474,AUDA,Total By Income Source,29262921,Limpopo,29.0138916,29.0138916
+2015,Fetakgomo,LIM474,AUDA,Total By Customer Group,29262920,Limpopo,29.0138916,29.0138916
+2015,Greater Tubatse,LIM475,AUDA,Total By Income Source,112017253,Limpopo,29.3250347,29.3250347
+2015,Greater Tubatse,LIM475,AUDA,Total By Customer Group,112017253,Limpopo,29.3250347,29.3250347
+2015,Mangaung,MAN,AUDA,Total By Income Source,3514071852,Limpopo,29.3949458,29.3949458
+2015,Mangaung,MAN,AUDA,Total By Customer Group,3514071852,Limpopo,29.3949458,29.3949458
+2015,Chief Albert Luthuli,MP301,AUDA,Total By Income Source,725557176,Limpopo,29.8352303,29.8352303
+2015,Chief Albert Luthuli,MP301,AUDA,Total By Customer Group,725557176,Limpopo,29.8352303,29.8352303
+2015,Msukaligwa,MP302,AUDA,Total By Income Source,327472677,Limpopo,29.8352303,29.8352303
+2015,Msukaligwa,MP302,AUDA,Total By Customer Group,327472677,Limpopo,29.8352303,29.8352303
+2015,Mkhondo,MP303,AUDA,Total By Income Source,23647619,Limpopo,30.2512728,30.2512728
+2015,Mkhondo,MP303,AUDA,Total By Customer Group,23647619,Limpopo,30.2512728,30.2512728
+2015,Dr Pixley Ka Isaka Seme,MP304,AUDA,Total By Income Source,251758330,Free State,26.3249438,26.3249438
+2015,Dr Pixley Ka Isaka Seme,MP304,AUDA,Total By Customer Group,251758330,Free State,26.3249438,26.3249438
+2015,Lekwa,MP305,AUDA,Total By Income Source,483609763,Mpumalanga,30.3325113,30.3325113
+2015,Lekwa,MP305,AUDA,Total By Customer Group,483609763,Mpumalanga,30.3325113,30.3325113
+2015,Dipaleseng,MP306,AUDA,Total By Income Source,289051150,Mpumalanga,30.0665236,30.0665236
+2015,Dipaleseng,MP306,AUDA,Total By Customer Group,289051156,Mpumalanga,30.0665236,30.0665236
+2015,Govan Mbeki,MP307,AUDA,Total By Income Source,912763241,Mpumalanga,30.6199895,30.6199895
+2015,Govan Mbeki,MP307,AUDA,Total By Customer Group,912763239,Mpumalanga,30.6199895,30.6199895
+2015,Victor Khanye,MP311,AUDA,Total By Income Source,340532659,Mpumalanga,29.8815203,29.8815203
+2015,Victor Khanye,MP311,AUDA,Total By Customer Group,340532659,Mpumalanga,29.8815203,29.8815203
+2015,Emalahleni,MP312,AUDA,Total By Income Source,1710146911,Mpumalanga,29.3250347,29.3250347
+2015,Emalahleni,MP312,AUDA,Total By Customer Group,1710146911,Mpumalanga,29.3250347,29.3250347
+2015,Emakhazeni,MP314,AUDA,Total By Income Source,123822344,Mpumalanga,28.5797981,28.5797981
+2015,Emakhazeni,MP314,AUDA,Total By Customer Group,123822344,Mpumalanga,28.5797981,28.5797981
+2015,Thembisile,MP315,AUDA,Total By Income Source,422261190,Mpumalanga,29.1390642,29.1390642
+2015,Thembisile,MP315,AUDA,Total By Customer Group,422261190,Mpumalanga,29.1390642,29.1390642
+2015,Dr JS Moroka,MP316,AUDA,Total By Income Source,65583184,Mpumalanga,28.8130675,28.8130675
+2015,Dr JS Moroka,MP316,AUDA,Total By Customer Group,65583184,Mpumalanga,28.8130675,28.8130675
+2015,Thaba Chweu,MP321,AUDA,Total By Income Source,171153613,Mpumalanga,29.2553229,29.2553229
+2015,Thaba Chweu,MP321,AUDA,Total By Customer Group,171153613,Mpumalanga,29.2553229,29.2553229
+2015,Mbombela,MP322,AUDA,Total By Income Source,169027856,Mpumalanga,30.0665236,30.0665236
+2015,Mbombela,MP322,AUDA,Total By Customer Group,169027853,Mpumalanga,30.0665236,30.0665236
+2015,Umjindi,MP323,AUDA,Total By Income Source,102104713,Mpumalanga,28.9062794,28.9062794
+2015,Umjindi,MP323,AUDA,Total By Customer Group,102104716,Mpumalanga,28.9062794,28.9062794
+2015,Nkomazi,MP324,AUDA,Total By Income Source,130809034,Mpumalanga,28.8130675,28.8130675
+2015,Nkomazi,MP324,AUDA,Total By Customer Group,130809034,Mpumalanga,28.8130675,28.8130675
+2015,Bushbuckridge,MP325,AUDA,Total By Income Source,787259812,Mpumalanga,30.7791913,30.7791913
+2015,Bushbuckridge,MP325,AUDA,Total By Customer Group,787259812,Mpumalanga,30.7791913,30.7791913
+2015,Richtersveld,NC061,AUDA,Total By Income Source,52900092,Mpumalanga,31.03351,31.03351
+2015,Richtersveld,NC061,AUDA,Total By Customer Group,52900092,Mpumalanga,31.03351,31.03351
+2015,Nama Khoi,NC062,AUDA,Total By Income Source,87380797,Mpumalanga,31.7195459,31.7195459
+2015,Nama Khoi,NC062,AUDA,Total By Customer Group,87380797,Mpumalanga,31.7195459,31.7195459
+2015,Kamiesberg,NC064,AUDA,Total By Income Source,45454006,Mpumalanga,31.1710389,31.1710389
+2015,Kamiesberg,NC064,AUDA,Total By Customer Group,45454006,Mpumalanga,31.1710389,31.1710389
+2015,Hantam,NC065,AUDA,Total By Income Source,29307781,Northern Cape,17.1011931,17.1011931
+2015,Hantam,NC065,AUDA,Total By Customer Group,29307781,Northern Cape,17.1011931,17.1011931
+2015,Karoo Hoogland,NC066,AUDA,Total By Income Source,20422367,Northern Cape,17.8583868,17.8583868
+2015,Karoo Hoogland,NC066,AUDA,Total By Customer Group,20422367,Northern Cape,17.8583868,17.8583868
+2015,Khâi-Ma,NC067,AUDA,Total By Income Source,36772831,Northern Cape,17.8583868,17.8583868
+2015,Khâi-Ma,NC067,AUDA,Total By Customer Group,36772831,Northern Cape,17.8583868,17.8583868
+2015,Ubuntu,NC071,AUDA,Total By Income Source,45897013,Northern Cape,19.949686,19.949686
+2015,Ubuntu,NC071,AUDA,Total By Customer Group,45897013,Northern Cape,19.949686,19.949686
+2015,Umsobomvu,NC072,AUDA,Total By Income Source,86800648,Northern Cape,20.902977,20.902977
+2015,Umsobomvu,NC072,AUDA,Total By Customer Group,86800648,Northern Cape,20.902977,20.902977
+2015,Emthanjeni,NC073,AUDA,Total By Income Source,42755018,Northern Cape,19.237649,19.237649
+2015,Emthanjeni,NC073,AUDA,Total By Customer Group,42755017,Northern Cape,19.237649,19.237649
+2015,Kareeberg,NC074,AUDA,Total By Income Source,5188782,Northern Cape,23.1918021,23.1918021
+2015,Kareeberg,NC074,AUDA,Total By Customer Group,5188779,Northern Cape,23.1918021,23.1918021
+2015,Renosterberg,NC075,AUDA,Total By Income Source,41510460,Northern Cape,24.9991464,24.9991464
+2015,Renosterberg,NC075,AUDA,Total By Customer Group,62839885,Northern Cape,24.9991464,24.9991464
+2015,Thembelihle,NC076,AUDA,Total By Income Source,49276996,Northern Cape,24.0087533,24.0087533
+2015,Thembelihle,NC076,AUDA,Total By Customer Group,49276996,Northern Cape,24.0087533,24.0087533
+2015,Siyancuma,NC078,AUDA,Total By Income Source,86861337,Northern Cape,22.047637,22.047637
+2015,Siyancuma,NC078,AUDA,Total By Customer Group,86861338,Northern Cape,22.047637,22.047637
+2015,Mier,NC081,AUDA,Total By Income Source,24081803,Northern Cape,24.3341432,24.3341432
+2015,Mier,NC081,AUDA,Total By Customer Group,24081803,Northern Cape,24.3341432,24.3341432
+2015,Kai !Garib,NC082,AUDA,Total By Income Source,128617915,Northern Cape,23.8584737,23.8584737
+2015,Kai !Garib,NC082,AUDA,Total By Customer Group,128617915,Northern Cape,23.8584737,23.8584737
+2015,//Khara Hais,NC083,AUDA,Total By Income Source,51729562,Northern Cape,23.4776098,23.4776098
+2015,//Khara Hais,NC083,AUDA,Total By Customer Group,51729562,Northern Cape,23.4776098,23.4776098
+2015,!Kheis,NC084,AUDA,Total By Income Source,42963739,Northern Cape,20.2832217,20.2832217
+2015,!Kheis,NC084,AUDA,Total By Customer Group,0,Northern Cape,20.2832217,20.2832217
+2015,Tsantsabane,NC085,AUDA,Total By Income Source,115741810,Northern Cape,20.9759699,20.9759699
+2015,Tsantsabane,NC085,AUDA,Total By Customer Group,115741810,Northern Cape,20.9759699,20.9759699
+2015,Kgatelopele,NC086,AUDA,Total By Income Source,2972791,Northern Cape,21.242665,21.242665
+2015,Kgatelopele,NC086,AUDA,Total By Customer Group,2972791,Northern Cape,21.242665,21.242665
+2015,Sol Plaatjie,NC091,AUDA,Total By Income Source,1236988785,Northern Cape,21.6660725,21.6660725
+2015,Sol Plaatjie,NC091,AUDA,Total By Customer Group,1236988785,Northern Cape,21.6660725,21.6660725
+2015,Magareng,NC093,AUDA,Total By Income Source,106143795,Northern Cape,23.1918021,23.1918021
+2015,Magareng,NC093,AUDA,Total By Customer Group,106143795,Northern Cape,23.1918021,23.1918021
+2015,Phokwane,NC094,AUDA,Total By Income Source,255452520,Northern Cape,23.6680747,23.6680747
+2015,Phokwane,NC094,AUDA,Total By Customer Group,255452520,Northern Cape,23.6680747,23.6680747
+2015,Joe Morolong,NC451,AUDA,Total By Income Source,59376499,Northern Cape,24.6667939,24.6667939
+2015,Joe Morolong,NC451,AUDA,Total By Customer Group,59376499,Northern Cape,24.6667939,24.6667939
+2015,Ga-Segonyana,NC452,AUDA,Total By Income Source,41881174,Northern Cape,24.7617836,24.7617836
+2015,Ga-Segonyana,NC452,AUDA,Total By Customer Group,41881174,Northern Cape,24.7617836,24.7617836
+2015,Gamagara,NC453,AUDA,Total By Income Source,81672020,Northern Cape,24.7617836,24.7617836
+2015,Gamagara,NC453,AUDA,Total By Customer Group,81672020,Northern Cape,24.7617836,24.7617836
+2015,Nelson Mandela Bay,NMA,AUDA,Total By Income Source,2932469535,Northern Cape,23.287085,23.287085
+2015,Nelson Mandela Bay,NMA,AUDA,Total By Customer Group,2932469535,Northern Cape,23.287085,23.287085
+2015,Moretele,NW371,AUDA,Total By Income Source,142440282,Northern Cape,23.4776098,23.4776098
+2015,Moretele,NW371,AUDA,Total By Customer Group,142440281,Northern Cape,23.4776098,23.4776098
+2015,Local Municipality of Madibeng,NW372,AUDA,Total By Income Source,277456584,Northern Cape,23.0488541,23.0488541
+2015,Local Municipality of Madibeng,NW372,AUDA,Total By Customer Group,277456584,Northern Cape,23.0488541,23.0488541
+2015,Kgetlengrivier,NW374,AUDA,Total By Income Source,109275269,Eastern Cape,25.5681084,25.5681084
+2015,Kgetlengrivier,NW374,AUDA,Total By Customer Group,109275269,Eastern Cape,25.5681084,25.5681084
+2015,Moses Kotane,NW375,AUDA,Total By Income Source,420581559,North West,27.9717606,27.9717606
+2015,Moses Kotane,NW375,AUDA,Total By Customer Group,420581559,North West,27.9717606,27.9717606
+2015,Tswaing,NW382,AUDA,Total By Income Source,210092450,North West,27.8311428,27.8311428
+2015,Tswaing,NW382,AUDA,Total By Customer Group,210092450,North West,27.8311428,27.8311428
+2015,Mafikeng,NW383,AUDA,Total By Income Source,722641034,North West,26.8910342,26.8910342
+2015,Mafikeng,NW383,AUDA,Total By Customer Group,722641038,North West,26.8910342,26.8910342
+2015,Ditsobotla,NW384,AUDA,Total By Income Source,294217061,North West,26.8910342,26.8910342
+2015,Ditsobotla,NW384,AUDA,Total By Customer Group,294217061,North West,26.8910342,26.8910342
+2015,Ramotshere Moiloa,NW385,AUDA,Total By Income Source,113769651,North West,25.7575196,25.7575196
+2015,Ramotshere Moiloa,NW385,AUDA,Total By Customer Group,113769651,North West,25.7575196,25.7575196
+2015,Naledi,NW392,AUDA,Total By Income Source,231934859,North West,25.5681084,25.5681084
+2015,Naledi,NW392,AUDA,Total By Customer Group,231934857,North West,25.5681084,25.5681084
+2015,Mamusa,NW393,AUDA,Total By Income Source,135941381,North West,26.1359431,26.1359431
+2015,Mamusa,NW393,AUDA,Total By Customer Group,135941381,North West,26.1359431,26.1359431
+2015,Greater Taung,NW394,AUDA,Total By Income Source,22575332,North West,26.10005,26.10005
+2015,Greater Taung,NW394,AUDA,Total By Customer Group,22575332,North West,26.10005,26.10005
+2015,Lekwa-Teemane,NW396,AUDA,Total By Income Source,359469731,North West,24.7142918,24.7142918
+2015,Lekwa-Teemane,NW396,AUDA,Total By Customer Group,359469731,North West,24.7142918,24.7142918
+2015,Kagisano/Molopo,NW397,AUDA,Total By Income Source,3316782,North West,25.3785719,25.3785719
+2015,Kagisano/Molopo,NW397,AUDA,Total By Customer Group,3316782,North West,25.3785719,25.3785719
+2015,Ventersdorp,NW401,AUDA,Total By Income Source,81226304,North West,24.2390498,24.2390498
+2015,Ventersdorp,NW401,AUDA,Total By Customer Group,81226304,North West,24.2390498,24.2390498
+2015,Tlokwe City Council,NW402,AUDA,Total By Income Source,131481377,North West,25.3785719,25.3785719
+2015,Tlokwe City Council,NW402,AUDA,Total By Customer Group,131481377,North West,25.3785719,25.3785719
+2015,City of Matlosana,NW403,AUDA,Total By Income Source,1434371203,North West,23.9536466,23.9536466
+2015,City of Matlosana,NW403,AUDA,Total By Customer Group,1434371203,North West,23.9536466,23.9536466
+2015,City of Tshwane,TSH,AUDA,Total By Income Source,8358071226,North West,26.8910342,26.8910342
+2015,City of Tshwane,TSH,AUDA,Total By Customer Group,8358071226,North West,26.8910342,26.8910342
+2015,Matzikama,WC011,AUDA,Total By Income Source,51485751,North West,27.096925,27.096925
+2015,Matzikama,WC011,AUDA,Total By Customer Group,51485752,North West,27.096925,27.096925
+2015,Cederberg,WC012,AUDA,Total By Income Source,75823253,North West,26.5137964,26.5137964
+2015,Cederberg,WC012,AUDA,Total By Customer Group,75823254,North West,26.5137964,26.5137964
+2015,Bergrivier,WC013,AUDA,Total By Income Source,72985367,Gauteng,28.3929417,28.3929417
+2015,Bergrivier,WC013,AUDA,Total By Customer Group,72985367,Gauteng,28.3929417,28.3929417
+2015,Saldanha Bay,WC014,AUDA,Total By Income Source,197016012,Western Cape,18.5225709,18.5225709
+2015,Saldanha Bay,WC014,AUDA,Total By Customer Group,197016012,Western Cape,18.5225709,18.5225709
+2015,Swartland,WC015,AUDA,Total By Income Source,57200366,Western Cape,19.0118251,19.0118251
+2015,Swartland,WC015,AUDA,Total By Customer Group,57200366,Western Cape,19.0118251,19.0118251
+2015,Witzenberg,WC022,AUDA,Total By Income Source,165602568,Western Cape,18.7125791,18.7125791
+2015,Witzenberg,WC022,AUDA,Total By Customer Group,165602572,Western Cape,18.7125791,18.7125791
+2015,Drakenstein,WC023,AUDA,Total By Income Source,391893801,Western Cape,18.1903059,18.1903059
+2015,Drakenstein,WC023,AUDA,Total By Customer Group,391893801,Western Cape,18.1903059,18.1903059
+2015,Stellenbosch,WC024,AUDA,Total By Income Source,178333121,Western Cape,18.6624903,18.6624903
+2015,Stellenbosch,WC024,AUDA,Total By Customer Group,178333124,Western Cape,18.6624903,18.6624903
+2015,Breede Valley,WC025,AUDA,Total By Income Source,115440456,Western Cape,19.2831531,19.2831531
+2015,Breede Valley,WC025,AUDA,Total By Customer Group,115440456,Western Cape,19.2831531,19.2831531
+2015,Langeberg,WC026,AUDA,Total By Income Source,47592889,Western Cape,19.04532,19.04532
+2015,Langeberg,WC026,AUDA,Total By Customer Group,47592889,Western Cape,19.04532,19.04532
+2015,Theewaterskloof,WC031,AUDA,Total By Income Source,154899156,Western Cape,18.9502232,18.9502232
+2015,Theewaterskloof,WC031,AUDA,Total By Customer Group,154899156,Western Cape,18.9502232,18.9502232
+2015,Overstrand,WC032,AUDA,Total By Income Source,70260196,Western Cape,19.4735066,19.4735066
+2015,Overstrand,WC032,AUDA,Total By Customer Group,70260193,Western Cape,19.4735066,19.4735066
+2015,Cape Agulhas,WC033,AUDA,Total By Income Source,27089563,Western Cape,27.812138,27.812138
+2015,Cape Agulhas,WC033,AUDA,Total By Customer Group,27089563,Western Cape,27.812138,27.812138
+2015,Swellendam,WC034,AUDA,Total By Income Source,35870844,Western Cape,19.4252453,19.4252453
+2015,Swellendam,WC034,AUDA,Total By Customer Group,35870842,Western Cape,19.4252453,19.4252453
+2015,Hessequa,WC042,AUDA,Total By Income Source,93406304,Western Cape,19.4259114,19.4259114
+2015,Hessequa,WC042,AUDA,Total By Customer Group,93406304,Western Cape,19.4259114,19.4259114
+2015,Mossel Bay,WC043,AUDA,Total By Income Source,70025912,Western Cape,20.0449662,20.0449662
+2015,Mossel Bay,WC043,AUDA,Total By Customer Group,70025913,Western Cape,20.0449662,20.0449662
+2015,George,WC044,AUDA,Total By Income Source,103237813,Western Cape,20.7185132,20.7185132
+2015,George,WC044,AUDA,Total By Customer Group,103237816,Western Cape,20.7185132,20.7185132
+2015,Oudtshoorn,WC045,AUDA,Total By Income Source,136199935,Western Cape,21.1891151,21.1891151
+2015,Oudtshoorn,WC045,AUDA,Total By Customer Group,136199935,Western Cape,21.1891151,21.1891151
+2015,Bitou,WC047,AUDA,Total By Income Source,84618449,Western Cape,21.9045541,21.9045541
+2015,Bitou,WC047,AUDA,Total By Customer Group,84618449,Western Cape,21.9045541,21.9045541
+2015,Knysna,WC048,AUDA,Total By Income Source,265507967,Western Cape,22.4768287,22.4768287
+2015,Knysna,WC048,AUDA,Total By Customer Group,265507968,Western Cape,22.4768287,22.4768287
+2015,Laingsburg,WC051,AUDA,Total By Income Source,6536120,Western Cape,22.1430215,22.1430215
+2015,Laingsburg,WC051,AUDA,Total By Customer Group,6536115,Western Cape,22.1430215,22.1430215
+2015,Prince Albert,WC052,AUDA,Total By Income Source,11143234,Western Cape,23.429984,23.429984
+2015,Prince Albert,WC052,AUDA,Total By Customer Group,11143234,Western Cape,23.429984,23.429984
+2015,Beaufort West,WC053,AUDA,Total By Income Source,40759381,Western Cape,23.049842,23.049842
+2015,Beaufort West,WC053,AUDA,Total By Customer Group,40759381,Western Cape,23.049842,23.049842

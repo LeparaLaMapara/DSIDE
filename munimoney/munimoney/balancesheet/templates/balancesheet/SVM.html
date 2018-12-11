@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Opportunity Measure | Municipal Money</title>
+
+	<!-- bootstrap & fontawesome -->
+	{% load staticfiles %}
+		<!-- <link rel='stylesheet' href="{% static 'assets/css/bootstrap.css' %}" type='text/css'> -->
+		<link rel='stylesheet' href="{% static 'assets/css/bootstrap.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/font-awesome/4.5.0/css/font-awesome.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/css/fonts.googleapis.com.css' %}" type='text/css'>
+		<link rel="stylesheet" href="{% static 'assets/css/ace.min.css' %}" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel='stylesheet' href="{% static 'assets/css/ace-skins.min.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'assets/css/ace-rtl.min.css' %}" type='text/css'>
+		<script type="text/javascript" src="{% static 'assets/js/ace-extra.min.js' %}"></script>
+		<link rel='stylesheet' href="{% static 'slider/sliderstuff.css' %}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'skillbar/skills.css' %}" type='text/css'>
+
+
+</head>
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default          ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-header pull-left">
+					<a href=".." class="navbar-brand">
+						<small>
+							<i class="fa fa-university"></i>
+							Municipal Money
+						</small>
+					</a>
+				</div>
+
+				
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-facebook"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-twitter"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-skype"></i>
+						</button>
+
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-whatsapp"></i>
+						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="active">
+						<a href="..">
+							<i class="menu-icon fa fa-spinner"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="avarageProfile">
+							<i class="menu-icon fa fa-university"></i>
+							<span class="menu-text"> Profiles </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					<li class="">
+						<a href="SVMpage">
+							<i class="menu-icon fa fa-line-chart"></i>
+							<span class="menu-text"> Profile Predictions </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+					
+					<li class="">
+						<a href="classify">
+							<i class="menu-icon fa fa-bar-chart"></i>
+							<span class="menu-text"> Employment Predic... </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+
+
+					<li class="">
+						<a href="sunburst">
+							<i class="menu-icon fa fa-money"></i>
+							<span class="menu-text"> Income </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+					<li class="">
+						<a href="ExpenseSunburst">
+							<i class="menu-icon fa fa-cc-mastercard"></i>
+							<span class="menu-text"> Expenditure </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+					
+						<li class="">
+						<a href="tree">
+							<i class="menu-icon fa fa-sitemap"></i>
+							<span class="menu-text"> Decision Tree </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+						<li class="">
+						<a href="document">
+							<i class="menu-icon fa fa-file-pdf-o"></i>
+							<span class="menu-text"> Documentations </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					
+</ul>
+
+							
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="..">Home</a>
+							</li>
+							<li class="active">Predictions</li>
+						</ul><!-- /.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+						<div class="page-header">
+							<h1>
+								Profile Prediction
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									Predicting profile status for municipalities  
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="alert alert-block alert-success">
+									<button type="button" class="close" data-dismiss="alert">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+
+									<i class="ace-icon fa fa-check green"></i>
+
+										A support vector machine model to predict which profile a municipality belongs to. Fill in these measures to get a predicted profile.
+
+								</div>
+
+<!-- jQuery -->
+	{% load staticfiles %}
+	<!-- <script src="{% static 'assets/js/jquery.js' %}"></script> -->
+	<!-- <script type="text/javascript" src="{% static 'assets/js/jquery.js' %}"></script> -->
+	<!-- <script type="text/javascript" src="{% static 'assets/js/jquery-1.11.3.min.js' %}"></script>-->
+	<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script> 
+
+
+
+								<!-- PAGE CONTENT BEGINS -->
+								<form id = "user_input" action = "/SVM" method = "post">{% csrf_token %}
+								<table id="tableResults" class="table table-hover">
+									  <tr><td>Proportion of households with at least one employed adults
+									</td><td> <p><span id="EmpAdu"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="EmpAdultProp" name="EmpAdultProp">
+									</td></tr>
+									
+									  <tr><td>Income poverty proportion
+									</td><td> <p><span id="IncPov"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="IncomePovertyProp" name="IncomePovertyProp">
+									</td></tr>
+									
+									 <tr><td>Proportion of overcrowding
+									</td><td> <p><span id="OveCro"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="OvercrowdedProp" name="OvercrowdedProp">
+									</td></tr>
+									
+									<tr><td>Proportion of youth matriculants
+									</td><td> <p><span id="MatPro"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="MatricProp" name="MatricProp">
+									</td></tr>
+									
+									<tr><td>Proportion of youth with less than grade 9
+									</td><td> <p><span id="LesGra"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="LessGrade9Prop" name="LessGrade9Prop">
+									</td></tr>
+									
+									<tr><td>Proportion of youth not poor
+									</td><td> <p><span id="NonPoo"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="NonPoor" name="NonPoor">
+									</td></tr>
+									
+									<tr><td>Citizenship Proportion
+									</td><td> <p><span id="YesPro"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="YesProp" name="YesProp">
+									</td></tr>
+									
+									<tr><td>Repairs-PPE Ratio 
+									</td><td> <p><span id="repPPE"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="repairsPPE" name="repairsPPE">
+									</td></tr>
+									
+									
+									<tr><td>Operating Surplus Margin 
+									</td><td> <p><span id="OppSur"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="OppSurplusMargin" name="OppSurplusMargin">
+									</td></tr>
+									
+									
+									<tr><td>Current Ratio
+									</td><td> <p><span id="CurRat"></span></p>
+									<input class="slider" type="range" min="0" max="100" value="0" step="1" id="Current Ratio" name="Current Ratio">
+									</td></tr>
+									</table>
+									
+									<input type="submit" class="btn btn-primary btn-lg" name="upvote" value="Submit" />
+								</form>
+								
+								
+								
+								<div id="output">
+									
+								</div>
+								
+								<script>
+var slider = document.getElementById("EmpAdultProp");
+var output = document.getElementById("EmpAdu");
+var slider2 = document.getElementById("IncomePovertyProp");
+var output2 = document.getElementById("IncPov");
+var slider3 = document.getElementById("OvercrowdedProp");
+var output3 = document.getElementById("OveCro");
+var slider4 = document.getElementById("MatricProp");
+var output4 = document.getElementById("MatPro");
+var slider5 = document.getElementById("LessGrade9Prop");
+var output5 = document.getElementById("LesGra");
+var slider6 = document.getElementById("NonPoor");
+var output6 = document.getElementById("NonPoo");
+var slider7 = document.getElementById("YesProp");
+var output7 = document.getElementById("YesPro");
+var slider8 = document.getElementById("repairsPPE");
+var output8 = document.getElementById("repPPE");
+var slider9 = document.getElementById("OppSurplusMargin");
+var output9 = document.getElementById("OppSur");
+var slider10 = document.getElementById("Current Ratio");
+var output10 = document.getElementById("CurRat");
+
+
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+
+slider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+
+</script>			
+
+								<script>
+									$("#user_input").submit( function(e) {
+										e.preventDefault();
+										var data = $(this).serialize();
+										var url = $(this).attr("action");
+										$.post("../SVM", data, function(response) { 
+											$("#output").text("The predicted profile category is " + response);
+											console.log(response)
+											alert("The predicted profile category is " +  response);
+										});
+								
+								  });
+									</script>								
+
+				</div><!-- /.col -->
+						</div><!-- /.row -->
+
+                        	</script>
+							
+							<div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">Municipal Money</span>
+							Application &copy; 2018
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+		
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<!--<script src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script> -->
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script type='text/javascript' src='{% static &quot; assets/js/jquery.mobile.custom.min.js &quot;'>"+"<"+"/script>");
+		</script>
+
+		 
+
+		<!--<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script> -->
+
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		
+		<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery-ui.custom.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.ui.touch-punch.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.easypiechart.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.sparkline.index.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.pie.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.flot.resize.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'bubblechart/bubble.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/ace-elements.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/ace.min.js' %}"></script>
+
+		
+
+
+
+		<!-- ace scripts -->
+		<script src="{% static 'assets/js/ace-elements.min.js' %}"></script>
+		<script src="{% static 'assets/js/ace.min.js' %}"></script>
+			
+	</body>
+</html>
+
+
+   
+   

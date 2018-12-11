@@ -1,0 +1,16 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<p>Services</p>
+{% for c in content %}
+	<p>
+	{{c}}
+	<p>
+{% endfor %}
+
+{% include "personal/includes/footer.html" %}
+
+{% endblock %}
+
+

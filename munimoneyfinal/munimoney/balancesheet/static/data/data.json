@@ -1,0 +1,17 @@
+{
+  "nodes":[
+    {"name":"One","group":1},
+    {"name":"Two","group":2},
+    {"name":"Three","group":3},
+    {"name":"Four","group":4},
+    {"name":"Five","group":5},
+    {"name":"Six","group":6}
+  ],
+  "links":[
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":1},
+    {"source":3,"target":0,"value":1},
+    {"source":4,"target":0,"value":1},
+    {"source":5,"target":0,"value":1}
+  ]
+}

@@ -1,0 +1,46 @@
+.chart {
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+  font-size: 11px;
+}
+
+rect {
+  stroke: #eee;
+  fill: #aaa;
+  fill-opacity: 1;
+}
+
+rect.parent {
+  cursor: pointer;
+  fill: rgba(83, 120, 58, 0.8);
+}
+
+text {
+  pointer-events: none;
+}
+
+.partitiontooltip {
+  position: absolute;
+  padding: 5px;
+  color: #FFFFFF;
+  background: #000000;
+  border: 2px solid #6D6D6D;
+  line-height: 39px;
+  text-align: left;
+  border-radius: 14px;
+  box-shadow: 0px 0px 6px #0F800C;
+}
+
+.scattertooltip {
+  position: absolute;
+  padding: 5px;
+  color: #000000;
+  background: #FFFFFF;
+  border: 2px solid #6D6D6D;
+  line-height: 39px;
+  text-align: left;
+  font-size: 12px;
+  border-radius: 14px;
+  box-shadow: 0px 0px 6px #0F800C;
+}

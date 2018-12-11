@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+           
+  </head>
+
+  <body class="no-skin">
+
+
+	<div id="output">
+		Municipality Information
+	</div>
+	<div id="outputreal">
+			
+		</div>
+
+	<script>
+document.getElementById('outputreal').innerHtml = "random";
+var info = {{data|safe}};
+document.getElementById('output').innerHtml = info[0][0] + info[0][1];
+console.log(typeof info[0][0], info[0][1]);
+
+			</script>
+
+</body>
+
+</html>

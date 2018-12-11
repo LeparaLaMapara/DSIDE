@@ -1,0 +1,2500 @@
+,mun_name,mun_code,label,total_amount,Province,Latitude,Longitude
+2013,Buffalo City,BUF,fruitless,8080000.0,Eastern Cape,27.6434844,27.6434844
+2013,Buffalo City,BUF,irregular,117128000.0,Eastern Cape,27.6434844,27.6434844
+2013,Buffalo City,BUF,unauthorised,14478000.0,Eastern Cape,27.6434844,27.6434844
+2013,City of Cape Town,CPT,fruitless,0.0,Western Cape,18.4680927,18.4680927
+2013,City of Cape Town,CPT,irregular,1465000.0,Western Cape,18.4680927,18.4680927
+2013,City of Cape Town,CPT,unauthorised,0.0,Western Cape,18.4680927,18.4680927
+2013,West Coast,DC1,fruitless,0.0,Western Cape,18.6175626,18.6175626
+2013,West Coast,DC1,irregular,0.0,Western Cape,18.6175626,18.6175626
+2013,West Coast,DC1,unauthorised,0.0,Western Cape,18.6175626,18.6175626
+2013,Cacadu,DC10,fruitless,0.0,Eastern Cape,25.6223644,25.6223644
+2013,Cacadu,DC10,irregular,7894000.0,Eastern Cape,25.6223644,25.6223644
+2013,Cacadu,DC10,unauthorised,0.0,Eastern Cape,25.6223644,25.6223644
+2013,Amathole,DC12,fruitless,58695000.0,Eastern Cape,27.3616476,27.3616476
+2013,Amathole,DC12,irregular,2147000.0,Eastern Cape,27.3616476,27.3616476
+2013,Amathole,DC12,unauthorised,58695000.0,Eastern Cape,27.3616476,27.3616476
+2013,Chris Hani,DC13,fruitless,817000.0,Eastern Cape,26.7967849,26.7967849
+2013,Chris Hani,DC13,irregular,42959000.0,Eastern Cape,26.7967849,26.7967849
+2013,Chris Hani,DC13,unauthorised,2301000.0,Eastern Cape,26.7967849,26.7967849
+2013,Joe Gqabi,DC14,fruitless,4360000.0,Eastern Cape,26.9852422,26.9852422
+2013,Joe Gqabi,DC14,irregular,422000.0,Eastern Cape,26.9852422,26.9852422
+2013,Joe Gqabi,DC14,unauthorised,3938000.0,Eastern Cape,26.9852422,26.9852422
+2013,O.R.Tambo,DC15,fruitless,15134000.0,Eastern Cape,29.2320784,29.2320784
+2013,O.R.Tambo,DC15,irregular,264197000.0,Eastern Cape,29.2320784,29.2320784
+2013,O.R.Tambo,DC15,unauthorised,9181000.0,Eastern Cape,29.2320784,29.2320784
+2013,Xhariep,DC16,fruitless,133000.0,Free State,25.2837585,25.2837585
+2013,Xhariep,DC16,irregular,17774000.0,Free State,25.2837585,25.2837585
+2013,Xhariep,DC16,unauthorised,11151000.0,Free State,25.2837585,25.2837585
+2013,Lejweleputswa,DC18,fruitless,288680000.0,Free State,26.2304616,26.2304616
+2013,Lejweleputswa,DC18,irregular,31243000.0,Free State,26.2304616,26.2304616
+2013,Lejweleputswa,DC18,unauthorised,1595540000.0,Free State,26.2304616,26.2304616
+2013,Thabo Mofutsanyane,DC19,fruitless,1323000.0,Free State,28.299435,28.299435
+2013,Thabo Mofutsanyane,DC19,irregular,46092000.0,Free State,28.299435,28.299435
+2013,Thabo Mofutsanyane,DC19,unauthorised,0.0,Free State,28.299435,28.299435
+2013,Cape Winelands,DC2,fruitless,51000.0,Western Cape,19.7591675,19.7591675
+2013,Cape Winelands,DC2,irregular,9207000.0,Western Cape,19.7591675,19.7591675
+2013,Cape Winelands,DC2,unauthorised,2531000.0,Western Cape,19.7591675,19.7591675
+2013,Fezile Dabi,DC20,fruitless,2454000.0,Free State,27.7373373,27.7373373
+2013,Fezile Dabi,DC20,irregular,311000.0,Free State,27.7373373,27.7373373
+2013,Fezile Dabi,DC20,unauthorised,0.0,Free State,27.7373373,27.7373373
+2013,Ugu,DC21,fruitless,2028000.0,KwaZulu-Natal,30.2512728,30.2512728
+2013,Ugu,DC21,irregular,61101000.0,KwaZulu-Natal,30.2512728,30.2512728
+2013,Ugu,DC21,unauthorised,8126000.0,KwaZulu-Natal,30.2512728,30.2512728
+2013,Umgungundlovu,DC22,fruitless,291000.0,KwaZulu-Natal,30.3435506,30.3435506
+2013,Umgungundlovu,DC22,irregular,-82000.0,KwaZulu-Natal,30.3435506,30.3435506
+2013,Umgungundlovu,DC22,unauthorised,0.0,KwaZulu-Natal,30.3435506,30.3435506
+2013,Uthukela,DC23,fruitless,3819000.0,KwaZulu-Natal,29.6035495,29.6035495
+2013,Uthukela,DC23,irregular,42346000.0,KwaZulu-Natal,29.6035495,29.6035495
+2013,Uthukela,DC23,unauthorised,270891000.0,KwaZulu-Natal,29.6035495,29.6035495
+2013,Umzinyathi,DC24,fruitless,0.0,KwaZulu-Natal,30.6199895,30.6199895
+2013,Umzinyathi,DC24,irregular,12696000.0,KwaZulu-Natal,30.6199895,30.6199895
+2013,Umzinyathi,DC24,unauthorised,0.0,KwaZulu-Natal,30.6199895,30.6199895
+2013,Amajuba,DC25,fruitless,0.0,KwaZulu-Natal,30.0665236,30.0665236
+2013,Amajuba,DC25,irregular,0.0,KwaZulu-Natal,30.0665236,30.0665236
+2013,Amajuba,DC25,unauthorised,0.0,KwaZulu-Natal,30.0665236,30.0665236
+2013,Zululand,DC26,fruitless,43000.0,KwaZulu-Natal,31.4456179,31.4456179
+2013,Zululand,DC26,irregular,1443000.0,KwaZulu-Natal,31.4456179,31.4456179
+2013,Zululand,DC26,unauthorised,0.0,KwaZulu-Natal,31.4456179,31.4456179
+2013,Umkhanyakude,DC27,fruitless,2048000.0,KwaZulu-Natal,32.5372741,32.5372741
+2013,Umkhanyakude,DC27,irregular,615387000.0,KwaZulu-Natal,32.5372741,32.5372741
+2013,Umkhanyakude,DC27,unauthorised,18797000.0,KwaZulu-Natal,32.5372741,32.5372741
+2013,Uthungulu,DC28,fruitless,0.0,KwaZulu-Natal,31.5370003,31.5370003
+2013,Uthungulu,DC28,irregular,0.0,KwaZulu-Natal,31.5370003,31.5370003
+2013,Uthungulu,DC28,unauthorised,0.0,KwaZulu-Natal,31.5370003,31.5370003
+2013,iLembe,DC29,fruitless,0.0,KwaZulu-Natal,31.1710389,31.1710389
+2013,iLembe,DC29,irregular,16331000.0,KwaZulu-Natal,31.1710389,31.1710389
+2013,iLembe,DC29,unauthorised,0.0,KwaZulu-Natal,31.1710389,31.1710389
+2013,Overberg,DC3,fruitless,0.0,Western Cape,19.7591675,19.7591675
+2013,Overberg,DC3,irregular,2936000.0,Western Cape,19.7591675,19.7591675
+2013,Overberg,DC3,unauthorised,140000.0,Western Cape,19.7591675,19.7591675
+2013,Gert Sibande,DC30,fruitless,0.0,Mpumalanga,29.9740534,29.9740534
+2013,Gert Sibande,DC30,irregular,97652000.0,Mpumalanga,29.9740534,29.9740534
+2013,Gert Sibande,DC30,unauthorised,0.0,Mpumalanga,29.9740534,29.9740534
+2013,Nkangala,DC31,fruitless,67590000.0,Mpumalanga,29.6035495,29.6035495
+2013,Nkangala,DC31,irregular,0.0,Mpumalanga,29.6035495,29.6035495
+2013,Nkangala,DC31,unauthorised,0.0,Mpumalanga,29.6035495,29.6035495
+2013,Ehlanzeni,DC32,fruitless,0.0,Mpumalanga,31.2626366,31.2626366
+2013,Ehlanzeni,DC32,irregular,0.0,Mpumalanga,31.2626366,31.2626366
+2013,Ehlanzeni,DC32,unauthorised,0.0,Mpumalanga,31.2626366,31.2626366
+2013,Mopani,DC33,fruitless,1510000.0,Limpopo,30.7160431,30.7160431
+2013,Mopani,DC33,irregular,159260000.0,Limpopo,30.7160431,30.7160431
+2013,Mopani,DC33,unauthorised,157216000.0,Limpopo,30.7160431,30.7160431
+2013,Vhembe,DC34,fruitless,2091000.0,Limpopo,29.9740534,29.9740534
+2013,Vhembe,DC34,irregular,726244000.0,Limpopo,29.9740534,29.9740534
+2013,Vhembe,DC34,unauthorised,5754000.0,Limpopo,29.9740534,29.9740534
+2013,Capricorn,DC35,fruitless,97000.0,Limpopo,29.2320784,29.2320784
+2013,Capricorn,DC35,irregular,9504000.0,Limpopo,29.2320784,29.2320784
+2013,Capricorn,DC35,unauthorised,18059000.0,Limpopo,29.2320784,29.2320784
+2013,Waterberg,DC36,fruitless,6000.0,Limpopo,28.299435,28.299435
+2013,Waterberg,DC36,irregular,0.0,Limpopo,28.299435,28.299435
+2013,Waterberg,DC36,unauthorised,0.0,Limpopo,28.299435,28.299435
+2013,Bojanala,DC37,fruitless,0.0,North West,27.3616476,27.3616476
+2013,Bojanala,DC37,irregular,3050000.0,North West,27.3616476,27.3616476
+2013,Bojanala,DC37,unauthorised,7392000.0,North West,27.3616476,27.3616476
+2013,Ngaka Modiri Molema,DC38,fruitless,0.0,North West,25.8521764,25.8521764
+2013,Ngaka Modiri Molema,DC38,irregular,0.0,North West,25.8521764,25.8521764
+2013,Ngaka Modiri Molema,DC38,unauthorised,53781000.0,North West,25.8521764,25.8521764
+2013,Dr Ruth Segomotsi Mompati,DC39,fruitless,0.0,North West,24.3341432,24.3341432
+2013,Dr Ruth Segomotsi Mompati,DC39,irregular,16509000.0,North West,24.3341432,24.3341432
+2013,Dr Ruth Segomotsi Mompati,DC39,unauthorised,6079000.0,North West,24.3341432,24.3341432
+2013,Eden,DC4,fruitless,726043000.0,Western Cape,22.047637,22.047637
+2013,Eden,DC4,irregular,8872000.0,Western Cape,22.047637,22.047637
+2013,Eden,DC4,unauthorised,14015000.0,Western Cape,22.047637,22.047637
+2013,Dr Kenneth Kaunda,DC40,fruitless,25000.0,North West,26.5137964,26.5137964
+2013,Dr Kenneth Kaunda,DC40,irregular,4067000.0,North West,26.5137964,26.5137964
+2013,Dr Kenneth Kaunda,DC40,unauthorised,0.0,North West,26.5137964,26.5137964
+2013,Sedibeng,DC42,fruitless,58000.0,Gauteng,28.2058768,28.2058768
+2013,Sedibeng,DC42,irregular,0.0,Gauteng,28.2058768,28.2058768
+2013,Sedibeng,DC42,unauthorised,0.0,Gauteng,28.2058768,28.2058768
+2013,Harry Gwala,DC43,fruitless,26050000.0,KwaZulu-Natal,29.6035495,29.6035495
+2013,Harry Gwala,DC43,irregular,187117000.0,KwaZulu-Natal,29.6035495,29.6035495
+2013,Harry Gwala,DC43,unauthorised,164918000.0,KwaZulu-Natal,29.6035495,29.6035495
+2013,Alfred Nzo,DC44,fruitless,504000.0,Eastern Cape,28.8596804,28.8596804
+2013,Alfred Nzo,DC44,irregular,0.0,Eastern Cape,28.8596804,28.8596804
+2013,Alfred Nzo,DC44,unauthorised,127000.0,Eastern Cape,28.8596804,28.8596804
+2013,John Taolo Gaetsewe,DC45,fruitless,104000.0,Northern Cape,23.1918021,23.1918021
+2013,John Taolo Gaetsewe,DC45,irregular,48000.0,Northern Cape,23.1918021,23.1918021
+2013,John Taolo Gaetsewe,DC45,unauthorised,385000.0,Northern Cape,23.1918021,23.1918021
+2013,Sekhukhune,DC47,fruitless,285966000.0,Limpopo,29.9740534,29.9740534
+2013,Sekhukhune,DC47,irregular,115843000.0,Limpopo,29.9740534,29.9740534
+2013,Sekhukhune,DC47,unauthorised,0.0,Limpopo,29.9740534,29.9740534
+2013,West Rand,DC48,fruitless,2000.0,Gauteng,27.4556388,27.4556388
+2013,West Rand,DC48,irregular,3958000.0,Gauteng,27.4556388,27.4556388
+2013,West Rand,DC48,unauthorised,0.0,Gauteng,27.4556388,27.4556388
+2013,Central Karoo,DC5,fruitless,0.0,Western Cape,22.2384017,22.2384017
+2013,Central Karoo,DC5,irregular,2813000.0,Western Cape,22.2384017,22.2384017
+2013,Central Karoo,DC5,unauthorised,491000.0,Western Cape,22.2384017,22.2384017
+2013,Namakwa,DC6,fruitless,0.0,Northern Cape,19.949686,19.949686
+2013,Namakwa,DC6,irregular,2662000.0,Northern Cape,19.949686,19.949686
+2013,Namakwa,DC6,unauthorised,3728000.0,Northern Cape,19.949686,19.949686
+2013,Pixley ka Seme,DC7,fruitless,471000.0,Northern Cape,23.3823545,23.3823545
+2013,Pixley ka Seme,DC7,irregular,31476000.0,Northern Cape,23.3823545,23.3823545
+2013,Pixley ka Seme,DC7,unauthorised,661000.0,Northern Cape,23.3823545,23.3823545
+2013,Z F Mgcawu,DC8,fruitless,0.0,Northern Cape,21.246215,21.246215
+2013,Z F Mgcawu,DC8,irregular,3960000.0,Northern Cape,21.246215,21.246215
+2013,Z F Mgcawu,DC8,unauthorised,0.0,Northern Cape,21.246215,21.246215
+2013,Frances Baard,DC9,fruitless,182000.0,Northern Cape,24.3341432,24.3341432
+2013,Frances Baard,DC9,irregular,184000.0,Northern Cape,24.3341432,24.3341432
+2013,Frances Baard,DC9,unauthorised,1000000.0,Northern Cape,24.3341432,24.3341432
+2013,Dr Beyers Naude,EC101,fruitless,39000.0,Eastern Cape,24.371068,24.371068
+2013,Dr Beyers Naude,EC101,irregular,1279000.0,Eastern Cape,24.3341432,24.3341432
+2013,Dr Beyers Naude,EC101,unauthorised,15196000.0,Eastern Cape,24.371068,24.371068
+2013,Blue Crane Route,EC102,fruitless,15000.0,Eastern Cape,24.3341432,24.3341432
+2013,Blue Crane Route,EC102,irregular,21480000.0,Eastern Cape,24.371068,24.371068
+2013,Blue Crane Route,EC102,unauthorised,357000.0,Eastern Cape,24.3341432,24.3341432
+2013,Ikwezi,EC103,fruitless,149000.0,Eastern Cape,25.4733554,25.4733554
+2013,Ikwezi,EC103,irregular,9579000.0,Eastern Cape,25.4733554,25.4733554
+2013,Ikwezi,EC103,unauthorised,10443000.0,Eastern Cape,25.4733554,25.4733554
+2013,Makana,EC104,fruitless,174000.0,Eastern Cape,24.6192899,24.6192899
+2013,Makana,EC104,irregular,43799000.0,Eastern Cape,24.6192899,24.6192899
+2013,Makana,EC104,unauthorised,140601000.0,Eastern Cape,24.6192899,24.6192899
+2013,Ndlambe,EC105,fruitless,0.0,Eastern Cape,26.3249438,26.3249438
+2013,Ndlambe,EC105,irregular,16200000.0,Eastern Cape,26.3249438,26.3249438
+2013,Ndlambe,EC105,unauthorised,62531000.0,Eastern Cape,26.3249438,26.3249438
+2013,Sundays River Valley,EC106,fruitless,332000.0,Eastern Cape,26.749645,26.749645
+2013,Sundays River Valley,EC106,irregular,11560000.0,Eastern Cape,26.749645,26.749645
+2013,Sundays River Valley,EC106,unauthorised,20578000.0,Eastern Cape,26.749645,26.749645
+2013,Baviaans,EC107,fruitless,1619000.0,Eastern Cape,25.5681084,25.5681084
+2013,Baviaans,EC107,irregular,133000.0,Eastern Cape,25.5681084,25.5681084
+2013,Baviaans,EC107,unauthorised,12018000.0,Eastern Cape,25.5681084,25.5681084
+2013,Kouga,EC108,fruitless,9211000.0,Eastern Cape,24.0488007,24.0488007
+2013,Kouga,EC108,irregular,106000.0,Eastern Cape,24.0488007,24.0488007
+2013,Kouga,EC108,unauthorised,32866000.0,Eastern Cape,24.0488007,24.0488007
+2013,Kou-Kamma,EC109,fruitless,0.0,Eastern Cape,24.8092691,24.8092691
+2013,Kou-Kamma,EC109,irregular,0.0,Eastern Cape,24.8092691,24.8092691
+2013,Kou-Kamma,EC109,unauthorised,0.0,Eastern Cape,24.8092691,24.8092691
+2013,Mbhashe,EC121,fruitless,2614000.0,Eastern Cape,24.0488007,24.0488007
+2013,Mbhashe,EC121,irregular,10264000.0,Eastern Cape,24.0488007,24.0488007
+2013,Mbhashe,EC121,unauthorised,33360000.0,Eastern Cape,24.0488007,24.0488007
+2013,Mnquma,EC122,fruitless,2203000.0,Eastern Cape,28.7664408,28.7664408
+2013,Mnquma,EC122,irregular,48059000.0,Eastern Cape,28.7664408,28.7664408
+2013,Mnquma,EC122,unauthorised,49485000.0,Eastern Cape,28.7664408,28.7664408
+2013,Great Kei,EC123,fruitless,6562000.0,Eastern Cape,28.0186087,28.0186087
+2013,Great Kei,EC123,irregular,115660000.0,Eastern Cape,28.0186087,28.0186087
+2013,Great Kei,EC123,unauthorised,6943000.0,Eastern Cape,28.0186087,28.0186087
+2013,Amahlathi,EC124,fruitless,1364000.0,Eastern Cape,27.9717606,27.9717606
+2013,Amahlathi,EC124,irregular,3848000.0,Eastern Cape,27.9717606,27.9717606
+2013,Amahlathi,EC124,unauthorised,0.0,Eastern Cape,27.9717606,27.9717606
+2013,Ngqushwa,EC126,fruitless,0.0,Eastern Cape,27.2676116,27.2676116
+2013,Ngqushwa,EC126,irregular,16066000.0,Eastern Cape,27.2676116,27.2676116
+2013,Ngqushwa,EC126,unauthorised,0.0,Eastern Cape,27.2676116,27.2676116
+2013,Nkonkobe,EC127,fruitless,2221000.0,Eastern Cape,27.2676116,27.2676116
+2013,Nkonkobe,EC127,irregular,2200000.0,Eastern Cape,27.2676116,27.2676116
+2013,Nkonkobe,EC127,unauthorised,630000.0,Eastern Cape,27.2676116,27.2676116
+2013,Nxuba,EC128,fruitless,553000.0,Eastern Cape,26.8329144,26.8329144
+2013,Nxuba,EC128,irregular,0.0,Eastern Cape,26.8329144,26.8329144
+2013,Nxuba,EC128,unauthorised,235000.0,Eastern Cape,26.8329144,26.8329144
+2013,Inxuba Yethemba,EC131,fruitless,422000.0,Eastern Cape,26.3249438,26.3249438
+2013,Inxuba Yethemba,EC131,irregular,15819000.0,Eastern Cape,26.3249438,26.3249438
+2013,Inxuba Yethemba,EC131,unauthorised,8328000.0,Eastern Cape,26.3249438,26.3249438
+2013,Tsolwana,EC132,fruitless,372000.0,Eastern Cape,25.3785719,25.3785719
+2013,Tsolwana,EC132,irregular,8593000.0,Eastern Cape,25.3785719,25.3785719
+2013,Tsolwana,EC132,unauthorised,8561000.0,Eastern Cape,25.3785719,25.3785719
+2013,Inkwanca,EC133,fruitless,245000.0,Eastern Cape,26.1359431,26.1359431
+2013,Inkwanca,EC133,irregular,243000.0,Eastern Cape,26.1359431,26.1359431
+2013,Inkwanca,EC133,unauthorised,57536000.0,Eastern Cape,26.1359431,26.1359431
+2013,Lukanji,EC134,fruitless,909000.0,Eastern Cape,26.5137964,26.5137964
+2013,Lukanji,EC134,irregular,40580000.0,Eastern Cape,26.5137964,26.5137964
+2013,Lukanji,EC134,unauthorised,75953000.0,Eastern Cape,26.5137964,26.5137964
+2013,Intsika Yethu,EC135,fruitless,74000.0,Eastern Cape,26.8910342,26.8910342
+2013,Intsika Yethu,EC135,irregular,0.0,Eastern Cape,26.8910342,26.8910342
+2013,Intsika Yethu,EC135,unauthorised,0.0,Eastern Cape,26.8910342,26.8910342
+2013,Emalahleni,EC136,fruitless,16880000.0,Eastern Cape,27.6434844,27.6434844
+2013,Emalahleni,EC136,irregular,74071000.0,Eastern Cape,27.6434844,27.6434844
+2013,Emalahleni,EC136,unauthorised,17070000.0,Eastern Cape,27.6434844,27.6434844
+2013,Engcobo,EC137,fruitless,2794000.0,Eastern Cape,29.2553229,29.2553229
+2013,Engcobo,EC137,irregular,22323000.0,Eastern Cape,29.2553229,29.2553229
+2013,Engcobo,EC137,unauthorised,83441000.0,Eastern Cape,29.2553229,29.2553229
+2013,Sakhisizwe,EC138,fruitless,769000.0,Eastern Cape,27.9834738,27.9834738
+2013,Sakhisizwe,EC138,irregular,28581000.0,Eastern Cape,27.9834738,27.9834738
+2013,Sakhisizwe,EC138,unauthorised,17029000.0,Eastern Cape,27.9834738,27.9834738
+2013,Elundini,EC141,fruitless,283000.0,Eastern Cape,27.8311428,27.8311428
+2013,Elundini,EC141,irregular,644000.0,Eastern Cape,27.8311428,27.8311428
+2013,Elundini,EC141,unauthorised,31544000.0,Eastern Cape,27.8311428,27.8311428
+2013,Senqu,EC142,fruitless,2030000.0,Eastern Cape,28.3929417,28.3929417
+2013,Senqu,EC142,irregular,763000.0,Eastern Cape,28.3929417,28.3929417
+2013,Senqu,EC142,unauthorised,0.0,Eastern Cape,28.3929417,28.3929417
+2013,Maletswai,EC143,fruitless,1363000.0,Eastern Cape,27.6434844,27.6434844
+2013,Maletswai,EC143,irregular,323000.0,Eastern Cape,27.6434844,27.6434844
+2013,Maletswai,EC143,unauthorised,8703000.0,Eastern Cape,27.6434844,27.6434844
+2013,Gariep,EC144,fruitless,3404000.0,Eastern Cape,26.8910342,26.8910342
+2013,Gariep,EC144,irregular,7976000.0,Eastern Cape,26.8910342,26.8910342
+2013,Gariep,EC144,unauthorised,28621000.0,Eastern Cape,26.8910342,26.8910342
+2013,Ngquza Hill,EC153,fruitless,0.0,Eastern Cape,25.8521764,25.8521764
+2013,Ngquza Hill,EC153,irregular,0.0,Eastern Cape,25.8521764,25.8521764
+2013,Ngquza Hill,EC153,unauthorised,0.0,Eastern Cape,25.8521764,25.8521764
+2013,Port St Johns,EC154,fruitless,0.0,Eastern Cape,29.6962677,29.6962677
+2013,Port St Johns,EC154,irregular,0.0,Eastern Cape,29.6962677,29.6962677
+2013,Port St Johns,EC154,unauthorised,0.0,Eastern Cape,29.6962677,29.6962677
+2013,Nyandeni,EC155,fruitless,251000.0,Eastern Cape,29.5457058,29.5457058
+2013,Nyandeni,EC155,irregular,32690000.0,Eastern Cape,29.5457058,29.5457058
+2013,Nyandeni,EC155,unauthorised,5959000.0,Eastern Cape,29.5457058,29.5457058
+2013,Mhlontlo,EC156,fruitless,215000.0,Eastern Cape,29.1390642,29.1390642
+2013,Mhlontlo,EC156,irregular,57591000.0,Eastern Cape,29.1390642,29.1390642
+2013,Mhlontlo,EC156,unauthorised,192880000.0,Eastern Cape,29.1390642,29.1390642
+2013,King Sabata Dalindyebo,EC157,fruitless,870000.0,Eastern Cape,28.8130675,28.8130675
+2013,King Sabata Dalindyebo,EC157,irregular,61768000.0,Eastern Cape,28.8130675,28.8130675
+2013,King Sabata Dalindyebo,EC157,unauthorised,96913000.0,Eastern Cape,28.8130675,28.8130675
+2013,Matatiele,EC441,fruitless,2000.0,Eastern Cape,28.5797981,28.5797981
+2013,Matatiele,EC441,irregular,0.0,Eastern Cape,28.5797981,28.5797981
+2013,Matatiele,EC441,unauthorised,16210000.0,Eastern Cape,28.5797981,28.5797981
+2013,Umzimvubu,EC442,fruitless,80793000.0,Eastern Cape,28.7664408,28.7664408
+2013,Umzimvubu,EC442,irregular,585438000.0,Eastern Cape,28.7664408,28.7664408
+2013,Umzimvubu,EC442,unauthorised,2585000.0,Eastern Cape,28.7664408,28.7664408
+2013,Mbizana,EC443,fruitless,788000.0,Eastern Cape,28.9528645,28.9528645
+2013,Mbizana,EC443,irregular,1195000.0,Eastern Cape,28.9528645,28.9528645
+2013,Mbizana,EC443,unauthorised,9596000.0,Eastern Cape,28.9528645,28.9528645
+2013,Ntabankulu,EC444,fruitless,5000.0,Eastern Cape,29.8566142,29.8566142
+2013,Ntabankulu,EC444,irregular,150000.0,Eastern Cape,29.8566142,29.8566142
+2013,Ntabankulu,EC444,unauthorised,14000.0,Eastern Cape,29.8566142,29.8566142
+2013,Ekurhuleni,EKU,fruitless,39714000.0,Eastern Cape,29.2785638,29.2785638
+2013,Ekurhuleni,EKU,irregular,123154000.0,Eastern Cape,29.2785638,29.2785638
+2013,Ekurhuleni,EKU,unauthorised,0.0,Eastern Cape,29.2785638,29.2785638
+2013,eThekwini,ETH,fruitless,0.0,Gauteng,28.3461948,28.3461948
+2013,eThekwini,ETH,irregular,325271000.0,Gauteng,28.3461948,28.3461948
+2013,eThekwini,ETH,unauthorised,0.0,Gauteng,28.3461948,28.3461948
+2013,Letsemeng,FS161,fruitless,1095000.0,KwaZulu-Natal,30.8039474,30.8039474
+2013,Letsemeng,FS161,irregular,67665000.0,KwaZulu-Natal,30.8039474,30.8039474
+2013,Letsemeng,FS161,unauthorised,47809000.0,KwaZulu-Natal,30.8039474,30.8039474
+2013,Kopanong,FS162,fruitless,27961000.0,Free State,25.094045,25.094045
+2013,Kopanong,FS162,irregular,163301000.0,Free State,25.094045,25.094045
+2013,Kopanong,FS162,unauthorised,144540000.0,Free State,25.094045,25.094045
+2013,Mohokare,FS163,fruitless,3345000.0,Free State,25.4733554,25.4733554
+2013,Mohokare,FS163,irregular,98573000.0,Free State,25.4733554,25.4733554
+2013,Mohokare,FS163,unauthorised,87796000.0,Free State,25.4733554,25.4733554
+2013,Naledi,FS164,fruitless,8610000.0,Free State,26.9852422,26.9852422
+2013,Naledi,FS164,irregular,14949000.0,Free State,26.9852422,26.9852422
+2013,Naledi,FS164,unauthorised,0.0,Free State,26.9852422,26.9852422
+2013,Masilonyana,FS181,fruitless,1739000.0,Free State,24.7142918,24.7142918
+2013,Masilonyana,FS181,irregular,164599000.0,Free State,24.7142918,24.7142918
+2013,Masilonyana,FS181,unauthorised,591872000.0,Free State,24.7142918,24.7142918
+2013,Tokologo,FS182,fruitless,268303000.0,Free State,26.6081653,26.6081653
+2013,Tokologo,FS182,irregular,47582000.0,Free State,26.6081653,26.6081653
+2013,Tokologo,FS182,unauthorised,38587000.0,Free State,26.6081653,26.6081653
+2013,Tswelopele,FS183,fruitless,98000.0,Free State,25.4733554,25.4733554
+2013,Tswelopele,FS183,irregular,1744000.0,Free State,25.4733554,25.4733554
+2013,Tswelopele,FS183,unauthorised,1982000.0,Free State,25.4733554,25.4733554
+2013,Matjhabeng,FS184,fruitless,181777000.0,Free State,25.9467997,25.9467997
+2013,Matjhabeng,FS184,irregular,399533000.0,Free State,25.9467997,25.9467997
+2013,Matjhabeng,FS184,unauthorised,3244888000.0,Free State,25.9467997,25.9467997
+2013,Nala,FS185,fruitless,11296000.0,Free State,26.8910342,26.8910342
+2013,Nala,FS185,irregular,38922000.0,Free State,26.8910342,26.8910342
+2013,Nala,FS185,unauthorised,97795000.0,Free State,26.8910342,26.8910342
+2013,Setsoto,FS191,fruitless,0.0,Free State,26.5137964,26.5137964
+2013,Setsoto,FS191,irregular,131973000.0,Free State,26.5137964,26.5137964
+2013,Setsoto,FS191,unauthorised,154181000.0,Free State,26.5137964,26.5137964
+2013,Dihlabeng,FS192,fruitless,6388000.0,Free State,27.6434844,27.6434844
+2013,Dihlabeng,FS192,irregular,0.0,Free State,27.6434844,27.6434844
+2013,Dihlabeng,FS192,unauthorised,0.0,Free State,27.6434844,27.6434844
+2013,Nketoana,FS193,fruitless,734343000.0,Free State,28.2058768,28.2058768
+2013,Nketoana,FS193,irregular,35419000.0,Free State,28.2058768,28.2058768
+2013,Nketoana,FS193,unauthorised,100436000.0,Free State,28.2058768,28.2058768
+2013,Maluti a Phofung,FS194,fruitless,13099000.0,Free State,28.4318311,28.4318311
+2013,Maluti a Phofung,FS194,irregular,3310000.0,Free State,28.4318311,28.4318311
+2013,Maluti a Phofung,FS194,unauthorised,0.0,Free State,28.4318311,28.4318311
+2013,Phumelela,FS195,fruitless,1059000.0,Free State,28.9528645,28.9528645
+2013,Phumelela,FS195,irregular,123971000.0,Free State,28.9528645,28.9528645
+2013,Phumelela,FS195,unauthorised,68854000.0,Free State,28.9528645,28.9528645
+2013,Mantsopa,FS196,fruitless,1198000.0,Free State,29.2320784,29.2320784
+2013,Mantsopa,FS196,irregular,17635000.0,Free State,29.2320784,29.2320784
+2013,Mantsopa,FS196,unauthorised,151445000.0,Free State,29.2320784,29.2320784
+2013,Moqhaka,FS201,fruitless,27878000.0,Free State,27.2676116,27.2676116
+2013,Moqhaka,FS201,irregular,144794000.0,Free State,27.2676116,27.2676116
+2013,Moqhaka,FS201,unauthorised,155977000.0,Free State,27.2676116,27.2676116
+2013,Ngwathe,FS203,fruitless,0.0,Free State,27.2676116,27.2676116
+2013,Ngwathe,FS203,irregular,15418000.0,Free State,27.2676116,27.2676116
+2013,Ngwathe,FS203,unauthorised,187185000.0,Free State,27.2676116,27.2676116
+2013,Metsimaholo,FS204,fruitless,7684000.0,Free State,27.7373373,27.7373373
+2013,Metsimaholo,FS204,irregular,239611000.0,Free State,27.7373373,27.7373373
+2013,Metsimaholo,FS204,unauthorised,91466000.0,Free State,27.7373373,27.7373373
+2013,Mafube,FS205,fruitless,5669000.0,Free State,27.8277881,27.8277881
+2013,Mafube,FS205,irregular,30002000.0,Free State,27.8277881,27.8277881
+2013,Mafube,FS205,unauthorised,21774000.0,Free State,27.8277881,27.8277881
+2013,Emfuleni,GT421,fruitless,176468000.0,Free State,28.5797981,28.5797981
+2013,Emfuleni,GT421,irregular,0.0,Free State,28.5797981,28.5797981
+2013,Emfuleni,GT421,unauthorised,0.0,Free State,28.5797981,28.5797981
+2013,Midvaal,GT422,fruitless,0.0,Gauteng,27.784246,27.784246
+2013,Midvaal,GT422,irregular,0.0,Gauteng,27.784246,27.784246
+2013,Midvaal,GT422,unauthorised,48736000.0,Gauteng,27.784246,27.784246
+2013,Lesedi,GT423,fruitless,369000.0,Gauteng,28.0654445,28.0654445
+2013,Lesedi,GT423,irregular,10249000.0,Gauteng,28.0654445,28.0654445
+2013,Lesedi,GT423,unauthorised,6221000.0,Gauteng,28.0654445,28.0654445
+2013,Mogale City,GT481,fruitless,3860000.0,Gauteng,28.4396756,28.4396756
+2013,Mogale City,GT481,irregular,5411000.0,Gauteng,28.4396756,28.4396756
+2013,Mogale City,GT481,unauthorised,49377000.0,Gauteng,28.4396756,28.4396756
+2013,Randfontein,GT482,fruitless,8620000.0,Gauteng,27.5965403,27.5965403
+2013,Randfontein,GT482,irregular,41316000.0,Gauteng,27.5965403,27.5965403
+2013,Randfontein,GT482,unauthorised,31035000.0,Gauteng,27.5965403,27.5965403
+2013,Westonaria,GT483,fruitless,4666000.0,Gauteng,27.6786847,27.6786847
+2013,Westonaria,GT483,irregular,14836000.0,Gauteng,27.6786847,27.6786847
+2013,Westonaria,GT483,unauthorised,0.0,Gauteng,27.6786847,27.6786847
+2013,Merafong City,GT484,fruitless,0.0,Gauteng,27.666952,27.666952
+2013,Merafong City,GT484,irregular,18732000.0,Gauteng,27.666952,27.666952
+2013,Merafong City,GT484,unauthorised,16732000.0,Gauteng,27.666952,27.666952
+2013,City of Johannesburg,JHB,fruitless,4147000.0,Gauteng,27.4086488,27.4086488
+2013,City of Johannesburg,JHB,irregular,216979000.0,Gauteng,27.4086488,27.4086488
+2013,City of Johannesburg,JHB,unauthorised,3855000.0,Gauteng,27.4086488,27.4086488
+2013,Vulamehlo,KZN211,fruitless,99000.0,Gauteng,27.9717606,27.9717606
+2013,Vulamehlo,KZN211,irregular,35315000.0,Gauteng,27.9717606,27.9717606
+2013,Vulamehlo,KZN211,unauthorised,0.0,Gauteng,27.9717606,27.9717606
+2013,Umdoni,KZN212,fruitless,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2013,Umdoni,KZN212,irregular,20090000.0,KwaZulu-Natal,30.5739579,30.5739579
+2013,Umdoni,KZN212,unauthorised,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2013,uMuziwabantu,KZN214,fruitless,0.0,KwaZulu-Natal,30.6890055,30.6890055
+2013,uMuziwabantu,KZN214,irregular,1431000.0,KwaZulu-Natal,30.6890055,30.6890055
+2013,uMuziwabantu,KZN214,unauthorised,0.0,KwaZulu-Natal,30.6890055,30.6890055
+2013,Ezingoleni,KZN215,fruitless,0.0,KwaZulu-Natal,29.9277947,29.9277947
+2013,Ezingoleni,KZN215,irregular,31000.0,KwaZulu-Natal,29.9277947,29.9277947
+2013,Ezingoleni,KZN215,unauthorised,11591000.0,KwaZulu-Natal,29.9277947,29.9277947
+2013,Ray Nkonyeni,KZN216,fruitless,63000.0,KwaZulu-Natal,30.182022,30.182022
+2013,Ray Nkonyeni,KZN216,irregular,8150000.0,KwaZulu-Natal,30.182022,30.182022
+2013,Ray Nkonyeni,KZN216,unauthorised,18113000.0,KwaZulu-Natal,30.182022,30.182022
+2013,uMshwathi,KZN221,fruitless,0.0,KwaZulu-Natal,30.3639319,30.3639319
+2013,uMshwathi,KZN221,irregular,0.0,KwaZulu-Natal,30.3204873,30.3204873
+2013,uMshwathi,KZN221,unauthorised,4593000.0,KwaZulu-Natal,30.3639319,30.3639319
+2013,uMngeni,KZN222,fruitless,650000.0,KwaZulu-Natal,30.3204873,30.3204873
+2013,uMngeni,KZN222,irregular,3845000.0,KwaZulu-Natal,30.3639319,30.3639319
+2013,uMngeni,KZN222,unauthorised,0.0,KwaZulu-Natal,30.3204873,30.3204873
+2013,Mpofana,KZN223,fruitless,0.0,KwaZulu-Natal,30.5743164,30.5743164
+2013,Mpofana,KZN223,irregular,26450000.0,KwaZulu-Natal,30.5743164,30.5743164
+2013,Mpofana,KZN223,unauthorised,0.0,KwaZulu-Natal,30.5743164,30.5743164
+2013,Impendle,KZN224,fruitless,121000.0,KwaZulu-Natal,30.112735,30.112735
+2013,Impendle,KZN224,irregular,0.0,KwaZulu-Natal,30.112735,30.112735
+2013,Impendle,KZN224,unauthorised,0.0,KwaZulu-Natal,30.112735,30.112735
+2013,The Msunduzi,KZN225,fruitless,0.0,KwaZulu-Natal,30.112735,30.112735
+2013,The Msunduzi,KZN225,irregular,0.0,KwaZulu-Natal,30.112735,30.112735
+2013,The Msunduzi,KZN225,unauthorised,0.0,KwaZulu-Natal,30.112735,30.112735
+2013,Mkhambathini,KZN226,fruitless,0.0,KwaZulu-Natal,29.8352303,29.8352303
+2013,Mkhambathini,KZN226,irregular,1198000.0,KwaZulu-Natal,29.8352303,29.8352303
+2013,Mkhambathini,KZN226,unauthorised,0.0,KwaZulu-Natal,29.8352303,29.8352303
+2013,Richmond,KZN227,fruitless,95000.0,KwaZulu-Natal,30.3824842,30.3824842
+2013,Richmond,KZN227,irregular,0.0,KwaZulu-Natal,30.3824842,30.3824842
+2013,Richmond,KZN227,unauthorised,7651000.0,KwaZulu-Natal,30.3824842,30.3824842
+2013,Emnambithi/Ladysmith,KZN232,fruitless,89000.0,KwaZulu-Natal,30.5739579,30.5739579
+2013,Emnambithi/Ladysmith,KZN232,irregular,7722000.0,KwaZulu-Natal,30.5739579,30.5739579
+2013,Emnambithi/Ladysmith,KZN232,unauthorised,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2013,Indaka,KZN233,fruitless,0.0,KwaZulu-Natal,30.2974199,30.2974199
+2013,Indaka,KZN233,irregular,2000.0,KwaZulu-Natal,30.2974199,30.2974199
+2013,Indaka,KZN233,unauthorised,0.0,KwaZulu-Natal,30.2974199,30.2974199
+2013,Umtshezi,KZN234,fruitless,0.0,KwaZulu-Natal,29.7807856,29.7807856
+2013,Umtshezi,KZN234,irregular,10501000.0,KwaZulu-Natal,29.7807856,29.7807856
+2013,Umtshezi,KZN234,unauthorised,0.0,KwaZulu-Natal,29.7807856,29.7807856
+2013,Okhahlamba,KZN235,fruitless,0.0,KwaZulu-Natal,30.107222,30.107222
+2013,Okhahlamba,KZN235,irregular,13821000.0,KwaZulu-Natal,30.107222,30.107222
+2013,Okhahlamba,KZN235,unauthorised,0.0,KwaZulu-Natal,30.107222,30.107222
+2013,Imbabazane,KZN236,fruitless,72467000.0,KwaZulu-Natal,30.0202964,30.0202964
+2013,Imbabazane,KZN236,irregular,16849000.0,KwaZulu-Natal,30.0202964,30.0202964
+2013,Imbabazane,KZN236,unauthorised,0.0,KwaZulu-Natal,30.0202964,30.0202964
+2013,Endumeni,KZN241,fruitless,0.0,KwaZulu-Natal,29.3250347,29.3250347
+2013,Endumeni,KZN241,irregular,3252000.0,KwaZulu-Natal,29.3250347,29.3250347
+2013,Endumeni,KZN241,unauthorised,0.0,KwaZulu-Natal,29.3250347,29.3250347
+2013,Nqutu,KZN242,fruitless,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2013,Nqutu,KZN242,irregular,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2013,Nqutu,KZN242,unauthorised,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2013,Msinga,KZN244,fruitless,0.0,KwaZulu-Natal,30.2343393,30.2343393
+2013,Msinga,KZN244,irregular,49855000.0,KwaZulu-Natal,30.2343393,30.2343393
+2013,Msinga,KZN244,unauthorised,8489000.0,KwaZulu-Natal,30.2343393,30.2343393
+2013,Umvoti,KZN245,fruitless,0.0,KwaZulu-Natal,30.6746303,30.6746303
+2013,Umvoti,KZN245,irregular,0.0,KwaZulu-Natal,30.6746303,30.6746303
+2013,Umvoti,KZN245,unauthorised,0.0,KwaZulu-Natal,30.6746303,30.6746303
+2013,Newcastle,KZN252,fruitless,203334000.0,KwaZulu-Natal,30.4357631,30.4357631
+2013,Newcastle,KZN252,irregular,79998000.0,KwaZulu-Natal,30.4357631,30.4357631
+2013,Newcastle,KZN252,unauthorised,203334000.0,KwaZulu-Natal,30.4357631,30.4357631
+2013,Emadlangeni,KZN253,fruitless,61000.0,KwaZulu-Natal,30.6199895,30.6199895
+2013,Emadlangeni,KZN253,irregular,3611000.0,KwaZulu-Natal,30.6199895,30.6199895
+2013,Emadlangeni,KZN253,unauthorised,0.0,KwaZulu-Natal,30.6199895,30.6199895
+2013,Dannhauser,KZN254,fruitless,195000.0,KwaZulu-Natal,29.9971769,29.9971769
+2013,Dannhauser,KZN254,irregular,17140000.0,KwaZulu-Natal,29.9971769,29.9971769
+2013,Dannhauser,KZN254,unauthorised,0.0,KwaZulu-Natal,29.9971769,29.9971769
+2013,eDumbe,KZN261,fruitless,641000.0,KwaZulu-Natal,30.315775,30.315775
+2013,eDumbe,KZN261,irregular,50833000.0,KwaZulu-Natal,30.315775,30.315775
+2013,eDumbe,KZN261,unauthorised,76931000.0,KwaZulu-Natal,30.315775,30.315775
+2013,uPhongolo,KZN262,fruitless,115000.0,KwaZulu-Natal,30.0202964,30.0202964
+2013,uPhongolo,KZN262,irregular,30806000.0,KwaZulu-Natal,30.0202964,30.0202964
+2013,uPhongolo,KZN262,unauthorised,563000.0,KwaZulu-Natal,30.0202964,30.0202964
+2013,Abaqulusi,KZN263,fruitless,9000.0,KwaZulu-Natal,30.8039474,30.8039474
+2013,Abaqulusi,KZN263,irregular,851000.0,KwaZulu-Natal,30.8039474,30.8039474
+2013,Abaqulusi,KZN263,unauthorised,0.0,KwaZulu-Natal,30.8039474,30.8039474
+2013,Nongoma,KZN265,fruitless,0.0,KwaZulu-Natal,31.5370003,31.5370003
+2013,Nongoma,KZN265,irregular,26007000.0,KwaZulu-Natal,31.5370003,31.5370003
+2013,Nongoma,KZN265,unauthorised,13646000.0,KwaZulu-Natal,31.5370003,31.5370003
+2013,Ulundi,KZN266,fruitless,2025000.0,KwaZulu-Natal,30.9876321,30.9876321
+2013,Ulundi,KZN266,irregular,17694000.0,KwaZulu-Natal,30.9876321,30.9876321
+2013,Ulundi,KZN266,unauthorised,2327000.0,KwaZulu-Natal,30.9876321,30.9876321
+2013,Umhlabuyalingana,KZN271,fruitless,5914000.0,KwaZulu-Natal,31.7195459,31.7195459
+2013,Umhlabuyalingana,KZN271,irregular,47667000.0,KwaZulu-Natal,31.7195459,31.7195459
+2013,Umhlabuyalingana,KZN271,unauthorised,1317000.0,KwaZulu-Natal,31.7195459,31.7195459
+2013,Jozini,KZN272,fruitless,0.0,KwaZulu-Natal,31.442761,31.442761
+2013,Jozini,KZN272,irregular,170000.0,KwaZulu-Natal,31.442761,31.442761
+2013,Jozini,KZN272,unauthorised,0.0,KwaZulu-Natal,31.442761,31.442761
+2013,The Big 5 False Bay,KZN273,fruitless,138000.0,KwaZulu-Natal,32.4467238,32.4467238
+2013,The Big 5 False Bay,KZN273,irregular,180000.0,KwaZulu-Natal,32.4467238,32.4467238
+2013,The Big 5 False Bay,KZN273,unauthorised,1712000.0,KwaZulu-Natal,32.4467238,32.4467238
+2013,Hlabisa,KZN274,fruitless,23000.0,KwaZulu-Natal,32.0650697,32.0650697
+2013,Hlabisa,KZN274,irregular,7713000.0,KwaZulu-Natal,32.0650697,32.0650697
+2013,Hlabisa,KZN274,unauthorised,18465000.0,KwaZulu-Natal,32.0650697,32.0650697
+2013,Mtubatuba,KZN275,fruitless,768000.0,KwaZulu-Natal,32.3107517,32.3107517
+2013,Mtubatuba,KZN275,irregular,27835000.0,KwaZulu-Natal,32.3107517,32.3107517
+2013,Mtubatuba,KZN275,unauthorised,17324000.0,KwaZulu-Natal,32.3107517,32.3107517
+2013,Mfolozi,KZN281,fruitless,1052000.0,KwaZulu-Natal,31.8648002,31.8648002
+2013,Mfolozi,KZN281,irregular,26697000.0,KwaZulu-Natal,31.8648002,31.8648002
+2013,Mfolozi,KZN281,unauthorised,11224000.0,KwaZulu-Natal,31.8648002,31.8648002
+2013,uMhlathuze,KZN282,fruitless,0.0,KwaZulu-Natal,32.2880726,32.2880726
+2013,uMhlathuze,KZN282,irregular,0.0,KwaZulu-Natal,32.2880726,32.2880726
+2013,uMhlathuze,KZN282,unauthorised,0.0,KwaZulu-Natal,32.2880726,32.2880726
+2013,Ntambanana,KZN283,fruitless,0.0,KwaZulu-Natal,32.259717,32.259717
+2013,Ntambanana,KZN283,irregular,0.0,KwaZulu-Natal,32.259717,32.259717
+2013,Ntambanana,KZN283,unauthorised,0.0,KwaZulu-Natal,32.259717,32.259717
+2013,uMlalazi,KZN284,fruitless,47349000.0,KwaZulu-Natal,31.947311,31.947311
+2013,uMlalazi,KZN284,irregular,468000.0,KwaZulu-Natal,31.947311,31.947311
+2013,uMlalazi,KZN284,unauthorised,4059000.0,KwaZulu-Natal,31.947311,31.947311
+2013,Mthonjaneni,KZN285,fruitless,0.0,KwaZulu-Natal,31.7394939,31.7394939
+2013,Mthonjaneni,KZN285,irregular,0.0,KwaZulu-Natal,31.7394939,31.7394939
+2013,Mthonjaneni,KZN285,unauthorised,0.0,KwaZulu-Natal,31.7394939,31.7394939
+2013,Nkandla,KZN286,fruitless,7803000.0,KwaZulu-Natal,31.4913182,31.4913182
+2013,Nkandla,KZN286,irregular,35285000.0,KwaZulu-Natal,31.4913182,31.4913182
+2013,Nkandla,KZN286,unauthorised,0.0,KwaZulu-Natal,31.4913182,31.4913182
+2013,Mandeni,KZN291,fruitless,18000.0,KwaZulu-Natal,31.3998995,31.3998995
+2013,Mandeni,KZN291,irregular,1466000.0,KwaZulu-Natal,31.3998995,31.3998995
+2013,Mandeni,KZN291,unauthorised,0.0,KwaZulu-Natal,31.3998995,31.3998995
+2013,KwaDukuza,KZN292,fruitless,0.0,KwaZulu-Natal,31.0894002,31.0894002
+2013,KwaDukuza,KZN292,irregular,45435000.0,KwaZulu-Natal,31.0894002,31.0894002
+2013,KwaDukuza,KZN292,unauthorised,0.0,KwaZulu-Natal,31.0894002,31.0894002
+2013,Ndwedwe,KZN293,fruitless,0.0,KwaZulu-Natal,31.4684703,31.4684703
+2013,Ndwedwe,KZN293,irregular,6654000.0,KwaZulu-Natal,31.4684703,31.4684703
+2013,Ndwedwe,KZN293,unauthorised,0.0,KwaZulu-Natal,31.4684703,31.4684703
+2013,Maphumulo,KZN294,fruitless,49068000.0,KwaZulu-Natal,31.2892229,31.2892229
+2013,Maphumulo,KZN294,irregular,27254000.0,KwaZulu-Natal,31.2892229,31.2892229
+2013,Maphumulo,KZN294,unauthorised,0.0,KwaZulu-Natal,31.2892229,31.2892229
+2013,Ingwe,KZN431,fruitless,0.0,KwaZulu-Natal,30.9417368,30.9417368
+2013,Ingwe,KZN431,irregular,0.0,KwaZulu-Natal,30.9417368,30.9417368
+2013,Ingwe,KZN431,unauthorised,0.0,KwaZulu-Natal,30.9417368,30.9417368
+2013,Kwa Sani,KZN432,fruitless,836000.0,KwaZulu-Natal,31.03351,31.03351
+2013,Kwa Sani,KZN432,irregular,17003000.0,KwaZulu-Natal,31.03351,31.03351
+2013,Kwa Sani,KZN432,unauthorised,9071000.0,KwaZulu-Natal,31.03351,31.03351
+2013,Greater Kokstad,KZN433,fruitless,261000.0,KwaZulu-Natal,29.8815203,29.8815203
+2013,Greater Kokstad,KZN433,irregular,16113000.0,KwaZulu-Natal,29.8815203,29.8815203
+2013,Greater Kokstad,KZN433,unauthorised,29317000.0,KwaZulu-Natal,29.8815203,29.8815203
+2013,Ubuhlebezwe,KZN434,fruitless,0.0,KwaZulu-Natal,29.5107708,29.5107708
+2013,Ubuhlebezwe,KZN434,irregular,0.0,KwaZulu-Natal,29.5107708,29.5107708
+2013,Ubuhlebezwe,KZN434,unauthorised,0.0,KwaZulu-Natal,29.5107708,29.5107708
+2013,Umzimkhulu,KZN435,fruitless,3000.0,KwaZulu-Natal,29.3714909,29.3714909
+2013,Umzimkhulu,KZN435,irregular,0.0,KwaZulu-Natal,29.3714909,29.3714909
+2013,Umzimkhulu,KZN435,unauthorised,9482000.0,KwaZulu-Natal,29.3714909,29.3714909
+2013,Greater Giyani,LIM331,fruitless,0.0,KwaZulu-Natal,30.0665236,30.0665236
+2013,Greater Giyani,LIM331,irregular,7101000.0,KwaZulu-Natal,30.0665236,30.0665236
+2013,Greater Giyani,LIM331,unauthorised,0.0,KwaZulu-Natal,30.0665236,30.0665236
+2013,Greater Letaba,LIM332,fruitless,26000.0,KwaZulu-Natal,29.6962677,29.6962677
+2013,Greater Letaba,LIM332,irregular,41854000.0,KwaZulu-Natal,29.6962677,29.6962677
+2013,Greater Letaba,LIM332,unauthorised,0.0,KwaZulu-Natal,29.6962677,29.6962677
+2013,Greater Tzaneen,LIM333,fruitless,4943000.0,Limpopo,30.8039474,30.8039474
+2013,Greater Tzaneen,LIM333,irregular,34972000.0,Limpopo,30.8039474,30.8039474
+2013,Greater Tzaneen,LIM333,unauthorised,63779000.0,Limpopo,30.8039474,30.8039474
+2013,Ba-Phalaborwa,LIM334,fruitless,3475000.0,Limpopo,30.2974199,30.2974199
+2013,Ba-Phalaborwa,LIM334,irregular,62370000.0,Limpopo,30.2974199,30.2974199
+2013,Ba-Phalaborwa,LIM334,unauthorised,28911000.0,Limpopo,30.2974199,30.2974199
+2013,Maruleng,LIM335,fruitless,0.0,Limpopo,30.0665236,30.0665236
+2013,Maruleng,LIM335,irregular,6485000.0,Limpopo,30.0665236,30.0665236
+2013,Maruleng,LIM335,unauthorised,0.0,Limpopo,30.0665236,30.0665236
+2013,Musina,LIM341,fruitless,0.0,Limpopo,31.1406753,31.1406753
+2013,Musina,LIM341,irregular,0.0,Limpopo,31.1406753,31.1406753
+2013,Musina,LIM341,unauthorised,0.0,Limpopo,31.1406753,31.1406753
+2013,Mutale,LIM342,fruitless,0.0,Limpopo,30.9576681,30.9576681
+2013,Mutale,LIM342,irregular,0.0,Limpopo,30.9576681,30.9576681
+2013,Mutale,LIM342,unauthorised,0.0,Limpopo,30.9576681,30.9576681
+2013,Thulamela,LIM343,fruitless,0.0,Limpopo,29.6962677,29.6962677
+2013,Thulamela,LIM343,irregular,0.0,Limpopo,29.6962677,29.6962677
+2013,Thulamela,LIM343,unauthorised,0.0,Limpopo,29.6962677,29.6962677
+2013,Makhado,LIM344,fruitless,2795000.0,Limpopo,30.8039474,30.8039474
+2013,Makhado,LIM344,irregular,48211000.0,Limpopo,30.8039474,30.8039474
+2013,Makhado,LIM344,unauthorised,142627000.0,Limpopo,30.8039474,30.8039474
+2013,Blouberg,LIM351,fruitless,213000.0,Limpopo,30.6199895,30.6199895
+2013,Blouberg,LIM351,irregular,20334000.0,Limpopo,30.6199895,30.6199895
+2013,Blouberg,LIM351,unauthorised,7391000.0,Limpopo,30.6199895,30.6199895
+2013,Aganang,LIM352,fruitless,0.0,Limpopo,29.9070436,29.9070436
+2013,Aganang,LIM352,irregular,0.0,Limpopo,29.9070436,29.9070436
+2013,Aganang,LIM352,unauthorised,0.0,Limpopo,29.9070436,29.9070436
+2013,Molemole,LIM353,fruitless,0.0,Limpopo,28.9950702,28.9950702
+2013,Molemole,LIM353,irregular,0.0,Limpopo,28.9950702,28.9950702
+2013,Molemole,LIM353,unauthorised,0.0,Limpopo,28.9950702,28.9950702
+2013,Polokwane,LIM354,fruitless,2692000.0,Limpopo,29.0925356,29.0925356
+2013,Polokwane,LIM354,irregular,246383000.0,Limpopo,29.0925356,29.0925356
+2013,Polokwane,LIM354,unauthorised,119889000.0,Limpopo,29.0925356,29.0925356
+2013,Lepele-Nkumpi,LIM355,fruitless,2699000.0,Limpopo,29.6962677,29.6962677
+2013,Lepele-Nkumpi,LIM355,irregular,72104000.0,Limpopo,29.6962677,29.6962677
+2013,Lepele-Nkumpi,LIM355,unauthorised,0.0,Limpopo,29.6962677,29.6962677
+2013,Thabazimbi,LIM361,fruitless,5477000.0,Limpopo,29.4485367,29.4485367
+2013,Thabazimbi,LIM361,irregular,243387000.0,Limpopo,29.4485367,29.4485367
+2013,Thabazimbi,LIM361,unauthorised,197093000.0,Limpopo,29.4485367,29.4485367
+2013,Lephalale,LIM362,fruitless,0.0,Limpopo,29.6499162,29.6499162
+2013,Lephalale,LIM362,irregular,0.0,Limpopo,29.6499162,29.6499162
+2013,Lephalale,LIM362,unauthorised,0.0,Limpopo,29.6499162,29.6499162
+2013,Mookgopong,LIM364,fruitless,215000.0,Limpopo,27.3616476,27.3616476
+2013,Mookgopong,LIM364,irregular,3169000.0,Limpopo,27.3616476,27.3616476
+2013,Mookgopong,LIM364,unauthorised,9260000.0,Limpopo,27.3616476,27.3616476
+2013,Modimolle,LIM365,fruitless,1524000.0,Limpopo,27.7373373,27.7373373
+2013,Modimolle,LIM365,irregular,6058000.0,Limpopo,27.7373373,27.7373373
+2013,Modimolle,LIM365,unauthorised,1077000.0,Limpopo,27.7373373,27.7373373
+2013,Bela-Bela,LIM366,fruitless,500000.0,Limpopo,28.7664408,28.7664408
+2013,Bela-Bela,LIM366,irregular,42867000.0,Limpopo,28.7664408,28.7664408
+2013,Bela-Bela,LIM366,unauthorised,30876000.0,Limpopo,28.7664408,28.7664408
+2013,Mogalakwena,LIM367,fruitless,0.0,Limpopo,28.2058768,28.2058768
+2013,Mogalakwena,LIM367,irregular,0.0,Limpopo,28.2058768,28.2058768
+2013,Mogalakwena,LIM367,unauthorised,0.0,Limpopo,28.2058768,28.2058768
+2013,Ephraim Mogale,LIM471,fruitless,0.0,Limpopo,28.2526623,28.2526623
+2013,Ephraim Mogale,LIM471,irregular,0.0,Limpopo,28.2526623,28.2526623
+2013,Ephraim Mogale,LIM471,unauthorised,0.0,Limpopo,28.2526623,28.2526623
+2013,Elias Motsoaledi,LIM472,fruitless,75595000.0,Limpopo,29.0138916,29.0138916
+2013,Elias Motsoaledi,LIM472,irregular,356575000.0,Limpopo,29.0138916,29.0138916
+2013,Elias Motsoaledi,LIM472,unauthorised,36681000.0,Limpopo,29.0138916,29.0138916
+2013,Makhuduthamaga,LIM473,fruitless,0.0,Limpopo,29.3250347,29.3250347
+2013,Makhuduthamaga,LIM473,irregular,0.0,Limpopo,29.3250347,29.3250347
+2013,Makhuduthamaga,LIM473,unauthorised,0.0,Limpopo,29.3250347,29.3250347
+2013,Fetakgomo,LIM474,fruitless,0.0,Limpopo,29.3949458,29.3949458
+2013,Fetakgomo,LIM474,irregular,0.0,Limpopo,29.3949458,29.3949458
+2013,Fetakgomo,LIM474,unauthorised,0.0,Limpopo,29.3949458,29.3949458
+2013,Greater Tubatse,LIM475,fruitless,77000.0,Limpopo,29.8352303,29.8352303
+2013,Greater Tubatse,LIM475,irregular,7607000.0,Limpopo,29.8352303,29.8352303
+2013,Greater Tubatse,LIM475,unauthorised,77687000.0,Limpopo,29.8352303,29.8352303
+2013,Mangaung,MAN,fruitless,28325000.0,Limpopo,29.8352303,29.8352303
+2013,Mangaung,MAN,irregular,267705000.0,Limpopo,29.8352303,29.8352303
+2013,Mangaung,MAN,unauthorised,793309000.0,Limpopo,29.8352303,29.8352303
+2013,Chief Albert Luthuli,MP301,fruitless,220317000.0,Limpopo,30.2512728,30.2512728
+2013,Chief Albert Luthuli,MP301,irregular,16912000.0,Limpopo,30.2512728,30.2512728
+2013,Chief Albert Luthuli,MP301,unauthorised,9059000.0,Limpopo,30.2512728,30.2512728
+2013,Msukaligwa,MP302,fruitless,9555000.0,Free State,26.3249438,26.3249438
+2013,Msukaligwa,MP302,irregular,30942000.0,Free State,26.3249438,26.3249438
+2013,Msukaligwa,MP302,unauthorised,89069000.0,Free State,26.3249438,26.3249438
+2013,Mkhondo,MP303,fruitless,5798000.0,Mpumalanga,30.3325113,30.3325113
+2013,Mkhondo,MP303,irregular,19231000.0,Mpumalanga,30.3325113,30.3325113
+2013,Mkhondo,MP303,unauthorised,43210000.0,Mpumalanga,30.3325113,30.3325113
+2013,Dr Pixley Ka Isaka Seme,MP304,fruitless,147580000.0,Mpumalanga,30.0665236,30.0665236
+2013,Dr Pixley Ka Isaka Seme,MP304,irregular,6120000.0,Mpumalanga,30.0665236,30.0665236
+2013,Dr Pixley Ka Isaka Seme,MP304,unauthorised,677000.0,Mpumalanga,30.0665236,30.0665236
+2013,Lekwa,MP305,fruitless,22102000.0,Mpumalanga,30.6199895,30.6199895
+2013,Lekwa,MP305,irregular,35409000.0,Mpumalanga,30.6199895,30.6199895
+2013,Lekwa,MP305,unauthorised,383008000.0,Mpumalanga,30.6199895,30.6199895
+2013,Dipaleseng,MP306,fruitless,1555000.0,Mpumalanga,29.8815203,29.8815203
+2013,Dipaleseng,MP306,irregular,17403000.0,Mpumalanga,29.8815203,29.8815203
+2013,Dipaleseng,MP306,unauthorised,85078000.0,Mpumalanga,29.8815203,29.8815203
+2013,Govan Mbeki,MP307,fruitless,6824000.0,Mpumalanga,29.3250347,29.3250347
+2013,Govan Mbeki,MP307,irregular,17367000.0,Mpumalanga,29.3250347,29.3250347
+2013,Govan Mbeki,MP307,unauthorised,0.0,Mpumalanga,29.3250347,29.3250347
+2013,Victor Khanye,MP311,fruitless,347000.0,Mpumalanga,28.5797981,28.5797981
+2013,Victor Khanye,MP311,irregular,17592000.0,Mpumalanga,28.5797981,28.5797981
+2013,Victor Khanye,MP311,unauthorised,0.0,Mpumalanga,28.5797981,28.5797981
+2013,Emalahleni,MP312,fruitless,51187000.0,Mpumalanga,29.1390642,29.1390642
+2013,Emalahleni,MP312,irregular,0.0,Mpumalanga,29.1390642,29.1390642
+2013,Emalahleni,MP312,unauthorised,0.0,Mpumalanga,29.1390642,29.1390642
+2013,Steve Tshwete,MP313,fruitless,0.0,Mpumalanga,28.8130675,28.8130675
+2013,Steve Tshwete,MP313,irregular,0.0,Mpumalanga,28.8130675,28.8130675
+2013,Steve Tshwete,MP313,unauthorised,0.0,Mpumalanga,28.8130675,28.8130675
+2013,Emakhazeni,MP314,fruitless,1256000.0,Mpumalanga,29.2553229,29.2553229
+2013,Emakhazeni,MP314,irregular,2109000.0,Mpumalanga,29.2553229,29.2553229
+2013,Emakhazeni,MP314,unauthorised,42960000.0,Mpumalanga,29.2553229,29.2553229
+2013,Thembisile,MP315,fruitless,92367000.0,Mpumalanga,29.4681751,29.4681751
+2013,Thembisile,MP315,irregular,5406000.0,Mpumalanga,29.4681751,29.4681751
+2013,Thembisile,MP315,unauthorised,57165000.0,Mpumalanga,29.4681751,29.4681751
+2013,Dr JS Moroka,MP316,fruitless,67000.0,Mpumalanga,30.0665236,30.0665236
+2013,Dr JS Moroka,MP316,irregular,843000.0,Mpumalanga,30.0665236,30.0665236
+2013,Dr JS Moroka,MP316,unauthorised,0.0,Mpumalanga,30.0665236,30.0665236
+2013,Thaba Chweu,MP321,fruitless,1522000.0,Mpumalanga,28.9062794,28.9062794
+2013,Thaba Chweu,MP321,irregular,75053000.0,Mpumalanga,28.9062794,28.9062794
+2013,Thaba Chweu,MP321,unauthorised,0.0,Mpumalanga,28.9062794,28.9062794
+2013,Mbombela,MP322,fruitless,13340000.0,Mpumalanga,28.8130675,28.8130675
+2013,Mbombela,MP322,irregular,77726000.0,Mpumalanga,28.8130675,28.8130675
+2013,Mbombela,MP322,unauthorised,7074000.0,Mpumalanga,28.8130675,28.8130675
+2013,Umjindi,MP323,fruitless,144177000.0,Mpumalanga,30.7791913,30.7791913
+2013,Umjindi,MP323,irregular,0.0,Mpumalanga,30.7791913,30.7791913
+2013,Umjindi,MP323,unauthorised,0.0,Mpumalanga,30.7791913,30.7791913
+2013,Nkomazi,MP324,fruitless,2082000.0,Mpumalanga,31.03351,31.03351
+2013,Nkomazi,MP324,irregular,57397000.0,Mpumalanga,31.03351,31.03351
+2013,Nkomazi,MP324,unauthorised,36907000.0,Mpumalanga,31.03351,31.03351
+2013,Bushbuckridge,MP325,fruitless,0.0,Mpumalanga,31.7195459,31.7195459
+2013,Bushbuckridge,MP325,irregular,592751000.0,Mpumalanga,31.7195459,31.7195459
+2013,Bushbuckridge,MP325,unauthorised,348232000.0,Mpumalanga,31.7195459,31.7195459
+2013,Richtersveld,NC061,fruitless,14000.0,Mpumalanga,31.1710389,31.1710389
+2013,Richtersveld,NC061,irregular,9754000.0,Mpumalanga,31.1710389,31.1710389
+2013,Richtersveld,NC061,unauthorised,6677000.0,Mpumalanga,31.1710389,31.1710389
+2013,Nama Khoi,NC062,fruitless,4042000.0,Northern Cape,17.1011931,17.1011931
+2013,Nama Khoi,NC062,irregular,24725000.0,Northern Cape,17.1011931,17.1011931
+2013,Nama Khoi,NC062,unauthorised,110851000.0,Northern Cape,17.1011931,17.1011931
+2013,Kamiesberg,NC064,fruitless,789000.0,Northern Cape,17.8583868,17.8583868
+2013,Kamiesberg,NC064,irregular,6377000.0,Northern Cape,17.8583868,17.8583868
+2013,Kamiesberg,NC064,unauthorised,70230000.0,Northern Cape,17.8583868,17.8583868
+2013,Hantam,NC065,fruitless,2000.0,Northern Cape,17.8583868,17.8583868
+2013,Hantam,NC065,irregular,3965000.0,Northern Cape,17.8583868,17.8583868
+2013,Hantam,NC065,unauthorised,774000.0,Northern Cape,17.8583868,17.8583868
+2013,Karoo Hoogland,NC066,fruitless,1140000.0,Northern Cape,19.949686,19.949686
+2013,Karoo Hoogland,NC066,irregular,0.0,Northern Cape,19.949686,19.949686
+2013,Karoo Hoogland,NC066,unauthorised,65345000.0,Northern Cape,19.949686,19.949686
+2013,Khâi-Ma,NC067,fruitless,66000.0,Northern Cape,20.902977,20.902977
+2013,Khâi-Ma,NC067,irregular,11072000.0,Northern Cape,20.902977,20.902977
+2013,Khâi-Ma,NC067,unauthorised,5581000.0,Northern Cape,20.902977,20.902977
+2013,Ubuntu,NC071,fruitless,0.0,Northern Cape,19.237649,19.237649
+2013,Ubuntu,NC071,irregular,1895000.0,Northern Cape,19.237649,19.237649
+2013,Ubuntu,NC071,unauthorised,0.0,Northern Cape,19.237649,19.237649
+2013,Umsobomvu,NC072,fruitless,0.0,Northern Cape,23.1918021,23.1918021
+2013,Umsobomvu,NC072,irregular,2903000.0,Northern Cape,23.1918021,23.1918021
+2013,Umsobomvu,NC072,unauthorised,89960000.0,Northern Cape,23.1918021,23.1918021
+2013,Emthanjeni,NC073,fruitless,799000.0,Northern Cape,24.9991464,24.9991464
+2013,Emthanjeni,NC073,irregular,39350000.0,Northern Cape,24.9991464,24.9991464
+2013,Emthanjeni,NC073,unauthorised,54230000.0,Northern Cape,24.9991464,24.9991464
+2013,Kareeberg,NC074,fruitless,0.0,Northern Cape,24.0087533,24.0087533
+2013,Kareeberg,NC074,irregular,1896000.0,Northern Cape,24.0087533,24.0087533
+2013,Kareeberg,NC074,unauthorised,4880000.0,Northern Cape,24.0087533,24.0087533
+2013,Renosterberg,NC075,fruitless,36200000.0,Northern Cape,22.047637,22.047637
+2013,Renosterberg,NC075,irregular,48529000.0,Northern Cape,22.047637,22.047637
+2013,Renosterberg,NC075,unauthorised,17367000.0,Northern Cape,22.047637,22.047637
+2013,Thembelihle,NC076,fruitless,1614000.0,Northern Cape,24.3341432,24.3341432
+2013,Thembelihle,NC076,irregular,51229000.0,Northern Cape,24.3341432,24.3341432
+2013,Thembelihle,NC076,unauthorised,3305000.0,Northern Cape,24.3341432,24.3341432
+2013,Siyathemba,NC077,fruitless,388000.0,Northern Cape,23.8584737,23.8584737
+2013,Siyathemba,NC077,irregular,20192000.0,Northern Cape,23.8584737,23.8584737
+2013,Siyathemba,NC077,unauthorised,19172000.0,Northern Cape,23.8584737,23.8584737
+2013,Siyancuma,NC078,fruitless,595000.0,Northern Cape,22.5245093,22.5245093
+2013,Siyancuma,NC078,irregular,8509000.0,Northern Cape,22.5245093,22.5245093
+2013,Siyancuma,NC078,unauthorised,85548000.0,Northern Cape,22.5245093,22.5245093
+2013,Mier,NC081,fruitless,381000.0,Northern Cape,23.4776098,23.4776098
+2013,Mier,NC081,irregular,8085000.0,Northern Cape,23.4776098,23.4776098
+2013,Mier,NC081,unauthorised,16437000.0,Northern Cape,23.4776098,23.4776098
+2013,Kai !Garib,NC082,fruitless,0.0,Northern Cape,20.2832217,20.2832217
+2013,Kai !Garib,NC082,irregular,3545000.0,Northern Cape,20.2832217,20.2832217
+2013,Kai !Garib,NC082,unauthorised,5162000.0,Northern Cape,20.2832217,20.2832217
+2013,//Khara Hais,NC083,fruitless,0.0,Northern Cape,20.9759699,20.9759699
+2013,//Khara Hais,NC083,irregular,31480000.0,Northern Cape,20.9759699,20.9759699
+2013,//Khara Hais,NC083,unauthorised,11265000.0,Northern Cape,20.9759699,20.9759699
+2013,!Kheis,NC084,fruitless,473000.0,Northern Cape,21.242665,21.242665
+2013,!Kheis,NC084,irregular,1747000.0,Northern Cape,21.242665,21.242665
+2013,!Kheis,NC084,unauthorised,0.0,Northern Cape,21.242665,21.242665
+2013,Tsantsabane,NC085,fruitless,32537000.0,Northern Cape,21.6660725,21.6660725
+2013,Tsantsabane,NC085,irregular,1363000.0,Northern Cape,21.6660725,21.6660725
+2013,Tsantsabane,NC085,unauthorised,60056000.0,Northern Cape,21.6660725,21.6660725
+2013,Kgatelopele,NC086,fruitless,403000.0,Northern Cape,23.1918021,23.1918021
+2013,Kgatelopele,NC086,irregular,13060000.0,Northern Cape,23.1918021,23.1918021
+2013,Kgatelopele,NC086,unauthorised,19451000.0,Northern Cape,23.1918021,23.1918021
+2013,Sol Plaatjie,NC091,fruitless,999000.0,Northern Cape,23.6680747,23.6680747
+2013,Sol Plaatjie,NC091,irregular,14143000.0,Northern Cape,23.6680747,23.6680747
+2013,Sol Plaatjie,NC091,unauthorised,0.0,Northern Cape,23.6680747,23.6680747
+2013,Dikgatlong,NC092,fruitless,75000.0,Northern Cape,24.6667939,24.6667939
+2013,Dikgatlong,NC092,irregular,0.0,Northern Cape,24.6667939,24.6667939
+2013,Dikgatlong,NC092,unauthorised,0.0,Northern Cape,24.6667939,24.6667939
+2013,Magareng,NC093,fruitless,565000.0,Northern Cape,24.5197,24.5197
+2013,Magareng,NC093,irregular,2257000.0,Northern Cape,24.5197,24.5197
+2013,Magareng,NC093,unauthorised,1474000.0,Northern Cape,24.5197,24.5197
+2013,Phokwane,NC094,fruitless,210000.0,Northern Cape,24.7617836,24.7617836
+2013,Phokwane,NC094,irregular,892000.0,Northern Cape,24.7617836,24.7617836
+2013,Phokwane,NC094,unauthorised,14134000.0,Northern Cape,24.7617836,24.7617836
+2013,Joe Morolong,NC451,fruitless,372000.0,Northern Cape,24.7617836,24.7617836
+2013,Joe Morolong,NC451,irregular,8336000.0,Northern Cape,24.7617836,24.7617836
+2013,Joe Morolong,NC451,unauthorised,54618000.0,Northern Cape,24.7617836,24.7617836
+2013,Ga-Segonyana,NC452,fruitless,109000.0,Northern Cape,23.287085,23.287085
+2013,Ga-Segonyana,NC452,irregular,0.0,Northern Cape,23.287085,23.287085
+2013,Ga-Segonyana,NC452,unauthorised,16054000.0,Northern Cape,23.287085,23.287085
+2013,Gamagara,NC453,fruitless,93000.0,Northern Cape,23.4776098,23.4776098
+2013,Gamagara,NC453,irregular,36368000.0,Northern Cape,23.4776098,23.4776098
+2013,Gamagara,NC453,unauthorised,13247000.0,Northern Cape,23.4776098,23.4776098
+2013,Nelson Mandela Bay,NMA,fruitless,2619000.0,Northern Cape,23.0488541,23.0488541
+2013,Nelson Mandela Bay,NMA,irregular,198164000.0,Northern Cape,23.0488541,23.0488541
+2013,Nelson Mandela Bay,NMA,unauthorised,270778000.0,Northern Cape,23.0488541,23.0488541
+2013,Moretele,NW371,fruitless,6231000.0,Eastern Cape,25.5681084,25.5681084
+2013,Moretele,NW371,irregular,34355000.0,Eastern Cape,25.5681084,25.5681084
+2013,Moretele,NW371,unauthorised,325000.0,Eastern Cape,25.5681084,25.5681084
+2013,Local Municipality of Madibeng,NW372,fruitless,169000.0,North West,27.9717606,27.9717606
+2013,Local Municipality of Madibeng,NW372,irregular,2669000.0,North West,27.9717606,27.9717606
+2013,Local Municipality of Madibeng,NW372,unauthorised,0.0,North West,27.9717606,27.9717606
+2013,Rustenburg,NW373,fruitless,0.0,North West,27.8311428,27.8311428
+2013,Rustenburg,NW373,irregular,70493000.0,North West,27.8311428,27.8311428
+2013,Rustenburg,NW373,unauthorised,348567000.0,North West,27.8311428,27.8311428
+2013,Kgetlengrivier,NW374,fruitless,755000.0,North West,27.2676116,27.2676116
+2013,Kgetlengrivier,NW374,irregular,7169000.0,North West,27.2676116,27.2676116
+2013,Kgetlengrivier,NW374,unauthorised,17279000.0,North West,27.2676116,27.2676116
+2013,Moses Kotane,NW375,fruitless,7077000.0,North West,26.8910342,26.8910342
+2013,Moses Kotane,NW375,irregular,204555000.0,North West,26.8910342,26.8910342
+2013,Moses Kotane,NW375,unauthorised,17287000.0,North West,26.8910342,26.8910342
+2013,Ratlou,NW381,fruitless,7744000.0,North West,26.8910342,26.8910342
+2013,Ratlou,NW381,irregular,9932000.0,North West,26.8910342,26.8910342
+2013,Ratlou,NW381,unauthorised,0.0,North West,26.8910342,26.8910342
+2013,Tswaing,NW382,fruitless,1465000.0,North West,24.9991464,24.9991464
+2013,Tswaing,NW382,irregular,36314000.0,North West,24.9991464,24.9991464
+2013,Tswaing,NW382,unauthorised,11234000.0,North West,24.9991464,24.9991464
+2013,Mafikeng,NW383,fruitless,4526000.0,North West,25.7575196,25.7575196
+2013,Mafikeng,NW383,irregular,93588000.0,North West,25.7575196,25.7575196
+2013,Mafikeng,NW383,unauthorised,111809000.0,North West,25.7575196,25.7575196
+2013,Ditsobotla,NW384,fruitless,3754000.0,North West,25.5681084,25.5681084
+2013,Ditsobotla,NW384,irregular,0.0,North West,25.5681084,25.5681084
+2013,Ditsobotla,NW384,unauthorised,0.0,North West,25.5681084,25.5681084
+2013,Ramotshere Moiloa,NW385,fruitless,923000.0,North West,26.1359431,26.1359431
+2013,Ramotshere Moiloa,NW385,irregular,1305000.0,North West,26.1359431,26.1359431
+2013,Ramotshere Moiloa,NW385,unauthorised,0.0,North West,26.1359431,26.1359431
+2013,Naledi,NW392,fruitless,59243000.0,North West,26.10005,26.10005
+2013,Naledi,NW392,irregular,14359000.0,North West,26.10005,26.10005
+2013,Naledi,NW392,unauthorised,117062000.0,North West,26.10005,26.10005
+2013,Mamusa,NW393,fruitless,944000.0,North West,24.7142918,24.7142918
+2013,Mamusa,NW393,irregular,21949000.0,North West,24.7142918,24.7142918
+2013,Mamusa,NW393,unauthorised,78415000.0,North West,24.7142918,24.7142918
+2013,Greater Taung,NW394,fruitless,0.0,North West,25.3785719,25.3785719
+2013,Greater Taung,NW394,irregular,39459000.0,North West,25.3785719,25.3785719
+2013,Greater Taung,NW394,unauthorised,0.0,North West,25.3785719,25.3785719
+2013,Lekwa-Teemane,NW396,fruitless,2621000.0,North West,24.2390498,24.2390498
+2013,Lekwa-Teemane,NW396,irregular,0.0,North West,24.2390498,24.2390498
+2013,Lekwa-Teemane,NW396,unauthorised,0.0,North West,24.2390498,24.2390498
+2013,Kagisano/Molopo,NW397,fruitless,0.0,North West,25.3785719,25.3785719
+2013,Kagisano/Molopo,NW397,irregular,0.0,North West,25.3785719,25.3785719
+2013,Kagisano/Molopo,NW397,unauthorised,0.0,North West,25.3785719,25.3785719
+2013,Ventersdorp,NW401,fruitless,12341000.0,North West,23.9536466,23.9536466
+2013,Ventersdorp,NW401,irregular,71199000.0,North West,23.9536466,23.9536466
+2013,Ventersdorp,NW401,unauthorised,17042000.0,North West,23.9536466,23.9536466
+2013,Tlokwe City Council,NW402,fruitless,1441000.0,North West,26.8910342,26.8910342
+2013,Tlokwe City Council,NW402,irregular,363449000.0,North West,26.8910342,26.8910342
+2013,Tlokwe City Council,NW402,unauthorised,235248000.0,North West,26.8910342,26.8910342
+2013,City of Matlosana,NW403,fruitless,31045000.0,North West,27.096925,27.096925
+2013,City of Matlosana,NW403,irregular,397771000.0,North West,27.096925,27.096925
+2013,City of Matlosana,NW403,unauthorised,844562000.0,North West,27.096925,27.096925
+2013,Maquassi Hills,NW404,fruitless,20918000.0,North West,26.5137964,26.5137964
+2013,Maquassi Hills,NW404,irregular,3236000.0,North West,26.5137964,26.5137964
+2013,Maquassi Hills,NW404,unauthorised,34424000.0,North West,26.5137964,26.5137964
+2013,City of Tshwane,TSH,fruitless,6678000.0,North West,26.1359431,26.1359431
+2013,City of Tshwane,TSH,irregular,28848000.0,North West,26.1359431,26.1359431
+2013,City of Tshwane,TSH,unauthorised,598395000.0,North West,26.1359431,26.1359431
+2013,Matzikama,WC011,fruitless,613000.0,Gauteng,28.3929417,28.3929417
+2013,Matzikama,WC011,irregular,39082000.0,Gauteng,28.3929417,28.3929417
+2013,Matzikama,WC011,unauthorised,74600000.0,Gauteng,28.3929417,28.3929417
+2013,Cederberg,WC012,fruitless,286000.0,Western Cape,18.5225709,18.5225709
+2013,Cederberg,WC012,irregular,1930000.0,Western Cape,18.5225709,18.5225709
+2013,Cederberg,WC012,unauthorised,4608000.0,Western Cape,18.5225709,18.5225709
+2013,Bergrivier,WC013,fruitless,0.0,Western Cape,19.0118251,19.0118251
+2013,Bergrivier,WC013,irregular,616000.0,Western Cape,19.0118251,19.0118251
+2013,Bergrivier,WC013,unauthorised,1356000.0,Western Cape,19.0118251,19.0118251
+2013,Saldanha Bay,WC014,fruitless,187000.0,Western Cape,18.7125791,18.7125791
+2013,Saldanha Bay,WC014,irregular,28585000.0,Western Cape,18.7125791,18.7125791
+2013,Saldanha Bay,WC014,unauthorised,0.0,Western Cape,18.7125791,18.7125791
+2013,Swartland,WC015,fruitless,12188000.0,Western Cape,18.1903059,18.1903059
+2013,Swartland,WC015,irregular,0.0,Western Cape,18.1903059,18.1903059
+2013,Swartland,WC015,unauthorised,7724000.0,Western Cape,18.1903059,18.1903059
+2013,Witzenberg,WC022,fruitless,0.0,Western Cape,18.6624903,18.6624903
+2013,Witzenberg,WC022,irregular,431000.0,Western Cape,18.6624903,18.6624903
+2013,Witzenberg,WC022,unauthorised,0.0,Western Cape,18.6624903,18.6624903
+2013,Drakenstein,WC023,fruitless,66000.0,Western Cape,19.2831531,19.2831531
+2013,Drakenstein,WC023,irregular,5833000.0,Western Cape,19.2831531,19.2831531
+2013,Drakenstein,WC023,unauthorised,2024000.0,Western Cape,19.2831531,19.2831531
+2013,Stellenbosch,WC024,fruitless,0.0,Western Cape,19.04532,19.04532
+2013,Stellenbosch,WC024,irregular,12984000.0,Western Cape,19.04532,19.04532
+2013,Stellenbosch,WC024,unauthorised,43477000.0,Western Cape,19.04532,19.04532
+2013,Breede Valley,WC025,fruitless,0.0,Western Cape,18.9502232,18.9502232
+2013,Breede Valley,WC025,irregular,45000.0,Western Cape,18.9502232,18.9502232
+2013,Breede Valley,WC025,unauthorised,0.0,Western Cape,18.9502232,18.9502232
+2013,Langeberg,WC026,fruitless,0.0,Western Cape,19.4735066,19.4735066
+2013,Langeberg,WC026,irregular,0.0,Western Cape,19.4735066,19.4735066
+2013,Langeberg,WC026,unauthorised,0.0,Western Cape,19.4735066,19.4735066
+2013,Theewaterskloof,WC031,fruitless,0.0,Western Cape,27.812138,27.812138
+2013,Theewaterskloof,WC031,irregular,775000.0,Western Cape,27.812138,27.812138
+2013,Theewaterskloof,WC031,unauthorised,97110000.0,Western Cape,27.812138,27.812138
+2013,Overstrand,WC032,fruitless,176000.0,Western Cape,19.4252453,19.4252453
+2013,Overstrand,WC032,irregular,30179000.0,Western Cape,19.4252453,19.4252453
+2013,Overstrand,WC032,unauthorised,0.0,Western Cape,19.4252453,19.4252453
+2013,Cape Agulhas,WC033,fruitless,0.0,Western Cape,19.4259114,19.4259114
+2013,Cape Agulhas,WC033,irregular,0.0,Western Cape,19.4259114,19.4259114
+2013,Cape Agulhas,WC033,unauthorised,26375000.0,Western Cape,19.4259114,19.4259114
+2013,Swellendam,WC034,fruitless,314000.0,Western Cape,20.0449662,20.0449662
+2013,Swellendam,WC034,irregular,1958000.0,Western Cape,20.0449662,20.0449662
+2013,Swellendam,WC034,unauthorised,10352000.0,Western Cape,20.0449662,20.0449662
+2013,Kannaland,WC041,fruitless,3649000.0,Western Cape,20.7185132,20.7185132
+2013,Kannaland,WC041,irregular,1966000.0,Western Cape,20.7185132,20.7185132
+2013,Kannaland,WC041,unauthorised,53354000.0,Western Cape,20.7185132,20.7185132
+2013,Hessequa,WC042,fruitless,1337000.0,Western Cape,21.3798928,21.3798928
+2013,Hessequa,WC042,irregular,837000.0,Western Cape,21.3798928,21.3798928
+2013,Hessequa,WC042,unauthorised,9914000.0,Western Cape,21.3798928,21.3798928
+2013,Mossel Bay,WC043,fruitless,0.0,Western Cape,21.1891151,21.1891151
+2013,Mossel Bay,WC043,irregular,0.0,Western Cape,21.1891151,21.1891151
+2013,Mossel Bay,WC043,unauthorised,132304000.0,Western Cape,21.1891151,21.1891151
+2013,George,WC044,fruitless,11050000.0,Western Cape,21.9045541,21.9045541
+2013,George,WC044,irregular,0.0,Western Cape,21.9045541,21.9045541
+2013,George,WC044,unauthorised,20468000.0,Western Cape,21.9045541,21.9045541
+2013,Oudtshoorn,WC045,fruitless,9161000.0,Western Cape,22.4768287,22.4768287
+2013,Oudtshoorn,WC045,irregular,2896000.0,Western Cape,22.4768287,22.4768287
+2013,Oudtshoorn,WC045,unauthorised,42058000.0,Western Cape,22.4768287,22.4768287
+2013,Bitou,WC047,fruitless,944000.0,Western Cape,22.1430215,22.1430215
+2013,Bitou,WC047,irregular,42039000.0,Western Cape,22.1430215,22.1430215
+2013,Bitou,WC047,unauthorised,26917000.0,Western Cape,22.1430215,22.1430215
+2013,Knysna,WC048,fruitless,408221000.0,Western Cape,23.429984,23.429984
+2013,Knysna,WC048,irregular,6360000.0,Western Cape,23.429984,23.429984
+2013,Knysna,WC048,unauthorised,15066000.0,Western Cape,23.429984,23.429984
+2013,Laingsburg,WC051,fruitless,610000.0,Western Cape,23.049842,23.049842
+2013,Laingsburg,WC051,irregular,7709000.0,Western Cape,23.049842,23.049842
+2013,Laingsburg,WC051,unauthorised,12227000.0,Western Cape,23.049842,23.049842
+2013,Prince Albert,WC052,fruitless,801000.0,Western Cape,20.902977,20.902977
+2013,Prince Albert,WC052,irregular,0.0,Western Cape,20.902977,20.902977
+2013,Prince Albert,WC052,unauthorised,6240000.0,Western Cape,20.902977,20.902977
+2013,Beaufort West,WC053,fruitless,0.0,Western Cape,22.047637,22.047637
+2013,Beaufort West,WC053,irregular,0.0,Western Cape,22.047637,22.047637
+2013,Beaufort West,WC053,unauthorised,14394000.0,Western Cape,22.047637,22.047637
+2014,Buffalo City,BUF,fruitless,4663023.0,Western Cape,22.8105512,22.8105512
+2014,Buffalo City,BUF,irregular,409296000.0,Western Cape,22.8105512,22.8105512
+2014,Buffalo City,BUF,unauthorised,186767984.0,Western Cape,22.8105512,22.8105512
+2014,City of Cape Town,CPT,fruitless,294000.0,Eastern Cape,27.6434844,27.6434844
+2014,City of Cape Town,CPT,irregular,45000.0,Eastern Cape,27.6434844,27.6434844
+2014,City of Cape Town,CPT,unauthorised,0.0,Eastern Cape,27.6434844,27.6434844
+2014,West Coast,DC1,fruitless,0.0,Western Cape,18.4680927,18.4680927
+2014,West Coast,DC1,irregular,0.0,Western Cape,18.4680927,18.4680927
+2014,West Coast,DC1,unauthorised,0.0,Western Cape,18.4680927,18.4680927
+2014,Cacadu,DC10,fruitless,0.0,Western Cape,18.6175626,18.6175626
+2014,Cacadu,DC10,irregular,12084000.0,Western Cape,18.6175626,18.6175626
+2014,Cacadu,DC10,unauthorised,0.0,Western Cape,18.6175626,18.6175626
+2014,Amathole,DC12,fruitless,436128.0,Eastern Cape,25.6223644,25.6223644
+2014,Amathole,DC12,irregular,615000.0,Eastern Cape,25.6223644,25.6223644
+2014,Amathole,DC12,unauthorised,11097.0,Eastern Cape,25.6223644,25.6223644
+2014,Chris Hani,DC13,fruitless,125135.0,Eastern Cape,27.3616476,27.3616476
+2014,Chris Hani,DC13,irregular,133652851.0,Eastern Cape,27.3616476,27.3616476
+2014,Chris Hani,DC13,unauthorised,14455293.0,Eastern Cape,27.3616476,27.3616476
+2014,Joe Gqabi,DC14,fruitless,503166.0,Eastern Cape,26.7967849,26.7967849
+2014,Joe Gqabi,DC14,irregular,364001.0,Eastern Cape,26.7967849,26.7967849
+2014,Joe Gqabi,DC14,unauthorised,0.0,Eastern Cape,26.7967849,26.7967849
+2014,O.R.Tambo,DC15,fruitless,2343214.0,Eastern Cape,26.9852422,26.9852422
+2014,O.R.Tambo,DC15,irregular,178852989.0,Eastern Cape,26.9852422,26.9852422
+2014,O.R.Tambo,DC15,unauthorised,5090656.0,Eastern Cape,26.9852422,26.9852422
+2014,Xhariep,DC16,fruitless,22330.0,Eastern Cape,29.2320784,29.2320784
+2014,Xhariep,DC16,irregular,8364073.0,Eastern Cape,29.2320784,29.2320784
+2014,Xhariep,DC16,unauthorised,2377362.0,Eastern Cape,29.2320784,29.2320784
+2014,Lejweleputswa,DC18,fruitless,0.0,Free State,25.2837585,25.2837585
+2014,Lejweleputswa,DC18,irregular,5210811.0,Free State,25.2837585,25.2837585
+2014,Lejweleputswa,DC18,unauthorised,0.0,Free State,25.2837585,25.2837585
+2014,Thabo Mofutsanyane,DC19,fruitless,524269.0,Free State,26.2304616,26.2304616
+2014,Thabo Mofutsanyane,DC19,irregular,0.0,Free State,26.2304616,26.2304616
+2014,Thabo Mofutsanyane,DC19,unauthorised,0.0,Free State,26.2304616,26.2304616
+2014,Cape Winelands,DC2,fruitless,0.0,Free State,28.299435,28.299435
+2014,Cape Winelands,DC2,irregular,168227.0,Free State,28.299435,28.299435
+2014,Cape Winelands,DC2,unauthorised,0.0,Free State,28.299435,28.299435
+2014,Fezile Dabi,DC20,fruitless,20191.0,Western Cape,19.7591675,19.7591675
+2014,Fezile Dabi,DC20,irregular,4432849.0,Western Cape,19.7591675,19.7591675
+2014,Fezile Dabi,DC20,unauthorised,0.0,Western Cape,19.7591675,19.7591675
+2014,Ugu,DC21,fruitless,661744.0,Free State,27.7373373,27.7373373
+2014,Ugu,DC21,irregular,107343607.0,Free State,27.7373373,27.7373373
+2014,Ugu,DC21,unauthorised,40075617.0,Free State,27.7373373,27.7373373
+2014,Umgungundlovu,DC22,fruitless,172126.0,KwaZulu-Natal,30.2512728,30.2512728
+2014,Umgungundlovu,DC22,irregular,0.0,KwaZulu-Natal,30.2512728,30.2512728
+2014,Umgungundlovu,DC22,unauthorised,0.0,KwaZulu-Natal,30.2512728,30.2512728
+2014,Uthukela,DC23,fruitless,830816.0,KwaZulu-Natal,30.3435506,30.3435506
+2014,Uthukela,DC23,irregular,107032657.0,KwaZulu-Natal,30.3435506,30.3435506
+2014,Uthukela,DC23,unauthorised,9983109.0,KwaZulu-Natal,30.3435506,30.3435506
+2014,Umzinyathi,DC24,fruitless,269169.0,KwaZulu-Natal,29.6035495,29.6035495
+2014,Umzinyathi,DC24,irregular,108794863.0,KwaZulu-Natal,29.6035495,29.6035495
+2014,Umzinyathi,DC24,unauthorised,0.0,KwaZulu-Natal,29.6035495,29.6035495
+2014,Amajuba,DC25,fruitless,290417.0,KwaZulu-Natal,30.6199895,30.6199895
+2014,Amajuba,DC25,irregular,5807054.0,KwaZulu-Natal,30.6199895,30.6199895
+2014,Amajuba,DC25,unauthorised,470180522.0,KwaZulu-Natal,30.6199895,30.6199895
+2014,Zululand,DC26,fruitless,78205.0,KwaZulu-Natal,30.0665236,30.0665236
+2014,Zululand,DC26,irregular,88750.0,KwaZulu-Natal,30.0665236,30.0665236
+2014,Zululand,DC26,unauthorised,0.0,KwaZulu-Natal,30.0665236,30.0665236
+2014,Umkhanyakude,DC27,fruitless,601509.0,KwaZulu-Natal,31.4456179,31.4456179
+2014,Umkhanyakude,DC27,irregular,556235737.0,KwaZulu-Natal,31.4456179,31.4456179
+2014,Umkhanyakude,DC27,unauthorised,32546333.0,KwaZulu-Natal,31.4456179,31.4456179
+2014,Uthungulu,DC28,fruitless,0.0,KwaZulu-Natal,32.5372741,32.5372741
+2014,Uthungulu,DC28,irregular,0.0,KwaZulu-Natal,32.5372741,32.5372741
+2014,Uthungulu,DC28,unauthorised,0.0,KwaZulu-Natal,32.5372741,32.5372741
+2014,iLembe,DC29,fruitless,259160.0,KwaZulu-Natal,31.5370003,31.5370003
+2014,iLembe,DC29,irregular,9129167.0,KwaZulu-Natal,31.5370003,31.5370003
+2014,iLembe,DC29,unauthorised,9251672.0,KwaZulu-Natal,31.5370003,31.5370003
+2014,Overberg,DC3,fruitless,291.0,KwaZulu-Natal,31.1710389,31.1710389
+2014,Overberg,DC3,irregular,2801226.0,KwaZulu-Natal,31.1710389,31.1710389
+2014,Overberg,DC3,unauthorised,0.0,KwaZulu-Natal,31.1710389,31.1710389
+2014,Gert Sibande,DC30,fruitless,0.0,Western Cape,19.7591675,19.7591675
+2014,Gert Sibande,DC30,irregular,403559.0,Western Cape,19.7591675,19.7591675
+2014,Gert Sibande,DC30,unauthorised,0.0,Western Cape,19.7591675,19.7591675
+2014,Nkangala,DC31,fruitless,1027.0,Mpumalanga,29.9740534,29.9740534
+2014,Nkangala,DC31,irregular,5545712.0,Mpumalanga,29.9740534,29.9740534
+2014,Nkangala,DC31,unauthorised,0.0,Mpumalanga,29.9740534,29.9740534
+2014,Ehlanzeni,DC32,fruitless,12495.0,Mpumalanga,29.6035495,29.6035495
+2014,Ehlanzeni,DC32,irregular,1447369.0,Mpumalanga,29.6035495,29.6035495
+2014,Ehlanzeni,DC32,unauthorised,0.0,Mpumalanga,29.6035495,29.6035495
+2014,Mopani,DC33,fruitless,574188.0,Mpumalanga,31.2626366,31.2626366
+2014,Mopani,DC33,irregular,15533592.0,Mpumalanga,31.2626366,31.2626366
+2014,Mopani,DC33,unauthorised,17126808.0,Mpumalanga,31.2626366,31.2626366
+2014,Vhembe,DC34,fruitless,6096273.0,Limpopo,30.7160431,30.7160431
+2014,Vhembe,DC34,irregular,38195338.0,Limpopo,30.7160431,30.7160431
+2014,Vhembe,DC34,unauthorised,112413612.0,Limpopo,30.7160431,30.7160431
+2014,Capricorn,DC35,fruitless,413312.0,Limpopo,29.9740534,29.9740534
+2014,Capricorn,DC35,irregular,9504030.0,Limpopo,29.9740534,29.9740534
+2014,Capricorn,DC35,unauthorised,0.0,Limpopo,29.9740534,29.9740534
+2014,Waterberg,DC36,fruitless,2000.0,Limpopo,29.2320784,29.2320784
+2014,Waterberg,DC36,irregular,0.0,Limpopo,29.2320784,29.2320784
+2014,Waterberg,DC36,unauthorised,0.0,Limpopo,29.2320784,29.2320784
+2014,Bojanala,DC37,fruitless,0.0,Limpopo,28.299435,28.299435
+2014,Bojanala,DC37,irregular,46682517.0,Limpopo,28.299435,28.299435
+2014,Bojanala,DC37,unauthorised,33309871.0,Limpopo,28.299435,28.299435
+2014,Ngaka Modiri Molema,DC38,fruitless,9854211.0,North West,27.3616476,27.3616476
+2014,Ngaka Modiri Molema,DC38,irregular,367566177.0,North West,27.3616476,27.3616476
+2014,Ngaka Modiri Molema,DC38,unauthorised,12930827.0,North West,27.3616476,27.3616476
+2014,Dr Ruth Segomotsi Mompati,DC39,fruitless,0.0,North West,25.8521764,25.8521764
+2014,Dr Ruth Segomotsi Mompati,DC39,irregular,62232835.0,North West,25.8521764,25.8521764
+2014,Dr Ruth Segomotsi Mompati,DC39,unauthorised,148485987.0,North West,25.8521764,25.8521764
+2014,Eden,DC4,fruitless,342130.0,North West,24.3341432,24.3341432
+2014,Eden,DC4,irregular,11627663.0,North West,24.3341432,24.3341432
+2014,Eden,DC4,unauthorised,44803497.0,North West,24.3341432,24.3341432
+2014,Dr Kenneth Kaunda,DC40,fruitless,0.0,Western Cape,22.047637,22.047637
+2014,Dr Kenneth Kaunda,DC40,irregular,3929075.0,Western Cape,22.047637,22.047637
+2014,Dr Kenneth Kaunda,DC40,unauthorised,0.0,Western Cape,22.047637,22.047637
+2014,Sedibeng,DC42,fruitless,198985.0,North West,26.5137964,26.5137964
+2014,Sedibeng,DC42,irregular,237263.0,North West,26.5137964,26.5137964
+2014,Sedibeng,DC42,unauthorised,0.0,North West,26.5137964,26.5137964
+2014,Harry Gwala,DC43,fruitless,26050.0,Gauteng,28.2058768,28.2058768
+2014,Harry Gwala,DC43,irregular,187116940.0,Gauteng,28.2058768,28.2058768
+2014,Harry Gwala,DC43,unauthorised,164918134.0,Gauteng,28.2058768,28.2058768
+2014,Alfred Nzo,DC44,fruitless,2213894.0,KwaZulu-Natal,29.6035495,29.6035495
+2014,Alfred Nzo,DC44,irregular,188909000.0,KwaZulu-Natal,29.6035495,29.6035495
+2014,Alfred Nzo,DC44,unauthorised,106827462.0,KwaZulu-Natal,29.6035495,29.6035495
+2014,John Taolo Gaetsewe,DC45,fruitless,1036773.0,Eastern Cape,28.8596804,28.8596804
+2014,John Taolo Gaetsewe,DC45,irregular,39513.0,Eastern Cape,28.8596804,28.8596804
+2014,John Taolo Gaetsewe,DC45,unauthorised,5058328.0,Eastern Cape,28.8596804,28.8596804
+2014,Sekhukhune,DC47,fruitless,227708.0,Northern Cape,23.1918021,23.1918021
+2014,Sekhukhune,DC47,irregular,104826296.0,Northern Cape,23.1918021,23.1918021
+2014,Sekhukhune,DC47,unauthorised,31507809.0,Northern Cape,23.1918021,23.1918021
+2014,West Rand,DC48,fruitless,0.0,Limpopo,29.9740534,29.9740534
+2014,West Rand,DC48,irregular,0.0,Limpopo,29.9740534,29.9740534
+2014,West Rand,DC48,unauthorised,0.0,Limpopo,29.9740534,29.9740534
+2014,Central Karoo,DC5,fruitless,0.0,Gauteng,27.4556388,27.4556388
+2014,Central Karoo,DC5,irregular,64474.0,Gauteng,27.4556388,27.4556388
+2014,Central Karoo,DC5,unauthorised,4564250.0,Gauteng,27.4556388,27.4556388
+2014,Namakwa,DC6,fruitless,0.0,Western Cape,22.2384017,22.2384017
+2014,Namakwa,DC6,irregular,0.0,Western Cape,22.2384017,22.2384017
+2014,Namakwa,DC6,unauthorised,0.0,Western Cape,22.2384017,22.2384017
+2014,Pixley ka Seme,DC7,fruitless,229422.0,Northern Cape,19.949686,19.949686
+2014,Pixley ka Seme,DC7,irregular,23092404.0,Northern Cape,19.949686,19.949686
+2014,Pixley ka Seme,DC7,unauthorised,1728559.0,Northern Cape,19.949686,19.949686
+2014,Z F Mgcawu,DC8,fruitless,15868.0,Northern Cape,23.3823545,23.3823545
+2014,Z F Mgcawu,DC8,irregular,0.0,Northern Cape,23.3823545,23.3823545
+2014,Z F Mgcawu,DC8,unauthorised,6641544.0,Northern Cape,23.3823545,23.3823545
+2014,Frances Baard,DC9,fruitless,117410.0,Northern Cape,21.246215,21.246215
+2014,Frances Baard,DC9,irregular,585066.0,Northern Cape,21.246215,21.246215
+2014,Frances Baard,DC9,unauthorised,695884.0,Northern Cape,21.246215,21.246215
+2014,Dr Beyers Naude,EC101,fruitless,91288.0,Northern Cape,24.3341432,24.3341432
+2014,Dr Beyers Naude,EC101,irregular,1049369.0,Northern Cape,24.3341432,24.3341432
+2014,Dr Beyers Naude,EC101,unauthorised,20092174.0,Northern Cape,24.3341432,24.3341432
+2014,Blue Crane Route,EC102,fruitless,20975.0,Eastern Cape,24.371068,24.371068
+2014,Blue Crane Route,EC102,irregular,28659172.0,Eastern Cape,24.3341432,24.3341432
+2014,Blue Crane Route,EC102,unauthorised,12828308.0,Eastern Cape,24.371068,24.371068
+2014,Ikwezi,EC103,fruitless,900000.0,Eastern Cape,24.3341432,24.3341432
+2014,Ikwezi,EC103,irregular,10184000.0,Eastern Cape,24.371068,24.371068
+2014,Ikwezi,EC103,unauthorised,74000000.0,Eastern Cape,24.3341432,24.3341432
+2014,Makana,EC104,fruitless,888984.0,Eastern Cape,25.4733554,25.4733554
+2014,Makana,EC104,irregular,115260000.0,Eastern Cape,25.4733554,25.4733554
+2014,Makana,EC104,unauthorised,6373839.0,Eastern Cape,25.4733554,25.4733554
+2014,Ndlambe,EC105,fruitless,205710.0,Eastern Cape,24.6192899,24.6192899
+2014,Ndlambe,EC105,irregular,132767542.0,Eastern Cape,24.6192899,24.6192899
+2014,Ndlambe,EC105,unauthorised,62000000.0,Eastern Cape,24.6192899,24.6192899
+2014,Sundays River Valley,EC106,fruitless,496001.0,Eastern Cape,26.3249438,26.3249438
+2014,Sundays River Valley,EC106,irregular,112986000.0,Eastern Cape,26.3249438,26.3249438
+2014,Sundays River Valley,EC106,unauthorised,64800000.0,Eastern Cape,26.3249438,26.3249438
+2014,Baviaans,EC107,fruitless,2100000.0,Eastern Cape,26.749645,26.749645
+2014,Baviaans,EC107,irregular,2277000.0,Eastern Cape,26.749645,26.749645
+2014,Baviaans,EC107,unauthorised,5400000.0,Eastern Cape,26.749645,26.749645
+2014,Kouga,EC108,fruitless,2305973.0,Eastern Cape,25.5681084,25.5681084
+2014,Kouga,EC108,irregular,1144039.0,Eastern Cape,25.5681084,25.5681084
+2014,Kouga,EC108,unauthorised,24035831.0,Eastern Cape,25.5681084,25.5681084
+2014,Kou-Kamma,EC109,fruitless,602194.0,Eastern Cape,24.0488007,24.0488007
+2014,Kou-Kamma,EC109,irregular,29800966.0,Eastern Cape,24.0488007,24.0488007
+2014,Kou-Kamma,EC109,unauthorised,16214525.0,Eastern Cape,24.0488007,24.0488007
+2014,Mbhashe,EC121,fruitless,462283.0,Eastern Cape,24.8092691,24.8092691
+2014,Mbhashe,EC121,irregular,21050000.0,Eastern Cape,24.8092691,24.8092691
+2014,Mbhashe,EC121,unauthorised,2013837.0,Eastern Cape,24.8092691,24.8092691
+2014,Mnquma,EC122,fruitless,145841.0,Eastern Cape,24.0488007,24.0488007
+2014,Mnquma,EC122,irregular,76469000.0,Eastern Cape,24.0488007,24.0488007
+2014,Mnquma,EC122,unauthorised,6721769.0,Eastern Cape,24.0488007,24.0488007
+2014,Great Kei,EC123,fruitless,755199.0,Eastern Cape,28.7664408,28.7664408
+2014,Great Kei,EC123,irregular,2329113.0,Eastern Cape,28.7664408,28.7664408
+2014,Great Kei,EC123,unauthorised,9925014.0,Eastern Cape,28.7664408,28.7664408
+2014,Amahlathi,EC124,fruitless,3423333.0,Eastern Cape,28.0186087,28.0186087
+2014,Amahlathi,EC124,irregular,7111263.0,Eastern Cape,28.0186087,28.0186087
+2014,Amahlathi,EC124,unauthorised,78603843.0,Eastern Cape,28.0186087,28.0186087
+2014,Ngqushwa,EC126,fruitless,70310.0,Eastern Cape,27.9717606,27.9717606
+2014,Ngqushwa,EC126,irregular,37094000.0,Eastern Cape,27.9717606,27.9717606
+2014,Ngqushwa,EC126,unauthorised,1400000.0,Eastern Cape,27.9717606,27.9717606
+2014,Nkonkobe,EC127,fruitless,1467894.0,Eastern Cape,27.2676116,27.2676116
+2014,Nkonkobe,EC127,irregular,3201978.0,Eastern Cape,27.2676116,27.2676116
+2014,Nkonkobe,EC127,unauthorised,38459002.0,Eastern Cape,27.2676116,27.2676116
+2014,Nxuba,EC128,fruitless,2598800.0,Eastern Cape,27.2676116,27.2676116
+2014,Nxuba,EC128,irregular,10742000.0,Eastern Cape,27.2676116,27.2676116
+2014,Nxuba,EC128,unauthorised,17885013.0,Eastern Cape,27.2676116,27.2676116
+2014,Inxuba Yethemba,EC131,fruitless,280847.0,Eastern Cape,26.8329144,26.8329144
+2014,Inxuba Yethemba,EC131,irregular,18771647.0,Eastern Cape,26.8329144,26.8329144
+2014,Inxuba Yethemba,EC131,unauthorised,0.0,Eastern Cape,26.8329144,26.8329144
+2014,Tsolwana,EC132,fruitless,45674.0,Eastern Cape,26.3249438,26.3249438
+2014,Tsolwana,EC132,irregular,113896.0,Eastern Cape,26.3249438,26.3249438
+2014,Tsolwana,EC132,unauthorised,3736406.0,Eastern Cape,26.3249438,26.3249438
+2014,Inkwanca,EC133,fruitless,461789.0,Eastern Cape,25.3785719,25.3785719
+2014,Inkwanca,EC133,irregular,1677792.0,Eastern Cape,25.3785719,25.3785719
+2014,Inkwanca,EC133,unauthorised,6285062.0,Eastern Cape,25.3785719,25.3785719
+2014,Lukanji,EC134,fruitless,479362.0,Eastern Cape,26.1359431,26.1359431
+2014,Lukanji,EC134,irregular,56733000.0,Eastern Cape,26.1359431,26.1359431
+2014,Lukanji,EC134,unauthorised,30028292.0,Eastern Cape,26.1359431,26.1359431
+2014,Intsika Yethu,EC135,fruitless,197330.0,Eastern Cape,26.5137964,26.5137964
+2014,Intsika Yethu,EC135,irregular,18162838.0,Eastern Cape,26.5137964,26.5137964
+2014,Intsika Yethu,EC135,unauthorised,47611607.0,Eastern Cape,26.5137964,26.5137964
+2014,Emalahleni,EC136,fruitless,266261.0,Eastern Cape,26.8910342,26.8910342
+2014,Emalahleni,EC136,irregular,55380000.0,Eastern Cape,26.8910342,26.8910342
+2014,Emalahleni,EC136,unauthorised,12748620.0,Eastern Cape,26.8910342,26.8910342
+2014,Engcobo,EC137,fruitless,98387.0,Eastern Cape,27.6434844,27.6434844
+2014,Engcobo,EC137,irregular,0.0,Eastern Cape,27.6434844,27.6434844
+2014,Engcobo,EC137,unauthorised,0.0,Eastern Cape,27.6434844,27.6434844
+2014,Sakhisizwe,EC138,fruitless,25234.0,Eastern Cape,29.2553229,29.2553229
+2014,Sakhisizwe,EC138,irregular,23733638.0,Eastern Cape,29.2553229,29.2553229
+2014,Sakhisizwe,EC138,unauthorised,30335676.0,Eastern Cape,29.2553229,29.2553229
+2014,Elundini,EC141,fruitless,90207.0,Eastern Cape,27.9834738,27.9834738
+2014,Elundini,EC141,irregular,51049.0,Eastern Cape,27.9834738,27.9834738
+2014,Elundini,EC141,unauthorised,5179958.0,Eastern Cape,27.9834738,27.9834738
+2014,Senqu,EC142,fruitless,0.0,Eastern Cape,27.8311428,27.8311428
+2014,Senqu,EC142,irregular,1229000.0,Eastern Cape,27.8311428,27.8311428
+2014,Senqu,EC142,unauthorised,0.0,Eastern Cape,27.8311428,27.8311428
+2014,Maletswai,EC143,fruitless,2771641.0,Eastern Cape,28.3929417,28.3929417
+2014,Maletswai,EC143,irregular,279785.0,Eastern Cape,28.3929417,28.3929417
+2014,Maletswai,EC143,unauthorised,17892557.0,Eastern Cape,28.3929417,28.3929417
+2014,Gariep,EC144,fruitless,5523853.0,Eastern Cape,27.6434844,27.6434844
+2014,Gariep,EC144,irregular,3064000.0,Eastern Cape,27.6434844,27.6434844
+2014,Gariep,EC144,unauthorised,6454422.0,Eastern Cape,27.6434844,27.6434844
+2014,Ngquza Hill,EC153,fruitless,780.0,Eastern Cape,26.8910342,26.8910342
+2014,Ngquza Hill,EC153,irregular,0.0,Eastern Cape,26.8910342,26.8910342
+2014,Ngquza Hill,EC153,unauthorised,644934.0,Eastern Cape,26.8910342,26.8910342
+2014,Port St Johns,EC154,fruitless,8941993.0,Eastern Cape,25.8521764,25.8521764
+2014,Port St Johns,EC154,irregular,61936882.0,Eastern Cape,25.8521764,25.8521764
+2014,Port St Johns,EC154,unauthorised,0.0,Eastern Cape,25.8521764,25.8521764
+2014,Nyandeni,EC155,fruitless,13000.0,Eastern Cape,29.6962677,29.6962677
+2014,Nyandeni,EC155,irregular,26842000.0,Eastern Cape,29.6962677,29.6962677
+2014,Nyandeni,EC155,unauthorised,0.0,Eastern Cape,29.6962677,29.6962677
+2014,Mhlontlo,EC156,fruitless,66778.0,Eastern Cape,29.5457058,29.5457058
+2014,Mhlontlo,EC156,irregular,113570000.0,Eastern Cape,29.5457058,29.5457058
+2014,Mhlontlo,EC156,unauthorised,19480866.0,Eastern Cape,29.5457058,29.5457058
+2014,King Sabata Dalindyebo,EC157,fruitless,7229424.0,Eastern Cape,29.1390642,29.1390642
+2014,King Sabata Dalindyebo,EC157,irregular,367085000.0,Eastern Cape,29.1390642,29.1390642
+2014,King Sabata Dalindyebo,EC157,unauthorised,354400000.0,Eastern Cape,29.1390642,29.1390642
+2014,Matatiele,EC441,fruitless,1830.0,Eastern Cape,28.8130675,28.8130675
+2014,Matatiele,EC441,irregular,7489688.0,Eastern Cape,28.8130675,28.8130675
+2014,Matatiele,EC441,unauthorised,9679923.0,Eastern Cape,28.8130675,28.8130675
+2014,Umzimvubu,EC442,fruitless,0.0,Eastern Cape,28.5797981,28.5797981
+2014,Umzimvubu,EC442,irregular,585000.0,Eastern Cape,28.5797981,28.5797981
+2014,Umzimvubu,EC442,unauthorised,0.0,Eastern Cape,28.5797981,28.5797981
+2014,Mbizana,EC443,fruitless,430604.0,Eastern Cape,28.7664408,28.7664408
+2014,Mbizana,EC443,irregular,19550000.0,Eastern Cape,28.7664408,28.7664408
+2014,Mbizana,EC443,unauthorised,742281.0,Eastern Cape,28.7664408,28.7664408
+2014,Ntabankulu,EC444,fruitless,4663320.0,Eastern Cape,28.9528645,28.9528645
+2014,Ntabankulu,EC444,irregular,15064545.0,Eastern Cape,28.9528645,28.9528645
+2014,Ntabankulu,EC444,unauthorised,11176700.0,Eastern Cape,28.9528645,28.9528645
+2014,Ekurhuleni,EKU,fruitless,9972611.0,Eastern Cape,29.8566142,29.8566142
+2014,Ekurhuleni,EKU,irregular,235228682.0,Eastern Cape,29.8566142,29.8566142
+2014,Ekurhuleni,EKU,unauthorised,0.0,Eastern Cape,29.8566142,29.8566142
+2014,eThekwini,ETH,fruitless,0.0,Eastern Cape,29.2785638,29.2785638
+2014,eThekwini,ETH,irregular,334778200.0,Eastern Cape,29.2785638,29.2785638
+2014,eThekwini,ETH,unauthorised,0.0,Eastern Cape,29.2785638,29.2785638
+2014,Letsemeng,FS161,fruitless,491458.0,Gauteng,28.3461948,28.3461948
+2014,Letsemeng,FS161,irregular,20398448.0,Gauteng,28.3461948,28.3461948
+2014,Letsemeng,FS161,unauthorised,16746453.0,Gauteng,28.3461948,28.3461948
+2014,Kopanong,FS162,fruitless,12221241.0,KwaZulu-Natal,30.8039474,30.8039474
+2014,Kopanong,FS162,irregular,37782366.0,KwaZulu-Natal,30.8039474,30.8039474
+2014,Kopanong,FS162,unauthorised,41427947.0,KwaZulu-Natal,30.8039474,30.8039474
+2014,Mohokare,FS163,fruitless,1881707.0,Free State,25.094045,25.094045
+2014,Mohokare,FS163,irregular,937854.0,Free State,25.094045,25.094045
+2014,Mohokare,FS163,unauthorised,27617260.0,Free State,25.094045,25.094045
+2014,Naledi,FS164,fruitless,1255466.0,Free State,25.4733554,25.4733554
+2014,Naledi,FS164,irregular,13882820.0,Free State,25.4733554,25.4733554
+2014,Naledi,FS164,unauthorised,33154000.0,Free State,25.4733554,25.4733554
+2014,Masilonyana,FS181,fruitless,1088149.0,Free State,26.9852422,26.9852422
+2014,Masilonyana,FS181,irregular,28052420.0,Free State,26.9852422,26.9852422
+2014,Masilonyana,FS181,unauthorised,7167360.0,Free State,26.9852422,26.9852422
+2014,Tokologo,FS182,fruitless,470029.0,Free State,24.7142918,24.7142918
+2014,Tokologo,FS182,irregular,10300938.0,Free State,24.7142918,24.7142918
+2014,Tokologo,FS182,unauthorised,16220722.0,Free State,24.7142918,24.7142918
+2014,Tswelopele,FS183,fruitless,27730.0,Free State,26.6081653,26.6081653
+2014,Tswelopele,FS183,irregular,1520952.0,Free State,26.6081653,26.6081653
+2014,Tswelopele,FS183,unauthorised,1781896.0,Free State,26.6081653,26.6081653
+2014,Matjhabeng,FS184,fruitless,103397549.0,Free State,25.4733554,25.4733554
+2014,Matjhabeng,FS184,irregular,85126150.0,Free State,25.4733554,25.4733554
+2014,Matjhabeng,FS184,unauthorised,453240006.0,Free State,25.4733554,25.4733554
+2014,Nala,FS185,fruitless,22990350.0,Free State,25.9467997,25.9467997
+2014,Nala,FS185,irregular,67810775.0,Free State,25.9467997,25.9467997
+2014,Nala,FS185,unauthorised,64929430.0,Free State,25.9467997,25.9467997
+2014,Setsoto,FS191,fruitless,32357.0,Free State,26.8910342,26.8910342
+2014,Setsoto,FS191,irregular,74744136.0,Free State,26.8910342,26.8910342
+2014,Setsoto,FS191,unauthorised,147032593.0,Free State,26.8910342,26.8910342
+2014,Dihlabeng,FS192,fruitless,11094761.0,Free State,26.5137964,26.5137964
+2014,Dihlabeng,FS192,irregular,86461006.0,Free State,26.5137964,26.5137964
+2014,Dihlabeng,FS192,unauthorised,34392693.0,Free State,26.5137964,26.5137964
+2014,Nketoana,FS193,fruitless,2934959.0,Free State,27.6434844,27.6434844
+2014,Nketoana,FS193,irregular,14632322.0,Free State,27.6434844,27.6434844
+2014,Nketoana,FS193,unauthorised,13227353.0,Free State,27.6434844,27.6434844
+2014,Maluti a Phofung,FS194,fruitless,31557459.0,Free State,28.2058768,28.2058768
+2014,Maluti a Phofung,FS194,irregular,63574485.0,Free State,28.2058768,28.2058768
+2014,Maluti a Phofung,FS194,unauthorised,434290907.0,Free State,28.2058768,28.2058768
+2014,Phumelela,FS195,fruitless,949439.0,Free State,28.4318311,28.4318311
+2014,Phumelela,FS195,irregular,22986762.0,Free State,28.4318311,28.4318311
+2014,Phumelela,FS195,unauthorised,48551961.0,Free State,28.4318311,28.4318311
+2014,Mantsopa,FS196,fruitless,3563817.0,Free State,28.9528645,28.9528645
+2014,Mantsopa,FS196,irregular,21612310.0,Free State,28.9528645,28.9528645
+2014,Mantsopa,FS196,unauthorised,8635109.0,Free State,28.9528645,28.9528645
+2014,Moqhaka,FS201,fruitless,7664626.0,Free State,29.2320784,29.2320784
+2014,Moqhaka,FS201,irregular,97072368.0,Free State,29.2320784,29.2320784
+2014,Moqhaka,FS201,unauthorised,223836571.0,Free State,29.2320784,29.2320784
+2014,Ngwathe,FS203,fruitless,57860284.0,Free State,27.2676116,27.2676116
+2014,Ngwathe,FS203,irregular,71017377.0,Free State,27.2676116,27.2676116
+2014,Ngwathe,FS203,unauthorised,89244872.0,Free State,27.2676116,27.2676116
+2014,Metsimaholo,FS204,fruitless,1398877.0,Free State,27.2676116,27.2676116
+2014,Metsimaholo,FS204,irregular,119135537.0,Free State,27.2676116,27.2676116
+2014,Metsimaholo,FS204,unauthorised,26541398.0,Free State,27.2676116,27.2676116
+2014,Mafube,FS205,fruitless,8483961.0,Free State,27.7373373,27.7373373
+2014,Mafube,FS205,irregular,21299058.0,Free State,27.7373373,27.7373373
+2014,Mafube,FS205,unauthorised,206563443.0,Free State,27.7373373,27.7373373
+2014,Emfuleni,GT421,fruitless,107932.0,Free State,27.8277881,27.8277881
+2014,Emfuleni,GT421,irregular,0.0,Free State,27.8277881,27.8277881
+2014,Emfuleni,GT421,unauthorised,0.0,Free State,27.8277881,27.8277881
+2014,Midvaal,GT422,fruitless,0.0,Free State,28.5797981,28.5797981
+2014,Midvaal,GT422,irregular,0.0,Free State,28.5797981,28.5797981
+2014,Midvaal,GT422,unauthorised,0.0,Free State,28.5797981,28.5797981
+2014,Lesedi,GT423,fruitless,1477344.0,Gauteng,27.784246,27.784246
+2014,Lesedi,GT423,irregular,3191320.0,Gauteng,27.784246,27.784246
+2014,Lesedi,GT423,unauthorised,0.0,Gauteng,27.784246,27.784246
+2014,Mogale City,GT481,fruitless,4179247.0,Gauteng,28.0654445,28.0654445
+2014,Mogale City,GT481,irregular,0.0,Gauteng,28.0654445,28.0654445
+2014,Mogale City,GT481,unauthorised,0.0,Gauteng,28.0654445,28.0654445
+2014,Randfontein,GT482,fruitless,23202926.0,Gauteng,28.4396756,28.4396756
+2014,Randfontein,GT482,irregular,99535825.0,Gauteng,28.4396756,28.4396756
+2014,Randfontein,GT482,unauthorised,80720.0,Gauteng,28.4396756,28.4396756
+2014,Westonaria,GT483,fruitless,9509483.0,Gauteng,27.5965403,27.5965403
+2014,Westonaria,GT483,irregular,24906509.0,Gauteng,27.5965403,27.5965403
+2014,Westonaria,GT483,unauthorised,144897823.0,Gauteng,27.5965403,27.5965403
+2014,Merafong City,GT484,fruitless,0.0,Gauteng,27.6786847,27.6786847
+2014,Merafong City,GT484,irregular,308622906.0,Gauteng,27.6786847,27.6786847
+2014,Merafong City,GT484,unauthorised,65689507.0,Gauteng,27.6786847,27.6786847
+2014,City of Johannesburg,JHB,fruitless,18973.0,Gauteng,27.666952,27.666952
+2014,City of Johannesburg,JHB,irregular,283249000.0,Gauteng,27.666952,27.666952
+2014,City of Johannesburg,JHB,unauthorised,0.0,Gauteng,27.666952,27.666952
+2014,Vulamehlo,KZN211,fruitless,160976.0,Gauteng,27.4086488,27.4086488
+2014,Vulamehlo,KZN211,irregular,6396354.0,Gauteng,27.4086488,27.4086488
+2014,Vulamehlo,KZN211,unauthorised,0.0,Gauteng,27.4086488,27.4086488
+2014,Umdoni,KZN212,fruitless,0.0,Gauteng,27.9717606,27.9717606
+2014,Umdoni,KZN212,irregular,16436104.0,Gauteng,27.9717606,27.9717606
+2014,Umdoni,KZN212,unauthorised,2509411.0,Gauteng,27.9717606,27.9717606
+2014,Umzumbe,KZN213,fruitless,69072.0,KwaZulu-Natal,30.5739579,30.5739579
+2014,Umzumbe,KZN213,irregular,19408291.0,KwaZulu-Natal,30.5739579,30.5739579
+2014,Umzumbe,KZN213,unauthorised,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2014,uMuziwabantu,KZN214,fruitless,0.0,KwaZulu-Natal,30.6890055,30.6890055
+2014,uMuziwabantu,KZN214,irregular,13580729.0,KwaZulu-Natal,30.6890055,30.6890055
+2014,uMuziwabantu,KZN214,unauthorised,0.0,KwaZulu-Natal,30.6890055,30.6890055
+2014,Ezingoleni,KZN215,fruitless,0.0,KwaZulu-Natal,30.5928401,30.5928401
+2014,Ezingoleni,KZN215,irregular,0.0,KwaZulu-Natal,30.5928401,30.5928401
+2014,Ezingoleni,KZN215,unauthorised,0.0,KwaZulu-Natal,30.5928401,30.5928401
+2014,Ray Nkonyeni,KZN216,fruitless,99260.0,KwaZulu-Natal,29.9277947,29.9277947
+2014,Ray Nkonyeni,KZN216,irregular,2720578.0,KwaZulu-Natal,29.9277947,29.9277947
+2014,Ray Nkonyeni,KZN216,unauthorised,0.0,KwaZulu-Natal,29.9277947,29.9277947
+2014,uMshwathi,KZN221,fruitless,0.0,KwaZulu-Natal,30.182022,30.182022
+2014,uMshwathi,KZN221,irregular,0.0,KwaZulu-Natal,30.182022,30.182022
+2014,uMshwathi,KZN221,unauthorised,0.0,KwaZulu-Natal,30.182022,30.182022
+2014,uMngeni,KZN222,fruitless,553287.0,KwaZulu-Natal,30.3639319,30.3639319
+2014,uMngeni,KZN222,irregular,14053482.0,KwaZulu-Natal,30.3204873,30.3204873
+2014,uMngeni,KZN222,unauthorised,61015236.0,KwaZulu-Natal,30.3639319,30.3639319
+2014,Mpofana,KZN223,fruitless,86563.0,KwaZulu-Natal,30.3204873,30.3204873
+2014,Mpofana,KZN223,irregular,28488865.0,KwaZulu-Natal,30.3639319,30.3639319
+2014,Mpofana,KZN223,unauthorised,2439085.0,KwaZulu-Natal,30.3204873,30.3204873
+2014,Impendle,KZN224,fruitless,1137500.0,KwaZulu-Natal,30.5743164,30.5743164
+2014,Impendle,KZN224,irregular,615858.0,KwaZulu-Natal,30.5743164,30.5743164
+2014,Impendle,KZN224,unauthorised,0.0,KwaZulu-Natal,30.5743164,30.5743164
+2014,The Msunduzi,KZN225,fruitless,138813.0,KwaZulu-Natal,30.112735,30.112735
+2014,The Msunduzi,KZN225,irregular,269012345.0,KwaZulu-Natal,30.112735,30.112735
+2014,The Msunduzi,KZN225,unauthorised,12379824.0,KwaZulu-Natal,30.112735,30.112735
+2014,Mkhambathini,KZN226,fruitless,0.0,KwaZulu-Natal,30.112735,30.112735
+2014,Mkhambathini,KZN226,irregular,1768717.0,KwaZulu-Natal,30.112735,30.112735
+2014,Mkhambathini,KZN226,unauthorised,0.0,KwaZulu-Natal,30.112735,30.112735
+2014,Richmond,KZN227,fruitless,456.0,KwaZulu-Natal,29.8352303,29.8352303
+2014,Richmond,KZN227,irregular,0.0,KwaZulu-Natal,29.8352303,29.8352303
+2014,Richmond,KZN227,unauthorised,168231.0,KwaZulu-Natal,29.8352303,29.8352303
+2014,Emnambithi/Ladysmith,KZN232,fruitless,7162.0,KwaZulu-Natal,30.3824842,30.3824842
+2014,Emnambithi/Ladysmith,KZN232,irregular,46908.0,KwaZulu-Natal,30.3824842,30.3824842
+2014,Emnambithi/Ladysmith,KZN232,unauthorised,0.0,KwaZulu-Natal,30.3824842,30.3824842
+2014,Indaka,KZN233,fruitless,2005272.0,KwaZulu-Natal,30.5739579,30.5739579
+2014,Indaka,KZN233,irregular,15734379.0,KwaZulu-Natal,30.5739579,30.5739579
+2014,Indaka,KZN233,unauthorised,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2014,Umtshezi,KZN234,fruitless,29360190.0,KwaZulu-Natal,30.2974199,30.2974199
+2014,Umtshezi,KZN234,irregular,31268970.0,KwaZulu-Natal,30.2974199,30.2974199
+2014,Umtshezi,KZN234,unauthorised,0.0,KwaZulu-Natal,30.2974199,30.2974199
+2014,Okhahlamba,KZN235,fruitless,7588.0,KwaZulu-Natal,29.7807856,29.7807856
+2014,Okhahlamba,KZN235,irregular,6140634.0,KwaZulu-Natal,29.7807856,29.7807856
+2014,Okhahlamba,KZN235,unauthorised,0.0,KwaZulu-Natal,29.7807856,29.7807856
+2014,Imbabazane,KZN236,fruitless,90208.0,KwaZulu-Natal,30.107222,30.107222
+2014,Imbabazane,KZN236,irregular,0.0,KwaZulu-Natal,30.107222,30.107222
+2014,Imbabazane,KZN236,unauthorised,0.0,KwaZulu-Natal,30.107222,30.107222
+2014,Endumeni,KZN241,fruitless,0.0,KwaZulu-Natal,30.0202964,30.0202964
+2014,Endumeni,KZN241,irregular,258103.0,KwaZulu-Natal,30.0202964,30.0202964
+2014,Endumeni,KZN241,unauthorised,8617722.0,KwaZulu-Natal,30.0202964,30.0202964
+2014,Nqutu,KZN242,fruitless,27547.0,KwaZulu-Natal,29.3250347,29.3250347
+2014,Nqutu,KZN242,irregular,0.0,KwaZulu-Natal,29.3250347,29.3250347
+2014,Nqutu,KZN242,unauthorised,0.0,KwaZulu-Natal,29.3250347,29.3250347
+2014,Msinga,KZN244,fruitless,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2014,Msinga,KZN244,irregular,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2014,Msinga,KZN244,unauthorised,4755408.0,KwaZulu-Natal,29.6864574,29.6864574
+2014,Umvoti,KZN245,fruitless,2847148.0,KwaZulu-Natal,30.2343393,30.2343393
+2014,Umvoti,KZN245,irregular,4215682.0,KwaZulu-Natal,30.2343393,30.2343393
+2014,Umvoti,KZN245,unauthorised,0.0,KwaZulu-Natal,30.2343393,30.2343393
+2014,Newcastle,KZN252,fruitless,0.0,KwaZulu-Natal,30.6746303,30.6746303
+2014,Newcastle,KZN252,irregular,57203428.0,KwaZulu-Natal,30.6746303,30.6746303
+2014,Newcastle,KZN252,unauthorised,0.0,KwaZulu-Natal,30.6746303,30.6746303
+2014,Emadlangeni,KZN253,fruitless,37080.0,KwaZulu-Natal,30.4357631,30.4357631
+2014,Emadlangeni,KZN253,irregular,10365.0,KwaZulu-Natal,30.4357631,30.4357631
+2014,Emadlangeni,KZN253,unauthorised,0.0,KwaZulu-Natal,30.4357631,30.4357631
+2014,Dannhauser,KZN254,fruitless,0.0,KwaZulu-Natal,30.6199895,30.6199895
+2014,Dannhauser,KZN254,irregular,894078.0,KwaZulu-Natal,30.6199895,30.6199895
+2014,Dannhauser,KZN254,unauthorised,0.0,KwaZulu-Natal,30.6199895,30.6199895
+2014,eDumbe,KZN261,fruitless,385106.0,KwaZulu-Natal,29.9971769,29.9971769
+2014,eDumbe,KZN261,irregular,18013633.0,KwaZulu-Natal,29.9971769,29.9971769
+2014,eDumbe,KZN261,unauthorised,6183353.0,KwaZulu-Natal,29.9971769,29.9971769
+2014,uPhongolo,KZN262,fruitless,284475.0,KwaZulu-Natal,30.315775,30.315775
+2014,uPhongolo,KZN262,irregular,15048772.0,KwaZulu-Natal,30.315775,30.315775
+2014,uPhongolo,KZN262,unauthorised,13455171.0,KwaZulu-Natal,30.315775,30.315775
+2014,Abaqulusi,KZN263,fruitless,220954.0,KwaZulu-Natal,30.0202964,30.0202964
+2014,Abaqulusi,KZN263,irregular,11602373.0,KwaZulu-Natal,30.0202964,30.0202964
+2014,Abaqulusi,KZN263,unauthorised,23921954.0,KwaZulu-Natal,30.0202964,30.0202964
+2014,Nongoma,KZN265,fruitless,2466.0,KwaZulu-Natal,30.8039474,30.8039474
+2014,Nongoma,KZN265,irregular,1839293.0,KwaZulu-Natal,30.8039474,30.8039474
+2014,Nongoma,KZN265,unauthorised,13189814.0,KwaZulu-Natal,30.8039474,30.8039474
+2014,Ulundi,KZN266,fruitless,9115446.0,KwaZulu-Natal,31.5370003,31.5370003
+2014,Ulundi,KZN266,irregular,22903566.0,KwaZulu-Natal,31.5370003,31.5370003
+2014,Ulundi,KZN266,unauthorised,20489047.0,KwaZulu-Natal,31.5370003,31.5370003
+2014,Umhlabuyalingana,KZN271,fruitless,44598.0,KwaZulu-Natal,30.9876321,30.9876321
+2014,Umhlabuyalingana,KZN271,irregular,30139579.0,KwaZulu-Natal,30.9876321,30.9876321
+2014,Umhlabuyalingana,KZN271,unauthorised,0.0,KwaZulu-Natal,30.9876321,30.9876321
+2014,Jozini,KZN272,fruitless,125000.0,KwaZulu-Natal,31.7195459,31.7195459
+2014,Jozini,KZN272,irregular,93043701.0,KwaZulu-Natal,31.7195459,31.7195459
+2014,Jozini,KZN272,unauthorised,25851425.0,KwaZulu-Natal,31.7195459,31.7195459
+2014,The Big 5 False Bay,KZN273,fruitless,470299.0,KwaZulu-Natal,31.442761,31.442761
+2014,The Big 5 False Bay,KZN273,irregular,362093.0,KwaZulu-Natal,31.442761,31.442761
+2014,The Big 5 False Bay,KZN273,unauthorised,5567606.0,KwaZulu-Natal,31.442761,31.442761
+2014,Hlabisa,KZN274,fruitless,91360.0,KwaZulu-Natal,32.4467238,32.4467238
+2014,Hlabisa,KZN274,irregular,971280.0,KwaZulu-Natal,32.4467238,32.4467238
+2014,Hlabisa,KZN274,unauthorised,2565255.0,KwaZulu-Natal,32.4467238,32.4467238
+2014,Mtubatuba,KZN275,fruitless,315518.0,KwaZulu-Natal,32.0650697,32.0650697
+2014,Mtubatuba,KZN275,irregular,8263658.0,KwaZulu-Natal,32.0650697,32.0650697
+2014,Mtubatuba,KZN275,unauthorised,18321426.0,KwaZulu-Natal,32.0650697,32.0650697
+2014,Mfolozi,KZN281,fruitless,0.0,KwaZulu-Natal,32.3107517,32.3107517
+2014,Mfolozi,KZN281,irregular,17459466.0,KwaZulu-Natal,32.3107517,32.3107517
+2014,Mfolozi,KZN281,unauthorised,11186039.0,KwaZulu-Natal,32.3107517,32.3107517
+2014,uMhlathuze,KZN282,fruitless,0.0,KwaZulu-Natal,31.8648002,31.8648002
+2014,uMhlathuze,KZN282,irregular,0.0,KwaZulu-Natal,31.8648002,31.8648002
+2014,uMhlathuze,KZN282,unauthorised,0.0,KwaZulu-Natal,31.8648002,31.8648002
+2014,Ntambanana,KZN283,fruitless,0.0,KwaZulu-Natal,32.2880726,32.2880726
+2014,Ntambanana,KZN283,irregular,0.0,KwaZulu-Natal,32.2880726,32.2880726
+2014,Ntambanana,KZN283,unauthorised,0.0,KwaZulu-Natal,32.2880726,32.2880726
+2014,uMlalazi,KZN284,fruitless,1094195.0,KwaZulu-Natal,32.259717,32.259717
+2014,uMlalazi,KZN284,irregular,14284368.0,KwaZulu-Natal,32.259717,32.259717
+2014,uMlalazi,KZN284,unauthorised,27591007.0,KwaZulu-Natal,32.259717,32.259717
+2014,Mthonjaneni,KZN285,fruitless,827.0,KwaZulu-Natal,31.947311,31.947311
+2014,Mthonjaneni,KZN285,irregular,34843192.0,KwaZulu-Natal,31.947311,31.947311
+2014,Mthonjaneni,KZN285,unauthorised,19564161.0,KwaZulu-Natal,31.947311,31.947311
+2014,Nkandla,KZN286,fruitless,169102.0,KwaZulu-Natal,31.7394939,31.7394939
+2014,Nkandla,KZN286,irregular,30766117.0,KwaZulu-Natal,31.7394939,31.7394939
+2014,Nkandla,KZN286,unauthorised,8155151.0,KwaZulu-Natal,31.7394939,31.7394939
+2014,Mandeni,KZN291,fruitless,5705.0,KwaZulu-Natal,31.4913182,31.4913182
+2014,Mandeni,KZN291,irregular,0.0,KwaZulu-Natal,31.4913182,31.4913182
+2014,Mandeni,KZN291,unauthorised,35951097.0,KwaZulu-Natal,31.4913182,31.4913182
+2014,KwaDukuza,KZN292,fruitless,0.0,KwaZulu-Natal,31.3998995,31.3998995
+2014,KwaDukuza,KZN292,irregular,46586744.0,KwaZulu-Natal,31.3998995,31.3998995
+2014,KwaDukuza,KZN292,unauthorised,0.0,KwaZulu-Natal,31.3998995,31.3998995
+2014,Ndwedwe,KZN293,fruitless,1226494.0,KwaZulu-Natal,31.0894002,31.0894002
+2014,Ndwedwe,KZN293,irregular,7871365.0,KwaZulu-Natal,31.0894002,31.0894002
+2014,Ndwedwe,KZN293,unauthorised,3325426.0,KwaZulu-Natal,31.0894002,31.0894002
+2014,Maphumulo,KZN294,fruitless,109705.0,KwaZulu-Natal,31.4684703,31.4684703
+2014,Maphumulo,KZN294,irregular,3045872.0,KwaZulu-Natal,31.4684703,31.4684703
+2014,Maphumulo,KZN294,unauthorised,1686291.0,KwaZulu-Natal,31.4684703,31.4684703
+2014,Ingwe,KZN431,fruitless,63208.0,KwaZulu-Natal,31.2892229,31.2892229
+2014,Ingwe,KZN431,irregular,7009679.0,KwaZulu-Natal,31.2892229,31.2892229
+2014,Ingwe,KZN431,unauthorised,5632898.0,KwaZulu-Natal,31.2892229,31.2892229
+2014,Kwa Sani,KZN432,fruitless,25963.0,KwaZulu-Natal,30.9417368,30.9417368
+2014,Kwa Sani,KZN432,irregular,4590071.0,KwaZulu-Natal,30.9417368,30.9417368
+2014,Kwa Sani,KZN432,unauthorised,536869.0,KwaZulu-Natal,30.9417368,30.9417368
+2014,Greater Kokstad,KZN433,fruitless,493315.0,KwaZulu-Natal,31.03351,31.03351
+2014,Greater Kokstad,KZN433,irregular,2040086.0,KwaZulu-Natal,31.03351,31.03351
+2014,Greater Kokstad,KZN433,unauthorised,0.0,KwaZulu-Natal,31.03351,31.03351
+2014,Ubuhlebezwe,KZN434,fruitless,0.0,KwaZulu-Natal,29.8815203,29.8815203
+2014,Ubuhlebezwe,KZN434,irregular,229916.0,KwaZulu-Natal,29.8815203,29.8815203
+2014,Ubuhlebezwe,KZN434,unauthorised,0.0,KwaZulu-Natal,29.8815203,29.8815203
+2014,Umzimkhulu,KZN435,fruitless,3045.0,KwaZulu-Natal,29.5107708,29.5107708
+2014,Umzimkhulu,KZN435,irregular,0.0,KwaZulu-Natal,29.5107708,29.5107708
+2014,Umzimkhulu,KZN435,unauthorised,0.0,KwaZulu-Natal,29.5107708,29.5107708
+2014,Greater Giyani,LIM331,fruitless,2968.0,KwaZulu-Natal,29.3714909,29.3714909
+2014,Greater Giyani,LIM331,irregular,12568814.0,KwaZulu-Natal,29.3714909,29.3714909
+2014,Greater Giyani,LIM331,unauthorised,0.0,KwaZulu-Natal,29.3714909,29.3714909
+2014,Greater Letaba,LIM332,fruitless,84894.0,KwaZulu-Natal,30.0665236,30.0665236
+2014,Greater Letaba,LIM332,irregular,6511140.0,KwaZulu-Natal,30.0665236,30.0665236
+2014,Greater Letaba,LIM332,unauthorised,19905685.0,KwaZulu-Natal,30.0665236,30.0665236
+2014,Greater Tzaneen,LIM333,fruitless,2069894.0,KwaZulu-Natal,29.6962677,29.6962677
+2014,Greater Tzaneen,LIM333,irregular,33328768.0,KwaZulu-Natal,29.6962677,29.6962677
+2014,Greater Tzaneen,LIM333,unauthorised,27651094.0,KwaZulu-Natal,29.6962677,29.6962677
+2014,Ba-Phalaborwa,LIM334,fruitless,1534421.0,Limpopo,30.8039474,30.8039474
+2014,Ba-Phalaborwa,LIM334,irregular,16980437.0,Limpopo,30.8039474,30.8039474
+2014,Ba-Phalaborwa,LIM334,unauthorised,0.0,Limpopo,30.8039474,30.8039474
+2014,Maruleng,LIM335,fruitless,1827890.0,Limpopo,30.2974199,30.2974199
+2014,Maruleng,LIM335,irregular,17587343.0,Limpopo,30.2974199,30.2974199
+2014,Maruleng,LIM335,unauthorised,0.0,Limpopo,30.2974199,30.2974199
+2014,Musina,LIM341,fruitless,181218.0,Limpopo,30.0665236,30.0665236
+2014,Musina,LIM341,irregular,0.0,Limpopo,30.0665236,30.0665236
+2014,Musina,LIM341,unauthorised,0.0,Limpopo,30.0665236,30.0665236
+2014,Mutale,LIM342,fruitless,139493.0,Limpopo,31.1406753,31.1406753
+2014,Mutale,LIM342,irregular,23739330.0,Limpopo,31.1406753,31.1406753
+2014,Mutale,LIM342,unauthorised,0.0,Limpopo,31.1406753,31.1406753
+2014,Thulamela,LIM343,fruitless,103104.0,Limpopo,30.9576681,30.9576681
+2014,Thulamela,LIM343,irregular,27360.0,Limpopo,30.9576681,30.9576681
+2014,Thulamela,LIM343,unauthorised,0.0,Limpopo,30.9576681,30.9576681
+2014,Makhado,LIM344,fruitless,1088077.0,Limpopo,29.6962677,29.6962677
+2014,Makhado,LIM344,irregular,77692982.0,Limpopo,29.6962677,29.6962677
+2014,Makhado,LIM344,unauthorised,4384000.0,Limpopo,29.6962677,29.6962677
+2014,Blouberg,LIM351,fruitless,115444.0,Limpopo,30.8039474,30.8039474
+2014,Blouberg,LIM351,irregular,775361.0,Limpopo,30.8039474,30.8039474
+2014,Blouberg,LIM351,unauthorised,3667122.0,Limpopo,30.8039474,30.8039474
+2014,Aganang,LIM352,fruitless,65929.0,Limpopo,30.6199895,30.6199895
+2014,Aganang,LIM352,irregular,9220793.0,Limpopo,30.6199895,30.6199895
+2014,Aganang,LIM352,unauthorised,299396.0,Limpopo,30.6199895,30.6199895
+2014,Molemole,LIM353,fruitless,2419074.0,Limpopo,29.9070436,29.9070436
+2014,Molemole,LIM353,irregular,17902453.0,Limpopo,29.9070436,29.9070436
+2014,Molemole,LIM353,unauthorised,19435372.0,Limpopo,29.9070436,29.9070436
+2014,Polokwane,LIM354,fruitless,0.0,Limpopo,28.9950702,28.9950702
+2014,Polokwane,LIM354,irregular,96273322.0,Limpopo,28.9950702,28.9950702
+2014,Polokwane,LIM354,unauthorised,370784431.0,Limpopo,28.9950702,28.9950702
+2014,Lepele-Nkumpi,LIM355,fruitless,81195.0,Limpopo,29.0925356,29.0925356
+2014,Lepele-Nkumpi,LIM355,irregular,23679470.0,Limpopo,29.0925356,29.0925356
+2014,Lepele-Nkumpi,LIM355,unauthorised,1257209.0,Limpopo,29.0925356,29.0925356
+2014,Thabazimbi,LIM361,fruitless,11622246.0,Limpopo,29.6962677,29.6962677
+2014,Thabazimbi,LIM361,irregular,11110518.0,Limpopo,29.6962677,29.6962677
+2014,Thabazimbi,LIM361,unauthorised,121258177.0,Limpopo,29.6962677,29.6962677
+2014,Lephalale,LIM362,fruitless,35300.0,Limpopo,29.4485367,29.4485367
+2014,Lephalale,LIM362,irregular,53879335.0,Limpopo,29.4485367,29.4485367
+2014,Lephalale,LIM362,unauthorised,15357824.0,Limpopo,29.4485367,29.4485367
+2014,Mookgopong,LIM364,fruitless,2068473.0,Limpopo,29.6499162,29.6499162
+2014,Mookgopong,LIM364,irregular,328140.0,Limpopo,29.6499162,29.6499162
+2014,Mookgopong,LIM364,unauthorised,15315687.0,Limpopo,29.6499162,29.6499162
+2014,Modimolle,LIM365,fruitless,43897.0,Limpopo,27.3616476,27.3616476
+2014,Modimolle,LIM365,irregular,23158874.0,Limpopo,27.3616476,27.3616476
+2014,Modimolle,LIM365,unauthorised,26773008.0,Limpopo,27.3616476,27.3616476
+2014,Bela-Bela,LIM366,fruitless,118490.0,Limpopo,27.7373373,27.7373373
+2014,Bela-Bela,LIM366,irregular,6352038.0,Limpopo,27.7373373,27.7373373
+2014,Bela-Bela,LIM366,unauthorised,0.0,Limpopo,27.7373373,27.7373373
+2014,Mogalakwena,LIM367,fruitless,0.0,Limpopo,28.7664408,28.7664408
+2014,Mogalakwena,LIM367,irregular,97819974.0,Limpopo,28.7664408,28.7664408
+2014,Mogalakwena,LIM367,unauthorised,14317635.0,Limpopo,28.7664408,28.7664408
+2014,Ephraim Mogale,LIM471,fruitless,27042.0,Limpopo,28.2058768,28.2058768
+2014,Ephraim Mogale,LIM471,irregular,33283355.0,Limpopo,28.2058768,28.2058768
+2014,Ephraim Mogale,LIM471,unauthorised,61061161.0,Limpopo,28.2058768,28.2058768
+2014,Elias Motsoaledi,LIM472,fruitless,36420.0,Limpopo,28.2526623,28.2526623
+2014,Elias Motsoaledi,LIM472,irregular,25224038.0,Limpopo,28.2526623,28.2526623
+2014,Elias Motsoaledi,LIM472,unauthorised,5766279.0,Limpopo,28.2526623,28.2526623
+2014,Makhuduthamaga,LIM473,fruitless,2340.0,Limpopo,29.0138916,29.0138916
+2014,Makhuduthamaga,LIM473,irregular,5400.0,Limpopo,29.0138916,29.0138916
+2014,Makhuduthamaga,LIM473,unauthorised,4294142.0,Limpopo,29.0138916,29.0138916
+2014,Fetakgomo,LIM474,fruitless,24648.0,Limpopo,29.3250347,29.3250347
+2014,Fetakgomo,LIM474,irregular,10875882.0,Limpopo,29.3250347,29.3250347
+2014,Fetakgomo,LIM474,unauthorised,0.0,Limpopo,29.3250347,29.3250347
+2014,Greater Tubatse,LIM475,fruitless,152372.0,Limpopo,29.3949458,29.3949458
+2014,Greater Tubatse,LIM475,irregular,59786003.0,Limpopo,29.3949458,29.3949458
+2014,Greater Tubatse,LIM475,unauthorised,9611733.0,Limpopo,29.3949458,29.3949458
+2014,Mangaung,MAN,fruitless,148343.0,Limpopo,29.8352303,29.8352303
+2014,Mangaung,MAN,irregular,9004641.0,Limpopo,29.8352303,29.8352303
+2014,Mangaung,MAN,unauthorised,673096965.0,Limpopo,29.8352303,29.8352303
+2014,Chief Albert Luthuli,MP301,fruitless,1868338.0,Limpopo,29.8352303,29.8352303
+2014,Chief Albert Luthuli,MP301,irregular,59182681.0,Limpopo,29.8352303,29.8352303
+2014,Chief Albert Luthuli,MP301,unauthorised,0.0,Limpopo,29.8352303,29.8352303
+2014,Msukaligwa,MP302,fruitless,6978001.0,Limpopo,30.2512728,30.2512728
+2014,Msukaligwa,MP302,irregular,41358385.0,Limpopo,30.2512728,30.2512728
+2014,Msukaligwa,MP302,unauthorised,90522161.0,Limpopo,30.2512728,30.2512728
+2014,Mkhondo,MP303,fruitless,8870484.0,Free State,26.3249438,26.3249438
+2014,Mkhondo,MP303,irregular,48558699.0,Free State,26.3249438,26.3249438
+2014,Mkhondo,MP303,unauthorised,14245915.0,Free State,26.3249438,26.3249438
+2014,Dr Pixley Ka Isaka Seme,MP304,fruitless,74453.0,Mpumalanga,30.3325113,30.3325113
+2014,Dr Pixley Ka Isaka Seme,MP304,irregular,3952067.0,Mpumalanga,30.3325113,30.3325113
+2014,Dr Pixley Ka Isaka Seme,MP304,unauthorised,0.0,Mpumalanga,30.3325113,30.3325113
+2014,Lekwa,MP305,fruitless,16064895.0,Mpumalanga,30.0665236,30.0665236
+2014,Lekwa,MP305,irregular,6483043.0,Mpumalanga,30.0665236,30.0665236
+2014,Lekwa,MP305,unauthorised,51774826.0,Mpumalanga,30.0665236,30.0665236
+2014,Dipaleseng,MP306,fruitless,1531909.0,Mpumalanga,30.6199895,30.6199895
+2014,Dipaleseng,MP306,irregular,14507308.0,Mpumalanga,30.6199895,30.6199895
+2014,Dipaleseng,MP306,unauthorised,2265203.0,Mpumalanga,30.6199895,30.6199895
+2014,Govan Mbeki,MP307,fruitless,11853851.0,Mpumalanga,29.8815203,29.8815203
+2014,Govan Mbeki,MP307,irregular,61637954.0,Mpumalanga,29.8815203,29.8815203
+2014,Govan Mbeki,MP307,unauthorised,18830025.0,Mpumalanga,29.8815203,29.8815203
+2014,Victor Khanye,MP311,fruitless,1388.0,Mpumalanga,29.3250347,29.3250347
+2014,Victor Khanye,MP311,irregular,11313022.0,Mpumalanga,29.3250347,29.3250347
+2014,Victor Khanye,MP311,unauthorised,231486351.0,Mpumalanga,29.3250347,29.3250347
+2014,Emalahleni,MP312,fruitless,56235199.0,Mpumalanga,28.5797981,28.5797981
+2014,Emalahleni,MP312,irregular,26746734.0,Mpumalanga,28.5797981,28.5797981
+2014,Emalahleni,MP312,unauthorised,63034584.0,Mpumalanga,28.5797981,28.5797981
+2014,Steve Tshwete,MP313,fruitless,0.0,Mpumalanga,29.1390642,29.1390642
+2014,Steve Tshwete,MP313,irregular,0.0,Mpumalanga,29.1390642,29.1390642
+2014,Steve Tshwete,MP313,unauthorised,34437384.0,Mpumalanga,29.1390642,29.1390642
+2014,Emakhazeni,MP314,fruitless,6053754.0,Mpumalanga,28.8130675,28.8130675
+2014,Emakhazeni,MP314,irregular,21364973.0,Mpumalanga,28.8130675,28.8130675
+2014,Emakhazeni,MP314,unauthorised,1309763.0,Mpumalanga,28.8130675,28.8130675
+2014,Thembisile,MP315,fruitless,92367.0,Mpumalanga,29.2553229,29.2553229
+2014,Thembisile,MP315,irregular,48553569.0,Mpumalanga,29.2553229,29.2553229
+2014,Thembisile,MP315,unauthorised,39434294.0,Mpumalanga,29.2553229,29.2553229
+2014,Dr JS Moroka,MP316,fruitless,67314.0,Mpumalanga,29.4681751,29.4681751
+2014,Dr JS Moroka,MP316,irregular,72214523.0,Mpumalanga,29.4681751,29.4681751
+2014,Dr JS Moroka,MP316,unauthorised,0.0,Mpumalanga,29.4681751,29.4681751
+2014,Thaba Chweu,MP321,fruitless,29181497.0,Mpumalanga,30.0665236,30.0665236
+2014,Thaba Chweu,MP321,irregular,81566444.0,Mpumalanga,30.0665236,30.0665236
+2014,Thaba Chweu,MP321,unauthorised,0.0,Mpumalanga,30.0665236,30.0665236
+2014,Mbombela,MP322,fruitless,14486283.0,Mpumalanga,28.9062794,28.9062794
+2014,Mbombela,MP322,irregular,8626686.0,Mpumalanga,28.9062794,28.9062794
+2014,Mbombela,MP322,unauthorised,41868726.0,Mpumalanga,28.9062794,28.9062794
+2014,Umjindi,MP323,fruitless,533264.0,Mpumalanga,28.8130675,28.8130675
+2014,Umjindi,MP323,irregular,24461365.0,Mpumalanga,28.8130675,28.8130675
+2014,Umjindi,MP323,unauthorised,1475099.0,Mpumalanga,28.8130675,28.8130675
+2014,Nkomazi,MP324,fruitless,1107368.0,Mpumalanga,30.7791913,30.7791913
+2014,Nkomazi,MP324,irregular,56229773.0,Mpumalanga,30.7791913,30.7791913
+2014,Nkomazi,MP324,unauthorised,118723887.0,Mpumalanga,30.7791913,30.7791913
+2014,Bushbuckridge,MP325,fruitless,30849.0,Mpumalanga,31.03351,31.03351
+2014,Bushbuckridge,MP325,irregular,109966186.0,Mpumalanga,31.03351,31.03351
+2014,Bushbuckridge,MP325,unauthorised,122246893.0,Mpumalanga,31.03351,31.03351
+2014,Richtersveld,NC061,fruitless,6331.0,Mpumalanga,31.7195459,31.7195459
+2014,Richtersveld,NC061,irregular,0.0,Mpumalanga,31.7195459,31.7195459
+2014,Richtersveld,NC061,unauthorised,10722472.0,Mpumalanga,31.7195459,31.7195459
+2014,Nama Khoi,NC062,fruitless,8498098.0,Mpumalanga,31.1710389,31.1710389
+2014,Nama Khoi,NC062,irregular,84128376.0,Mpumalanga,31.1710389,31.1710389
+2014,Nama Khoi,NC062,unauthorised,82601658.0,Mpumalanga,31.1710389,31.1710389
+2014,Kamiesberg,NC064,fruitless,468909.0,Northern Cape,17.1011931,17.1011931
+2014,Kamiesberg,NC064,irregular,2283109.0,Northern Cape,17.1011931,17.1011931
+2014,Kamiesberg,NC064,unauthorised,18978632.0,Northern Cape,17.1011931,17.1011931
+2014,Hantam,NC065,fruitless,9200.0,Northern Cape,17.8583868,17.8583868
+2014,Hantam,NC065,irregular,1427413.0,Northern Cape,17.8583868,17.8583868
+2014,Hantam,NC065,unauthorised,2026673.0,Northern Cape,17.8583868,17.8583868
+2014,Karoo Hoogland,NC066,fruitless,193618.0,Northern Cape,17.8583868,17.8583868
+2014,Karoo Hoogland,NC066,irregular,2293857.0,Northern Cape,17.8583868,17.8583868
+2014,Karoo Hoogland,NC066,unauthorised,13807614.0,Northern Cape,17.8583868,17.8583868
+2014,Khâi-Ma,NC067,fruitless,1212536.0,Northern Cape,19.949686,19.949686
+2014,Khâi-Ma,NC067,irregular,0.0,Northern Cape,19.949686,19.949686
+2014,Khâi-Ma,NC067,unauthorised,18911684.0,Northern Cape,19.949686,19.949686
+2014,Ubuntu,NC071,fruitless,54152.0,Northern Cape,20.902977,20.902977
+2014,Ubuntu,NC071,irregular,12677374.0,Northern Cape,20.902977,20.902977
+2014,Ubuntu,NC071,unauthorised,46185412.0,Northern Cape,20.902977,20.902977
+2014,Umsobomvu,NC072,fruitless,0.0,Northern Cape,19.237649,19.237649
+2014,Umsobomvu,NC072,irregular,3472499.0,Northern Cape,19.237649,19.237649
+2014,Umsobomvu,NC072,unauthorised,1496054.0,Northern Cape,19.237649,19.237649
+2014,Emthanjeni,NC073,fruitless,73356.0,Northern Cape,23.1918021,23.1918021
+2014,Emthanjeni,NC073,irregular,13140889.0,Northern Cape,23.1918021,23.1918021
+2014,Emthanjeni,NC073,unauthorised,95735235.0,Northern Cape,23.1918021,23.1918021
+2014,Kareeberg,NC074,fruitless,0.0,Northern Cape,24.9991464,24.9991464
+2014,Kareeberg,NC074,irregular,728216.0,Northern Cape,24.9991464,24.9991464
+2014,Kareeberg,NC074,unauthorised,3396569.0,Northern Cape,24.9991464,24.9991464
+2014,Renosterberg,NC075,fruitless,386882.0,Northern Cape,24.0087533,24.0087533
+2014,Renosterberg,NC075,irregular,2488582.0,Northern Cape,24.0087533,24.0087533
+2014,Renosterberg,NC075,unauthorised,27844210.0,Northern Cape,24.0087533,24.0087533
+2014,Thembelihle,NC076,fruitless,1656827.0,Northern Cape,22.047637,22.047637
+2014,Thembelihle,NC076,irregular,14934860.0,Northern Cape,22.047637,22.047637
+2014,Thembelihle,NC076,unauthorised,12606468.0,Northern Cape,22.047637,22.047637
+2014,Siyathemba,NC077,fruitless,219216.0,Northern Cape,24.3341432,24.3341432
+2014,Siyathemba,NC077,irregular,22522656.0,Northern Cape,24.3341432,24.3341432
+2014,Siyathemba,NC077,unauthorised,13853550.0,Northern Cape,24.3341432,24.3341432
+2014,Siyancuma,NC078,fruitless,224303.0,Northern Cape,23.8584737,23.8584737
+2014,Siyancuma,NC078,irregular,14107927.0,Northern Cape,23.8584737,23.8584737
+2014,Siyancuma,NC078,unauthorised,5249378.0,Northern Cape,23.8584737,23.8584737
+2014,Mier,NC081,fruitless,409937.0,Northern Cape,22.5245093,22.5245093
+2014,Mier,NC081,irregular,4578056.0,Northern Cape,22.5245093,22.5245093
+2014,Mier,NC081,unauthorised,9387900.0,Northern Cape,22.5245093,22.5245093
+2014,Kai !Garib,NC082,fruitless,543875.0,Northern Cape,23.4776098,23.4776098
+2014,Kai !Garib,NC082,irregular,11183868.0,Northern Cape,23.4776098,23.4776098
+2014,Kai !Garib,NC082,unauthorised,70679277.0,Northern Cape,23.4776098,23.4776098
+2014,//Khara Hais,NC083,fruitless,4159843.0,Northern Cape,20.2832217,20.2832217
+2014,//Khara Hais,NC083,irregular,21221381.0,Northern Cape,20.2832217,20.2832217
+2014,//Khara Hais,NC083,unauthorised,18484906.0,Northern Cape,20.2832217,20.2832217
+2014,!Kheis,NC084,fruitless,14633.0,Northern Cape,20.9759699,20.9759699
+2014,!Kheis,NC084,irregular,8614250.0,Northern Cape,20.9759699,20.9759699
+2014,!Kheis,NC084,unauthorised,12359730.0,Northern Cape,20.9759699,20.9759699
+2014,Tsantsabane,NC085,fruitless,3092695.0,Northern Cape,21.242665,21.242665
+2014,Tsantsabane,NC085,irregular,17982275.0,Northern Cape,21.242665,21.242665
+2014,Tsantsabane,NC085,unauthorised,11385634.0,Northern Cape,21.242665,21.242665
+2014,Kgatelopele,NC086,fruitless,407089.0,Northern Cape,21.6660725,21.6660725
+2014,Kgatelopele,NC086,irregular,17660380.0,Northern Cape,21.6660725,21.6660725
+2014,Kgatelopele,NC086,unauthorised,0.0,Northern Cape,21.6660725,21.6660725
+2014,Sol Plaatjie,NC091,fruitless,301200.0,Northern Cape,23.1918021,23.1918021
+2014,Sol Plaatjie,NC091,irregular,6725398.0,Northern Cape,23.1918021,23.1918021
+2014,Sol Plaatjie,NC091,unauthorised,3871245.0,Northern Cape,23.1918021,23.1918021
+2014,Dikgatlong,NC092,fruitless,296849.0,Northern Cape,23.6680747,23.6680747
+2014,Dikgatlong,NC092,irregular,0.0,Northern Cape,23.6680747,23.6680747
+2014,Dikgatlong,NC092,unauthorised,24464180.0,Northern Cape,23.6680747,23.6680747
+2014,Magareng,NC093,fruitless,902519.0,Northern Cape,24.6667939,24.6667939
+2014,Magareng,NC093,irregular,13962511.0,Northern Cape,24.6667939,24.6667939
+2014,Magareng,NC093,unauthorised,13282613.0,Northern Cape,24.6667939,24.6667939
+2014,Phokwane,NC094,fruitless,178378.0,Northern Cape,24.5197,24.5197
+2014,Phokwane,NC094,irregular,1209680.0,Northern Cape,24.5197,24.5197
+2014,Phokwane,NC094,unauthorised,62615495.0,Northern Cape,24.5197,24.5197
+2014,Joe Morolong,NC451,fruitless,82577.0,Northern Cape,24.7617836,24.7617836
+2014,Joe Morolong,NC451,irregular,0.0,Northern Cape,24.7617836,24.7617836
+2014,Joe Morolong,NC451,unauthorised,42241107.0,Northern Cape,24.7617836,24.7617836
+2014,Ga-Segonyana,NC452,fruitless,25923.0,Northern Cape,24.7617836,24.7617836
+2014,Ga-Segonyana,NC452,irregular,1683207.0,Northern Cape,24.7617836,24.7617836
+2014,Ga-Segonyana,NC452,unauthorised,8149090.0,Northern Cape,24.7617836,24.7617836
+2014,Gamagara,NC453,fruitless,108878.0,Northern Cape,23.287085,23.287085
+2014,Gamagara,NC453,irregular,23831370.0,Northern Cape,23.287085,23.287085
+2014,Gamagara,NC453,unauthorised,53733265.0,Northern Cape,23.287085,23.287085
+2014,Nelson Mandela Bay,NMA,fruitless,10640502.0,Northern Cape,23.4776098,23.4776098
+2014,Nelson Mandela Bay,NMA,irregular,1052377000.0,Northern Cape,23.4776098,23.4776098
+2014,Nelson Mandela Bay,NMA,unauthorised,743928574.0,Northern Cape,23.4776098,23.4776098
+2014,Moretele,NW371,fruitless,118910.0,Northern Cape,23.0488541,23.0488541
+2014,Moretele,NW371,irregular,189925569.0,Northern Cape,23.0488541,23.0488541
+2014,Moretele,NW371,unauthorised,61652970.0,Northern Cape,23.0488541,23.0488541
+2014,Local Municipality of Madibeng,NW372,fruitless,1480543.0,Eastern Cape,25.5681084,25.5681084
+2014,Local Municipality of Madibeng,NW372,irregular,361756659.0,Eastern Cape,25.5681084,25.5681084
+2014,Local Municipality of Madibeng,NW372,unauthorised,444856365.0,Eastern Cape,25.5681084,25.5681084
+2014,Rustenburg,NW373,fruitless,113631.0,North West,27.9717606,27.9717606
+2014,Rustenburg,NW373,irregular,195020178.0,North West,27.9717606,27.9717606
+2014,Rustenburg,NW373,unauthorised,51165847.0,North West,27.9717606,27.9717606
+2014,Kgetlengrivier,NW374,fruitless,2293733.0,North West,27.8311428,27.8311428
+2014,Kgetlengrivier,NW374,irregular,8390096.0,North West,27.8311428,27.8311428
+2014,Kgetlengrivier,NW374,unauthorised,35542845.0,North West,27.8311428,27.8311428
+2014,Moses Kotane,NW375,fruitless,3394823.0,North West,27.2676116,27.2676116
+2014,Moses Kotane,NW375,irregular,48136423.0,North West,27.2676116,27.2676116
+2014,Moses Kotane,NW375,unauthorised,4158655.0,North West,27.2676116,27.2676116
+2014,Ratlou,NW381,fruitless,53346.0,North West,26.8910342,26.8910342
+2014,Ratlou,NW381,irregular,20870109.0,North West,26.8910342,26.8910342
+2014,Ratlou,NW381,unauthorised,5098242.0,North West,26.8910342,26.8910342
+2014,Tswaing,NW382,fruitless,1989066.0,North West,26.8910342,26.8910342
+2014,Tswaing,NW382,irregular,12085714.0,North West,26.8910342,26.8910342
+2014,Tswaing,NW382,unauthorised,79503527.0,North West,26.8910342,26.8910342
+2014,Mafikeng,NW383,fruitless,819387.0,North West,24.9991464,24.9991464
+2014,Mafikeng,NW383,irregular,21934455.0,North West,24.9991464,24.9991464
+2014,Mafikeng,NW383,unauthorised,105574891.0,North West,24.9991464,24.9991464
+2014,Ditsobotla,NW384,fruitless,592209.0,North West,25.7575196,25.7575196
+2014,Ditsobotla,NW384,irregular,18655560.0,North West,25.7575196,25.7575196
+2014,Ditsobotla,NW384,unauthorised,74960358.0,North West,25.7575196,25.7575196
+2014,Ramotshere Moiloa,NW385,fruitless,657823.0,North West,25.5681084,25.5681084
+2014,Ramotshere Moiloa,NW385,irregular,31851716.0,North West,25.5681084,25.5681084
+2014,Ramotshere Moiloa,NW385,unauthorised,15065331.0,North West,25.5681084,25.5681084
+2014,Naledi,NW392,fruitless,13957947.0,North West,26.1359431,26.1359431
+2014,Naledi,NW392,irregular,27112751.0,North West,26.1359431,26.1359431
+2014,Naledi,NW392,unauthorised,54322626.0,North West,26.1359431,26.1359431
+2014,Mamusa,NW393,fruitless,1453870.0,North West,26.10005,26.10005
+2014,Mamusa,NW393,irregular,41949785.0,North West,26.10005,26.10005
+2014,Mamusa,NW393,unauthorised,22634812.0,North West,26.10005,26.10005
+2014,Greater Taung,NW394,fruitless,907156.0,North West,24.7142918,24.7142918
+2014,Greater Taung,NW394,irregular,36686670.0,North West,24.7142918,24.7142918
+2014,Greater Taung,NW394,unauthorised,1351041.0,North West,24.7142918,24.7142918
+2014,Lekwa-Teemane,NW396,fruitless,3750022.0,North West,25.3785719,25.3785719
+2014,Lekwa-Teemane,NW396,irregular,14628751.0,North West,25.3785719,25.3785719
+2014,Lekwa-Teemane,NW396,unauthorised,32051552.0,North West,25.3785719,25.3785719
+2014,Kagisano/Molopo,NW397,fruitless,350299.0,North West,24.2390498,24.2390498
+2014,Kagisano/Molopo,NW397,irregular,21557424.0,North West,24.2390498,24.2390498
+2014,Kagisano/Molopo,NW397,unauthorised,12953360.0,North West,24.2390498,24.2390498
+2014,Ventersdorp,NW401,fruitless,11093502.0,North West,25.3785719,25.3785719
+2014,Ventersdorp,NW401,irregular,52932743.0,North West,25.3785719,25.3785719
+2014,Ventersdorp,NW401,unauthorised,19973654.0,North West,25.3785719,25.3785719
+2014,Tlokwe City Council,NW402,fruitless,134138.0,North West,23.9536466,23.9536466
+2014,Tlokwe City Council,NW402,irregular,27954946.0,North West,23.9536466,23.9536466
+2014,Tlokwe City Council,NW402,unauthorised,0.0,North West,23.9536466,23.9536466
+2014,City of Matlosana,NW403,fruitless,18281619.0,North West,26.8910342,26.8910342
+2014,City of Matlosana,NW403,irregular,630012960.0,North West,26.8910342,26.8910342
+2014,City of Matlosana,NW403,unauthorised,655391203.0,North West,26.8910342,26.8910342
+2014,Maquassi Hills,NW404,fruitless,7344515.0,North West,27.096925,27.096925
+2014,Maquassi Hills,NW404,irregular,24370839.0,North West,27.096925,27.096925
+2014,Maquassi Hills,NW404,unauthorised,14358018.0,North West,27.096925,27.096925
+2014,City of Tshwane,TSH,fruitless,364157.0,North West,26.5137964,26.5137964
+2014,City of Tshwane,TSH,irregular,150303679.0,North West,26.5137964,26.5137964
+2014,City of Tshwane,TSH,unauthorised,1193981952.0,North West,26.5137964,26.5137964
+2014,Matzikama,WC011,fruitless,0.0,North West,26.1359431,26.1359431
+2014,Matzikama,WC011,irregular,0.0,North West,26.1359431,26.1359431
+2014,Matzikama,WC011,unauthorised,0.0,North West,26.1359431,26.1359431
+2014,Cederberg,WC012,fruitless,8197.0,Gauteng,28.3929417,28.3929417
+2014,Cederberg,WC012,irregular,1357498.0,Gauteng,28.3929417,28.3929417
+2014,Cederberg,WC012,unauthorised,9134915.0,Gauteng,28.3929417,28.3929417
+2014,Bergrivier,WC013,fruitless,0.0,Western Cape,18.5225709,18.5225709
+2014,Bergrivier,WC013,irregular,0.0,Western Cape,18.5225709,18.5225709
+2014,Bergrivier,WC013,unauthorised,5327387.0,Western Cape,18.5225709,18.5225709
+2014,Saldanha Bay,WC014,fruitless,3675207.0,Western Cape,19.0118251,19.0118251
+2014,Saldanha Bay,WC014,irregular,31023051.0,Western Cape,19.0118251,19.0118251
+2014,Saldanha Bay,WC014,unauthorised,0.0,Western Cape,19.0118251,19.0118251
+2014,Swartland,WC015,fruitless,0.0,Western Cape,18.7125791,18.7125791
+2014,Swartland,WC015,irregular,0.0,Western Cape,18.7125791,18.7125791
+2014,Swartland,WC015,unauthorised,22913341.0,Western Cape,18.7125791,18.7125791
+2014,Witzenberg,WC022,fruitless,0.0,Western Cape,18.1903059,18.1903059
+2014,Witzenberg,WC022,irregular,0.0,Western Cape,18.1903059,18.1903059
+2014,Witzenberg,WC022,unauthorised,0.0,Western Cape,18.1903059,18.1903059
+2014,Drakenstein,WC023,fruitless,0.0,Western Cape,18.6624903,18.6624903
+2014,Drakenstein,WC023,irregular,0.0,Western Cape,18.6624903,18.6624903
+2014,Drakenstein,WC023,unauthorised,34190541.0,Western Cape,18.6624903,18.6624903
+2014,Stellenbosch,WC024,fruitless,0.0,Western Cape,19.2831531,19.2831531
+2014,Stellenbosch,WC024,irregular,1745699.0,Western Cape,19.2831531,19.2831531
+2014,Stellenbosch,WC024,unauthorised,21896306.0,Western Cape,19.2831531,19.2831531
+2014,Breede Valley,WC025,fruitless,0.0,Western Cape,19.04532,19.04532
+2014,Breede Valley,WC025,irregular,0.0,Western Cape,19.04532,19.04532
+2014,Breede Valley,WC025,unauthorised,44773758.0,Western Cape,19.04532,19.04532
+2014,Langeberg,WC026,fruitless,465952.0,Western Cape,18.9502232,18.9502232
+2014,Langeberg,WC026,irregular,0.0,Western Cape,18.9502232,18.9502232
+2014,Langeberg,WC026,unauthorised,11061458.0,Western Cape,18.9502232,18.9502232
+2014,Theewaterskloof,WC031,fruitless,0.0,Western Cape,19.4735066,19.4735066
+2014,Theewaterskloof,WC031,irregular,244660.0,Western Cape,19.4735066,19.4735066
+2014,Theewaterskloof,WC031,unauthorised,21904021.0,Western Cape,19.4735066,19.4735066
+2014,Overstrand,WC032,fruitless,5586.0,Western Cape,27.812138,27.812138
+2014,Overstrand,WC032,irregular,5334200.0,Western Cape,27.812138,27.812138
+2014,Overstrand,WC032,unauthorised,18021157.0,Western Cape,27.812138,27.812138
+2014,Cape Agulhas,WC033,fruitless,0.0,Western Cape,19.4252453,19.4252453
+2014,Cape Agulhas,WC033,irregular,1707045.0,Western Cape,19.4252453,19.4252453
+2014,Cape Agulhas,WC033,unauthorised,15954747.0,Western Cape,19.4252453,19.4252453
+2014,Swellendam,WC034,fruitless,0.0,Western Cape,19.4259114,19.4259114
+2014,Swellendam,WC034,irregular,32145.0,Western Cape,19.4259114,19.4259114
+2014,Swellendam,WC034,unauthorised,15353069.0,Western Cape,19.4259114,19.4259114
+2014,Kannaland,WC041,fruitless,1142947.0,Western Cape,20.0449662,20.0449662
+2014,Kannaland,WC041,irregular,3285820.0,Western Cape,20.0449662,20.0449662
+2014,Kannaland,WC041,unauthorised,45403730.0,Western Cape,20.0449662,20.0449662
+2014,Hessequa,WC042,fruitless,638043.0,Western Cape,20.7185132,20.7185132
+2014,Hessequa,WC042,irregular,1487099.0,Western Cape,20.7185132,20.7185132
+2014,Hessequa,WC042,unauthorised,42670080.0,Western Cape,20.7185132,20.7185132
+2014,Mossel Bay,WC043,fruitless,0.0,Western Cape,21.3798928,21.3798928
+2014,Mossel Bay,WC043,irregular,0.0,Western Cape,21.3798928,21.3798928
+2014,Mossel Bay,WC043,unauthorised,0.0,Western Cape,21.3798928,21.3798928
+2014,George,WC044,fruitless,0.0,Western Cape,21.1891151,21.1891151
+2014,George,WC044,irregular,98300.0,Western Cape,21.1891151,21.1891151
+2014,George,WC044,unauthorised,66128608.0,Western Cape,21.1891151,21.1891151
+2014,Oudtshoorn,WC045,fruitless,6230757.0,Western Cape,21.9045541,21.9045541
+2014,Oudtshoorn,WC045,irregular,82913601.0,Western Cape,21.9045541,21.9045541
+2014,Oudtshoorn,WC045,unauthorised,59890226.0,Western Cape,21.9045541,21.9045541
+2014,Bitou,WC047,fruitless,0.0,Western Cape,22.4768287,22.4768287
+2014,Bitou,WC047,irregular,0.0,Western Cape,22.4768287,22.4768287
+2014,Bitou,WC047,unauthorised,14756695.0,Western Cape,22.4768287,22.4768287
+2014,Knysna,WC048,fruitless,475882.0,Western Cape,22.1430215,22.1430215
+2014,Knysna,WC048,irregular,584726.0,Western Cape,22.1430215,22.1430215
+2014,Knysna,WC048,unauthorised,81277895.0,Western Cape,22.1430215,22.1430215
+2014,Laingsburg,WC051,fruitless,12928.0,Western Cape,23.429984,23.429984
+2014,Laingsburg,WC051,irregular,20558155.0,Western Cape,23.429984,23.429984
+2014,Laingsburg,WC051,unauthorised,22476171.0,Western Cape,23.429984,23.429984
+2014,Prince Albert,WC052,fruitless,137240.0,Western Cape,23.049842,23.049842
+2014,Prince Albert,WC052,irregular,0.0,Western Cape,23.049842,23.049842
+2014,Prince Albert,WC052,unauthorised,23962665.0,Western Cape,23.049842,23.049842
+2014,Beaufort West,WC053,fruitless,0.0,Western Cape,20.902977,20.902977
+2014,Beaufort West,WC053,irregular,35000.0,Western Cape,20.902977,20.902977
+2014,Beaufort West,WC053,unauthorised,47144485.0,Western Cape,20.902977,20.902977
+2015,Buffalo City,BUF,fruitless,479621.0,Western Cape,22.047637,22.047637
+2015,Buffalo City,BUF,irregular,479245175.0,Western Cape,22.047637,22.047637
+2015,Buffalo City,BUF,unauthorised,245299178.0,Western Cape,22.047637,22.047637
+2015,City of Cape Town,CPT,fruitless,0.0,Western Cape,22.8105512,22.8105512
+2015,City of Cape Town,CPT,irregular,996506.0,Western Cape,22.8105512,22.8105512
+2015,City of Cape Town,CPT,unauthorised,0.0,Western Cape,22.8105512,22.8105512
+2015,West Coast,DC1,fruitless,8697.0,Eastern Cape,27.6434844,27.6434844
+2015,West Coast,DC1,irregular,12431934.0,Eastern Cape,27.6434844,27.6434844
+2015,West Coast,DC1,unauthorised,161069.0,Eastern Cape,27.6434844,27.6434844
+2015,Cacadu,DC10,fruitless,782229.0,Western Cape,18.4680927,18.4680927
+2015,Cacadu,DC10,irregular,3108976.0,Western Cape,18.4680927,18.4680927
+2015,Cacadu,DC10,unauthorised,0.0,Western Cape,18.4680927,18.4680927
+2015,Amathole,DC12,fruitless,324442.0,Western Cape,18.6175626,18.6175626
+2015,Amathole,DC12,irregular,288537590.0,Western Cape,18.6175626,18.6175626
+2015,Amathole,DC12,unauthorised,2300000.0,Western Cape,18.6175626,18.6175626
+2015,Chris Hani,DC13,fruitless,817834.0,Eastern Cape,25.6223644,25.6223644
+2015,Chris Hani,DC13,irregular,123524087.0,Eastern Cape,25.6223644,25.6223644
+2015,Chris Hani,DC13,unauthorised,215132647.0,Eastern Cape,25.6223644,25.6223644
+2015,Joe Gqabi,DC14,fruitless,184280.0,Eastern Cape,27.3616476,27.3616476
+2015,Joe Gqabi,DC14,irregular,778186.0,Eastern Cape,27.3616476,27.3616476
+2015,Joe Gqabi,DC14,unauthorised,0.0,Eastern Cape,27.3616476,27.3616476
+2015,O.R.Tambo,DC15,fruitless,19353607.0,Eastern Cape,26.7967849,26.7967849
+2015,O.R.Tambo,DC15,irregular,93847805.0,Eastern Cape,26.7967849,26.7967849
+2015,O.R.Tambo,DC15,unauthorised,223182549.0,Eastern Cape,26.7967849,26.7967849
+2015,Xhariep,DC16,fruitless,296066.0,Eastern Cape,26.9852422,26.9852422
+2015,Xhariep,DC16,irregular,3710358.0,Eastern Cape,26.9852422,26.9852422
+2015,Xhariep,DC16,unauthorised,746110.0,Eastern Cape,26.9852422,26.9852422
+2015,Lejweleputswa,DC18,fruitless,0.0,Eastern Cape,29.2320784,29.2320784
+2015,Lejweleputswa,DC18,irregular,1557061.0,Eastern Cape,29.2320784,29.2320784
+2015,Lejweleputswa,DC18,unauthorised,0.0,Eastern Cape,29.2320784,29.2320784
+2015,Thabo Mofutsanyane,DC19,fruitless,0.0,Free State,25.2837585,25.2837585
+2015,Thabo Mofutsanyane,DC19,irregular,0.0,Free State,25.2837585,25.2837585
+2015,Thabo Mofutsanyane,DC19,unauthorised,2816833.0,Free State,25.2837585,25.2837585
+2015,Cape Winelands,DC2,fruitless,0.0,Free State,26.2304616,26.2304616
+2015,Cape Winelands,DC2,irregular,0.0,Free State,26.2304616,26.2304616
+2015,Cape Winelands,DC2,unauthorised,0.0,Free State,26.2304616,26.2304616
+2015,Fezile Dabi,DC20,fruitless,28986.0,Free State,28.299435,28.299435
+2015,Fezile Dabi,DC20,irregular,0.0,Free State,28.299435,28.299435
+2015,Fezile Dabi,DC20,unauthorised,0.0,Free State,28.299435,28.299435
+2015,Ugu,DC21,fruitless,522368.0,Western Cape,19.7591675,19.7591675
+2015,Ugu,DC21,irregular,40350455.0,Western Cape,19.7591675,19.7591675
+2015,Ugu,DC21,unauthorised,273794130.0,Western Cape,19.7591675,19.7591675
+2015,Umgungundlovu,DC22,fruitless,1832748.0,Free State,27.7373373,27.7373373
+2015,Umgungundlovu,DC22,irregular,1017354.0,Free State,27.7373373,27.7373373
+2015,Umgungundlovu,DC22,unauthorised,0.0,Free State,27.7373373,27.7373373
+2015,Uthukela,DC23,fruitless,405873.0,KwaZulu-Natal,30.2512728,30.2512728
+2015,Uthukela,DC23,irregular,324002097.0,KwaZulu-Natal,30.2512728,30.2512728
+2015,Uthukela,DC23,unauthorised,79027639.0,KwaZulu-Natal,30.2512728,30.2512728
+2015,Umzinyathi,DC24,fruitless,0.0,KwaZulu-Natal,30.3435506,30.3435506
+2015,Umzinyathi,DC24,irregular,179663200.0,KwaZulu-Natal,30.3435506,30.3435506
+2015,Umzinyathi,DC24,unauthorised,0.0,KwaZulu-Natal,30.3435506,30.3435506
+2015,Amajuba,DC25,fruitless,1469509.0,KwaZulu-Natal,29.6035495,29.6035495
+2015,Amajuba,DC25,irregular,2411406.0,KwaZulu-Natal,29.6035495,29.6035495
+2015,Amajuba,DC25,unauthorised,53203123.0,KwaZulu-Natal,29.6035495,29.6035495
+2015,Zululand,DC26,fruitless,65975.0,KwaZulu-Natal,30.6199895,30.6199895
+2015,Zululand,DC26,irregular,312364.0,KwaZulu-Natal,30.6199895,30.6199895
+2015,Zululand,DC26,unauthorised,0.0,KwaZulu-Natal,30.6199895,30.6199895
+2015,Umkhanyakude,DC27,fruitless,209419.0,KwaZulu-Natal,30.0665236,30.0665236
+2015,Umkhanyakude,DC27,irregular,130384046.0,KwaZulu-Natal,30.0665236,30.0665236
+2015,Umkhanyakude,DC27,unauthorised,124952895.0,KwaZulu-Natal,30.0665236,30.0665236
+2015,Uthungulu,DC28,fruitless,0.0,KwaZulu-Natal,31.4456179,31.4456179
+2015,Uthungulu,DC28,irregular,0.0,KwaZulu-Natal,31.4456179,31.4456179
+2015,Uthungulu,DC28,unauthorised,0.0,KwaZulu-Natal,31.4456179,31.4456179
+2015,iLembe,DC29,fruitless,130296.0,KwaZulu-Natal,32.5372741,32.5372741
+2015,iLembe,DC29,irregular,2590940.0,KwaZulu-Natal,32.5372741,32.5372741
+2015,iLembe,DC29,unauthorised,24877095.0,KwaZulu-Natal,32.5372741,32.5372741
+2015,Overberg,DC3,fruitless,0.0,KwaZulu-Natal,31.5370003,31.5370003
+2015,Overberg,DC3,irregular,57867958.0,KwaZulu-Natal,31.5370003,31.5370003
+2015,Overberg,DC3,unauthorised,108740.0,KwaZulu-Natal,31.5370003,31.5370003
+2015,Gert Sibande,DC30,fruitless,35502.0,KwaZulu-Natal,31.1710389,31.1710389
+2015,Gert Sibande,DC30,irregular,98800.0,KwaZulu-Natal,31.1710389,31.1710389
+2015,Gert Sibande,DC30,unauthorised,0.0,KwaZulu-Natal,31.1710389,31.1710389
+2015,Nkangala,DC31,fruitless,1544.0,Western Cape,19.7591675,19.7591675
+2015,Nkangala,DC31,irregular,22814019.0,Western Cape,19.7591675,19.7591675
+2015,Nkangala,DC31,unauthorised,0.0,Western Cape,19.7591675,19.7591675
+2015,Ehlanzeni,DC32,fruitless,0.0,Mpumalanga,29.9740534,29.9740534
+2015,Ehlanzeni,DC32,irregular,0.0,Mpumalanga,29.9740534,29.9740534
+2015,Ehlanzeni,DC32,unauthorised,0.0,Mpumalanga,29.9740534,29.9740534
+2015,Mopani,DC33,fruitless,62052.0,Mpumalanga,29.6035495,29.6035495
+2015,Mopani,DC33,irregular,8225797.0,Mpumalanga,29.6035495,29.6035495
+2015,Mopani,DC33,unauthorised,1038038.0,Mpumalanga,29.6035495,29.6035495
+2015,Vhembe,DC34,fruitless,31132331.0,Mpumalanga,31.2626366,31.2626366
+2015,Vhembe,DC34,irregular,204975302.0,Mpumalanga,31.2626366,31.2626366
+2015,Vhembe,DC34,unauthorised,258007614.0,Mpumalanga,31.2626366,31.2626366
+2015,Capricorn,DC35,fruitless,20203.0,Limpopo,30.7160431,30.7160431
+2015,Capricorn,DC35,irregular,92493.0,Limpopo,30.7160431,30.7160431
+2015,Capricorn,DC35,unauthorised,53310723.0,Limpopo,30.7160431,30.7160431
+2015,Waterberg,DC36,fruitless,1409.0,Limpopo,29.9740534,29.9740534
+2015,Waterberg,DC36,irregular,4450901.0,Limpopo,29.9740534,29.9740534
+2015,Waterberg,DC36,unauthorised,26045.0,Limpopo,29.9740534,29.9740534
+2015,Bojanala,DC37,fruitless,0.0,Limpopo,29.2320784,29.2320784
+2015,Bojanala,DC37,irregular,15165127.0,Limpopo,29.2320784,29.2320784
+2015,Bojanala,DC37,unauthorised,25988902.0,Limpopo,29.2320784,29.2320784
+2015,Ngaka Modiri Molema,DC38,fruitless,3387245.0,Limpopo,28.299435,28.299435
+2015,Ngaka Modiri Molema,DC38,irregular,55757677.0,Limpopo,28.299435,28.299435
+2015,Ngaka Modiri Molema,DC38,unauthorised,406870816.0,Limpopo,28.299435,28.299435
+2015,Dr Ruth Segomotsi Mompati,DC39,fruitless,0.0,North West,27.3616476,27.3616476
+2015,Dr Ruth Segomotsi Mompati,DC39,irregular,266065164.0,North West,27.3616476,27.3616476
+2015,Dr Ruth Segomotsi Mompati,DC39,unauthorised,79581818.0,North West,27.3616476,27.3616476
+2015,Eden,DC4,fruitless,629066.0,North West,25.8521764,25.8521764
+2015,Eden,DC4,irregular,6468056.0,North West,25.8521764,25.8521764
+2015,Eden,DC4,unauthorised,236665803.0,North West,25.8521764,25.8521764
+2015,Dr Kenneth Kaunda,DC40,fruitless,11623979.0,North West,24.3341432,24.3341432
+2015,Dr Kenneth Kaunda,DC40,irregular,8625776.0,North West,24.3341432,24.3341432
+2015,Dr Kenneth Kaunda,DC40,unauthorised,0.0,North West,24.3341432,24.3341432
+2015,Sedibeng,DC42,fruitless,143141.0,Western Cape,22.047637,22.047637
+2015,Sedibeng,DC42,irregular,0.0,Western Cape,22.047637,22.047637
+2015,Sedibeng,DC42,unauthorised,0.0,Western Cape,22.047637,22.047637
+2015,Harry Gwala,DC43,fruitless,87365.0,North West,26.5137964,26.5137964
+2015,Harry Gwala,DC43,irregular,143360811.0,North West,26.5137964,26.5137964
+2015,Harry Gwala,DC43,unauthorised,192940848.0,North West,26.5137964,26.5137964
+2015,Alfred Nzo,DC44,fruitless,95666.0,Gauteng,28.2058768,28.2058768
+2015,Alfred Nzo,DC44,irregular,188054919.0,Gauteng,28.2058768,28.2058768
+2015,Alfred Nzo,DC44,unauthorised,70618929.0,Gauteng,28.2058768,28.2058768
+2015,John Taolo Gaetsewe,DC45,fruitless,498359.0,KwaZulu-Natal,29.6035495,29.6035495
+2015,John Taolo Gaetsewe,DC45,irregular,9777582.0,KwaZulu-Natal,29.6035495,29.6035495
+2015,John Taolo Gaetsewe,DC45,unauthorised,1514563.0,KwaZulu-Natal,29.6035495,29.6035495
+2015,Sekhukhune,DC47,fruitless,849889.0,Eastern Cape,28.8596804,28.8596804
+2015,Sekhukhune,DC47,irregular,138351719.0,Eastern Cape,28.8596804,28.8596804
+2015,Sekhukhune,DC47,unauthorised,32423782.0,Eastern Cape,28.8596804,28.8596804
+2015,West Rand,DC48,fruitless,0.0,Northern Cape,23.1918021,23.1918021
+2015,West Rand,DC48,irregular,0.0,Northern Cape,23.1918021,23.1918021
+2015,West Rand,DC48,unauthorised,0.0,Northern Cape,23.1918021,23.1918021
+2015,Central Karoo,DC5,fruitless,12999.0,Limpopo,29.9740534,29.9740534
+2015,Central Karoo,DC5,irregular,433577.0,Limpopo,29.9740534,29.9740534
+2015,Central Karoo,DC5,unauthorised,0.0,Limpopo,29.9740534,29.9740534
+2015,Namakwa,DC6,fruitless,0.0,Gauteng,27.4556388,27.4556388
+2015,Namakwa,DC6,irregular,415653.0,Gauteng,27.4556388,27.4556388
+2015,Namakwa,DC6,unauthorised,28754.0,Gauteng,27.4556388,27.4556388
+2015,Pixley ka Seme,DC7,fruitless,248004.0,Western Cape,22.2384017,22.2384017
+2015,Pixley ka Seme,DC7,irregular,1974410.0,Western Cape,22.2384017,22.2384017
+2015,Pixley ka Seme,DC7,unauthorised,0.0,Western Cape,22.2384017,22.2384017
+2015,Z F Mgcawu,DC8,fruitless,200687.0,Northern Cape,19.949686,19.949686
+2015,Z F Mgcawu,DC8,irregular,369213.0,Northern Cape,19.949686,19.949686
+2015,Z F Mgcawu,DC8,unauthorised,2565706.0,Northern Cape,19.949686,19.949686
+2015,Frances Baard,DC9,fruitless,58602.0,Northern Cape,23.3823545,23.3823545
+2015,Frances Baard,DC9,irregular,0.0,Northern Cape,23.3823545,23.3823545
+2015,Frances Baard,DC9,unauthorised,0.0,Northern Cape,23.3823545,23.3823545
+2015,Dr Beyers Naude,EC101,fruitless,13814.0,Northern Cape,21.246215,21.246215
+2015,Dr Beyers Naude,EC101,irregular,0.0,Northern Cape,21.246215,21.246215
+2015,Dr Beyers Naude,EC101,unauthorised,14313998.0,Northern Cape,21.246215,21.246215
+2015,Blue Crane Route,EC102,fruitless,991.0,Northern Cape,24.3341432,24.3341432
+2015,Blue Crane Route,EC102,irregular,39594971.0,Northern Cape,24.3341432,24.3341432
+2015,Blue Crane Route,EC102,unauthorised,1928317.0,Northern Cape,24.3341432,24.3341432
+2015,Ikwezi,EC103,fruitless,0.0,Eastern Cape,24.371068,24.371068
+2015,Ikwezi,EC103,irregular,22800000.0,Eastern Cape,24.3341432,24.3341432
+2015,Ikwezi,EC103,unauthorised,10715448.0,Eastern Cape,24.371068,24.371068
+2015,Makana,EC104,fruitless,5766340.0,Eastern Cape,24.3341432,24.3341432
+2015,Makana,EC104,irregular,520749.0,Eastern Cape,24.371068,24.371068
+2015,Makana,EC104,unauthorised,31781485.0,Eastern Cape,24.3341432,24.3341432
+2015,Ndlambe,EC105,fruitless,39000.0,Eastern Cape,25.4733554,25.4733554
+2015,Ndlambe,EC105,irregular,198318810.0,Eastern Cape,25.4733554,25.4733554
+2015,Ndlambe,EC105,unauthorised,28009385.0,Eastern Cape,25.4733554,25.4733554
+2015,Sundays River Valley,EC106,fruitless,692377.0,Eastern Cape,24.6192899,24.6192899
+2015,Sundays River Valley,EC106,irregular,72362699.0,Eastern Cape,24.6192899,24.6192899
+2015,Sundays River Valley,EC106,unauthorised,11296674.0,Eastern Cape,24.6192899,24.6192899
+2015,Baviaans,EC107,fruitless,744265.0,Eastern Cape,26.3249438,26.3249438
+2015,Baviaans,EC107,irregular,247618.0,Eastern Cape,26.3249438,26.3249438
+2015,Baviaans,EC107,unauthorised,816529.0,Eastern Cape,26.3249438,26.3249438
+2015,Kouga,EC108,fruitless,2286226.0,Eastern Cape,26.749645,26.749645
+2015,Kouga,EC108,irregular,0.0,Eastern Cape,26.749645,26.749645
+2015,Kouga,EC108,unauthorised,0.0,Eastern Cape,26.749645,26.749645
+2015,Kou-Kamma,EC109,fruitless,560910.0,Eastern Cape,25.5681084,25.5681084
+2015,Kou-Kamma,EC109,irregular,7646124.0,Eastern Cape,25.5681084,25.5681084
+2015,Kou-Kamma,EC109,unauthorised,8882857.0,Eastern Cape,25.5681084,25.5681084
+2015,Mbhashe,EC121,fruitless,249512.0,Eastern Cape,24.0488007,24.0488007
+2015,Mbhashe,EC121,irregular,3293034.0,Eastern Cape,24.0488007,24.0488007
+2015,Mbhashe,EC121,unauthorised,20518173.0,Eastern Cape,24.0488007,24.0488007
+2015,Mnquma,EC122,fruitless,47295.0,Eastern Cape,24.8092691,24.8092691
+2015,Mnquma,EC122,irregular,110738470.0,Eastern Cape,24.8092691,24.8092691
+2015,Mnquma,EC122,unauthorised,83584801.0,Eastern Cape,24.8092691,24.8092691
+2015,Great Kei,EC123,fruitless,99501.0,Eastern Cape,24.0488007,24.0488007
+2015,Great Kei,EC123,irregular,5123638.0,Eastern Cape,24.0488007,24.0488007
+2015,Great Kei,EC123,unauthorised,23215181.0,Eastern Cape,24.0488007,24.0488007
+2015,Amahlathi,EC124,fruitless,764749.0,Eastern Cape,28.7664408,28.7664408
+2015,Amahlathi,EC124,irregular,40288896.0,Eastern Cape,28.7664408,28.7664408
+2015,Amahlathi,EC124,unauthorised,23907015.0,Eastern Cape,28.7664408,28.7664408
+2015,Ngqushwa,EC126,fruitless,34831.0,Eastern Cape,28.0186087,28.0186087
+2015,Ngqushwa,EC126,irregular,28524133.0,Eastern Cape,28.0186087,28.0186087
+2015,Ngqushwa,EC126,unauthorised,22500000.0,Eastern Cape,28.0186087,28.0186087
+2015,Nkonkobe,EC127,fruitless,1106552.0,Eastern Cape,27.9717606,27.9717606
+2015,Nkonkobe,EC127,irregular,14117756.0,Eastern Cape,27.9717606,27.9717606
+2015,Nkonkobe,EC127,unauthorised,35917952.0,Eastern Cape,27.9717606,27.9717606
+2015,Nxuba,EC128,fruitless,4257093.0,Eastern Cape,27.2676116,27.2676116
+2015,Nxuba,EC128,irregular,16632140.0,Eastern Cape,27.2676116,27.2676116
+2015,Nxuba,EC128,unauthorised,13665660.0,Eastern Cape,27.2676116,27.2676116
+2015,Inxuba Yethemba,EC131,fruitless,1093301.0,Eastern Cape,27.2676116,27.2676116
+2015,Inxuba Yethemba,EC131,irregular,1325428.0,Eastern Cape,27.2676116,27.2676116
+2015,Inxuba Yethemba,EC131,unauthorised,19077736.0,Eastern Cape,27.2676116,27.2676116
+2015,Tsolwana,EC132,fruitless,9306.0,Eastern Cape,26.8329144,26.8329144
+2015,Tsolwana,EC132,irregular,1018220.0,Eastern Cape,26.8329144,26.8329144
+2015,Tsolwana,EC132,unauthorised,2080156.0,Eastern Cape,26.8329144,26.8329144
+2015,Inkwanca,EC133,fruitless,617702.0,Eastern Cape,26.3249438,26.3249438
+2015,Inkwanca,EC133,irregular,193729.0,Eastern Cape,26.3249438,26.3249438
+2015,Inkwanca,EC133,unauthorised,0.0,Eastern Cape,26.3249438,26.3249438
+2015,Lukanji,EC134,fruitless,563388.0,Eastern Cape,25.3785719,25.3785719
+2015,Lukanji,EC134,irregular,58973414.0,Eastern Cape,25.3785719,25.3785719
+2015,Lukanji,EC134,unauthorised,25466581.0,Eastern Cape,25.3785719,25.3785719
+2015,Intsika Yethu,EC135,fruitless,172747.0,Eastern Cape,26.1359431,26.1359431
+2015,Intsika Yethu,EC135,irregular,55794590.0,Eastern Cape,26.1359431,26.1359431
+2015,Intsika Yethu,EC135,unauthorised,19568494.0,Eastern Cape,26.1359431,26.1359431
+2015,Emalahleni,EC136,fruitless,68041.0,Eastern Cape,26.5137964,26.5137964
+2015,Emalahleni,EC136,irregular,20259703.0,Eastern Cape,26.5137964,26.5137964
+2015,Emalahleni,EC136,unauthorised,9856654.0,Eastern Cape,26.5137964,26.5137964
+2015,Engcobo,EC137,fruitless,7315.0,Eastern Cape,26.8910342,26.8910342
+2015,Engcobo,EC137,irregular,0.0,Eastern Cape,26.8910342,26.8910342
+2015,Engcobo,EC137,unauthorised,0.0,Eastern Cape,26.8910342,26.8910342
+2015,Sakhisizwe,EC138,fruitless,20306.0,Eastern Cape,27.6434844,27.6434844
+2015,Sakhisizwe,EC138,irregular,17228331.0,Eastern Cape,27.6434844,27.6434844
+2015,Sakhisizwe,EC138,unauthorised,11940356.0,Eastern Cape,27.6434844,27.6434844
+2015,Elundini,EC141,fruitless,874289.0,Eastern Cape,29.2553229,29.2553229
+2015,Elundini,EC141,irregular,484148.0,Eastern Cape,29.2553229,29.2553229
+2015,Elundini,EC141,unauthorised,2979678.0,Eastern Cape,29.2553229,29.2553229
+2015,Senqu,EC142,fruitless,1007946.0,Eastern Cape,27.9834738,27.9834738
+2015,Senqu,EC142,irregular,688229.0,Eastern Cape,27.9834738,27.9834738
+2015,Senqu,EC142,unauthorised,0.0,Eastern Cape,27.9834738,27.9834738
+2015,Maletswai,EC143,fruitless,5280150.0,Eastern Cape,27.8311428,27.8311428
+2015,Maletswai,EC143,irregular,798850.0,Eastern Cape,27.8311428,27.8311428
+2015,Maletswai,EC143,unauthorised,15521839.0,Eastern Cape,27.8311428,27.8311428
+2015,Gariep,EC144,fruitless,5500878.0,Eastern Cape,28.3929417,28.3929417
+2015,Gariep,EC144,irregular,11018456.0,Eastern Cape,28.3929417,28.3929417
+2015,Gariep,EC144,unauthorised,2322101.0,Eastern Cape,28.3929417,28.3929417
+2015,Ngquza Hill,EC153,fruitless,0.0,Eastern Cape,27.6434844,27.6434844
+2015,Ngquza Hill,EC153,irregular,0.0,Eastern Cape,27.6434844,27.6434844
+2015,Ngquza Hill,EC153,unauthorised,0.0,Eastern Cape,27.6434844,27.6434844
+2015,Port St Johns,EC154,fruitless,1520954.0,Eastern Cape,26.8910342,26.8910342
+2015,Port St Johns,EC154,irregular,30496270.0,Eastern Cape,26.8910342,26.8910342
+2015,Port St Johns,EC154,unauthorised,3724675.0,Eastern Cape,26.8910342,26.8910342
+2015,Nyandeni,EC155,fruitless,5947.0,Eastern Cape,25.8521764,25.8521764
+2015,Nyandeni,EC155,irregular,13912082.0,Eastern Cape,25.8521764,25.8521764
+2015,Nyandeni,EC155,unauthorised,12228021.0,Eastern Cape,25.8521764,25.8521764
+2015,Mhlontlo,EC156,fruitless,643612.0,Eastern Cape,29.6962677,29.6962677
+2015,Mhlontlo,EC156,irregular,1061887.0,Eastern Cape,29.6962677,29.6962677
+2015,Mhlontlo,EC156,unauthorised,10272269.0,Eastern Cape,29.6962677,29.6962677
+2015,King Sabata Dalindyebo,EC157,fruitless,4790425.0,Eastern Cape,29.5457058,29.5457058
+2015,King Sabata Dalindyebo,EC157,irregular,132202661.0,Eastern Cape,29.5457058,29.5457058
+2015,King Sabata Dalindyebo,EC157,unauthorised,142725952.0,Eastern Cape,29.5457058,29.5457058
+2015,Matatiele,EC441,fruitless,15300.0,Eastern Cape,29.1390642,29.1390642
+2015,Matatiele,EC441,irregular,3270000.0,Eastern Cape,29.1390642,29.1390642
+2015,Matatiele,EC441,unauthorised,0.0,Eastern Cape,29.1390642,29.1390642
+2015,Umzimvubu,EC442,fruitless,0.0,Eastern Cape,28.8130675,28.8130675
+2015,Umzimvubu,EC442,irregular,0.0,Eastern Cape,28.8130675,28.8130675
+2015,Umzimvubu,EC442,unauthorised,0.0,Eastern Cape,28.8130675,28.8130675
+2015,Mbizana,EC443,fruitless,110898.0,Eastern Cape,28.5797981,28.5797981
+2015,Mbizana,EC443,irregular,3518531.0,Eastern Cape,28.5797981,28.5797981
+2015,Mbizana,EC443,unauthorised,1239865.0,Eastern Cape,28.5797981,28.5797981
+2015,Ntabankulu,EC444,fruitless,51418.0,Eastern Cape,28.7664408,28.7664408
+2015,Ntabankulu,EC444,irregular,97471214.0,Eastern Cape,28.7664408,28.7664408
+2015,Ntabankulu,EC444,unauthorised,47337660.0,Eastern Cape,28.7664408,28.7664408
+2015,Ekurhuleni,EKU,fruitless,20753061.0,Eastern Cape,28.9528645,28.9528645
+2015,Ekurhuleni,EKU,irregular,67462398.0,Eastern Cape,28.9528645,28.9528645
+2015,Ekurhuleni,EKU,unauthorised,0.0,Eastern Cape,28.9528645,28.9528645
+2015,eThekwini,ETH,fruitless,0.0,Eastern Cape,29.8566142,29.8566142
+2015,eThekwini,ETH,irregular,212274986.0,Eastern Cape,29.8566142,29.8566142
+2015,eThekwini,ETH,unauthorised,0.0,Eastern Cape,29.8566142,29.8566142
+2015,Letsemeng,FS161,fruitless,305724.0,Eastern Cape,29.2785638,29.2785638
+2015,Letsemeng,FS161,irregular,19825423.0,Eastern Cape,29.2785638,29.2785638
+2015,Letsemeng,FS161,unauthorised,27915334.0,Eastern Cape,29.2785638,29.2785638
+2015,Kopanong,FS162,fruitless,11525323.0,Gauteng,28.3461948,28.3461948
+2015,Kopanong,FS162,irregular,12878240.0,Gauteng,28.3461948,28.3461948
+2015,Kopanong,FS162,unauthorised,56334055.0,Gauteng,28.3461948,28.3461948
+2015,Mohokare,FS163,fruitless,5839599.0,KwaZulu-Natal,30.8039474,30.8039474
+2015,Mohokare,FS163,irregular,51862652.0,KwaZulu-Natal,30.8039474,30.8039474
+2015,Mohokare,FS163,unauthorised,3585484.0,KwaZulu-Natal,30.8039474,30.8039474
+2015,Naledi,FS164,fruitless,506026.0,Free State,25.094045,25.094045
+2015,Naledi,FS164,irregular,40137425.0,Free State,25.094045,25.094045
+2015,Naledi,FS164,unauthorised,29661000.0,Free State,25.094045,25.094045
+2015,Masilonyana,FS181,fruitless,4041539.0,Free State,25.4733554,25.4733554
+2015,Masilonyana,FS181,irregular,7685953.0,Free State,25.4733554,25.4733554
+2015,Masilonyana,FS181,unauthorised,11155035.0,Free State,25.4733554,25.4733554
+2015,Tokologo,FS182,fruitless,1382118.0,Free State,26.9852422,26.9852422
+2015,Tokologo,FS182,irregular,20598865.0,Free State,26.9852422,26.9852422
+2015,Tokologo,FS182,unauthorised,33356720.0,Free State,26.9852422,26.9852422
+2015,Tswelopele,FS183,fruitless,88893.0,Free State,24.7142918,24.7142918
+2015,Tswelopele,FS183,irregular,9423995.0,Free State,24.7142918,24.7142918
+2015,Tswelopele,FS183,unauthorised,5849822.0,Free State,24.7142918,24.7142918
+2015,Matjhabeng,FS184,fruitless,151822061.0,Free State,26.6081653,26.6081653
+2015,Matjhabeng,FS184,irregular,226054096.0,Free State,26.6081653,26.6081653
+2015,Matjhabeng,FS184,unauthorised,443303655.0,Free State,26.6081653,26.6081653
+2015,Nala,FS185,fruitless,25799529.0,Free State,25.4733554,25.4733554
+2015,Nala,FS185,irregular,11751465.0,Free State,25.4733554,25.4733554
+2015,Nala,FS185,unauthorised,62112345.0,Free State,25.4733554,25.4733554
+2015,Setsoto,FS191,fruitless,135322.0,Free State,25.9467997,25.9467997
+2015,Setsoto,FS191,irregular,33449533.0,Free State,25.9467997,25.9467997
+2015,Setsoto,FS191,unauthorised,286684628.0,Free State,25.9467997,25.9467997
+2015,Dihlabeng,FS192,fruitless,14200244.0,Free State,26.8910342,26.8910342
+2015,Dihlabeng,FS192,irregular,37635488.0,Free State,26.8910342,26.8910342
+2015,Dihlabeng,FS192,unauthorised,102474833.0,Free State,26.8910342,26.8910342
+2015,Nketoana,FS193,fruitless,6849517.0,Free State,26.5137964,26.5137964
+2015,Nketoana,FS193,irregular,26178926.0,Free State,26.5137964,26.5137964
+2015,Nketoana,FS193,unauthorised,5361768.0,Free State,26.5137964,26.5137964
+2015,Maluti a Phofung,FS194,fruitless,77667145.0,Free State,27.6434844,27.6434844
+2015,Maluti a Phofung,FS194,irregular,30761895.0,Free State,27.6434844,27.6434844
+2015,Maluti a Phofung,FS194,unauthorised,957875468.0,Free State,27.6434844,27.6434844
+2015,Phumelela,FS195,fruitless,3696825.0,Free State,28.2058768,28.2058768
+2015,Phumelela,FS195,irregular,5876576.0,Free State,28.2058768,28.2058768
+2015,Phumelela,FS195,unauthorised,52427833.0,Free State,28.2058768,28.2058768
+2015,Mantsopa,FS196,fruitless,6966647.0,Free State,28.4318311,28.4318311
+2015,Mantsopa,FS196,irregular,32029652.0,Free State,28.4318311,28.4318311
+2015,Mantsopa,FS196,unauthorised,131838000.0,Free State,28.4318311,28.4318311
+2015,Moqhaka,FS201,fruitless,401350.0,Free State,28.9528645,28.9528645
+2015,Moqhaka,FS201,irregular,35673826.0,Free State,28.9528645,28.9528645
+2015,Moqhaka,FS201,unauthorised,133829889.0,Free State,28.9528645,28.9528645
+2015,Ngwathe,FS203,fruitless,51248897.0,Free State,29.2320784,29.2320784
+2015,Ngwathe,FS203,irregular,9346751.0,Free State,29.2320784,29.2320784
+2015,Ngwathe,FS203,unauthorised,266727757.0,Free State,29.2320784,29.2320784
+2015,Metsimaholo,FS204,fruitless,3929444.0,Free State,27.2676116,27.2676116
+2015,Metsimaholo,FS204,irregular,54001633.0,Free State,27.2676116,27.2676116
+2015,Metsimaholo,FS204,unauthorised,77888603.0,Free State,27.2676116,27.2676116
+2015,Mafube,FS205,fruitless,9756060.0,Free State,27.2676116,27.2676116
+2015,Mafube,FS205,irregular,9838403.0,Free State,27.2676116,27.2676116
+2015,Mafube,FS205,unauthorised,110616981.0,Free State,27.2676116,27.2676116
+2015,Emfuleni,GT421,fruitless,1136887.0,Free State,27.7373373,27.7373373
+2015,Emfuleni,GT421,irregular,0.0,Free State,27.7373373,27.7373373
+2015,Emfuleni,GT421,unauthorised,453134777.0,Free State,27.7373373,27.7373373
+2015,Midvaal,GT422,fruitless,0.0,Free State,27.8277881,27.8277881
+2015,Midvaal,GT422,irregular,0.0,Free State,27.8277881,27.8277881
+2015,Midvaal,GT422,unauthorised,0.0,Free State,27.8277881,27.8277881
+2015,Lesedi,GT423,fruitless,3286925.0,Free State,28.5797981,28.5797981
+2015,Lesedi,GT423,irregular,70407140.0,Free State,28.5797981,28.5797981
+2015,Lesedi,GT423,unauthorised,51566267.0,Free State,28.5797981,28.5797981
+2015,Mogale City,GT481,fruitless,264454.0,Gauteng,27.784246,27.784246
+2015,Mogale City,GT481,irregular,0.0,Gauteng,27.784246,27.784246
+2015,Mogale City,GT481,unauthorised,0.0,Gauteng,27.784246,27.784246
+2015,Randfontein,GT482,fruitless,11245830.0,Gauteng,28.0654445,28.0654445
+2015,Randfontein,GT482,irregular,164556251.0,Gauteng,28.0654445,28.0654445
+2015,Randfontein,GT482,unauthorised,0.0,Gauteng,28.0654445,28.0654445
+2015,Westonaria,GT483,fruitless,8383674.0,Gauteng,28.4396756,28.4396756
+2015,Westonaria,GT483,irregular,28326846.0,Gauteng,28.4396756,28.4396756
+2015,Westonaria,GT483,unauthorised,278853296.0,Gauteng,28.4396756,28.4396756
+2015,Merafong City,GT484,fruitless,395560.0,Gauteng,27.5965403,27.5965403
+2015,Merafong City,GT484,irregular,0.0,Gauteng,27.5965403,27.5965403
+2015,Merafong City,GT484,unauthorised,0.0,Gauteng,27.5965403,27.5965403
+2015,City of Johannesburg,JHB,fruitless,44665.0,Gauteng,27.6786847,27.6786847
+2015,City of Johannesburg,JHB,irregular,79600000.0,Gauteng,27.6786847,27.6786847
+2015,City of Johannesburg,JHB,unauthorised,959322000.0,Gauteng,27.6786847,27.6786847
+2015,Vulamehlo,KZN211,fruitless,151613.0,Gauteng,27.666952,27.666952
+2015,Vulamehlo,KZN211,irregular,5105928.0,Gauteng,27.666952,27.666952
+2015,Vulamehlo,KZN211,unauthorised,0.0,Gauteng,27.666952,27.666952
+2015,Umdoni,KZN212,fruitless,134459.0,Gauteng,27.4086488,27.4086488
+2015,Umdoni,KZN212,irregular,6227019.0,Gauteng,27.4086488,27.4086488
+2015,Umdoni,KZN212,unauthorised,0.0,Gauteng,27.4086488,27.4086488
+2015,Umzumbe,KZN213,fruitless,16206.0,Gauteng,27.9717606,27.9717606
+2015,Umzumbe,KZN213,irregular,0.0,Gauteng,27.9717606,27.9717606
+2015,Umzumbe,KZN213,unauthorised,0.0,Gauteng,27.9717606,27.9717606
+2015,uMuziwabantu,KZN214,fruitless,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2015,uMuziwabantu,KZN214,irregular,10069072.0,KwaZulu-Natal,30.5739579,30.5739579
+2015,uMuziwabantu,KZN214,unauthorised,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2015,Ezingoleni,KZN215,fruitless,61806.0,KwaZulu-Natal,30.6890055,30.6890055
+2015,Ezingoleni,KZN215,irregular,0.0,KwaZulu-Natal,30.6890055,30.6890055
+2015,Ezingoleni,KZN215,unauthorised,0.0,KwaZulu-Natal,30.6890055,30.6890055
+2015,Ray Nkonyeni,KZN216,fruitless,0.0,KwaZulu-Natal,30.5928401,30.5928401
+2015,Ray Nkonyeni,KZN216,irregular,964655.0,KwaZulu-Natal,30.5928401,30.5928401
+2015,Ray Nkonyeni,KZN216,unauthorised,0.0,KwaZulu-Natal,30.5928401,30.5928401
+2015,uMshwathi,KZN221,fruitless,0.0,KwaZulu-Natal,29.9277947,29.9277947
+2015,uMshwathi,KZN221,irregular,2938759.0,KwaZulu-Natal,29.9277947,29.9277947
+2015,uMshwathi,KZN221,unauthorised,0.0,KwaZulu-Natal,29.9277947,29.9277947
+2015,uMngeni,KZN222,fruitless,1328057.0,KwaZulu-Natal,30.182022,30.182022
+2015,uMngeni,KZN222,irregular,25044128.0,KwaZulu-Natal,30.182022,30.182022
+2015,uMngeni,KZN222,unauthorised,68690184.0,KwaZulu-Natal,30.182022,30.182022
+2015,Mpofana,KZN223,fruitless,116373.0,KwaZulu-Natal,30.3639319,30.3639319
+2015,Mpofana,KZN223,irregular,9407535.0,KwaZulu-Natal,30.3204873,30.3204873
+2015,Mpofana,KZN223,unauthorised,6671407.0,KwaZulu-Natal,30.3639319,30.3639319
+2015,Impendle,KZN224,fruitless,10744.0,KwaZulu-Natal,30.3204873,30.3204873
+2015,Impendle,KZN224,irregular,1026642.0,KwaZulu-Natal,30.3639319,30.3639319
+2015,Impendle,KZN224,unauthorised,0.0,KwaZulu-Natal,30.3204873,30.3204873
+2015,The Msunduzi,KZN225,fruitless,435396.0,KwaZulu-Natal,30.5743164,30.5743164
+2015,The Msunduzi,KZN225,irregular,708444.0,KwaZulu-Natal,30.5743164,30.5743164
+2015,The Msunduzi,KZN225,unauthorised,0.0,KwaZulu-Natal,30.5743164,30.5743164
+2015,Mkhambathini,KZN226,fruitless,2966935.0,KwaZulu-Natal,30.112735,30.112735
+2015,Mkhambathini,KZN226,irregular,1354893.0,KwaZulu-Natal,30.112735,30.112735
+2015,Mkhambathini,KZN226,unauthorised,0.0,KwaZulu-Natal,30.112735,30.112735
+2015,Richmond,KZN227,fruitless,176.0,KwaZulu-Natal,30.112735,30.112735
+2015,Richmond,KZN227,irregular,245892.0,KwaZulu-Natal,30.112735,30.112735
+2015,Richmond,KZN227,unauthorised,36107.0,KwaZulu-Natal,30.112735,30.112735
+2015,Emnambithi/Ladysmith,KZN232,fruitless,22232.0,KwaZulu-Natal,29.8352303,29.8352303
+2015,Emnambithi/Ladysmith,KZN232,irregular,6772.0,KwaZulu-Natal,29.8352303,29.8352303
+2015,Emnambithi/Ladysmith,KZN232,unauthorised,0.0,KwaZulu-Natal,29.8352303,29.8352303
+2015,Indaka,KZN233,fruitless,1700.0,KwaZulu-Natal,30.3824842,30.3824842
+2015,Indaka,KZN233,irregular,2889002.0,KwaZulu-Natal,30.3824842,30.3824842
+2015,Indaka,KZN233,unauthorised,424706.0,KwaZulu-Natal,30.3824842,30.3824842
+2015,Umtshezi,KZN234,fruitless,0.0,KwaZulu-Natal,30.5739579,30.5739579
+2015,Umtshezi,KZN234,irregular,1840267.0,KwaZulu-Natal,30.5739579,30.5739579
+2015,Umtshezi,KZN234,unauthorised,21275398.0,KwaZulu-Natal,30.5739579,30.5739579
+2015,Okhahlamba,KZN235,fruitless,905124.0,KwaZulu-Natal,30.2974199,30.2974199
+2015,Okhahlamba,KZN235,irregular,2934394.0,KwaZulu-Natal,30.2974199,30.2974199
+2015,Okhahlamba,KZN235,unauthorised,0.0,KwaZulu-Natal,30.2974199,30.2974199
+2015,Imbabazane,KZN236,fruitless,58052.0,KwaZulu-Natal,29.7807856,29.7807856
+2015,Imbabazane,KZN236,irregular,0.0,KwaZulu-Natal,29.7807856,29.7807856
+2015,Imbabazane,KZN236,unauthorised,0.0,KwaZulu-Natal,29.7807856,29.7807856
+2015,Endumeni,KZN241,fruitless,0.0,KwaZulu-Natal,30.107222,30.107222
+2015,Endumeni,KZN241,irregular,125133.0,KwaZulu-Natal,30.107222,30.107222
+2015,Endumeni,KZN241,unauthorised,0.0,KwaZulu-Natal,30.107222,30.107222
+2015,Nqutu,KZN242,fruitless,4740.0,KwaZulu-Natal,30.0202964,30.0202964
+2015,Nqutu,KZN242,irregular,2299043.0,KwaZulu-Natal,30.0202964,30.0202964
+2015,Nqutu,KZN242,unauthorised,0.0,KwaZulu-Natal,30.0202964,30.0202964
+2015,Msinga,KZN244,fruitless,0.0,KwaZulu-Natal,29.3250347,29.3250347
+2015,Msinga,KZN244,irregular,0.0,KwaZulu-Natal,29.3250347,29.3250347
+2015,Msinga,KZN244,unauthorised,16675512.0,KwaZulu-Natal,29.3250347,29.3250347
+2015,Umvoti,KZN245,fruitless,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2015,Umvoti,KZN245,irregular,15371555.0,KwaZulu-Natal,29.6864574,29.6864574
+2015,Umvoti,KZN245,unauthorised,0.0,KwaZulu-Natal,29.6864574,29.6864574
+2015,Newcastle,KZN252,fruitless,4236.0,KwaZulu-Natal,30.2343393,30.2343393
+2015,Newcastle,KZN252,irregular,33314231.0,KwaZulu-Natal,30.2343393,30.2343393
+2015,Newcastle,KZN252,unauthorised,0.0,KwaZulu-Natal,30.2343393,30.2343393
+2015,Emadlangeni,KZN253,fruitless,39342.0,KwaZulu-Natal,30.6746303,30.6746303
+2015,Emadlangeni,KZN253,irregular,2237836.0,KwaZulu-Natal,30.6746303,30.6746303
+2015,Emadlangeni,KZN253,unauthorised,1457357.0,KwaZulu-Natal,30.6746303,30.6746303
+2015,Dannhauser,KZN254,fruitless,0.0,KwaZulu-Natal,30.4357631,30.4357631
+2015,Dannhauser,KZN254,irregular,2074531.0,KwaZulu-Natal,30.4357631,30.4357631
+2015,Dannhauser,KZN254,unauthorised,0.0,KwaZulu-Natal,30.4357631,30.4357631
+2015,eDumbe,KZN261,fruitless,784156.0,KwaZulu-Natal,30.6199895,30.6199895
+2015,eDumbe,KZN261,irregular,33407534.0,KwaZulu-Natal,30.6199895,30.6199895
+2015,eDumbe,KZN261,unauthorised,13873202.0,KwaZulu-Natal,30.6199895,30.6199895
+2015,uPhongolo,KZN262,fruitless,60117.0,KwaZulu-Natal,29.9971769,29.9971769
+2015,uPhongolo,KZN262,irregular,18088549.0,KwaZulu-Natal,29.9971769,29.9971769
+2015,uPhongolo,KZN262,unauthorised,15895559.0,KwaZulu-Natal,29.9971769,29.9971769
+2015,Abaqulusi,KZN263,fruitless,562506.0,KwaZulu-Natal,30.315775,30.315775
+2015,Abaqulusi,KZN263,irregular,23424679.0,KwaZulu-Natal,30.315775,30.315775
+2015,Abaqulusi,KZN263,unauthorised,78834448.0,KwaZulu-Natal,30.315775,30.315775
+2015,Nongoma,KZN265,fruitless,162848.0,KwaZulu-Natal,30.0202964,30.0202964
+2015,Nongoma,KZN265,irregular,6303730.0,KwaZulu-Natal,30.0202964,30.0202964
+2015,Nongoma,KZN265,unauthorised,5698082.0,KwaZulu-Natal,30.0202964,30.0202964
+2015,Ulundi,KZN266,fruitless,7570111.0,KwaZulu-Natal,30.8039474,30.8039474
+2015,Ulundi,KZN266,irregular,2805682.0,KwaZulu-Natal,30.8039474,30.8039474
+2015,Ulundi,KZN266,unauthorised,46394236.0,KwaZulu-Natal,30.8039474,30.8039474
+2015,Umhlabuyalingana,KZN271,fruitless,4084.0,KwaZulu-Natal,31.5370003,31.5370003
+2015,Umhlabuyalingana,KZN271,irregular,2524451.0,KwaZulu-Natal,31.5370003,31.5370003
+2015,Umhlabuyalingana,KZN271,unauthorised,0.0,KwaZulu-Natal,31.5370003,31.5370003
+2015,Jozini,KZN272,fruitless,917080.0,KwaZulu-Natal,30.9876321,30.9876321
+2015,Jozini,KZN272,irregular,57643856.0,KwaZulu-Natal,30.9876321,30.9876321
+2015,Jozini,KZN272,unauthorised,0.0,KwaZulu-Natal,30.9876321,30.9876321
+2015,The Big 5 False Bay,KZN273,fruitless,168843.0,KwaZulu-Natal,31.7195459,31.7195459
+2015,The Big 5 False Bay,KZN273,irregular,11206789.0,KwaZulu-Natal,31.7195459,31.7195459
+2015,The Big 5 False Bay,KZN273,unauthorised,31146.0,KwaZulu-Natal,31.7195459,31.7195459
+2015,Hlabisa,KZN274,fruitless,301466.0,KwaZulu-Natal,31.442761,31.442761
+2015,Hlabisa,KZN274,irregular,63592745.0,KwaZulu-Natal,31.442761,31.442761
+2015,Hlabisa,KZN274,unauthorised,10142242.0,KwaZulu-Natal,31.442761,31.442761
+2015,Mtubatuba,KZN275,fruitless,376817.0,KwaZulu-Natal,32.4467238,32.4467238
+2015,Mtubatuba,KZN275,irregular,3892328.0,KwaZulu-Natal,32.4467238,32.4467238
+2015,Mtubatuba,KZN275,unauthorised,12353992.0,KwaZulu-Natal,32.4467238,32.4467238
+2015,Mfolozi,KZN281,fruitless,0.0,KwaZulu-Natal,32.0650697,32.0650697
+2015,Mfolozi,KZN281,irregular,23705325.0,KwaZulu-Natal,32.0650697,32.0650697
+2015,Mfolozi,KZN281,unauthorised,21453748.0,KwaZulu-Natal,32.0650697,32.0650697
+2015,uMhlathuze,KZN282,fruitless,0.0,KwaZulu-Natal,32.3107517,32.3107517
+2015,uMhlathuze,KZN282,irregular,0.0,KwaZulu-Natal,32.3107517,32.3107517
+2015,uMhlathuze,KZN282,unauthorised,0.0,KwaZulu-Natal,32.3107517,32.3107517
+2015,Ntambanana,KZN283,fruitless,0.0,KwaZulu-Natal,31.8648002,31.8648002
+2015,Ntambanana,KZN283,irregular,1467744.0,KwaZulu-Natal,31.8648002,31.8648002
+2015,Ntambanana,KZN283,unauthorised,0.0,KwaZulu-Natal,31.8648002,31.8648002
+2015,uMlalazi,KZN284,fruitless,40942.0,KwaZulu-Natal,32.2880726,32.2880726
+2015,uMlalazi,KZN284,irregular,4428239.0,KwaZulu-Natal,32.2880726,32.2880726
+2015,uMlalazi,KZN284,unauthorised,14201658.0,KwaZulu-Natal,32.2880726,32.2880726
+2015,Mthonjaneni,KZN285,fruitless,12258.0,KwaZulu-Natal,32.259717,32.259717
+2015,Mthonjaneni,KZN285,irregular,9023826.0,KwaZulu-Natal,32.259717,32.259717
+2015,Mthonjaneni,KZN285,unauthorised,0.0,KwaZulu-Natal,32.259717,32.259717
+2015,Nkandla,KZN286,fruitless,151214.0,KwaZulu-Natal,31.947311,31.947311
+2015,Nkandla,KZN286,irregular,15203613.0,KwaZulu-Natal,31.947311,31.947311
+2015,Nkandla,KZN286,unauthorised,0.0,KwaZulu-Natal,31.947311,31.947311
+2015,Mandeni,KZN291,fruitless,31137.0,KwaZulu-Natal,31.7394939,31.7394939
+2015,Mandeni,KZN291,irregular,217681.0,KwaZulu-Natal,31.7394939,31.7394939
+2015,Mandeni,KZN291,unauthorised,22171662.0,KwaZulu-Natal,31.7394939,31.7394939
+2015,KwaDukuza,KZN292,fruitless,433610.0,KwaZulu-Natal,31.4913182,31.4913182
+2015,KwaDukuza,KZN292,irregular,86441994.0,KwaZulu-Natal,31.4913182,31.4913182
+2015,KwaDukuza,KZN292,unauthorised,0.0,KwaZulu-Natal,31.4913182,31.4913182
+2015,Ndwedwe,KZN293,fruitless,0.0,KwaZulu-Natal,31.3998995,31.3998995
+2015,Ndwedwe,KZN293,irregular,3485796.0,KwaZulu-Natal,31.3998995,31.3998995
+2015,Ndwedwe,KZN293,unauthorised,2068176.0,KwaZulu-Natal,31.3998995,31.3998995
+2015,Maphumulo,KZN294,fruitless,130946.0,KwaZulu-Natal,31.0894002,31.0894002
+2015,Maphumulo,KZN294,irregular,23693393.0,KwaZulu-Natal,31.0894002,31.0894002
+2015,Maphumulo,KZN294,unauthorised,12412926.0,KwaZulu-Natal,31.0894002,31.0894002
+2015,Ingwe,KZN431,fruitless,59418.0,KwaZulu-Natal,31.4684703,31.4684703
+2015,Ingwe,KZN431,irregular,11447406.0,KwaZulu-Natal,31.4684703,31.4684703
+2015,Ingwe,KZN431,unauthorised,6018053.0,KwaZulu-Natal,31.4684703,31.4684703
+2015,Kwa Sani,KZN432,fruitless,2696.0,KwaZulu-Natal,31.2892229,31.2892229
+2015,Kwa Sani,KZN432,irregular,4700849.0,KwaZulu-Natal,31.2892229,31.2892229
+2015,Kwa Sani,KZN432,unauthorised,7362552.0,KwaZulu-Natal,31.2892229,31.2892229
+2015,Greater Kokstad,KZN433,fruitless,213705.0,KwaZulu-Natal,30.9417368,30.9417368
+2015,Greater Kokstad,KZN433,irregular,2167063.0,KwaZulu-Natal,30.9417368,30.9417368
+2015,Greater Kokstad,KZN433,unauthorised,0.0,KwaZulu-Natal,30.9417368,30.9417368
+2015,Ubuhlebezwe,KZN434,fruitless,0.0,KwaZulu-Natal,31.03351,31.03351
+2015,Ubuhlebezwe,KZN434,irregular,4156107.0,KwaZulu-Natal,31.03351,31.03351
+2015,Ubuhlebezwe,KZN434,unauthorised,0.0,KwaZulu-Natal,31.03351,31.03351
+2015,Umzimkhulu,KZN435,fruitless,0.0,KwaZulu-Natal,29.8815203,29.8815203
+2015,Umzimkhulu,KZN435,irregular,2253500.0,KwaZulu-Natal,29.8815203,29.8815203
+2015,Umzimkhulu,KZN435,unauthorised,0.0,KwaZulu-Natal,29.8815203,29.8815203
+2015,Greater Giyani,LIM331,fruitless,29402.0,KwaZulu-Natal,29.5107708,29.5107708
+2015,Greater Giyani,LIM331,irregular,16847375.0,KwaZulu-Natal,29.5107708,29.5107708
+2015,Greater Giyani,LIM331,unauthorised,0.0,KwaZulu-Natal,29.5107708,29.5107708
+2015,Greater Letaba,LIM332,fruitless,21668.0,KwaZulu-Natal,29.3714909,29.3714909
+2015,Greater Letaba,LIM332,irregular,55580749.0,KwaZulu-Natal,29.3714909,29.3714909
+2015,Greater Letaba,LIM332,unauthorised,42261407.0,KwaZulu-Natal,29.3714909,29.3714909
+2015,Greater Tzaneen,LIM333,fruitless,1320482.0,KwaZulu-Natal,30.0665236,30.0665236
+2015,Greater Tzaneen,LIM333,irregular,62445004.0,KwaZulu-Natal,30.0665236,30.0665236
+2015,Greater Tzaneen,LIM333,unauthorised,25387498.0,KwaZulu-Natal,30.0665236,30.0665236
+2015,Ba-Phalaborwa,LIM334,fruitless,6105742.0,KwaZulu-Natal,29.6962677,29.6962677
+2015,Ba-Phalaborwa,LIM334,irregular,10024147.0,KwaZulu-Natal,29.6962677,29.6962677
+2015,Ba-Phalaborwa,LIM334,unauthorised,46515138.0,KwaZulu-Natal,29.6962677,29.6962677
+2015,Maruleng,LIM335,fruitless,1257519.0,Limpopo,30.8039474,30.8039474
+2015,Maruleng,LIM335,irregular,3325321.0,Limpopo,30.8039474,30.8039474
+2015,Maruleng,LIM335,unauthorised,0.0,Limpopo,30.8039474,30.8039474
+2015,Musina,LIM341,fruitless,1501898.0,Limpopo,30.2974199,30.2974199
+2015,Musina,LIM341,irregular,8383902.0,Limpopo,30.2974199,30.2974199
+2015,Musina,LIM341,unauthorised,32079700.0,Limpopo,30.2974199,30.2974199
+2015,Mutale,LIM342,fruitless,2028363.0,Limpopo,30.0665236,30.0665236
+2015,Mutale,LIM342,irregular,179666.0,Limpopo,30.0665236,30.0665236
+2015,Mutale,LIM342,unauthorised,0.0,Limpopo,30.0665236,30.0665236
+2015,Thulamela,LIM343,fruitless,478999.0,Limpopo,31.1406753,31.1406753
+2015,Thulamela,LIM343,irregular,1879957.0,Limpopo,31.1406753,31.1406753
+2015,Thulamela,LIM343,unauthorised,14372207.0,Limpopo,31.1406753,31.1406753
+2015,Makhado,LIM344,fruitless,4824229.0,Limpopo,30.9576681,30.9576681
+2015,Makhado,LIM344,irregular,78766187.0,Limpopo,30.9576681,30.9576681
+2015,Makhado,LIM344,unauthorised,0.0,Limpopo,30.9576681,30.9576681
+2015,Blouberg,LIM351,fruitless,42877.0,Limpopo,29.6962677,29.6962677
+2015,Blouberg,LIM351,irregular,26326253.0,Limpopo,29.6962677,29.6962677
+2015,Blouberg,LIM351,unauthorised,39613634.0,Limpopo,29.6962677,29.6962677
+2015,Aganang,LIM352,fruitless,62563.0,Limpopo,30.8039474,30.8039474
+2015,Aganang,LIM352,irregular,13606164.0,Limpopo,30.8039474,30.8039474
+2015,Aganang,LIM352,unauthorised,1282238.0,Limpopo,30.8039474,30.8039474
+2015,Molemole,LIM353,fruitless,22000.0,Limpopo,30.6199895,30.6199895
+2015,Molemole,LIM353,irregular,1340037.0,Limpopo,30.6199895,30.6199895
+2015,Molemole,LIM353,unauthorised,5600351.0,Limpopo,30.6199895,30.6199895
+2015,Polokwane,LIM354,fruitless,1603457.0,Limpopo,29.9070436,29.9070436
+2015,Polokwane,LIM354,irregular,297567685.0,Limpopo,29.9070436,29.9070436
+2015,Polokwane,LIM354,unauthorised,231772687.0,Limpopo,29.9070436,29.9070436
+2015,Lepele-Nkumpi,LIM355,fruitless,1042234.0,Limpopo,28.9950702,28.9950702
+2015,Lepele-Nkumpi,LIM355,irregular,8594749.0,Limpopo,28.9950702,28.9950702
+2015,Lepele-Nkumpi,LIM355,unauthorised,5287088.0,Limpopo,28.9950702,28.9950702
+2015,Thabazimbi,LIM361,fruitless,18293692.0,Limpopo,29.0925356,29.0925356
+2015,Thabazimbi,LIM361,irregular,13231860.0,Limpopo,29.0925356,29.0925356
+2015,Thabazimbi,LIM361,unauthorised,30815935.0,Limpopo,29.0925356,29.0925356
+2015,Lephalale,LIM362,fruitless,0.0,Limpopo,29.6962677,29.6962677
+2015,Lephalale,LIM362,irregular,48945086.0,Limpopo,29.6962677,29.6962677
+2015,Lephalale,LIM362,unauthorised,0.0,Limpopo,29.6962677,29.6962677
+2015,Mookgopong,LIM364,fruitless,4776782.0,Limpopo,29.4485367,29.4485367
+2015,Mookgopong,LIM364,irregular,783501.0,Limpopo,29.4485367,29.4485367
+2015,Mookgopong,LIM364,unauthorised,36086589.0,Limpopo,29.4485367,29.4485367
+2015,Modimolle,LIM365,fruitless,352405.0,Limpopo,29.6499162,29.6499162
+2015,Modimolle,LIM365,irregular,41580053.0,Limpopo,29.6499162,29.6499162
+2015,Modimolle,LIM365,unauthorised,23802291.0,Limpopo,29.6499162,29.6499162
+2015,Bela-Bela,LIM366,fruitless,122.0,Limpopo,27.3616476,27.3616476
+2015,Bela-Bela,LIM366,irregular,3485146.0,Limpopo,27.3616476,27.3616476
+2015,Bela-Bela,LIM366,unauthorised,0.0,Limpopo,27.3616476,27.3616476
+2015,Mogalakwena,LIM367,fruitless,385320.0,Limpopo,27.7373373,27.7373373
+2015,Mogalakwena,LIM367,irregular,175512018.0,Limpopo,27.7373373,27.7373373
+2015,Mogalakwena,LIM367,unauthorised,47929088.0,Limpopo,27.7373373,27.7373373
+2015,Ephraim Mogale,LIM471,fruitless,362146.0,Limpopo,28.7664408,28.7664408
+2015,Ephraim Mogale,LIM471,irregular,26865367.0,Limpopo,28.7664408,28.7664408
+2015,Ephraim Mogale,LIM471,unauthorised,5915515.0,Limpopo,28.7664408,28.7664408
+2015,Elias Motsoaledi,LIM472,fruitless,2585743.0,Limpopo,28.2058768,28.2058768
+2015,Elias Motsoaledi,LIM472,irregular,22748812.0,Limpopo,28.2058768,28.2058768
+2015,Elias Motsoaledi,LIM472,unauthorised,11202663.0,Limpopo,28.2058768,28.2058768
+2015,Makhuduthamaga,LIM473,fruitless,395000.0,Limpopo,28.2526623,28.2526623
+2015,Makhuduthamaga,LIM473,irregular,31817244.0,Limpopo,28.2526623,28.2526623
+2015,Makhuduthamaga,LIM473,unauthorised,9053819.0,Limpopo,28.2526623,28.2526623
+2015,Fetakgomo,LIM474,fruitless,13967.0,Limpopo,29.0138916,29.0138916
+2015,Fetakgomo,LIM474,irregular,0.0,Limpopo,29.0138916,29.0138916
+2015,Fetakgomo,LIM474,unauthorised,0.0,Limpopo,29.0138916,29.0138916
+2015,Greater Tubatse,LIM475,fruitless,1531202.0,Limpopo,29.3250347,29.3250347
+2015,Greater Tubatse,LIM475,irregular,130211637.0,Limpopo,29.3250347,29.3250347
+2015,Greater Tubatse,LIM475,unauthorised,10957535.0,Limpopo,29.3250347,29.3250347
+2015,Mangaung,MAN,fruitless,209103.0,Limpopo,29.3949458,29.3949458
+2015,Mangaung,MAN,irregular,8066258.0,Limpopo,29.3949458,29.3949458
+2015,Mangaung,MAN,unauthorised,987132533.0,Limpopo,29.3949458,29.3949458
+2015,Chief Albert Luthuli,MP301,fruitless,5025514.0,Limpopo,29.8352303,29.8352303
+2015,Chief Albert Luthuli,MP301,irregular,59182681.0,Limpopo,29.8352303,29.8352303
+2015,Chief Albert Luthuli,MP301,unauthorised,52302635.0,Limpopo,29.8352303,29.8352303
+2015,Msukaligwa,MP302,fruitless,13174743.0,Limpopo,29.8352303,29.8352303
+2015,Msukaligwa,MP302,irregular,92124561.0,Limpopo,29.8352303,29.8352303
+2015,Msukaligwa,MP302,unauthorised,166893676.0,Limpopo,29.8352303,29.8352303
+2015,Mkhondo,MP303,fruitless,7111473.0,Limpopo,30.2512728,30.2512728
+2015,Mkhondo,MP303,irregular,65274637.0,Limpopo,30.2512728,30.2512728
+2015,Mkhondo,MP303,unauthorised,207204590.0,Limpopo,30.2512728,30.2512728
+2015,Dr Pixley Ka Isaka Seme,MP304,fruitless,11348.0,Free State,26.3249438,26.3249438
+2015,Dr Pixley Ka Isaka Seme,MP304,irregular,22065254.0,Free State,26.3249438,26.3249438
+2015,Dr Pixley Ka Isaka Seme,MP304,unauthorised,0.0,Free State,26.3249438,26.3249438
+2015,Lekwa,MP305,fruitless,25349736.0,Mpumalanga,30.3325113,30.3325113
+2015,Lekwa,MP305,irregular,71722661.0,Mpumalanga,30.3325113,30.3325113
+2015,Lekwa,MP305,unauthorised,68349746.0,Mpumalanga,30.3325113,30.3325113
+2015,Dipaleseng,MP306,fruitless,932455.0,Mpumalanga,30.0665236,30.0665236
+2015,Dipaleseng,MP306,irregular,13526804.0,Mpumalanga,30.0665236,30.0665236
+2015,Dipaleseng,MP306,unauthorised,12373860.0,Mpumalanga,30.0665236,30.0665236
+2015,Govan Mbeki,MP307,fruitless,28476162.0,Mpumalanga,30.6199895,30.6199895
+2015,Govan Mbeki,MP307,irregular,48385134.0,Mpumalanga,30.6199895,30.6199895
+2015,Govan Mbeki,MP307,unauthorised,0.0,Mpumalanga,30.6199895,30.6199895
+2015,Victor Khanye,MP311,fruitless,123279.0,Mpumalanga,29.8815203,29.8815203
+2015,Victor Khanye,MP311,irregular,339904.0,Mpumalanga,29.8815203,29.8815203
+2015,Victor Khanye,MP311,unauthorised,148609425.0,Mpumalanga,29.8815203,29.8815203
+2015,Emalahleni,MP312,fruitless,95422229.0,Mpumalanga,29.3250347,29.3250347
+2015,Emalahleni,MP312,irregular,782572.0,Mpumalanga,29.3250347,29.3250347
+2015,Emalahleni,MP312,unauthorised,232751483.0,Mpumalanga,29.3250347,29.3250347
+2015,Steve Tshwete,MP313,fruitless,124556.0,Mpumalanga,28.5797981,28.5797981
+2015,Steve Tshwete,MP313,irregular,0.0,Mpumalanga,28.5797981,28.5797981
+2015,Steve Tshwete,MP313,unauthorised,58467139.0,Mpumalanga,28.5797981,28.5797981
+2015,Emakhazeni,MP314,fruitless,4080324.0,Mpumalanga,29.1390642,29.1390642
+2015,Emakhazeni,MP314,irregular,2316094.0,Mpumalanga,29.1390642,29.1390642
+2015,Emakhazeni,MP314,unauthorised,44269845.0,Mpumalanga,29.1390642,29.1390642
+2015,Thembisile,MP315,fruitless,2290529.0,Mpumalanga,28.8130675,28.8130675
+2015,Thembisile,MP315,irregular,50996479.0,Mpumalanga,28.8130675,28.8130675
+2015,Thembisile,MP315,unauthorised,115850336.0,Mpumalanga,28.8130675,28.8130675
+2015,Dr JS Moroka,MP316,fruitless,71095.0,Mpumalanga,29.2553229,29.2553229
+2015,Dr JS Moroka,MP316,irregular,124255190.0,Mpumalanga,29.2553229,29.2553229
+2015,Dr JS Moroka,MP316,unauthorised,12880774.0,Mpumalanga,29.2553229,29.2553229
+2015,Thaba Chweu,MP321,fruitless,35901823.0,Mpumalanga,29.4681751,29.4681751
+2015,Thaba Chweu,MP321,irregular,56976114.0,Mpumalanga,29.4681751,29.4681751
+2015,Thaba Chweu,MP321,unauthorised,104711867.0,Mpumalanga,29.4681751,29.4681751
+2015,Mbombela,MP322,fruitless,11428911.0,Mpumalanga,30.0665236,30.0665236
+2015,Mbombela,MP322,irregular,107040519.0,Mpumalanga,30.0665236,30.0665236
+2015,Mbombela,MP322,unauthorised,103180413.0,Mpumalanga,30.0665236,30.0665236
+2015,Umjindi,MP323,fruitless,2447766.0,Mpumalanga,28.9062794,28.9062794
+2015,Umjindi,MP323,irregular,29075326.0,Mpumalanga,28.9062794,28.9062794
+2015,Umjindi,MP323,unauthorised,12744466.0,Mpumalanga,28.9062794,28.9062794
+2015,Nkomazi,MP324,fruitless,4120861.0,Mpumalanga,28.8130675,28.8130675
+2015,Nkomazi,MP324,irregular,32724167.0,Mpumalanga,28.8130675,28.8130675
+2015,Nkomazi,MP324,unauthorised,118053610.0,Mpumalanga,28.8130675,28.8130675
+2015,Bushbuckridge,MP325,fruitless,55666.0,Mpumalanga,30.7791913,30.7791913
+2015,Bushbuckridge,MP325,irregular,71642234.0,Mpumalanga,30.7791913,30.7791913
+2015,Bushbuckridge,MP325,unauthorised,47529000.0,Mpumalanga,30.7791913,30.7791913
+2015,Richtersveld,NC061,fruitless,104008.0,Mpumalanga,31.03351,31.03351
+2015,Richtersveld,NC061,irregular,16160991.0,Mpumalanga,31.03351,31.03351
+2015,Richtersveld,NC061,unauthorised,7008457.0,Mpumalanga,31.03351,31.03351
+2015,Nama Khoi,NC062,fruitless,6874963.0,Mpumalanga,31.7195459,31.7195459
+2015,Nama Khoi,NC062,irregular,40413477.0,Mpumalanga,31.7195459,31.7195459
+2015,Nama Khoi,NC062,unauthorised,33968290.0,Mpumalanga,31.7195459,31.7195459
+2015,Kamiesberg,NC064,fruitless,890671.0,Mpumalanga,31.1710389,31.1710389
+2015,Kamiesberg,NC064,irregular,1235759.0,Mpumalanga,31.1710389,31.1710389
+2015,Kamiesberg,NC064,unauthorised,18055902.0,Mpumalanga,31.1710389,31.1710389
+2015,Hantam,NC065,fruitless,886426.0,Northern Cape,17.1011931,17.1011931
+2015,Hantam,NC065,irregular,8187135.0,Northern Cape,17.1011931,17.1011931
+2015,Hantam,NC065,unauthorised,2267899.0,Northern Cape,17.1011931,17.1011931
+2015,Karoo Hoogland,NC066,fruitless,128523.0,Northern Cape,17.8583868,17.8583868
+2015,Karoo Hoogland,NC066,irregular,11934997.0,Northern Cape,17.8583868,17.8583868
+2015,Karoo Hoogland,NC066,unauthorised,10599769.0,Northern Cape,17.8583868,17.8583868
+2015,Khâi-Ma,NC067,fruitless,148272.0,Northern Cape,17.8583868,17.8583868
+2015,Khâi-Ma,NC067,irregular,0.0,Northern Cape,17.8583868,17.8583868
+2015,Khâi-Ma,NC067,unauthorised,1794577.0,Northern Cape,17.8583868,17.8583868
+2015,Ubuntu,NC071,fruitless,777738.0,Northern Cape,19.949686,19.949686
+2015,Ubuntu,NC071,irregular,5795916.0,Northern Cape,19.949686,19.949686
+2015,Ubuntu,NC071,unauthorised,45933156.0,Northern Cape,19.949686,19.949686
+2015,Umsobomvu,NC072,fruitless,0.0,Northern Cape,20.902977,20.902977
+2015,Umsobomvu,NC072,irregular,2268090.0,Northern Cape,20.902977,20.902977
+2015,Umsobomvu,NC072,unauthorised,7145759.0,Northern Cape,20.902977,20.902977
+2015,Emthanjeni,NC073,fruitless,0.0,Northern Cape,19.237649,19.237649
+2015,Emthanjeni,NC073,irregular,10598860.0,Northern Cape,19.237649,19.237649
+2015,Emthanjeni,NC073,unauthorised,69181215.0,Northern Cape,19.237649,19.237649
+2015,Kareeberg,NC074,fruitless,0.0,Northern Cape,23.1918021,23.1918021
+2015,Kareeberg,NC074,irregular,0.0,Northern Cape,23.1918021,23.1918021
+2015,Kareeberg,NC074,unauthorised,2798665.0,Northern Cape,23.1918021,23.1918021
+2015,Renosterberg,NC075,fruitless,3386245.0,Northern Cape,24.9991464,24.9991464
+2015,Renosterberg,NC075,irregular,21326743.0,Northern Cape,24.9991464,24.9991464
+2015,Renosterberg,NC075,unauthorised,32408914.0,Northern Cape,24.9991464,24.9991464
+2015,Thembelihle,NC076,fruitless,2197714.0,Northern Cape,24.0087533,24.0087533
+2015,Thembelihle,NC076,irregular,7416312.0,Northern Cape,24.0087533,24.0087533
+2015,Thembelihle,NC076,unauthorised,14904549.0,Northern Cape,24.0087533,24.0087533
+2015,Siyathemba,NC077,fruitless,36804.0,Northern Cape,22.047637,22.047637
+2015,Siyathemba,NC077,irregular,2866735.0,Northern Cape,22.047637,22.047637
+2015,Siyathemba,NC077,unauthorised,25380356.0,Northern Cape,22.047637,22.047637
+2015,Siyancuma,NC078,fruitless,4389751.0,Northern Cape,24.3341432,24.3341432
+2015,Siyancuma,NC078,irregular,4751545.0,Northern Cape,24.3341432,24.3341432
+2015,Siyancuma,NC078,unauthorised,58079855.0,Northern Cape,24.3341432,24.3341432
+2015,Mier,NC081,fruitless,386504.0,Northern Cape,23.8584737,23.8584737
+2015,Mier,NC081,irregular,23552712.0,Northern Cape,23.8584737,23.8584737
+2015,Mier,NC081,unauthorised,8269924.0,Northern Cape,23.8584737,23.8584737
+2015,Kai !Garib,NC082,fruitless,1276598.0,Northern Cape,22.5245093,22.5245093
+2015,Kai !Garib,NC082,irregular,5121827.0,Northern Cape,22.5245093,22.5245093
+2015,Kai !Garib,NC082,unauthorised,63233529.0,Northern Cape,22.5245093,22.5245093
+2015,//Khara Hais,NC083,fruitless,1283209.0,Northern Cape,23.4776098,23.4776098
+2015,//Khara Hais,NC083,irregular,21383021.0,Northern Cape,23.4776098,23.4776098
+2015,//Khara Hais,NC083,unauthorised,25589669.0,Northern Cape,23.4776098,23.4776098
+2015,!Kheis,NC084,fruitless,1121162.0,Northern Cape,20.2832217,20.2832217
+2015,!Kheis,NC084,irregular,0.0,Northern Cape,20.2832217,20.2832217
+2015,!Kheis,NC084,unauthorised,6648739.0,Northern Cape,20.2832217,20.2832217
+2015,Tsantsabane,NC085,fruitless,1300071.0,Northern Cape,20.9759699,20.9759699
+2015,Tsantsabane,NC085,irregular,3901168.0,Northern Cape,20.9759699,20.9759699
+2015,Tsantsabane,NC085,unauthorised,6155327.0,Northern Cape,20.9759699,20.9759699
+2015,Kgatelopele,NC086,fruitless,346428.0,Northern Cape,21.242665,21.242665
+2015,Kgatelopele,NC086,irregular,1242771.0,Northern Cape,21.242665,21.242665
+2015,Kgatelopele,NC086,unauthorised,15513168.0,Northern Cape,21.242665,21.242665
+2015,Sol Plaatjie,NC091,fruitless,119692.0,Northern Cape,21.6660725,21.6660725
+2015,Sol Plaatjie,NC091,irregular,212689553.0,Northern Cape,21.6660725,21.6660725
+2015,Sol Plaatjie,NC091,unauthorised,2823634.0,Northern Cape,21.6660725,21.6660725
+2015,Dikgatlong,NC092,fruitless,1379850.0,Northern Cape,23.1918021,23.1918021
+2015,Dikgatlong,NC092,irregular,0.0,Northern Cape,23.1918021,23.1918021
+2015,Dikgatlong,NC092,unauthorised,114528721.0,Northern Cape,23.1918021,23.1918021
+2015,Magareng,NC093,fruitless,1328610.0,Northern Cape,23.6680747,23.6680747
+2015,Magareng,NC093,irregular,352665.0,Northern Cape,23.6680747,23.6680747
+2015,Magareng,NC093,unauthorised,35168896.0,Northern Cape,23.6680747,23.6680747
+2015,Phokwane,NC094,fruitless,365626.0,Northern Cape,24.6667939,24.6667939
+2015,Phokwane,NC094,irregular,4282.0,Northern Cape,24.6667939,24.6667939
+2015,Phokwane,NC094,unauthorised,134959840.0,Northern Cape,24.6667939,24.6667939
+2015,Joe Morolong,NC451,fruitless,111326.0,Northern Cape,24.5197,24.5197
+2015,Joe Morolong,NC451,irregular,1826990.0,Northern Cape,24.5197,24.5197
+2015,Joe Morolong,NC451,unauthorised,42253388.0,Northern Cape,24.5197,24.5197
+2015,Ga-Segonyana,NC452,fruitless,412479.0,Northern Cape,24.7617836,24.7617836
+2015,Ga-Segonyana,NC452,irregular,100605555.0,Northern Cape,24.7617836,24.7617836
+2015,Ga-Segonyana,NC452,unauthorised,0.0,Northern Cape,24.7617836,24.7617836
+2015,Gamagara,NC453,fruitless,4510.0,Northern Cape,24.7617836,24.7617836
+2015,Gamagara,NC453,irregular,204612861.0,Northern Cape,24.7617836,24.7617836
+2015,Gamagara,NC453,unauthorised,63332444.0,Northern Cape,24.7617836,24.7617836
+2015,Nelson Mandela Bay,NMA,fruitless,422585598.0,Northern Cape,23.287085,23.287085
+2015,Nelson Mandela Bay,NMA,irregular,1348338879.0,Northern Cape,23.287085,23.287085
+2015,Nelson Mandela Bay,NMA,unauthorised,34403001.0,Northern Cape,23.287085,23.287085
+2015,Moretele,NW371,fruitless,15210.0,Northern Cape,23.4776098,23.4776098
+2015,Moretele,NW371,irregular,3919158.0,Northern Cape,23.4776098,23.4776098
+2015,Moretele,NW371,unauthorised,63636225.0,Northern Cape,23.4776098,23.4776098
+2015,Local Municipality of Madibeng,NW372,fruitless,6383739.0,Northern Cape,23.0488541,23.0488541
+2015,Local Municipality of Madibeng,NW372,irregular,243847591.0,Northern Cape,23.0488541,23.0488541
+2015,Local Municipality of Madibeng,NW372,unauthorised,1257503564.0,Northern Cape,23.0488541,23.0488541
+2015,Rustenburg,NW373,fruitless,537000.0,Eastern Cape,25.5681084,25.5681084
+2015,Rustenburg,NW373,irregular,3061581000.0,Eastern Cape,25.5681084,25.5681084
+2015,Rustenburg,NW373,unauthorised,13394000.0,Eastern Cape,25.5681084,25.5681084
+2015,Kgetlengrivier,NW374,fruitless,3824419.0,North West,27.9717606,27.9717606
+2015,Kgetlengrivier,NW374,irregular,119104.0,North West,27.9717606,27.9717606
+2015,Kgetlengrivier,NW374,unauthorised,547554.0,North West,27.9717606,27.9717606
+2015,Moses Kotane,NW375,fruitless,408848.0,North West,27.8311428,27.8311428
+2015,Moses Kotane,NW375,irregular,74376507.0,North West,27.8311428,27.8311428
+2015,Moses Kotane,NW375,unauthorised,6291848.0,North West,27.8311428,27.8311428
+2015,Ratlou,NW381,fruitless,125488.0,North West,27.2676116,27.2676116
+2015,Ratlou,NW381,irregular,8328123.0,North West,27.2676116,27.2676116
+2015,Ratlou,NW381,unauthorised,2602005.0,North West,27.2676116,27.2676116
+2015,Tswaing,NW382,fruitless,9031718.0,North West,26.8910342,26.8910342
+2015,Tswaing,NW382,irregular,6693623.0,North West,26.8910342,26.8910342
+2015,Tswaing,NW382,unauthorised,75614267.0,North West,26.8910342,26.8910342
+2015,Mafikeng,NW383,fruitless,974725.0,North West,26.8910342,26.8910342
+2015,Mafikeng,NW383,irregular,34968887.0,North West,26.8910342,26.8910342
+2015,Mafikeng,NW383,unauthorised,226384737.0,North West,26.8910342,26.8910342
+2015,Ditsobotla,NW384,fruitless,9170709.0,North West,24.9991464,24.9991464
+2015,Ditsobotla,NW384,irregular,1642110.0,North West,24.9991464,24.9991464
+2015,Ditsobotla,NW384,unauthorised,21264256.0,North West,24.9991464,24.9991464
+2015,Ramotshere Moiloa,NW385,fruitless,1454043.0,North West,25.7575196,25.7575196
+2015,Ramotshere Moiloa,NW385,irregular,21736860.0,North West,25.7575196,25.7575196
+2015,Ramotshere Moiloa,NW385,unauthorised,90954904.0,North West,25.7575196,25.7575196
+2015,Naledi,NW392,fruitless,17671394.0,North West,25.5681084,25.5681084
+2015,Naledi,NW392,irregular,2440875.0,North West,25.5681084,25.5681084
+2015,Naledi,NW392,unauthorised,333671280.0,North West,25.5681084,25.5681084
+2015,Mamusa,NW393,fruitless,2342551.0,North West,26.1359431,26.1359431
+2015,Mamusa,NW393,irregular,2162172.0,North West,26.1359431,26.1359431
+2015,Mamusa,NW393,unauthorised,5693305.0,North West,26.1359431,26.1359431
+2015,Greater Taung,NW394,fruitless,63153.0,North West,26.10005,26.10005
+2015,Greater Taung,NW394,irregular,54730927.0,North West,26.10005,26.10005
+2015,Greater Taung,NW394,unauthorised,10016139.0,North West,26.10005,26.10005
+2015,Lekwa-Teemane,NW396,fruitless,5772998.0,North West,24.7142918,24.7142918
+2015,Lekwa-Teemane,NW396,irregular,12216969.0,North West,24.7142918,24.7142918
+2015,Lekwa-Teemane,NW396,unauthorised,56375078.0,North West,24.7142918,24.7142918
+2015,Kagisano/Molopo,NW397,fruitless,283818.0,North West,25.3785719,25.3785719
+2015,Kagisano/Molopo,NW397,irregular,25419587.0,North West,25.3785719,25.3785719
+2015,Kagisano/Molopo,NW397,unauthorised,23403791.0,North West,25.3785719,25.3785719
+2015,Ventersdorp,NW401,fruitless,5595452.0,North West,24.2390498,24.2390498
+2015,Ventersdorp,NW401,irregular,128825.0,North West,24.2390498,24.2390498
+2015,Ventersdorp,NW401,unauthorised,61901116.0,North West,24.2390498,24.2390498
+2015,Tlokwe City Council,NW402,fruitless,0.0,North West,25.3785719,25.3785719
+2015,Tlokwe City Council,NW402,irregular,57537237.0,North West,25.3785719,25.3785719
+2015,Tlokwe City Council,NW402,unauthorised,9121313.0,North West,25.3785719,25.3785719
+2015,City of Matlosana,NW403,fruitless,33986873.0,North West,23.9536466,23.9536466
+2015,City of Matlosana,NW403,irregular,257875124.0,North West,23.9536466,23.9536466
+2015,City of Matlosana,NW403,unauthorised,20051989.0,North West,23.9536466,23.9536466
+2015,Maquassi Hills,NW404,fruitless,7495847.0,North West,26.8910342,26.8910342
+2015,Maquassi Hills,NW404,irregular,5375415.0,North West,26.8910342,26.8910342
+2015,Maquassi Hills,NW404,unauthorised,31178343.0,North West,26.8910342,26.8910342
+2015,City of Tshwane,TSH,fruitless,1032990.0,North West,27.096925,27.096925
+2015,City of Tshwane,TSH,irregular,1099709120.0,North West,27.096925,27.096925
+2015,City of Tshwane,TSH,unauthorised,785504172.0,North West,27.096925,27.096925
+2015,Matzikama,WC011,fruitless,0.0,North West,26.5137964,26.5137964
+2015,Matzikama,WC011,irregular,0.0,North West,26.5137964,26.5137964
+2015,Matzikama,WC011,unauthorised,0.0,North West,26.5137964,26.5137964
+2015,Cederberg,WC012,fruitless,0.0,North West,26.1359431,26.1359431
+2015,Cederberg,WC012,irregular,483901.0,North West,26.1359431,26.1359431
+2015,Cederberg,WC012,unauthorised,1219593.0,North West,26.1359431,26.1359431
+2015,Bergrivier,WC013,fruitless,1773.0,Gauteng,28.3929417,28.3929417
+2015,Bergrivier,WC013,irregular,691067.0,Gauteng,28.3929417,28.3929417
+2015,Bergrivier,WC013,unauthorised,3705846.0,Gauteng,28.3929417,28.3929417
+2015,Saldanha Bay,WC014,fruitless,146451.0,Western Cape,18.5225709,18.5225709
+2015,Saldanha Bay,WC014,irregular,1476630.0,Western Cape,18.5225709,18.5225709
+2015,Saldanha Bay,WC014,unauthorised,390658.0,Western Cape,18.5225709,18.5225709
+2015,Swartland,WC015,fruitless,3473.0,Western Cape,19.0118251,19.0118251
+2015,Swartland,WC015,irregular,1121788.0,Western Cape,19.0118251,19.0118251
+2015,Swartland,WC015,unauthorised,20967339.0,Western Cape,19.0118251,19.0118251
+2015,Witzenberg,WC022,fruitless,0.0,Western Cape,18.7125791,18.7125791
+2015,Witzenberg,WC022,irregular,0.0,Western Cape,18.7125791,18.7125791
+2015,Witzenberg,WC022,unauthorised,7757172.0,Western Cape,18.7125791,18.7125791
+2015,Drakenstein,WC023,fruitless,0.0,Western Cape,18.1903059,18.1903059
+2015,Drakenstein,WC023,irregular,25969917.0,Western Cape,18.1903059,18.1903059
+2015,Drakenstein,WC023,unauthorised,0.0,Western Cape,18.1903059,18.1903059
+2015,Stellenbosch,WC024,fruitless,0.0,Western Cape,18.6624903,18.6624903
+2015,Stellenbosch,WC024,irregular,1512513.0,Western Cape,18.6624903,18.6624903
+2015,Stellenbosch,WC024,unauthorised,49806155.0,Western Cape,18.6624903,18.6624903
+2015,Breede Valley,WC025,fruitless,0.0,Western Cape,19.2831531,19.2831531
+2015,Breede Valley,WC025,irregular,91800.0,Western Cape,19.2831531,19.2831531
+2015,Breede Valley,WC025,unauthorised,106000.0,Western Cape,19.2831531,19.2831531
+2015,Langeberg,WC026,fruitless,0.0,Western Cape,19.04532,19.04532
+2015,Langeberg,WC026,irregular,0.0,Western Cape,19.04532,19.04532
+2015,Langeberg,WC026,unauthorised,19193663.0,Western Cape,19.04532,19.04532
+2015,Theewaterskloof,WC031,fruitless,2851.0,Western Cape,18.9502232,18.9502232
+2015,Theewaterskloof,WC031,irregular,42983847.0,Western Cape,18.9502232,18.9502232
+2015,Theewaterskloof,WC031,unauthorised,0.0,Western Cape,18.9502232,18.9502232
+2015,Overstrand,WC032,fruitless,10582.0,Western Cape,19.4735066,19.4735066
+2015,Overstrand,WC032,irregular,147478.0,Western Cape,19.4735066,19.4735066
+2015,Overstrand,WC032,unauthorised,3715273.0,Western Cape,19.4735066,19.4735066
+2015,Cape Agulhas,WC033,fruitless,18567.0,Western Cape,27.812138,27.812138
+2015,Cape Agulhas,WC033,irregular,717097.0,Western Cape,27.812138,27.812138
+2015,Cape Agulhas,WC033,unauthorised,7445269.0,Western Cape,27.812138,27.812138
+2015,Swellendam,WC034,fruitless,0.0,Western Cape,19.4252453,19.4252453
+2015,Swellendam,WC034,irregular,15127.0,Western Cape,19.4252453,19.4252453
+2015,Swellendam,WC034,unauthorised,0.0,Western Cape,19.4252453,19.4252453
+2015,Kannaland,WC041,fruitless,70356.0,Western Cape,19.4259114,19.4259114
+2015,Kannaland,WC041,irregular,8532194.0,Western Cape,19.4259114,19.4259114
+2015,Kannaland,WC041,unauthorised,32813913.0,Western Cape,19.4259114,19.4259114
+2015,Hessequa,WC042,fruitless,755060.0,Western Cape,20.0449662,20.0449662
+2015,Hessequa,WC042,irregular,13640878.0,Western Cape,20.0449662,20.0449662
+2015,Hessequa,WC042,unauthorised,8545526.0,Western Cape,20.0449662,20.0449662
+2015,Mossel Bay,WC043,fruitless,0.0,Western Cape,20.7185132,20.7185132
+2015,Mossel Bay,WC043,irregular,2279942.0,Western Cape,20.7185132,20.7185132
+2015,Mossel Bay,WC043,unauthorised,21307.0,Western Cape,20.7185132,20.7185132
+2015,George,WC044,fruitless,0.0,Western Cape,21.3798928,21.3798928
+2015,George,WC044,irregular,12241.0,Western Cape,21.3798928,21.3798928
+2015,George,WC044,unauthorised,43535436.0,Western Cape,21.3798928,21.3798928
+2015,Oudtshoorn,WC045,fruitless,4070213.0,Western Cape,21.1891151,21.1891151
+2015,Oudtshoorn,WC045,irregular,110790216.0,Western Cape,21.1891151,21.1891151
+2015,Oudtshoorn,WC045,unauthorised,95248771.0,Western Cape,21.1891151,21.1891151
+2015,Bitou,WC047,fruitless,262200.0,Western Cape,21.9045541,21.9045541
+2015,Bitou,WC047,irregular,45075.0,Western Cape,21.9045541,21.9045541
+2015,Bitou,WC047,unauthorised,0.0,Western Cape,21.9045541,21.9045541
+2015,Knysna,WC048,fruitless,12531.0,Western Cape,22.4768287,22.4768287
+2015,Knysna,WC048,irregular,0.0,Western Cape,22.4768287,22.4768287
+2015,Knysna,WC048,unauthorised,22056976.0,Western Cape,22.4768287,22.4768287
+2015,Laingsburg,WC051,fruitless,64909.0,Western Cape,22.1430215,22.1430215
+2015,Laingsburg,WC051,irregular,31025463.0,Western Cape,22.1430215,22.1430215
+2015,Laingsburg,WC051,unauthorised,23675097.0,Western Cape,22.1430215,22.1430215
+2015,Prince Albert,WC052,fruitless,0.0,Western Cape,23.429984,23.429984
+2015,Prince Albert,WC052,irregular,7990065.0,Western Cape,23.429984,23.429984
+2015,Prince Albert,WC052,unauthorised,75109.0,Western Cape,23.429984,23.429984
+2015,Beaufort West,WC053,fruitless,159670.0,Western Cape,23.049842,23.049842
+2015,Beaufort West,WC053,irregular,15871727.0,Western Cape,23.049842,23.049842
+2015,Beaufort West,WC053,unauthorised,28487953.0,Western Cape,23.049842,23.049842

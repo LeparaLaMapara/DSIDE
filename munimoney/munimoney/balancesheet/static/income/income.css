@@ -1,0 +1,72 @@
+
+.OperatingTransfers {
+	background-color: #9370DB;
+	color: #000000;
+	margin: 0px 0px 05px 0px; 
+	}
+.CapitalTransfers {
+	background-color: #E9967A;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.PropertyRates {
+	background-color: #F4A460;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.OtherRev {
+	background-color: #5687d1;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.InterestExternslInvest {
+	background-color: #F08080;
+	color: #000000;
+	margin: 05px 0px 05px 02px; 
+	}
+.InterestEarnedDebt {
+	background-color: #bbbbbb;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.LicencePermits {
+	background-color: #de783b;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+	}
+.Fines {
+	background-color: #660033;
+	color: #000000;
+	margin: 05px 0px 05px 02px; 
+	}
+.AgencyServices {
+	background-color: #B0C4DE;
+	color: #000000;
+	margin: 05px 0px 05px 0px; 
+    }
+    
+.PPEDisposalGain {
+     background-color: #7b615c;
+     color: #000000;
+     margin: 05px 0px 05px 0px; 
+     }
+    
+.RentFacilitiesEquip {
+     background-color: #FFE4E1;
+    color: #000000;
+     margin: 05px 0px 05px 0px; 
+     }
+
+.PropertyRatesPENALTY {
+    background-color: #E9967A;
+    color: #000000;
+     margin: 05px 0px 05px 0px; 
+    }
+	
+.ServiceCharges{
+    background-color: #8FBC8F;
+    color: #000000;
+     margin: 05px 0px 05px 0px; 
+    }
+       
+		
