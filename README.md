@@ -3,7 +3,7 @@
 
 
 <p align="center">
-   <img src="MN2.jpeg" style="float: right;" width="500" height="300" />
+   <img src="MN2.png" style="float: right;" width="500" height="300" />
   <img src="MN.png" width="500" height="300" />
 </p>
 
