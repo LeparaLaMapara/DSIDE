@@ -7,6 +7,11 @@
   <img src="MN.png" width="500" height="300" />
 </p>
 
+<p align="center">
+   <img src="MN2.png" style="float: right;" width="500" height="300" />
+  <img src="MN.png" width="500" height="300" />
+</p>
+
 
 The project was aimed towards aiding municipalities of South Africa to better measure their performance 
 in terms of Service Delivery and Efficiency. We achieved this through the creation 
