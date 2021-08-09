@@ -1,5 +1,12 @@
 # DSIDE - Municipal Money
 
+
+
+<p align="center">
+  <img src="LogoSample_ByTailorBrands.jpeg" width="500" height="300" />
+</p>
+
+
 The project was aimed towards aiding municipalities of South Africa to better measure their performance 
 in terms of Service Delivery and Efficiency. We achieved this through the creation 
 of a *profiling measure*. Furthermore we investigated which youth characteristics are
