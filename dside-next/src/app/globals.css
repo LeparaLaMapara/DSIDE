@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 122 77;
+    --color-secondary: 255 182 18;
+    --color-accent: 0 35 149;
+    --color-danger: 222 56 49;
+
+    --background: 250 250 250;
+    --foreground: 15 23 42;
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --border: 226 232 240;
+    --sidebar: 255 255 255;
+    --sidebar-foreground: 30 41 59;
+    --sidebar-border: 241 245 249;
+  }
+
+  .dark {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+    --card: 30 41 59;
+    --card-foreground: 248 250 252;
+    --muted: 51 65 85;
+    --muted-foreground: 148 163 184;
+    --border: 51 65 85;
+    --sidebar: 15 23 42;
+    --sidebar-foreground: 226 232 240;
+    --sidebar-border: 51 65 85;
+  }
+
+  * {
+    @apply border-slate-200 dark:border-slate-700;
+  }
+
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Map container */
+  .map-container {
+    @apply w-full rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700;
+    height: 500px;
+  }
+
+  .map-container .leaflet-container {
+    @apply w-full h-full rounded-lg;
+    background: rgb(var(--card));
+  }
+
+  .map-container .leaflet-popup-content-wrapper {
+    @apply bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg shadow-lg;
+  }
+
+  .map-container .leaflet-popup-tip {
+    @apply bg-white dark:bg-slate-800;
+  }
+
+  /* Chart containers */
+  .chart-container {
+    @apply w-full bg-[rgb(var(--card))] rounded-lg border border-slate-200 dark:border-slate-700 p-4;
+  }
+
+  .chart-container .recharts-cartesian-grid-horizontal line,
+  .chart-container .recharts-cartesian-grid-vertical line {
+    stroke: rgb(var(--border));
+  }
+
+  .chart-container .recharts-text {
+    fill: rgb(var(--muted-foreground));
+    font-size: 12px;
+  }
+
+  /* Chat interface */
+  .chat-container {
+    @apply flex flex-col h-[calc(100vh-8rem)] bg-[rgb(var(--card))] rounded-lg border border-slate-200 dark:border-slate-700;
+  }
+
+  .chat-messages {
+    @apply flex-1 overflow-y-auto p-4 space-y-4;
+  }
+
+  .chat-message-user {
+    @apply ml-auto max-w-[80%] bg-primary text-white rounded-2xl rounded-br-md px-4 py-2.5;
+  }
+
+  .chat-message-assistant {
+    @apply mr-auto max-w-[80%] bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-2xl rounded-bl-md px-4 py-2.5;
+  }
+
+  .chat-input-area {
+    @apply border-t border-slate-200 dark:border-slate-700 p-4;
+  }
+
+  .chat-input {
+    @apply w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl px-4 py-3 text-sm
+      focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary
+      placeholder:text-slate-400 dark:placeholder:text-slate-500;
+  }
+
+  /* Cards */
+  .stat-card {
+    @apply bg-[rgb(var(--card))] rounded-xl border border-slate-200 dark:border-slate-700 p-5 shadow-sm
+      hover:shadow-md transition-shadow duration-200;
+  }
+
+  .stat-card-value {
+    @apply text-2xl font-bold tracking-tight;
+  }
+
+  .stat-card-label {
+    @apply text-sm text-[rgb(var(--muted-foreground))] mt-1;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium
+      text-slate-600 dark:text-slate-400
+      hover:bg-slate-100 dark:hover:bg-slate-800
+      hover:text-slate-900 dark:hover:text-slate-100
+      transition-colors duration-150;
+  }
+
+  .nav-link-active {
+    @apply bg-primary/10 text-primary dark:text-primary-300
+      hover:bg-primary/15;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-primary/10 text-primary;
+  }
+
+  .badge-secondary {
+    @apply bg-secondary/10 text-secondary-800 dark:text-secondary-300;
+  }
+
+  .badge-danger {
+    @apply bg-danger/10 text-danger;
+  }
+
+  .badge-accent {
+    @apply bg-accent/10 text-accent dark:text-accent-300;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--muted)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--muted));
+    border-radius: 3px;
+  }
+}

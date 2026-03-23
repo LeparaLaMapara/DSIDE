@@ -1,0 +1,266 @@
+mun_code,name,province,district,category,lat,lng
+BUF,Buffalo City,Eastern Cape,,A,-32.9872,27.8546
+NMA,Nelson Mandela Bay,Eastern Cape,,A,-33.9608,25.6022
+EC101,Dr Beyers Naude,Eastern Cape,Sarah Baartman,B,-32.4667,24.5333
+EC102,Blue Crane Route,Eastern Cape,Sarah Baartman,B,-33.0833,25.9833
+EC104,Makana,Eastern Cape,Sarah Baartman,B,-33.3117,26.5267
+EC105,Ndlambe,Eastern Cape,Sarah Baartman,B,-33.4833,26.8833
+EC106,Sundays River Valley,Eastern Cape,Sarah Baartman,B,-33.45,25.7667
+EC108,Kouga,Eastern Cape,Sarah Baartman,B,-33.9667,25.0167
+EC109,Kou-Kamma,Eastern Cape,Sarah Baartman,B,-33.75,24.1667
+DC10,Sarah Baartman,Eastern Cape,,C,-33.3333,25.6667
+EC121,Mbhashe,Eastern Cape,Amathole,B,-32.15,28.5833
+EC122,Mnquma,Eastern Cape,Amathole,B,-32.0833,28.0167
+EC123,Great Kei,Eastern Cape,Amathole,B,-32.7833,28.0333
+EC124,Amahlathi,Eastern Cape,Amathole,B,-32.55,27.3667
+EC126,Ngqushwa,Eastern Cape,Amathole,B,-33.0,27.2
+EC129,Raymond Mhlaba,Eastern Cape,Amathole,B,-32.5333,26.5
+DC12,Amathole,Eastern Cape,,C,-32.5,27.3333
+EC131,Inxuba Yethemba,Eastern Cape,Chris Hani,B,-31.8833,25.2333
+EC132,Intsika Yethu,Eastern Cape,Chris Hani,B,-31.9333,27.5833
+EC133,Emalahleni,Eastern Cape,Chris Hani,B,-31.6333,26.8667
+EC134,Engcobo,Eastern Cape,Chris Hani,B,-31.6833,28.0333
+EC135,Sakhisizwe,Eastern Cape,Chris Hani,B,-31.6,27.2333
+EC136,Enoch Mgijima,Eastern Cape,Chris Hani,B,-31.8667,26.7667
+DC13,Chris Hani,Eastern Cape,,C,-31.7833,27.1667
+EC141,Elundini,Eastern Cape,Joe Gqabi,B,-31.0667,28.5167
+EC142,Senqu,Eastern Cape,Joe Gqabi,B,-30.8833,27.2
+EC143,Walter Sisulu,Eastern Cape,Joe Gqabi,B,-31.3,27.05
+DC14,Joe Gqabi,Eastern Cape,,C,-31.1,27.6
+EC153,Ngquza Hill,Eastern Cape,OR Tambo,B,-31.5333,29.2833
+EC154,Port St Johns,Eastern Cape,OR Tambo,B,-31.6167,29.5333
+EC155,Nyandeni,Eastern Cape,OR Tambo,B,-31.6333,29.0
+EC156,Mhlontlo,Eastern Cape,OR Tambo,B,-31.35,28.9667
+EC157,King Sabata Dalindyebo,Eastern Cape,OR Tambo,B,-31.5833,28.7833
+DC15,OR Tambo,Eastern Cape,,C,-31.5,29.0
+EC441,Matatiele,Eastern Cape,Alfred Nzo,B,-30.3333,28.8
+EC442,Umzimvubu,Eastern Cape,Alfred Nzo,B,-30.8833,29.15
+EC443,Mbizana,Eastern Cape,Alfred Nzo,B,-31.05,29.85
+EC444,Ntabankulu,Eastern Cape,Alfred Nzo,B,-31.1167,29.35
+DC44,Alfred Nzo,Eastern Cape,,C,-30.8333,29.3
+MAN,Mangaung,Free State,,A,-29.1167,26.2167
+FS161,Letsemeng,Free State,Xhariep,B,-30.05,25.9667
+FS162,Kopanong,Free State,Xhariep,B,-30.4667,25.6833
+FS163,Mohokare,Free State,Xhariep,B,-30.4833,26.85
+DC16,Xhariep,Free State,,C,-30.3333,25.8333
+FS181,Masilonyana,Free State,Lejweleputswa,B,-28.6833,26.0333
+FS182,Tokologo,Free State,Lejweleputswa,B,-28.6667,25.1
+FS183,Tswelopele,Free State,Lejweleputswa,B,-28.3167,25.5
+FS184,Matjhabeng,Free State,Lejweleputswa,B,-27.9667,26.7667
+FS185,Nala,Free State,Lejweleputswa,B,-27.8167,26.2833
+DC18,Lejweleputswa,Free State,,C,-28.3,25.9
+FS191,Setsoto,Free State,Thabo Mofutsanyana,B,-28.8,27.7
+FS192,Dihlabeng,Free State,Thabo Mofutsanyana,B,-28.5333,28.7333
+FS193,Nketoana,Free State,Thabo Mofutsanyana,B,-28.1667,28.1
+FS194,Maluti-A-Phofung,Free State,Thabo Mofutsanyana,B,-28.5,28.8333
+FS195,Phumelela,Free State,Thabo Mofutsanyana,B,-27.65,29.4667
+FS196,Mantsopa,Free State,Thabo Mofutsanyana,B,-29.1333,27.3333
+DC19,Thabo Mofutsanyana,Free State,,C,-28.5,28.5
+FS201,Moqhaka,Free State,Fezile Dabi,B,-27.65,27.2333
+FS203,Ngwathe,Free State,Fezile Dabi,B,-27.5667,27.7667
+FS204,Metsimaholo,Free State,Fezile Dabi,B,-26.8167,28.6333
+FS205,Mafube,Free State,Fezile Dabi,B,-27.25,28.9
+DC20,Fezile Dabi,Free State,,C,-27.3333,28.0
+EKU,Ekurhuleni,Gauteng,,A,-26.1724,28.2367
+JHB,City of Johannesburg,Gauteng,,A,-26.2041,28.0473
+TSH,City of Tshwane,Gauteng,,A,-25.7479,28.2293
+GT421,Emfuleni,Gauteng,Sedibeng,B,-26.6833,27.8833
+GT422,Midvaal,Gauteng,Sedibeng,B,-26.6833,28.1833
+GT423,Lesedi,Gauteng,Sedibeng,B,-26.5,28.35
+DC42,Sedibeng,Gauteng,,C,-26.6667,28.0
+GT481,Mogale City,Gauteng,West Rand,B,-26.1,27.65
+GT482,Rand West City,Gauteng,West Rand,B,-26.3333,27.5
+GT484,Merafong City,Gauteng,West Rand,B,-26.4167,27.2833
+DC48,West Rand,Gauteng,,C,-26.2833,27.5
+ETH,eThekwini,KwaZulu-Natal,,A,-29.8587,31.0218
+KZN212,Newcastle,KwaZulu-Natal,Amajuba,B,-27.7667,29.9333
+KZN213,eMadlangeni,KwaZulu-Natal,Amajuba,B,-27.5833,29.9333
+KZN214,Dannhauser,KwaZulu-Natal,Amajuba,B,-28.1,30.0833
+DC25,Amajuba,KwaZulu-Natal,,C,-27.85,29.9667
+KZN216,uMhlathuze,KwaZulu-Natal,King Cetshwayo,B,-28.75,31.9667
+KZN221,uMhlathuze,KwaZulu-Natal,King Cetshwayo,B,-28.75,32.0
+KZN222,uMfolozi,KwaZulu-Natal,King Cetshwayo,B,-28.5667,31.7
+KZN223,Mthonjaneni,KwaZulu-Natal,King Cetshwayo,B,-28.5333,31.35
+KZN224,uLundi,KwaZulu-Natal,King Cetshwayo,B,-28.3,31.4167
+KZN225,Nongoma,KwaZulu-Natal,King Cetshwayo,B,-27.9,31.65
+DC28,King Cetshwayo,KwaZulu-Natal,,C,-28.5,31.7
+KZN226,Big Five Hlabisa,KwaZulu-Natal,King Cetshwayo,B,-28.1333,32.1
+KZN235,Okhahlamba,KwaZulu-Natal,uThukela,B,-28.75,29.3167
+KZN237,Inkosi Langalibalele,KwaZulu-Natal,uThukela,B,-28.7333,29.7333
+KZN238,Alfred Duma,KwaZulu-Natal,uThukela,B,-28.5667,29.7833
+DC23,uThukela,KwaZulu-Natal,,C,-28.7,29.5833
+KZN241,eDumbe,KwaZulu-Natal,Zululand,B,-27.5333,31.1333
+KZN242,uPhongolo,KwaZulu-Natal,Zululand,B,-27.4,31.5833
+KZN244,Nongoma,KwaZulu-Natal,Zululand,B,-27.9,31.65
+KZN245,Ulundi,KwaZulu-Natal,Zululand,B,-28.3,31.4167
+KZN252,AbaQulusi,KwaZulu-Natal,Zululand,B,-27.7667,30.9833
+DC26,Zululand,KwaZulu-Natal,,C,-27.9,31.3333
+KZN253,Abaqulusi,KwaZulu-Natal,Zululand,B,-27.7667,30.9833
+KZN261,eDumbe,KwaZulu-Natal,Zululand,B,-27.5333,31.1333
+KZN262,uPhongolo,KwaZulu-Natal,Zululand,B,-27.4,31.5833
+KZN263,Abaqulusi,KwaZulu-Natal,Zululand,B,-27.7667,30.9833
+KZN265,Nongoma,KwaZulu-Natal,Zululand,B,-27.9,31.65
+KZN266,Ulundi,KwaZulu-Natal,Zululand,B,-28.3,31.4167
+KZN271,uMshwathi,KwaZulu-Natal,uMgungundlovu,B,-29.3833,30.6333
+KZN272,uMngeni,KwaZulu-Natal,uMgungundlovu,B,-29.5667,30.2333
+KZN273,Mpofana,KwaZulu-Natal,uMgungundlovu,B,-29.3,29.9333
+KZN274,Impendle,KwaZulu-Natal,uMgungundlovu,B,-29.65,29.6833
+KZN275,Msunduzi,KwaZulu-Natal,uMgungundlovu,B,-29.6,30.3833
+KZN276,Richmond,KwaZulu-Natal,uMgungundlovu,B,-29.8833,30.2833
+DC22,uMgungundlovu,KwaZulu-Natal,,C,-29.55,30.25
+KZN281,uMfolozi,KwaZulu-Natal,King Cetshwayo,B,-28.5667,31.7
+KZN282,uMhlathuze,KwaZulu-Natal,King Cetshwayo,B,-28.75,32.0
+KZN283,Mthonjaneni,KwaZulu-Natal,King Cetshwayo,B,-28.5333,31.35
+KZN284,Nkandla,KwaZulu-Natal,King Cetshwayo,B,-28.6667,31.0833
+KZN285,uLundi,KwaZulu-Natal,King Cetshwayo,B,-28.3,31.4167
+KZN291,Mandeni,KwaZulu-Natal,iLembe,B,-29.1333,31.4
+KZN292,KwaDukuza,KwaZulu-Natal,iLembe,B,-29.3333,31.2833
+KZN293,Ndwedwe,KwaZulu-Natal,iLembe,B,-29.5167,30.9333
+KZN294,Maphumulo,KwaZulu-Natal,iLembe,B,-29.2333,30.9833
+DC29,iLembe,KwaZulu-Natal,,C,-29.3,31.15
+KZN431,Ingwe,KwaZulu-Natal,Harry Gwala,B,-30.1333,29.6
+KZN432,Kwa Sani,KwaZulu-Natal,Harry Gwala,B,-29.8,29.5
+KZN433,Greater Kokstad,KwaZulu-Natal,Harry Gwala,B,-30.55,29.4167
+KZN434,Ubuhlebezwe,KwaZulu-Natal,Harry Gwala,B,-30.2667,29.8667
+KZN435,uMzimkhulu,KwaZulu-Natal,Harry Gwala,B,-30.2667,29.85
+DC43,Harry Gwala,KwaZulu-Natal,,C,-30.2,29.7
+KZN211,eMadlangeni,KwaZulu-Natal,Amajuba,B,-27.5833,29.9333
+KZN413,uMdoni,KwaZulu-Natal,Ugu,B,-30.3167,30.5833
+KZN414,Ray Nkonyeni,KwaZulu-Natal,Ugu,B,-30.8333,30.15
+KZN421,uMuziwabantu,KwaZulu-Natal,Ugu,B,-30.6,30.05
+KZN422,Umzumbe,KwaZulu-Natal,Ugu,B,-30.5833,30.3333
+DC21,Ugu,KwaZulu-Natal,,C,-30.5667,30.3333
+LIM331,Greater Giyani,Limpopo,Mopani,B,-23.3167,30.7167
+LIM332,Greater Letaba,Limpopo,Mopani,B,-23.6167,30.2333
+LIM333,Greater Tzaneen,Limpopo,Mopani,B,-23.8333,30.1667
+LIM334,Ba-Phalaborwa,Limpopo,Mopani,B,-23.95,31.15
+LIM335,Maruleng,Limpopo,Mopani,B,-24.3833,30.8333
+DC33,Mopani,Limpopo,,C,-23.7,30.5
+LIM341,Musina,Limpopo,Vhembe,B,-22.35,30.05
+LIM342,Thulamela,Limpopo,Vhembe,B,-23.0,30.4833
+LIM343,Collins Chabane,Limpopo,Vhembe,B,-23.1167,30.7
+LIM344,Makhado,Limpopo,Vhembe,B,-23.05,29.9
+LIM345,LIM345,Limpopo,Vhembe,B,-22.4,29.6
+DC34,Vhembe,Limpopo,,C,-22.9,30.2
+LIM351,Blouberg,Limpopo,Capricorn,B,-23.3333,29.1333
+LIM353,Molemole,Limpopo,Capricorn,B,-23.4167,29.4167
+LIM354,Polokwane,Limpopo,Capricorn,B,-23.9,29.45
+LIM355,Lepelle-Nkumpi,Limpopo,Capricorn,B,-24.35,29.4833
+DC35,Capricorn,Limpopo,,C,-23.8,29.4
+LIM361,Thabazimbi,Limpopo,Waterberg,B,-24.6,27.4
+LIM362,Lephalale,Limpopo,Waterberg,B,-23.6833,27.7
+LIM366,Bela-Bela,Limpopo,Waterberg,B,-24.8833,28.2833
+LIM367,Mogalakwena,Limpopo,Waterberg,B,-23.6833,28.7333
+LIM368,Modimolle-Mookgophong,Limpopo,Waterberg,B,-24.7,28.4333
+DC36,Waterberg,Limpopo,,C,-24.1,28.1
+LIM471,Ephraim Mogale,Limpopo,Sekhukhune,B,-24.5833,29.3333
+LIM472,Elias Motsoaledi,Limpopo,Sekhukhune,B,-24.8667,29.4
+LIM473,Makhuduthamaga,Limpopo,Sekhukhune,B,-24.6,29.6667
+LIM474,Fetakgomo Tubatse,Limpopo,Sekhukhune,B,-24.55,30.1
+LIM476,Ephraim Mogale,Limpopo,Sekhukhune,B,-24.5833,29.3333
+DC47,Sekhukhune,Limpopo,,C,-24.65,29.6
+MP301,Albert Luthuli,Mpumalanga,Gert Sibande,B,-26.3833,30.2833
+MP302,Msukaligwa,Mpumalanga,Gert Sibande,B,-26.55,30.0833
+MP303,Mkhondo,Mpumalanga,Gert Sibande,B,-27.0833,30.7167
+MP304,Dr Pixley Ka Isaka Seme,Mpumalanga,Gert Sibande,B,-27.3833,30.2167
+MP305,Lekwa,Mpumalanga,Gert Sibande,B,-26.7833,29.4333
+MP306,Dipaleseng,Mpumalanga,Gert Sibande,B,-26.7667,29.6833
+MP307,Govan Mbeki,Mpumalanga,Gert Sibande,B,-26.5,29.2667
+DC30,Gert Sibande,Mpumalanga,,C,-26.8,29.9
+MP311,Victor Khanye,Mpumalanga,Nkangala,B,-25.9167,29.2167
+MP312,Emalahleni,Mpumalanga,Nkangala,B,-25.8833,29.2333
+MP313,Steve Tshwete,Mpumalanga,Nkangala,B,-25.7833,29.2167
+MP314,Emakhazeni,Mpumalanga,Nkangala,B,-25.6667,30.0667
+MP315,Thembisile Hani,Mpumalanga,Nkangala,B,-25.35,28.85
+MP316,Dr JS Moroka,Mpumalanga,Nkangala,B,-25.2667,29.1167
+DC31,Nkangala,Mpumalanga,,C,-25.7,29.3
+MP321,Thaba Chweu,Mpumalanga,Ehlanzeni,B,-25.1,30.7833
+MP322,Mbombela,Mpumalanga,Ehlanzeni,B,-25.4667,30.9833
+MP323,Umjindi,Mpumalanga,Ehlanzeni,B,-25.7667,31.05
+MP324,Nkomazi,Mpumalanga,Ehlanzeni,B,-25.7667,31.65
+MP325,Bushbuckridge,Mpumalanga,Ehlanzeni,B,-24.8333,31.05
+DC32,Ehlanzeni,Mpumalanga,,C,-25.3,31.0
+CPT,City of Cape Town,Western Cape,,A,-33.9249,18.4241
+WC011,Matzikama,Western Cape,West Coast,B,-31.3833,18.4667
+WC012,Cederberg,Western Cape,West Coast,B,-32.4833,19.05
+WC013,Bergrivier,Western Cape,West Coast,B,-32.9833,18.3667
+WC014,Saldanha Bay,Western Cape,West Coast,B,-33.1,17.9333
+WC015,Swartland,Western Cape,West Coast,B,-33.4,18.55
+DC1,West Coast,Western Cape,,C,-32.75,18.5
+WC022,Witzenberg,Western Cape,Cape Winelands,B,-33.3667,19.2333
+WC023,Drakenstein,Western Cape,Cape Winelands,B,-33.7333,18.9667
+WC024,Stellenbosch,Western Cape,Cape Winelands,B,-33.9333,18.86
+WC025,Breede Valley,Western Cape,Cape Winelands,B,-33.6,19.4333
+WC026,Langeberg,Western Cape,Cape Winelands,B,-33.7833,19.8333
+DC2,Cape Winelands,Western Cape,,C,-33.6167,19.25
+WC031,Theewaterskloof,Western Cape,Overberg,B,-34.15,19.4833
+WC032,Overstrand,Western Cape,Overberg,B,-34.3833,19.1667
+WC033,Cape Agulhas,Western Cape,Overberg,B,-34.5,19.8833
+WC034,Swellendam,Western Cape,Overberg,B,-34.05,20.4333
+DC3,Overberg,Western Cape,,C,-34.2,19.7
+WC041,Kannaland,Western Cape,Garden Route,B,-33.65,21.2333
+WC042,Hessequa,Western Cape,Garden Route,B,-33.8667,21.45
+WC043,Mossel Bay,Western Cape,Garden Route,B,-34.1833,22.1333
+WC044,George,Western Cape,Garden Route,B,-33.9667,22.45
+WC045,Oudtshoorn,Western Cape,Garden Route,B,-33.5833,22.2
+WC047,Bitou,Western Cape,Garden Route,B,-33.5167,23.3333
+WC048,Knysna,Western Cape,Garden Route,B,-34.0167,23.0667
+DC4,Garden Route,Western Cape,,C,-33.8,22.3
+WC051,Laingsburg,Western Cape,Central Karoo,B,-33.0833,20.8667
+WC052,Prince Albert,Western Cape,Central Karoo,B,-33.2167,22.0167
+WC053,Beaufort West,Western Cape,Central Karoo,B,-32.3333,22.5833
+DC5,Central Karoo,Western Cape,,C,-32.8333,21.3
+NC061,Richtersveld,Northern Cape,Namakwa,B,-28.6333,17.3667
+NC062,Nama Khoi,Northern Cape,Namakwa,B,-29.25,17.95
+NC064,Kamiesberg,Northern Cape,Namakwa,B,-30.65,18.1
+NC065,Hantam,Northern Cape,Namakwa,B,-31.35,19.1167
+NC066,Karoo Hoogland,Northern Cape,Namakwa,B,-31.6,19.5
+NC067,Khai-Ma,Northern Cape,Namakwa,B,-29.0833,19.2667
+DC6,Namakwa,Northern Cape,,C,-30.0667,18.7
+NC071,Ubuntu,Northern Cape,Pixley Ka Seme,B,-31.4,24.15
+NC072,Umsobomvu,Northern Cape,Pixley Ka Seme,B,-31.2333,24.7667
+NC073,Emthanjeni,Northern Cape,Pixley Ka Seme,B,-31.6333,24.95
+NC074,Kareeberg,Northern Cape,Pixley Ka Seme,B,-31.35,24.2833
+NC075,Renosterberg,Northern Cape,Pixley Ka Seme,B,-31.15,24.6833
+NC076,Thembelihle,Northern Cape,Pixley Ka Seme,B,-30.6,24.4167
+NC077,Siyathemba,Northern Cape,Pixley Ka Seme,B,-30.5833,24.0833
+NC078,Siyancuma,Northern Cape,Pixley Ka Seme,B,-29.7833,24.2333
+DC7,Pixley Ka Seme,Northern Cape,,C,-31.0,24.5
+NC081,Mier,Northern Cape,ZF Mgcawu,B,-27.5,20.5833
+NC082,Dawid Kruiper,Northern Cape,ZF Mgcawu,B,-28.75,21.3333
+NC083,!Kheis,Northern Cape,ZF Mgcawu,B,-28.7833,21.35
+NC084,Tsantsabane,Northern Cape,ZF Mgcawu,B,-28.1167,22.9833
+NC085,Kgatelopele,Northern Cape,ZF Mgcawu,B,-28.6333,23.3167
+DC8,ZF Mgcawu,Northern Cape,,C,-28.6,22.0
+NC091,Sol Plaatje,Northern Cape,Frances Baard,B,-28.7333,24.7667
+NC092,Dikgatlong,Northern Cape,Frances Baard,B,-28.5,24.35
+NC093,Magareng,Northern Cape,Frances Baard,B,-28.7167,24.5833
+NC094,Phokwane,Northern Cape,Frances Baard,B,-28.15,24.5833
+DC9,Frances Baard,Northern Cape,,C,-28.5,24.5
+NC451,Joe Morolong,Northern Cape,John Taolo Gaetsewe,B,-27.0,22.5
+NC452,Gamagara,Northern Cape,John Taolo Gaetsewe,B,-27.75,23.0
+NC453,Ga-Segonyana,Northern Cape,John Taolo Gaetsewe,B,-27.4,23.65
+DC45,John Taolo Gaetsewe,Northern Cape,,C,-27.4,23.05
+NW371,Moretele,North West,Bojanala Platinum,B,-25.15,28.3833
+NW372,Madibeng,North West,Bojanala Platinum,B,-25.6333,27.8
+NW373,Rustenburg,North West,Bojanala Platinum,B,-25.6667,27.2333
+NW374,Kgetlengrivier,North West,Bojanala Platinum,B,-25.6333,27.15
+NW375,Moses Kotane,North West,Bojanala Platinum,B,-25.05,27.2
+DC37,Bojanala Platinum,North West,,C,-25.4,27.5
+NW381,Ratlou,North West,Ngaka Modiri Molema,B,-25.55,25.45
+NW382,Tswaing,North West,Ngaka Modiri Molema,B,-25.7833,26.1167
+NW383,Mafikeng,North West,Ngaka Modiri Molema,B,-25.85,25.6333
+NW384,Ditsobotla,North West,Ngaka Modiri Molema,B,-26.1833,25.6
+NW385,Ramotshere Moiloa,North West,Ngaka Modiri Molema,B,-25.9333,26.2667
+DC38,Ngaka Modiri Molema,North West,,C,-25.8333,25.7
+NW392,Naledi,North West,Dr Ruth Segomotsi Mompati,B,-27.2167,25.0833
+NW393,Mamusa,North West,Dr Ruth Segomotsi Mompati,B,-27.6333,25.2167
+NW394,Greater Taung,North West,Dr Ruth Segomotsi Mompati,B,-27.55,24.75
+NW396,Lekwa-Teemane,North West,Dr Ruth Segomotsi Mompati,B,-27.6333,25.6333
+NW397,Kagisano-Molopo,North West,Dr Ruth Segomotsi Mompati,B,-26.5833,23.8333
+DC39,Dr Ruth Segomotsi Mompati,North West,,C,-27.1667,24.9
+NW401,Ventersdorp / Tlokwe,North West,Dr Kenneth Kaunda,B,-26.3333,26.8167
+NW402,City of Matlosana,North West,Dr Kenneth Kaunda,B,-26.7833,26.6667
+NW403,JB Marks,North West,Dr Kenneth Kaunda,B,-26.7,27.0833
+NW404,Maquassi Hills,North West,Dr Kenneth Kaunda,B,-26.9,26.0833
+DC40,Dr Kenneth Kaunda,North West,,C,-26.7333,26.6667
