@@ -1,8 +1,7 @@
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-	url(r'^$', views.index, name='Personal'),
-	url(r'^services/', views.services, name='services'),
-
+	path('', views.index, name='Personal'),
+	path('services/', views.services, name='services'),
 ]

@@ -290,8 +290,8 @@ function createColourScale(colourArray){
   return colorScale;
 }
 
-// Mapbox background Layer
-var mabboxAccessToken = 'pk.eyJ1IjoiZ2VycmFuZGoiLCJhIjoiY2lqYjc3amw3MDAzYXc5a3FkZzRlamxzciJ9.rc_DQCZVVVKBuhvBl0Hibg';
+// Mapbox background Layer — token injected via window.MAPBOX_TOKEN from template
+var mabboxAccessToken = window.MAPBOX_TOKEN || '';
 
 var map = L.map('chloroMap').setView([-29.748627, 25.277189], 5);
 

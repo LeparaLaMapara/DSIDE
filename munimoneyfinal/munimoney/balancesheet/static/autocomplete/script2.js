@@ -2,7 +2,7 @@
     'use strict';
 
     // The JSON list url
-	//{% load staticfiles %}
+	//{% load static %}
     var capitals = "country_capitals.json";
 
     /**

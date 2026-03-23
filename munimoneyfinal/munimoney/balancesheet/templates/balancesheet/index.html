@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
-	{% load staticfiles %}
+	{% load static %}
 	
 		<!-- <link rel='stylesheet' href="{% static 'assets/css/bootstrap.css' %}" type='text/css'>  -->
 		<link rel='stylesheet' href="{% static 'assets/css/bootstrap.min.css' %}" type='text/css'>
@@ -622,7 +622,8 @@ var oppoprovinceColourKey = opportunitydictProv;
 var oppomunicipalColourKey = opportunitydictmun;
 
 // Mapbox background Layer
-var mabboxAccessToken = 'pk.eyJ1IjoiZ2VycmFuZGoiLCJhIjoiY2lqYjc3amw3MDAzYXc5a3FkZzRlamxzciJ9.rc_DQCZVVVKBuhvBl0Hibg';
+var mabboxAccessToken = '{{ mapbox_token }}';
+window.MAPBOX_TOKEN = mabboxAccessToken;
 
 var map = L.map('map').setView([-29.748627, 25.277189], 5);
 

@@ -16,6 +16,9 @@ class BalSheet(models.Model):
 	def __str__(self):
 		return self.mun_name
 
+	class Meta:
+		default_related_name = '+'
+
 class ProfileStats(models.Model):
 	mun_code = models.CharField(max_length=5)
 	efficient_measure = models.DecimalField(max_digits=12,decimal_places=5)
@@ -25,8 +28,7 @@ class ProfileStats(models.Model):
 	profile = models.IntegerField()
 
 	def __str__(self):
-		return self.profile
-	
+		return str(self.profile)
 
-
-	
+	class Meta:
+		default_related_name = '+'
