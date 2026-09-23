@@ -40,4 +40,7 @@ jobs:
           git add web/data engine/fallback
           if git diff --cached --quiet; then echo "No change in the data."; exit 0; fi
           git commit -m "Refresh public data ($(date -u +%F))"
+          # Someone may have merged to master during the run; the bot only
+          # touches data files, so replaying its commit on top is always clean.
+          git pull --rebase origin master
           git push
