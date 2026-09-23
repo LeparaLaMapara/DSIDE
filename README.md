@@ -55,12 +55,19 @@ pytest -q tests
 cd ../web && npm install && npm run build   # output in web/out
 ```
 
-The data refreshes itself once a quarter through `.github/workflows/refresh-data.yml`.
+Two scheduled GitHub workflows keep it fresh, and nothing runs in between:
+
+- `refresh-data.yml`, once a quarter: the full pipeline; commits `web/data`, and Vercel rebuilds the site.
+- `refresh-live.yml`, every three hours: the live pipeline (`engine/run_live.sh`); publishes to the
+  single-commit `live-data` branch, which the site reads directly, so nothing is rebuilt.
 
 ## The 2017 project
 
-The original DSIDE work (notebooks, Django dashboard, the unfinished
-`dside-next` attempt) is kept below and in the older folders for history.
+The original 2017 DSIDE notebooks and data are kept in the older folders for
+history. The 2017 Django dashboard and the unfinished `dside-next` attempt were
+removed from the tree in September 2026 (their dependencies carried security
+alerts and both are replaced by `engine/` and `web/`); they are preserved in
+full at the `legacy-2017` tag.
 
 ---
 
