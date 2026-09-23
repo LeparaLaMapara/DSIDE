@@ -24,6 +24,12 @@ export default function About() {
           again whenever the pipeline runs, and this page shows how old each piece is.
         </p>
         <p className="mt-2 text-muted">Last collected: {new Date(m.built_at).toUTCString()}.</p>
+        {m.stale_sources && Object.keys(m.stale_sources).length > 0 && (
+          <p className="mt-2 rounded border-2 border-warn p-3 text-sm">
+            At the last collection these sources could not be reached, so their last good copy is shown:{" "}
+            {Object.entries(m.stale_sources).map(([k, v]) => `${k.replace(/_/g, " ")} (copy from ${v.fetched_at?.slice(0, 10) ?? "an earlier run"})`).join(", ")}.
+          </p>
+        )}
       </header>
 
       <section>

@@ -107,6 +107,7 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
         "safety": {**safety_info, "source": str(raw["crime"]["source"].iloc[0]),
                    "unmatched_stations": str(raw["crime"]["unmatched_stations"].iloc[0])},
         "jobs": jobs_info,
+        "stale_sources": {k: v for k, v in _source_status().items() if not v.get("ok")},
     }
     slim_projects = located.dropna(subset=["code"])[
         ["code", "name", "sector", "department", "stage", "status", "estimated_total_project_cost",
@@ -115,6 +116,12 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     return {"municipalities": munis, "projects": slim_projects.reset_index(drop=True),
             "stations": stations, "wards": wards, "schools": schools,
             "meta": pd.DataFrame([{"json": json.dumps(info, default=_clean)}])}
+
+
+def _source_status() -> dict:
+    from .catalogue import STATUS
+
+    return json.loads(STATUS.read_text(encoding="utf-8")) if STATUS.exists() else {}
 
 
 def _national(df: pd.DataFrame, year: int) -> dict:
