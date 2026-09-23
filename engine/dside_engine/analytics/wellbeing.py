@@ -8,8 +8,8 @@ municipality:
       proper house, clean cooking fuel.
   Learning (Census 2022): adults with matric or more, small children in
       early learning.
-  Work for young people (Census 2011, the newest per municipality): young
-      people who are employed or studying (not NEET), youth employment.
+  Work (SARS tax data, latest tax year): formal jobs per working-age adult
+      and the median formal monthly income.
   Safety (SAPS, when available): added by the safety module.
 
 These are shares of people, not a household poverty count, because only
@@ -62,9 +62,9 @@ YOUTH_AGE = "15-35 (ZA)"
 DIMENSIONS = {
     "home": ["water", "toilet", "lighting", "refuse", "dwelling", "cooking"],
     "learning": ["matric_adults", "early_learning"],
-    "work": ["youth_not_neet", "youth_employed"],
+    "work": ["formal_job_rate", "median_income"],
 }
-DIMENSION_LABELS = {"home": "Home and services", "learning": "Learning", "work": "Work for young people",
+DIMENSION_LABELS = {"home": "Home and services", "learning": "Learning", "work": "Work and income",
                     "safety": "Safety"}
 
 
@@ -84,6 +84,9 @@ def census_2022(c22: pd.DataFrame) -> pd.DataFrame:
     out["population_2011"] = by_year.get("2011")
     out["population_growth"] = out["population_2022"] / out["population_2011"] - 1
     adults = pop[(pop["census"] == "2022") & pop["age_group"].isin(ADULT_BANDS)].groupby("code")["count"].sum()
+    bands = pop[pop["census"] == "2022"].pivot_table(index="code", columns="age_group", values="count", aggfunc="sum")
+    # About ages 20 to 64: whole 10-year bands 20 to 59, plus half of 60 to 69.
+    out["working_age_2022"] = bands[["20-29", "30-39", "40-49", "50-59"]].sum(axis=1) + bands["60-69"] / 2
     edu = c22[c22["indicator"] == "education"]
     matric = edu[edu["highest_level_of_education"].isin(MATRIC_OR_MORE)].groupby("code")["count"].sum()
     out["matric_adults"] = (matric / adults).clip(upper=1)

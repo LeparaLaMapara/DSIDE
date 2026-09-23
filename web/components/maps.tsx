@@ -3,13 +3,37 @@
 // opens its page on click. The ward one zooms into a municipality, finds
 // the reader's ward from their location, and shows government projects.
 import * as maplibregl from "maplibre-gl";
-import type { ExpressionSpecification, GeoJSONSource } from "maplibre-gl";
+import type { ExpressionSpecification, GeoJSONSource, StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { LocateFixed } from "lucide-react";
+import { FAULT_CITIES, LIVE_BASE } from "./live";
 
 const BASEMAP = "https://tiles.openfreemap.org/styles/positron";
+
+// Satellite: Esri World Imagery with road names and place names drawn on top.
+// Free, no key; attribution is required and shown on the map.
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services";
+const SATELLITE: StyleSpecification = {
+  version: 8,
+  sources: {
+    imagery: { type: "raster", tileSize: 256, maxzoom: 19, tiles: [`${ESRI}/World_Imagery/MapServer/tile/{z}/{y}/{x}`],
+      attribution: "Imagery © Esri, Maxar, Earthstar Geographics and the GIS User Community" },
+    roads: { type: "raster", tileSize: 256, maxzoom: 19, tiles: [`${ESRI}/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}`] },
+    places: { type: "raster", tileSize: 256, maxzoom: 19, tiles: [`${ESRI}/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}`] },
+  },
+  layers: [
+    { id: "imagery", type: "raster", source: "imagery" },
+    { id: "roads", type: "raster", source: "roads" },
+    { id: "places", type: "raster", source: "places" },
+  ],
+};
+type Base = "map" | "satellite";
+const BASES = [{ key: "map", label: "Map" }, { key: "satellite", label: "Satellite" }];
+const styleFor = (b: Base) => (b === "satellite" ? SATELLITE : BASEMAP);
+/** Our coloured areas go under the road and place names on satellite, and on top of the plain map. */
+const beneath = (m: maplibregl.Map) => (m.getLayer("roads") ? "roads" : undefined);
 maplibregl.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs"); // copied there by scripts/prepare.mjs
 const BLUE = ["#cde2fb", "#86b6ef", "#3987e5", "#1c5cab", "#0d366b"];
 const ORANGE = ["#fde0cf", "#f5a77f", "#eb6834", "#b8461c", "#7a2c0f"];
@@ -81,6 +105,7 @@ export function NationalMap() {
   const [data, setData] = useState<GeoJSON.FeatureCollection | null>(null);
   const [key, setKey] = useState("wellbeing");
   const [ready, setReady] = useState(false);
+  const [base, setBase] = useState<Base>("map");
   const router = useRouter();
   const measure = NATIONAL_MEASURES.find((m) => m.key === key)!;
   const b = useMemo(() => (data ? breaks(data.features.map((f) => f.properties?.[key] as number)) : [0, 0, 0, 0]), [data, key]);
@@ -96,10 +121,12 @@ export function NationalMap() {
     map.current = m;
     m.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
-    m.on("load", () => {
+    // Runs on first load and again after every base map switch, which wipes custom layers.
+    m.on("style.load", () => {
+      const below = beneath(m);
       m.addSource("munis", { type: "geojson", data });
-      m.addLayer({ id: "fill", type: "fill", source: "munis", paint: { "fill-color": NO_DATA, "fill-opacity": 0.85 } });
-      m.addLayer({ id: "line", type: "line", source: "munis", paint: { "line-color": "#ffffff", "line-width": 0.8 } });
+      m.addLayer({ id: "fill", type: "fill", source: "munis", paint: { "fill-color": NO_DATA, "fill-opacity": 0.85 } }, below);
+      m.addLayer({ id: "line", type: "line", source: "munis", paint: { "line-color": "#ffffff", "line-width": 0.8 } }, below);
       m.addLayer({ id: "hover", type: "line", source: "munis", paint: { "line-color": "#141414", "line-width": 2.5 },
         filter: ["==", ["get", "code"], ""] });
       setReady(true);
@@ -116,13 +143,26 @@ export function NationalMap() {
     return () => { m.remove(); map.current = null; setReady(false); };
   }, [data, router]);
 
+  const switchBase = (next: string) => {
+    if (next === base || !map.current) return;
+    setReady(false);
+    setBase(next as Base);
+    map.current.setStyle(styleFor(next as Base));
+  };
+
   useEffect(() => {
-    if (ready) map.current?.setPaintProperty("fill", "fill-color", colourExpr(key, b, measure.ramp));
-  }, [ready, key, b, measure]);
+    const m = map.current;
+    if (!ready || !m) return;
+    m.setPaintProperty("fill", "fill-color", colourExpr(key, b, measure.ramp));
+    m.setPaintProperty("fill", "fill-opacity", base === "satellite" ? 0.4 : 0.85);
+  }, [ready, key, b, measure, base]);
 
   return (
     <div>
-      <Chips items={NATIONAL_MEASURES} value={key} onChange={setKey} name="What to show on the map" />
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <Chips items={NATIONAL_MEASURES} value={key} onChange={setKey} name="What to show on the map" />
+        <Chips items={BASES} value={base} onChange={switchBase} name="Map or satellite" />
+      </div>
       <div ref={box} className="mt-3 h-[420px] w-full overflow-hidden rounded border border-border sm:h-[520px]"
         aria-label="Map of South Africa's municipalities" role="region" />
       <Legend b={b} m={measure} />
@@ -135,7 +175,17 @@ export function NationalMap() {
 type WardProps = {
   ward_no: number; population: number; water: number | null; toilet: number | null; refuse: number | null;
   unemployment: number | null; matric_or_more: number | null; councillor?: string | null; party?: string | null; phone?: string | null;
+  turnout_2021?: number | null; won_with?: number | null; turnout_2024?: number | null;
+  votes_2024?: { party: string; share: number }[] | string; schools?: number | null; matric_pass_rate?: number | null;
 };
+
+type Fault = { lat: number; lng: number; suburb: string; street: string; code: string; ward_id: string; open_hours: number };
+
+type School = { n: string; p: string; nf: number; l: number; lat: number; lng: number; w: string; mw: number | null; mp: number | null; pr: number | null };
+
+// MapLibre turns nested properties into JSON text when a feature is clicked.
+const votesOf = (w: WardProps) => (typeof w.votes_2024 === "string" ? JSON.parse(w.votes_2024) : w.votes_2024 ?? []) as { party: string; share: number }[];
+const pctOrQ = (v: number | null | undefined) => (v == null ? "?" : `${Math.round(v * 100)}%`);
 
 const WARD_MEASURES: Measure[] = [
   { key: "water", label: "Tap water", ramp: BLUE, fmt: pctFmt, note: "People with tap water at home, in the yard or within 200 m" },
@@ -165,9 +215,12 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
   const map = useRef<maplibregl.Map | null>(null);
   const [wards, setWards] = useState<GeoJSON.FeatureCollection | null>(null);
   const [projects, setProjects] = useState<Project[]>([]);
+  const [schools, setSchools] = useState<School[]>([]);
+  const [faults, setFaults] = useState<Fault[]>([]);
   const [key, setKey] = useState("water");
   const [selected, setSelected] = useState<WardProps | null>(null);
   const [ready, setReady] = useState(false);
+  const [base, setBase] = useState<Base>("map");
   const [locMsg, setLocMsg] = useState("");
   const measure = WARD_MEASURES.find((m) => m.key === key)!;
   const b = useMemo(() => (wards ? breaks(wards.features.map((f) => f.properties?.[key] as number)) : [0, 0, 0, 0]), [wards, key]);
@@ -175,6 +228,8 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
   useEffect(() => {
     fetch(`/geo/wards/${code}.geojson`).then((r) => r.json()).then(setWards).catch(() => setWards(null));
     fetch(`/geo/projects/${code}.json`).then((r) => (r.ok ? r.json() : [])).then(setProjects).catch(() => setProjects([]));
+    fetch(`/geo/schools/${code}.json`).then((r) => (r.ok ? r.json() : [])).then(setSchools).catch(() => setSchools([]));
+    if (FAULT_CITIES.includes(code)) fetch(`${LIVE_BASE}/faults.json`).then((r) => r.json()).then((f: Fault[]) => setFaults(f.filter((x) => x.code === code))).catch(() => setFaults([]));
   }, [code]);
 
   useEffect(() => {
@@ -193,14 +248,21 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
       fitBoundsOptions: { padding: 16 }, attributionControl: { compact: true }, cooperativeGestures: true });
     map.current = m;
     m.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
-    m.on("load", () => {
+    m.on("style.load", () => {
+      const below = beneath(m);
       m.addSource("wards", { type: "geojson", data: wards });
-      m.addLayer({ id: "fill", type: "fill", source: "wards", paint: { "fill-color": NO_DATA, "fill-opacity": 0.75 } });
-      m.addLayer({ id: "line", type: "line", source: "wards", paint: { "line-color": "#ffffff", "line-width": 1 } });
+      m.addLayer({ id: "fill", type: "fill", source: "wards", paint: { "fill-color": NO_DATA, "fill-opacity": 0.75 } }, below);
+      m.addLayer({ id: "line", type: "line", source: "wards", paint: { "line-color": "#ffffff", "line-width": 1.5 } });
       m.addLayer({ id: "sel", type: "line", source: "wards", paint: { "line-color": "#141414", "line-width": 3.5 }, filter: ["==", ["get", "ward_no"], -1] });
       m.addLayer({ id: "labels", type: "symbol", source: "wards", minzoom: 10.5,
         layout: { "text-field": ["to-string", ["get", "ward_no"]], "text-size": 11 },
         paint: { "text-color": "#141414", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
+      m.addSource("schools", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+      m.addLayer({ id: "schools", type: "circle", source: "schools", minzoom: 11, paint: {
+        "circle-radius": 4.5, "circle-color": "#4a3aa7", "circle-stroke-width": 1.5, "circle-stroke-color": "#ffffff" } });
+      m.addSource("faults", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+      m.addLayer({ id: "faults", type: "circle", source: "faults", paint: {
+        "circle-radius": 4, "circle-color": "#eda100", "circle-stroke-width": 1, "circle-stroke-color": "#141414" } });
       m.addSource("projects", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
       m.addLayer({ id: "projects", type: "circle", source: "projects", paint: {
         "circle-radius": 5, "circle-stroke-width": 1.5, "circle-stroke-color": "#141414",
@@ -208,6 +270,18 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
       setReady(true);
     });
     m.on("click", "fill", (e) => setSelected((e.features?.[0]?.properties as WardProps) ?? null));
+    m.on("click", "faults", (e) => {
+      const p = e.features?.[0]?.properties;
+      if (p) new maplibregl.Popup().setLngLat(e.lngLat)
+        .setHTML(`<strong>Electricity fault</strong><br/>${p.suburb}, ${p.street}<br/>Open for at least ${Math.round(p.open_hours)} hours`).addTo(m);
+    });
+    m.on("click", "schools", (e) => {
+      const p = e.features?.[0]?.properties;
+      if (!p) return;
+      const matric = p.mw ? `<br/>Matric 2024: ${p.mp} of ${p.mw} passed (${Math.round(p.pr * 100)}%)` : "";
+      new maplibregl.Popup().setLngLat(e.lngLat)
+        .setHTML(`<strong>${p.n}</strong><br/>${p.nf ? "No-fee school" : "Fee-paying school"} · ${p.l ?? "?"} learners${matric}`).addTo(m);
+    });
     m.on("click", "projects", (e) => {
       const p = e.features?.[0]?.properties;
       if (p) new maplibregl.Popup().setLngLat(e.lngLat)
@@ -220,10 +294,22 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
     const m = map.current;
     if (!ready || !m) return;
     m.setPaintProperty("fill", "fill-color", colourExpr(key, b, measure.ramp));
+    m.setPaintProperty("fill", "fill-opacity", base === "satellite" ? 0.3 : 0.75);
+    (m.getSource("faults") as GeoJSONSource).setData({ type: "FeatureCollection", features: faults.map((p) => ({
+      type: "Feature", properties: p, geometry: { type: "Point", coordinates: [p.lng, p.lat] } })) });
+    (m.getSource("schools") as GeoJSONSource).setData({ type: "FeatureCollection", features: schools.map((p) => ({
+      type: "Feature", properties: p, geometry: { type: "Point", coordinates: [p.lng, p.lat] } })) });
     (m.getSource("projects") as GeoJSONSource).setData({ type: "FeatureCollection", features: projects.map((p) => ({
       type: "Feature", properties: p, geometry: { type: "Point", coordinates: [p.lng, p.lat] } })) });
     m.setFilter("sel", ["==", ["get", "ward_no"], selected?.ward_no ?? -1]);
-  }, [ready, key, b, measure, projects, selected]);
+  }, [ready, key, b, measure, projects, schools, faults, selected, base]);
+
+  const switchBase = (next: string) => {
+    if (next === base || !map.current) return;
+    setReady(false);
+    setBase(next as Base);
+    map.current.setStyle(styleFor(next as Base));
+  };
 
   const findMe = () => {
     if (!navigator.geolocation) return setLocMsg("Your browser cannot share your location. Choose your ward from the list instead.");
@@ -259,13 +345,18 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
         </label>
       </div>
       {locMsg && <p className="mt-2 text-sm text-muted" role="status">{locMsg}</p>}
-      <div className="mt-3"><Chips items={WARD_MEASURES} value={key} onChange={setKey} name="What to show on the ward map" /></div>
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+        <Chips items={WARD_MEASURES} value={key} onChange={setKey} name="What to show on the ward map" />
+        <Chips items={BASES} value={base} onChange={switchBase} name="Map or satellite" />
+      </div>
       <div className="mt-3 grid gap-4 lg:grid-cols-[1fr_320px]">
         <div>
           <div ref={box} className="h-[420px] w-full overflow-hidden rounded border border-border" role="region" aria-label="Ward map" />
           <Legend b={b} m={measure} />
           <p className="mt-1 text-sm text-muted">{wardYearNote}</p>
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            {faults.length > 0 && <span className="inline-flex items-center gap-1"><span className="inline-block h-3 w-3 rounded-full border border-foreground" style={{ background: "#eda100" }} />Open electricity faults now ({faults.length})</span>}
+            <span className="inline-flex items-center gap-1"><span className="inline-block h-3 w-3 rounded-full" style={{ background: "#4a3aa7" }} />Schools ({schools.length}, zoom in)</span>
             <span className="font-bold">Government projects on the map:</span>
             {stages.map(({ s, n }) => (
               <span key={s} className="inline-flex items-center gap-1">
@@ -295,15 +386,39 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
                     </div>
                   ))}
               </dl>
+              {(selected.turnout_2024 != null || votesOf(selected).length > 0) && (
+                <div className="mt-4">
+                  <p className="text-sm font-bold">How this ward voted in 2024</p>
+                  <p className="text-sm text-muted">{pctOrQ(selected.turnout_2024)} of registered voters voted.</p>
+                  <ul className="mt-1 space-y-1 text-sm">
+                    {votesOf(selected).map((v) => (
+                      <li key={v.party} className="flex items-center gap-2">
+                        <span className="flex-1">{v.party}</span>
+                        <span className="h-2 w-20 rounded bg-sunk"><span className="block h-2 rounded bg-foreground" style={{ width: `${v.share * 100}%` }} /></span>
+                        <span className="w-10 text-right font-bold tabular">{pctOrQ(v.share)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {faults.length > 0 && (() => {
+                const here = faults.filter((f) => Number(f.ward_id.slice(-3)) === selected.ward_no);
+                return <p className="mt-3 text-sm"><strong>{here.length}</strong> open electricity fault{here.length === 1 ? "" : "s"} in this ward on the city&apos;s outage map right now.</p>;
+              })()}
+              {selected.schools ? (
+                <p className="mt-3 text-sm"><strong>{selected.schools} schools</strong> in this ward
+                  {selected.matric_pass_rate != null && <>; <strong>{pctOrQ(selected.matric_pass_rate)}</strong> of matrics passed in 2024</>}.</p>
+              ) : null}
               {selected.councillor ? (
                 <div className="mt-4 rounded border-2 border-foreground p-3">
                   <p className="text-sm text-muted">Your ward councillor</p>
                   <p className="text-lg font-bold">{selected.councillor}</p>
                   <p className="text-sm">{selected.party}</p>
+                  {selected.won_with != null && <p className="text-xs text-muted">Won in 2021 with {pctOrQ(selected.won_with)} of the vote, on a {pctOrQ(selected.turnout_2021)} turnout.</p>}
                   {selected.phone && <a className="mt-1 inline-block font-bold text-link underline" href={`tel:${selected.phone.replace(/\s/g, "")}`}>{selected.phone}</a>}
                 </div>
               ) : (
-                <p className="mt-4 text-sm text-muted">Ask the municipality for your ward councillor's details. This city does not publish them in a form we can read yet.</p>
+                <p className="mt-4 text-sm text-muted">Ask the municipality for your ward councillor's details.</p>
               )}
             </div>
           )}

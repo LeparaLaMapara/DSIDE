@@ -1,0 +1,41 @@
+# The live layer: every three hours, collect Tshwane's open electricity faults,
+# civic news headlines and Eskom's loadshedding stage, then stop. The files go
+# to the single-commit `live-data` branch, which the site reads directly, so
+# the site itself is not rebuilt and the repository does not grow.
+name: Refresh live
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 */3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-live
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install the engine
+        working-directory: engine
+        run: pip install -e .
+      - name: Restore fault memory
+        working-directory: engine
+        run: ./live_state.sh restore
+      - name: Collect
+        working-directory: engine
+        env:
+          PYTHONWARNINGS: ignore
+        run: ./run_live.sh
+      - name: Publish
+        working-directory: engine
+        run: ./live_state.sh publish

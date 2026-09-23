@@ -12,6 +12,9 @@ dependencies = [
   "shapely>=2.0",
   "openpyxl>=3.1",
   "lxml>=5",
+  "pypdf>=4",
+  "pdfplumber>=0.11",
+  "feedparser>=6",
 ]
 
 [project.optional-dependencies]
@@ -27,6 +30,7 @@ saps_crime = "dside_engine.connectors:SapsCrimeReader"
 statssa_qlfs = "dside_engine.connectors:QlfsReader"
 mdb_wards = "dside_engine.connectors:WardReader"
 ward_councillors = "dside_engine.connectors:CouncillorReader"
+dside_source = "dside_engine.connectors:DsideSourceReader"
 
 [build-system]
 requires = ["setuptools>=68"]

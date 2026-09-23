@@ -3,9 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   Droplets, Lightbulb, Toilet, Trash2, House, Flame, GraduationCap, Baby, ShieldAlert, Briefcase, Landmark, Phone, Globe,
+  Waves, School, Mail, Search as SearchIcon, MessageSquare,
 } from "lucide-react";
 import { WardMap } from "@/components/maps";
-import { AuditStrip, Bars, PeerStrip, PeopleRow, PlannedSpent, Quadrant, ScoreMeter, Sparkline, StatusBadge, YearColumns } from "@/components/viz";
+import { Story } from "@/components/story";
+import { LiveNow } from "@/components/live";
+import { AuditStrip, Bars, PeerStrip, PeopleRow, PlannedSpent, Quadrant, ScoreMeter, SplitBar, Sparkline, StatusBadge, YearColumns, YearProgress } from "@/components/viz";
 import { actionsFor, SPHERE_LABEL, YEAR_CALENDAR } from "@/lib/actions";
 import { byCode, meta, serving, stations } from "@/lib/data";
 import { AUDIT_PLAIN, AUDIT_STATUS, num, outOf10, PEER_NAMES, pct, rand, scoreStatus } from "@/lib/format";
@@ -40,6 +43,11 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
     years.map((_, i) => st.reduce((s, x) => s + (((x[`${crime}_trend`] as number[] | undefined)?.[i]) ?? 0), 0));
   const murdersNow = n(m.murders), murdersBefore = n(m.murders_last_year);
   const actions = actionsFor(m);
+  const jobsChange = n(m.formal_jobs) != null && n(m.formal_jobs_before) ? n(m.formal_jobs)! / n(m.formal_jobs_before)! - 1 : null;
+  const officials = (m.officials as { role: string; name: string; office_phone: string | null; email: string | null }[]) ?? [];
+  const grants = (m.grants as { grant: string; budget: number; spent: number | null; spent_share: number | null; financial_year: string }[]) ?? [];
+  const residentsSay = (m.residents_say as { question: string; share: number; year: number }[]) ?? [];
+  const siu = (m.siu as { proclamation: string; date: string; title: string; link: string }[]) ?? [];
 
   return (
     <article className="space-y-14 pt-6">
@@ -55,6 +63,9 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
             <strong>{num(n(m.population_2022))}</strong> people live here (Census 2022)
             {n(m.population_growth) != null && <>, {n(m.population_growth)! >= 0 ? "up" : "down"} <strong>{pct(Math.abs(n(m.population_growth)!))}</strong> since 2011</>}.
           </p>
+          {n(m.pop_2026) != null && (
+            <p className="text-muted">About {num(n(m.pop_2026))} people in 2026{m.pop_2026_level === "district" ? " in its wider district" : ""} (Stats SA estimate).</p>
+          )}
           {m.group && <p className="mt-3"><span className="board inline-block rounded px-3 py-1 font-bold">{m.group}</span></p>}
           <div className="mt-3 flex flex-wrap gap-4 text-sm">
             {m.phone && <a className="inline-flex min-h-11 items-center gap-1 font-bold text-link underline" href={`tel:${m.phone.replace(/\s/g, "")}`}><Phone size={16} aria-hidden />{m.phone}</a>}
@@ -68,6 +79,10 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
           </figure>
         )}
       </header>
+
+      {m.story.length > 0 && <Story headline={m.headline} lines={m.story} />}
+
+      <LiveNow code={m.code} name={m.name} />
 
       {/* 2. Report card */}
       <section aria-labelledby="card">
@@ -100,15 +115,24 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
             big={num(murdersNow)}>
             <p className="text-sm">in {info.safety.period}, against <strong>{num(murdersBefore)}</strong> in the same months a year before.</p>
           </Card>
-          <Card icon={<Briefcase aria-hidden />} title="Jobs" status={n(m.unemployment_now) != null ? (n(m.unemployment_now)! > 30 ? "bad" : n(m.unemployment_now)! > 20 ? "serious" : "warn") : "none"}
-            statusLabel="Unemployment" big={n(m.unemployment_now) != null ? `${n(m.unemployment_now)}%` : "no data"}>
-            <p className="text-sm">of people who want work have none in {m.jobs_area_level as string} ({info.jobs.period}). Young people: <strong>{info.jobs.youth_unemployment_15_34}%</strong> nationally.</p>
+          <Card icon={<Briefcase aria-hidden />} title="Formal jobs" big={num(n(m.formal_jobs))}
+            status={jobsChange == null ? "none" : jobsChange >= 0.01 ? "good" : jobsChange <= -0.01 ? "bad" : "warn"}
+            statusLabel={jobsChange == null ? undefined : jobsChange >= 0.01 ? "Growing" : jobsChange <= -0.01 ? "Shrinking" : "Flat"}>
+            <p className="text-sm">
+              jobs registered with SARS in {String(m.jobs_year ?? "the latest tax year")}, of which <strong>{num(n(m.youth_jobs))}</strong> are held by young people.
+              Typical formal pay: <strong>R{num(n(m.median_income))}</strong> a month.
+              {n(m.unemployment_now) != null && <> Unemployment in {m.jobs_area_level as string}: <strong>{n(m.unemployment_now)}%</strong>.</>}
+            </p>
           </Card>
-          {m.projects != null && (
-            <Card icon={<Landmark aria-hidden />} title="Government projects here" status="none" statusLabel="Province and national" big={num(n(m.projects))}>
-              <p className="text-sm">schools, clinics, houses and roads, worth about <strong>{rand(n(m.projects_value))}</strong>. {num(n(m.projects_building))} are being built now. <a href="#ward" className="text-link underline">See them on the map</a>.</p>
-            </Card>
-          )}
+          <Card icon={<Waves aria-hidden />} title="Sewage works" big={n(m.green_drop_score) != null ? `${n(m.green_drop_score)}%` : "no data"}
+            status={n(m.green_drop_score) == null ? "none" : n(m.green_drop_score)! >= 70 ? "good" : n(m.green_drop_score)! >= 50 ? "warn" : "bad"}
+            statusLabel={n(m.green_drop_score) == null ? undefined : n(m.green_drop_score)! >= 70 ? "Safe" : n(m.green_drop_score)! >= 50 ? "At risk" : "Serious risk"}>
+            <p className="text-sm">
+              national Green Drop score ({String(m.report_year ?? "latest")}) for cleaning waste water{m.water_quality_level === "district" ? ", measured for its district" : ""}.
+              Under 50% means sewage may reach rivers.
+              {typeof m.blue_drop_risk_category === "string" && <> Drinking water risk: <strong>{m.blue_drop_risk_category}</strong>.</>}
+            </p>
+          </Card>
         </div>
       </section>
 
@@ -198,6 +222,59 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
             {m.audit_url && <p className="mt-2 text-sm"><a className="text-link underline" href={m.audit_url} target="_blank" rel="noopener">Read the Auditor-General's report</a></p>}
           </div>
         </div>
+        {n(m.ytd_months_reported) != null && n(m.ytd_expected_share) != null && (
+          <div className="card p-4">
+            <h3 className="font-bold">This year so far ({String(m.ytd_financial_year)}, to {String(m.ytd_latest_month)})</h3>
+            <p className="text-sm text-muted">Red means it is behind: less used than the time gone.</p>
+            <div className="mt-3 grid gap-4 md:grid-cols-3">
+              {n(m.ytd_capital_budget) ? <YearProgress label="Building and fixing" share={n(m.ytd_capital_ytd)! / n(m.ytd_capital_budget)!} timeGone={n(m.ytd_expected_share)!} detail={`${rand(n(m.ytd_capital_ytd))} of ${rand(n(m.ytd_capital_budget))}`} /> : null}
+              {n(m.ytd_spending_budget) ? <YearProgress label="Running costs" share={n(m.ytd_spending_ytd)! / n(m.ytd_spending_budget)!} timeGone={n(m.ytd_expected_share)!} detail={`${rand(n(m.ytd_spending_ytd))} of ${rand(n(m.ytd_spending_budget))}`} /> : null}
+              {n(m.ytd_revenue_budget) ? <YearProgress label="Money coming in" share={n(m.ytd_revenue_ytd)! / n(m.ytd_revenue_budget)!} timeGone={n(m.ytd_expected_share)!} detail={`${rand(n(m.ytd_revenue_ytd))} of ${rand(n(m.ytd_revenue_budget))}`} /> : null}
+            </div>
+          </div>
+        )}
+        <div className="grid gap-6 md:grid-cols-2">
+          {n(m.owed_total) != null && (
+            <div className="card p-4">
+              <h3 className="font-bold">Who owes the municipality: {rand(n(m.owed_total))}</h3>
+              <p className="text-sm text-muted">Unpaid bills for rates, water and electricity ({String(m.owed_period)}). {pct(n(m.owed_over_1yr)! / n(m.owed_total)!)} is more than a year old.</p>
+              <div className="mt-3">
+                <SplitBar format={rand} parts={[
+                  { label: "Households", value: n(m.owed_households) ?? 0, color: "var(--color-seq-4)" },
+                  { label: "Businesses", value: n(m.owed_business) ?? 0, color: "var(--color-seq-2)" },
+                  { label: "Government", value: n(m.owed_government) ?? 0, color: "var(--color-risk-3)" },
+                ]} />
+              </div>
+              {n(m.owes_total) != null && (
+                <p className="mt-3 text-sm">The municipality itself owes <strong>{rand(n(m.owes_total))}</strong>
+                  {n(m.owes_eskom) ? <>, of which <strong>{rand(n(m.owes_eskom))}</strong> is to Eskom</> : null}
+                  {n(m.owes_water_boards) ? <> and <strong>{rand(n(m.owes_water_boards))}</strong> to water boards</> : null}.</p>
+              )}
+              {n(m.months_cover) != null && (
+                <p className="mt-1 text-sm">Cash in the bank at the end of {String(m.cash_year)}: {n(m.months_cover)! <= 0
+                  ? <strong className="text-bad-ink">below zero, so it was running on borrowed money</strong>
+                  : <><strong>{n(m.months_cover)!.toFixed(1)} months</strong> of running costs (a healthy municipality keeps 1 to 3)</>}.</p>
+              )}
+            </div>
+          )}
+          {grants.length > 0 && (
+            <div className="card p-4">
+              <h3 className="font-bold">Money from national government, and how much is used</h3>
+              <p className="text-sm text-muted">Grants for {grants[0].financial_year}, budget against spent so far.</p>
+              <ul className="mt-3 space-y-3">
+                {grants.map((g) => (
+                  <li key={g.grant}>
+                    <p className="text-sm">{g.grant}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="h-2.5 flex-1 rounded bg-sunk"><span className="block h-2.5 rounded bg-seq-4" style={{ width: `${Math.min(1, g.spent_share ?? 0) * 100}%` }} /></span>
+                      <span className="w-44 text-right text-sm tabular">{g.spent ? <><strong>{rand(g.spent)}</strong> of {rand(g.budget)}</> : <>no spending reported of {rand(g.budget)}</>}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
         {m.warnings.length > 0 && <p className="text-sm text-bad-ink">Left out because the government's own numbers look wrong: {m.warnings.join("; ")}.</p>}
       </section>
 
@@ -214,6 +291,16 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
           <Life icon={<GraduationCap aria-hidden />} label="Adults with matric or more" v={n(m.matric_adults)} />
           <Life icon={<Baby aria-hidden />} label="Small children in early learning" v={n(m.early_learning)} />
         </div>
+        {n(m.sch_schools) != null && (
+          <div className="card flex flex-wrap items-center gap-4 p-4">
+            <School aria-hidden size={32} />
+            <p className="flex-1">
+              <strong>{num(n(m.sch_schools))} schools</strong>, {pct(n(m.sch_no_fee_share))} of them no-fee.
+              {n(m.sch_matric_pass_rate) != null && <> In 2024, <strong>{Math.round(n(m.sch_matric_pass_rate)! * 10)} in 10</strong> matric learners passed ({num(n(m.sch_matric_passed))} of {num(n(m.sch_matric_wrote))}).</>}
+              {" "}<a href="#ward" className="text-link underline">See every school on the ward map</a>.
+            </p>
+          </div>
+        )}
         <div className="card p-4">
           <h3 className="font-bold">The parts of the wellbeing score</h3>
           <p className="text-sm text-muted">Each part is 0 (worst in South Africa) to 100 (best). The line is the middle.</p>
@@ -228,7 +315,7 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
               );
             })}
           </dl>
-          <p className="mt-2 text-sm text-muted">Work for young people uses Census 2011, the newest figure published for each municipality.</p>
+          <p className="mt-2 text-sm text-muted">Work and income uses SARS tax data for {String(m.jobs_year ?? "the latest tax year")}: formal jobs per working-age adult, and typical formal pay.</p>
         </div>
       </section>
 
@@ -281,10 +368,13 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
         <div>
           <h2 className="font-display text-2xl">Young people</h2>
           <p className="mt-1">
-            In 2011, <strong>{pct(n(m.youth_neet))}</strong> of young people here (15 to 35) had no job and were not studying or training.
-            Nationally today, <strong>{info.jobs.youth_unemployment_15_34}%</strong> of young people who want work have none.
+            <strong>{num(n(m.youth_jobs))}</strong> formal jobs here are held by young people (15 to 34), typically paying <strong>R{num(n(m.youth_median_income))}</strong> a month ({String(m.jobs_year ?? "")} tax data).
+            Nationally, <strong>{info.jobs.youth_unemployment_15_34}%</strong> of young people who want work have none ({info.jobs.period}).
           </p>
-          <p className="mt-2 text-sm text-muted">Stats SA does not publish youth unemployment for each municipality every quarter, so the local figure is from the last census that asked.</p>
+          {n(m.srd_paid) != null && (
+            <p className="mt-2"><strong>{num(n(m.srd_paid))}</strong> people here received the R370 SRD grant in {String(m.srd_period)}.</p>
+          )}
+          <p className="mt-2 text-sm text-muted">In 2011, {pct(n(m.youth_neet))} of young people here had no job, school or training: the last census that asked.</p>
         </div>
       </section>
 
@@ -293,6 +383,43 @@ export default async function MuniPage({ params }: { params: Promise<{ code: str
         <h2 id="ward-h" className="font-display text-2xl">Your ward</h2>
         <p className="text-muted">A ward is the area your councillor represents. Zoom in to your street.</p>
         <WardMap code={m.code} wardYearNote="Ward figures: Census 2011, re-mapped by the Municipal Demarcation Board to the wards used since 2021. New ward lines apply from the November 2026 election." />
+      </section>
+
+      <section aria-labelledby="who" className="space-y-4">
+        <h2 id="who" className="font-display text-2xl">Who runs it, and who is watching</h2>
+        {officials.length > 0 && (
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {officials.map((o) => (
+              <div key={o.role + o.name} className="card p-3">
+                <p className="text-sm text-muted">{o.role}</p>
+                <p className="font-bold">{o.name}</p>
+                {o.office_phone && <a className="mt-1 flex min-h-11 items-center gap-1 text-sm font-bold text-link underline" href={`tel:${o.office_phone.replace(/\s/g, "")}`}><Phone size={14} aria-hidden />{o.office_phone}</a>}
+                {o.email && <a className="flex min-h-11 items-center gap-1 break-all text-sm text-link underline" href={`mailto:${o.email}`}><Mail size={14} aria-hidden />{o.email}</a>}
+              </div>
+            ))}
+          </div>
+        )}
+        <p className="text-sm text-muted">Office contacts published by National Treasury. The mayor and speaker are elected councillors; the municipal manager and chief financial officer are the officials who run the administration and the money.</p>
+        <div className="grid gap-6 md:grid-cols-2">
+          {residentsSay.length > 0 && (
+            <div className="card p-4">
+              <h3 className="inline-flex items-center gap-2 font-bold"><MessageSquare size={18} aria-hidden />What residents here say</h3>
+              <p className="text-sm text-muted">Gauteng City-Region Observatory Quality of Life survey, {residentsSay[0].year}.</p>
+              <div className="mt-3"><Bars items={residentsSay.map((r) => ({ label: r.question, value: r.share }))} format={(v) => `${Math.round(v * 100)}%`} /></div>
+            </div>
+          )}
+          <div className="card p-4">
+            <h3 className="inline-flex items-center gap-2 font-bold"><SearchIcon size={18} aria-hidden />Investigations</h3>
+            {siu.length > 0 ? (
+              <ul className="mt-2 space-y-2 text-sm">
+                {siu.map((c) => (
+                  <li key={c.proclamation}><a className="text-link underline" href={c.link} target="_blank" rel="noopener">{c.proclamation}</a> ({c.date}): {c.title}</li>
+                ))}
+              </ul>
+            ) : <p className="mt-2 text-sm">No Special Investigating Unit proclamation names this municipality.</p>}
+            <p className="mt-2 text-sm text-muted">A proclamation means the President has ordered the SIU to investigate. It is not a finding of guilt.</p>
+          </div>
+        </div>
       </section>
 
       {/* 9. What you can do */}

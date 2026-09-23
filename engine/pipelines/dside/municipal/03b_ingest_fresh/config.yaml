@@ -1,0 +1,44 @@
+# Newer public data that needs no login: Treasury monthly figures to this year,
+# who owes and is owed, officials, every ward's election results, 2025 tax jobs,
+# 2026 population, SRD grants, water quality, schools, matric results and SIU cases.
+MODEL: etl
+VERSION: "1.0.0"
+CONFIG:
+  inputs:
+    debtors: {format: dside_source, name: debtors, refresh: "{{ env.REFRESH | default('false') }}"}
+    creditors: {format: dside_source, name: creditors, refresh: "{{ env.REFRESH | default('false') }}"}
+    grants: {format: dside_source, name: grants, refresh: "{{ env.REFRESH | default('false') }}"}
+    year_to_date: {format: dside_source, name: year_to_date, refresh: "{{ env.REFRESH | default('false') }}"}
+    officials: {format: dside_source, name: officials, refresh: "{{ env.REFRESH | default('false') }}"}
+    cash: {format: dside_source, name: cash, refresh: "{{ env.REFRESH | default('false') }}"}
+    ward_councillors_2021: {format: dside_source, name: ward_councillors_2021, refresh: "{{ env.REFRESH | default('false') }}"}
+    ward_results_2024: {format: dside_source, name: ward_results_2024, refresh: "{{ env.REFRESH | default('false') }}"}
+    census_extras: {format: dside_source, name: census_extras, refresh: "{{ env.REFRESH | default('false') }}"}
+    gcro: {format: dside_source, name: gcro, refresh: "{{ env.REFRESH | default('false') }}"}
+    jobs_2025: {format: dside_source, name: jobs_2025, refresh: "{{ env.REFRESH | default('false') }}"}
+    jobs_series: {format: dside_source, name: jobs_series, refresh: "{{ env.REFRESH | default('false') }}"}
+    population_2026: {format: dside_source, name: population_2026, refresh: "{{ env.REFRESH | default('false') }}"}
+    srd_grants: {format: dside_source, name: srd_grants, refresh: "{{ env.REFRESH | default('false') }}"}
+    water_quality: {format: dside_source, name: water_quality, refresh: "{{ env.REFRESH | default('false') }}"}
+    schools: {format: dside_source, name: schools, refresh: "{{ env.REFRESH | default('false') }}"}
+    matric: {format: dside_source, name: matric, refresh: "{{ env.REFRESH | default('false') }}"}
+    siu: {format: dside_source, name: siu, refresh: "{{ env.REFRESH | default('false') }}"}
+  outputs:
+    debtors: {format: s3, path: "{{ env.WORK_DIR }}/raw/debtors.parquet", file_format: parquet, mode: overwrite}
+    creditors: {format: s3, path: "{{ env.WORK_DIR }}/raw/creditors.parquet", file_format: parquet, mode: overwrite}
+    grants: {format: s3, path: "{{ env.WORK_DIR }}/raw/grants.parquet", file_format: parquet, mode: overwrite}
+    year_to_date: {format: s3, path: "{{ env.WORK_DIR }}/raw/year_to_date.parquet", file_format: parquet, mode: overwrite}
+    officials: {format: s3, path: "{{ env.WORK_DIR }}/raw/officials.parquet", file_format: parquet, mode: overwrite}
+    cash: {format: s3, path: "{{ env.WORK_DIR }}/raw/cash.parquet", file_format: parquet, mode: overwrite}
+    ward_councillors_2021: {format: s3, path: "{{ env.WORK_DIR }}/raw/ward_councillors_2021.parquet", file_format: parquet, mode: overwrite}
+    ward_results_2024: {format: s3, path: "{{ env.WORK_DIR }}/raw/ward_results_2024.parquet", file_format: parquet, mode: overwrite}
+    census_extras: {format: s3, path: "{{ env.WORK_DIR }}/raw/census_extras.parquet", file_format: parquet, mode: overwrite}
+    gcro: {format: s3, path: "{{ env.WORK_DIR }}/raw/gcro.parquet", file_format: parquet, mode: overwrite}
+    jobs_2025: {format: s3, path: "{{ env.WORK_DIR }}/raw/jobs_2025.parquet", file_format: parquet, mode: overwrite}
+    jobs_series: {format: s3, path: "{{ env.WORK_DIR }}/raw/jobs_series.parquet", file_format: parquet, mode: overwrite}
+    population_2026: {format: s3, path: "{{ env.WORK_DIR }}/raw/population_2026.parquet", file_format: parquet, mode: overwrite}
+    srd_grants: {format: s3, path: "{{ env.WORK_DIR }}/raw/srd_grants.parquet", file_format: parquet, mode: overwrite}
+    water_quality: {format: s3, path: "{{ env.WORK_DIR }}/raw/water_quality.parquet", file_format: parquet, mode: overwrite}
+    schools: {format: s3, path: "{{ env.WORK_DIR }}/raw/schools.parquet", file_format: parquet, mode: overwrite}
+    matric: {format: s3, path: "{{ env.WORK_DIR }}/raw/matric.parquet", file_format: parquet, mode: overwrite}
+    siu: {format: s3, path: "{{ env.WORK_DIR }}/raw/siu.parquet", file_format: parquet, mode: overwrite}

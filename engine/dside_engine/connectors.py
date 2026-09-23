@@ -202,3 +202,18 @@ class CouncillorReader(Reader):
         from .sources import safety_jobs_wards as s
 
         return _frame(s.tshwane_councillors(str(cfg.get("refresh", "false")).lower() == "true"), backend)
+
+
+class DsideSourceReader(Reader):
+    """Any source in dside_engine.catalogue, by name (cfg: name, refresh)."""
+
+    @classmethod
+    def validate_config(cls, cfg: dict) -> list[str]:
+        from .catalogue import SOURCES
+
+        return [] if cfg.get("name") in SOURCES else [f"dside_source 'name' must be one of {sorted(SOURCES)}"]
+
+    def read(self, cfg: dict, backend: Any):
+        from .catalogue import load
+
+        return _frame(load(cfg["name"], str(cfg.get("refresh", "false")).lower() == "true"), backend)

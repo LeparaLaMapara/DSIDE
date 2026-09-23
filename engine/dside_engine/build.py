@@ -12,7 +12,7 @@ import time
 import numpy as np
 import pandas as pd
 
-from .analytics import audit_model, compare, local, money, projects, wellbeing
+from .analytics import audit_model, compare, fresh, local, money, projects, story, wellbeing
 
 PROVINCES = {"EC": "Eastern Cape", "FS": "Free State", "GT": "Gauteng", "KZN": "KwaZulu-Natal",
              "LIM": "Limpopo", "MP": "Mpumalanga", "NC": "Northern Cape", "NW": "North West",
@@ -49,6 +49,12 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     people = wellbeing.census_2022(raw["census_2022"]).join(wellbeing.youth_2011(raw["youth_2011"]), how="left")
     df = meta.join(m, how="left").join(people, how="left")
 
+    extra, nested = fresh.municipal(meta, raw)
+    df = df.join(extra, how="left")
+    df["formal_job_rate"] = df["formal_jobs"] / df["working_age_2022"]
+    schools = fresh.schools_table(raw["schools"], raw["matric"])
+    df = df.join(fresh.schools_by_muni(schools).add_prefix("sch_"), how="left")
+
     safety, stations, safety_info = local.safety(raw["crime"], df["population_2022"])
     df = df.join(safety, how="left")
     jobs, jobs_info = local.jobs(raw["jobs"], meta)
@@ -82,6 +88,9 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
         rec = {k: _clean(v) for k, v in row.items()
                if not str(k).startswith(("peer_pct:", "peer_median:", "peer_best:", "safety_"))}
         rec.update(code=code, strengths=strengths, problems=problems, reasons=compare.reasons(row),
+                   headline=story.headline(row), story=story.story(row) if row["kind"] != "district" else [],
+                   officials=nested[code].get("officials", []), grants=nested[code].get("grants", []),
+                   residents_say=nested[code].get("residents_say", []), siu=nested[code].get("siu", []),
                    planned_by_service=services[services["code"] == code][["service", "amount"]].to_dict("records"))
         records.append({k: _clean(v) for k, v in rec.items()})
     munis = pd.DataFrame(records)
@@ -102,9 +111,9 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     slim_projects = located.dropna(subset=["code"])[
         ["code", "name", "sector", "department", "stage", "status", "estimated_total_project_cost",
          "estimated_completion_date", "latitude", "longitude", "url_path"]]
-    wards = local.ward_table(raw["wards"], raw["councillors"])
+    wards = fresh.wards(local.ward_table(raw["wards"], raw["councillors"]), raw, schools)
     return {"municipalities": munis, "projects": slim_projects.reset_index(drop=True),
-            "stations": stations, "wards": wards,
+            "stations": stations, "wards": wards, "schools": schools,
             "meta": pd.DataFrame([{"json": json.dumps(info, default=_clean)}])}
 
 

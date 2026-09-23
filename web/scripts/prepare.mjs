@@ -35,7 +35,8 @@ for (const w of data("wards.json")) {
     type: "Feature",
     id: Number(w.ward_id),
     geometry: JSON.parse(w.geometry),
-    properties: Object.fromEntries(Object.entries(w).filter(([k]) => k !== "geometry")),
+    properties: Object.fromEntries(Object.entries(w).filter(([k]) => k !== "geometry")
+      .map(([k, v]) => [k, typeof v === "string" && /^[[{]/.test(v) ? JSON.parse(v) : v])),
   });
 }
 for (const [code, fs_] of Object.entries(wards)) out(`wards/${code}.geojson`, { type: "FeatureCollection", features: fs_ });
@@ -48,6 +49,15 @@ for (const p of data("projects.json")) {
   });
 }
 for (const [code, list] of Object.entries(projects)) out(`projects/${code}.json`, list);
+const schools = {};
+for (const s of data("schools.json")) {
+  (schools[s.code] ??= []).push({
+    n: s.name, p: s.phase, nf: s.no_fee ? 1 : 0, l: s.learners, lat: s.lat, lng: s.lng, w: s.ward_id,
+    mw: s.matric_wrote, mp: s.matric_passed, pr: s.matric_pass_rate,
+  });
+}
+for (const [code, list] of Object.entries(schools)) out(`schools/${code}.json`, list);
+
 // MapLibre runs its map work in a web worker that bundlers cannot follow, so
 // ship the worker (and the chunk it imports) as plain static files.
 fs.mkdirSync(path.join("public", "maplibre"), { recursive: true });

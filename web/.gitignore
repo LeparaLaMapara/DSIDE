@@ -43,3 +43,6 @@ public/geo/
 public/maplibre/
 
 .vercel
+public/live/
+.env.production.local
+!.env.production

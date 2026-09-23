@@ -34,8 +34,19 @@ export default function About() {
           <li><strong>Young people:</strong> Youth Explorer (Census 2011), through the same API. It is the newest youth data published for every municipality.</li>
           <li><strong>Crime:</strong> SAPS quarterly crime statistics per police station, {m.safety.period} (<a className="text-link underline" href={m.safety.source}>file</a>). Stations are linked to municipalities with Adrian Frith&apos;s cleaned police precinct table, built from Stats SA boundaries and Census 2022 population. Stations not yet in that table: {m.safety.unmatched_stations || "none"}.</li>
           <li><strong>Jobs now:</strong> Stats SA Quarterly Labour Force Survey, {m.jobs.period} (<a className="text-link underline" href={jobsUrl}>file</a>).{jobsFallback && " Stats SA's server did not respond at the last collection, so the last saved copy was used."}</li>
-          <li><strong>Wards:</strong> Municipal Demarcation Board ward profiles (Census 2011 figures re-mapped to the 2021 wards). Ward councillors: the City of Tshwane&apos;s published list (pilot city).</li>
+          <li><strong>Wards:</strong> Municipal Demarcation Board ward profiles (Census 2011 figures re-mapped to the 2021 wards). Ward councillors: 2021 election results for every ward, with the City of Tshwane&apos;s own list (and phone numbers) where it is newer.</li>
           <li><strong>Government projects:</strong> Vulekamali (National Treasury): every provincial and national project with a location.</li>
+          <li><strong>This year&apos;s money, debts and grants:</strong> National Treasury monthly returns for the current financial year (who owes the municipality, what it owes Eskom and water boards, grants received and spent, cash at year end), and the officials list with office contacts.</li>
+          <li><strong>Jobs and pay:</strong> the Spatial Tax Panel (SARS, National Treasury and HSRC), formal jobs, youth jobs and median pay per municipality from tax records, latest tax year. It counts formal jobs only.</li>
+          <li><strong>Population now:</strong> Stats SA mid-year estimates for 2026, published for districts and metros; local municipalities show their district&apos;s figure.</li>
+          <li><strong>Grants to people:</strong> SASSA monthly report of Social Relief of Distress (R370) payments per municipality.</li>
+          <li><strong>Water quality:</strong> Department of Water and Sanitation Green Drop (waste water) and Blue Drop (drinking water) reports. Only water services authorities are scored, so some local municipalities show their district&apos;s score.</li>
+          <li><strong>Schools and matric:</strong> the Department of Basic Education school master list (with locations corrected where latitude and longitude were swapped) and the 2024 National Senior Certificate school performance report.</li>
+          <li><strong>Elections:</strong> 2021 local election and 2024 national election results for every ward, published by the Electoral Commission through SANEF&apos;s Wazimap.</li>
+          <li><strong>What residents say (Gauteng):</strong> Gauteng City-Region Observatory Quality of Life survey 2023/24. Samples for small municipalities are small, so treat those shares as indicative.</li>
+          <li><strong>Investigations:</strong> Special Investigating Unit local government proclamations.</li>
+          <li><strong>Live layer, every few hours:</strong> the City of Tshwane&apos;s public electricity outage map, Eskom&apos;s loadshedding status, and headlines from South African news feeds (SABC, eNCA, News24, IOL, The Citizen, Daily Maverick, GroundUp, SAnews, gov.za, Rekord, Lowvelder and city notices). We show only the headline, outlet, date and link. Headlines are placed by matching place names by computer and are not checked by a person.</li>
+          <li><strong>Satellite images:</strong> Esri World Imagery, with road and place names from Esri.</li>
           <li><strong>What you can do:</strong> official public lines only: the GBV Command Centre, SAPS Crime Stop, the substance abuse helpline, the Public Protector, the SA Human Rights Commission, SAYouth, NYDA and NSFAS.</li>
         </ul>
       </section>
@@ -59,7 +70,7 @@ export default function About() {
         <p>
           Four equal parts, following Stats SA&apos;s multidimensional poverty index: home and services (water, toilet,
           electricity, rubbish, housing, cooking fuel); learning (adults with matric, children in early learning); work
-          for young people; and safety (murders and sexual offences per person). Each measure is scaled so 0 is the
+          and income (formal jobs per working-age adult and typical formal pay, from the latest tax records); and safety (murders and sexual offences per person). Each measure is scaled so 0 is the
           worst municipality and 100 the best. These are shares of people, not a household poverty count, because only
           totals are published per municipality.
         </p>
@@ -104,7 +115,8 @@ export default function About() {
       <section>
         <h2 className="font-display text-2xl">What these numbers cannot tell you</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5">
-          <li>Census 2022 did not ask about jobs or income, so work data per municipality is from 2011. Stats SA&apos;s newer figures exist only for provinces and big cities.</li>
+          <li>Census 2022 did not ask about jobs or income. Tax records give formal jobs and pay per municipality up to the latest tax year, but informal work (spaza shops, piece jobs) is not in them.</li>
+          <li>Ward figures on water, toilets and schooling are still from Census 2011, because Census 2022 results per ward are not published yet.</li>
           <li>Police precincts do not follow municipal borders. A station is counted in the municipality where most of its precinct lies.</li>
           <li>&quot;What goes with these problems&quot; shows facts that sit side by side. It does not prove what caused what.</li>
           <li>We never show nationality or origin next to crime or service failures. The research does not support blaming a group, and doing so has led to violence.</li>

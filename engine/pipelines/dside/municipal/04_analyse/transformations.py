@@ -16,7 +16,7 @@ class Analyse(Task):
             if munis[col].map(lambda v: isinstance(v, (list, dict))).any():
                 munis[col] = munis[col].map(json.dumps)
         out["municipalities"] = munis
-        for name in ("stations",):
+        for name in ("stations", "wards"):
             frame = out[name].copy()
             for col in frame.columns:
                 if frame[col].map(lambda v: isinstance(v, (list, dict))).any():

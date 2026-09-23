@@ -9,6 +9,7 @@ class Publish(Task):
             "projects": sources["projects"].native,
             "boundaries": geos[["code", "name", "level", "parent", "geometry"]],
             "stations": sources["stations"].native,
+            "schools": sources["schools"].native,
             "wards": sources["wards"].native,
             "meta": sources["meta"].native,
         }

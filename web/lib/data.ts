@@ -13,6 +13,8 @@ export type Item = {
   best_peer: string | null;
 };
 
+export type StoryLine = { topic: "services" | "money" | "water" | "safety" | "work"; tone: "good" | "bad" | "mixed"; text: string; source: string };
+
 export type Reason = { kind: "money" | "honesty" | "pressure"; text: string; evidence: string };
 
 export type Muni = {
@@ -46,6 +48,8 @@ export type Muni = {
   reasons: Reason[];
   planned_by_service: { service: string; amount: number }[];
   unemployment_trend: number[] | null;
+  headline: string | null;
+  story: StoryLine[];
   warnings: string[];
   [key: string]: unknown;
 };
@@ -54,7 +58,7 @@ const dir = path.join(process.cwd(), "data");
 const read = <T,>(f: string): T => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
 const parse = (v: unknown) => (typeof v === "string" && /^[[{]/.test(v) ? JSON.parse(v) : v);
 
-const LISTS = ["strengths", "problems", "reasons", "planned_by_service", "audit_history", "warnings", "unemployment_trend"];
+const LISTS = ["strengths", "problems", "reasons", "planned_by_service", "audit_history", "warnings", "unemployment_trend", "story", "officials", "grants", "residents_say", "siu"];
 
 let cache: Muni[] | null = null;
 export function municipalities(): Muni[] {

@@ -223,3 +223,42 @@ export function Quadrant({ x, y, midX, midY }: { x: number; y: number; midX: num
     </svg>
   );
 }
+
+/** Progress through the year: a bar for money used, and a line for time gone. */
+export function YearProgress({ label, share, timeGone, detail }: { label: string; share: number; timeGone: number; detail: string }) {
+  const behind = share < timeGone - 0.1;
+  return (
+    <div>
+      <div className="flex justify-between gap-2 text-sm"><span className="font-bold">{label}</span><span className="tabular">{detail}</span></div>
+      <svg viewBox="0 0 300 26" className="w-full" role="img" aria-label={`${label}: ${Math.round(share * 100)}% used, ${Math.round(timeGone * 100)}% of the year gone`}>
+        <rect x="0" y="6" width="300" height="12" rx="4" fill="var(--color-sunk)" />
+        <rect x="0" y="6" width={Math.min(1, share) * 300} height="12" rx="4" fill={behind ? "var(--color-bad)" : "var(--color-seq-4)"} />
+        <line x1={timeGone * 300} x2={timeGone * 300} y1="1" y2="23" stroke="var(--color-foreground)" strokeWidth="2.5" />
+      </svg>
+      <p className="text-xs text-muted">{Math.round(share * 100)}% used. Black line: {Math.round(timeGone * 100)}% of the year gone.</p>
+    </div>
+  );
+}
+
+/** One bar split into parts, each labelled with its amount. */
+export function SplitBar({ parts, format }: { parts: { label: string; value: number; color: string }[]; format: (v: number) => string }) {
+  const total = parts.reduce((s, p) => s + Math.max(0, p.value), 0) || 1;
+  return (
+    <div>
+      <div className="flex h-7 w-full overflow-hidden rounded" role="img"
+        aria-label={parts.map((p) => `${p.label} ${format(p.value)}`).join(", ")}>
+        {parts.filter((p) => p.value > 0).map((p) => (
+          <div key={p.label} style={{ width: `${(p.value / total) * 100}%`, background: p.color }} className="border-r-2 border-surface last:border-r-0" title={`${p.label}: ${format(p.value)}`} />
+        ))}
+      </div>
+      <ul className="mt-2 grid gap-1 text-sm sm:grid-cols-2">
+        {parts.map((p) => (
+          <li key={p.label} className="flex items-center gap-2">
+            <span className="inline-block h-3.5 w-3.5 rounded-sm" style={{ background: p.color }} />
+            <span className="flex-1">{p.label}</span><span className="font-bold tabular">{format(p.value)}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
