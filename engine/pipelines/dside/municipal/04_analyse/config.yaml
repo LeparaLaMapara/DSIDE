@@ -1,0 +1,26 @@
+# Turn the raw tables into one plain-language record per municipality:
+# money score, wellbeing index, peer comparison, groups, audit prediction.
+MODEL: etl
+VERSION: "1.0.0"
+CONFIG:
+  inputs:
+    income_items: {format: s3, path: "{{ env.WORK_DIR }}/raw/income_items.parquet", file_format: parquet}
+    income_services: {format: s3, path: "{{ env.WORK_DIR }}/raw/income_services.parquet", file_format: parquet}
+    capital: {format: s3, path: "{{ env.WORK_DIR }}/raw/capital.parquet", file_format: parquet}
+    uifw: {format: s3, path: "{{ env.WORK_DIR }}/raw/uifw.parquet", file_format: parquet}
+    audits: {format: s3, path: "{{ env.WORK_DIR }}/raw/audits.parquet", file_format: parquet}
+    municipalities: {format: s3, path: "{{ env.WORK_DIR }}/raw/municipalities.parquet", file_format: parquet}
+    census_2022: {format: s3, path: "{{ env.WORK_DIR }}/raw/census_2022.parquet", file_format: parquet}
+    youth_2011: {format: s3, path: "{{ env.WORK_DIR }}/raw/youth_2011.parquet", file_format: parquet}
+    geographies: {format: s3, path: "{{ env.WORK_DIR }}/raw/geographies.parquet", file_format: parquet}
+    projects: {format: s3, path: "{{ env.WORK_DIR }}/raw/projects.parquet", file_format: parquet}
+    crime: {format: s3, path: "{{ env.WORK_DIR }}/raw/crime.parquet", file_format: parquet}
+    jobs: {format: s3, path: "{{ env.WORK_DIR }}/raw/jobs.parquet", file_format: parquet}
+    wards: {format: s3, path: "{{ env.WORK_DIR }}/raw/wards.parquet", file_format: parquet}
+    councillors: {format: s3, path: "{{ env.WORK_DIR }}/raw/councillors.parquet", file_format: parquet}
+  outputs:
+    municipalities: {format: s3, path: "{{ env.WORK_DIR }}/analysed/municipalities.parquet", file_format: parquet, mode: overwrite}
+    projects: {format: s3, path: "{{ env.WORK_DIR }}/analysed/projects.parquet", file_format: parquet, mode: overwrite}
+    stations: {format: s3, path: "{{ env.WORK_DIR }}/analysed/stations.parquet", file_format: parquet, mode: overwrite}
+    wards: {format: s3, path: "{{ env.WORK_DIR }}/analysed/wards.parquet", file_format: parquet, mode: overwrite}
+    meta: {format: s3, path: "{{ env.WORK_DIR }}/analysed/meta.parquet", file_format: parquet, mode: overwrite}

@@ -1,0 +1,5 @@
+.cache/
+.work/
+__pycache__/
+*.egg-info/
+pipelines/.ubunye/

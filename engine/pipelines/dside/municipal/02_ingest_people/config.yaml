@@ -1,0 +1,28 @@
+# How people live. Census 2022 per municipality (Wazimap profile 14) and the
+# Youth Explorer youth indicators (Census 2011, Wazimap profile 8), SAPS crime
+# per police station (latest quarter) and Stats SA labour force (latest quarter).
+MODEL: etl
+VERSION: "1.0.0"
+CONFIG:
+  inputs:
+    census_2022:
+      format: wazimap_indicator
+      profile: 14
+      indicators: "3217:population,2797:households,2818:water,2821:toilet,2824:lighting,2822:cooking,2825:refuse,2817:dwelling,2782:education,2781:ecd"
+      refresh: "{{ env.REFRESH | default('false') }}"
+    youth_2011:
+      format: wazimap_indicator
+      profile: 8
+      indicators: "1134:neet,1132:unemployment,1142:youth_poverty"
+      refresh: "{{ env.REFRESH | default('false') }}"
+    crime:
+      format: saps_crime
+      refresh: "{{ env.REFRESH | default('false') }}"
+    jobs:
+      format: statssa_qlfs
+      refresh: "{{ env.REFRESH | default('false') }}"
+  outputs:
+    census_2022: {format: s3, path: "{{ env.WORK_DIR }}/raw/census_2022.parquet", file_format: parquet, mode: overwrite}
+    youth_2011: {format: s3, path: "{{ env.WORK_DIR }}/raw/youth_2011.parquet", file_format: parquet, mode: overwrite}
+    crime: {format: s3, path: "{{ env.WORK_DIR }}/raw/crime.parquet", file_format: parquet, mode: overwrite}
+    jobs: {format: s3, path: "{{ env.WORK_DIR }}/raw/jobs.parquet", file_format: parquet, mode: overwrite}

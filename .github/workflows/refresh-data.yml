@@ -1,0 +1,43 @@
+# Collect fresh public data with the Ubunye pipeline, then stop.
+# Runs once a quarter (Treasury updates its municipal data quarterly) or when
+# started by hand. If the data changed it is committed, and the hosting
+# platform rebuilds the static site from the new files. Nothing stays running.
+name: Refresh data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 20 2,5,8,11 *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install the engine
+        working-directory: engine
+        run: pip install -e ".[test]"
+      - name: Test
+        working-directory: engine
+        run: pytest -q tests
+      - name: Run the pipeline
+        working-directory: engine
+        env:
+          REFRESH: "true"
+          PYTHONWARNINGS: ignore
+        run: ./run.sh
+      - name: Commit new data
+        run: |
+          git config user.name "dside-data-bot"
+          git config user.email "dside-data-bot@users.noreply.github.com"
+          git add web/data engine/fallback
+          if git diff --cached --quiet; then echo "No change in the data."; exit 0; fi
+          git commit -m "Refresh public data ($(date -u +%F))"
+          git push
