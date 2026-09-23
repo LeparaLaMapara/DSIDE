@@ -103,6 +103,7 @@ export type Meta = {
   national: Record<string, number>;
   dimensions: Record<string, string>;
   safety: { period: string; year: number; years: number[]; labels: Record<string, string>; source: string; unmatched_stations: string };
+  stale_sources?: Record<string, { fetched_at: string | null; failed_at: string; error: string }>;
   jobs: { period: string; periods: string[]; national_unemployment: number; youth_unemployment_15_34: number; source: string };
 };
 export const meta = (): Meta => JSON.parse(read<{ json: string }[]>("meta.json")[0].json);
