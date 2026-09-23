@@ -1,5 +1,6 @@
 import { NationalMap } from "@/components/maps";
 import { Search } from "@/components/search";
+import { LocateMe } from "@/components/locate-me";
 import { meta, serving } from "@/lib/data";
 import { rand } from "@/lib/format";
 import Link from "next/link";
@@ -23,7 +24,11 @@ export default function Home() {
           See what your municipality is supposed to do, what it did with the money, how people live there,
           and what <strong>you</strong> can do about it.
         </p>
-        <div className="max-w-xl"><Search items={items} /></div>
+        <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:items-start">
+          <LocateMe />
+          <p className="self-center font-bold text-muted sm:pt-3">or</p>
+          <div className="flex-1"><Search items={items} /></div>
+        </div>
       </section>
 
       <section aria-labelledby="pulse">
