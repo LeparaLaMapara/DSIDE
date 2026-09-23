@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Masepala design tokens. Light mode only, on purpose: the site is read on
+   phones outdoors and on cheap screens, where a dark theme is harder to read.
+   Do not add a dark toggle without designing every chart for it. */
+@theme {
+  --color-background: #fbfaf6;
+  --color-surface: #ffffff;
+  --color-sunk: #f1efe8;
+  --color-border: #dedbd2;
+  --color-foreground: #141414;
+  --color-muted: #55534e;
+  --color-faint: #898781;
+
+  /* One accent: street-sign yellow, always with black text on it. */
+  --color-accent: #ffd23f;
+  --color-accent-ink: #141414;
+  --color-link: #1c5cab;
+
+  /* Status (never used for anything else; always paired with an icon + words). */
+  --color-good: #0ca30c;
+  --color-good-ink: #006300;
+  --color-warn: #fab219;
+  --color-serious: #ec835a;
+  --color-bad: #d03b3b;
+  --color-bad-ink: #a32b2b;
+
+  /* Sequential ramps for maps and bars: blue for things people should have,
+     orange for crime. Lighter = less. */
+  --color-seq-1: #cde2fb;
+  --color-seq-2: #86b6ef;
+  --color-seq-3: #3987e5;
+  --color-seq-4: #1c5cab;
+  --color-seq-5: #0d366b;
+  --color-risk-1: #fde0cf;
+  --color-risk-2: #f5a77f;
+  --color-risk-3: #eb6834;
+  --color-risk-4: #b8461c;
+  --color-risk-5: #7a2c0f;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), var(--font-body), ui-sans-serif, sans-serif;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* The yellow "board" used for the one thing on a page that matters most. */
+.board {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  border: 2px solid var(--color-foreground);
+  box-shadow: 4px 4px 0 var(--color-foreground);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.maplibregl-popup-content {
+  font-family: var(--font-sans);
+  border-radius: 6px;
+  padding: 10px 12px;
+}

@@ -1,4 +1,77 @@
-# DSIDE - Municipal Money
+# DSIDE
+
+**Masepala: know your municipality.** A plain-language, visual site about every
+South African municipality: what it is supposed to do, what it did with the
+money, how people live there, how safe it is, and what an ordinary resident can
+do about it. Zoom from the whole country down to your own ward.
+
+"You are the government. This is your information."
+
+## How it works
+
+```
+public APIs  ->  engine/ (Ubunye Engine pipeline, runs once and stops)  ->  web/data/*.json  ->  web/ (static site)
+```
+
+| Source | What it gives | How current |
+|---|---|---|
+| National Treasury, Municipal Money | budgets, audited spending, building spending, wasted money, audits | latest audited year |
+| Stats SA Census 2022 (Wazimap API) | water, toilets, electricity, rubbish, housing, schooling | 2022 |
+| Youth Explorer (Wazimap API) | young people not in work, school or training | Census 2011, the newest per municipality |
+| SAPS crime statistics | murders, sexual offences, drug crime, burglary per police station | latest quarter |
+| Stats SA Labour Force Survey | unemployment for metros and provinces | latest quarter |
+| Municipal Demarcation Board | every ward, with its profile | 2021 wards |
+| Vulekamali | provincial and national building projects with a location | live |
+
+**engine/** is a Python package built on the [Ubunye Engine](https://github.com/ubunye-ai-ecosystems/ubunye_engine)
+(pandas backend). Each public source is an Ubunye reader plugin, and the
+pipeline in `engine/pipelines/dside/municipal/` has five tasks: ingest money,
+ingest people, ingest places, analyse, publish. The analysis is in
+`engine/dside_engine/analytics/`:
+
+- `money.py`: a 0 to 100 money handling score against Treasury norms, built
+  from the raw cubes because Treasury's ready-made indicators are broken for
+  recent years; impossible numbers are flagged, not shown.
+- `wellbeing.py`: a wellbeing index after Stats SA's multidimensional poverty
+  index, with a 5,000-draw weight test so every rank says how solid it is.
+- `compare.py`: peers (metros with metros, rural with rural), strengths and
+  problems, and the facts that go with each problem.
+- `audit_model.py`: next year's audit chance, published only because it beats
+  the "same as last year" guess on a year it never saw (only just; the About
+  page says so).
+- `local.py`: crime per station and municipality, jobs now, ward facts.
+
+**web/** is a Next.js static site (no server): a national map, one page per
+municipality, a ward map with "find my ward", and "what you can do" cards
+chosen from each municipality's own problems.
+
+## Run it
+
+```bash
+cd engine
+pip install -e ".[test]"
+pytest -q tests
+./run.sh                  # REFRESH=true to ignore the download cache
+cd ../web && npm install && npm run build   # output in web/out
+```
+
+Two scheduled GitHub workflows keep it fresh, and nothing runs in between:
+
+- `refresh-data.yml`, once a quarter: the full pipeline; commits `web/data`, and Vercel rebuilds the site.
+- `refresh-live.yml`, every three hours: the live pipeline (`engine/run_live.sh`); publishes to the
+  single-commit `live-data` branch, which the site reads directly, so nothing is rebuilt.
+
+## The 2017 project
+
+The original 2017 DSIDE notebooks and data are kept in the older folders for
+history. The 2017 Django dashboard and the unfinished `dside-next` attempt were
+removed from the tree in September 2026 (their dependencies carried security
+alerts and both are replaced by `engine/` and `web/`); they are preserved in
+full at the `legacy-2017` tag.
+
+---
+
+# DSIDE - Municipal Money (2017)
 
 
 

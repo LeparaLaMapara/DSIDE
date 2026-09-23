@@ -1,0 +1,14 @@
+# The live layer, run every few hours: Tshwane's open electricity faults and
+# how long they take to fix, news headlines that name a place, and Eskom's
+# loadshedding stage. Reads the published schools and wards; writes small
+# JSON files the site fetches.
+MODEL: etl
+VERSION: "1.0.0"
+CONFIG:
+  inputs:
+    schools: {format: s3, path: "{{ env.SITE_DATA }}/schools.json", file_format: json}
+  outputs:
+    faults: {format: s3, path: "{{ env.LIVE_DIR }}/faults.json", file_format: json, mode: overwrite}
+    fault_wards: {format: s3, path: "{{ env.LIVE_DIR }}/fault_wards.json", file_format: json, mode: overwrite}
+    news: {format: s3, path: "{{ env.LIVE_DIR }}/news.json", file_format: json, mode: overwrite}
+    status: {format: s3, path: "{{ env.LIVE_DIR }}/status.json", file_format: json, mode: overwrite}

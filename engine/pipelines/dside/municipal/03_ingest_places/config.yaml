@@ -1,0 +1,26 @@
+# Where things are: municipal boundaries (Census 2022, 2021 demarcation) and
+# every geolocated government building project (Vulekamali), wards with their
+# Demarcation Board profile, and ward councillors where a city publishes them.
+MODEL: etl
+VERSION: "1.0.0"
+CONFIG:
+  inputs:
+    geographies:
+      format: wazimap_geography
+      tolerance: 0.004
+      refresh: "{{ env.REFRESH | default('false') }}"
+    projects:
+      format: vulekamali_projects
+      refresh: "{{ env.REFRESH | default('false') }}"
+    wards:
+      format: mdb_wards
+      offset: 0.0004
+      refresh: "{{ env.REFRESH | default('false') }}"
+    councillors:
+      format: ward_councillors
+      refresh: "{{ env.REFRESH | default('false') }}"
+  outputs:
+    geographies: {format: s3, path: "{{ env.WORK_DIR }}/raw/geographies.parquet", file_format: parquet, mode: overwrite}
+    projects: {format: s3, path: "{{ env.WORK_DIR }}/raw/projects.parquet", file_format: parquet, mode: overwrite}
+    wards: {format: s3, path: "{{ env.WORK_DIR }}/raw/wards.parquet", file_format: parquet, mode: overwrite}
+    councillors: {format: s3, path: "{{ env.WORK_DIR }}/raw/councillors.parquet", file_format: parquet, mode: overwrite}

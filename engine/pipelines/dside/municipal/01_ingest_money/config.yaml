@@ -1,0 +1,46 @@
+# Treasury Municipal Money: budgets, actual spending, building (capital)
+# spending, wasted money and audit outcomes for every municipality.
+MODEL: etl
+VERSION: "1.0.0"
+CONFIG:
+  inputs:
+    income_items:
+      format: treasury_cube
+      cube: incexp_v2
+      years: "{{ env.MONEY_YEARS | default('2021,2022,2023,2024,2025') }}"
+      drilldown: amount_type.code|item.code
+      amount_types: ORGB,ADJB,AUDA
+      refresh: "{{ env.REFRESH | default('false') }}"
+    income_services:
+      format: treasury_cube
+      cube: incexp_v2
+      years: "{{ env.MONEY_YEARS | default('2021,2022,2023,2024,2025') }}"
+      drilldown: amount_type.code|function.label
+      amount_types: ADJB
+      refresh: "{{ env.REFRESH | default('false') }}"
+    capital:
+      format: treasury_cube
+      cube: capital_v2
+      years: "{{ env.MONEY_YEARS | default('2021,2022,2023,2024,2025') }}"
+      drilldown: amount_type.code|capital_type.label
+      amount_types: ORGB,ADJB,AUDA
+      refresh: "{{ env.REFRESH | default('false') }}"
+    uifw:
+      format: treasury_facts
+      dataset: uifw
+      refresh: "{{ env.REFRESH | default('false') }}"
+    audits:
+      format: treasury_facts
+      dataset: audit_opinions
+      refresh: "{{ env.REFRESH | default('false') }}"
+    municipalities:
+      format: treasury_facts
+      dataset: municipalities
+      refresh: "{{ env.REFRESH | default('false') }}"
+  outputs:
+    income_items: {format: s3, path: "{{ env.WORK_DIR }}/raw/income_items.parquet", file_format: parquet, mode: overwrite}
+    income_services: {format: s3, path: "{{ env.WORK_DIR }}/raw/income_services.parquet", file_format: parquet, mode: overwrite}
+    capital: {format: s3, path: "{{ env.WORK_DIR }}/raw/capital.parquet", file_format: parquet, mode: overwrite}
+    uifw: {format: s3, path: "{{ env.WORK_DIR }}/raw/uifw.parquet", file_format: parquet, mode: overwrite}
+    audits: {format: s3, path: "{{ env.WORK_DIR }}/raw/audits.parquet", file_format: parquet, mode: overwrite}
+    municipalities: {format: s3, path: "{{ env.WORK_DIR }}/raw/municipalities.parquet", file_format: parquet, mode: overwrite}
