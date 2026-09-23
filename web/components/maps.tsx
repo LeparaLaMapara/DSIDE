@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { LocateFixed } from "lucide-react";
 import { FAULT_CITIES, LIVE_BASE } from "./live";
+import { circle, contains, distanceM, distanceToShapeM, locate, type LngLat } from "@/lib/geo";
 
 const BASEMAP = "https://tiles.openfreemap.org/styles/positron";
 
@@ -197,18 +198,8 @@ const WARD_MEASURES: Measure[] = [
 type Project = { n: string; s: string; st: string; c: number | null; lat: number; lng: number; u: string };
 const STAGE_COLOUR: Record<string, string> = { Planned: "#86b6ef", "Being built": "#eda100", Finished: "#0ca30c", "Stopped or on hold": "#d03b3b" };
 
-function inRing(pt: [number, number], ring: number[][]) {
-  let inside = false;
-  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-    const [xi, yi] = ring[i], [xj, yj] = ring[j];
-    if (yi > pt[1] !== yj > pt[1] && pt[0] < ((xj - xi) * (pt[1] - yi)) / (yj - yi) + xi) inside = !inside;
-  }
-  return inside;
-}
-function contains(g: GeoJSON.Geometry, pt: [number, number]) {
-  const polys = g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : [];
-  return polys.some((p) => inRing(pt, p[0]) && !p.slice(1).some((h) => inRing(pt, h)));
-}
+const RADII = [{ key: "1", label: "1 km" }, { key: "2", label: "2 km" }, { key: "5", label: "5 km" }];
+const EMPTY: GeoJSON.FeatureCollection = { type: "FeatureCollection", features: [] };
 
 export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: string }) {
   const box = useRef<HTMLDivElement>(null);
@@ -222,6 +213,9 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
   const [ready, setReady] = useState(false);
   const [base, setBase] = useState<Base>("map");
   const [locMsg, setLocMsg] = useState("");
+  const [me, setMe] = useState<{ pt: LngLat; accuracyM: number } | null>(null);
+  const [radiusKm, setRadiusKm] = useState(5);
+  const autoLocated = useRef(false);
   const measure = WARD_MEASURES.find((m) => m.key === key)!;
   const b = useMemo(() => (wards ? breaks(wards.features.map((f) => f.properties?.[key] as number)) : [0, 0, 0, 0]), [wards, key]);
 
@@ -253,7 +247,12 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
       m.addSource("wards", { type: "geojson", data: wards });
       m.addLayer({ id: "fill", type: "fill", source: "wards", paint: { "fill-color": NO_DATA, "fill-opacity": 0.75 } }, below);
       m.addLayer({ id: "line", type: "line", source: "wards", paint: { "line-color": "#ffffff", "line-width": 1.5 } });
+      m.addSource("area", { type: "geojson", data: EMPTY });
+      m.addLayer({ id: "area-fill", type: "fill", source: "area", paint: { "fill-color": "#ffd23f", "fill-opacity": 0.15 } });
+      m.addLayer({ id: "touch", type: "line", source: "wards", paint: { "line-color": "#ffd23f", "line-width": 3 },
+        filter: ["in", ["get", "ward_no"], ["literal", []]] });
       m.addLayer({ id: "sel", type: "line", source: "wards", paint: { "line-color": "#141414", "line-width": 3.5 }, filter: ["==", ["get", "ward_no"], -1] });
+      m.addLayer({ id: "area-line", type: "line", source: "area", paint: { "line-color": "#141414", "line-width": 2, "line-dasharray": [2, 2] } });
       m.addLayer({ id: "labels", type: "symbol", source: "wards", minzoom: 10.5,
         layout: { "text-field": ["to-string", ["get", "ward_no"]], "text-size": 11 },
         paint: { "text-color": "#141414", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
@@ -263,10 +262,15 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
       m.addSource("faults", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
       m.addLayer({ id: "faults", type: "circle", source: "faults", paint: {
         "circle-radius": 4, "circle-color": "#eda100", "circle-stroke-width": 1, "circle-stroke-color": "#141414" } });
+      m.addSource("me", { type: "geojson", data: EMPTY });
+      m.addLayer({ id: "me-accuracy", type: "fill", source: "me", filter: ["==", ["geometry-type"], "Polygon"],
+        paint: { "fill-color": "#1c5cab", "fill-opacity": 0.15 } });
       m.addSource("projects", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
       m.addLayer({ id: "projects", type: "circle", source: "projects", paint: {
         "circle-radius": 5, "circle-stroke-width": 1.5, "circle-stroke-color": "#141414",
         "circle-color": ["match", ["get", "st"], ...Object.entries(STAGE_COLOUR).flat(), "#898781"] as unknown as ExpressionSpecification } });
+      m.addLayer({ id: "me-dot", type: "circle", source: "me", filter: ["==", ["geometry-type"], "Point"],
+        paint: { "circle-radius": 8, "circle-color": "#1c5cab", "circle-stroke-width": 3, "circle-stroke-color": "#ffffff" } });
       setReady(true);
     });
     m.on("click", "fill", (e) => setSelected((e.features?.[0]?.properties as WardProps) ?? null));
@@ -290,6 +294,29 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
     return () => { m.remove(); map.current = null; setReady(false); };
   }, [wards]);
 
+  // Wards the circle touches, and what lies inside it. All worked out on the phone.
+  const near = useMemo(() => {
+    if (!me || !wards) return null;
+    const r = radiusKm * 1000;
+    const touched = wards.features
+      .map((f) => ({ ward: f.properties as WardProps, d: distanceToShapeM(f.geometry, me.pt) }))
+      .filter((x) => x.d <= r).sort((a, c) => a.d - c.d);
+    const within = <T extends { lat: number; lng: number }>(xs: T[]) => xs.filter((x) => distanceM(me.pt, [x.lng, x.lat]) <= r);
+    // Wards the true position could be in, given how vague the phone's fix is.
+    const possible = me.accuracyM > 100 ? touched.filter((x) => x.d <= me.accuracyM).map((x) => x.ward) : [];
+    return { touched, faults: within(faults), schools: within(schools), projects: within(projects), possible };
+  }, [me, wards, radiusKm, faults, schools, projects]);
+
+  useEffect(() => {
+    const m = map.current;
+    if (!ready || !m) return;
+    (m.getSource("area") as GeoJSONSource).setData(me ? { type: "FeatureCollection", features: [circle(me.pt, radiusKm * 1000)] } : EMPTY);
+    (m.getSource("me") as GeoJSONSource).setData(me ? { type: "FeatureCollection", features: [
+      circle(me.pt, Math.min(me.accuracyM, radiusKm * 1000)),
+      { type: "Feature", properties: {}, geometry: { type: "Point", coordinates: me.pt } }] } : EMPTY);
+    m.setFilter("touch", ["in", ["get", "ward_no"], ["literal", near?.touched.map((x) => x.ward.ward_no) ?? []]]);
+  }, [ready, me, radiusKm, near, base]);
+
   useEffect(() => {
     const m = map.current;
     if (!ready || !m) return;
@@ -311,18 +338,35 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
     map.current.setStyle(styleFor(next as Base));
   };
 
-  const findMe = () => {
-    if (!navigator.geolocation) return setLocMsg("Your browser cannot share your location. Choose your ward from the list instead.");
+  const findMe = async () => {
     setLocMsg("Finding you...");
-    navigator.geolocation.getCurrentPosition((pos) => {
-      const pt: [number, number] = [pos.coords.longitude, pos.coords.latitude];
-      const hit = wards?.features.find((f) => contains(f.geometry, pt));
-      if (!hit) return setLocMsg("You seem to be outside this municipality. Choose a ward from the list.");
+    try {
+      const fix = await locate();
+      const hit = wards?.features.find((f) => contains(f.geometry, fix.pt));
+      if (!hit) {
+        setMe(null);
+        return setLocMsg("You seem to be outside this municipality. Find yours from the home page, or choose a ward from the list.");
+      }
+      setMe(fix);
       setSelected(hit.properties as WardProps);
       setLocMsg("");
-      map.current?.flyTo({ center: pt, zoom: 12 });
-    }, () => setLocMsg("Location was not shared. Choose your ward from the list instead."), { timeout: 10000 });
+      const [w, s2, e, n2] = circle(fix.pt, radiusKm * 1000).geometry.coordinates[0].reduce(
+        (a, [x, y]) => [Math.min(a[0], x), Math.min(a[1], y), Math.max(a[2], x), Math.max(a[3], y)], [180, 90, -180, -90]);
+      map.current?.fitBounds([w, s2, e, n2], { padding: 24 });
+    } catch (err) {
+      setLocMsg(`${(err as Error).message} Choose your ward from the list instead.`);
+    }
   };
+
+  // Arriving from the home page's "Use my location" (?locate=1) starts this straight away.
+  useEffect(() => {
+    if (!ready || autoLocated.current || typeof window === "undefined") return;
+    if (new URLSearchParams(window.location.search).get("locate") === "1") {
+      autoLocated.current = true;
+      document.getElementById("ward")?.scrollIntoView({ behavior: "smooth" });
+      void findMe();
+    }
+  });
 
   const list = wards?.features.map((f) => f.properties as WardProps).sort((a, b2) => a.ward_no - b2.ward_no) ?? [];
   const stages = Object.keys(STAGE_COLOUR).map((s) => ({ s, n: projects.filter((p) => p.st === s).length }));
@@ -352,6 +396,41 @@ export function WardMap({ code, wardYearNote }: { code: string; wardYearNote: st
       <div className="mt-3 grid gap-4 lg:grid-cols-[1fr_320px]">
         <div>
           <div ref={box} className="h-[420px] w-full overflow-hidden rounded border border-border" role="region" aria-label="Ward map" />
+          {near && me && (
+            <div className="board mt-3 rounded p-4" aria-live="polite">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="font-display text-xl">Within {radiusKm} km of you</h3>
+                <Chips items={RADII} value={String(radiusKm)} onChange={(k) => setRadiusKm(Number(k))} name="How far around you" />
+              </div>
+              {near.possible.length > 1 && (
+                <p className="mt-2 rounded bg-surface p-2 text-sm">
+                  Your phone only knows where you are to within about {Math.round(me.accuracyM)} m, so you may be in
+                  {" "}{near.possible.map((w) => `ward ${w.ward_no}`).join(" or ")}. Tap the right one below.
+                </p>
+              )}
+              <ul className="mt-3 grid grid-cols-3 gap-2 text-center">
+                <li className="rounded bg-surface p-2"><p className="font-display text-2xl">{near.schools.length}</p><p className="text-xs">schools</p></li>
+                <li className="rounded bg-surface p-2"><p className="font-display text-2xl">{near.projects.length}</p><p className="text-xs">government projects</p></li>
+                <li className="rounded bg-surface p-2">
+                  <p className="font-display text-2xl">{!FAULT_CITIES.includes(code) ? "?" : faults.length ? near.faults.length : "..."}</p>
+                  <p className="text-xs">{!FAULT_CITIES.includes(code) ? "faults (this city does not publish them)" : faults.length ? "open electricity faults now" : "open faults (loading)"}</p>
+                </li>
+              </ul>
+              <p className="mt-3 text-sm font-bold">{near.touched.length} wards touch this circle (yellow outline):</p>
+              <ul className="mt-1 flex flex-wrap gap-2">
+                {near.touched.slice(0, 24).map(({ ward, d }) => (
+                  <li key={ward.ward_no}>
+                    <button type="button" onClick={() => setSelected(ward)}
+                      className={`min-h-11 rounded border-2 px-2 text-left text-sm ${selected?.ward_no === ward.ward_no ? "border-foreground bg-surface font-bold" : "border-foreground/30 bg-surface"}`}>
+                      Ward {ward.ward_no}{d === 0 ? " (you are here)" : ""}
+                      {ward.councillor && <span className="block text-xs text-muted">{ward.councillor}</span>}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-2 text-xs">Your location stays on your phone: the circle and the counts are worked out in your browser and never sent anywhere.</p>
+            </div>
+          )}
           <Legend b={b} m={measure} />
           <p className="mt-1 text-sm text-muted">{wardYearNote}</p>
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
