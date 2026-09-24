@@ -5,7 +5,7 @@ African municipality and ward: what it is supposed to do, what it did with the
 money, how people live there, how safe it is, what is happening right now, and
 what an ordinary resident can do about it.
 
-**Live: [masepala.vercel.app](https://masepala.vercel.app)**
+**Live: [masepala.vercel.app](https://masepala.vercel.app)** · Part of [Ubunye AI Ecosystems](https://github.com/ubunye-ai-ecosystems), built on the [Ubunye Engine](https://github.com/ubunye-ai-ecosystems/ubunye_engine).
 
 "You are the government. This is your information."
 

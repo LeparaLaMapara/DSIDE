@@ -15,7 +15,7 @@ from pathlib import Path
 import httpx
 
 CACHE_DIR = Path(__file__).resolve().parent.parent / ".cache"
-USER_AGENT = "Masepala-engine/1.0 (+https://github.com/LeparaLaMapara/masepala)"
+USER_AGENT = "Masepala-engine/1.0 (+https://github.com/ubunye-ai-ecosystems/masepala)"
 
 
 class Fetcher:
