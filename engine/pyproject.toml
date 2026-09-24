@@ -1,7 +1,7 @@
 [project]
 name = "dside-engine"
 version = "1.0.0"
-description = "DSIDE data layer: public South African municipal data turned into plain-language facts, built on the Ubunye Engine."
+description = "Masepala data layer: public South African municipal data turned into plain-language facts, built on the Ubunye Engine."
 requires-python = ">=3.11"
 dependencies = [
   # Pinned to the pandas backend commit (PR #51) until it ships in a release.

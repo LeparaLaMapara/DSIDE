@@ -1,49 +1,90 @@
-# DSIDE
+# Masepala
 
-**Masepala: know your municipality.** A plain-language, visual site about every
-South African municipality: what it is supposed to do, what it did with the
-money, how people live there, how safe it is, and what an ordinary resident can
-do about it. Zoom from the whole country down to your own ward.
+**Know your municipality.** A plain-language, visual site about every South
+African municipality and ward: what it is supposed to do, what it did with the
+money, how people live there, how safe it is, what is happening right now, and
+what an ordinary resident can do about it.
+
+**Live: [masepala.vercel.app](https://masepala.vercel.app)**
 
 "You are the government. This is your information."
+
+<p align="center">
+  <img src="docs/screenshots/home.png" alt="Home page: a map of every municipality and four national facts" width="820" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/story.png" alt="The plain story at the top of the City of Tshwane page" width="270" />
+  <img src="docs/screenshots/ward.png" alt="Find my ward: the reader's location as a dot inside ward 90" width="270" />
+  <img src="docs/screenshots/live.png" alt="What's happening now: loadshedding, open electricity faults and local news" width="270" />
+</p>
+
+## What a resident sees
+
+- **The story first.** Every municipality page opens with a one-line verdict and
+  at most five plain sentences, each marked good or problem, with its source.
+  They are written by fixed rules from the numbers, never by AI.
+- **Use my location.** One tap finds your municipality and your ward (the ward
+  polygon your location falls in). The location never leaves the phone.
+- **What's happening now**, refreshed every three hours: Eskom's loadshedding
+  stage, the City of Tshwane's open electricity faults, and local news headlines.
+- **The money**: this year so far against time gone, planned against spent,
+  who owes the municipality and what it owes Eskom, grants used, audit history.
+- **How people live**: water, toilets, electricity, rubbish, housing, schools and
+  matric results, formal jobs and pay, safety per police station.
+- **Every ward**: its councillor, how it voted in 2024, its schools and faults,
+  on a map or satellite view.
+- **What you can do**: action cards chosen from that municipality's own
+  problems, with official free numbers and the April to May budget window.
 
 ## How it works
 
 ```
-public APIs  ->  engine/ (Ubunye Engine pipeline, runs once and stops)  ->  web/data/*.json  ->  web/ (static site)
+~25 public sources ──► engine/  (Ubunye Engine pipelines: run, then stop)
+                         ├─ municipal: quarterly, 6 tasks ──► web/data/*.json ──► Vercel rebuilds the static site
+                         └─ live: every 3 hours, 1 task ────► live-data branch ──► the site reads it directly
 ```
 
-| Source | What it gives | How current |
-|---|---|---|
-| National Treasury, Municipal Money | budgets, audited spending, building spending, wasted money, audits | latest audited year |
-| Stats SA Census 2022 (Wazimap API) | water, toilets, electricity, rubbish, housing, schooling | 2022 |
-| Youth Explorer (Wazimap API) | young people not in work, school or training | Census 2011, the newest per municipality |
-| SAPS crime statistics | murders, sexual offences, drug crime, burglary per police station | latest quarter |
-| Stats SA Labour Force Survey | unemployment for metros and provinces | latest quarter |
-| Municipal Demarcation Board | every ward, with its profile | 2021 wards |
-| Vulekamali | provincial and national building projects with a location | live |
+Nothing runs between refreshes: no server, no database, and it costs nothing.
 
-**engine/** is a Python package built on the [Ubunye Engine](https://github.com/ubunye-ai-ecosystems/ubunye_engine)
-(pandas backend). Each public source is an Ubunye reader plugin, and the
-pipeline in `engine/pipelines/dside/municipal/` has five tasks: ingest money,
-ingest people, ingest places, analyse, publish. The analysis is in
-`engine/dside_engine/analytics/`:
+### engine/ on the Ubunye Engine
 
-- `money.py`: a 0 to 100 money handling score against Treasury norms, built
-  from the raw cubes because Treasury's ready-made indicators are broken for
-  recent years; impossible numbers are flagged, not shown.
-- `wellbeing.py`: a wellbeing index after Stats SA's multidimensional poverty
-  index, with a 5,000-draw weight test so every rank says how solid it is.
-- `compare.py`: peers (metros with metros, rural with rural), strengths and
-  problems, and the facts that go with each problem.
-- `audit_model.py`: next year's audit chance, published only because it beats
-  the "same as last year" guess on a year it never saw (only just; the About
-  page says so).
-- `local.py`: crime per station and municipality, jobs now, ward facts.
+The data layer is built on the [Ubunye Engine](https://github.com/ubunye-ai-ecosystems/ubunye_engine)
+with its pandas backend. Each task in `engine/pipelines/dside/` is a
+`config.yaml` (inputs and outputs) plus a small `Task` class. Every public
+source is an Ubunye reader plugin registered in `engine/pyproject.toml`, so a
+task can simply say `format: treasury_cube` or `format: dside_source, name: schools`.
 
-**web/** is a Next.js static site (no server): a national map, one page per
-municipality, a ward map with "find my ward", and "what you can do" cards
-chosen from each municipality's own problems.
+| Task | What it does |
+|---|---|
+| `01_ingest_money` | Treasury budgets, spending, building spending, wasted money, audits |
+| `02_ingest_people` | Census 2022, Youth Explorer, SAPS crime per station, Stats SA labour force |
+| `03_ingest_places` | Municipal and ward boundaries, ward profiles, government projects |
+| `03b_ingest_fresh` | 18 newer sources: this year's Treasury figures, 2025 tax jobs, 2026 population, schools, matric, elections, water quality, SIU |
+| `04_analyse` | Scores, comparisons, the story, the audit model, everything placed on the map |
+| `05_publish` | The JSON files the site reads |
+| `live/01_collect` | Tshwane faults (remembered between runs), civic news, Eskom stage |
+
+The analysis lives in `engine/dside_engine/analytics/`. There is one small
+predictive model (next year's audit outcome, published only because it beats a
+"same as last year" guess on a year it never saw); everything else is
+descriptive, statistical or rule based. Clustering was tried and rejected
+because municipalities do not form real groups. The site's About page explains
+every method and every limit.
+
+If an outside website fails or blocks the runner, that source falls back to its
+last good copy in `engine/fallback/snapshots/`, and the About page says so.
+
+## Sources
+
+National Treasury (Municipal Money), Stats SA (Census
+2022, labour force survey, 2026 population estimates), Youth Explorer and
+Wazimap (OpenUp), SAPS crime statistics, Municipal Demarcation Board wards,
+Vulekamali projects, the Spatial Tax Panel (SARS, National Treasury, HSRC),
+SASSA, the Department of Water and Sanitation, the Department of Basic
+Education, election results (IEC via SANEF's Wazimap), the Gauteng City-Region
+Observatory, the SIU, the City of Tshwane outage map, Eskom, and South African
+news feeds (headlines and links only). Maps: OpenFreeMap and Esri World Imagery.
 
 ## Run it
 
@@ -51,23 +92,21 @@ chosen from each municipality's own problems.
 cd engine
 pip install -e ".[test]"
 pytest -q tests
-./run.sh                  # REFRESH=true to ignore the download cache
-cd ../web && npm install && npm run build   # output in web/out
+./run.sh              # the quarterly pipeline; REFRESH=true ignores the download cache
+./run_live.sh         # the live pipeline
+cd ../web && npm install && npm run build   # static site in web/out
 ```
 
-Two scheduled GitHub workflows keep it fresh, and nothing runs in between:
+Two GitHub workflows keep it fresh: `refresh-data.yml` (quarterly, commits
+`web/data`, Vercel rebuilds) and `refresh-live.yml` (every three hours,
+publishes to the single-commit `live-data` branch).
 
-- `refresh-data.yml`, once a quarter: the full pipeline; commits `web/data`, and Vercel rebuilds the site.
-- `refresh-live.yml`, every three hours: the live pipeline (`engine/run_live.sh`); publishes to the
-  single-commit `live-data` branch, which the site reads directly, so nothing is rebuilt.
+## History
 
-## The 2017 project
-
-The original 2017 DSIDE notebooks and data are kept in the older folders for
-history. The 2017 Django dashboard and the unfinished `dside-next` attempt were
-removed from the tree in September 2026 (their dependencies carried security
-alerts and both are replaced by `engine/` and `web/`); they are preserved in
-full at the `legacy-2017` tag.
+This repository began in 2017 as DSIDE, a Municipal Money analysis with
+notebooks and a Django dashboard. The notebooks and data are kept below for
+history. The Django dashboard and an unfinished 2026 attempt were removed from
+the tree in September 2026 and are preserved in full at the `legacy-2017` tag.
 
 ---
 

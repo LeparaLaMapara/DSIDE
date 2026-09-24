@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run the whole DSIDE pipeline once with the Ubunye Engine (pandas backend),
+# Run the whole Masepala pipeline once with the Ubunye Engine (pandas backend),
 # then stop. Nothing keeps running. Use REFRESH=true to ignore the cache.
 set -euo pipefail
 cd "$(dirname "$0")"
