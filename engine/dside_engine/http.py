@@ -15,7 +15,7 @@ from pathlib import Path
 import httpx
 
 CACHE_DIR = Path(__file__).resolve().parent.parent / ".cache"
-USER_AGENT = "DSIDE-engine/1.0 (+https://github.com/LeparaLaMapara/DSIDE)"
+USER_AGENT = "Masepala-engine/1.0 (+https://github.com/LeparaLaMapara/masepala)"
 
 
 class Fetcher:
