@@ -111,10 +111,20 @@ def registry(f: Fetcher | None = None) -> pd.DataFrame:
     follows the current (2016) boundaries; districts come from Treasury. Both
     are open. Treasury's list alone also holds 35 disestablished councils,
     which would attract false matches such as 'Mookgophong'.
+
+    The list barely changes, so it keeps a last good copy: a Treasury outage
+    must not take down SASSA, water quality and the other sources that only
+    use it to match names to codes.
     """
-    from .municipal_money import municipalities
+    from ..snapshots import guarded
 
     f = f or Fetcher()
+    return guarded("municipality_registry", lambda: _build_registry(f), label="municipality list (Spatial Tax, Treasury)")
+
+
+def _build_registry(f: Fetcher) -> pd.DataFrame:
+    from .municipal_money import municipalities
+
     rows = []
     for m in f.get("https://api.spatialtaxdata.org.za/api/municipality-list/"):
         rows.append({"code": m["cat_b"], "name": m["municname"], "category": m["category"],
