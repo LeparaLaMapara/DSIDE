@@ -11,14 +11,12 @@ ward shapes read them from the site data the main pipeline already wrote.
 
 from __future__ import annotations
 
-import json
 from collections.abc import Callable
-from datetime import datetime, timezone
-from pathlib import Path
 
 import pandas as pd
 
 from .http import Fetcher
+from .snapshots import guarded
 from .sources import fresh_stats as fs
 from .sources import places_live as pl
 from .sources import treasury_extra as te
@@ -64,40 +62,8 @@ SOURCES: dict[str, Callable[[bool], pd.DataFrame]] = {
 }
 
 
-SNAPSHOTS = Path(__file__).resolve().parent.parent / "fallback" / "snapshots"
-STATUS = SNAPSHOTS / "status.json"
-
-
-def _status() -> dict:
-    return json.loads(STATUS.read_text(encoding="utf-8")) if STATUS.exists() else {}
-
-
 def load(name: str, refresh: bool = False) -> pd.DataFrame:
-    """Fetch a source; if its website fails, use the last good copy and say so.
-
-    Government sites go down, change their pages, or block cloud servers. One
-    of them must never stop the whole refresh, so every success is saved as a
-    snapshot and every failure falls back to it, recorded in status.json.
-    """
+    """Fetch a named source; if its website fails, use its last good copy (see snapshots.py)."""
     if name not in SOURCES:
         raise KeyError(f"unknown source '{name}'; known: {sorted(SOURCES)}")
-    SNAPSHOTS.mkdir(parents=True, exist_ok=True)
-    snap = SNAPSHOTS / f"{name}.parquet"
-    status = _status()
-    now = datetime.now(timezone.utc).isoformat(timespec="minutes")
-    try:
-        df = SOURCES[name](refresh)
-        df.attrs = {}  # run reports stay in logs; parquet cannot store arbitrary attrs
-        if df.empty:
-            raise ValueError("source returned no rows")
-        df.to_parquet(snap, index=False)
-        status[name] = {"ok": True, "fetched_at": now}
-    except Exception as exc:  # noqa: BLE001 - any failure of an outside site
-        if not snap.exists():
-            raise
-        df = pd.read_parquet(snap)
-        last = status.get(name, {}).get("fetched_at")
-        status[name] = {"ok": False, "fetched_at": last, "failed_at": now, "error": f"{type(exc).__name__}: {exc}"[:200]}
-        print(f"[fallback] {name}: {exc}; using the copy from {last}")
-    STATUS.write_text(json.dumps(status, indent=1, sort_keys=True), encoding="utf-8")
-    return df
+    return guarded(name, lambda: SOURCES[name](refresh))

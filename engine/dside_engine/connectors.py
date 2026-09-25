@@ -17,6 +17,7 @@ from ubunye.adapters.pandas_adapter import PandasDataFrameAdapter
 from ubunye.core.interfaces import Reader, Writer
 
 from .http import Fetcher
+from .snapshots import guarded, key_for
 from .sources import municipal_money as mm
 from .sources import vulekamali as vk
 from .sources import wazimap as wz
@@ -31,11 +32,21 @@ def _frame(rows: list[dict] | pd.DataFrame, backend: Any):
     return PandasDataFrameAdapter(df) if not backend.is_spark else backend.spark.createDataFrame(df)
 
 
+class SnapshotReader(Reader):
+    """A reader whose last good result is kept and used if the source later fails."""
+
+    def fetch(self, cfg: dict) -> pd.DataFrame:
+        raise NotImplementedError
+
+    def read(self, cfg: dict, backend: Any):
+        return _frame(guarded(key_for(type(self).__name__, cfg), lambda: self.fetch(cfg)), backend)
+
+
 def _years(cfg: dict) -> list[int]:
     return [int(y) for y in str(cfg["years"]).split(",")]
 
 
-class TreasuryCubeReader(Reader):
+class TreasuryCubeReader(SnapshotReader):
     """Annual cells from a Municipal Money cube for every municipality.
 
     cfg: cube, years ("2021,2022"), drilldown ("amount_type.code|item.code"),
@@ -47,15 +58,15 @@ class TreasuryCubeReader(Reader):
     def validate_config(cls, cfg: dict) -> list[str]:
         return [f"treasury_cube requires '{k}'" for k in ("cube", "years", "drilldown") if not cfg.get(k)]
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         df = pd.DataFrame(mm.yearly(_fetcher(cfg), cfg["cube"], _years(cfg), cfg["drilldown"]))
         if cfg.get("amount_types") and "amount_type.code" in df:
             df = df[df["amount_type.code"].isin(cfg["amount_types"].split(","))]
         df.columns = [c.replace(".", "_") for c in df.columns]
-        return _frame(df.reset_index(drop=True), backend)
+        return df.reset_index(drop=True)
 
 
-class TreasuryFactsReader(Reader):
+class TreasuryFactsReader(SnapshotReader):
     """Row level facts: dataset is one of municipalities, audit_opinions, uifw."""
 
     @classmethod
@@ -63,15 +74,15 @@ class TreasuryFactsReader(Reader):
         ok = {"municipalities", "audit_opinions", "uifw"}
         return [] if cfg.get("dataset") in ok else [f"treasury_facts 'dataset' must be one of {sorted(ok)}"]
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         f = _fetcher(cfg)
         rows = {"municipalities": mm.municipalities, "audit_opinions": mm.audit_history, "uifw": mm.uifw}[cfg["dataset"]](f)
         df = pd.DataFrame(rows)
         df.columns = [c.replace(".", "_") for c in df.columns]
-        return _frame(df, backend)
+        return df
 
 
-class WazimapIndicatorReader(Reader):
+class WazimapIndicatorReader(SnapshotReader):
     """Long table of Wazimap indicator rows for every municipality.
 
     cfg: profile (8 or 14 or 23), indicators ("2818:water,2821:toilet"),
@@ -83,7 +94,7 @@ class WazimapIndicatorReader(Reader):
     def validate_config(cls, cfg: dict) -> list[str]:
         return [f"wazimap_indicator requires '{k}'" for k in ("profile", "indicators") if not cfg.get(k)]
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         f = _fetcher(cfg)
         geos, _ = wz.geography_tree(f)
         districts = [g["code"] for g in geos if g["code"].startswith("DC")]
@@ -96,10 +107,10 @@ class WazimapIndicatorReader(Reader):
         df = pd.DataFrame(rows)
         df["count"] = pd.to_numeric(df["count"], errors="coerce").fillna(0.0)
         df.columns = [c.replace(" ", "_") for c in df.columns]
-        return _frame(df, backend)
+        return df
 
 
-class WazimapGeographyReader(Reader):
+class WazimapGeographyReader(SnapshotReader):
     """Every district, metro and local municipality with a simplified boundary.
 
     cfg: tolerance (degrees, default 0.004, about 400 m), which keeps the
@@ -110,7 +121,7 @@ class WazimapGeographyReader(Reader):
     def validate_config(cls, cfg: dict) -> list[str]:
         return []
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         tol = float(cfg.get("tolerance", 0.004))
         geos, shapes = wz.geography_tree(_fetcher(cfg))
         for g in geos:
@@ -119,21 +130,21 @@ class WazimapGeographyReader(Reader):
             g["geometry"] = json.dumps(_round(mapping(simple)))
             point = geom.representative_point()
             g["label_lng"], g["label_lat"] = round(point.x, 4), round(point.y, 4)
-        return _frame(geos, backend)
+        return pd.DataFrame(geos)
 
 
-class VulekamaliProjectsReader(Reader):
+class VulekamaliProjectsReader(SnapshotReader):
     """Every geolocated provincial and national infrastructure project."""
 
     @classmethod
     def validate_config(cls, cfg: dict) -> list[str]:
         return []
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         df = pd.DataFrame(vk.projects(_fetcher(cfg)))
         for c in ("latitude", "longitude", "estimated_total_project_cost"):
             df[c] = pd.to_numeric(df[c], errors="coerce")
-        return _frame(df, backend)
+        return df
 
 
 def _round(geojson: dict, nd: int = 4) -> dict:
@@ -143,14 +154,14 @@ def _round(geojson: dict, nd: int = 4) -> dict:
     return {"type": geojson["type"], "coordinates": r(list(json.loads(json.dumps(geojson["coordinates"]))))}
 
 
-class SapsCrimeReader(Reader):
+class SapsCrimeReader(SnapshotReader):
     """Latest SAPS quarterly crime per police station, linked to municipalities."""
 
     @classmethod
     def validate_config(cls, cfg: dict) -> list[str]:
         return []
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         from .sources import safety_jobs_wards as s
 
         refresh = str(cfg.get("refresh", "false")).lower() == "true"
@@ -158,50 +169,50 @@ class SapsCrimeReader(Reader):
         linked, unmatched = s.link_stations(crime, s.precincts(refresh))
         linked["source"] = url
         linked["unmatched_stations"] = ", ".join(unmatched)
-        return _frame(linked, backend)
+        return linked
 
 
-class QlfsReader(Reader):
+class QlfsReader(SnapshotReader):
     """Stats SA Quarterly Labour Force Survey trends (province, metro, age)."""
 
     @classmethod
     def validate_config(cls, cfg: dict) -> list[str]:
         return []
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         from .sources import safety_jobs_wards as s
 
         table, url = s.qlfs(str(cfg.get("refresh", "false")).lower() == "true")
-        return _frame(table.assign(source=url), backend)
+        return table.assign(source=url)
 
 
-class WardReader(Reader):
+class WardReader(SnapshotReader):
     """Every ward of every local and metro municipality, with its MDB profile and shape."""
 
     @classmethod
     def validate_config(cls, cfg: dict) -> list[str]:
         return []
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         from .sources import safety_jobs_wards as s
 
         f = _fetcher(cfg)
         geos, _ = wz.geography_tree(f)
         codes = [g["code"] for g in geos if not g["code"].startswith("DC")]
-        return _frame(s.wards(codes, f.refresh, float(cfg.get("offset", 0.0004))), backend)
+        return s.wards(codes, f.refresh, float(cfg.get("offset", 0.0004)))
 
 
-class CouncillorReader(Reader):
+class CouncillorReader(SnapshotReader):
     """Ward councillors where a city publishes them in a readable table (pilot: Tshwane)."""
 
     @classmethod
     def validate_config(cls, cfg: dict) -> list[str]:
         return []
 
-    def read(self, cfg: dict, backend: Any):
+    def fetch(self, cfg: dict) -> pd.DataFrame:
         from .sources import safety_jobs_wards as s
 
-        return _frame(s.tshwane_councillors(str(cfg.get("refresh", "false")).lower() == "true"), backend)
+        return s.tshwane_councillors(str(cfg.get("refresh", "false")).lower() == "true")
 
 
 class DsideSourceReader(Reader):
