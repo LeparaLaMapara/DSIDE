@@ -91,10 +91,12 @@ jobs:
           ./snapshot_state.sh publish
           ./registry_state.sh publish
       - name: Tell a person
-        if: always() && hashFiles(format('{0}/health-issue.md', runner.temp)) != ''
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # health.py writes the issue body only when something needs a person.
+          [ -s "$RUNNER_TEMP/health-issue.md" ] || { echo "Nothing needs a person."; exit 0; }
           gh label create data-health --color d03b3b --description "Opened by the quarterly refresh" --force
           n=$(gh issue list --label data-health --state open --json number -q '.[0].number')
           if [ -n "$n" ]; then
