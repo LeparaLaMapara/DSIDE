@@ -37,7 +37,7 @@ import httpx
 import numpy as np
 import pandas as pd
 
-from ..http import USER_AGENT
+from ..http import USER_AGENT, client
 from .safety_jobs_wards import _download
 
 EMIS_PAGE = "https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx"
@@ -100,8 +100,7 @@ def _fetch(url: str, refresh: bool = False, cache: bool = True, timeout: float =
             return _download(url, refresh, verify=False)
     for verify in (True, False):
         try:
-            with httpx.Client(timeout=timeout, follow_redirects=True, verify=verify,
-                              headers={"User-Agent": USER_AGENT}) as c:
+            with client(timeout, verify) as c:
                 r = c.get(url)
                 r.raise_for_status()
                 return r.content

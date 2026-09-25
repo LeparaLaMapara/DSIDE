@@ -34,6 +34,9 @@ jobs:
         working-directory: engine
         env:
           REFRESH: "true"
+          # SASSA and DWS only answer South African addresses; the relay runs in Johannesburg (relay/).
+          DSIDE_ZA_RELAY: ${{ vars.DSIDE_ZA_RELAY }}
+          DSIDE_ZA_RELAY_TOKEN: ${{ secrets.DSIDE_ZA_RELAY_TOKEN }}
           PYTHONWARNINGS: ignore
         run: ./run.sh
       - name: Publish last good copies

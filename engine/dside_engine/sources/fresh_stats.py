@@ -31,7 +31,7 @@ from pathlib import Path
 import httpx
 import pandas as pd
 
-from ..http import CACHE_DIR, USER_AGENT, Fetcher
+from ..http import CACHE_DIR, USER_AGENT, Fetcher, client
 
 FALLBACK = Path(__file__).resolve().parents[2] / "fallback"
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " + USER_AGENT
@@ -49,8 +49,7 @@ def _fetch(url: str, refresh: bool = False, timeout: float = 120.0, verify: bool
     path = _cache_path(url)
     if cache and path.exists() and not refresh:
         return path.read_bytes()
-    with httpx.Client(timeout=timeout, follow_redirects=True, verify=verify,
-                      headers={"User-Agent": BROWSER_UA}) as c:
+    with client(timeout, verify, BROWSER_UA) as c:
         r = c.get(url)
         r.raise_for_status()
     if cache:
