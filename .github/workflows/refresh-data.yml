@@ -27,17 +27,24 @@ jobs:
       - name: Test
         working-directory: engine
         run: pytest -q tests
+      - name: Restore last good copies
+        working-directory: engine
+        run: ./snapshot_state.sh restore
       - name: Run the pipeline
         working-directory: engine
         env:
           REFRESH: "true"
           PYTHONWARNINGS: ignore
         run: ./run.sh
+      - name: Publish last good copies
+        if: always()
+        working-directory: engine
+        run: ./snapshot_state.sh publish
       - name: Commit new data
         run: |
           git config user.name "dside-data-bot"
           git config user.email "dside-data-bot@users.noreply.github.com"
-          git add web/data engine/fallback
+          git add web/data engine/fallback/qlfs.csv engine/fallback/p0302_districts.csv
           if git diff --cached --quiet; then echo "No change in the data."; exit 0; fi
           git commit -m "Refresh public data ($(date -u +%F))"
           # Someone may have merged to master during the run; the bot only

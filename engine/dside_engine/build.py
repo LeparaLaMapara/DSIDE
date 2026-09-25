@@ -119,9 +119,9 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
 
 
 def _source_status() -> dict:
-    from .catalogue import STATUS
+    from .snapshots import status
 
-    return json.loads(STATUS.read_text(encoding="utf-8")) if STATUS.exists() else {}
+    return status()
 
 
 def _national(df: pd.DataFrame, year: int) -> dict:

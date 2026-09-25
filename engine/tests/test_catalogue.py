@@ -5,13 +5,13 @@ import json
 import pandas as pd
 import pytest
 
-from dside_engine import catalogue
+from dside_engine import catalogue, snapshots
 
 
 @pytest.fixture
 def isolated(tmp_path, monkeypatch):
-    monkeypatch.setattr(catalogue, "SNAPSHOTS", tmp_path)
-    monkeypatch.setattr(catalogue, "STATUS", tmp_path / "status.json")
+    monkeypatch.setattr(snapshots, "SNAPSHOTS", tmp_path)
+    monkeypatch.setattr(snapshots, "STATUS", tmp_path / "status.json")
     return tmp_path
 
 
@@ -42,3 +42,25 @@ def test_failure_without_any_copy_still_raises(isolated, monkeypatch):
     monkeypatch.setitem(catalogue.SOURCES, "demo", broken)
     with pytest.raises(RuntimeError):
         catalogue.load("demo")
+
+
+def test_core_readers_fall_back_too(isolated):
+    from dside_engine.connectors import SnapshotReader
+
+    class Flaky(SnapshotReader):
+        calls = 0
+
+        def fetch(self, cfg):
+            Flaky.calls += 1
+            if Flaky.calls > 1:
+                raise TimeoutError("treasury timed out")
+            return pd.DataFrame({"code": ["TSH"]})
+
+    class Backend:
+        is_spark = False
+
+    cfg = {"cube": "audit_opinions", "refresh": "false"}
+    assert Flaky().read(cfg, Backend()).native["code"].tolist() == ["TSH"]
+    assert Flaky().read({**cfg, "refresh": "true"}, Backend()).native["code"].tolist() == ["TSH"]  # same key, served from the copy
+    key = snapshots.key_for("Flaky", cfg)
+    assert json.loads((isolated / "status.json").read_text())[key]["ok"] is False
