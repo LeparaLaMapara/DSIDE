@@ -110,7 +110,9 @@ jobs:
           git add web/data engine/fallback/qlfs.csv engine/fallback/p0302_districts.csv
           if git diff --cached --quiet; then echo "No change in the data."; exit 0; fi
           git commit -m "Refresh public data ($(date -u +%F))"
+          git status --short
           # Someone may have merged to master during the run; the bot only
           # touches data files, so replaying its commit on top is always clean.
-          git pull --rebase origin master
+          # Anything else the run left changed is set aside, not committed.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push

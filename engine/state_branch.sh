@@ -22,22 +22,19 @@ case "$action" in
     fi
     ;;
   publish)
-    tmp="$(mktemp -d)"
-    git -C "$root" worktree add -q --detach "$tmp"
-    (
-      cd "$tmp"
-      git checkout -q --orphan "$branch-new"
-      git rm -rq --cached . && find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-      cp -r "$dir/." .
-      printf 'Masepala state (%s), replaced after each run by engine/state_branch.sh. Do not edit by hand.\n' "$branch" > README.md
-      git add -A
-      git -c user.name="dside-data-bot" -c user.email="dside-data-bot@users.noreply.github.com" \
-        commit -q -m "$branch $(date -u +%FT%H:%MZ)"
-      git push -q -f origin "HEAD:$branch"
-    )
-    git -C "$root" worktree remove --force "$tmp"
-    git -C "$root" branch -D "$branch-new" >/dev/null 2>&1 || true
-    echo "published $branch"
+    # Build the commit with a temporary index, so no checkout or working file is touched.
+    index="$(mktemp)"; rm -f "$index"
+    export GIT_INDEX_FILE="$index"
+    git -C "$root" --work-tree="$dir" add -A -f .
+    note="Masepala state ($branch), replaced after each run by engine/state_branch.sh. Do not edit by hand."
+    readme="$(echo "$note" | git -C "$root" hash-object -w --stdin)"
+    git -C "$root" update-index --add --cacheinfo "100644,$readme,README.md"
+    tree="$(git -C "$root" write-tree)"
+    bot=(-c user.name="dside-data-bot" -c user.email="dside-data-bot@users.noreply.github.com")
+    commit="$(git -C "$root" "${bot[@]}" commit-tree "$tree" -m "$branch $(date -u +%FT%H:%MZ)")"
+    rm -f "$index"; unset GIT_INDEX_FILE
+    git -C "$root" push -q -f origin "$commit:refs/heads/$branch"
+    echo "published $branch ($(git -C "$root" ls-tree -r --name-only "$commit" | wc -l) files)"
     ;;
   *) echo "usage: $0 restore|publish <branch> <folder>" >&2; exit 2 ;;
 esac
