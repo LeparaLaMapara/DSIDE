@@ -1,7 +1,17 @@
-# Collect fresh public data with the Ubunye pipeline, then stop.
+# Collect fresh public data with the Ubunye pipeline, check it, then stop.
 # Runs once a quarter (Treasury updates its municipal data quarterly) or when
-# started by hand. If the data changed it is committed, and the hosting
-# platform rebuilds the static site from the new files. Nothing stays running.
+# started by hand. Nothing stays running.
+#
+# What the Ubunye Engine does here, beyond running the tasks:
+#   - `ubunye doctor` and `ubunye plan` check the machine and every task first;
+#   - each task's CONFIG.expectations are checked before anything is written;
+#   - every run leaves a run record (lineage: row counts, data hashes, which
+#     expectations passed), kept on the `registry` branch with the audit model
+#     registry and the monitoring history;
+#   - the gate compares this run with the last one (dside_engine.health);
+#   - the audit model is registered and only promoted through its gates.
+# If the health check fails, the old data stays on the site and an issue is
+# opened. Either way the /status page shows what happened.
 name: Refresh data
 
 on:
@@ -11,11 +21,15 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 90
+    env:
+      PYTHONWARNINGS: ignore
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,23 +41,69 @@ jobs:
       - name: Test
         working-directory: engine
         run: pytest -q tests
-      - name: Restore last good copies
+      - name: Restore last good copies and the registry
         working-directory: engine
-        run: ./snapshot_state.sh restore
+        run: |
+          ./snapshot_state.sh restore
+          ./registry_state.sh restore
+      - name: Check the machine and the tasks (ubunye doctor, ubunye plan)
+        working-directory: engine
+        env:
+          WORK_DIR: ${{ github.workspace }}/engine/.work
+          SITE_DATA: ${{ github.workspace }}/web/data
+        run: |
+          tasks="-t 01_ingest_money -t 02_ingest_people -t 03_ingest_places -t 03b_ingest_fresh -t 04_analyse -t 05_publish"
+          ubunye doctor -d pipelines -u dside -p municipal $tasks
+          ubunye plan -d pipelines -u dside -p municipal $tasks --backend pandas
+      - name: Mark the start
+        id: start
+        run: echo "since=$(date -u +%FT%TZ)" >> "$GITHUB_OUTPUT"
       - name: Run the pipeline
+        id: run
         working-directory: engine
         env:
           REFRESH: "true"
           # SASSA and DWS only answer South African addresses; the relay runs in Johannesburg (relay/).
           DSIDE_ZA_RELAY: ${{ vars.DSIDE_ZA_RELAY }}
           DSIDE_ZA_RELAY_TOKEN: ${{ secrets.DSIDE_ZA_RELAY_TOKEN }}
-          PYTHONWARNINGS: ignore
         run: ./run.sh
-      - name: Publish last good copies
+      - name: Check health (run records, expectations, gate, model registry)
+        id: health
+        if: always() && steps.start.outcome == 'success'
+        working-directory: engine
+        run: |
+          python -m dside_engine.health --lineage registry/lineage --since "${{ steps.start.outputs.since }}" \
+            --out registry/monitoring/latest.json --history registry/monitoring/history.jsonl \
+            --summary "$GITHUB_STEP_SUMMARY" --issue "$RUNNER_TEMP/health-issue.md" --run-url "$RUN_URL"
+      - name: Keep the run records as OpenLineage events
+        if: always() && steps.start.outcome == 'success'
+        working-directory: engine
+        run: |
+          mkdir -p registry/openlineage
+          for t in 01_ingest_money 02_ingest_people 03_ingest_places 03b_ingest_fresh 04_analyse 05_publish; do
+            ubunye lineage openlineage -d pipelines -u dside -p municipal -t "$t" \
+              --lineage-dir "$PWD/registry/lineage" --namespace masepala > "registry/openlineage/$t.jsonl" || true
+          done
+      - name: Publish last good copies and the registry
         if: always()
         working-directory: engine
-        run: ./snapshot_state.sh publish
+        run: |
+          ./snapshot_state.sh publish
+          ./registry_state.sh publish
+      - name: Tell a person
+        if: always() && hashFiles(format('{0}/health-issue.md', runner.temp)) != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create data-health --color d03b3b --description "Opened by the quarterly refresh" --force
+          n=$(gh issue list --label data-health --state open --json number -q '.[0].number')
+          if [ -n "$n" ]; then
+            gh issue comment "$n" --body-file "$RUNNER_TEMP/health-issue.md"
+          else
+            gh issue create --title "Data health needs attention" --label data-health --body-file "$RUNNER_TEMP/health-issue.md"
+          fi
       - name: Commit new data
+        if: steps.run.outcome == 'success' && steps.health.outcome == 'success'
         run: |
           git config user.name "dside-data-bot"
           git config user.email "dside-data-bot@users.noreply.github.com"

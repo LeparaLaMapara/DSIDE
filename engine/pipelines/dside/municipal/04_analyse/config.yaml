@@ -43,3 +43,22 @@ CONFIG:
     stations: {format: s3, path: "{{ env.WORK_DIR }}/analysed/stations.parquet", file_format: parquet, mode: overwrite}
     wards: {format: s3, path: "{{ env.WORK_DIR }}/analysed/wards.parquet", file_format: parquet, mode: overwrite}
     meta: {format: s3, path: "{{ env.WORK_DIR }}/analysed/meta.parquet", file_format: parquet, mode: overwrite}
+  expectations:
+    municipalities:
+      rules:
+        - {row_count: {min: 250, max: 260}}
+        - {not_null: code}
+        - {unique: code}
+        - {not_null: name}
+    wards:
+      rules:
+        - {row_count: {min: 4000, max: 5000}}
+        - {unique: ward_id}
+    schools:
+      rules:
+        - {row_count: {min: 20000}}
+        - {unique: emis}
+    stations:
+      rules:
+        - {row_count: {min: 1000}}
+        - {unique: station}

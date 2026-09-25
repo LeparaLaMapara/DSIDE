@@ -99,6 +99,8 @@ export type Meta = {
   audit_model: {
     question: string; trained_on_years: string; tested_on_year: number; model: string; model_beats_naive: boolean; predicts_year: number;
     test: { n: number; model_accuracy: number; model_balanced_accuracy: number; model_brier: number; naive_accuracy: number; naive_balanced_accuracy: number; naive_brier: number };
+    /** The Ubunye model registry's decision, when the run had a registry (engine/dside_engine/analytics/audit_registry.py). */
+    registry?: { decision: string; reason: string; live_version: string | null; new_version?: string; used: "model" | "naive" };
   };
   national: Record<string, number>;
   dimensions: Record<string, string>;

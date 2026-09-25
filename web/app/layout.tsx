@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex gap-1 text-sm font-bold">
               <Link href="/who-does-what" className="inline-flex min-h-11 items-center rounded px-3 hover:bg-sunk">Who does what</Link>
               <Link href="/about" className="inline-flex min-h-11 items-center rounded px-3 hover:bg-sunk">About the data</Link>
+              <Link href="/status" className="inline-flex min-h-11 items-center rounded px-3 hover:bg-sunk">Data health</Link>
             </div>
           </nav>
         </header>

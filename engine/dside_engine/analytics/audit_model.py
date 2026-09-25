@@ -55,7 +55,12 @@ def panel(audits: pd.DataFrame, meta: pd.DataFrame) -> pd.DataFrame:
     return pd.get_dummies(p, columns=["peer_group", "province"], dtype=float)
 
 
-def evaluate_and_predict(p: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+def fit_and_score(p: pd.DataFrame) -> dict:
+    """Choose a model on the validation year, score it on the test year, refit on everything known.
+
+    Returns the report (as published), the final fitted estimator, its feature
+    names and the rows to predict (the year after the last known one).
+    """
     from sklearn.ensemble import HistGradientBoostingClassifier
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import accuracy_score, balanced_accuracy_score, brier_score_loss
@@ -100,12 +105,35 @@ def evaluate_and_predict(p: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
             "naive_balanced_accuracy": round(balanced_accuracy_score(y, naive), 3),
             "naive_brier": round(brier_score_loss(y, naive.clip(0.02, 0.98)), 3),
         },
+        "predicts_year": future_year,
     }
     report["model_beats_naive"] = bool(report["test"]["model_brier"] < report["test"]["naive_brier"]
                                        and report["test"]["model_balanced_accuracy"] >= report["test"]["naive_balanced_accuracy"])
+    return {"report": report, "estimator": fit(chosen, test_year), "features": feats,
+            "future": p[p["year"] == future_year].copy(), "known": known}
 
-    final = fit(chosen, test_year)
-    nxt = p[p["year"] == future_year].copy()
-    nxt["chance_unqualified"] = final.predict_proba(nxt[feats])[:, 1] if report["model_beats_naive"] else nxt["prev_good"].astype(float)
-    report["predicts_year"] = future_year
-    return nxt[["code", "chance_unqualified"]].assign(predicted_year=future_year), report
+
+def naive_prediction(future: pd.DataFrame) -> pd.Series:
+    """The simple guess: same as last year."""
+    return future["prev_good"].astype(float)
+
+
+def evaluate_and_predict(p: pd.DataFrame, registry: str | None = None) -> tuple[pd.DataFrame, dict]:
+    """Predict next year's audits and report how the prediction was chosen.
+
+    Without a registry the fresh model is used if it beats the simple guess,
+    else the simple guess. With a registry (a folder, see audit_registry.py)
+    the Ubunye model registry decides: the fresh model is registered and only
+    replaces the live version if it passes the promotion gates.
+    """
+    fitted = fit_and_score(p)
+    report, future = fitted["report"], fitted["future"]
+    if registry:
+        from .audit_registry import govern
+
+        chance, report["registry"] = govern(registry, fitted)
+    else:
+        chance = (fitted["estimator"].predict_proba(future[fitted["features"]])[:, 1]
+                  if report["model_beats_naive"] else naive_prediction(future))
+    future["chance_unqualified"] = chance
+    return future[["code", "chance_unqualified"]].assign(predicted_year=report["predicts_year"]), report

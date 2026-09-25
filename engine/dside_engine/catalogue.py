@@ -66,4 +66,4 @@ def load(name: str, refresh: bool = False) -> pd.DataFrame:
     """Fetch a named source; if its website fails, use its last good copy (see snapshots.py)."""
     if name not in SOURCES:
         raise KeyError(f"unknown source '{name}'; known: {sorted(SOURCES)}")
-    return guarded(name, lambda: SOURCES[name](refresh))
+    return guarded(name, lambda: SOURCES[name](refresh), label=name)

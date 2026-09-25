@@ -24,3 +24,20 @@ CONFIG:
     projects: {format: s3, path: "{{ env.WORK_DIR }}/raw/projects.parquet", file_format: parquet, mode: overwrite}
     wards: {format: s3, path: "{{ env.WORK_DIR }}/raw/wards.parquet", file_format: parquet, mode: overwrite}
     councillors: {format: s3, path: "{{ env.WORK_DIR }}/raw/councillors.parquet", file_format: parquet, mode: overwrite}
+  expectations:
+    geographies:
+      rules:
+        - {row_count: {min: 250, max: 300}}
+        - {unique: code}
+        - {not_null: geometry}
+    projects:
+      rules:
+        - {row_count: {min: 7000}}
+    wards:
+      rules:
+        - {row_count: {min: 4000, max: 5000}}
+        - {not_null: WardID}
+        - {unique: WardID}
+    councillors:
+      rules:
+        - {row_count: {min: 50}, severity: warn}

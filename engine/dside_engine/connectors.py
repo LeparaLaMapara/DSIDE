@@ -39,7 +39,12 @@ class SnapshotReader(Reader):
         raise NotImplementedError
 
     def read(self, cfg: dict, backend: Any):
-        return _frame(guarded(key_for(type(self).__name__, cfg), lambda: self.fetch(cfg)), backend)
+        return _frame(guarded(key_for(type(self).__name__, cfg), lambda: self.fetch(cfg), label=self.label(cfg)), backend)
+
+    def label(self, cfg: dict) -> str:
+        """A readable name for the health page: the reader's format plus what it asked for."""
+        what = cfg.get("cube") or cfg.get("dataset") or cfg.get("indicators") or cfg.get("profile") or ""
+        return f"{cfg.get('format', type(self).__name__)} {what}".strip()
 
 
 def _years(cfg: dict) -> list[int]:

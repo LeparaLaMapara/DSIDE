@@ -116,6 +116,13 @@ export default function About() {
           The honest reading: the model is only a little better than guessing &quot;same as last year&quot;. Its value is that it
           gives a chance instead of a yes or no. A municipality&apos;s past is the strongest sign of its next audit.
         </p>
+        <p className="mt-2">
+          Every quarter a new version is trained and kept in a model registry with these scores. It only replaces the version in
+          use if it beats the simple guess and does no worse than the current version; otherwise the current one stays. When the
+          Auditor-General publishes the year we predicted, the prediction is scored against what really happened.{" "}
+          {m.audit_model.registry?.live_version && <>Version in use: {m.audit_model.registry.live_version}. </>}
+          <a href="/status" className="text-link underline">See the checks and the track record</a>.
+        </p>
       </section>
 
       <section>
