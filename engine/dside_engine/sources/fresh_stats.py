@@ -31,7 +31,7 @@ from pathlib import Path
 import httpx
 import pandas as pd
 
-from ..http import CACHE_DIR, USER_AGENT, Fetcher
+from ..http import CACHE_DIR, USER_AGENT, Fetcher, client
 
 FALLBACK = Path(__file__).resolve().parents[2] / "fallback"
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " + USER_AGENT
@@ -49,8 +49,7 @@ def _fetch(url: str, refresh: bool = False, timeout: float = 120.0, verify: bool
     path = _cache_path(url)
     if cache and path.exists() and not refresh:
         return path.read_bytes()
-    with httpx.Client(timeout=timeout, follow_redirects=True, verify=verify,
-                      headers={"User-Agent": BROWSER_UA}) as c:
+    with client(timeout, verify, BROWSER_UA) as c:
         r = c.get(url)
         r.raise_for_status()
     if cache:
@@ -112,10 +111,20 @@ def registry(f: Fetcher | None = None) -> pd.DataFrame:
     follows the current (2016) boundaries; districts come from Treasury. Both
     are open. Treasury's list alone also holds 35 disestablished councils,
     which would attract false matches such as 'Mookgophong'.
+
+    The list barely changes, so it keeps a last good copy: a Treasury outage
+    must not take down SASSA, water quality and the other sources that only
+    use it to match names to codes.
     """
-    from .municipal_money import municipalities
+    from ..snapshots import guarded
 
     f = f or Fetcher()
+    return guarded("municipality_registry", lambda: _build_registry(f), label="municipality list (Spatial Tax, Treasury)")
+
+
+def _build_registry(f: Fetcher) -> pd.DataFrame:
+    from .municipal_money import municipalities
+
     rows = []
     for m in f.get("https://api.spatialtaxdata.org.za/api/municipality-list/"):
         rows.append({"code": m["cat_b"], "name": m["municname"], "category": m["category"],

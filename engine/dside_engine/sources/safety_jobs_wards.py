@@ -17,7 +17,7 @@ from pathlib import Path
 import httpx
 import pandas as pd
 
-from ..http import CACHE_DIR, USER_AGENT
+from ..http import CACHE_DIR, USER_AGENT, client
 
 SAPS_PAGE = "https://www.saps.gov.za/services/crimestats.php"
 SAPS_BASE = "https://www.saps.gov.za/services/"
@@ -47,7 +47,7 @@ def _download(url: str, refresh: bool, verify: bool = True) -> bytes:
     path = CACHE_DIR / re.sub(r"[^A-Za-z0-9._-]", "_", url.split("//", 1)[1])[-150:]
     if path.exists() and not refresh:
         return path.read_bytes()
-    with httpx.Client(timeout=300, follow_redirects=True, verify=verify, headers={"User-Agent": USER_AGENT}) as c:
+    with client(300, verify) as c:
         r = c.get(url)
         r.raise_for_status()
     CACHE_DIR.mkdir(exist_ok=True)
