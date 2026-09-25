@@ -4,8 +4,8 @@ version = "1.0.0"
 description = "Masepala data layer: public South African municipal data turned into plain-language facts, built on the Ubunye Engine."
 requires-python = ">=3.11"
 dependencies = [
-  # Pinned to the pandas backend commit (PR #51) until it ships in a release.
-  "ubunye-engine[pandas,rest] @ git+https://github.com/ubunye-ai-ecosystems/ubunye_engine@c6ceb07d6c323da826e3b6e2c84500484790e1de",
+  # 0.7 is the first release with the pandas backend; transforms get plain DataFrames.
+  "ubunye-engine[pandas]>=0.7,<0.8",
   "httpx>=0.27",
   "pandas>=2.2",
   "scikit-learn>=1.5",
@@ -31,6 +31,9 @@ statssa_qlfs = "dside_engine.connectors:QlfsReader"
 mdb_wards = "dside_engine.connectors:WardReader"
 ward_councillors = "dside_engine.connectors:CouncillorReader"
 dside_source = "dside_engine.connectors:DsideSourceReader"
+
+[project.entry-points."ubunye.writers"]
+site_json = "dside_engine.connectors:SiteJsonWriter"
 
 [build-system]
 requires = ["setuptools>=68"]

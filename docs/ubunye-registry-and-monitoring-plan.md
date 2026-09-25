@@ -1,6 +1,6 @@
 # Plan: model registry, promotion and monitoring on the Ubunye Engine
 
-Status: **waiting on the Ubunye Engine upgrade**. Recorded 2026-09-24.
+Status: **engine side mostly ready as of Ubunye 0.7.0 (2026-09-25); Masepala runs on 0.7.0.** Recorded 2026-09-24, updated 2026-09-25.
 
 Masepala uses the Ubunye Engine today for the data pipeline only (config
 tasks, reader plugins, validation, pandas backend, lineage). This plan adds the
@@ -46,28 +46,38 @@ methods, not trained models; they do not go in a registry.
 Bigger models or files later: Cloudflare R2 (free 10 GB, S3 compatible), which
 Ubunye's artifact stores already support by path prefix.
 
-## Engine prerequisites (do these in the Ubunye Engine repository, on its own branch)
+## Engine prerequisites (status after Ubunye 0.7.0)
 
-1. `ubunye models promote` must run the promotion gates (today `cli/models.py`
-   never passes `gates=`).
-2. The config schema must accept `CONFIG.monitors` (today it is rejected,
-   although the runtime reads it).
-3. The model registry must be proven on the pandas backend (untested today).
-4. Pandas lineage must record real row counts and data fingerprints (today
-   `fingerprint_dataframe` returns the schema hash as the data hash and no row
-   count, because the pandas adapter has no `sample()`).
-5. Release the pandas backend (PRs #50 and #51, then 0.6.0) so Masepala can
-   depend on a version instead of a pinned commit.
+1. Done in 0.7.0: `ubunye models promote` honours the model's promotion gates
+   (a forced promotion is marked `promotion_forced`).
+2. Still open: the config schema does not accept `CONFIG.monitors`, although the
+   runtime reads it. Much of the source-health plan no longer needs it: 0.7.0
+   adds `CONFIG.expectations` (not_null, unique, between, one_of, matches,
+   row_count, with fail, quarantine or warn), checked before anything is written.
+3. Still to prove: the model registry on the pandas backend.
+4. Done in 0.7.0: run record v2 has real row counts and data hashes on pandas,
+   plus input hashes, a code hash and an environment hash. Verified on Masepala's
+   run: 32 of 32 inputs hashed and counted, every output with a distinct hash.
+5. Done: 0.7.0 is on PyPI with the pandas backend, and Masepala depends on
+   `ubunye-engine[pandas]>=0.7,<0.8` instead of a pinned commit.
+
+What moving to 0.7.0 needed in Masepala: transforms now receive plain,
+Arrow-backed DataFrames (so `.native` went away and `dside_engine/frames.py`
+converts to numpy-backed pandas at the boundary), and the built-in writers now
+lay files out the way Spark does (a folder of part files), so site files are
+written by Masepala's own `site_json` writer plugin. The published data was
+identical before and after (257 municipalities, 4,468 wards, 25,224 schools,
+0 differences on key fields).
 
 ## Masepala steps once the engine is ready
 
-1. Move the pin in `engine/pyproject.toml` from commit `c6ceb07` to the released
-   version.
+1. Done: the engine is now a released dependency (0.7.x).
 2. Wrap the audit model as an `UbunyeModel` (train, predict, save, load,
    metadata) and register it from `04_analyse`, with a promotion gate against
    the naive baseline and the live version.
-3. Add `CONFIG.monitors` to the ingest tasks (freshness, row counts, expected
-   columns) and to the live task.
+3. Add `CONFIG.expectations` to the ingest and publish tasks (row counts, codes
+   not null and unique, shares between 0 and 1), and gate each quarterly run
+   against the previous run record with `ubunye gate --max-row-change`.
 4. Add a `registry_state.sh` like `live_state.sh`: restore the `registry` branch
    before a run, publish it after.
 5. Add a workflow step that opens a GitHub Issue when a monitor fails.

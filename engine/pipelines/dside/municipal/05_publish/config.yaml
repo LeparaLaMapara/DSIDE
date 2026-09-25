@@ -12,10 +12,10 @@ CONFIG:
     wards: {format: s3, path: "{{ env.WORK_DIR }}/analysed/wards.parquet", file_format: parquet}
     geographies: {format: s3, path: "{{ env.WORK_DIR }}/raw/geographies.parquet", file_format: parquet}
   outputs:
-    municipalities: {format: s3, path: "{{ env.SITE_DATA }}/municipalities.json", file_format: json, mode: overwrite}
-    projects: {format: s3, path: "{{ env.SITE_DATA }}/projects.json", file_format: json, mode: overwrite}
-    boundaries: {format: s3, path: "{{ env.SITE_DATA }}/boundaries.json", file_format: json, mode: overwrite}
-    stations: {format: s3, path: "{{ env.SITE_DATA }}/stations.json", file_format: json, mode: overwrite}
-    schools: {format: s3, path: "{{ env.SITE_DATA }}/schools.json", file_format: json, mode: overwrite}
-    wards: {format: s3, path: "{{ env.SITE_DATA }}/wards.json", file_format: json, mode: overwrite}
-    meta: {format: s3, path: "{{ env.SITE_DATA }}/meta.json", file_format: json, mode: overwrite}
+    municipalities: {format: site_json, path: "{{ env.SITE_DATA }}/municipalities.json", mode: overwrite}
+    projects: {format: site_json, path: "{{ env.SITE_DATA }}/projects.json", mode: overwrite}
+    boundaries: {format: site_json, path: "{{ env.SITE_DATA }}/boundaries.json", mode: overwrite}
+    stations: {format: site_json, path: "{{ env.SITE_DATA }}/stations.json", mode: overwrite}
+    schools: {format: site_json, path: "{{ env.SITE_DATA }}/schools.json", mode: overwrite}
+    wards: {format: site_json, path: "{{ env.SITE_DATA }}/wards.json", mode: overwrite}
+    meta: {format: site_json, path: "{{ env.SITE_DATA }}/meta.json", mode: overwrite}

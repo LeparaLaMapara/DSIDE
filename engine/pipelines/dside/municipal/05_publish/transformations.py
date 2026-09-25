@@ -1,15 +1,18 @@
 from ubunye.core.interfaces import Task
 
+from dside_engine.frames import all_numpy_backed
+
 
 class Publish(Task):
     def transform(self, sources):
-        geos = sources["geographies"].native
+        frames = all_numpy_backed(sources)
+        geos = frames["geographies"]
         return {
-            "municipalities": sources["municipalities"].native,
-            "projects": sources["projects"].native,
+            "municipalities": frames["municipalities"],
+            "projects": frames["projects"],
             "boundaries": geos[["code", "name", "level", "parent", "geometry"]],
-            "stations": sources["stations"].native,
-            "schools": sources["schools"].native,
-            "wards": sources["wards"].native,
-            "meta": sources["meta"].native,
+            "stations": frames["stations"],
+            "schools": frames["schools"],
+            "wards": frames["wards"],
+            "meta": frames["meta"],
         }
