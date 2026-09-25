@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 type Verdict = "ok" | "warn" | "fail";
 type Source = { key: string; label: string; status: Verdict; fresh: boolean; fetched_at: string | null; age_days: number | null; rows: number | null; error: string | null };
 type Finding = { rule: string; status: Verdict; detail: string; output: string | null };
-type Task = { task: string; status: Verdict; ran: boolean; detail?: string; seconds?: number; expectations_checked?: number; gate?: Finding[]; outputs?: Record<string, number | null> };
+type Task = { task: string; status: Verdict; ran: boolean; detail?: string; seconds?: number; expectations_checked?: number; gate?: Finding[]; notes?: Finding[]; outputs?: Record<string, number | null> };
 type Score = { version: string; predicted_year: number; scored: boolean; n?: number; model_accuracy?: number; model_brier?: number; naive_accuracy?: number; naive_brier?: number };
 type Model = { status: Verdict; decision?: string; reason?: string; live_version?: string | null; new_version?: string; used?: string; track_record?: Score[]; tested_on_year?: number; predicts_year?: number };
 type Report = { checked_at: string; status: Verdict; run_url?: string | null; rules: { max_row_change: number; stale_days: number }; sources: Source[]; tasks: Task[]; model: Model | null };
@@ -104,6 +104,9 @@ export function Health() {
               <p className="flex flex-wrap items-center gap-2"><strong>{STEP[t.task] ?? t.task}</strong> <Badge v={t.status} /></p>
               {!t.ran && <p className="mt-1 text-sm">{t.detail}</p>}
               {t.ran && <p className="mt-1 text-sm text-muted">{t.expectations_checked} checks{t.seconds != null && `, ${Math.round(t.seconds)} s`}</p>}
+              {t.notes && t.notes.length > 0 && (
+                <p className="mt-1 text-sm text-muted">Known gaps in the source: {t.notes.map((g) => `${g.output}: ${g.detail}`).join("; ")}.</p>
+              )}
               {t.gate && t.gate.length > 0 && (
                 <ul className="mt-1 list-disc pl-5 text-sm">
                   {t.gate.map((g, i) => <li key={i}>{g.output ? `${g.output}: ` : ""}{g.detail}</li>)}

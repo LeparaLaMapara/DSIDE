@@ -61,10 +61,13 @@ def sources(status: dict, now: datetime) -> list[dict]:
 
 
 def tasks(lineage: Path, since: str, policy: gate_rules.Policy) -> tuple[list[dict], list[str]]:
-    store = FileSystemLineageStore(base_dir=str(lineage))
     start = _when(since)
     out, tables = [], []
     for name in TASKS:
+        # One store per task: `ubunye run --all` gives every task the same run id, and the
+        # store caches records by run id alone, so a shared store would hand task 2 the
+        # record of task 1 (Ubunye Engine 0.7.0).
+        store = FileSystemLineageStore(base_dir=str(lineage))
         runs = sorted(store.list_runs(f"{PACKAGE}/{name}", n=1_000_000), key=lambda r: r.started_at, reverse=True)
         current = [r for r in runs if _when(r.started_at) >= start]
         if not current:
@@ -89,6 +92,12 @@ def tasks(lineage: Path, since: str, policy: gate_rules.Policy) -> tuple[list[di
                         for f in gate_rules.evaluate(base, cand, policy)]
             entry["baseline"] = base.run_id
             tables.append(gate_rules.markdown(findings, base, cand))
+        # A broken `warn` rule is a known gap in a source (a few rows without a code): shown,
+        # but it does not call a person every quarter. Quarantined rows and `fail` rules do.
+        notes = [f for f in findings if f.rule == "expectation" and f.status == gate_rules.WARN
+                 and not f.detail.endswith("(quarantined)")]
+        findings = [f for f in findings if f not in notes]
+        entry["notes"] = [f.as_dict() for f in notes]
         entry["gate"] = [f.as_dict() for f in findings if f.status != gate_rules.OK]
         entry["status"] = max((f.status for f in findings), key=RANK.get, default="ok")
         out.append(entry)

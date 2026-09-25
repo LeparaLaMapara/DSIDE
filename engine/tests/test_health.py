@@ -23,8 +23,9 @@ def record(store, task, run_id, started, rows, status="success", expectations=()
 
 
 def every_task(store, run_id, started, rows=4468, **kw):
+    # One run id for every task, as `ubunye run --all` records them.
     for t in health.TASKS:
-        record(store, t, f"{run_id}-{t}", started, rows, **kw)
+        record(store, t, run_id, started, rows, **kw)
 
 
 def write_status(path, **sources):
@@ -41,6 +42,7 @@ def test_a_clean_run_is_ok(tmp_path):
     assert report["status"] == "ok"
     assert all(t["baseline"] and t["status"] == "ok" for t in report["tasks"])
     assert len(tables) == len(health.TASKS)
+    assert [t["task"] for t in report["tasks"]] == health.TASKS
 
 
 def test_a_table_that_collapses_fails_the_gate(tmp_path):
@@ -86,3 +88,14 @@ def test_main_writes_history_and_an_issue(tmp_path):
     assert code == 0  # a warning keeps the data, but still tells a person
     assert json.loads((tmp_path / "history.jsonl").read_text().splitlines()[0])["fallback"] == ["treasury"]
     assert "treasury" in (tmp_path / "issue.md").read_text()
+
+
+def test_a_warn_rule_is_a_note_not_an_alert(tmp_path):
+    store = FileSystemLineageStore(str(tmp_path / "lineage"))
+    known_gap = {"output": "crime", "rule": "muni_code_not_null", "kind": "not_null", "severity": "warn",
+                 "column": "muni_code", "failed": 420, "total": 41090, "passed": False}
+    every_task(store, "old", "2026-08-20T04:10:00+00:00")
+    every_task(store, "new", "2026-11-20T04:10:00+00:00", expectations=[known_gap])
+    report, _ = health.build(tmp_path / "lineage", SINCE, tmp_path / "missing.json", tmp_path / "none.json", NOW)
+    assert report["status"] == "ok"
+    assert report["tasks"][0]["notes"][0]["detail"].startswith("muni_code_not_null")
