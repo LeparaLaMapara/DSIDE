@@ -1,0 +1,53 @@
+# Checks on every pull request: the engine's tests, the Ubunye Engine's own
+# checks of every task (validate, doctor, plan), and a build of the site.
+# Nothing is collected or published here.
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WORK_DIR: ${{ github.workspace }}/engine/.work
+      SITE_DATA: ${{ github.workspace }}/web/data
+      LIVE_DIR: ${{ github.workspace }}/web/public/live
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install the engine
+        working-directory: engine
+        run: pip install -e ".[test]"
+      - name: Test
+        working-directory: engine
+        run: pytest -q tests
+      - name: Validate, doctor and plan every task
+        working-directory: engine
+        run: |
+          tasks="-t 01_ingest_money -t 02_ingest_people -t 03_ingest_places -t 03b_ingest_fresh -t 04_analyse -t 05_publish"
+          ubunye validate -d pipelines -u dside -p municipal --all
+          ubunye validate -d pipelines -u dside -p live --all
+          ubunye doctor -d pipelines -u dside -p municipal $tasks
+          ubunye doctor -d pipelines -u dside -p live -t 01_collect
+          ubunye plan -d pipelines -u dside -p municipal $tasks --backend pandas
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - working-directory: web
+        run: npm ci && npm run build

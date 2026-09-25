@@ -72,8 +72,39 @@ descriptive, statistical or rule based. Clustering was tried and rejected
 because municipalities do not form real groups. The site's About page explains
 every method and every limit.
 
-If an outside website fails or blocks the runner, that source falls back to its
-last good copy in `engine/fallback/snapshots/`, and the About page says so.
+### What the Ubunye Engine checks on every run
+
+- **Before the run:** `ubunye doctor` and `ubunye plan` check the machine and
+  every task (the pull request checks run them too).
+- **Before anything is written:** each task declares `CONFIG.expectations`
+  (at least 4,000 wards, one row per ward, shares between 0 and 1, audit
+  opinions the model knows). A broken `fail` rule stops the run; unknown audit
+  opinions are set aside in `audits_quarantine`; `warn` rules are reported.
+- **After the run:** every task leaves a run record (row counts, data hashes,
+  input and code hashes, every expectation). `dside_engine/health.py` gates
+  this run against the last one with the engine's gate (a table that moves by
+  more than 25% fails), and writes `/status`. On a failure the site keeps the
+  old data and a `data-health` issue is opened.
+- **The audit model** is an `UbunyeModel` in the Ubunye model registry. Each
+  quarter's version is registered with its test scores and promoted only if it
+  passes the promotion gates: it beats "same as last year" and does no worse
+  than the live version. Every live prediction is scored once the real audit
+  outcome is published (`dside_engine/analytics/audit_registry.py`).
+
+The registry, the run records (also as OpenLineage events) and the monitoring
+history live on the single-commit `registry` branch.
+
+### When a source fails
+
+Every download goes through one client (`dside_engine/http.py`). A host that
+stops answering is marked down after three failures, so its sources fall back
+to their last good copy (the `snapshots` branch) in seconds. A fetch that
+returns less than half the rows of the last good copy counts as a failure too.
+
+SASSA and the Department of Water and Sanitation only answer South African
+addresses, so GitHub's runners (in the United States) cannot reach them. The
+quarterly run reaches them through a small relay in Google Cloud's
+Johannesburg region (`relay/`): it needs a token and only fetches those hosts.
 
 ## Sources
 
@@ -97,9 +128,11 @@ pytest -q tests
 cd ../web && npm install && npm run build   # static site in web/out
 ```
 
-Two GitHub workflows keep it fresh: `refresh-data.yml` (quarterly, commits
-`web/data`, Vercel rebuilds) and `refresh-live.yml` (every three hours,
-publishes to the single-commit `live-data` branch).
+Three GitHub workflows: `refresh-data.yml` (quarterly: checks, runs, gates,
+commits `web/data` when healthy, Vercel rebuilds), `refresh-live.yml` (every
+three hours, publishes to the single-commit `live-data` branch) and
+`checks.yml` (every pull request: tests, `ubunye validate`, `doctor` and
+`plan`, and a site build).
 
 ## History
 

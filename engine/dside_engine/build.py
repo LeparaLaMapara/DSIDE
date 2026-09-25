@@ -7,6 +7,7 @@ tasks in pipelines/ only move data in and out.
 from __future__ import annotations
 
 import json
+import os
 import time
 
 import numpy as np
@@ -74,7 +75,8 @@ def analyse(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
 
     audits = raw["audits"]
     pred, model_report = audit_model.evaluate_and_predict(
-        audit_model.panel(audits, meta.reset_index(names="code")))
+        audit_model.panel(audits, meta.reset_index(names="code")),
+        registry=os.environ.get("DSIDE_REGISTRY") or None)
     df = df.join(pred.set_index("code"), how="left")
 
     located = projects.locate(raw["projects"], raw["geographies"])

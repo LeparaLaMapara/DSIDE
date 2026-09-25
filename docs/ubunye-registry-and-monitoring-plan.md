@@ -1,6 +1,6 @@
 # Plan: model registry, promotion and monitoring on the Ubunye Engine
 
-Status: **engine side mostly ready as of Ubunye 0.7.0 (2026-09-25); Masepala runs on 0.7.0.** Recorded 2026-09-24, updated 2026-09-25.
+Status: **built on Ubunye 0.7.0 (2026-09-25).** Recorded 2026-09-24, built 2026-09-25. What was built differs from the plan in two places, noted below: source health uses `CONFIG.expectations` and the gate instead of `CONFIG.monitors`, and the alerting lives in `dside_engine/health.py`.
 
 Masepala uses the Ubunye Engine today for the data pipeline only (config
 tasks, reader plugins, validation, pandas backend, lineage). This plan adds the
@@ -69,18 +69,31 @@ written by Masepala's own `site_json` writer plugin. The published data was
 identical before and after (257 municipalities, 4,468 wards, 25,224 schools,
 0 differences on key fields).
 
-## Masepala steps once the engine is ready
+## What was built (2026-09-25)
 
-1. Done: the engine is now a released dependency (0.7.x).
-2. Wrap the audit model as an `UbunyeModel` (train, predict, save, load,
-   metadata) and register it from `04_analyse`, with a promotion gate against
-   the naive baseline and the live version.
-3. Add `CONFIG.expectations` to the ingest and publish tasks (row counts, codes
-   not null and unique, shares between 0 and 1), and gate each quarterly run
-   against the previous run record with `ubunye gate --max-row-change`.
-4. Add a `registry_state.sh` like `live_state.sh`: restore the `registry` branch
-   before a run, publish it after.
-5. Add a workflow step that opens a GitHub Issue when a monitor fails.
-6. Add the model-against-reality scoring when new audit years appear.
-7. Add the `/status` page.
-8. Tests for each, and update the README and About page.
+1. Done: the engine is a released dependency (0.7.x).
+2. Done: the audit model is an `UbunyeModel` (`dside_engine/analytics/audit_registry.py`),
+   registered from `04_analyse` whenever the audit history changes. Promotion
+   gates: `min_brier_gain` 0.001 and `min_balanced_accuracy_gain` 0 against the
+   simple guess, and `max_model_brier` against the live version (its recorded
+   score on the same test year, or its score on the new year it never saw).
+   A blocked version stays registered; the live one keeps predicting.
+3. Done: `CONFIG.expectations` on every ingest task, the analysis and the live
+   task (row counts, codes present and unique, shares and percentages in range,
+   known audit opinions quarantined). `dside_engine/health.py` gates each task's
+   run record against the previous one with the engine's gate
+   (`allow_data_change`, `max_row_change` 0.25).
+4. Done: `state_branch.sh` (with `registry_state.sh` and `snapshot_state.sh`)
+   restores and publishes the `registry` branch: `models/`, `lineage/`,
+   `openlineage/`, `monitoring/latest.json` and `monitoring/history.jsonl`.
+5. Done: the quarterly workflow opens or comments on a `data-health` issue when
+   the health is not ok, and only commits new data when the run and the health
+   check pass.
+6. Done: every live version stores its predictions; `track_record` scores them
+   once the real outcomes are published.
+7. Done: `/status` on the site, read in the browser from the `registry` branch.
+8. Done: tests (`test_audit_registry.py`, `test_http.py`, `test_relay.py`, the
+   snapshot shrink guard), README and About page.
+
+Still open on the engine side: `CONFIG.monitors` is not in the config schema
+(the expectations and the gate covered what Masepala needed without it).

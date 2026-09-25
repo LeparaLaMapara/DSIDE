@@ -42,3 +42,55 @@ CONFIG:
     schools: {format: s3, path: "{{ env.WORK_DIR }}/raw/schools.parquet", file_format: parquet, mode: overwrite}
     matric: {format: s3, path: "{{ env.WORK_DIR }}/raw/matric.parquet", file_format: parquet, mode: overwrite}
     siu: {format: s3, path: "{{ env.WORK_DIR }}/raw/siu.parquet", file_format: parquet, mode: overwrite}
+  expectations:
+    debtors: {rules: [{row_count: {min: 150}}, {unique: code}]}
+    creditors: {rules: [{row_count: {min: 150}}, {unique: code}]}
+    grants: {rules: [{row_count: {min: 1000}}, {not_null: code}]}
+    year_to_date: {rules: [{row_count: {min: 200}}, {unique: code}]}
+    officials: {rules: [{row_count: {min: 600}}, {not_null: code}]}
+    cash: {rules: [{row_count: {min: 150}}, {unique: code}]}
+    ward_councillors_2021:
+      rules:
+        - {row_count: {min: 4000}}
+        - {unique: ward_id}
+        - {between: {column: turnout_share, min: 0, max: 1}}
+        - {between: {column: winning_share, min: 0, max: 1}}
+    ward_results_2024:
+      rules:
+        - {row_count: {min: 4000}}
+        - {unique: ward_id}
+        - {between: {column: turnout_share, min: 0, max: 1}}
+    census_extras:
+      rules:
+        - {row_count: {min: 250}}
+        - {unique: code}
+        - {between: {column: rdp_household_share, min: 0, max: 1}}
+        - {between: {column: female_headed_share, min: 0, max: 1}}
+    gcro: {rules: [{row_count: {min: 40}}, {between: {column: share, min: 0, max: 1}}]}
+    jobs_2025: {rules: [{row_count: {min: 150}}, {unique: code}]}
+    jobs_series: {rules: [{row_count: {min: 500}}]}
+    population_2026: {rules: [{row_count: {min: 200}}, {not_null: population}]}
+    srd_grants:
+      rules:
+        - {row_count: {min: 150}}
+        - {unique: code}
+        - {between: {column: srd_pct_paid, min: 0, max: 100}}
+    water_quality:
+      rules:
+        - {row_count: {min: 100}}
+        - {unique: code}
+        - {between: {column: green_drop_score, min: 0, max: 100}}
+        - {between: {column: blue_drop_risk, min: 0, max: 100}}
+    schools:
+      rules:
+        - {row_count: {min: 20000}}
+        - {unique: emis}
+        - {between: {column: quintile, min: 1, max: 5}, severity: warn}
+    matric:
+      rules:
+        - {row_count: {min: 10000}}
+        - {between: {column: pass_rate, min: 0, max: 100}}
+    siu:
+      rules:
+        - {row_count: {min: 50}}
+        - {not_null: code, severity: warn}

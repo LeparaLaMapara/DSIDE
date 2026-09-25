@@ -26,3 +26,20 @@ CONFIG:
     youth_2011: {format: s3, path: "{{ env.WORK_DIR }}/raw/youth_2011.parquet", file_format: parquet, mode: overwrite}
     crime: {format: s3, path: "{{ env.WORK_DIR }}/raw/crime.parquet", file_format: parquet, mode: overwrite}
     jobs: {format: s3, path: "{{ env.WORK_DIR }}/raw/jobs.parquet", file_format: parquet, mode: overwrite}
+  expectations:
+    census_2022:
+      rules:
+        - {row_count: {min: 200000}}
+        - {not_null: code}
+    youth_2011:
+      rules:
+        - {row_count: {min: 50000}}
+        - {not_null: code}
+    crime:
+      rules:
+        - {row_count: {min: 20000}}
+        - {not_null: station}
+        - {not_null: muni_code, severity: warn}
+    jobs:
+      rules:
+        - {row_count: {min: 1000}}

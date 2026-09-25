@@ -44,3 +44,39 @@ CONFIG:
     uifw: {format: s3, path: "{{ env.WORK_DIR }}/raw/uifw.parquet", file_format: parquet, mode: overwrite}
     audits: {format: s3, path: "{{ env.WORK_DIR }}/raw/audits.parquet", file_format: parquet, mode: overwrite}
     municipalities: {format: s3, path: "{{ env.WORK_DIR }}/raw/municipalities.parquet", file_format: parquet, mode: overwrite}
+    audits_quarantine: {format: s3, path: "{{ env.WORK_DIR }}/raw/audits_quarantine.parquet", file_format: parquet, mode: overwrite}
+  # Checked by the Ubunye Engine before anything is written. A source that
+  # shrinks, loses its codes or changes its labels stops the run (fail), sets
+  # rows aside (quarantine) or is reported (warn); every result is kept in the
+  # run record, and `ubunye gate` compares it with the last quarter.
+  expectations:
+    income_items:
+      rules:
+        - {row_count: {min: 45000}}
+        - {not_null: demarcation_code}
+        - {not_null: amount_sum, severity: warn}
+    income_services:
+      rules:
+        - {row_count: {min: 14000}}
+        - {not_null: demarcation_code}
+    capital:
+      rules:
+        - {row_count: {min: 7500}}
+        - {not_null: demarcation_code}
+    uifw:
+      rules:
+        - {row_count: {min: 2000}}
+        - {not_null: demarcation_code}
+    audits:
+      # The audit model knows these six opinions; a new label is set aside, not guessed.
+      quarantine: audits_quarantine
+      max_quarantine_rate: 0.05
+      rules:
+        - {row_count: {min: 1800}}
+        - {not_null: demarcation_code}
+        - {name: known_opinion, severity: quarantine, one_of: {column: opinion_code, values: [unqualified, unqualified_emphasis_of_matter, qualified, adverse, disclaimer, outstanding]}}
+    municipalities:
+      rules:
+        - {row_count: {min: 250, max: 400}}
+        - {not_null: municipality_demarcation_code}
+        - {unique: municipality_demarcation_code}

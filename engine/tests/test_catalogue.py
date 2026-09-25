@@ -64,3 +64,12 @@ def test_core_readers_fall_back_too(isolated):
     assert Flaky().read({**cfg, "refresh": "true"}, Backend()).native["code"].tolist() == ["TSH"]  # same key, served from the copy
     key = snapshots.key_for("Flaky", cfg)
     assert json.loads((isolated / "status.json").read_text())[key]["ok"] is False
+
+
+def test_a_shrunken_table_does_not_replace_a_good_copy(isolated, monkeypatch):
+    monkeypatch.setitem(catalogue.SOURCES, "demo", lambda r: pd.DataFrame({"code": list("ABCDEFGHIJ")}))
+    catalogue.load("demo")
+    monkeypatch.setitem(catalogue.SOURCES, "demo", lambda r: pd.DataFrame({"code": ["A", "B"]}))
+    assert len(catalogue.load("demo")) == 10
+    status = json.loads((isolated / "status.json").read_text())["demo"]
+    assert status["ok"] is False and "2 rows" in status["error"] and status["label"] == "demo"
