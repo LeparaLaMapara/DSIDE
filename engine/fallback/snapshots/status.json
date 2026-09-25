@@ -1,78 +1,74 @@
 {
  "cash": {
-  "fetched_at": "2026-09-23T18:50+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "census_extras": {
-  "fetched_at": "2026-09-23T18:50+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "creditors": {
-  "fetched_at": "2026-09-23T18:52+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "debtors": {
-  "fetched_at": "2026-09-23T18:52+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "gcro": {
-  "fetched_at": "2026-09-23T18:53+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "grants": {
-  "fetched_at": "2026-09-23T18:53+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "jobs_2025": {
-  "fetched_at": "2026-09-23T18:55+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "jobs_series": {
-  "fetched_at": "2026-09-23T18:55+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "matric": {
-  "fetched_at": "2026-09-23T18:55+00:00",
+  "fetched_at": "2026-09-25T10:40+00:00",
   "ok": true
  },
  "officials": {
-  "fetched_at": "2026-09-23T18:56+00:00",
+  "fetched_at": "2026-09-25T10:41+00:00",
   "ok": true
  },
  "population_2026": {
-  "fetched_at": "2026-09-23T18:56+00:00",
+  "fetched_at": "2026-09-25T10:41+00:00",
   "ok": true
  },
  "schools": {
-  "fetched_at": "2026-09-23T18:56+00:00",
+  "fetched_at": "2026-09-25T10:41+00:00",
   "ok": true
  },
  "siu": {
-  "fetched_at": "2026-09-23T18:56+00:00",
+  "fetched_at": "2026-09-25T10:42+00:00",
   "ok": true
  },
  "srd_grants": {
-  "error": "RuntimeError: no SRD report link found on the SASSA page",
-  "failed_at": "2026-09-23T18:56+00:00",
-  "fetched_at": "2026-09-23T16:00+00:00",
-  "ok": false
+  "fetched_at": "2026-09-25T10:42+00:00",
+  "ok": true
  },
  "ward_councillors_2021": {
-  "fetched_at": "2026-09-23T18:58+00:00",
+  "fetched_at": "2026-09-25T10:42+00:00",
   "ok": true
  },
  "ward_results_2024": {
-  "fetched_at": "2026-09-23T19:00+00:00",
+  "fetched_at": "2026-09-25T10:42+00:00",
   "ok": true
  },
  "water_quality": {
-  "error": "ConnectTimeout: timed out",
-  "failed_at": "2026-09-23T19:02+00:00",
-  "fetched_at": "2026-09-23T16:00+00:00",
-  "ok": false
+  "fetched_at": "2026-09-25T10:42+00:00",
+  "ok": true
  },
  "year_to_date": {
-  "fetched_at": "2026-09-23T19:04+00:00",
+  "fetched_at": "2026-09-25T10:45+00:00",
   "ok": true
  }
 }

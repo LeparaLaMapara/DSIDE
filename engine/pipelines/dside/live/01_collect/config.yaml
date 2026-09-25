@@ -6,9 +6,9 @@ MODEL: etl
 VERSION: "1.0.0"
 CONFIG:
   inputs:
-    schools: {format: s3, path: "{{ env.SITE_DATA }}/schools.json", file_format: json}
+    schools: {format: s3, path: "{{ env.SITE_DATA }}/schools.json", file_format: json, options: {multiLine: true}}
   outputs:
-    faults: {format: s3, path: "{{ env.LIVE_DIR }}/faults.json", file_format: json, mode: overwrite}
-    fault_wards: {format: s3, path: "{{ env.LIVE_DIR }}/fault_wards.json", file_format: json, mode: overwrite}
-    news: {format: s3, path: "{{ env.LIVE_DIR }}/news.json", file_format: json, mode: overwrite}
-    status: {format: s3, path: "{{ env.LIVE_DIR }}/status.json", file_format: json, mode: overwrite}
+    faults: {format: site_json, path: "{{ env.LIVE_DIR }}/faults.json", mode: overwrite}
+    fault_wards: {format: site_json, path: "{{ env.LIVE_DIR }}/fault_wards.json", mode: overwrite}
+    news: {format: site_json, path: "{{ env.LIVE_DIR }}/news.json", mode: overwrite}
+    status: {format: site_json, path: "{{ env.LIVE_DIR }}/status.json", mode: overwrite}

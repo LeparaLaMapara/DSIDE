@@ -4,11 +4,12 @@ import pandas as pd
 from ubunye.core.interfaces import Task
 
 from dside_engine.build import analyse
+from dside_engine.frames import all_numpy_backed
 
 
 class Analyse(Task):
     def transform(self, sources):
-        raw = {name: frame.native for name, frame in sources.items()}
+        raw = all_numpy_backed(sources)
         out = analyse(raw)
         # Parquet cannot hold ragged nested lists; carry them as JSON text.
         munis = out["municipalities"].copy()

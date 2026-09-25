@@ -14,7 +14,7 @@ from typing import Any
 import pandas as pd
 from shapely.geometry import shape, mapping
 from ubunye.adapters.pandas_adapter import PandasDataFrameAdapter
-from ubunye.core.interfaces import Reader
+from ubunye.core.interfaces import Reader, Writer
 
 from .http import Fetcher
 from .sources import municipal_money as mm
@@ -217,3 +217,30 @@ class DsideSourceReader(Reader):
         from .catalogue import load
 
         return _frame(load(cfg["name"], str(cfg.get("refresh", "false")).lower() == "true"), backend)
+
+
+class SiteJsonWriter(Writer):
+    """One JSON file (an array of records) for the website to read.
+
+    Ubunye's own writers lay files out the way Spark does: a folder of part
+    files and a _SUCCESS marker. That is right for a data lake and wrong for a
+    static site, which fetches one URL per dataset. The file is written to a
+    temporary name and moved into place, so a reader never sees half a file.
+    """
+
+    SUPPORTED_MODES = frozenset({"overwrite"})
+    CONFIG_KEYS = frozenset({"format", "path", "mode", "options"})
+
+    @classmethod
+    def validate_config(cls, cfg: dict) -> list[str]:
+        return [] if cfg.get("path") else ["site_json requires 'path'"]
+
+    def write(self, df: Any, cfg: dict, backend: Any) -> None:
+        import os
+
+        frame = backend.to_native(df) if hasattr(backend, "to_native") else getattr(df, "native", df)
+        path = cfg["path"]
+        os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+        tmp = f"{path}.tmp"
+        frame.to_json(tmp, orient="records", force_ascii=False, date_format="iso")
+        os.replace(tmp, path)
