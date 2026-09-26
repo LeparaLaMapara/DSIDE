@@ -46,6 +46,9 @@ jobs:
         run: |
           ./snapshot_state.sh restore
           ./registry_state.sh restore
+          # SASSA and DWS come from the South African runner (za-sources.yml).
+          ./state_branch.sh restore za-snapshots fallback/za
+          python -m dside_engine.snapshots adopt fallback/za
       - name: Check the machine and the tasks (ubunye doctor, ubunye plan)
         working-directory: engine
         env:
@@ -63,9 +66,8 @@ jobs:
         working-directory: engine
         env:
           REFRESH: "true"
-          # SASSA and DWS only answer South African addresses; the relay runs in Johannesburg (relay/).
-          DSIDE_ZA_RELAY: ${{ vars.DSIDE_ZA_RELAY }}
-          DSIDE_ZA_RELAY_TOKEN: ${{ secrets.DSIDE_ZA_RELAY_TOKEN }}
+          # These refuse GitHub's machines; their copies come from za-sources.yml.
+          DSIDE_PREFETCHED: srd_grants,water_quality
         run: ./run.sh
       - name: Check health (run records, expectations, gate, model registry)
         id: health

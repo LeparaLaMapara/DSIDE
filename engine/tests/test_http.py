@@ -1,4 +1,4 @@
-"""The shared HTTP client: dead hosts trip fast, South Africa only hosts go through the relay."""
+"""The shared HTTP client: dead hosts trip fast."""
 
 import time
 
@@ -9,10 +9,8 @@ from dside_engine import http
 
 
 @pytest.fixture(autouse=True)
-def clean(monkeypatch):
+def clean():
     http.reset()
-    monkeypatch.delenv("DSIDE_ZA_RELAY", raising=False)
-    monkeypatch.delenv("DSIDE_ZA_RELAY_TOKEN", raising=False)
     yield
     http.reset()
 
@@ -70,26 +68,3 @@ def test_fetcher_does_not_retry_a_down_host(monkeypatch):
     monkeypatch.setattr(http.time, "sleep", lambda s: pytest.fail("should not wait on a down host"))
     with pytest.raises(http.HostDown):
         http.Fetcher(refresh=True).get("https://municipaldata.treasury.gov.za/api/cubes")
-
-
-def test_za_only_hosts_go_through_the_relay(monkeypatch):
-    monkeypatch.setenv("DSIDE_ZA_RELAY", "https://relay.example/")
-    monkeypatch.setenv("DSIDE_ZA_RELAY_TOKEN", "secret")
-    seen = fake_network(monkeypatch, lambda r: httpx.Response(200, content=b"%PDF"))
-    with http.client() as c:
-        r = c.get("https://www.sassa.gov.za/publications/statistical-reports")
-        c.get("https://api.wazimap.com/x")
-    assert r.content == b"%PDF"
-    assert str(r.request.url) == "https://www.sassa.gov.za/publications/statistical-reports"
-    relayed, direct = seen
-    assert relayed.url.host == "relay.example" and relayed.url.path == "/fetch"
-    assert relayed.url.params["url"] == "https://www.sassa.gov.za/publications/statistical-reports"
-    assert relayed.headers["X-Relay-Token"] == "secret"
-    assert direct.url.host == "api.wazimap.com"
-
-
-def test_without_a_relay_za_hosts_are_asked_directly(monkeypatch):
-    seen = fake_network(monkeypatch, lambda r: httpx.Response(200))
-    with http.client() as c:
-        c.get("https://ws.dws.gov.za/IRIS/latestresults.aspx")
-    assert seen[0].url.host == "ws.dws.gov.za"
