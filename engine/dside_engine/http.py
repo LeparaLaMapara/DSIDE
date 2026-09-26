@@ -4,24 +4,20 @@ Every public API we use is run by a small civic team, so the engine caches raw
 responses and never asks for the same URL twice in one build. Pass
 refresh=True (the --refresh flag) to ignore the cache and pull fresh data.
 
-Two rules live in client() so every download follows them:
-
-* A host that stops answering is marked down for the rest of the run after
+One rule lives in client() so every download follows it: a host that stops answering is marked down for the rest of the run after
   DOWN_AFTER failures in a row. Later requests to it fail at once, so its
   sources fall back to their last good copy (snapshots.py) in seconds instead
   of waiting out every retry and timeout. Treasury's API going dark cost a
   whole 45 minute run before this.
-* Some government sites only answer South African addresses (SASSA and DWS
-  drop connections from abroad, including GitHub's runners). When
-  DSIDE_ZA_RELAY is set, requests to those hosts go through the Masepala relay
-  in Johannesburg (relay/), which fetches the page and passes it back.
+
+SASSA and DWS only answer South African addresses; they are fetched by the
+South African runner (za-sources.yml), not here.
 """
 
 from __future__ import annotations
 
 import hashlib
 import json
-import os
 import time
 from pathlib import Path
 
@@ -32,9 +28,6 @@ USER_AGENT = "Masepala-engine/1.0 (+https://github.com/ubunye-ai-ecosystems/mase
 
 CONNECT_TIMEOUT = 15.0
 DOWN_AFTER = 3
-# Hosts that refuse connections from outside South Africa (probed 2026-09-25:
-# 39 of 40 foreign test points time out, Johannesburg answers in 0.2 s).
-ZA_ONLY_HOSTS = {"sassa.gov.za", "www.sassa.gov.za", "ws.dws.gov.za"}
 
 _failures: dict[str, int] = {}
 DOWN: dict[str, str] = {}
@@ -50,28 +43,15 @@ def reset() -> None:
     DOWN.clear()
 
 
-def relay_url() -> str | None:
-    return os.environ.get("DSIDE_ZA_RELAY", "").rstrip("/") or None
-
-
-def za_only(host: str) -> bool:
-    extra = {h.strip() for h in os.environ.get("DSIDE_ZA_ONLY_HOSTS", "").split(",") if h.strip()}
-    return host in ZA_ONLY_HOSTS | extra
-
-
 class GuardedTransport(httpx.HTTPTransport):
-    """Sends a request, routing South Africa only hosts through the relay and tripping on dead hosts."""
-
-    def __init__(self, verify: bool = True, **kwargs):
-        super().__init__(verify=verify, **kwargs)
-        self._relay_transport: httpx.HTTPTransport | None = None
+    """Sends a request, tripping on dead hosts."""
 
     def handle_request(self, request: httpx.Request) -> httpx.Response:
         host = request.url.host
         if host in DOWN:
             raise HostDown(f"{host} is down for this run ({DOWN[host]})", request=request)
         try:
-            response = self._send(request)
+            response = super().handle_request(request)
         except (httpx.ConnectError, httpx.TimeoutException) as exc:
             _failures[host] = _failures.get(host, 0) + 1
             if _failures[host] >= DOWN_AFTER:
@@ -81,34 +61,9 @@ class GuardedTransport(httpx.HTTPTransport):
         _failures[host] = 0
         return response
 
-    def _send(self, request: httpx.Request) -> httpx.Response:
-        relay = relay_url()
-        if not (relay and za_only(request.url.host)):
-            return super().handle_request(request)
-        if self._relay_transport is None:
-            self._relay_transport = httpx.HTTPTransport(verify=True)
-        relayed = httpx.Request(
-            "GET",
-            f"{relay}/fetch",
-            params={"url": str(request.url)},
-            headers={
-                "X-Relay-Token": os.environ.get("DSIDE_ZA_RELAY_TOKEN", ""),
-                "User-Agent": request.headers.get("User-Agent", USER_AGENT),
-            },
-            extensions=request.extensions,
-        )
-        response = self._relay_transport.handle_request(relayed)
-        response.request = request
-        return response
-
-    def close(self) -> None:
-        if self._relay_transport is not None:
-            self._relay_transport.close()
-        super().close()
-
 
 def client(timeout: float = 120.0, verify: bool = True, user_agent: str = USER_AGENT) -> httpx.Client:
-    """The httpx client every download uses: short connect timeout, dead-host breaker, ZA relay."""
+    """The httpx client every download uses: short connect timeout and a dead-host breaker."""
     return httpx.Client(
         timeout=httpx.Timeout(timeout, connect=min(CONNECT_TIMEOUT, timeout)),
         follow_redirects=True,

@@ -73,3 +73,29 @@ def test_a_shrunken_table_does_not_replace_a_good_copy(isolated, monkeypatch):
     assert len(catalogue.load("demo")) == 10
     status = json.loads((isolated / "status.json").read_text())["demo"]
     assert status["ok"] is False and "2 rows" in status["error"] and status["label"] == "demo"
+
+
+def test_a_prefetched_source_uses_its_copy_without_fetching(isolated, monkeypatch):
+    monkeypatch.setitem(catalogue.SOURCES, "srd_grants", lambda r: pd.DataFrame({"code": ["TSH"]}))
+    catalogue.load("srd_grants")
+    monkeypatch.setenv("DSIDE_PREFETCHED", "srd_grants")
+
+    def unreachable(refresh):
+        raise AssertionError("must not fetch a prefetched source")
+
+    monkeypatch.setitem(catalogue.SOURCES, "srd_grants", unreachable)
+    assert catalogue.load("srd_grants")["code"].tolist() == ["TSH"]
+
+
+def test_adopt_takes_only_newer_copies(isolated, tmp_path_factory):
+    theirs = tmp_path_factory.mktemp("za")
+    pd.DataFrame({"code": ["A", "B"]}).to_parquet(theirs / "srd_grants.parquet")
+    pd.DataFrame({"code": ["old"]}).to_parquet(theirs / "water_quality.parquet")
+    (theirs / "status.json").write_text(json.dumps({
+        "srd_grants": {"ok": True, "fetched_at": "2026-10-01T04:00+00:00", "label": "srd_grants"},
+        "water_quality": {"ok": True, "fetched_at": "2026-01-01T04:00+00:00", "label": "water_quality"}}))
+    pd.DataFrame({"code": ["mine"]}).to_parquet(isolated / "water_quality.parquet")
+    (isolated / "status.json").write_text(json.dumps({"water_quality": {"ok": True, "fetched_at": "2026-09-25T12:00+00:00"}}))
+    assert snapshots.adopt(theirs) == ["srd_grants"]
+    assert pd.read_parquet(isolated / "srd_grants.parquet")["code"].tolist() == ["A", "B"]
+    assert pd.read_parquet(isolated / "water_quality.parquet")["code"].tolist() == ["mine"]

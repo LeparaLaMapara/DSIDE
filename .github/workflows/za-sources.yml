@@ -1,0 +1,45 @@
+# SASSA and the Department of Water and Sanitation only answer South African
+# addresses, and GitHub's own machines are in the United States and Europe.
+# This job runs on a machine in South Africa registered as a self-hosted runner
+# with the label `za` (see za-runner/README.md). It fetches only those two
+# sources and keeps them on the single-commit `za-snapshots` branch; the
+# quarterly refresh takes the newest copies from there.
+#
+# If the machine is off, the job waits and the quarterly run uses the copies it
+# already has (/status shows their age). Never add a pull_request trigger here:
+# that would let anyone's pull request run code on the machine.
+name: South African sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 3 * * 1"   # Mondays; SASSA publishes monthly, DWS yearly
+
+permissions:
+  contents: write
+
+concurrency: za-sources
+
+jobs:
+  fetch:
+    runs-on: [self-hosted, za]
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the engine
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q -e engine
+      - name: Restore the municipality list and the last ZA copies
+        working-directory: engine
+        run: |
+          ./snapshot_state.sh restore
+          ./state_branch.sh restore za-snapshots fallback/za
+      - name: Fetch SASSA and DWS
+        working-directory: engine
+        env:
+          PYTHONWARNINGS: ignore
+        run: "$RUNNER_TEMP/venv/bin/python" -m dside_engine.snapshots fetch-za fallback/za
+      - name: Publish
+        working-directory: engine
+        run: ./state_branch.sh publish za-snapshots fallback/za

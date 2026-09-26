@@ -29,6 +29,13 @@ import pandas as pd
 SNAPSHOTS = Path(os.environ.get("DSIDE_SNAPSHOTS", Path(__file__).resolve().parent.parent / "fallback" / "snapshots"))
 STATUS = SNAPSHOTS / "status.json"
 SHRINK_LIMIT = 0.5
+# Sources fetched elsewhere (the South African runner, see za-sources.yml): the
+# run uses their copy as it is and leaves their status as that runner wrote it.
+ZA_SOURCES = ("srd_grants", "water_quality")
+
+
+def prefetched() -> set[str]:
+    return {n.strip() for n in os.environ.get("DSIDE_PREFETCHED", "").split(",") if n.strip()}
 
 
 def status() -> dict:
@@ -57,6 +64,8 @@ def guarded(name: str, fetch: Callable[[], pd.DataFrame], label: str | None = No
     state = status()
     now = datetime.now(timezone.utc).isoformat(timespec="minutes")
     label = label or state.get(name, {}).get("label") or name
+    if name in prefetched() and snap.exists():
+        return pd.read_parquet(snap)
     try:
         df = fetch()
         df.attrs = {}  # run reports stay in logs; parquet cannot store arbitrary attrs
@@ -77,3 +86,65 @@ def guarded(name: str, fetch: Callable[[], pd.DataFrame], label: str | None = No
         print(f"[fallback] {name}: {exc}; using the copy from {last}")
     STATUS.write_text(json.dumps(state, indent=1, sort_keys=True), encoding="utf-8")
     return df
+
+
+def adopt(folder: Path) -> list[str]:
+    """Take the copies another runner fetched (a restored za-snapshots branch) into SNAPSHOTS.
+
+    A copy only replaces ours when it is newer; its status entry comes with it.
+    """
+    theirs_file = Path(folder) / "status.json"
+    if not theirs_file.exists():
+        return []
+    theirs = json.loads(theirs_file.read_text(encoding="utf-8"))
+    SNAPSHOTS.mkdir(parents=True, exist_ok=True)
+    state, taken = status(), []
+    for name, entry in theirs.items():
+        src = Path(folder) / f"{name}.parquet"
+        mine = state.get(name, {}).get("fetched_at") or ""
+        if src.exists() and entry.get("fetched_at") and entry["fetched_at"] > mine:
+            (SNAPSHOTS / src.name).write_bytes(src.read_bytes())
+            state[name] = entry
+            taken.append(name)
+    STATUS.write_text(json.dumps(state, indent=1, sort_keys=True), encoding="utf-8")
+    return taken
+
+
+def _main(argv: list[str]) -> int:
+    """python -m dside_engine.snapshots adopt <folder>   |   fetch-za <out folder>"""
+    if len(argv) == 2 and argv[0] == "adopt":
+        print("adopted:", ", ".join(adopt(Path(argv[1]))) or "nothing newer")
+        return 0
+    if len(argv) == 2 and argv[0] == "fetch-za":
+        # On the South African runner: fetch only the sources that refuse foreign addresses.
+        from . import catalogue
+
+        out = Path(argv[1])
+        out.mkdir(parents=True, exist_ok=True)
+        failed = []
+        for name in ZA_SOURCES:
+            try:
+                df = catalogue.SOURCES[name](True)
+                if df.empty:
+                    raise ValueError("no rows")
+                df.attrs = {}
+                df.to_parquet(out / f"{name}.parquet", index=False)
+                now = datetime.now(timezone.utc).isoformat(timespec="minutes")
+                entry = {"ok": True, "fetched_at": now, "rows": len(df), "label": name, "fetched_by": "za runner"}
+                state = json.loads((out / "status.json").read_text(encoding="utf-8")) if (out / "status.json").exists() else {}
+                state[name] = entry
+                (out / "status.json").write_text(json.dumps(state, indent=1, sort_keys=True), encoding="utf-8")
+                print(f"{name}: {len(df)} rows")
+            except Exception as exc:  # noqa: BLE001 - report every source, fail at the end
+                failed.append(f"{name}: {type(exc).__name__}: {exc}")
+        for line in failed:
+            print("FAILED", line)
+        return 1 if failed else 0
+    print(_main.__doc__)
+    return 2
+
+
+if __name__ == "__main__":
+    import sys
+
+    sys.exit(_main(sys.argv[1:]))

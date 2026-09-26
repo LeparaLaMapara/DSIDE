@@ -102,9 +102,10 @@ to their last good copy (the `snapshots` branch) in seconds. A fetch that
 returns less than half the rows of the last good copy counts as a failure too.
 
 SASSA and the Department of Water and Sanitation only answer South African
-addresses, so GitHub's runners (in the United States) cannot reach them. The
-quarterly run reaches them through a small relay in Google Cloud's
-Johannesburg region (`relay/`): it needs a token and only fetches those hosts.
+addresses, so GitHub's own machines (in the United States and Europe) cannot
+reach them. A machine in South Africa, registered as a self-hosted GitHub
+runner, fetches just those two every Monday (`za-sources.yml`, set up with
+`za-runner/`); the quarterly run uses its copies. No cloud account is involved.
 
 ## Sources
 
