@@ -1,0 +1,593 @@
+{
+ "checked_at": "2026-09-26T05:23+00:00",
+ "status": "warn",
+ "rules": {
+  "max_row_change": 0.25,
+  "stale_days": 120
+ },
+ "sources": [
+  {
+   "key": "cash",
+   "label": "cash",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:12+00:00",
+   "age_days": 0.8,
+   "rows": 246,
+   "failed_at": "2026-09-26T05:16+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "census_extras",
+   "label": "census_extras",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:16+00:00",
+   "age_days": 0.0,
+   "rows": 257,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "creditors",
+   "label": "creditors",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:12+00:00",
+   "age_days": 0.8,
+   "rows": 256,
+   "failed_at": "2026-09-26T05:18+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "debtors",
+   "label": "debtors",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:12+00:00",
+   "age_days": 0.8,
+   "rows": 252,
+   "failed_at": "2026-09-26T05:18+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "gcro",
+   "label": "gcro",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:18+00:00",
+   "age_days": 0.0,
+   "rows": 88,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "grants",
+   "label": "grants",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:12+00:00",
+   "age_days": 0.8,
+   "rows": 1913,
+   "failed_at": "2026-09-26T05:18+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "jobs_2025",
+   "label": "jobs_2025",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:18+00:00",
+   "age_days": 0.0,
+   "rows": 213,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "jobs_series",
+   "label": "jobs_series",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:18+00:00",
+   "age_days": 0.0,
+   "rows": 1065,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "matric",
+   "label": "matric",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:18+00:00",
+   "age_days": 0.0,
+   "rows": 20328,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "WardReader-4d09808109",
+   "label": "mdb_wards",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:14+00:00",
+   "age_days": 0.0,
+   "rows": 4468,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "municipality_registry",
+   "label": "municipality list (Spatial Tax, Treasury)",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-25T12:35+00:00",
+   "age_days": 0.7,
+   "rows": 272,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "officials",
+   "label": "officials",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:13+00:00",
+   "age_days": 0.8,
+   "rows": 1168,
+   "failed_at": "2026-09-26T05:20+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "population_2026",
+   "label": "population_2026",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:20+00:00",
+   "age_days": 0.0,
+   "rows": 260,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "SapsCrimeReader-7ecf3506e8",
+   "label": "saps_crime",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:10+00:00",
+   "age_days": 0.0,
+   "rows": 41090,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "schools",
+   "label": "schools",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:20+00:00",
+   "age_days": 0.0,
+   "rows": 25527,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "siu",
+   "label": "siu",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:20+00:00",
+   "age_days": 0.0,
+   "rows": 98,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "srd_grants",
+   "label": "srd_grants",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T04:57+00:00",
+   "age_days": 0.0,
+   "rows": 213,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "QlfsReader-7ecf3506e8",
+   "label": "statssa_qlfs",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:11+00:00",
+   "age_days": 0.0,
+   "rows": 1988,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "TreasuryCubeReader-2d97b447ea",
+   "label": "treasury_cube capital_v2",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:11+00:00",
+   "age_days": 0.8,
+   "rows": 15549,
+   "failed_at": "2026-09-26T05:06+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "TreasuryCubeReader-aefb3c6dc1",
+   "label": "treasury_cube incexp_v2",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:11+00:00",
+   "age_days": 0.8,
+   "rows": 29006,
+   "failed_at": "2026-09-26T05:06+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "TreasuryCubeReader-ecea00868f",
+   "label": "treasury_cube incexp_v2",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:11+00:00",
+   "age_days": 0.8,
+   "rows": 91052,
+   "failed_at": "2026-09-26T05:06+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "TreasuryFactsReader-9a26d602c0",
+   "label": "treasury_facts audit_opinions",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:11+00:00",
+   "age_days": 0.8,
+   "rows": 3688,
+   "failed_at": "2026-09-26T05:05+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "TreasuryFactsReader-14cebaac0f",
+   "label": "treasury_facts municipalities",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:11+00:00",
+   "age_days": 0.8,
+   "rows": 292,
+   "failed_at": "2026-09-26T05:06+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "TreasuryFactsReader-08043b06d2",
+   "label": "treasury_facts uifw",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:11+00:00",
+   "age_days": 0.8,
+   "rows": 4626,
+   "failed_at": "2026-09-26T05:06+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  },
+  {
+   "key": "VulekamaliProjectsReader-7ecf3506e8",
+   "label": "vulekamali_projects",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:14+00:00",
+   "age_days": 0.0,
+   "rows": 15085,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "CouncillorReader-7ecf3506e8",
+   "label": "ward_councillors",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T13:12+00:00",
+   "age_days": 0.7,
+   "rows": 105,
+   "failed_at": "2026-09-26T05:13+00:00",
+   "error": "ConnectTimeout: timed out"
+  },
+  {
+   "key": "ward_councillors_2021",
+   "label": "ward_councillors_2021",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:20+00:00",
+   "age_days": 0.0,
+   "rows": 4467,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "ward_results_2024",
+   "label": "ward_results_2024",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:22+00:00",
+   "age_days": 0.0,
+   "rows": 4468,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "water_quality",
+   "label": "water_quality",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:00+00:00",
+   "age_days": 0.0,
+   "rows": 144,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "WazimapGeographyReader-41ec30a5e9",
+   "label": "wazimap_geography",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:13+00:00",
+   "age_days": 0.0,
+   "rows": 257,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "WazimapIndicatorReader-1451ec166b",
+   "label": "wazimap_indicator 1134:neet,1132:unemployment,1142:youth_poverty",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:11+00:00",
+   "age_days": 0.0,
+   "rows": 106635,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "WazimapIndicatorReader-c442f495af",
+   "label": "wazimap_indicator 3217:population,2797:households,2818:water,2821:toilet,2824:lighting,2822:cooking,2825:refuse,2817:dwelling,2782:education,2781:ecd",
+   "status": "ok",
+   "fresh": true,
+   "fetched_at": "2026-09-26T05:06+00:00",
+   "age_days": 0.0,
+   "rows": 422341,
+   "failed_at": null,
+   "error": null
+  },
+  {
+   "key": "year_to_date",
+   "label": "year_to_date",
+   "status": "warn",
+   "fresh": false,
+   "fetched_at": "2026-09-25T11:16+00:00",
+   "age_days": 0.8,
+   "rows": 257,
+   "failed_at": "2026-09-26T05:23+00:00",
+   "error": "HostDown: municipaldata.treasury.gov.za is down for this run (ConnectTimeout 3 times in a row)"
+  }
+ ],
+ "tasks": [
+  {
+   "task": "01_ingest_money",
+   "ran": true,
+   "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+   "run_status": "success",
+   "seconds": 59.562251484,
+   "error": null,
+   "expectations_checked": 15,
+   "expectations_broken": [
+    {
+     "output": "income_items",
+     "rule": "amount_sum_not_null",
+     "severity": "warn",
+     "failed": 116,
+     "total": 91052
+    }
+   ],
+   "outputs": {
+    "income_items": 91052,
+    "income_services": 29006,
+    "capital": 15549,
+    "uifw": 4626,
+    "audits": 3688,
+    "municipalities": 292,
+    "audits_quarantine": 0
+   },
+   "baseline": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+   "notes": [
+    {
+     "rule": "expectation",
+     "status": "warn",
+     "detail": "amount_sum_not_null broken by 116 of 91052 rows",
+     "output": "income_items"
+    }
+   ],
+   "gate": [],
+   "status": "ok"
+  },
+  {
+   "task": "02_ingest_people",
+   "ran": true,
+   "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+   "run_status": "success",
+   "seconds": 371.69599377099996,
+   "error": null,
+   "expectations_checked": 8,
+   "expectations_broken": [
+    {
+     "output": "crime",
+     "rule": "muni_code_not_null",
+     "severity": "warn",
+     "failed": 420,
+     "total": 41090
+    }
+   ],
+   "outputs": {
+    "census_2022": 422341,
+    "youth_2011": 106635,
+    "crime": 41090,
+    "jobs": 1988
+   },
+   "baseline": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+   "notes": [
+    {
+     "rule": "expectation",
+     "status": "warn",
+     "detail": "muni_code_not_null broken by 420 of 41090 rows",
+     "output": "crime"
+    }
+   ],
+   "gate": [],
+   "status": "ok"
+  },
+  {
+   "task": "03_ingest_places",
+   "ran": true,
+   "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+   "run_status": "success",
+   "seconds": 191.88572995800007,
+   "error": null,
+   "expectations_checked": 8,
+   "expectations_broken": [],
+   "outputs": {
+    "geographies": 257,
+    "projects": 15085,
+    "wards": 4468,
+    "councillors": 105
+   },
+   "baseline": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+   "notes": [],
+   "gate": [],
+   "status": "ok"
+  },
+  {
+   "task": "03b_ingest_fresh",
+   "ran": true,
+   "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+   "run_status": "success",
+   "seconds": 447.895338264,
+   "error": null,
+   "expectations_checked": 44,
+   "expectations_broken": [
+    {
+     "output": "siu",
+     "rule": "code_not_null",
+     "severity": "warn",
+     "failed": 15,
+     "total": 98
+    }
+   ],
+   "outputs": {
+    "debtors": 252,
+    "creditors": 256,
+    "grants": 1913,
+    "year_to_date": 257,
+    "officials": 1168,
+    "cash": 246,
+    "ward_councillors_2021": 4467,
+    "ward_results_2024": 4468,
+    "census_extras": 257,
+    "gcro": 88,
+    "jobs_2025": 213,
+    "jobs_series": 1065,
+    "population_2026": 260,
+    "srd_grants": 213,
+    "water_quality": 144,
+    "schools": 25527,
+    "matric": 20328,
+    "siu": 98
+   },
+   "baseline": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+   "notes": [
+    {
+     "rule": "expectation",
+     "status": "warn",
+     "detail": "code_not_null broken by 15 of 98 rows",
+     "output": "siu"
+    }
+   ],
+   "gate": [],
+   "status": "ok"
+  },
+  {
+   "task": "04_analyse",
+   "ran": true,
+   "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+   "run_status": "success",
+   "seconds": 11.9507735520001,
+   "error": null,
+   "expectations_checked": 10,
+   "expectations_broken": [],
+   "outputs": {
+    "municipalities": 257,
+    "projects": 13660,
+    "schools": 25224,
+    "stations": 1162,
+    "wards": 4468,
+    "meta": 1
+   },
+   "baseline": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+   "notes": [],
+   "gate": [],
+   "status": "ok"
+  },
+  {
+   "task": "05_publish",
+   "ran": true,
+   "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+   "run_status": "success",
+   "seconds": 0.2934991199999786,
+   "error": null,
+   "expectations_checked": 0,
+   "expectations_broken": [],
+   "outputs": {
+    "municipalities": 257,
+    "projects": 13660,
+    "boundaries": 257,
+    "stations": 1162,
+    "schools": 25224,
+    "wards": 4468,
+    "meta": 1
+   },
+   "baseline": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+   "notes": [],
+   "gate": [],
+   "status": "ok"
+  }
+ ],
+ "model": {
+  "status": "ok",
+  "decision": "unchanged",
+  "reason": "the audit history has not changed since the live version was trained",
+  "live_version": "1.0.0",
+  "new_version": null,
+  "used": "model",
+  "gates": {
+   "min_brier_gain": 0.001,
+   "min_balanced_accuracy_gain": 0.0
+  },
+  "track_record": [
+   {
+    "version": "1.0.0",
+    "predicted_year": 2025,
+    "scored": false
+   }
+  ],
+  "test": {
+   "n": 257,
+   "model_accuracy": 0.911,
+   "model_balanced_accuracy": 0.907,
+   "model_brier": 0.081,
+   "naive_accuracy": 0.907,
+   "naive_balanced_accuracy": 0.904,
+   "naive_brier": 0.09
+  },
+  "tested_on_year": 2024,
+  "predicts_year": 2025
+ },
+ "run_url": "https://github.com/ubunye-ai-ecosystems/masepala/actions/runs/36219725222"
+}

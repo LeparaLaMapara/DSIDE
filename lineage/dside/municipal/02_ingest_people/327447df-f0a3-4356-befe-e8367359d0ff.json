@@ -1,0 +1,261 @@
+{
+  "run_id": "327447df-f0a3-4356-befe-e8367359d0ff",
+  "task_path": "dside/municipal/02_ingest_people",
+  "usecase": "dside",
+  "package": "municipal",
+  "task_name": "02_ingest_people",
+  "profile": "DEV",
+  "model": "etl",
+  "version": "1.0.0",
+  "config_hash": "sha256:d8a109797cc7594fa29470545e2c33cdcd2b2f38975a12f8f31d0b02946164dd",
+  "started_at": "2026-09-25T12:40:13.985568+00:00",
+  "ended_at": "2026-09-25T12:46:34.276334+00:00",
+  "duration_sec": 380.29693832899994,
+  "status": "success",
+  "inputs": [
+    {
+      "name": "census_2022",
+      "direction": "input",
+      "format": "wazimap_indicator",
+      "location": "wazimap_indicator",
+      "row_count": 422341,
+      "schema_hash": "sha256:857695591a36583e219b4c13c3d440d8b7c5a038ccfb0231eadfb49c92d897bb",
+      "data_hash": "sha256:330fb5c7009d641c492a7e275dcb4159039e76dfd0c1010158e84f7fa498bf19",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "youth_2011",
+      "direction": "input",
+      "format": "wazimap_indicator",
+      "location": "wazimap_indicator",
+      "row_count": 106635,
+      "schema_hash": "sha256:47cdd36373e74313b7df2e2b0c34c64b0089d1885f1056c8dbdfd625ee332e69",
+      "data_hash": "sha256:7097ff46d29dcdb6894e4f90abdd01528bb051d8b6c52c35d5b70e92d9e7482d",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "crime",
+      "direction": "input",
+      "format": "saps_crime",
+      "location": "saps_crime",
+      "row_count": 41090,
+      "schema_hash": "sha256:5bd4b104cac1a650f29b53bf62dcd94f3c60316cf621eb7732f38a04256941a5",
+      "data_hash": "sha256:60dcf53e12bb13c2396db14ce68ab83814b7666a3c053594f2ae2161cc974ac6",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "jobs",
+      "direction": "input",
+      "format": "statssa_qlfs",
+      "location": "statssa_qlfs",
+      "row_count": 1988,
+      "schema_hash": "sha256:83ee195c36248ded94039d8f96c7a632a29b675ff7f6226e24e29b1ff37cf3ba",
+      "data_hash": "sha256:5a80833f394276c6b6eb72496b2afd83f3adaa0a7e02681974a5d0570f55ddd0",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "outputs": [
+    {
+      "name": "census_2022",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/census_2022.parquet",
+      "row_count": 422341,
+      "schema_hash": "sha256:857695591a36583e219b4c13c3d440d8b7c5a038ccfb0231eadfb49c92d897bb",
+      "data_hash": "sha256:330fb5c7009d641c492a7e275dcb4159039e76dfd0c1010158e84f7fa498bf19",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "youth_2011",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/youth_2011.parquet",
+      "row_count": 106635,
+      "schema_hash": "sha256:47cdd36373e74313b7df2e2b0c34c64b0089d1885f1056c8dbdfd625ee332e69",
+      "data_hash": "sha256:7097ff46d29dcdb6894e4f90abdd01528bb051d8b6c52c35d5b70e92d9e7482d",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "crime",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/crime.parquet",
+      "row_count": 41090,
+      "schema_hash": "sha256:5bd4b104cac1a650f29b53bf62dcd94f3c60316cf621eb7732f38a04256941a5",
+      "data_hash": "sha256:60dcf53e12bb13c2396db14ce68ab83814b7666a3c053594f2ae2161cc974ac6",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "jobs",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/jobs.parquet",
+      "row_count": 1988,
+      "schema_hash": "sha256:83ee195c36248ded94039d8f96c7a632a29b675ff7f6226e24e29b1ff37cf3ba",
+      "data_hash": "sha256:5a80833f394276c6b6eb72496b2afd83f3adaa0a7e02681974a5d0570f55ddd0",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "error": null,
+  "engine_version": "0.7.0",
+  "backend": "pandas",
+  "variables": {
+    "dt": "2026-09-25",
+    "mode": "DEV"
+  },
+  "record_version": 2,
+  "code_hash": "sha256:120478f05441f73c794a0a16742d2e84ed465c7a6cf14b86da394e3d9131888c",
+  "environment": {
+    "python": "3.13.15",
+    "implementation": "CPython",
+    "platform": "linux",
+    "machine": "x86_64",
+    "packages": {
+      "ubunye-engine": "0.7.0",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "numpy": "2.5.3",
+      "narwhals": "2.26.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "environment_hash": "sha256:e7788ec261e09f8b5cbc9d40015df4d95650363c9357976bee17a55ec43f4db7",
+  "timings": [
+    {
+      "step": "Reader:wazimap_indicator",
+      "input": "census_2022",
+      "seconds": 212.257479
+    },
+    {
+      "step": "Reader:saps_crime",
+      "input": "crime",
+      "seconds": 17.336641
+    },
+    {
+      "step": "Reader:statssa_qlfs",
+      "input": "jobs",
+      "seconds": 18.90254
+    },
+    {
+      "step": "Reader:wazimap_indicator",
+      "input": "youth_2011",
+      "seconds": 131.647167
+    },
+    {
+      "step": "Transform:_ubunye_user_task",
+      "seconds": 0.000409
+    },
+    {
+      "step": "Writer:s3",
+      "output": "census_2022",
+      "seconds": 0.092636
+    },
+    {
+      "step": "Writer:s3",
+      "output": "crime",
+      "seconds": 0.014441
+    },
+    {
+      "step": "Writer:s3",
+      "output": "jobs",
+      "seconds": 0.002675
+    },
+    {
+      "step": "Writer:s3",
+      "output": "youth_2011",
+      "seconds": 0.027328
+    }
+  ],
+  "expectations": [
+    {
+      "output": "census_2022",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 422341,
+      "passed": true
+    },
+    {
+      "output": "census_2022",
+      "rule": "code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 422341,
+      "passed": true
+    },
+    {
+      "output": "crime",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 41090,
+      "passed": true
+    },
+    {
+      "output": "crime",
+      "rule": "station_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "station",
+      "failed": 0,
+      "total": 41090,
+      "passed": true
+    },
+    {
+      "output": "crime",
+      "rule": "muni_code_not_null",
+      "kind": "not_null",
+      "severity": "warn",
+      "column": "muni_code",
+      "failed": 420,
+      "total": 41090,
+      "passed": false
+    },
+    {
+      "output": "jobs",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 1988,
+      "passed": true
+    },
+    {
+      "output": "youth_2011",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 106635,
+      "passed": true
+    },
+    {
+      "output": "youth_2011",
+      "rule": "code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 106635,
+      "passed": true
+    }
+  ],
+  "llm_calls": [],
+  "llm_budget": {}
+}

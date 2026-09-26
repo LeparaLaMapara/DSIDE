@@ -1,0 +1,81 @@
+{
+  "model_name": "audit_outcome",
+  "use_case": "masepala",
+  "versions": {
+    "1.0.0": {
+      "version": "1.0.0",
+      "stage": "production",
+      "registered_at": "2026-09-25T13:00:38.354518+00:00",
+      "promoted_to_staging": null,
+      "promoted_to_prod": "2026-09-25T13:00:38.355017+00:00",
+      "archived_at": null,
+      "metrics": {
+        "n": 257,
+        "model_accuracy": 0.911,
+        "model_balanced_accuracy": 0.907,
+        "model_brier": 0.081,
+        "naive_accuracy": 0.907,
+        "naive_balanced_accuracy": 0.904,
+        "naive_brier": 0.09,
+        "tested_on_year": 2024,
+        "brier_gain": 0.009,
+        "balanced_accuracy_gain": 0.003
+      },
+      "metadata": {
+        "library": "sklearn",
+        "library_version": "1.9.1",
+        "features": [
+          "prev1",
+          "prev2",
+          "prev3",
+          "prev_good",
+          "streak",
+          "peer_group_A",
+          "peer_group_B1",
+          "peer_group_B2",
+          "peer_group_B3",
+          "peer_group_B4",
+          "peer_group_C1",
+          "peer_group_C2",
+          "province_EC",
+          "province_FS",
+          "province_GT",
+          "province_KZN",
+          "province_LIM",
+          "province_MP",
+          "province_NC",
+          "province_NW",
+          "province_WC"
+        ],
+        "params": {
+          "C": 0.5,
+          "class_weight": null,
+          "dual": false,
+          "fit_intercept": true,
+          "intercept_scaling": 1,
+          "l1_ratio": 0.0,
+          "max_iter": 2000,
+          "n_jobs": null,
+          "penalty": "deprecated",
+          "random_state": null,
+          "solver": "lbfgs",
+          "tol": 0.0001,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "data_fingerprint": "640b6151771832cf",
+        "kind": "logistic",
+        "trained_on_years": "2014 to 2023",
+        "tested_on_year": 2024,
+        "predicts_year": 2025
+      },
+      "lineage_run_id": null,
+      "config_hash": null,
+      "promoted_by": "masepala-refresh"
+    }
+  },
+  "promotion_gates": {
+    "min_brier_gain": 0.001,
+    "min_balanced_accuracy_gain": 0.0
+  }
+}

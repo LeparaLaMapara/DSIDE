@@ -1,0 +1,276 @@
+{
+  "run_id": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+  "task_path": "dside/municipal/05_publish",
+  "usecase": "dside",
+  "package": "municipal",
+  "task_name": "05_publish",
+  "profile": "DEV",
+  "model": "etl",
+  "version": "1.0.0",
+  "config_hash": "sha256:5fb01a6008eac43693288be4d711e5186a8eae21a93c5d5f8eae1158cce5f6c4",
+  "started_at": "2026-09-25T13:24:36.370008+00:00",
+  "ended_at": "2026-09-25T13:24:36.615952+00:00",
+  "duration_sec": 0.2502568679999513,
+  "status": "success",
+  "inputs": [
+    {
+      "name": "municipalities",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/analysed/municipalities.parquet",
+      "row_count": 257,
+      "schema_hash": "sha256:2cb75772e23b44dd6a3a217b8b6a25b29422ffce41a0c8717a46f4bcc2a86160",
+      "data_hash": "sha256:83f107cb2928c623e02e278aed92a4f207c16ae3f27e4ca497fe9536cf03a0f5",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "projects",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/analysed/projects.parquet",
+      "row_count": 13660,
+      "schema_hash": "sha256:9756050241f54cec1f193709eba9bb2b551f22f62633c8f827249f80c8046fee",
+      "data_hash": "sha256:c28c32808807afe9f7cc5310083a85a237fd5c83acb837910fcebd98bd0e9d53",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "meta",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/analysed/meta.parquet",
+      "row_count": 1,
+      "schema_hash": "sha256:c5c5a5869492ffdb578eab1384017fc5c084a08da322ab442fcf77eba1344136",
+      "data_hash": "sha256:f32ab3e2c1532c336f444a827967231ffb5ac3453948e2b9dcfa9748e5a1a403",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "stations",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/analysed/stations.parquet",
+      "row_count": 1162,
+      "schema_hash": "sha256:71112232f8590770098b6afd130fe2796b86864411807f43f84efe5a08c701b6",
+      "data_hash": "sha256:3a1835c96291d7c1c14d1138428bd9a4ec6f1cf9002dcbbf66e65a370023fdb8",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "schools",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/analysed/schools.parquet",
+      "row_count": 25224,
+      "schema_hash": "sha256:2e30051909dfd6d2368e3f4daf568a515e8c4898b7914fd99c0d6eb0ccd1a2d0",
+      "data_hash": "sha256:221300a637e89e0edaf80b46d6ac7571c84536cc0196937356b275b951cdd396",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "wards",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/analysed/wards.parquet",
+      "row_count": 4468,
+      "schema_hash": "sha256:e0c253875d6333b7e84e488064f95658b4867bc3e6d3a7b66d9e39b4c9c279d8",
+      "data_hash": "sha256:20b5160306e7c40141fd4d40f144ae961a9d34e46a8c0617547b59a9de2f168b",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "geographies",
+      "direction": "input",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/geographies.parquet",
+      "row_count": 257,
+      "schema_hash": "sha256:4ad1314ce90ac88b01dd97ba425289de423aba737ae6ee6770e28a2140660be2",
+      "data_hash": "sha256:910a90a446f841a766455229e854877c42661435e777e730e269ad40ca97c9e8",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "outputs": [
+    {
+      "name": "municipalities",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/municipalities.json",
+      "row_count": 257,
+      "schema_hash": "sha256:2cb75772e23b44dd6a3a217b8b6a25b29422ffce41a0c8717a46f4bcc2a86160",
+      "data_hash": "sha256:83f107cb2928c623e02e278aed92a4f207c16ae3f27e4ca497fe9536cf03a0f5",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "projects",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/projects.json",
+      "row_count": 13660,
+      "schema_hash": "sha256:9756050241f54cec1f193709eba9bb2b551f22f62633c8f827249f80c8046fee",
+      "data_hash": "sha256:c28c32808807afe9f7cc5310083a85a237fd5c83acb837910fcebd98bd0e9d53",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "boundaries",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/boundaries.json",
+      "row_count": 257,
+      "schema_hash": "sha256:5b7aa184c02152b27a5e50a7915a38e415d44c9d182b31a4561ec98bf6381d66",
+      "data_hash": "sha256:f695a25617b6790e1e02309912c1b292f2a4997624917fdb3c1b4bc941fcf283",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "stations",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/stations.json",
+      "row_count": 1162,
+      "schema_hash": "sha256:71112232f8590770098b6afd130fe2796b86864411807f43f84efe5a08c701b6",
+      "data_hash": "sha256:3a1835c96291d7c1c14d1138428bd9a4ec6f1cf9002dcbbf66e65a370023fdb8",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "schools",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/schools.json",
+      "row_count": 25224,
+      "schema_hash": "sha256:2e30051909dfd6d2368e3f4daf568a515e8c4898b7914fd99c0d6eb0ccd1a2d0",
+      "data_hash": "sha256:221300a637e89e0edaf80b46d6ac7571c84536cc0196937356b275b951cdd396",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "wards",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/wards.json",
+      "row_count": 4468,
+      "schema_hash": "sha256:e0c253875d6333b7e84e488064f95658b4867bc3e6d3a7b66d9e39b4c9c279d8",
+      "data_hash": "sha256:20b5160306e7c40141fd4d40f144ae961a9d34e46a8c0617547b59a9de2f168b",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "meta",
+      "direction": "output",
+      "format": "site_json",
+      "location": "/home/runner/work/masepala/masepala/engine/../web/data/meta.json",
+      "row_count": 1,
+      "schema_hash": "sha256:c5c5a5869492ffdb578eab1384017fc5c084a08da322ab442fcf77eba1344136",
+      "data_hash": "sha256:f32ab3e2c1532c336f444a827967231ffb5ac3453948e2b9dcfa9748e5a1a403",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "error": null,
+  "engine_version": "0.7.0",
+  "backend": "pandas",
+  "variables": {
+    "dt": "2026-09-25",
+    "mode": "DEV"
+  },
+  "record_version": 2,
+  "code_hash": "sha256:2c0d64366b8813c9666533618da9e43734d01d22af5cf9a06a151ab40f37aa21",
+  "environment": {
+    "python": "3.13.15",
+    "implementation": "CPython",
+    "platform": "linux",
+    "machine": "x86_64",
+    "packages": {
+      "ubunye-engine": "0.7.0",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "numpy": "2.5.3",
+      "narwhals": "2.26.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "environment_hash": "sha256:e7788ec261e09f8b5cbc9d40015df4d95650363c9357976bee17a55ec43f4db7",
+  "timings": [
+    {
+      "step": "Reader:s3",
+      "input": "geographies",
+      "seconds": 0.001969
+    },
+    {
+      "step": "Reader:s3",
+      "input": "meta",
+      "seconds": 0.000639
+    },
+    {
+      "step": "Reader:s3",
+      "input": "municipalities",
+      "seconds": 0.009853
+    },
+    {
+      "step": "Reader:s3",
+      "input": "projects",
+      "seconds": 0.004022
+    },
+    {
+      "step": "Reader:s3",
+      "input": "schools",
+      "seconds": 0.003859
+    },
+    {
+      "step": "Reader:s3",
+      "input": "stations",
+      "seconds": 0.00215
+    },
+    {
+      "step": "Reader:s3",
+      "input": "wards",
+      "seconds": 0.013267
+    },
+    {
+      "step": "Transform:_ubunye_user_task",
+      "seconds": 0.044232
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "boundaries",
+      "seconds": 0.001708
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "meta",
+      "seconds": 0.000728
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "municipalities",
+      "seconds": 0.010804
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "projects",
+      "seconds": 0.032649
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "schools",
+      "seconds": 0.052364
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "stations",
+      "seconds": 0.00447
+    },
+    {
+      "step": "Writer:site_json",
+      "output": "wards",
+      "seconds": 0.062013
+    }
+  ],
+  "expectations": [],
+  "llm_calls": [],
+  "llm_budget": {}
+}

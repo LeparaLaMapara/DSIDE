@@ -1,0 +1,261 @@
+{
+  "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+  "task_path": "dside/municipal/03_ingest_places",
+  "usecase": "dside",
+  "package": "municipal",
+  "task_name": "03_ingest_places",
+  "profile": "DEV",
+  "model": "etl",
+  "version": "1.0.0",
+  "config_hash": "sha256:5e21e8fa4670e2b0ad8229acb54e1d15876c34224aa22383cace02ca1afbf40d",
+  "started_at": "2026-09-26T05:13:00.505715+00:00",
+  "ended_at": "2026-09-26T05:16:12.385051+00:00",
+  "duration_sec": 191.88572995800007,
+  "status": "success",
+  "inputs": [
+    {
+      "name": "geographies",
+      "direction": "input",
+      "format": "wazimap_geography",
+      "location": "wazimap_geography",
+      "row_count": 257,
+      "schema_hash": "sha256:4ad1314ce90ac88b01dd97ba425289de423aba737ae6ee6770e28a2140660be2",
+      "data_hash": "sha256:910a90a446f841a766455229e854877c42661435e777e730e269ad40ca97c9e8",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "projects",
+      "direction": "input",
+      "format": "vulekamali_projects",
+      "location": "vulekamali_projects",
+      "row_count": 15085,
+      "schema_hash": "sha256:fc7897a67278fe5557f48039195feb6fd1f3c1e8bcbbf065ba0d46afd52da157",
+      "data_hash": "sha256:8ee90037288d1525d17cd749709347f6ac6741f4d23f81a4b5860f99a3793236",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "wards",
+      "direction": "input",
+      "format": "mdb_wards",
+      "location": "mdb_wards",
+      "row_count": 4468,
+      "schema_hash": "sha256:3e6c6d5c665602485dc5360ca1b22efb127d48b0c3f4b892b26efb3d3818ba8e",
+      "data_hash": "sha256:d45a4cb3714eb9c42d2e7eabd76541da194694ea62d7e76435f4a4fb2331ca7c",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "councillors",
+      "direction": "input",
+      "format": "ward_councillors",
+      "location": "ward_councillors",
+      "row_count": 105,
+      "schema_hash": "sha256:93119d09b688c9f69ec2a6be2b588bd072d1677821dd282cf17e25ff324ecca3",
+      "data_hash": "sha256:821dac375ef1f7c9ea0fb8b7babebd323da8efeaebc8efe03ae47b5e36d63ffd",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "outputs": [
+    {
+      "name": "geographies",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/geographies.parquet",
+      "row_count": 257,
+      "schema_hash": "sha256:4ad1314ce90ac88b01dd97ba425289de423aba737ae6ee6770e28a2140660be2",
+      "data_hash": "sha256:910a90a446f841a766455229e854877c42661435e777e730e269ad40ca97c9e8",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "projects",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/projects.parquet",
+      "row_count": 15085,
+      "schema_hash": "sha256:fc7897a67278fe5557f48039195feb6fd1f3c1e8bcbbf065ba0d46afd52da157",
+      "data_hash": "sha256:8ee90037288d1525d17cd749709347f6ac6741f4d23f81a4b5860f99a3793236",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "wards",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/wards.parquet",
+      "row_count": 4468,
+      "schema_hash": "sha256:3e6c6d5c665602485dc5360ca1b22efb127d48b0c3f4b892b26efb3d3818ba8e",
+      "data_hash": "sha256:d45a4cb3714eb9c42d2e7eabd76541da194694ea62d7e76435f4a4fb2331ca7c",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "councillors",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/councillors.parquet",
+      "row_count": 105,
+      "schema_hash": "sha256:93119d09b688c9f69ec2a6be2b588bd072d1677821dd282cf17e25ff324ecca3",
+      "data_hash": "sha256:821dac375ef1f7c9ea0fb8b7babebd323da8efeaebc8efe03ae47b5e36d63ffd",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "error": null,
+  "engine_version": "0.7.0",
+  "backend": "pandas",
+  "variables": {
+    "dt": "2026-09-26",
+    "mode": "DEV"
+  },
+  "record_version": 2,
+  "code_hash": "sha256:d5741b3ea2887163fdd175f9afeb1a9d6aa9e498cb0960887734344de08e1952",
+  "environment": {
+    "python": "3.13.15",
+    "implementation": "CPython",
+    "platform": "linux",
+    "machine": "x86_64",
+    "packages": {
+      "ubunye-engine": "0.7.0",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "numpy": "2.5.3",
+      "narwhals": "2.26.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "environment_hash": "sha256:e7788ec261e09f8b5cbc9d40015df4d95650363c9357976bee17a55ec43f4db7",
+  "timings": [
+    {
+      "step": "Reader:ward_councillors",
+      "input": "councillors",
+      "seconds": 15.570733
+    },
+    {
+      "step": "Reader:wazimap_geography",
+      "input": "geographies",
+      "seconds": 48.594824
+    },
+    {
+      "step": "Reader:vulekamali_projects",
+      "input": "projects",
+      "seconds": 33.409942
+    },
+    {
+      "step": "Reader:mdb_wards",
+      "input": "wards",
+      "seconds": 94.237344
+    },
+    {
+      "step": "Transform:_ubunye_user_task",
+      "seconds": 0.000428
+    },
+    {
+      "step": "Writer:s3",
+      "output": "councillors",
+      "seconds": 0.001439
+    },
+    {
+      "step": "Writer:s3",
+      "output": "geographies",
+      "seconds": 0.002252
+    },
+    {
+      "step": "Writer:s3",
+      "output": "projects",
+      "seconds": 0.016115
+    },
+    {
+      "step": "Writer:s3",
+      "output": "wards",
+      "seconds": 0.031601
+    }
+  ],
+  "expectations": [
+    {
+      "output": "councillors",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "warn",
+      "column": null,
+      "failed": 0,
+      "total": 105,
+      "passed": true
+    },
+    {
+      "output": "geographies",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "geographies",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "geographies",
+      "rule": "geometry_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "geometry",
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "projects",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 15085,
+      "passed": true
+    },
+    {
+      "output": "wards",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 4468,
+      "passed": true
+    },
+    {
+      "output": "wards",
+      "rule": "WardID_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "WardID",
+      "failed": 0,
+      "total": 4468,
+      "passed": true
+    },
+    {
+      "output": "wards",
+      "rule": "WardID_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "WardID",
+      "failed": 0,
+      "total": 4468,
+      "passed": true
+    }
+  ],
+  "llm_calls": [],
+  "llm_budget": {}
+}

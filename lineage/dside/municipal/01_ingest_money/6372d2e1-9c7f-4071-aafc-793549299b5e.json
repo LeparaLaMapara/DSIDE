@@ -1,0 +1,411 @@
+{
+  "run_id": "6372d2e1-9c7f-4071-aafc-793549299b5e",
+  "task_path": "dside/municipal/01_ingest_money",
+  "usecase": "dside",
+  "package": "municipal",
+  "task_name": "01_ingest_money",
+  "profile": "DEV",
+  "model": "etl",
+  "version": "1.0.0",
+  "config_hash": "sha256:d65263ce860c7770aac7f5027ef4739d6759c2d146f7e4b4e0f9886e3ce68289",
+  "started_at": "2026-09-25T13:05:29.163587+00:00",
+  "ended_at": "2026-09-25T13:06:27.831506+00:00",
+  "duration_sec": 58.67249095700001,
+  "status": "success",
+  "inputs": [
+    {
+      "name": "income_items",
+      "direction": "input",
+      "format": "treasury_cube",
+      "location": "treasury_cube",
+      "row_count": 91052,
+      "schema_hash": "sha256:232cc3a0c03ff98da4078f22f4940f384dcb0a9d5b5cc5fd862fd82426f053a3",
+      "data_hash": "sha256:06f0cb104cda1857d3eb70acb3971e45bfacf8edd48570224238ab62c8d640bc",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "income_services",
+      "direction": "input",
+      "format": "treasury_cube",
+      "location": "treasury_cube",
+      "row_count": 29006,
+      "schema_hash": "sha256:1aebee07500965ca4ae11892ec2b23c0b3a985985e4f8afa85241319bb44d663",
+      "data_hash": "sha256:efaee9816f9bc9b04fe765a1792de62593cf0441891c956af58b7f8b7129a536",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "capital",
+      "direction": "input",
+      "format": "treasury_cube",
+      "location": "treasury_cube",
+      "row_count": 15549,
+      "schema_hash": "sha256:88cdedbf818a3471737d398a5437bda9f11a91fa2b1c1bc5984be34083506d51",
+      "data_hash": "sha256:f70f51dadb2122b402934c738eb2d3fd4bc58dfc79fa914af7f866e8989efef0",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "uifw",
+      "direction": "input",
+      "format": "treasury_facts",
+      "location": "treasury_facts",
+      "row_count": 4626,
+      "schema_hash": "sha256:6a99f18ffb6fa96f4664cd904da62a36fbecf07d38686c2b8894ec9569831273",
+      "data_hash": "sha256:078fced300f29eb83ef43e7c60a7c767c36072033a9954ddbc7e8471614cd098",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "audits",
+      "direction": "input",
+      "format": "treasury_facts",
+      "location": "treasury_facts",
+      "row_count": 3688,
+      "schema_hash": "sha256:1c8a76c2fe316a48a9f41638e37ef5fb214dc13ceb1078fb0ac5ea15c26072a8",
+      "data_hash": "sha256:118a29f318e32f163c27df83bb5082781bf7294e8ec188254571e6284fa97178",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "municipalities",
+      "direction": "input",
+      "format": "treasury_facts",
+      "location": "treasury_facts",
+      "row_count": 292,
+      "schema_hash": "sha256:cdf85f5a296b8dc6e49f169e0c36ccc28d3f1c3c8ada9b3a434eb43b4a379d8f",
+      "data_hash": "sha256:7856720449171dda2d3cca1e853d02e14098121b85715102a671247b15e55aae",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "outputs": [
+    {
+      "name": "income_items",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/income_items.parquet",
+      "row_count": 91052,
+      "schema_hash": "sha256:232cc3a0c03ff98da4078f22f4940f384dcb0a9d5b5cc5fd862fd82426f053a3",
+      "data_hash": "sha256:06f0cb104cda1857d3eb70acb3971e45bfacf8edd48570224238ab62c8d640bc",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "income_services",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/income_services.parquet",
+      "row_count": 29006,
+      "schema_hash": "sha256:1aebee07500965ca4ae11892ec2b23c0b3a985985e4f8afa85241319bb44d663",
+      "data_hash": "sha256:efaee9816f9bc9b04fe765a1792de62593cf0441891c956af58b7f8b7129a536",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "capital",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/capital.parquet",
+      "row_count": 15549,
+      "schema_hash": "sha256:88cdedbf818a3471737d398a5437bda9f11a91fa2b1c1bc5984be34083506d51",
+      "data_hash": "sha256:f70f51dadb2122b402934c738eb2d3fd4bc58dfc79fa914af7f866e8989efef0",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "uifw",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/uifw.parquet",
+      "row_count": 4626,
+      "schema_hash": "sha256:6a99f18ffb6fa96f4664cd904da62a36fbecf07d38686c2b8894ec9569831273",
+      "data_hash": "sha256:078fced300f29eb83ef43e7c60a7c767c36072033a9954ddbc7e8471614cd098",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "audits",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/audits.parquet",
+      "row_count": 3688,
+      "schema_hash": "sha256:1c8a76c2fe316a48a9f41638e37ef5fb214dc13ceb1078fb0ac5ea15c26072a8",
+      "data_hash": "sha256:118a29f318e32f163c27df83bb5082781bf7294e8ec188254571e6284fa97178",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "municipalities",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/municipalities.parquet",
+      "row_count": 292,
+      "schema_hash": "sha256:cdf85f5a296b8dc6e49f169e0c36ccc28d3f1c3c8ada9b3a434eb43b4a379d8f",
+      "data_hash": "sha256:7856720449171dda2d3cca1e853d02e14098121b85715102a671247b15e55aae",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "audits_quarantine",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/audits_quarantine.parquet",
+      "row_count": 0,
+      "schema_hash": "sha256:40eaf8fbe58d1c3c243e880712e6858cb3749df75a8859495837ac23f79bedc1",
+      "data_hash": "sha256:16fcd1917999f3ba167b4ef0dcfd9cabb88b2cf080968cf35e5171baed0ff41f",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "error": null,
+  "engine_version": "0.7.0",
+  "backend": "pandas",
+  "variables": {
+    "dt": "2026-09-25",
+    "mode": "DEV"
+  },
+  "record_version": 2,
+  "code_hash": "sha256:6da50d6dfd5fe0765e8207ed66b3345c288ec32ba036020cbd0e437f52622214",
+  "environment": {
+    "python": "3.13.15",
+    "implementation": "CPython",
+    "platform": "linux",
+    "machine": "x86_64",
+    "packages": {
+      "ubunye-engine": "0.7.0",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "numpy": "2.5.3",
+      "narwhals": "2.26.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "environment_hash": "sha256:e7788ec261e09f8b5cbc9d40015df4d95650363c9357976bee17a55ec43f4db7",
+  "timings": [
+    {
+      "step": "Reader:treasury_facts",
+      "input": "audits",
+      "seconds": 58.481845
+    },
+    {
+      "step": "Reader:treasury_cube",
+      "input": "capital",
+      "seconds": 0.020718
+    },
+    {
+      "step": "Reader:treasury_cube",
+      "input": "income_items",
+      "seconds": 0.02323
+    },
+    {
+      "step": "Reader:treasury_cube",
+      "input": "income_services",
+      "seconds": 0.02379
+    },
+    {
+      "step": "Reader:treasury_facts",
+      "input": "municipalities",
+      "seconds": 0.019699
+    },
+    {
+      "step": "Reader:treasury_facts",
+      "input": "uifw",
+      "seconds": 0.019138
+    },
+    {
+      "step": "Transform:_ubunye_user_task",
+      "seconds": 0.000442
+    },
+    {
+      "step": "Writer:s3",
+      "output": "audits",
+      "seconds": 0.004513
+    },
+    {
+      "step": "Writer:s3",
+      "output": "audits_quarantine",
+      "seconds": 0.001154
+    },
+    {
+      "step": "Writer:s3",
+      "output": "capital",
+      "seconds": 0.003698
+    },
+    {
+      "step": "Writer:s3",
+      "output": "income_items",
+      "seconds": 0.014965
+    },
+    {
+      "step": "Writer:s3",
+      "output": "income_services",
+      "seconds": 0.00541
+    },
+    {
+      "step": "Writer:s3",
+      "output": "municipalities",
+      "seconds": 0.002101
+    },
+    {
+      "step": "Writer:s3",
+      "output": "uifw",
+      "seconds": 0.001853
+    }
+  ],
+  "expectations": [
+    {
+      "output": "audits",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 3688,
+      "passed": true
+    },
+    {
+      "output": "audits",
+      "rule": "demarcation_code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "demarcation_code",
+      "failed": 0,
+      "total": 3688,
+      "passed": true
+    },
+    {
+      "output": "audits",
+      "rule": "known_opinion",
+      "kind": "one_of",
+      "severity": "quarantine",
+      "column": "opinion_code",
+      "failed": 0,
+      "total": 3688,
+      "passed": true
+    },
+    {
+      "output": "capital",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 15549,
+      "passed": true
+    },
+    {
+      "output": "capital",
+      "rule": "demarcation_code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "demarcation_code",
+      "failed": 0,
+      "total": 15549,
+      "passed": true
+    },
+    {
+      "output": "income_items",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 91052,
+      "passed": true
+    },
+    {
+      "output": "income_items",
+      "rule": "demarcation_code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "demarcation_code",
+      "failed": 0,
+      "total": 91052,
+      "passed": true
+    },
+    {
+      "output": "income_items",
+      "rule": "amount_sum_not_null",
+      "kind": "not_null",
+      "severity": "warn",
+      "column": "amount_sum",
+      "failed": 116,
+      "total": 91052,
+      "passed": false
+    },
+    {
+      "output": "income_services",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 29006,
+      "passed": true
+    },
+    {
+      "output": "income_services",
+      "rule": "demarcation_code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "demarcation_code",
+      "failed": 0,
+      "total": 29006,
+      "passed": true
+    },
+    {
+      "output": "municipalities",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 292,
+      "passed": true
+    },
+    {
+      "output": "municipalities",
+      "rule": "municipality_demarcation_code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "municipality_demarcation_code",
+      "failed": 0,
+      "total": 292,
+      "passed": true
+    },
+    {
+      "output": "municipalities",
+      "rule": "municipality_demarcation_code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "municipality_demarcation_code",
+      "failed": 0,
+      "total": 292,
+      "passed": true
+    },
+    {
+      "output": "uifw",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 4626,
+      "passed": true
+    },
+    {
+      "output": "uifw",
+      "rule": "demarcation_code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "demarcation_code",
+      "failed": 0,
+      "total": 4626,
+      "passed": true
+    }
+  ],
+  "llm_calls": [],
+  "llm_budget": {}
+}

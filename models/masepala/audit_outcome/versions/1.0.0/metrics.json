@@ -1,0 +1,12 @@
+{
+  "n": 257,
+  "model_accuracy": 0.911,
+  "model_balanced_accuracy": 0.907,
+  "model_brier": 0.081,
+  "naive_accuracy": 0.907,
+  "naive_balanced_accuracy": 0.904,
+  "naive_brier": 0.09,
+  "tested_on_year": 2024,
+  "brier_gain": 0.009,
+  "balanced_accuracy_gain": 0.003
+}

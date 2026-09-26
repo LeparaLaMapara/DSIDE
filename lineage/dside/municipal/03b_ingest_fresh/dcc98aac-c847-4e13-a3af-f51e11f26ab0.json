@@ -1,0 +1,1069 @@
+{
+  "run_id": "dcc98aac-c847-4e13-a3af-f51e11f26ab0",
+  "task_path": "dside/municipal/03b_ingest_fresh",
+  "usecase": "dside",
+  "package": "municipal",
+  "task_name": "03b_ingest_fresh",
+  "profile": "DEV",
+  "model": "etl",
+  "version": "1.0.0",
+  "config_hash": "sha256:8cfb5a996565d4391dec9a08714bd84d390c4be1cd58d4c94459d6f505fdd9a0",
+  "started_at": "2026-09-26T05:16:12.959710+00:00",
+  "ended_at": "2026-09-26T05:23:40.848658+00:00",
+  "duration_sec": 447.895338264,
+  "status": "success",
+  "inputs": [
+    {
+      "name": "debtors",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 252,
+      "schema_hash": "sha256:f87058e41ae2211ff32abb5eedd5b552314efc346f3d9da6c738f0894d56cadf",
+      "data_hash": "sha256:d09eb9b2d2e472c3b6ba7cc1d612cdd2e2fda8b56fd431adeac0f24df40ca2af",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "creditors",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 256,
+      "schema_hash": "sha256:4f096eea8686279ffe5d6f9520979bb8a0d8c24850a48eace150318380eb14b6",
+      "data_hash": "sha256:2de50e6d1a44d6b1d2b31f68d6affec30611208d6e1c90d792dcaa279293c29e",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "grants",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 1913,
+      "schema_hash": "sha256:9617a6be57b1b6ac3ba9e09543388cbd20c9c9a6b5a6c9d420f924526caa146e",
+      "data_hash": "sha256:eda8fcb844129b896b65c5e1612811d7a27a117f571c7360e713ccf0418b0f00",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "year_to_date",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 257,
+      "schema_hash": "sha256:63a5ffa50fc54e3091b301d86040775742817d3484b6d66d40de3fa400be5120",
+      "data_hash": "sha256:fdfcae50fdefa6ded82ef7370f36ae8b7bf2b61043c3fb5a0ef5eb68e5ddc93b",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "officials",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 1168,
+      "schema_hash": "sha256:456936fe65200b014380e1e1b41ffa2d6027138204ef69a22ca0551220c4cf72",
+      "data_hash": "sha256:de5a62b4822881a4f1d24695fe9ac01afd31801767c3325ef15815e16399a28b",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "cash",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 246,
+      "schema_hash": "sha256:d3ef69b042585f551199a5f3e1bfc12ccaa965fe437a2354033da3d7259cdbc9",
+      "data_hash": "sha256:b7df55e94587a92cb9111a74624d642cf64a520373e63380167e13237da64ac7",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "ward_councillors_2021",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 4467,
+      "schema_hash": "sha256:56afa59cc6016fdacb60e4c3444477eaf6d953c84e3ddd5e48fe1f0e1fd3dd87",
+      "data_hash": "sha256:c829d04c921263984beea87bea17faf07dd2a188dd86f7bcf8bc5a01693f52dc",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "ward_results_2024",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 4468,
+      "schema_hash": "sha256:b35ed0b992d19c387d497f1a1e296a2386324ebcaf05cb19ee249e9c5aa05f43",
+      "data_hash": "sha256:8729264a62d98fa2a3912fb1d1f7017e6bf2d154346716141b8853977e75c1ca",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "census_extras",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 257,
+      "schema_hash": "sha256:f36b35ebe8130eb837fae8d2e42b4c80e6ed0abe427b7cd2ae2a1dcffff7a8cc",
+      "data_hash": "sha256:152e5d1cb6837a1d3d802d97923f4fc766aebbd58dd68303c26837dccae3c4fb",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "gcro",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 88,
+      "schema_hash": "sha256:d882e32070d3dce55fb0d8e421ca6710bfe773ad6655737f21f6cee51f5223bb",
+      "data_hash": "sha256:cdec0f7f1344b54c8bce1c5123aec20b0aca3917d2bb72dd148cd6fa976a306d",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "jobs_2025",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 213,
+      "schema_hash": "sha256:391dd4757ce2b5764d3c77707878516d1a1ca1929b58686ccbfeb674a875d74f",
+      "data_hash": "sha256:3a0bd0fc76796db7620dfcd5ff34aef497e4402b8e0bffa3bf59f6c61e388e63",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "jobs_series",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 1065,
+      "schema_hash": "sha256:980111fd41ef2b56b6a0c1b5d7b341d1c6540dffcd2203ef9fee3417239d2c7f",
+      "data_hash": "sha256:7899cd1ca50229988295c196589161a35d1af4cad459629e80122ffee34270d3",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "population_2026",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 260,
+      "schema_hash": "sha256:99971bd229cb295b4d5960f0efb993aa1f837a55692dbe7397fad0e7cf37b9f2",
+      "data_hash": "sha256:64a8f543b4a4e48eaf6c4a75d5b67a25978a01f32d2eab5f88cddf121121eff3",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "srd_grants",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 213,
+      "schema_hash": "sha256:2fd66ee175c06f2c60ac266940e75ff5cbaac3b4adc57b06aa87bf59edf4832a",
+      "data_hash": "sha256:e262ca6c52d4cdc4120902d1bc047a677b9d6e4573df18f4eaf2d98d9ff47101",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "water_quality",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 144,
+      "schema_hash": "sha256:d664a3b64ae47baca0812de9f4818c71b15275e37ac71abdb96cf07a65f46535",
+      "data_hash": "sha256:ed0b2a8b7ce418f5c35ebc65a216ee5516ebd28ea8404478602a957f585596df",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "schools",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 25527,
+      "schema_hash": "sha256:bd1e290dac65d2ca1750cbd14d8b9419a2195d99da5561b5cd159d8a40790aee",
+      "data_hash": "sha256:539e1f2dd0c431a1f34d608d06fac161fceb0f788c2127e826aad68b88bcd190",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "matric",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 20328,
+      "schema_hash": "sha256:85e8d5225a8eb80387a7ef774c7d6f556626df713d8b4890cc9c23b2a4e70844",
+      "data_hash": "sha256:e1f151e16b5dc31c338cd0cb6879226dad42a1095bafcc91b6cc1fbeef5502c3",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "siu",
+      "direction": "input",
+      "format": "dside_source",
+      "location": "dside_source",
+      "row_count": 98,
+      "schema_hash": "sha256:fb3cda1268892fb32f60ad20adae8da5b7e5d06eebefe6829be5df15bee6068c",
+      "data_hash": "sha256:e95dd32a62f10a5dc51212b90bcf73e105f8422b375c3e6b8802c567169a3446",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "outputs": [
+    {
+      "name": "debtors",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/debtors.parquet",
+      "row_count": 252,
+      "schema_hash": "sha256:f87058e41ae2211ff32abb5eedd5b552314efc346f3d9da6c738f0894d56cadf",
+      "data_hash": "sha256:d09eb9b2d2e472c3b6ba7cc1d612cdd2e2fda8b56fd431adeac0f24df40ca2af",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "creditors",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/creditors.parquet",
+      "row_count": 256,
+      "schema_hash": "sha256:4f096eea8686279ffe5d6f9520979bb8a0d8c24850a48eace150318380eb14b6",
+      "data_hash": "sha256:2de50e6d1a44d6b1d2b31f68d6affec30611208d6e1c90d792dcaa279293c29e",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "grants",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/grants.parquet",
+      "row_count": 1913,
+      "schema_hash": "sha256:9617a6be57b1b6ac3ba9e09543388cbd20c9c9a6b5a6c9d420f924526caa146e",
+      "data_hash": "sha256:eda8fcb844129b896b65c5e1612811d7a27a117f571c7360e713ccf0418b0f00",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "year_to_date",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/year_to_date.parquet",
+      "row_count": 257,
+      "schema_hash": "sha256:63a5ffa50fc54e3091b301d86040775742817d3484b6d66d40de3fa400be5120",
+      "data_hash": "sha256:fdfcae50fdefa6ded82ef7370f36ae8b7bf2b61043c3fb5a0ef5eb68e5ddc93b",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "officials",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/officials.parquet",
+      "row_count": 1168,
+      "schema_hash": "sha256:456936fe65200b014380e1e1b41ffa2d6027138204ef69a22ca0551220c4cf72",
+      "data_hash": "sha256:de5a62b4822881a4f1d24695fe9ac01afd31801767c3325ef15815e16399a28b",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "cash",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/cash.parquet",
+      "row_count": 246,
+      "schema_hash": "sha256:d3ef69b042585f551199a5f3e1bfc12ccaa965fe437a2354033da3d7259cdbc9",
+      "data_hash": "sha256:b7df55e94587a92cb9111a74624d642cf64a520373e63380167e13237da64ac7",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "ward_councillors_2021",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/ward_councillors_2021.parquet",
+      "row_count": 4467,
+      "schema_hash": "sha256:56afa59cc6016fdacb60e4c3444477eaf6d953c84e3ddd5e48fe1f0e1fd3dd87",
+      "data_hash": "sha256:c829d04c921263984beea87bea17faf07dd2a188dd86f7bcf8bc5a01693f52dc",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "ward_results_2024",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/ward_results_2024.parquet",
+      "row_count": 4468,
+      "schema_hash": "sha256:b35ed0b992d19c387d497f1a1e296a2386324ebcaf05cb19ee249e9c5aa05f43",
+      "data_hash": "sha256:8729264a62d98fa2a3912fb1d1f7017e6bf2d154346716141b8853977e75c1ca",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "census_extras",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/census_extras.parquet",
+      "row_count": 257,
+      "schema_hash": "sha256:f36b35ebe8130eb837fae8d2e42b4c80e6ed0abe427b7cd2ae2a1dcffff7a8cc",
+      "data_hash": "sha256:152e5d1cb6837a1d3d802d97923f4fc766aebbd58dd68303c26837dccae3c4fb",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "gcro",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/gcro.parquet",
+      "row_count": 88,
+      "schema_hash": "sha256:d882e32070d3dce55fb0d8e421ca6710bfe773ad6655737f21f6cee51f5223bb",
+      "data_hash": "sha256:cdec0f7f1344b54c8bce1c5123aec20b0aca3917d2bb72dd148cd6fa976a306d",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "jobs_2025",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/jobs_2025.parquet",
+      "row_count": 213,
+      "schema_hash": "sha256:391dd4757ce2b5764d3c77707878516d1a1ca1929b58686ccbfeb674a875d74f",
+      "data_hash": "sha256:3a0bd0fc76796db7620dfcd5ff34aef497e4402b8e0bffa3bf59f6c61e388e63",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "jobs_series",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/jobs_series.parquet",
+      "row_count": 1065,
+      "schema_hash": "sha256:980111fd41ef2b56b6a0c1b5d7b341d1c6540dffcd2203ef9fee3417239d2c7f",
+      "data_hash": "sha256:7899cd1ca50229988295c196589161a35d1af4cad459629e80122ffee34270d3",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "population_2026",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/population_2026.parquet",
+      "row_count": 260,
+      "schema_hash": "sha256:99971bd229cb295b4d5960f0efb993aa1f837a55692dbe7397fad0e7cf37b9f2",
+      "data_hash": "sha256:64a8f543b4a4e48eaf6c4a75d5b67a25978a01f32d2eab5f88cddf121121eff3",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "srd_grants",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/srd_grants.parquet",
+      "row_count": 213,
+      "schema_hash": "sha256:2fd66ee175c06f2c60ac266940e75ff5cbaac3b4adc57b06aa87bf59edf4832a",
+      "data_hash": "sha256:e262ca6c52d4cdc4120902d1bc047a677b9d6e4573df18f4eaf2d98d9ff47101",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "water_quality",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/water_quality.parquet",
+      "row_count": 144,
+      "schema_hash": "sha256:d664a3b64ae47baca0812de9f4818c71b15275e37ac71abdb96cf07a65f46535",
+      "data_hash": "sha256:ed0b2a8b7ce418f5c35ebc65a216ee5516ebd28ea8404478602a957f585596df",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "schools",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/schools.parquet",
+      "row_count": 25527,
+      "schema_hash": "sha256:bd1e290dac65d2ca1750cbd14d8b9419a2195d99da5561b5cd159d8a40790aee",
+      "data_hash": "sha256:539e1f2dd0c431a1f34d608d06fac161fceb0f788c2127e826aad68b88bcd190",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "matric",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/matric.parquet",
+      "row_count": 20328,
+      "schema_hash": "sha256:85e8d5225a8eb80387a7ef774c7d6f556626df713d8b4890cc9c23b2a4e70844",
+      "data_hash": "sha256:e1f151e16b5dc31c338cd0cb6879226dad42a1095bafcc91b6cc1fbeef5502c3",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    },
+    {
+      "name": "siu",
+      "direction": "output",
+      "format": "s3",
+      "location": "/home/runner/work/masepala/masepala/engine/.work/raw/siu.parquet",
+      "row_count": 98,
+      "schema_hash": "sha256:fb3cda1268892fb32f60ad20adae8da5b7e5d06eebefe6829be5df15bee6068c",
+      "data_hash": "sha256:e95dd32a62f10a5dc51212b90bcf73e105f8422b375c3e6b8802c567169a3446",
+      "hash_method": "rows-v1",
+      "hash_error": null
+    }
+  ],
+  "error": null,
+  "engine_version": "0.7.0",
+  "backend": "pandas",
+  "variables": {
+    "dt": "2026-09-26",
+    "mode": "DEV"
+  },
+  "record_version": 2,
+  "code_hash": "sha256:34244bfcacc656ab5bfabe0722f536701eff63ae2764437df650aa409b84516a",
+  "environment": {
+    "python": "3.13.15",
+    "implementation": "CPython",
+    "platform": "linux",
+    "machine": "x86_64",
+    "packages": {
+      "ubunye-engine": "0.7.0",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "numpy": "2.5.3",
+      "narwhals": "2.26.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "environment_hash": "sha256:e7788ec261e09f8b5cbc9d40015df4d95650363c9357976bee17a55ec43f4db7",
+  "timings": [
+    {
+      "step": "Reader:dside_source",
+      "input": "cash",
+      "seconds": 0.021813
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "census_extras",
+      "seconds": 121.589554
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "creditors",
+      "seconds": 0.022748
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "debtors",
+      "seconds": 0.021118
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "gcro",
+      "seconds": 8.62856
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "grants",
+      "seconds": 0.02162
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "jobs_2025",
+      "seconds": 3.770999
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "jobs_series",
+      "seconds": 3.675032
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "matric",
+      "seconds": 94.405547
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "officials",
+      "seconds": 0.022412
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "population_2026",
+      "seconds": 1.525293
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "schools",
+      "seconds": 18.561931
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "siu",
+      "seconds": 2.84558
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "srd_grants",
+      "seconds": 0.001996
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "ward_councillors_2021",
+      "seconds": 103.859191
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "ward_results_2024",
+      "seconds": 88.744715
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "water_quality",
+      "seconds": 0.002064
+    },
+    {
+      "step": "Reader:dside_source",
+      "input": "year_to_date",
+      "seconds": 0.021181
+    },
+    {
+      "step": "Transform:_ubunye_user_task",
+      "seconds": 0.001076
+    },
+    {
+      "step": "Writer:s3",
+      "output": "cash",
+      "seconds": 0.001828
+    },
+    {
+      "step": "Writer:s3",
+      "output": "census_extras",
+      "seconds": 0.001505
+    },
+    {
+      "step": "Writer:s3",
+      "output": "creditors",
+      "seconds": 0.001995
+    },
+    {
+      "step": "Writer:s3",
+      "output": "debtors",
+      "seconds": 0.002634
+    },
+    {
+      "step": "Writer:s3",
+      "output": "gcro",
+      "seconds": 0.001298
+    },
+    {
+      "step": "Writer:s3",
+      "output": "grants",
+      "seconds": 0.004278
+    },
+    {
+      "step": "Writer:s3",
+      "output": "jobs_2025",
+      "seconds": 0.001438
+    },
+    {
+      "step": "Writer:s3",
+      "output": "jobs_series",
+      "seconds": 0.001655
+    },
+    {
+      "step": "Writer:s3",
+      "output": "matric",
+      "seconds": 0.009285
+    },
+    {
+      "step": "Writer:s3",
+      "output": "officials",
+      "seconds": 0.002814
+    },
+    {
+      "step": "Writer:s3",
+      "output": "population_2026",
+      "seconds": 0.00148
+    },
+    {
+      "step": "Writer:s3",
+      "output": "schools",
+      "seconds": 0.026013
+    },
+    {
+      "step": "Writer:s3",
+      "output": "siu",
+      "seconds": 0.001559
+    },
+    {
+      "step": "Writer:s3",
+      "output": "srd_grants",
+      "seconds": 0.001315
+    },
+    {
+      "step": "Writer:s3",
+      "output": "ward_councillors_2021",
+      "seconds": 0.006187
+    },
+    {
+      "step": "Writer:s3",
+      "output": "ward_results_2024",
+      "seconds": 0.005786
+    },
+    {
+      "step": "Writer:s3",
+      "output": "water_quality",
+      "seconds": 0.001528
+    },
+    {
+      "step": "Writer:s3",
+      "output": "year_to_date",
+      "seconds": 0.002662
+    }
+  ],
+  "expectations": [
+    {
+      "output": "cash",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 246,
+      "passed": true
+    },
+    {
+      "output": "cash",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 246,
+      "passed": true
+    },
+    {
+      "output": "census_extras",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "census_extras",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "census_extras",
+      "rule": "rdp_household_share_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "rdp_household_share",
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "census_extras",
+      "rule": "female_headed_share_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "female_headed_share",
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "creditors",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 256,
+      "passed": true
+    },
+    {
+      "output": "creditors",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 256,
+      "passed": true
+    },
+    {
+      "output": "debtors",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 252,
+      "passed": true
+    },
+    {
+      "output": "debtors",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 252,
+      "passed": true
+    },
+    {
+      "output": "gcro",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 88,
+      "passed": true
+    },
+    {
+      "output": "gcro",
+      "rule": "share_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "share",
+      "failed": 0,
+      "total": 88,
+      "passed": true
+    },
+    {
+      "output": "grants",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 1913,
+      "passed": true
+    },
+    {
+      "output": "grants",
+      "rule": "code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 1913,
+      "passed": true
+    },
+    {
+      "output": "jobs_2025",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 213,
+      "passed": true
+    },
+    {
+      "output": "jobs_2025",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 213,
+      "passed": true
+    },
+    {
+      "output": "jobs_series",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 1065,
+      "passed": true
+    },
+    {
+      "output": "matric",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 20328,
+      "passed": true
+    },
+    {
+      "output": "matric",
+      "rule": "pass_rate_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "pass_rate",
+      "failed": 0,
+      "total": 20328,
+      "passed": true
+    },
+    {
+      "output": "officials",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 1168,
+      "passed": true
+    },
+    {
+      "output": "officials",
+      "rule": "code_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 1168,
+      "passed": true
+    },
+    {
+      "output": "population_2026",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 260,
+      "passed": true
+    },
+    {
+      "output": "population_2026",
+      "rule": "population_not_null",
+      "kind": "not_null",
+      "severity": "fail",
+      "column": "population",
+      "failed": 0,
+      "total": 260,
+      "passed": true
+    },
+    {
+      "output": "schools",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 25527,
+      "passed": true
+    },
+    {
+      "output": "schools",
+      "rule": "emis_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "emis",
+      "failed": 0,
+      "total": 25527,
+      "passed": true
+    },
+    {
+      "output": "schools",
+      "rule": "quintile_between",
+      "kind": "between",
+      "severity": "warn",
+      "column": "quintile",
+      "failed": 0,
+      "total": 25527,
+      "passed": true
+    },
+    {
+      "output": "siu",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 98,
+      "passed": true
+    },
+    {
+      "output": "siu",
+      "rule": "code_not_null",
+      "kind": "not_null",
+      "severity": "warn",
+      "column": "code",
+      "failed": 15,
+      "total": 98,
+      "passed": false
+    },
+    {
+      "output": "srd_grants",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 213,
+      "passed": true
+    },
+    {
+      "output": "srd_grants",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 213,
+      "passed": true
+    },
+    {
+      "output": "srd_grants",
+      "rule": "srd_pct_paid_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "srd_pct_paid",
+      "failed": 0,
+      "total": 213,
+      "passed": true
+    },
+    {
+      "output": "ward_councillors_2021",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 4467,
+      "passed": true
+    },
+    {
+      "output": "ward_councillors_2021",
+      "rule": "ward_id_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "ward_id",
+      "failed": 0,
+      "total": 4467,
+      "passed": true
+    },
+    {
+      "output": "ward_councillors_2021",
+      "rule": "turnout_share_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "turnout_share",
+      "failed": 0,
+      "total": 4467,
+      "passed": true
+    },
+    {
+      "output": "ward_councillors_2021",
+      "rule": "winning_share_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "winning_share",
+      "failed": 0,
+      "total": 4467,
+      "passed": true
+    },
+    {
+      "output": "ward_results_2024",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 4468,
+      "passed": true
+    },
+    {
+      "output": "ward_results_2024",
+      "rule": "ward_id_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "ward_id",
+      "failed": 0,
+      "total": 4468,
+      "passed": true
+    },
+    {
+      "output": "ward_results_2024",
+      "rule": "turnout_share_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "turnout_share",
+      "failed": 0,
+      "total": 4468,
+      "passed": true
+    },
+    {
+      "output": "water_quality",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 144,
+      "passed": true
+    },
+    {
+      "output": "water_quality",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 144,
+      "passed": true
+    },
+    {
+      "output": "water_quality",
+      "rule": "green_drop_score_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "green_drop_score",
+      "failed": 0,
+      "total": 144,
+      "passed": true
+    },
+    {
+      "output": "water_quality",
+      "rule": "blue_drop_risk_between",
+      "kind": "between",
+      "severity": "fail",
+      "column": "blue_drop_risk",
+      "failed": 0,
+      "total": 144,
+      "passed": true
+    },
+    {
+      "output": "year_to_date",
+      "rule": "row_count",
+      "kind": "row_count",
+      "severity": "fail",
+      "column": null,
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    },
+    {
+      "output": "year_to_date",
+      "rule": "code_unique",
+      "kind": "unique",
+      "severity": "fail",
+      "column": "code",
+      "failed": 0,
+      "total": 257,
+      "passed": true
+    }
+  ],
+  "llm_calls": [],
+  "llm_budget": {}
+}
