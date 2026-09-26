@@ -26,7 +26,7 @@ what an ordinary resident can do about it.
   They are written by fixed rules from the numbers, never by AI.
 - **Use my location.** One tap finds your municipality and your ward (the ward
   polygon your location falls in). The location never leaves the phone.
-- **What's happening now**, refreshed every three hours: Eskom's loadshedding
+- **What's happening now**, refreshed about every hour: Eskom's loadshedding
   stage, the City of Tshwane's open electricity faults, and local news headlines.
 - **The money**: this year so far against time gone, planned against spent,
   who owes the municipality and what it owes Eskom, grants used, audit history.
@@ -42,7 +42,7 @@ what an ordinary resident can do about it.
 ```
 ~25 public sources ──► engine/  (Ubunye Engine pipelines: run, then stop)
                          ├─ municipal: quarterly, 6 tasks ──► web/data/*.json ──► Vercel rebuilds the static site
-                         └─ live: every 3 hours, 1 task ────► live-data branch ──► the site reads it directly
+                         └─ live: hourly, 1 task ───────────► live-data branch ──► the site reads it directly
 ```
 
 Nothing runs between refreshes: no server, no database, and it costs nothing.
@@ -130,7 +130,7 @@ cd ../web && npm install && npm run build   # static site in web/out
 
 Three GitHub workflows: `refresh-data.yml` (quarterly: checks, runs, gates,
 commits `web/data` when healthy, Vercel rebuilds), `refresh-live.yml` (every
-three hours, publishes to the single-commit `live-data` branch) and
+hour, publishes to the single-commit `live-data` branch) and
 `checks.yml` (every pull request: tests, `ubunye validate`, `doctor` and
 `plan`, and a site build).
 

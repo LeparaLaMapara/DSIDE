@@ -7,7 +7,9 @@ name: Refresh live
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 */3 * * *"
+    # Asked for every hour: GitHub drops or delays many scheduled runs (about 4
+    # of 8 three-hourly runs happened), so hourly lands every hour or two.
+    - cron: "7 * * * *"
 
 permissions:
   contents: write
