@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Newspaper, Zap, ZapOff } from "lucide-react";
 
 type News = { title: string; url: string; outlet: string; published: string; place: string; code: string; event: string; also_reported_by?: string | null };
-type Status = { stage: number; checked_at: string };
+type Status = { stage: number | null; checked_at: string };
 type FaultWard = { code: string; ward_id: string; suburbs?: string | null; open_faults: number; oldest_open_hours: number | null; median_repair_hours?: number | null; fixed_60d?: number | null };
 
 /** Where the live files are: GitHub's raw file host in production (refreshed
@@ -50,7 +50,7 @@ export function LiveNow({ code, name }: { code: string; name: string }) {
       <div className="grid gap-4 md:grid-cols-3">
         <div className="card p-4">
           <p className="inline-flex items-center gap-2 font-bold">{status?.stage ? <ZapOff aria-hidden /> : <Zap aria-hidden />}Loadshedding</p>
-          <p className="mt-1 font-display text-3xl">{status == null ? "..." : status.stage ? `Stage ${status.stage}` : "None"}</p>
+          <p className="mt-1 font-display text-3xl">{status == null ? "..." : status.stage == null ? "Unknown" : status.stage ? `Stage ${status.stage}` : "None"}</p>
           <p className="text-xs text-muted">Eskom, checked {status ? ago(status.checked_at) : "..."}.</p>
         </div>
         {FAULT_CITIES.includes(code) && (

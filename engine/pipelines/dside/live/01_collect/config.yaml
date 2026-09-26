@@ -12,23 +12,24 @@ CONFIG:
     fault_wards: {format: site_json, path: "{{ env.LIVE_DIR }}/fault_wards.json", mode: overwrite}
     news: {format: site_json, path: "{{ env.LIVE_DIR }}/news.json", mode: overwrite}
     status: {format: site_json, path: "{{ env.LIVE_DIR }}/status.json", mode: overwrite}
-  # Checked by the Ubunye Engine before the files are written. Loadshedding
-  # stages run 0 to 8; a fault or a news item must name its municipality.
+  # Checked by the Ubunye Engine before the files are written, as warnings
+  # only: the live layer must always publish, and one odd answer (Eskom says
+  # -1, "unknown", at times) must never hold back the news and the faults.
+  # Loadshedding stages run 0 to 8; a blank stage means Eskom is not saying.
   expectations:
     status:
       rules:
-        - {row_count: {min: 1, max: 1}}
-        - {not_null: stage}
-        - {between: {column: stage, min: 0, max: 8}}
+        - {row_count: {min: 1, max: 1}, severity: warn}
+        - {between: {column: stage, min: 0, max: 8}, severity: warn}
     faults:
       rules:
-        - {not_null: code}
+        - {not_null: code, severity: warn}
         - {not_null: ward_id, severity: warn}
         - {between: {column: open_hours, min: 0}, severity: warn}
     fault_wards:
       rules:
-        - {unique: [code, ward_id]}
+        - {unique: [code, ward_id], severity: warn}
     news:
       rules:
-        - {not_null: code}
+        - {not_null: code, severity: warn}
         - {unique: url, severity: warn}

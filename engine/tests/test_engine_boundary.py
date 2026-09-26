@@ -47,3 +47,14 @@ def test_site_json_writes_one_array_file(tmp_path):
 
 def test_site_json_needs_a_path():
     assert SiteJsonWriter.validate_config({}) == ["site_json requires 'path'"]
+
+
+def test_the_live_layer_is_never_blocked_by_its_own_checks():
+    """One odd answer (Eskom says -1 at times) must never hold back the news and the faults."""
+    from pathlib import Path
+
+    import yaml
+
+    cfg = yaml.safe_load((Path(__file__).resolve().parents[1] / "pipelines/dside/live/01_collect/config.yaml").read_text())
+    rules = [r for spec in cfg["CONFIG"]["expectations"].values() for r in spec["rules"]]
+    assert rules and all(r.get("severity") == "warn" for r in rules)
