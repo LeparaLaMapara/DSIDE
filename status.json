@@ -1,0 +1,16 @@
+{
+ "srd_grants": {
+  "fetched_at": "2026-09-26T04:57+00:00",
+  "fetched_by": "za runner",
+  "label": "srd_grants",
+  "ok": true,
+  "rows": 213
+ },
+ "water_quality": {
+  "fetched_at": "2026-09-26T05:00+00:00",
+  "fetched_by": "za runner",
+  "label": "water_quality",
+  "ok": true,
+  "rows": 144
+ }
+}
